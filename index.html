@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+			'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta
+			http-equiv='Content-Type' 
+			content='text/html; charset=utf-8'
+		/>
+		<link
+			type="text/css"
+			rel="stylesheet"
+			href="base.css"
+		/>
+		<script type="text/javascript"> 
+			function copy(dest, source) {
+				if(dest.source == source) {
+					dest.innerHTML = "";
+					dest.source = null;
+				}
+				else {
+					dest.innerHTML = source.innerHTML;
+					dest.source = source;
+				}
+				dest.blur();
+			}
+		</script>
+		<title>
+			Jonathan K. Kummerfeld - index.html
+		</title>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<span class="title_name">
+					Jonathan Kummerfeld
+				</span>
+				<ul class="menu_links">
+					<li><a href="misc.html">misc</a></li>
+				</ul>
+				<ul class="menu_links">
+					<li><a href="projects.html">projects</a></li>
+				</ul>
+				<ul class="menu_links">
+					<li><a href="cv.html">cv</a></li>
+				</ul>
+				<ul class="menu_links">
+					<li><a href="publications.html">publications</a></li>
+				</ul>
+				<ul class="menu_links">
+					<li><a href="index.html">home</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<img src="images/jonathan_kummerfeld.jpg" alt="picture of me" style="width:300px;float:left;margin:10px 20px 0px 0px;" />
+				
+				<h3>Contact</h3>
+				<p>
+					[my initials] @berkeley.edu
+					<br />
+					Where my initials are 'jkk'
+				</p>
+				<p>
+					Mailing Address:
+					<br />
+					7th floor Sutardja Dai Hall, Desk 078
+					<br />
+					Berkeley, CA 94720-1776
+				</p>
+				
+				<h3>About Me</h3>
+				<p>
+					I am a <a href="http://en.wikipedia.org/wiki/John_Monash_Scholars">Monash Scholar</a>, currently studying for a PhD in Computer Science at <a href="http://www.cs.berkeley.edu/">UC Berkeley</a>.
+					My research focus is Natural Language Processing &mdash; in particular, the task of coreference resolution.
+					I am a member of the <a href="http://nlp.cs.berkeley.edu/">Berkeley NLP Group</a>, and my advisor is <a href="http://www.cs.berkeley.edu/~klein">Dan Klein</a>.
+				</p>
+				<p>
+					I graduated from the <a href="http://sydney.edu.au/">University of Sydney</a> with a Bachelor of Science (Advanced) with First Class Honours and Medal in Computer Science in 2009.
+					For my honours thesis, "Adaptive Supertagging for Faster Parsing", I studied in the <a href="http://www.schwa.org/">Schwa lab</a>, advised by <a href="http://sydney.edu.au/engineering/it/~james">James Curran</a>.
+				</p>
+				<p>
+					I completed my Higher School Certificate at <a href="http://www.emanuelschool.nsw.edu.au/">Emanuel School</a>, receiving the Premier's Award for my results in English, Mathematics, Physics and Cosmology.
+				</p>
+				
+				<h3>Selected Publications</h3>
+				<p>
+				<a href="http://www.aclweb.org/anthology/P/P10/P10-1036.pdf">Faster Parsing by Supertagger Adaptation</a>
+				<br />
+				Jonathan K. Kummerfeld, Jessica Roesner, Tim Dawborn, James Haggerty, James R. Curran and Stephen Clark
+				<br />
+				Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics, July 2010, pages 345&ndash;355
+				<br />
+				<a href="http://www.aclweb.org/anthology/P/P10/P10-1036.pdf">[paper]</a>&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('bib3').style.display == 'block') {
+				document.getElementById('bib3').style.display='none';
+				} else {
+				document.getElementById('bib3').style.display='block';
+				}
+				">[bib]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('extra3').style.display == 'block') {
+				document.getElementById('extra3').style.display='none';
+				} else {
+				document.getElementById('extra3').style.display='block';
+				}
+				">[other info]</a>
+				<div id="bib3" style="display: none;margin-left:-40px;" style="text-align:right;">
+					<blockquote>
+						<code>
+							<pre>
+@InProceedings{Kummerfeld-Roesner-Dawborn-Haggerty-Curran-Clark:2010:ACL,
+  title     = {Faster Parsing by Supertagger Adaptation},
+  author    = {Jonathan K. Kummerfeld and Jessica Roesner and Tim Dawborn and James Haggerty and James R. Curran and Stephen Clark},
+  booktitle = {Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics},
+  month     = {July},
+  year      = {2010},
+  address   = {Uppsala, Sweden},
+  publisher = {Association for Computational Linguistics},
+  pages     = {345--355},
+  url       = {http://www.aclweb.org/anthology/P/P10/P10-1036.pdf},
+  abstract  = {We propose a novel self-training method for a parser which uses a lexicalised grammar and supertagger, focusing on increasing the speed of the parser rather than its accuracy. The idea is to train the supertagger on large amounts of parser output, so that the supertagger can learn to supply the supertags that the parser will eventually choose as part of the highest scoring derivation. Since the supertagger supplies fewer supertags overall, the parsing speed is increased. We demonstrate the effectiveness of the method using a CCG supertagger and parser, obtaining significant speed increases on newspaper text with no loss in accuracy. We also show that the method can be used to adapt the CCG parser to new domains, obtaining accuracy and speed improvements for Wikipedia and biomedical text.},
+}
+							</pre>
+						</code>
+					</blockquote>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Roesner-Dawborn-Haggerty-Curran-Clark_2010_ACL.bib">bib as a file</a>
+				</div>
+				
+				<div id="extra3" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+							<p>Citations:</p>
+							<p>
+							Efficient CCG Parsing: A* versus Adaptive Supertagging, Auli, Michael  and  Lopez, Adam, Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies, 2011
+							<p/>
+							<p>
+							A Comparison of Loopy Belief Propagation and Dual Decomposition for Integrated CCG Supertagging and Parsing, Auli, Michael  and  Lopez, Adam, Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies, 2011
+							<p/>
+							<p>
+							Chart pruning for fast lexicalised-grammar parsing, Zhanga, Yue, Ahn, Byung-Gyu, Clark, Stephen, Van Wyk, Curt, Curran, James R. and Rimell, Laura, Proceedings of the 23rd International Conference on Computational Linguistics: Posters, 2010
+							<p/>
+					</p>
+				</div>
+				
+				</p>
+				<p>
+				<a href="http://pubs.acs.org/doi/abs/10.1021/jp804953r">The densest packing of AB binary hard-sphere homogeneous compounds across all size ratios</a>
+				<br />
+				Jonathan K Kummerfeld, Toby S Hudson and Peter Harrowell
+				<br />
+				The Journal of Physical Chemistry B, August 2008, pages 10773&ndash;10776
+				<br />
+				<a href="http://pubs.acs.org/doi/abs/10.1021/jp804953r">[paper]</a>&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('bib7').style.display == 'block') {
+				document.getElementById('bib7').style.display='none';
+				} else {
+				document.getElementById('bib7').style.display='block';
+				}
+				">[bib]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('extra7').style.display == 'block') {
+				document.getElementById('extra7').style.display='none';
+				} else {
+				document.getElementById('extra7').style.display='block';
+				}
+				">[other info]</a>
+				<div id="bib7" style="display: none;margin-left:-40px;" style="text-align:right;">
+					<blockquote>
+						<code>
+							<pre>
+@Article{Kummerfeld-Hudson-Harrowell:2008:JPhysChemB,
+  title     = {The densest packing of AB binary hard-sphere homogeneous compounds across all size ratios},
+  author    = {Jonathan K Kummerfeld and Toby S Hudson and Peter Harrowell},
+  journal   = {The Journal of Physical Chemistry B},
+  month     = {August},
+  year      = {2008},
+  volume    = {112},
+  issue     = {35},
+  pages     = {10773--10776},
+  url       = {http://pubs.acs.org/doi/abs/10.1021/jp804953r},
+  abstract  = {This paper considers the homogeneous packing of binary hard spheres in an equimolar stoichiometry, and postulates the densest packing at each sphere size ratio. Monte Carlo simulated annealing optimizations are seeded with all known atomic inorganic crystal structures, and the search is performed within the degrees of freedom associated with each homogeneous AB structure type. Structures isopointal to the FeB structure type are found to have the highest packing fraction at all sphere size ratios. The optimized structures match or improve on the best previously demonstrated packings of this type, and show that compound structures can pack more densely than segregated close-packed structures at all radius ratios less than 0.62.},
+}
+							</pre>
+						</code>
+					</blockquote>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Hudson-Harrowell_2008_JPhysChemB.bib">bib as a file</a>
+				</div>
+				
+				<div id="extra7" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+							<p>Citations:</p>
+							<p>
+							Efficient Method for Predicting Crystal Structures at Finite Temperature: Variable Box Shape Simulations, Laura Filion, Matthieu Marechal, Bas van Oorschot, Dani\"el Pelt, Frank Smallenburg and Marjolein Dijkstra, Physical Review Letters, 2009
+							<p/>
+							<p>
+							Dense Packings of Hard Spheres of Different Sizes Based on Filling Interstices in Uniform Three-Dimensional Tilings, Toby S. Hudson and Peter Harrowell, The Journal of Physical Chemistry B, 2008
+							<p/>
+							<p>
+							Prediction of binary hard-sphere crystal structures, Laura Filion and Marjolein Dijkstra, Physical Review E, 2009
+							<p/>
+							<p>
+							Multicomponent periodic nanoparticle superlattices, Paul Podsiadlo, Galyna Krylova, Arnaud Demortière and Elena Shevchenko, Journal of Nanoparticle Research, 2011
+							<p/>
+					</p>
+				</div>
+				
+				</p>
+				<p>
+				<a href="http://www.aclweb.org/anthology/U/U08/U08-1008.pdf">Classification of Verb Particle Constructions with the Google Web1T Corpus</a>
+				<br />
+				Jonathan K. Kummerfeld and James R. Curran
+				<br />
+				Proceedings of the Australasian Language Technology Association Workshop 2008, December 2008, pages 55&ndash;63
+				<br />
+				<a href="http://www.aclweb.org/anthology/U/U08/U08-1008.pdf">[paper]</a>&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('bib8').style.display == 'block') {
+				document.getElementById('bib8').style.display='none';
+				} else {
+				document.getElementById('bib8').style.display='block';
+				}
+				">[bib]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('extra8').style.display == 'block') {
+				document.getElementById('extra8').style.display='none';
+				} else {
+				document.getElementById('extra8').style.display='block';
+				}
+				">[other info]</a>
+				<div id="bib8" style="display: none;margin-left:-40px;" style="text-align:right;">
+					<blockquote>
+						<code>
+							<pre>
+@InProceedings{Kummerfeld-Curran:2008:ALTA,
+  title     = {Classification of Verb Particle Constructions with the Google Web1T Corpus},
+  author    = {Jonathan K. Kummerfeld and James R. Curran},
+  booktitle = {Proceedings of the Australasian Language Technology Association Workshop 2008},
+  month     = {December},
+  year      = {2008},
+  address   = {Hobart, Australia},
+  pages     = {55--63},
+  volume    = {6},
+  url       = {http://www.aclweb.org/anthology/U/U08/U08-1008.pdf},
+  abstract  = {Manually maintaining comprehensive databases of multi-word expressions, for example Verb-Particle Constructions (VPCs), is infeasible. We describe a new classifier for potential VPCs, which uses information in the Google Web1T corpus to perform a simple linguistic constituency test. Specifically, we consider the fronting test, comparing the frequencies of the two possible orderings of the given verb and particle. Using only a small set of queries for each verb-particle pair, the system was able to achieve an F-score of 78.4% in our evaluation while processing thousands of queries a second.},
+}
+							</pre>
+						</code>
+					</blockquote>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Curran_2008_ALTA.bib">bib as a file</a>
+				</div>
+				
+				<div id="extra8" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+							<p>Citations:</p>
+							<p>
+							Predicting the Semantic Compositionality of Prefix Verbs, Shane Bergsma, Aditya Bhargava, Hua He and Grzegorz Kondrak, Proceedings of the 2010 Conference on Empirical Methods in Natural Language Processing, 2010
+							<p/>
+							<p>
+							Practical Linguistic Steganography Using Contextual Synonym Substitution and Vertex Colour Coding, Chang, Ching-Yun  and  Clark, Stephen, Proceedings of the 2010 Conference on Empirical Methods in Natural Language Processing, 2010
+							<p/>
+							<p>
+							New Tools for Web-Scale N-grams, Dekang Lin, Kenneth Church, Heng Ji, Satoshi Sekine, David Yarowsky, Shane Bergsma, Kailash Patil, Emily Pitler, Rachel Lathbury, Vikram Rao, Kapil Dalwani and Sushant Narsale, Proceedings of the Seventh conference on International Language Resources and Evaluation (LREC'10), 2010
+							<p/>
+							<p>
+							Corpus-based Extraction of Japanese Compound Verbs, James Breen and Timothy Baldwin, Proceedings of the Australasian Language Technology Association Workshop	2009, 2009
+							<p/>
+					</p>
+				</div>
+				
+				</p>
+				
+				<p>
+				Bibtex can be found on my <a href="publications.html">publications page</a>. 
+				</p>
+			</div>
+			<div class="footer">
+				This site was designed by me using vim, and generated at some point in the past by a script written in python.
+			</div>
+		</div>
+	</body>
+
+</html>
+
+
