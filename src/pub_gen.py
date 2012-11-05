@@ -2,6 +2,7 @@
 
 import glob
 
+# TODO: Place abstract in a separate field
 def gen_html(pub, target_dir):
 	fields = {
 		'author': '',
