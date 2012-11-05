@@ -45,6 +45,7 @@ def gen_html(pub, target_dir):
 	# citations
 	if len(pub['citing_pubs']) > 0:
 		extra_text = ['<p>Citations:</p>']
+		pre_sort = []
 		for label in pub['citing_pubs']:
 			cite = pub['citing_pubs'][label]
 			title = cite['title']
@@ -58,9 +59,13 @@ def gen_html(pub, target_dir):
 					venue = cite[option]
 					break
 			year = cite['year']
-			extra_text.append('<p>')
-			extra_text.append('%s, %s, %s, %s' % (title, author, venue, year))
-			extra_text.append('<p/>')
+			text = ['<p>']
+			text.append('%s, %s, %s, %s' % (title, author, venue, year))
+			text.append('<p/>')
+			pre_sort.append((int(year), text))
+		pre_sort.sort(reverse=True)
+		for text in pre_sort:
+			extra_text += text[1]
 		fields['extra'] = extra_text
 	# bib
 	out = open(target_dir + '/pubs/' + pub['label'] + '.bib', 'w')
