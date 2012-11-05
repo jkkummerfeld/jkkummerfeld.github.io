@@ -73,7 +73,9 @@ if __name__ == '__main__':
 	pub_info = pub_gen.get_pub_info(data_dir, target_dir)
 	for pub in pub_info:
 		if 'url' not in pub_info[pub]:
-			os.system('cp -R %s/pubs/%s/* %s/pubs/.' % (data_dir, pub, target_dir))
+			os.system('cp -R %s/pubs/%s/*paper* %s/pubs/.' % (data_dir, pub, target_dir))
+			if 'school' in pub_info[pub]:
+				os.system('cp -R %s/pubs/%s/*thesis* %s/pubs/.' % (data_dir, pub, target_dir))
 
 	# Construct pages
 	page_template = open(data_dir + '/' + config['page_template']).readlines()
