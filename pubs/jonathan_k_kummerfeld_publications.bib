@@ -1,15 +1,3 @@
-@InProceedings{Kummerfeld-Curran-Klein:2012:ACL,
-  title     = {Robust Conversion of CCG Derivations to Phrase Structure Trees},
-  author    = {Jonathan K. Kummerfeld and James R. Curran and Dan Klein},
-  booktitle = {Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
-  year      = {2012},
-  pages     = {105--109},
-  month     = {July},
-  address   = {Jeju Island, South Korea},
-  publisher = {Association for Computational Linguistics},
-  url       = {http://www.aclweb.org/anthology/P12-2021},
-  abstract  = {We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.},
-}
 
 @InProceedings{Kummerfeld-Hall-Curran-Klein:2012:EMNLP,
   title     = {Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output},
@@ -20,8 +8,23 @@
   month     = {July},
   address   = {Jeju Island, South Korea},
   publisher = {Association for Computational Linguistics},
+  software  = {http://code.google.com/p/berkeley-parser-analyser/},
   url       = {http://www.aclweb.org/anthology/D12-1096},
   abstract  = {Constituency parser performance is primarily interpreted through a single metric, F-score on WSJ section 23, that conveys no linguistic information regarding the remaining errors.  We classify errors within a set of linguistically meaningful types using tree transformations that repair groups of errors together. We use this analysis to answer a range of questions about parser behaviour, including what linguistic constructions are difficult for state-of-the-art parsers, what types of errors are being resolved by rerankers, and what types are introduced when parsing out-of-domain text.},
+}
+
+@InProceedings{Kummerfeld-Curran-Klein:2012:ACL,
+  title     = {Robust Conversion of CCG Derivations to Phrase Structure Trees},
+  author    = {Jonathan K. Kummerfeld and James R. Curran and Dan Klein},
+  booktitle = {Proceedings of the 50th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  year      = {2012},
+  pages     = {105--109},
+  month     = {July},
+  address   = {Jeju Island, South Korea},
+  publisher = {Association for Computational Linguistics},
+  software  = {http://code.google.com/p/berkeley-ccg2pst/},
+  url       = {http://www.aclweb.org/anthology/P12-2021},
+  abstract  = {We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.},
 }
 
 @InProceedings{Kummerfeld-Bansal-Burkett-Klein:2011:CoNLL,
@@ -38,7 +41,7 @@
   abstract  = {Our submission was a reduced version of the system described in Haghighi and Klein (2010), with extensions to improve mention detection to suit the OntoNotes annotation scheme. Including exact matching mention detection in this shared task added a new and challenging dimension to the problem, particularly for our system, which previously used a very permissive detection method. We improved this aspect of the system by adding filters based on the annotation scheme for OntoNotes and analysis of system behavior on the development set. These changes led to improvements in coreference F-score of 10.06, 5.71, 6.78, 6.63 and 3.09 on the MUC, B3 , Ceaf-e, Ceaf-m and Blanc, metrics, respectively, and a final task score of 47.10.},
 }
 
-@Article{Candelier-WidmerCooper-Kummerfeld-Dauchot-Biroli-Harrowell-Reichman:2010:PRL,
+@Article{Candelier-etal:2010:PRL,
   title     = {Spatiotemporal Hierarchy of Relaxation Events, Dynamical Heterogeneities, and Structural Reorganization in a Supercooled Liquid},
   author    = {Raphael Candelier and Asaph Widmer-Cooper and Jonathan K. Kummerfeld and Olivier Dauchot and Giulio Biroli and Peter Harrowell and David R. Reichman},
   journal   = {Physical Review Letters},
@@ -50,7 +53,7 @@
   month     = {September},
   doi       = {10.1103/PhysRevLett.105.135702},
   publisher = {American Physical Society},
-  url       = {http://prl.aps.org/pdf/PRL/v105/i13/e135702},
+  url       = {http://prl.aps.org/abstract/PRL/v105/i13/e135702},
   abstract  = {We identify the pattern of microscopic dynamical relaxation for a two-dimensional glass-forming liquid. On short time scales, bursts of irreversible particle motion, called cage jumps, aggregate into clusters. On larger time scales, clusters aggregate both spatially and temporally into avalanches. This propagation of mobility takes place along the soft regions of the systems, which have been identified by computing isoconfigurational Debye-Waller maps. Our results characterize the way in which dynamical heterogeneity evolves in moderately supercooled liquids and reveal that it is astonishingly similar to the one found for dense glassy granular media.},
 }
 
@@ -68,7 +71,7 @@
 We use morphological analysis to split verb inflectional suffixes into separate tokens, so that they can receive their own lexical categories. We find that this improves accuracy when the splits are based on correct POS tags, but that errors in gold standard or automatically assigned POS tags are costly for the system. This shows that the parser can benefit from morphological analysis, so long as the analysis is correct.},
 }
 
-@InProceedings{Kummerfeld-Roesner-Dawborn-Haggerty-Curran-Clark:2010:ACL,
+@InProceedings{Kummerfeld-etal:2010:ACL,
   title     = {Faster Parsing by Supertagger Adaptation},
   author    = {Jonathan K. Kummerfeld and Jessica Roesner and Tim Dawborn and James Haggerty and James R. Curran and Stephen Clark},
   booktitle = {Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics},
@@ -103,12 +106,11 @@ We use morphological analysis to split verb inflectional suffixes into separate 
 We demonstrate faster methods for training a supertagger using hundreds of millions of automatically annotated words, constructing statistical models that further constrain the number of derivations the parser must consider. By introducing new features and using an automatically annotated corpus we are able to double parsing speed on Wikipedia and the Wall Street Journal, and gain accuracy slightly when parsing Section 00 of the Wall Street Journal.},
 }
 
-@TechReport{Clark-Copestake-Curran-Zhang-Herbelot-Haggerty-Ahn-VanWyk-Roesner-Kummerfeld-Dawborn:2009:JHU,
+@TechReport{Clark-etal:2009:JHU,
   title     = {Large-Scale Syntactic Processing: Parsing the Web},
   author    = {Stephen Clark and Ann Copestake and James R. Curran and Yue Zhang and Aurelie Herbelot and James Haggerty and Byung-Gyu Ahn and Curt Van Wyk and Jessika Roesner and Jonathan Kummerfeld and Tim Dawborn},
   year      = {2009},
   institution = {Johns Hopkins University},
-  url       = {http://www.clsp.jhu.edu/workshops/archive/ws09/groups/parsing-the-web-large-scale-syntactic-processing/},
   abstract  = {Scalable syntactic processing will underpin the sophisticated language technology needed for next generation information access. Companies are already using nlp tools to create web-scale question answering and “semantic search” engines. Massive amounts of parsed web data will also allow the automatic creation of semantic knowledge resources on an unprecedented scale. The web is a challenging arena for syntactic parsing, because of its scale and variety of styles, genres, and domains.
 
 The goals of our workshop were to scale and adapt an existing wide-coverage parser to Wikipedia text; improve the efficiency of the parser through various methods of chart pruning; use self-training to improve the efficiency and accuracy of the parser; use the parsed wiki data for an innovative form of bootstrapping to make the parser both more efficient and more accurate; and finally use the parsed web data for improved disambiguation of coordination structures, using a variety of syntactic and semantic knowledge sources.

@@ -39,6 +39,9 @@ def gen_html(pub, target_dir):
 	# pages
 	if 'pages' in pub:
 		fields['pages'] = '&ndash;'.join(pub['pages'].split('--'))
+	# software
+	if 'software' in pub:
+		fields['software'] = pub['software']
 	# citations
 	if len(pub['citing_pubs']) > 0:
 		extra_text = ['<p>Citations:</p>']
@@ -85,8 +88,9 @@ def gen_html(pub, target_dir):
 	if 'pages' in fields:
 		text[-1] += ', pages %(pages)s' % fields
 
-# 	text.append('&nbsp;&nbsp;')
 	text.append('<br />')
+	if 'software' in fields:
+		text.append('<a href="%s">[software]</a>&nbsp;&nbsp;' % (fields['software']))
 	if 'url' in fields:
 		text.append('<a href="%s">[paper]</a>&nbsp;&nbsp;' % (fields['url']))
 	for ending in pub['files']:
