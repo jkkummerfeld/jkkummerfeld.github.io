@@ -54,8 +54,10 @@ if __name__ == '__main__':
 
 	# Clean up the target space
 	if len(glob.glob(target_dir)) != 0:
-		os.system('rm -r %s' % target_dir)
-	os.system('mkdir %s' % target_dir)
+		os.system('rm -r %s/docs' % target_dir)
+		os.system('rm -r %s/images' % target_dir)
+		os.system('rm -r %s/pubs' % target_dir)
+	#os.system('mkdir %s' % target_dir)
 	os.system('mkdir %s/docs' % target_dir)
 	os.system('mkdir %s/images' % target_dir)
 	os.system('mkdir %s/pubs' % target_dir)
@@ -63,11 +65,15 @@ if __name__ == '__main__':
 	os.system('cp -R %s/images/* %s/images/.' % (data_dir, target_dir))
 	os.system('cp -R %s/docs/* %s/docs/.' % (data_dir, target_dir))
 	os.system('cp -R %s/pubs/publications.bib %s/pubs/jonathan_k_kummerfeld_publications.bib' % (data_dir, target_dir))
-	os.system('cp -R %s/pubs/*/* %s/pubs/.' % (data_dir, target_dir))
 	os.system('rm -rf %s/pubs/citations*' % (target_dir))
+	os.system('cp -R %s/pubs/*/*_talk* %s/pubs/.' % (data_dir, target_dir))
+	os.system('cp -R %s/pubs/*/*_poster* %s/pubs/.' % (data_dir, target_dir))
 
 	# Construct publication info
 	pub_info = pub_gen.get_pub_info(data_dir, target_dir)
+	for pub in pub_info:
+		if 'url' not in pub_info[pub]:
+			os.system('cp -R %s/pubs/%s/* %s/pubs/.' % (data_dir, pub, target_dir))
 
 	# Construct pages
 	page_template = open(data_dir + '/' + config['page_template']).readlines()
