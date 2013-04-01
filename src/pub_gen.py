@@ -43,6 +43,8 @@ def gen_html(pub, target_dir):
 	# software
 	if 'software' in pub:
 		fields['software'] = pub['software']
+	if 'abstract' in pub:
+		fields['abstract'] = pub['abstract']
 	# citations
 	if len(pub['citing_pubs']) > 0:
 		extra_text = ['<p>Citations:</p>']
@@ -104,7 +106,6 @@ def gen_html(pub, target_dir):
 			continue
 		text.append('<a href="pubs/%s_%s">[%s]</a>&nbsp;&nbsp;' % (pub['label'], pub['files'][ending], ending))
 
-
 	for line in ('''<a href="javascript:;" onClick="
 if (document.getElementById('bib%(num)s').style.display == 'block') {
 document.getElementById('bib%(num)s').style.display='none';
@@ -112,6 +113,14 @@ document.getElementById('bib%(num)s').style.display='none';
 document.getElementById('bib%(num)s').style.display='block';
 }
 ">[bib]</a>
+&nbsp;&nbsp;
+<a href="javascript:;" onClick="
+if (document.getElementById('abstract%(num)s').style.display == 'block') {
+document.getElementById('abstract%(num)s').style.display='none';
+} else {
+document.getElementById('abstract%(num)s').style.display='block';
+}
+">[abstract]</a>
 &nbsp;&nbsp;
 <a href="javascript:;" onClick="
 if (document.getElementById('extra%(num)s').style.display == 'block') {
@@ -129,6 +138,25 @@ document.getElementById('extra%(num)s').style.display='block';
 \t\t</code>
 \t</blockquote>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/%(label)s.bib">bib as a file</a>
+</div>
+''' % fields).split('\n'):
+		text.append(line)
+
+	for line in('''<div id="abstract%(num)s" style="display: none;margin-left:20px;" style="text-align:right;">
+\t<p>''' % fields).split('\n'):
+		text.append(line)
+	if 'abstract' in fields:
+		text.append('<p>')
+		for line in fields['abstract'].split('\n'):
+			if len(line.strip()) == 0:
+				text.append('</p>')
+				text.append('<p>')
+			else:
+				text.append('\t\t\t' + line)
+		text.append('</p>')
+	else:
+		text.append('\t\t\t' + "No abstract available")
+	for line in ('''\t</p>
 </div>
 ''' % fields).split('\n'):
 		text.append(line)
@@ -160,6 +188,7 @@ def get_pub_info_for_file(filename, data_dir, target_dir):
 
 	cur = None
 	num = 0
+	in_abstract = False
 	for line in open(filename, 'rU'):
 		if len(line) > 0:
 			line = line[:-1]
@@ -182,33 +211,47 @@ def get_pub_info_for_file(filename, data_dir, target_dir):
 				num += 1
 			elif '=' in line:
 				nline = line.strip().split(' = ')
-				data = nline[1][1:-1]
+				data = nline[1][1:]
+				if data[-1] == ',':
+					data = data[:-1]
 				if data[-1] == '}':
 					data = data[:-1]
-				cur[nline[0].strip()] = data
+				name = nline[0].strip()
+				cur[name] = data
+				in_abstract = (name == 'abstract')
+			elif in_abstract:
+				line = line.strip()
+				if line[-2] == '}':
+					line = line[:-2]
+				cur['abstract'] += '\n\n' + line
 		if cur is not None:
-			cur['bib'].append(line)
+			if not in_abstract:
+				cur['bib'].append(line)
 	return pubs
 
 def replace_pub_ref(line, config, page_name, url_base, target_dir, pub_info):
 	ans = []
 	if "%(pubs)s" in line:
-		pubs = {}
-		for pub in pub_info:
-			info = pub_info[pub]
-			if info['year'] not in pubs:
-				pubs[info['year']] = []
-			pubs[info['year']].append(info)
-		years = pubs.keys()
-		years.sort(reverse=True)
-		for year in years:
-			ans.append('<h4>%s</h4>' % year)
-			ans.append('<div style="margin-left:60px;margin-top:-40px;">')
-			for info in pubs[year]:
-				ans.append('<p style="margin:0px 0px 10px 0px;">')
-				ans += info['html']
-				ans.append('</p>')
-			ans.append('</div>')
+		for area in ['NLP', 'Other']:
+			ans.append('<h3>%s</h3>' % area)
+			pubs = {}
+			for pub in pub_info:
+				info = pub_info[pub]
+				if info['area'] != area:
+					continue
+				if info['year'] not in pubs:
+					pubs[info['year']] = []
+				pubs[info['year']].append(info)
+			years = pubs.keys()
+			years.sort(reverse=True)
+			for year in years:
+				ans.append('<h4>%s</h4>' % year)
+				ans.append('<div style="margin-left:60px;margin-top:-40px;">')
+				for info in pubs[year]:
+					ans.append('<p style="margin:0px 0px 10px 0px;">')
+					ans += info['html']
+					ans.append('</p>')
+				ans.append('</div>')
 	else:
 		label = '_'.join(line[6:-2].split(':'))
 		if label not in pub_info:
