@@ -253,7 +253,11 @@ def replace_pub_ref(line, config, page_name, url_base, target_dir, pub_info):
 					ans.append('</p>')
 				ans.append('</div>')
 	else:
-		label = '_'.join(line[6:-2].split(':'))
+		if line.startswith("%(pub:"):
+			line = line[6:]
+		if line.endswith(")s"):
+			line = line[:-2]
+		label = '_'.join(line.split(':'))
 		if label not in pub_info:
 			print label, "is not a valid publication label"
 		info = pub_info[label]

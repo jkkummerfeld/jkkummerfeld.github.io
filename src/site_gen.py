@@ -50,15 +50,16 @@ if __name__ == '__main__':
 	for key in config:
 		print key + '\t' + config[key].__str__()
 	print
-
+	user_response = raw_input("Run? (check directories)")
+	if 'n' in user_response.lower():
+		sys.exit(0)
 
 	# Clean up the target space
 	if len(glob.glob(target_dir)) != 0:
 		os.system('rm -r %s/docs' % target_dir)
 		os.system('rm -r %s/images' % target_dir)
 		os.system('rm -r %s/pubs' % target_dir)
-	#os.system('mkdir %s' % target_dir)
-	os.system('mkdir %s/docs' % target_dir)
+	os.system('mkdir -p %s/docs' % target_dir)
 	os.system('mkdir %s/images' % target_dir)
 	os.system('mkdir %s/pubs' % target_dir)
 	os.system('cp %s/templates/* %s/.' % (data_dir, target_dir))
