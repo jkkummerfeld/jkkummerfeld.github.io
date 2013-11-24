@@ -20,7 +20,7 @@ def gen_html(pub, target_dir):
 		fields['author'] = pub['author']
 		author_list = pub['author'].split(' and ')
 		if len(author_list) > 2:
-			fields['author'] = ', '.join(author_list[:-1]) + ' and ' + author_list[-1]
+			fields['author'] = ', '.join(author_list[:-1]) + ', and ' + author_list[-1]
 	# title
 	if 'title' in pub:
 		fields['title'] = pub['title']
