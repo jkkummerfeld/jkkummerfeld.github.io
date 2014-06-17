@@ -66,7 +66,7 @@ def gen_html(pub, target_dir):
           break
       year = cite['year']
       text = ['<p>']
-      text.append('%s, %s, %s, %s' % (title, author, venue, year))
+      text.append('%s,\n<br \>\n%s, %s, %s' % (title, author, venue, year))
       text.append('<p/>')
       pre_sort.append((int(year), text))
     pre_sort.sort(reverse=True)
