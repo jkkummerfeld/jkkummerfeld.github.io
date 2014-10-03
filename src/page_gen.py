@@ -22,7 +22,7 @@ def gen_menu(depth, page_names, url_base):
       name = name.split('|')[0]
     info = {'location': name + '.html', 'name': label, 'url_base': url_base}
     ans += tab + '<ul class="menu_links">\n'
-    ans += tab + '\t' + ('<li><a href="%(url_base)s%(location)s">%(name)s</a></li>\n' % info)
+    ans += tab + '\t' + ('<li class="menu_links"><a href="%(url_base)s%(location)s">%(name)s</a></li>\n' % info)
     ans += tab + '</ul>\n'
   return ans
 
