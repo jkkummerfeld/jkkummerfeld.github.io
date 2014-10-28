@@ -35,11 +35,16 @@ def gen_html(pub, target_dir):
     if option in pub:
       fields['venue'] = pub[option]
       break
+  if 'shortvenue' in pub:
+    fields['venue'] = pub['shortvenue']
   # year
   if 'year' in pub:
     if 'month' in pub:
       fields['date'] = pub['month'] + " "
     fields['date'] += pub['year']
+    fields['year'] = ''
+    if 'school' not in pub:
+      fields['year'] += pub['year']
   # location
   if 'address' in pub:
     fields['location'] = pub['address']
@@ -95,9 +100,7 @@ def gen_html(pub, target_dir):
   text.append('<br />')
   text.append('%(author)s' % fields)
   text.append('<br />')
-  text.append('%(venue)s, %(date)s' % fields)
-  if 'pages' in fields:
-    text[-1] += ', pages %(pages)s' % fields
+  text.append('%(venue)s %(year)s' % fields)
 
   text.append('<br />')
   if 'software' in fields:
