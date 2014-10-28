@@ -104,7 +104,9 @@ def gen_html(pub, target_dir):
     text.append('<a href="%s">[software]</a>&nbsp;&nbsp;' % (fields['software']))
   if 'url' in fields:
     text.append('<a href="%s">[paper]</a>&nbsp;&nbsp;' % (fields['url']))
-  for ending in pub['files']:
+  endings = pub['files'].keys()
+  endings.sort()
+  for ending in endings:
     if ending == 'paper' and 'url' in fields:
       continue
     text.append('<a href="pubs/%s_%s">[%s]</a>&nbsp;&nbsp;' % (pub['label'], pub['files'][ending], ending))

@@ -67,7 +67,8 @@ if __name__ == '__main__':
   os.system('cp -R %s/docs/* %s/docs/.' % (data_dir, target_dir))
   os.system('cp -R %s/pubs/publications.bib %s/pubs/jonathan_k_kummerfeld_publications.bib' % (data_dir, target_dir))
   os.system('rm -rf %s/pubs/citations*' % (target_dir))
-  os.system('cp -R %s/pubs/*/*_talk* %s/pubs/.' % (data_dir, target_dir))
+  os.system('cp -R %s/pubs/*/*_keynote* %s/pubs/.' % (data_dir, target_dir))
+  os.system('cp -R %s/pubs/*/*_slides* %s/pubs/.' % (data_dir, target_dir))
   os.system('cp -R %s/pubs/*/*_poster* %s/pubs/.' % (data_dir, target_dir))
 
   # Construct publication info
