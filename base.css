@@ -1,11 +1,11 @@
 html {
-	background-color:#666;
+	background-color:#DDD;
 	overflow-y: scroll;
 }
 
 div.container {
 	margin: 0 auto;
-	background-color:#CCC;
+	background-color:#FFF;
 	width:85%;
 }
 
