@@ -73,17 +73,99 @@
 				</p>
 				
 				<h3>NLP</h3>
+				<h4>2016</h4>
+				<div style="margin-left:60px;margin-top:-40px;">
+				<p style="margin:0px 0px 10px 0px;">
+				<a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-138.html">Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output</a>
+				<br />
+				Jonathan K. Kummerfeld
+				<br />
+				EECS Department, University of California, Berkeley 
+				<br />
+				<a href="https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-138.html">[paper]</a>&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('bib10').style.display == 'block') {
+				document.getElementById('bib10').style.display='none';
+				} else {
+				document.getElementById('bib10').style.display='block';
+				}
+				">[bib]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('abstract10').style.display == 'block') {
+				document.getElementById('abstract10').style.display='none';
+				} else {
+				document.getElementById('abstract10').style.display='block';
+				}
+				">[abstract]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('extra10').style.display == 'block') {
+				document.getElementById('extra10').style.display='none';
+				} else {
+				document.getElementById('extra10').style.display='block';
+				}
+				">[other info]</a>
+				<div id="bib10" style="display: none;margin-left:-40px;" style="text-align:right;">
+					<blockquote>
+						<code>
+							<pre>
+@PhDThesis{Kummerfeld:2016:PhD,
+  title     = {Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output},
+  author    = {Jonathan K. Kummerfeld},
+  year      = {2016},
+  month     = {Aug},
+  address   = {Berkeley, CA, USA},
+  school    = {EECS Department, University of California, Berkeley},
+  number    = {UCB/EECS-2016-138},
+  url       = {https://www2.eecs.berkeley.edu/Pubs/TechRpts/2016/EECS-2016-138.html},
+  area      = {NLP},
+}
+							</pre>
+						</code>
+					</blockquote>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld_2016_PhD.bib">bib as a file</a>
+				</div>
+				
+				<div id="abstract10" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+				<p>
+							Representation of syntactic structure is a core area of research in Computational Linguistics, disambiguating distinctions in meaning that are crucial for correct interpretation of language. Development of algorithms and statistical models over the past three decades has led to systems that are accurate enough to be deployed in industry, playing a key role in products such as Google Search and Apple Siri. However, syntactic parsers today are usually constrained to tree representations of language, and performance is interpreted through a single metric that conveys no linguistic information regarding remaining errors.
+				</p>
+				<p>
+							In this dissertation, we present new algorithms for error analysis and parsing. The heart of our approach to error analysis is the use of structural transformations to identify more meaningful classes of errors, and to enable comparisons across formalisms. For parsing, we combine a novel dynamic program with careful choices in syntactic representation to create an efficient parser that produces graph structured output. Together, these developments allowed us to evaluate the outstanding challenges in parsing and to address a key weakness in current work.
+				</p>
+				<p>
+							First, we present a search algorithm that, given two structures, finds a sequence of modifications leading from one structure to the other. We applied this algorithm to syntactic error analysis, where one structure is the output of a parser, the other is the correct parse, and each modification corresponds to fixing one error. We constructed a tool based on the algorithm and analyzed variations in behavior between parsers, types of text, and languages. Our observations shine light on several assumptions about syntactic errors, showing some to be true and others to be false. For example, prepositional phrase attachment errors are indeed a major issue, while coordination scope errors do not hurt performance as much as expected.
+				</p>
+				<p>
+							Next, we describe an algorithm that builds a parse in one syntactic representation to match a parse in another representation. Specifically, we build phrase structure parses from Combinatory Categorial Grammar derivations. Our approach follows the philosophy of CCG, defining specific phrase structures for each lexical category and generic rules for combinatory steps. The new parse is built by following the CCG derivation bottom-up, gradually building the corresponding phrase structure parse. This produced significantly more accurate parses than past work, and enabled us to compare performance of several parsers across formalisms.
+				</p>
+				<p>
+							Finally, we address a weakness we observed in phrase structure parsers: the exclusion of syntactic trace structures for computational convenience. We present an efficient dynamic programming algorithm that constructs the graph structure that has the highest score under an edge-factored scoring function. We define a parse representation compatible with the algorithm, and show how certain linguistic distinctions dramatically impact coverage. We also show various ways to modify the algorithm to improve performance by exploiting properties of observed linguistic structure. This approach to syntactic parsing is the first to cover virtually all structure encoded in the Penn Treebank.
+				</p>
+					</p>
+				</div>
+				
+				<div id="extra10" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+							No citations for this paper yet - be the first! Click the bib button and copy and paste it into your next paper :-)
+					</p>
+				</div>
+				
+				</p>
+				</div>
 				<h4>2015</h4>
 				<div style="margin-left:60px;margin-top:-40px;">
 				<p style="margin:0px 0px 10px 0px;">
-				<a href="pubs/Kummerfeld-etal_2015_EMNLP_paper.pdf">An Empirical Analysis of Optimization for Max-Margin NLP</a>
+				<a href="http://aclweb.org/anthology/D/D15/D15-1032.pdf">An Empirical Analysis of Optimization for Max-Margin NLP</a>
 				<br />
 				Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, and Dan Klein
 				<br />
 				EMNLP 2015
 				<br />
 				<a href="https://github.com/tberg12/murphy">[software]</a>&nbsp;&nbsp;
-				<a href="pubs/Kummerfeld-etal_2015_EMNLP_paper.pdf">[paper]</a>&nbsp;&nbsp;
+				<a href="http://aclweb.org/anthology/D/D15/D15-1032.pdf">[paper]</a>&nbsp;&nbsp;
 				<a href="pubs/Kummerfeld-etal_2015_EMNLP_poster.pdf">[poster]</a>&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
 				if (document.getElementById('bib0').style.display == 'block') {
@@ -120,7 +202,8 @@
   month     = {September},
   year      = {2015},
   address   = {Lisbon, Portugal},
-  pages     = {},
+  pages     = {273--279},
+  url       = {http://aclweb.org/anthology/D/D15/D15-1032.pdf},
   software  = {https://github.com/tberg12/murphy},
   area      = {NLP},
 }
@@ -140,7 +223,17 @@
 				
 				<div id="extra0" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
-							No citations for this paper yet - be the first! Click the bib button and copy and paste it into your next paper :-)
+							<p>Citations:</p>
+							<p>
+							Using accelerometers to remotely and automatically characterize behavior in small animals,
+<br \>
+Talisin T. Hammond, Dwight Springthorpe, Rachel E. Walsh, and Taylor Berg-Kirkpatrick, Journal of Experimental Biology, 2016
+							<p/>
+							<p>
+							Joint Models for Extracting Adverse Drug Events from Biomedical Text,
+<br \>
+Fei Li, Yue Zhang, Meishan Zhang, Donghong Ji, IJCAI, 2016
+							<p/>
 					</p>
 				</div>
 				
@@ -215,6 +308,16 @@
 				<div id="extra2" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 							<p>Citations:</p>
+							<p>
+							Visual Development \& Analysis of Coreference Resolution Systems with CORVIDAE,
+<br \>
+Nico Moller and Gunther Heidemann, Visualization and Interaction for Ontologies and Linked Data, 2016
+							<p/>
+							<p>
+							Error analysis for anaphora resolution in Russian: new challenging issues for anaphora resolution task in a morphologically rich language,
+<br \>
+Svetlana Toldova, Ilya Azerkovich, Anna Roytberg, Alina Ladygina, and Maria Vasilyeva, Workshop on Coreference Resolution Beyond OntoNotes (CORBON 2016), 2016
+							<p/>
 							<p>
 							Using Lexical and Encyclopedic Knowledge,
 <br \>
@@ -333,6 +436,11 @@ Tim O'Keefe, Kellie Webster, James R. Curran, and Irena Koprinska, ALTA, 2013
 				<div id="extra3" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 							<p>Citations:</p>
+							<p>
+							Research on Chinese Parsing Based on the Improved Compositional Vector Grammar,
+<br \>
+Jingyi Li, Lingling Mu, Hongying Zan, and Kunli Zhang, 16th Workshop, CLSW 2015, Revised Selected Papers, 2015
+							<p/>
 							<p>
 							Parsing Chinese with a Generalized Categorial Grammar,
 <br \>
@@ -513,6 +621,11 @@ Xiaotian Zhang, Hai Zhao, and Cong Hui, CoLing, 2012
 					<p>
 							<p>Citations:</p>
 							<p>
+							A Protocol for Annotating ParserDifferences,
+<br \>
+James V. Bruno, Aoife Cahill, and Binod Gyawali, ETS Research Reports, 2016
+							<p/>
+							<p>
 							What is hard in Universal Dependency Parsing?,
 <br \>
 Angelika Kirilina and Yannick Versleya, Proceedings of the 6th Workshop on Statistical Parsing of Morphologically Rich Languages (SPMRL 2015), 2015
@@ -640,6 +753,16 @@ Hanna Fadida, Alon Itai, and Shuly Wintner, LREC, 2013
 				<div id="extra6" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 							<p>Citations:</p>
+							<p>
+							Improving mention detection for Basque based on a deep error analysis,
+<br \>
+Ander Soraluze, Olatz Arregi, Xabier Arregi, and Arantza Diaz de Ilarraza, Natural Language Engineering, 2016
+							<p/>
+							<p>
+							ARRAU: Linguistically-Motivated Annotation of Anaphoric Descriptions,
+<br \>
+Olga Uryupina, Ron Artstein, Antonella Bristot, Federica Cavicchio, Kepa J. Rodriguez, and Massimo Poesio, LREC, 2016
+							<p/>
 							<p>
 							Removing the Training Wheels: A Coreference Dataset that Entertains Humans and Challenges Computers,
 <br \>
@@ -875,157 +998,6 @@ Yue Zhanga, Byung-Gyu Ahn, Stephen Clark, Curt Van Wyk, James R. Curran, and Lau
 				<a href="pubs/Kummerfeld-Roesner-Curran_2009_ALTA_slides.pdf">[slides]</a>&nbsp;&nbsp;
 				<a href="pubs/Kummerfeld-Roesner-Curran_2009_ALTA_talk.pdf">[talk]</a>&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('bib11').style.display == 'block') {
-				document.getElementById('bib11').style.display='none';
-				} else {
-				document.getElementById('bib11').style.display='block';
-				}
-				">[bib]</a>
-				&nbsp;&nbsp;
-				<a href="javascript:;" onClick="
-				if (document.getElementById('abstract11').style.display == 'block') {
-				document.getElementById('abstract11').style.display='none';
-				} else {
-				document.getElementById('abstract11').style.display='block';
-				}
-				">[abstract]</a>
-				&nbsp;&nbsp;
-				<a href="javascript:;" onClick="
-				if (document.getElementById('extra11').style.display == 'block') {
-				document.getElementById('extra11').style.display='none';
-				} else {
-				document.getElementById('extra11').style.display='block';
-				}
-				">[other info]</a>
-				<div id="bib11" style="display: none;margin-left:-40px;" style="text-align:right;">
-					<blockquote>
-						<code>
-							<pre>
-@InProceedings{Kummerfeld-Roesner-Curran:2009:ALTA,
-  title     = {Faster parsing and supertagging model estimation},
-  author    = {Jonathan K. Kummerfeld and Jessika Roesner and James R. Curran},
-  booktitle = {Proceedings of the Australasian Language Technology Association Workshop 2009},
-  shortvenue = {ALTA},
-  year      = {2009},
-  pages     = {62--70},
-  address   = {Sydney, Australia},
-  month     = {December},
-  url       = {http://www.aclweb.org/anthology/U/U09/U09-1009.pdf},
-  area      = {NLP},
-}
-							</pre>
-						</code>
-					</blockquote>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Roesner-Curran_2009_ALTA.bib">bib as a file</a>
-				</div>
-				
-				<div id="abstract11" style="display: none;margin-left:20px;" style="text-align:right;">
-					<p>
-				<p>
-							Parsers are often the bottleneck for data acquisition, processing text too slowly to be widely applied. One way to improve the efficiency of parsers is to construct more confident statistical models. More training data would enable the use of more sophisticated features and also provide more evidence for current features, but gold standard annotated data is limited and expensive to produce.
-				</p>
-				<p>
-							We demonstrate faster methods for training a supertagger using hundreds of millions of automatically annotated words, constructing statistical models that further constrain the number of derivations the parser must consider. By introducing new features and using an automatically annotated corpus we are able to double parsing speed on Wikipedia and the Wall Street Journal, and gain accuracy slightly when parsing Section 00 of the Wall Street Journal.
-				</p>
-					</p>
-				</div>
-				
-				<div id="extra11" style="display: none;margin-left:20px;" style="text-align:right;">
-					<p>
-							No citations for this paper yet - be the first! Click the bib button and copy and paste it into your next paper :-)
-					</p>
-				</div>
-				
-				</p>
-				<p style="margin:0px 0px 10px 0px;">
-				Adaptive Supertagging for Faster Parsing
-				<br />
-				Jonathan K. Kummerfeld
-				<br />
-				The University of Sydney 
-				<br />
-				<a href="pubs/Kummerfeld_2009_Honours_poster.pdf">[poster]</a>&nbsp;&nbsp;
-				<a href="pubs/Kummerfeld_2009_Honours_slides.pdf">[slides]</a>&nbsp;&nbsp;
-				<a href="pubs/Kummerfeld_2009_Honours_talk.pdf">[talk]</a>&nbsp;&nbsp;
-				<a href="pubs/Kummerfeld_2009_Honours_thesis.pdf">[thesis]</a>&nbsp;&nbsp;
-				<a href="javascript:;" onClick="
-				if (document.getElementById('bib10').style.display == 'block') {
-				document.getElementById('bib10').style.display='none';
-				} else {
-				document.getElementById('bib10').style.display='block';
-				}
-				">[bib]</a>
-				&nbsp;&nbsp;
-				<a href="javascript:;" onClick="
-				if (document.getElementById('abstract10').style.display == 'block') {
-				document.getElementById('abstract10').style.display='none';
-				} else {
-				document.getElementById('abstract10').style.display='block';
-				}
-				">[abstract]</a>
-				&nbsp;&nbsp;
-				<a href="javascript:;" onClick="
-				if (document.getElementById('extra10').style.display == 'block') {
-				document.getElementById('extra10').style.display='none';
-				} else {
-				document.getElementById('extra10').style.display='block';
-				}
-				">[other info]</a>
-				<div id="bib10" style="display: none;margin-left:-40px;" style="text-align:right;">
-					<blockquote>
-						<code>
-							<pre>
-@PhDThesis{Kummerfeld:2009:Honours,
-  title     = {Adaptive Supertagging for Faster Parsing},
-  author    = {Jonathan K. Kummerfeld},
-  school    = {The University of Sydney},
-  year      = {2009},
-  address   = {Sydney, Australia},
-  area      = {NLP},
-}
-							</pre>
-						</code>
-					</blockquote>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld_2009_Honours.bib">bib as a file</a>
-				</div>
-				
-				<div id="abstract10" style="display: none;margin-left:20px;" style="text-align:right;">
-					<p>
-				<p>
-							Statistical parsers are crucial for tackling the grand challenges of Natural Language Processing. The most effective approaches to these tasks are data driven, but parsers are too slow to be effectively used on large data sets. State-of-the-art parsers generally cannot process more than one sentence a second, and the fastest cannot process more than fifty sentences a second. The situation is even worse when they are applied outside of the domain of their training data. The fastest systems have two components, a parser, which has time complexity O(n3) and a supertagger, which has linear time complexity. By shifting work from the parser to the supertagger we dramatically improve speed.
-				</p>
-				<p>
-							This work demonstrates several major novel ideas that improve parsing efficiency. The core idea is that the tags chosen by the parser are gold standard data for its supertagger. This leads to the second surprising conceptual development, that decreasing tagging accuracy can improve parsing performance. To demonstrate these ideas required extensive development of the C&C supertagger, including imple- mentation of more efficient estimation algorithms and parallelisation of the training process. This was particularly challenging as the C&C supertagger is a state-of-the-art high performance system designed with a focus on speed rather than flexibility.
-				</p>
-				<p>
-							I was able to significantly improve performance on the standard evaluation corpus by using the parser to generate extremely large new resources for supertagger training. I have also shown that these methods provide significant benefits on another domain, Wikipedia text, without the cost of generating human annotated data sets. These parsing performance gains occur while supertagging accuracy decreases.
-				</p>
-				<p>
-							Despite extensive use of supertaggers to improve parsing efficiency there has been no comprehensive study of the interaction between a supertagger and a parser. I present the first systematic exploration of the relationship, show the potential benefits of understanding it, and demonstrate a novel algorithm for optimising the parameters that define it.
-				</p>
-				<p>
-							I have constructed models that process newspaper text 86\% faster than previously, and Wikipedia text 30\% faster, without any loss in accuracy and without the aid of extra gold standard resources in either domain. This work will lead directly to improvements in a range of Natural Language Processing tasks by enabling the use of far more parsed data.
-				</p>
-					</p>
-				</div>
-				
-				<div id="extra10" style="display: none;margin-left:20px;" style="text-align:right;">
-					<p>
-							No citations for this paper yet - be the first! Click the bib button and copy and paste it into your next paper :-)
-					</p>
-				</div>
-				
-				</p>
-				<p style="margin:0px 0px 10px 0px;">
-				<a href="pubs/Clark-etal_2009_JHU_paper.pdf">Large-Scale Syntactic Processing: Parsing the Web</a>
-				<br />
-				Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, Jonathan Kummerfeld, and Tim Dawborn
-				<br />
-				Johns Hopkins University 2009
-				<br />
-				<a href="pubs/Clark-etal_2009_JHU_paper.pdf">[paper]</a>&nbsp;&nbsp;
-				<a href="pubs/Clark-etal_2009_JHU_slides.pdf">[slides]</a>&nbsp;&nbsp;
-				<a href="javascript:;" onClick="
 				if (document.getElementById('bib12').style.display == 'block') {
 				document.getElementById('bib12').style.display='none';
 				} else {
@@ -1052,6 +1024,157 @@ Yue Zhanga, Byung-Gyu Ahn, Stephen Clark, Curt Van Wyk, James R. Curran, and Lau
 					<blockquote>
 						<code>
 							<pre>
+@InProceedings{Kummerfeld-Roesner-Curran:2009:ALTA,
+  title     = {Faster parsing and supertagging model estimation},
+  author    = {Jonathan K. Kummerfeld and Jessika Roesner and James R. Curran},
+  booktitle = {Proceedings of the Australasian Language Technology Association Workshop 2009},
+  shortvenue = {ALTA},
+  year      = {2009},
+  pages     = {62--70},
+  address   = {Sydney, Australia},
+  month     = {December},
+  url       = {http://www.aclweb.org/anthology/U/U09/U09-1009.pdf},
+  area      = {NLP},
+}
+							</pre>
+						</code>
+					</blockquote>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Roesner-Curran_2009_ALTA.bib">bib as a file</a>
+				</div>
+				
+				<div id="abstract12" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+				<p>
+							Parsers are often the bottleneck for data acquisition, processing text too slowly to be widely applied. One way to improve the efficiency of parsers is to construct more confident statistical models. More training data would enable the use of more sophisticated features and also provide more evidence for current features, but gold standard annotated data is limited and expensive to produce.
+				</p>
+				<p>
+							We demonstrate faster methods for training a supertagger using hundreds of millions of automatically annotated words, constructing statistical models that further constrain the number of derivations the parser must consider. By introducing new features and using an automatically annotated corpus we are able to double parsing speed on Wikipedia and the Wall Street Journal, and gain accuracy slightly when parsing Section 00 of the Wall Street Journal.
+				</p>
+					</p>
+				</div>
+				
+				<div id="extra12" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+							No citations for this paper yet - be the first! Click the bib button and copy and paste it into your next paper :-)
+					</p>
+				</div>
+				
+				</p>
+				<p style="margin:0px 0px 10px 0px;">
+				Adaptive Supertagging for Faster Parsing
+				<br />
+				Jonathan K. Kummerfeld
+				<br />
+				The University of Sydney 
+				<br />
+				<a href="pubs/Kummerfeld_2009_Honours_poster.pdf">[poster]</a>&nbsp;&nbsp;
+				<a href="pubs/Kummerfeld_2009_Honours_slides.pdf">[slides]</a>&nbsp;&nbsp;
+				<a href="pubs/Kummerfeld_2009_Honours_talk.pdf">[talk]</a>&nbsp;&nbsp;
+				<a href="pubs/Kummerfeld_2009_Honours_thesis.pdf">[thesis]</a>&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('bib11').style.display == 'block') {
+				document.getElementById('bib11').style.display='none';
+				} else {
+				document.getElementById('bib11').style.display='block';
+				}
+				">[bib]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('abstract11').style.display == 'block') {
+				document.getElementById('abstract11').style.display='none';
+				} else {
+				document.getElementById('abstract11').style.display='block';
+				}
+				">[abstract]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('extra11').style.display == 'block') {
+				document.getElementById('extra11').style.display='none';
+				} else {
+				document.getElementById('extra11').style.display='block';
+				}
+				">[other info]</a>
+				<div id="bib11" style="display: none;margin-left:-40px;" style="text-align:right;">
+					<blockquote>
+						<code>
+							<pre>
+@PhDThesis{Kummerfeld:2009:Honours,
+  title     = {Adaptive Supertagging for Faster Parsing},
+  author    = {Jonathan K. Kummerfeld},
+  school    = {The University of Sydney},
+  year      = {2009},
+  address   = {Sydney, Australia},
+  area      = {NLP},
+}
+							</pre>
+						</code>
+					</blockquote>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld_2009_Honours.bib">bib as a file</a>
+				</div>
+				
+				<div id="abstract11" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+				<p>
+							Statistical parsers are crucial for tackling the grand challenges of Natural Language Processing. The most effective approaches to these tasks are data driven, but parsers are too slow to be effectively used on large data sets. State-of-the-art parsers generally cannot process more than one sentence a second, and the fastest cannot process more than fifty sentences a second. The situation is even worse when they are applied outside of the domain of their training data. The fastest systems have two components, a parser, which has time complexity O(n3) and a supertagger, which has linear time complexity. By shifting work from the parser to the supertagger we dramatically improve speed.
+				</p>
+				<p>
+							This work demonstrates several major novel ideas that improve parsing efficiency. The core idea is that the tags chosen by the parser are gold standard data for its supertagger. This leads to the second surprising conceptual development, that decreasing tagging accuracy can improve parsing performance. To demonstrate these ideas required extensive development of the C&C supertagger, including imple- mentation of more efficient estimation algorithms and parallelisation of the training process. This was particularly challenging as the C&C supertagger is a state-of-the-art high performance system designed with a focus on speed rather than flexibility.
+				</p>
+				<p>
+							I was able to significantly improve performance on the standard evaluation corpus by using the parser to generate extremely large new resources for supertagger training. I have also shown that these methods provide significant benefits on another domain, Wikipedia text, without the cost of generating human annotated data sets. These parsing performance gains occur while supertagging accuracy decreases.
+				</p>
+				<p>
+							Despite extensive use of supertaggers to improve parsing efficiency there has been no comprehensive study of the interaction between a supertagger and a parser. I present the first systematic exploration of the relationship, show the potential benefits of understanding it, and demonstrate a novel algorithm for optimising the parameters that define it.
+				</p>
+				<p>
+							I have constructed models that process newspaper text 86\% faster than previously, and Wikipedia text 30\% faster, without any loss in accuracy and without the aid of extra gold standard resources in either domain. This work will lead directly to improvements in a range of Natural Language Processing tasks by enabling the use of far more parsed data.
+				</p>
+					</p>
+				</div>
+				
+				<div id="extra11" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+							No citations for this paper yet - be the first! Click the bib button and copy and paste it into your next paper :-)
+					</p>
+				</div>
+				
+				</p>
+				<p style="margin:0px 0px 10px 0px;">
+				<a href="pubs/Clark-etal_2009_JHU_paper.pdf">Large-Scale Syntactic Processing: Parsing the Web</a>
+				<br />
+				Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, Jonathan Kummerfeld, and Tim Dawborn
+				<br />
+				Johns Hopkins University 2009
+				<br />
+				<a href="pubs/Clark-etal_2009_JHU_paper.pdf">[paper]</a>&nbsp;&nbsp;
+				<a href="pubs/Clark-etal_2009_JHU_slides.pdf">[slides]</a>&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('bib13').style.display == 'block') {
+				document.getElementById('bib13').style.display='none';
+				} else {
+				document.getElementById('bib13').style.display='block';
+				}
+				">[bib]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('abstract13').style.display == 'block') {
+				document.getElementById('abstract13').style.display='none';
+				} else {
+				document.getElementById('abstract13').style.display='block';
+				}
+				">[abstract]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('extra13').style.display == 'block') {
+				document.getElementById('extra13').style.display='none';
+				} else {
+				document.getElementById('extra13').style.display='block';
+				}
+				">[other info]</a>
+				<div id="bib13" style="display: none;margin-left:-40px;" style="text-align:right;">
+					<blockquote>
+						<code>
+							<pre>
 @TechReport{Clark-etal:2009:JHU,
   title     = {Large-Scale Syntactic Processing: Parsing the Web},
   author    = {Stephen Clark and Ann Copestake and James R. Curran and Yue Zhang and Aurelie Herbelot and James Haggerty and Byung-Gyu Ahn and Curt Van Wyk and Jessika Roesner and Jonathan Kummerfeld and Tim Dawborn},
@@ -1065,7 +1188,7 @@ Yue Zhanga, Byung-Gyu Ahn, Stephen Clark, Curt Van Wyk, James R. Curran, and Lau
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Clark-etal_2009_JHU.bib">bib as a file</a>
 				</div>
 				
-				<div id="abstract12" style="display: none;margin-left:20px;" style="text-align:right;">
+				<div id="abstract13" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 				<p>
 							Scalable syntactic processing will underpin the sophisticated language technology needed for next generation information access. Companies are already using nlp tools to create web-scale question answering and “semantic search” engines. Massive amounts of parsed web data will also allow the automatic creation of semantic knowledge resources on an unprecedented scale. The web is a challenging arena for syntactic parsing, because of its scale and variety of styles, genres, and domains.
@@ -1079,7 +1202,7 @@ Yue Zhanga, Byung-Gyu Ahn, Stephen Clark, Curt Van Wyk, James R. Curran, and Lau
 					</p>
 				</div>
 				
-				<div id="extra12" style="display: none;margin-left:20px;" style="text-align:right;">
+				<div id="extra13" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 							<p>Citations:</p>
 							<p>
@@ -1129,29 +1252,29 @@ Hongxian Wang, Qiang Zhou, and Liou Chen, Asia Pacific Signal and Information Pr
 				<a href="http://www.aclweb.org/anthology/U/U08/U08-1008.pdf">[paper]</a>&nbsp;&nbsp;
 				<a href="pubs/Kummerfeld-Curran_2008_ALTA_poster.eps">[poster]</a>&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('bib14').style.display == 'block') {
-				document.getElementById('bib14').style.display='none';
+				if (document.getElementById('bib15').style.display == 'block') {
+				document.getElementById('bib15').style.display='none';
 				} else {
-				document.getElementById('bib14').style.display='block';
+				document.getElementById('bib15').style.display='block';
 				}
 				">[bib]</a>
 				&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('abstract14').style.display == 'block') {
-				document.getElementById('abstract14').style.display='none';
+				if (document.getElementById('abstract15').style.display == 'block') {
+				document.getElementById('abstract15').style.display='none';
 				} else {
-				document.getElementById('abstract14').style.display='block';
+				document.getElementById('abstract15').style.display='block';
 				}
 				">[abstract]</a>
 				&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('extra14').style.display == 'block') {
-				document.getElementById('extra14').style.display='none';
+				if (document.getElementById('extra15').style.display == 'block') {
+				document.getElementById('extra15').style.display='none';
 				} else {
-				document.getElementById('extra14').style.display='block';
+				document.getElementById('extra15').style.display='block';
 				}
 				">[other info]</a>
-				<div id="bib14" style="display: none;margin-left:-40px;" style="text-align:right;">
+				<div id="bib15" style="display: none;margin-left:-40px;" style="text-align:right;">
 					<blockquote>
 						<code>
 							<pre>
@@ -1174,7 +1297,7 @@ Hongxian Wang, Qiang Zhou, and Liou Chen, Asia Pacific Signal and Information Pr
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Curran_2008_ALTA.bib">bib as a file</a>
 				</div>
 				
-				<div id="abstract14" style="display: none;margin-left:20px;" style="text-align:right;">
+				<div id="abstract15" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 				<p>
 							Manually maintaining comprehensive databases of multi-word expressions, for example Verb-Particle Constructions (VPCs), is infeasible. We describe a new classifier for potential VPCs, which uses information in the Google Web1T corpus to perform a simple linguistic constituency test. Specifically, we consider the fronting test, comparing the frequencies of the two possible orderings of the given verb and particle. Using only a small set of queries for each verb-particle pair, the system was able to achieve an F-score of 78.4\% in our evaluation while processing thousands of queries a second.
@@ -1182,7 +1305,7 @@ Hongxian Wang, Qiang Zhou, and Liou Chen, Asia Pacific Signal and Information Pr
 					</p>
 				</div>
 				
-				<div id="extra14" style="display: none;margin-left:20px;" style="text-align:right;">
+				<div id="extra15" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 							<p>Citations:</p>
 							<p>
@@ -1522,29 +1645,29 @@ R. Candelier, O. Dauchot, and G. Biroli, Europhysics Letters, 2010
 				<br />
 				<a href="http://pubs.acs.org/doi/abs/10.1021/jp804953r">[paper]</a>&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('bib13').style.display == 'block') {
-				document.getElementById('bib13').style.display='none';
+				if (document.getElementById('bib14').style.display == 'block') {
+				document.getElementById('bib14').style.display='none';
 				} else {
-				document.getElementById('bib13').style.display='block';
+				document.getElementById('bib14').style.display='block';
 				}
 				">[bib]</a>
 				&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('abstract13').style.display == 'block') {
-				document.getElementById('abstract13').style.display='none';
+				if (document.getElementById('abstract14').style.display == 'block') {
+				document.getElementById('abstract14').style.display='none';
 				} else {
-				document.getElementById('abstract13').style.display='block';
+				document.getElementById('abstract14').style.display='block';
 				}
 				">[abstract]</a>
 				&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('extra13').style.display == 'block') {
-				document.getElementById('extra13').style.display='none';
+				if (document.getElementById('extra14').style.display == 'block') {
+				document.getElementById('extra14').style.display='none';
 				} else {
-				document.getElementById('extra13').style.display='block';
+				document.getElementById('extra14').style.display='block';
 				}
 				">[other info]</a>
-				<div id="bib13" style="display: none;margin-left:-40px;" style="text-align:right;">
+				<div id="bib14" style="display: none;margin-left:-40px;" style="text-align:right;">
 					<blockquote>
 						<code>
 							<pre>
@@ -1566,7 +1689,7 @@ R. Candelier, O. Dauchot, and G. Biroli, Europhysics Letters, 2010
 				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Hudson-Harrowell_2008_JPhysChemB.bib">bib as a file</a>
 				</div>
 				
-				<div id="abstract13" style="display: none;margin-left:20px;" style="text-align:right;">
+				<div id="abstract14" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 				<p>
 							This paper considers the homogeneous packing of binary hard spheres in an equimolar stoichiometry, and postulates the densest packing at each sphere size ratio. Monte Carlo simulated annealing optimizations are seeded with all known atomic inorganic crystal structures, and the search is performed within the degrees of freedom associated with each homogeneous AB structure type. Structures isopointal to the FeB structure type are found to have the highest packing fraction at all sphere size ratios. The optimized structures match or improve on the best previously demonstrated packings of this type, and show that compound structures can pack more densely than segregated close-packed structures at all radius ratios less than 0.62.
@@ -1574,7 +1697,7 @@ R. Candelier, O. Dauchot, and G. Biroli, Europhysics Letters, 2010
 					</p>
 				</div>
 				
-				<div id="extra13" style="display: none;margin-left:20px;" style="text-align:right;">
+				<div id="extra14" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 							<p>Citations:</p>
 							<p>
@@ -1591,6 +1714,11 @@ Pierre Ronceray and Peter Harrowell, The Self Journal of Science, 2015
 							Binary nanoparticle superlattices of soft-particle systems,
 <br \>
 Alex Travesset, Proceedings of the National Academy of Sciences, 2015
+							<p/>
+							<p>
+							A Geometric-Structure Theory for Maximally Random Jammed Packings,
+<br \>
+Jianxiang Tian, Yaopengxiao Xu, Yang Jiao, and Salvatore Torquato, Scientific Reports, 2015
 							<p/>
 							<p>
 							On the Phase Behavior of Binary Mixtures of Nanoparticles,
