@@ -7,7 +7,7 @@
   year      = {2015},
   address   = {Lisbon, Portugal},
   pages     = {273--279},
-  url       = {http://aclweb.org/anthology/D/D15/D15-1032.pdf},
+  urlOldVersion    = {http://aclweb.org/anthology/D/D15/D15-1032.pdf},
   software  = {https://github.com/tberg12/murphy},
   abstract  = {Despite the convexity of structured max-margin objectives (Taskar et al., 2004; Tsochantaridis et al., 2004), the many ways to optimize them are not equally effective in practice. We compare a range of online optimization methods over a variety of structured NLP tasks (coreference, summarization, parsing, etc) and find several broad trends. First, margin methods do tend to outperform both likelihood and the perceptron. Second, for max-margin objectives, primal  optimization methods are often more robust and progress faster than dual methods. This advantage  is most pronounced for tasks with dense or continuous-valued features. Overall, we argue for a particularly simple online primal subgradient descent method that, despite being rarely mentioned in the literature, is surprisingly effective in relation to its alternatives.},
   area      = {NLP},
@@ -250,3 +250,18 @@ The focus of the research was the C&C parser (Clark and Curran, 2007c), a state-
   abstract  = {Manually maintaining comprehensive databases of multi-word expressions, for example Verb-Particle Constructions (VPCs), is infeasible. We describe a new classifier for potential VPCs, which uses information in the Google Web1T corpus to perform a simple linguistic constituency test. Specifically, we consider the fronting test, comparing the frequencies of the two possible orderings of the given verb and particle. Using only a small set of queries for each verb-particle pair, the system was able to achieve an F-score of 78.4\% in our evaluation while processing thousands of queries a second.},
   area      = {NLP},
 }
+
+@InProceedings{Portnoff-etal:2017:WWW,
+  title     = {Tools for Automated Analysis of Cybercriminal Markets},
+  author    = {Rebecca S. Portnoff, Sadia Afroz, Greg Durrett, Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, Damon McCoy, Kirill Levchenko, and Vern Paxson},
+  booktitle = {Proceedings of 26th International World Wide Web conference},
+  shortvenue = {WWW},
+  month     = {April},
+  year      = {2017},
+  address   = {Perth, Australia},
+  url       = {http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/proceedings/p657.pdf},
+  software  = {http://evidencebasedsecurity.org/forums/},
+  abstract  = {Underground forums are widely used by criminals to buy and sell a host of stolen items, datasets, resources, and criminal services.  These forums contain important resources for understanding cybercrime.  However, the number of forums, their size, and the domain expertise required to understand the markets makes manual exploration of these forums unscalable. In this work, we propose an automated, top-down approach for analyzing underground forums.  Our approach uses natural language processing and machine learning to automatically generate high-level information about underground forums, first identifying posts related to transactions, and then extracting products and prices. We also demonstrate, via a pair of case studies, how an analyst can use these automated approaches to investigate other categories of products and transactions. We use eight distinct forums to assess our tools: Antichat, Blackhat World, Carders, Darkode, Hack Forums, Hell, L33tCrew and Nulled. Our automated approach is fast and accurate, achieving over 80% accuracy in detecting post category, product, and prices.},
+  area      = {NLP},
+}
+
