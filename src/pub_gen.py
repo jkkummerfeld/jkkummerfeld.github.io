@@ -54,6 +54,8 @@ def gen_html(pub, target_dir):
   # software
   if 'software' in pub:
     fields['software'] = pub['software']
+  if 'data' in pub:
+    fields['data'] = pub['data']
   if 'abstract' in pub:
     fields['abstract'] = pub['abstract']
   # citations
@@ -105,6 +107,8 @@ def gen_html(pub, target_dir):
   text.append('<br />')
   if 'software' in fields:
     text.append('<a href="%s">[software]</a>&nbsp;&nbsp;' % (fields['software']))
+  if 'data' in fields:
+    text.append('<a href="%s">[data]</a>&nbsp;&nbsp;' % (fields['data']))
   if 'url' in fields:
     text.append('<a href="%s">[paper]</a>&nbsp;&nbsp;' % (fields['url']))
   elif 'paper' in pub['files']:

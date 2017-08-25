@@ -67,11 +67,47 @@
 				</ul>
 			</div>
 			<div class="content">
+				<h4>How much vegetarian pizza should I order?</h4>
 				<p>
-					I have a range of interests, including playing trumpet, running, and social dancing.  Recently I have attended swing dancing lessons organised by <a href="http://lindyonsproul.com/">Lindy on Sproul</a> and <a href="http://berkeleydancersden.com/">The Dancer's Den</a>.  I have also run both halves of the San Francisco Marathon (first half in 2012, second in 2013) and am looking forward to the <a href="http://berkeleyhalf.com/">Berkeley 10k</a> in November!
+				This question frequently comes up in the world of free food at university events. In my experience (as someone who does not eat meat pizzas), often not enough is ordered. Let's try to come up with a model to tell us how much to order. Set it up like this:
+				</p>
+				<ul>
+				  <li>There are N people.</li>
+				  <li>There are P pizzas.</li>
+				  <li>The fraction of people who are vegetarian is V.</li>
+				  <li>Assume everyone eats the same amount of pizza (and N/P is enough).</li>
+				  <li>Assume people randomly sample from the available pizzas, subject to the constraint that some eat only vegetarian pizzas.</li>
+				  <li>Assume all the pizza is eaten.</li>
+				</ul>
+				<p>
+				Now, let the fraction of vegetarian pizzas we get be k, and we can write down the number of vegetarian pizzas in two ways:
+				</p>
+				<ul>
+				  <li>How many we order: P * k</li>
+				  <li>How many are eaten: (pizzas eaten by vegetarians) + (vegetarian pizzas eaten by others) = (P / N) * (N * V) + (P / N) * (N * (1 - V)) * k</li>
+				</ul>
+				<p>
+				Since all the pizza we order is eaten, these are equal.
+				N and P are both positive numbers, so we can safely cancel the Ns and divide through by P, giving:
 				</p>
 				<p>
-					In the 2012-2013 academic year I was President of the <a href="http://csgsa.berkeley.edu/">Computer Science Graduate Student Association</a>.  This year I am a coordinator for the departmental TGIF events, which include lightning talks from current graduate students, food, drinks, and a great crowd of students and faculty.
+				V + (1 - V) * k = k
+				</p>
+				<p>
+				To satisfy this equation, k = 1. Therefore all the pizza should be vegetarian :)
+				</p>
+				<p>
+				Of course, these assumptions aren't quite right (for example, not everyone samples randomly from the available pizza), so here are some more useful suggestions too:
+				</p>
+				<ul>
+				  <li>Do order more than the proportion of vegetarians.</li>
+				  <li>Place the vegetarian pizza at the end of the line of pizzas, or in a separate location with clear signage discouraging non-vegetarians from eating it.</li>
+				  <li>Order a diverse set of popular meat pizzas (people tend to want variety, so this encourages them to try more meat pizzas).</li>
+				</ul>
+				<p>
+				Other peoples' thoughts on this question -
+				<a href="http://www.seriouseats.com/2014/07/etiquette-ordering-pizza-for-a-group-manner-matters.html">Serious Eats</a> and
+				<a href="https://www.quora.com/What-are-the-best-pizza-toppings-to-get-for-a-big-group">Quora</a>.
 				</p>
 				<p>
 					If you want to give me feedback about my site, research, software, or something else, Please e-mail me, or complete this form:

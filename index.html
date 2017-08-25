@@ -94,92 +94,68 @@
 				
 				<h3>Selected Publications</h3>
 				<p>
-				<a href="pubs/Kummerfeld-etal_2015_EMNLP_paper.pdf">An Empirical Analysis of Optimization for Max-Margin NLP</a>
+				<a href="https://arxiv.org/pdf/1707.04221.pdf">Parsing with Traces: An O(n^4) Algorithm and a Structural Representation</a>
 				<br />
-				Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, and Dan Klein
+				Jonathan K. Kummerfeld and Dan Klein
 				<br />
-				EMNLP 2015
+				TACL 2017
 				<br />
-				<a href="https://github.com/tberg12/murphy">[software]</a>&nbsp;&nbsp;
-				<a href="pubs/Kummerfeld-etal_2015_EMNLP_paper.pdf">[paper]</a>&nbsp;&nbsp;
-				<a href="pubs/Kummerfeld-etal_2015_EMNLP_poster.png">[poster]</a>&nbsp;&nbsp;
+				<a href="https://github.com/jkkummerfeld/1ec-graph-parser">[software]</a>&nbsp;&nbsp;
+				<a href="https://arxiv.org/pdf/1707.04221.pdf">[paper]</a>&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('bib0').style.display == 'block') {
-				document.getElementById('bib0').style.display='none';
+				if (document.getElementById('bib18').style.display == 'block') {
+				document.getElementById('bib18').style.display='none';
 				} else {
-				document.getElementById('bib0').style.display='block';
+				document.getElementById('bib18').style.display='block';
 				}
 				">[bib]</a>
 				&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('abstract0').style.display == 'block') {
-				document.getElementById('abstract0').style.display='none';
+				if (document.getElementById('abstract18').style.display == 'block') {
+				document.getElementById('abstract18').style.display='none';
 				} else {
-				document.getElementById('abstract0').style.display='block';
+				document.getElementById('abstract18').style.display='block';
 				}
 				">[abstract]</a>
 				&nbsp;&nbsp;
 				<a href="javascript:;" onClick="
-				if (document.getElementById('extra0').style.display == 'block') {
-				document.getElementById('extra0').style.display='none';
+				if (document.getElementById('extra18').style.display == 'block') {
+				document.getElementById('extra18').style.display='none';
 				} else {
-				document.getElementById('extra0').style.display='block';
+				document.getElementById('extra18').style.display='block';
 				}
 				">[other info]</a>
-				<div id="bib0" style="display: none;margin-left:-40px;" style="text-align:right;">
+				<div id="bib18" style="display: none;margin-left:-40px;" style="text-align:right;">
 					<blockquote>
 						<code>
 							<pre>
-@InProceedings{Kummerfeld-etal:2015:EMNLP,
-  title     = {An Empirical Analysis of Optimization for Max-Margin NLP},
-  author    = {Jonathan K. Kummerfeld  and  Taylor Berg-Kirkpatrick  and  Dan Klein},
-  booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing},
-  shortvenue = {EMNLP},
-  month     = {September},
-  year      = {2015},
-  address   = {Lisbon, Portugal},
-  pages     = {273--279},
-  urlOldVersion    = {http://aclweb.org/anthology/D/D15/D15-1032.pdf},
-  software  = {https://github.com/tberg12/murphy},
+@InProceedings{Kummerfeld-Klein:2017:TACL,
+  author    = {Jonathan K. Kummerfeld  and  Dan Klein},
+  title     = {Parsing with Traces: An O(n^4) Algorithm and a Structural Representation},
+  booktitle = {Transactions of the Association for Computational Linguistics},
+  shortvenue = {TACL},
+  year      = {2017},
+  url       = {https://arxiv.org/pdf/1707.04221.pdf},
+  software  = {https://github.com/jkkummerfeld/1ec-graph-parser},
   area      = {NLP},
 }
 							</pre>
 						</code>
 					</blockquote>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-etal_2015_EMNLP.bib">bib as a file</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Klein_2017_TACL.bib">bib as a file</a>
 				</div>
 				
-				<div id="abstract0" style="display: none;margin-left:20px;" style="text-align:right;">
+				<div id="abstract18" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 				<p>
-							Despite the convexity of structured max-margin objectives (Taskar et al., 2004; Tsochantaridis et al., 2004), the many ways to optimize them are not equally effective in practice. We compare a range of online optimization methods over a variety of structured NLP tasks (coreference, summarization, parsing, etc) and find several broad trends. First, margin methods do tend to outperform both likelihood and the perceptron. Second, for max-margin objectives, primal  optimization methods are often more robust and progress faster than dual methods. This advantage  is most pronounced for tasks with dense or continuous-valued features. Overall, we argue for a particularly simple online primal subgradient descent method that, despite being rarely mentioned in the literature, is surprisingly effective in relation to its alternatives.
+							General treebank analyses are graph structured, but parsers are typically restricted to tree structures for efficiency and modeling reasons.  We propose a new representation and algorithm for a class of graph structures that is flexible enough to cover almost all treebank structures, while still admitting efficient learning and inference. In particular, we consider directed, acyclic, one-endpoint-crossing graph structures, which cover most long-distance dislocation, shared argumentation, and similar tree-violating linguistic phenomena. We describe how to convert phrase structure parses, including traces, to our new representation in a reversible manner. Our dynamic program uniquely decomposes structures, is sound and complete, and covers 97.3\% of the Penn English Treebank. We also implement a proofof-concept parser that recovers a range of null elements and trace types.
 				</p>
 					</p>
 				</div>
 				
-				<div id="extra0" style="display: none;margin-left:20px;" style="text-align:right;">
+				<div id="extra18" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
-							<p>Citations:</p>
-							<p>
-							Tools for Automated Analysis of Cybercriminal Markets,
-<br \>
-Rebecca S. Portnoff, Sadia Afroz, Greg Durrett, Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, Damon McCoy, Kirill Levchenko, and Vern Paxson, Proceedings of WWW, 2017
-							<p/>
-							<p>
-							A Practical Perspective on Latent Structured Prediction for Coreference Resolution,
-<br \>
-Haponchyk, Iryna and Moschitti, Alessandro, EACL, 2017
-							<p/>
-							<p>
-							Using accelerometers to remotely and automatically characterize behavior in small animals,
-<br \>
-Talisin T. Hammond, Dwight Springthorpe, Rachel E. Walsh, and Taylor Berg-Kirkpatrick, Journal of Experimental Biology, 2016
-							<p/>
-							<p>
-							Joint Models for Extracting Adverse Drug Events from Biomedical Text,
-<br \>
-Fei Li, Yue Zhang, Meishan Zhang, Donghong Ji, IJCAI, 2016
-							<p/>
+							No citations for this paper yet - be the first! Click the bib button and copy and paste it into your next paper :-)
 					</p>
 				</div>
 				
@@ -244,7 +220,7 @@ Fei Li, Yue Zhang, Meishan Zhang, Donghong Ji, IJCAI, 2016
 				<div id="abstract2" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 				<p>
-							Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we ﬁrst compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
+							Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we first compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
 				</p>
 					</p>
 				</div>
@@ -414,6 +390,11 @@ de Kok, Dani\"{e}l, Ma, Jianqiang, Dima, Corina, and Hinrichs, Erhard, EACL, 201
 							Old School vs. New School: Comparing Transition-Based Parsers with and without Neural Network Enhancement,
 <br \>
 Miryam de Lhoneux, Sara Stymne, and Joakim Nivre, Proceedings of the 15th International Workshop on Treebanks and Linguistic Theories (TLT15), 2017
+							<p/>
+							<p>
+							Deep Semantic Role Labeling: What Works and What's Next,
+<br \>
+Luheng He, Kenton Lee, Mike Lewis, and Luke Zettlemoyer, ACL, 2017
 							<p/>
 							<p>
 							Predicting the Performance of Parsing with Referential Translation Machines,

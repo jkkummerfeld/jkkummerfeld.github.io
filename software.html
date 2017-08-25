@@ -68,6 +68,80 @@
 			</div>
 			<div class="content">
 				<p>
+					<a href="https://github.com/jkkummerfeld/1ec-graph-parser">One-Endpoint Crossing Parser</a>
+				<br />
+					A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation.
+				<br />
+				<p>
+				<a href="https://arxiv.org/pdf/1707.04221.pdf">Parsing with Traces: An O(n^4) Algorithm and a Structural Representation</a>
+				<br />
+				Jonathan K. Kummerfeld and Dan Klein
+				<br />
+				TACL 2017
+				<br />
+				<a href="https://github.com/jkkummerfeld/1ec-graph-parser">[software]</a>&nbsp;&nbsp;
+				<a href="https://arxiv.org/pdf/1707.04221.pdf">[paper]</a>&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('bib18').style.display == 'block') {
+				document.getElementById('bib18').style.display='none';
+				} else {
+				document.getElementById('bib18').style.display='block';
+				}
+				">[bib]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('abstract18').style.display == 'block') {
+				document.getElementById('abstract18').style.display='none';
+				} else {
+				document.getElementById('abstract18').style.display='block';
+				}
+				">[abstract]</a>
+				&nbsp;&nbsp;
+				<a href="javascript:;" onClick="
+				if (document.getElementById('extra18').style.display == 'block') {
+				document.getElementById('extra18').style.display='none';
+				} else {
+				document.getElementById('extra18').style.display='block';
+				}
+				">[other info]</a>
+				<div id="bib18" style="display: none;margin-left:-40px;" style="text-align:right;">
+					<blockquote>
+						<code>
+							<pre>
+@InProceedings{Kummerfeld-Klein:2017:TACL,
+  author    = {Jonathan K. Kummerfeld  and  Dan Klein},
+  title     = {Parsing with Traces: An O(n^4) Algorithm and a Structural Representation},
+  booktitle = {Transactions of the Association for Computational Linguistics},
+  shortvenue = {TACL},
+  year      = {2017},
+  url       = {https://arxiv.org/pdf/1707.04221.pdf},
+  software  = {https://github.com/jkkummerfeld/1ec-graph-parser},
+  area      = {NLP},
+}
+							</pre>
+						</code>
+					</blockquote>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pubs/Kummerfeld-Klein_2017_TACL.bib">bib as a file</a>
+				</div>
+				
+				<div id="abstract18" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+				<p>
+							General treebank analyses are graph structured, but parsers are typically restricted to tree structures for efficiency and modeling reasons.  We propose a new representation and algorithm for a class of graph structures that is flexible enough to cover almost all treebank structures, while still admitting efficient learning and inference. In particular, we consider directed, acyclic, one-endpoint-crossing graph structures, which cover most long-distance dislocation, shared argumentation, and similar tree-violating linguistic phenomena. We describe how to convert phrase structure parses, including traces, to our new representation in a reversible manner. Our dynamic program uniquely decomposes structures, is sound and complete, and covers 97.3\% of the Penn English Treebank. We also implement a proofof-concept parser that recovers a range of null elements and trace types.
+				</p>
+					</p>
+				</div>
+				
+				<div id="extra18" style="display: none;margin-left:20px;" style="text-align:right;">
+					<p>
+							No citations for this paper yet - be the first! Click the bib button and copy and paste it into your next paper :-)
+					</p>
+				</div>
+				
+				</p>
+				</p>
+				<br />
+				<p>
 					<a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser">Coreference Error Analyser</a>
 				<br />
 					Determines a set of transformations to correct coreference clusters, then categorises each transformation.
@@ -132,7 +206,7 @@
 				<div id="abstract2" style="display: none;margin-left:20px;" style="text-align:right;">
 					<p>
 				<p>
-							Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we ﬁrst compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
+							Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we first compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
 				</p>
 					</p>
 				</div>
@@ -309,6 +383,11 @@ de Kok, Dani\"{e}l, Ma, Jianqiang, Dima, Corina, and Hinrichs, Erhard, EACL, 201
 							Old School vs. New School: Comparing Transition-Based Parsers with and without Neural Network Enhancement,
 <br \>
 Miryam de Lhoneux, Sara Stymne, and Joakim Nivre, Proceedings of the 15th International Workshop on Treebanks and Linguistic Theories (TLT15), 2017
+							<p/>
+							<p>
+							Deep Semantic Role Labeling: What Works and What's Next,
+<br \>
+Luheng He, Kenton Lee, Mike Lewis, and Luke Zettlemoyer, ACL, 2017
 							<p/>
 							<p>
 							Predicting the Performance of Parsing with Referential Translation Machines,
