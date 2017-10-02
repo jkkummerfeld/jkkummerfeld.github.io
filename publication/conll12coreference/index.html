@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.29" />
+  <meta name="author" content="Jonathan K. Kummerfeld">
+  <meta name="description" content="Postdoctoral Research Fellow">
+
+  
+  
+  
+    
+  
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-19179423-2', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="http://www.jkk.name/index.xml" type="application/rss+xml" title="Jonathan K. Kummerfeld">
+  <link rel="feed" href="http://www.jkk.name/index.xml" type="application/rss+xml" title="Jonathan K. Kummerfeld">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://www.jkk.name/publication/conll12coreference/">
+
+  
+
+  <title>Mention Detection: Heuristics for the OntoNotes annotations | Jonathan K. Kummerfeld</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Jonathan K. Kummerfeld</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#software">
+            
+            <span>Software</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#data">
+            
+            <span>Data</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>Blog</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
+
+  
+
+
+  <div class="container pub-title">
+    <h1 itemprop="name">Mention Detection: Heuristics for the OntoNotes annotations</h1>
+    <span class="pub-authors" itemprop="author">
+      
+      Jonathan K. Kummerfeld, Mohit Bansal, David Burkett, Dan Klein
+      
+    </span>
+    <span class="pull-right">
+      
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpublication%2fconll12coreference%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Mention%20Detection%3a%20Heuristics%20for%20the%20OntoNotes%20annotations&amp;url=http%3a%2f%2fwww.jkk.name%2fpublication%2fconll12coreference%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpublication%2fconll12coreference%2f&amp;title=Mention%20Detection%3a%20Heuristics%20for%20the%20OntoNotes%20annotations"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpublication%2fconll12coreference%2f&amp;title=Mention%20Detection%3a%20Heuristics%20for%20the%20OntoNotes%20annotations"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Mention%20Detection%3a%20Heuristics%20for%20the%20OntoNotes%20annotations&amp;body=http%3a%2f%2fwww.jkk.name%2fpublication%2fconll12coreference%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+    </span>
+  </div>
+
+</div>
+<div class="article-container">
+
+  
+
+  <h3>Abstract</h3>
+  <p class="pub-abstract" itemprop="text">Our submission was a reduced version of the system described in Haghighi and Klein (2010), with extensions to improve mention detection to suit the OntoNotes annotation scheme. Including exact matching mention detection in this shared task added a new and challenging dimension to the problem, particularly for our system, which previously used a very permissive detection method. We improved this aspect of the system by adding filters based on the annotation scheme for OntoNotes and analysis of system behavior on the development set. These changes led to improvements in coreference F-score of 10.06, 5.71, 6.78, 6.63 and 3.09 on the MUC, B3 , Ceaf-e, Ceaf-m and Blanc, metrics, respectively, and a final task score of 47.10.</p>
+
+  
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
+        <div class="col-xs-12 col-sm-9">
+          
+          <a href="/publication/#1">
+            Conference proceedings
+          </a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+  
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
+        <div class="col-xs-12 col-sm-9">Proceedings of the Fifteenth Conference on Computational Natural Language Learning: Shared Task</div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
+        <div class="col-xs-12 col-sm-9" itemprop="datePublished">
+          June, 2011
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+
+  <div class="row" style="padding-top: 10px">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
+        <div class="col-xs-12 col-sm-9">
+
+          
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/publication/conll12coreference/">
+  <span style="font-size:large;">Details</span>
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.aclweb.org/anthology/W11-1916">
+  <span style="font-size:large;">PDF</span>
+</a>
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/pub/conll12coreference_poster.pdf">
+  <span style="font-size:large;">Poster</span>
+</a>
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
+  if (document.getElementById('conll12coreference-bib').style.display == 'block') {
+  document.getElementById('conll12coreference-bib').style.display='none';
+  } else {
+  document.getElementById('conll12coreference-bib').style.display='block';
+  }
+  ">
+  <span style="font-size:large;">BibTeX</span>
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
+  if (document.getElementById('conll12coreference-abstract').style.display == 'block') {
+  document.getElementById('conll12coreference-abstract').style.display='none';
+  } else {
+  document.getElementById('conll12coreference-abstract').style.display='block';
+  }
+  ">
+  <span style="font-size:large;">Abstract</span>
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
+  if (document.getElementById('conll12coreference-citations').style.display == 'block') {
+  document.getElementById('conll12coreference-citations').style.display='none';
+  } else {
+  document.getElementById('conll12coreference-citations').style.display='block';
+  }
+  ">
+  <span style="font-size:large;">Citations</span>
+</a>
+
+
+<div id="conll12coreference-bib" style="display: none;margin-left:20px;" style="text-align:right;">
+      <pre>
+@InProceedings{conll12coreference,
+  title     = {Mention Detection: Heuristics for the OntoNotes annotations},
+  author    = {Jonathan K. Kummerfeld and Mohit Bansal and David Burkett and Dan Klein},
+  shortvenue = {CoNLL Shared Task},
+  booktitle = {Proceedings of the Fifteenth Conference on Computational Natural Language Learning: Shared Task},
+  year      = {2011},
+  pages     = {102--106},
+  month     = {June},
+  address   = {Portland, Oregon, USA},
+  publisher = {Association for Computational Linguistics},
+  url       = {http://www.aclweb.org/anthology/W11-1916},
+  poster    = {http://www.jkk.name/pub/conll12coreference_poster.pdf},
+  abstract  = {Our submission was a reduced version of the system described in Haghighi and Klein (2010), with extensions to improve mention detection to suit the OntoNotes annotation scheme. Including exact matching mention detection in this shared task added a new and challenging dimension to the problem, particularly for our system, which previously used a very permissive detection method. We improved this aspect of the system by adding filters based on the annotation scheme for OntoNotes and analysis of system behavior on the development set. These changes led to improvements in coreference F-score of 10.06, 5.71, 6.78, 6.63 and 3.09 on the MUC, B3 , Ceaf-e, Ceaf-m and Blanc, metrics, respectively, and a final task score of 47.10.},
+}
+
+      </pre>
+</div>
+<div id="conll12coreference-abstract" style="display: none;margin-left:20px;" style="text-align:right;">
+  <p>
+    Our submission was a reduced version of the system described in Haghighi and Klein (2010), with extensions to improve mention detection to suit the OntoNotes annotation scheme. Including exact matching mention detection in this shared task added a new and challenging dimension to the problem, particularly for our system, which previously used a very permissive detection method. We improved this aspect of the system by adding filters based on the annotation scheme for OntoNotes and analysis of system behavior on the development set. These changes led to improvements in coreference F-score of 10.06, 5.71, 6.78, 6.63 and 3.09 on the MUC, B3 , Ceaf-e, Ceaf-m and Blanc, metrics, respectively, and a final task score of 47.10.
+  </p>
+</div>
+
+<div id="conll12coreference-citations" style="display: none;margin-left:20px; font-size:smaller; " style="text-align:right;">
+	
+		<p>
+      
+        <a href="https://www.cambridge.org/core/journals/natural-language-engineering/article/improving-mention-detection-for-basque-based-on-a-deep-error-analysis/89C8669493FC0942CC32013BE57D8C0C">Improving mention detection for Basque based on a deep error analysis</a>,
+      
+			Ander Soraluze, Olatz Arregi, Xabier Arregi, Arantza Diaz de Ilarraza, Natural Language Engineering, 2016
+		</p>
+	
+		<p>
+      
+        <a href="http://www.oegai.at/konvens2012/proceedings/18_soraluze12o/18_soraluze12o.pdf">Mention detection: First steps in the development of a Basque coreference resolution system</a>,
+      
+			Ander Soraluze, Olatz Arregi, Xabier Arregi, Klara Ceberio, Arantza Diaz de Ilarraza, Proceedings of KONVENS, 2012
+		</p>
+	
+		<p>
+      
+        <a href="https://dl.acm.org/citation.cfm?id=2458355">Detecting Apposition for Text Simplification in Basque</a>,
+      
+			Itziar Gonzalez-Dios, Maria Jesus Aranzabe, Arantza Diaz de Ilarraza, Ander Soraluze, , 2013
+		</p>
+	
+		<p>
+      
+        <a href="https://link.springer.com/chapter/10.1007/978-3-319-03674-8_15">Co-reference Resolution in Farsi Corpora</a>,
+      
+			Maryam Nazaridoust, Behrouz Minaie Bidgoli, Siavash Nazaridoust, , 2014
+		</p>
+	
+		<p>
+      
+        <a href="http://aclweb.org/anthology/N/N15/N15-1117.pdf">Removing the Training Wheels: A Coreference Dataset that Entertains Humans and Challenges Computers</a>,
+      
+			Anupam Guha, Mohit Iyyer, Danny Bouman, Jordan Boyd-Graber, NAACL, 2015
+		</p>
+	
+		<p>
+      
+        <a href="http://www.lrec-conf.org/proceedings/lrec2016/pdf/1121_Paper.pdf">ARRAU: Linguistically-Motivated Annotation of Anaphoric Descriptions</a>,
+      
+			Olga Uryupina, Ron Artstein, Antonella Bristot, Federica Cavicchio, Kepa J. Rodriguez, Massimo Poesio, LREC, 2016
+		</p>
+	
+		<p>
+      
+        <a href="https://www.cambridge.org/core/journals/natural-language-engineering/article/scaffolding-approach-to-coreference-resolution-integrating-statistical-and-rulebased-models/042D0D6C6E125EFB939E0F2C2E63152B">A scaffolding approach to coreference resolution integrating statistical and rule-based models</a>,
+      
+			Heeyoung Lee, Mihai Surdeanu, Dan Jurafsky, NLE, 2017
+		</p>
+	
+		<p>
+      
+        <a href="https://hal.inria.fr/hal-01558711/document">Apports des analyses syntaxiques pour la d&#39;etection automatique de mentions dans un corpus de francais oral</a>,
+      
+			Isabelle Tellier  Eric De La Clergerie  Marco Dinarelli  Frederic Landragin Loic Grobol, Actes de la 24e Conference sur le Traitement Automatique des Langues Naturelles (TALN), 2017
+		</p>
+	
+</div>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+  </div>
+  <div class="visible-xs space-below"></div>
+
+  <div class="space-below"></div>
+
+  <div class="article-style"></div>
+
+</div>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://www.jkk.name/publication/prl10chemistry/"><span
+      aria-hidden="true">&larr;</span> Spatiotemporal Hierarchy of Relaxation Events, Dynamical Heterogeneities, and Structural Reorganization in a Supercooled Liquid</a></li>
+    
+
+    
+    <li class="next"><a href="http://www.jkk.name/publication/acl12conversion/">Robust Conversion of CCG Derivations to Phrase Structure Trees <span
+      aria-hidden="true">&rarr;</span></a></li>
+    
+  </ul>
+</nav>
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Jonathan K. Kummerfeld &middot; 
+
+      Powered by a <a href="https://github.com/jkkummerfeld/hugo-academic" target="_blank">fork</a> of the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+
+    
+    
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] } });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML" integrity="sha512-tOav5w1OjvsSJzePRtt2uQPFwBoHt1VZcUq8l8nm5284LEKE9FSJBQryzMBzHxY5P0zRdNqEcpLIRVYFNgu1jw==" crossorigin="anonymous"></script>
+    
+    
+
+  </body>
+</html>
+

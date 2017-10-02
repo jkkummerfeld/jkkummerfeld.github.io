@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>4 on Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/publication_types/4/</link>
+    <description>Recent content in 4 on Jonathan K. Kummerfeld</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
+    <lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/publication_types/4/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output</title>
+      <link>http://www.jkk.name/publication/thesis16parsing/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/thesis16parsing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive Supertagging for Faster Parsing</title>
+      <link>http://www.jkk.name/publication/thesis09adapt/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/thesis09adapt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Large-Scale Syntactic Processing: Parsing the Web</title>
+      <link>http://www.jkk.name/publication/report09jhu/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/report09jhu/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

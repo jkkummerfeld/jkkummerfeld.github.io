@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/post/</link>
+    <description>Recent content in Posts on Jonathan K. Kummerfeld</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ordering Pizza for an Event with Vegetarians</title>
+      <link>http://www.jkk.name/post/pizza/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/pizza/</guid>
+      <description>
+
+&lt;h2 id=&#34;how-much-vegetarian-pizza-should-i-order&#34;&gt;How much vegetarian pizza should I order?&lt;/h2&gt;
+
+&lt;p&gt;This question frequently comes up in the world of free food at university events. In my experience (as someone who does not eat meat pizzas), often not enough is ordered. Let&amp;rsquo;s try to come up with a model to tell us how much to order. Set it up like this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There are $N$ people.&lt;/li&gt;
+&lt;li&gt;There are $P$ pizzas.&lt;/li&gt;
+&lt;li&gt;The fraction of people who are vegetarian is $V$.&lt;/li&gt;
+&lt;li&gt;Assume everyone eats the same amount of pizza, and all the pizza is eaten (ie. each person eats $\frac{P}{N}$).&lt;/li&gt;
+&lt;li&gt;Assume people randomly sample from the available pizzas, subject to the constraint that some eat only vegetarian pizzas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now, let the fraction of vegetarian pizzas we get be $k$, and we can write down the number of vegetarian pizzas in two ways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How many we order: $P * k$&lt;/li&gt;
+&lt;li&gt;How many are eaten: (pizzas eaten by vegetarians) + (vegetarian pizzas eaten by others) = $\frac{P}{N} * (N * V) + \frac{P}{N} * (N * (1 - V)) * k$&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since all the pizza we order is eaten, these are equal.
+$N$ and $P$ are both positive numbers, so we can safely cancel the $N$s and divide through by $P$, giving:&lt;/p&gt;
+
+&lt;p&gt;$V + (1 - V) * k = k$&lt;/p&gt;
+
+&lt;p&gt;To satisfy this equation, $k = 1$. Therefore all the pizza should be vegetarian :)&lt;/p&gt;
+
+&lt;p&gt;Of course, these assumptions aren&amp;rsquo;t quite right (for example, not everyone samples randomly from the available pizza), so here are some more useful suggestions too:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Do order more than the proportion of vegetarians.&lt;/li&gt;
+&lt;li&gt;Place the vegetarian pizza at the end of the line of pizzas, or in a separate location with clear signage discouraging non-vegetarians from eating it.&lt;/li&gt;
+&lt;li&gt;Order a diverse set of popular meat pizzas (people tend to want variety, so this encourages them to try more meat pizzas).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For other peoples&amp;rsquo; thoughts on this question see
+&lt;a href=&#34;http://www.seriouseats.com/2014/07/etiquette-ordering-pizza-for-a-group-manner-matters.html&#34; target=&#34;_blank&#34;&gt;Serious Eats&lt;/a&gt; and
+&lt;a href=&#34;https://www.quora.com/What-are-the-best-pizza-toppings-to-get-for-a-big-group&#34; target=&#34;_blank&#34;&gt;Quora&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

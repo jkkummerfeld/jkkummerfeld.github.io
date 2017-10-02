@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data on Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/data/</link>
+    <description>Recent content in Data on Jonathan K. Kummerfeld</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/data/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Adaptive CCG Supertagging Model</title>
+      <link>http://www.jkk.name/data/ccg-model/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/ccg-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Crowdsourced Paraphrases</title>
+      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IE/NER from Cybercriminal Forums</title>
+      <link>http://www.jkk.name/data/cybercrime-forums/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spine and Arc version of the Penn Treebank</title>
+      <link>http://www.jkk.name/data/shp-ptb/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/shp-ptb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
