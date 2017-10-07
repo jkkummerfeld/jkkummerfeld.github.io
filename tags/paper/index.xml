@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Paper on Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tags/paper/</link>
+    <description>Recent content in Paper on Jonathan K. Kummerfeld</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
+    <lastBuildDate>Fri, 06 Oct 2017 13:31:43 -0400</lastBuildDate>
+    <atom:link href="/tags/paper/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-06-madlibs/</link>
+      <pubDate>Fri, 06 Oct 2017 13:31:43 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-10-06-madlibs/</guid>
+      <description>
+
+&lt;p&gt;Hm&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hossain-EtAl:2017:EMNLP2017,
+  author    = {Hossain, Nabil  and  Krumm, John  and  Vanderwende, Lucy  and  Horvitz, Eric  and  Kautz, Henry},
+  title     = {Filling the Blanks (hint: plural noun) for Mad Libs Humor},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {649--658},
+  url       = {https://www.aclweb.org/anthology/D17-1068},
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
