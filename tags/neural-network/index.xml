@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neural Network on Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tags/neural-network/</link>
+    <description>Recent content in Neural Network on Jonathan K. Kummerfeld</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
+    <lastBuildDate>Thu, 05 Oct 2017 00:00:00 -0400</lastBuildDate>
+    <atom:link href="/tags/neural-network/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-05-deftnn/</link>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-10-05-deftnn/</guid>
+      <description>
+
+&lt;p&gt;This paper proposes two techniques for speeding up neural network execution on GPUs:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Reduce computation when doing matrix-multiply by removing rows.&lt;/li&gt;
+&lt;li&gt;Reduce communication on the GPU by halving the number of bits used to represent numbers.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Either of these gives a speed up of ~1.5x and together they give ~2x, across a range of different computer vision tasks+models.&lt;/p&gt;
+
+&lt;h2 id=&#34;core-ideas-in-detail&#34;&gt;Core ideas in detail&lt;/h2&gt;
+
+&lt;p&gt;The first idea, reducing work by eliminating parts of the computation, has been considered before.
+In the past, however, the focus was on saving memory in models, and so the most common strategy was to move to a sparse matrix where weights close to zero are dropped.
+Here the focus is on speed and they show that while the sparse approach saves memory it can end up being slower because of hardware behaviour.
+Instead, they eliminate entire rows of the matrix, which means there is less computation, but it remains dense (and therefore fast).
+Rows are identified by measuring correlation between outputs and greedily eliminating rows that correlate highly with the rest of the output.&lt;/p&gt;
+
+&lt;p&gt;The natural question to ask is whether this hurts performance.
+First, they do two things to avoid problems, (1) a scale factor is used to make sure the outputs are of the same range that they would have been with the full matrix, and (2) they restart training to fine-tune the network once pruning is set up.
+With high enough pruning accuracy does fall, but speed ups can be gained before that is a problem (the exact point depends on the task).&lt;/p&gt;
+
+&lt;p&gt;The second idea relates to numerical representation, and is motivated by measurements of where the bottlenecks are in communication.
+Many AI researchers have tried switching to 16 bit representations to save space and time, but here they develop a different floating point enocding that gives more bits to the exponent, and fewer to the mantissa.&lt;/p&gt;
+
+&lt;h2 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;It would be interesting to see the interaction of this work with the investigation of networks without non-linear functions that can still learn non-linear behaviour because of numerical approximations.&lt;/li&gt;
+&lt;li&gt;In the context of language, the weight reduction approach would be interesting to analyse. Specifically, what do we lose in our word vectors depending on the task?&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve always had some interest in making things faster. It would be interesting to know where the remaining bottlenecks are (after applying these changes).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Hill:MICRO:2017,
+  author = {Parker Hill, Animesh Jain, Mason Hill1, Babak Zamirai, Chang-Hong Hsu, Michael A. Laurenzano, Scott Mahlke, Lingjia Tang and Jason Mars},
+  title = {DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission},
+  booktitle = {The 50th Annual IEEE/ACM International Symposium on Microarchitecture},
+  year = {2017},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
