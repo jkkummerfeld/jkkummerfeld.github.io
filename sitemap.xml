@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-10-11_multimt/</loc>
+      <lastmod>2017-10-11T17:29:04-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-10-10_seqqa/</loc>
       <lastmod>2017-10-10T13:43:36-04:00</lastmod>
     </url>
@@ -417,6 +426,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/humour/</loc>
+      <lastmod>2017-10-06T13:31:43-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/</loc>
       <lastmod>2017-09-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -437,8 +456,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/nlp/</loc>
-      <lastmod>2017-10-10T13:43:36-04:00</lastmod>
+      <loc>http://www.jkk.name/tags/mt/</loc>
+      <lastmod>2017-10-11T17:29:04-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -448,7 +467,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-10-10T13:43:36-04:00</lastmod>
+      <lastmod>2017-10-11T17:29:04-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -479,6 +498,16 @@
     
       <loc>http://www.jkk.name/software/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/tacl/</loc>
+      <lastmod>2017-10-11T17:29:04-04:00</lastmod>
       <priority>0</priority>
     </url>
     

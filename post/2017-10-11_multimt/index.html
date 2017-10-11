@@ -52,11 +52,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-05-deftnn/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-11_multimt/">
 
   
 
-  <title>DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017) | Jonathan K. Kummerfeld</title>
+  <title>Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -169,18 +169,21 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</h1>
+    <h1 itemprop="name">Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-05 00:00:00 -0400 EDT" itemprop="datePublished">
-      Oct 5, 2017
+    <time datetime="2017-10-11 17:29:04 -0400 EDT" itemprop="datePublished">
+      Oct 11, 2017
     </time>
   </span>
 
+  
+  
+  
   
 
   
@@ -192,13 +195,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/neural-network">neural network</a
+    <a href="/tags/tacl">tacl</a
     >, 
     
-    <a href="/tags/speed">speed</a
-    >, 
-    
-    <a href="/tags/efficiency">efficiency</a
+    <a href="/tags/mt">mt</a
     >
     
   </span>
@@ -211,35 +211,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-05-deftnn%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-11_multimt%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=DeftNN%3a%20Addressing%20Bottlenecks%20for%20DNN%20Execution%20on%20GPUs%20via%20Synapse%20Vector%20Elimination%20and%20Near-compute%20Data%20Fission%20%28Hill%20et%20al.%2c%20MICRO%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-05-deftnn%2f"
+         href="https://twitter.com/intent/tweet?text=Google%27s%20Multilingual%20Neural%20Machine%20Translation%20System%3a%20Enabling%20Zero-Shot%20Translation%20%28Johnson%20et%20al.%2c%20TACL%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-11_multimt%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-05-deftnn%2f&amp;title=DeftNN%3a%20Addressing%20Bottlenecks%20for%20DNN%20Execution%20on%20GPUs%20via%20Synapse%20Vector%20Elimination%20and%20Near-compute%20Data%20Fission%20%28Hill%20et%20al.%2c%20MICRO%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-11_multimt%2f&amp;title=Google%27s%20Multilingual%20Neural%20Machine%20Translation%20System%3a%20Enabling%20Zero-Shot%20Translation%20%28Johnson%20et%20al.%2c%20TACL%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-05-deftnn%2f&amp;title=DeftNN%3a%20Addressing%20Bottlenecks%20for%20DNN%20Execution%20on%20GPUs%20via%20Synapse%20Vector%20Elimination%20and%20Near-compute%20Data%20Fission%20%28Hill%20et%20al.%2c%20MICRO%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-11_multimt%2f&amp;title=Google%27s%20Multilingual%20Neural%20Machine%20Translation%20System%3a%20Enabling%20Zero-Shot%20Translation%20%28Johnson%20et%20al.%2c%20TACL%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=DeftNN%3a%20Addressing%20Bottlenecks%20for%20DNN%20Execution%20on%20GPUs%20via%20Synapse%20Vector%20Elimination%20and%20Near-compute%20Data%20Fission%20%28Hill%20et%20al.%2c%20MICRO%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-05-deftnn%2f">
+         href="mailto:?subject=Google%27s%20Multilingual%20Neural%20Machine%20Translation%20System%3a%20Enabling%20Zero-Shot%20Translation%20%28Johnson%20et%20al.%2c%20TACL%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-11_multimt%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -254,45 +254,45 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>This paper proposes two techniques for speeding up neural network execution on GPUs:</p>
+<p>This paper is a detailed analysis of a surprisingly effective simple idea: train a machine translation system with sentence pairs from multiple languages, adjusting the input to have an extra token at the end that says what the target language is.
+To deal with class imbalance, data is oversampled to have all language pairs be equally represented (though even without that, it works fairly well).</p>
 
-<ol>
-<li>Reduce computation when doing matrix-multiply by removing rows.</li>
-<li>Reduce communication on the GPU by halving the number of bits used to represent numbers.</li>
-</ol>
+<p>The biggest advantage of this approach is that a single model can handle translation between many pairs, rather than needing $O(n^2)$ models for $n$ languages.
+The performance is slightly lower on average, but the single model can manage with far fewer parameters.
+In one example, twelve models are combined into a single model with as many parameters as one of the twelve, and the results are lower by just 0.76 BLEU on average.
+Another advantage of the model is the ability to handle code-switched language, though they didn&rsquo;t have evaluation datasets to get an quantitative measure of accuracy.</p>
 
-<p>Either of these gives a speed up of ~1.5x and together they give ~2x, across a range of different computer vision tasks+models.</p>
-
-<h2 id="core-ideas-in-detail">Core ideas in detail</h2>
-
-<p>The first idea, reducing work by eliminating parts of the computation, has been considered before.
-In the past, however, the focus was on saving memory in models, and so the most common strategy was to move to a sparse matrix where weights close to zero are dropped.
-Here the focus is on speed and they show that while the sparse approach saves memory it can end up being slower because of hardware behaviour.
-Instead, they eliminate entire rows of the matrix, which means there is less computation, but it remains dense (and therefore fast).
-Rows are identified by measuring correlation between outputs and greedily eliminating rows that correlate highly with the rest of the output.</p>
-
-<p>The natural question to ask is whether this hurts performance.
-First, they do two things to avoid problems, (1) a scale factor is used to make sure the outputs are of the same range that they would have been with the full matrix, and (2) they restart training to fine-tune the network once pruning is set up.
-With high enough pruning accuracy does fall, but speed ups can be gained before that is a problem (the exact point depends on the task).</p>
-
-<p>The second idea relates to numerical representation, and is motivated by measurements of where the bottlenecks are in communication.
-Many AI researchers have tried switching to 16 bit representations to save space and time, but here they develop a different floating point enocding that gives more bits to the exponent, and fewer to the mantissa.</p>
-
-<h2 id="thoughts">Thoughts</h2>
-
-<ul>
-<li>It would be interesting to see the interaction of this work with the investigation of networks without non-linear functions that can still learn non-linear behaviour because of numerical approximations.</li>
-<li>In the context of language, the weight reduction approach would be interesting to analyse. Specifically, what do we lose in our word vectors depending on the task?</li>
-<li>I&rsquo;ve always had some interest in making things faster. It would be interesting to know where the remaining bottlenecks are (after applying these changes).</li>
-</ul>
+<p>Having this model also opens up the possibility of translating between pairs of languages with no parallel training data (A -&gt; B).
+As long as there is data (A -&gt; C) and (D -&gt; B), sentences from A can be fed in with B as the target language.
+For closely related languages this works very well, and in particular, better than going via another language such that there is data for the two language pairs.
+For example, going from Portuguese to Spanish with the multilingual model scores 24.75, whereas going via English scores 21.62 and a model with explicit training data gets 31.50.
+Going between less related languages is less successful, with direct Spanish to Japanese scoring 9.14, and going via English scoring 18.00.
+One thing I wish the paper had is more exploration of this result - what does it get right when scoring 9.14?
+For the time being at least, going via a third language still seems necessary, and presumably the best language to use is whichever one the performance is highest on.</p>
 
 <h2 id="citation">Citation</h2>
 
-<pre><code class="language-bibtex">@InProceedings{Hill:MICRO:2017,
-  author = {Parker Hill, Animesh Jain, Mason Hill1, Babak Zamirai, Chang-Hong Hsu, Michael A. Laurenzano, Scott Mahlke, Lingjia Tang and Jason Mars},
-  title = {DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission},
-  booktitle = {The 50th Annual IEEE/ACM International Symposium on Microarchitecture},
-  year = {2017},
+<p><a href="http://aclweb.org/anthology/Q/Q17/Q17-1024.pdf" target="_blank">Paper</a></p>
+
+<p><a href="https://arxiv.org/pdf/1611.04558.pdf" target="_blank">ArXiv version</a> which appears to be the same aside from one extra figure of the model architecture.</p>
+
+<p>As an aside, it is interesting to see the timeline for this paper:</p>
+
+<ul>
+<li>November 2016, Submission to ArXiv and in the TACL submission batch</li>
+<li>March 2017, TACL revision batch</li>
+<li>October 2017, TACL published</li>
+</ul>
+
+<pre><code class="language-bibtex">@article{TACL1081,
+	author    = {Johnson, Melvin  and Schuster, Mike  and Le, Quoc  and Krikun, Maxim  and Wu, Yonghui  and Chen, Zhifeng  and Thorat, Nikhil  and Viégas, Fernanda  and Wattenberg, Martin  and Corrado, Greg  and Hughes, Macduff  and Dean, Jeffrey},
+	title     = {Google's Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation},
+	journal   = {Transactions of the Association for Computational Linguistics},
+	volume    = {5},
+	year      = {2017},
+	issn      = {2307-387X},
+	url       = {https://www.transacl.org/ojs/index.php/tacl/article/view/1081},
+	pages     = {339--351}
 }
 </code></pre>
 
@@ -307,6 +307,8 @@ Many AI researchers have tried switching to 16 bit representations to save space
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/post/2017-10-10_seqqa/">Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al. ACL 2017)</a></li>
+    
     <li><a href="/post/2017-10-09_parsing-autoencoder/"> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</a></li>
     
     <li><a href="/post/2017-10-06-madlibs/">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</a></li>
@@ -319,13 +321,10 @@ Many AI researchers have tried switching to 16 bit representations to save space
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/pizza/"><span
-      aria-hidden="true">&larr;</span> Ordering Pizza for an Event with Vegetarians</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-10_seqqa/"><span
+      aria-hidden="true">&larr;</span> Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al. ACL 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-10-06-madlibs/">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

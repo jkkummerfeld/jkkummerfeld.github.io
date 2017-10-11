@@ -48,6 +48,15 @@
     </item>
     
     <item>
+      <title>Humour</title>
+      <link>http://www.jkk.name/tags/humour/</link>
+      <pubDate>Fri, 06 Oct 2017 13:31:43 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/tags/humour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Misc</title>
       <link>http://www.jkk.name/tags/misc/</link>
       <pubDate>Wed, 27 Sep 2017 00:00:00 -0400</pubDate>
@@ -57,18 +66,18 @@
     </item>
     
     <item>
-      <title>Nlp</title>
-      <link>http://www.jkk.name/tags/nlp/</link>
-      <pubDate>Tue, 10 Oct 2017 13:43:36 -0400</pubDate>
+      <title>Mt</title>
+      <link>http://www.jkk.name/tags/mt/</link>
+      <pubDate>Wed, 11 Oct 2017 17:29:04 -0400</pubDate>
       
-      <guid>http://www.jkk.name/tags/nlp/</guid>
+      <guid>http://www.jkk.name/tags/mt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Paper</title>
       <link>http://www.jkk.name/tags/paper/</link>
-      <pubDate>Tue, 10 Oct 2017 13:43:36 -0400</pubDate>
+      <pubDate>Wed, 11 Oct 2017 17:29:04 -0400</pubDate>
       
       <guid>http://www.jkk.name/tags/paper/</guid>
       <description></description>
@@ -80,6 +89,15 @@
       <pubDate>Tue, 10 Oct 2017 13:43:36 -0400</pubDate>
       
       <guid>http://www.jkk.name/tags/semantic-parsing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tacl</title>
+      <link>http://www.jkk.name/tags/tacl/</link>
+      <pubDate>Wed, 11 Oct 2017 17:29:04 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/tags/tacl/</guid>
       <description></description>
     </item>
     
