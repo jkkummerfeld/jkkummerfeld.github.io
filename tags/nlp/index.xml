@@ -7,8 +7,52 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Mon, 09 Oct 2017 14:31:24 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 10 Oct 2017 13:43:36 -0400</lastBuildDate>
     <atom:link href="/tags/nlp/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al. ACL 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-10_seqqa/</link>
+      <pubDate>Tue, 10 Oct 2017 13:43:36 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-10-10_seqqa/</guid>
+      <description>
+
+&lt;p&gt;Semantic parsing datasets generally consist of (question, answer) pairs, where each pair is completely independent of the rest (one exception is ATIS, which has multi-turn conversations, though most work doesn&amp;rsquo;t use them).
+In reality, we often ask a series of simple questions that together form a complex one, for example &amp;ldquo;What flights are available from Detroit to Sydney? And how much is the price if I don&amp;rsquo;t want to leave before 8am?&amp;rdquo;
+This work explores these kinds of sequential questions with a new dataset and algorithm.&lt;/p&gt;
+
+&lt;p&gt;The dataset was formed by asking crowd workers to rephrase questions from the WikiTableQuestions dataset into sequences of shorter questions.
+This naturally constrains the types of questions (in particular, they reference a single table only), but covers a range of domains.
+With 6,066 question sequences, and on average 2.9 questions / sequence, it&amp;rsquo;s a large dataset by semantic parsing standards.
+However, there are no logical forms, only the row, column, or cell(s) that contain the answer.&lt;/p&gt;
+
+&lt;p&gt;To solve the problem, they treat it as choosing a sequence of actions, where each action generate a part of the execution instructions.
+The model follows the recent approach of considering the contents of the database as part of the calculation (e.g. by taking the dot product of the vector for a cell and the vector for the question).&lt;/p&gt;
+
+&lt;p&gt;The system has consistently better performance than other QA systems on the new dataset (though no results are shown for the WikiTableQuestions dataset).
+At only 12.8% of sequences completely correct, there is plenty of scope for improvement.
+Based on the description of the operators there are definitely additional abilities that would be useful, so this model has potential to improve.
+That said, it seems difficult to generalise the model to handle more complicated databases with multiple interconnected tables.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://aclweb.org/anthology/P/P17/P17-1167.pdf&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{iyyer-yih-chang:2017:Long,
+  author    = {Iyyer, Mohit  and  Yih, Wen-tau  and  Chang, Ming-Wei},
+  title     = {Search-based Neural Structured Learning for Sequential Question Answering},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1821--1831},
+  url       = {http://aclweb.org/anthology/P17-1167}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</title>
@@ -48,7 +92,7 @@ The generator is key, and it&amp;rsquo;s possible that performance on GeoQuery w
 One idea mentioned in the conclusion is to try reversing the setup (3-4-1-2) and training with natural language examples that have no logical form.
 How to tradeoff the different data scenarios seems like an interesting challenge!&lt;/p&gt;
 
-&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://aclweb.org/anthology/D16-1116&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 

@@ -48,7 +48,7 @@ The generator is key, and it&amp;rsquo;s possible that performance on GeoQuery w
 One idea mentioned in the conclusion is to try reversing the setup (3-4-1-2) and training with natural language examples that have no logical form.
 How to tradeoff the different data scenarios seems like an interesting challenge!&lt;/p&gt;
 
-&lt;h2 id=&#34;citations&#34;&gt;Citations&lt;/h2&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://aclweb.org/anthology/D16-1116&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 

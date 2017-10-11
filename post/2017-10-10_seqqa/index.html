@@ -16,6 +16,11 @@
     
   
   
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
@@ -41,17 +46,17 @@
     
   
 
-  <link rel="alternate" href="http://www.jkk.name/post/index.xml" type="application/rss+xml" title="Jonathan K. Kummerfeld">
-  <link rel="feed" href="http://www.jkk.name/post/index.xml" type="application/rss+xml" title="Jonathan K. Kummerfeld">
+  <link rel="alternate" href="http://www.jkk.name/index.xml" type="application/rss+xml" title="Jonathan K. Kummerfeld">
+  <link rel="feed" href="http://www.jkk.name/index.xml" type="application/rss+xml" title="Jonathan K. Kummerfeld">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-10_seqqa/">
 
   
 
-  <title>Posts | Jonathan K. Kummerfeld</title>
+  <title>Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al. ACL 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -158,20 +163,13 @@
 </nav>
 
 
-
-
-
-<div class="universal-wrapper">
-
-  <h1>Posts</h1>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
-  
-  
-  <div>
-    
-    <h2><a href="http://www.jkk.name/post/2017-10-10_seqqa/">Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al. ACL 2017)</a></h2>
+
+  <div class="article-container">
+    <h1 itemprop="name">Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al. ACL 2017)</h1>
     
 
 <div class="article-metadata">
@@ -211,162 +209,149 @@
   
 
   
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-10_seqqa%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Search-based%20Neural%20Structured%20Learning%20for%20Sequential%20Question%20Answering%20%28Iyyer%20et%20al.%20ACL%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-10_seqqa%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-10_seqqa%2f&amp;title=Search-based%20Neural%20Structured%20Learning%20for%20Sequential%20Question%20Answering%20%28Iyyer%20et%20al.%20ACL%202017%29"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-10_seqqa%2f&amp;title=Search-based%20Neural%20Structured%20Learning%20for%20Sequential%20Question%20Answering%20%28Iyyer%20et%20al.%20ACL%202017%29"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Search-based%20Neural%20Structured%20Learning%20for%20Sequential%20Question%20Answering%20%28Iyyer%20et%20al.%20ACL%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-10_seqqa%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
 
 </div>
 
-    <div class="article-style"><p>
+    <div class="article-style" itemprop="articleBody">
       
-      A new dataset containing multi-turn questions about a table, and a model that generates a kind of logical form, but scores actions based on the content of the table.
-      
-    </p></div>
+
+<p>Semantic parsing datasets generally consist of (question, answer) pairs, where each pair is completely independent of the rest (one exception is ATIS, which has multi-turn conversations, though most work doesn&rsquo;t use them).
+In reality, we often ask a series of simple questions that together form a complex one, for example &ldquo;What flights are available from Detroit to Sydney? And how much is the price if I don&rsquo;t want to leave before 8am?&rdquo;
+This work explores these kinds of sequential questions with a new dataset and algorithm.</p>
+
+<p>The dataset was formed by asking crowd workers to rephrase questions from the WikiTableQuestions dataset into sequences of shorter questions.
+This naturally constrains the types of questions (in particular, they reference a single table only), but covers a range of domains.
+With 6,066 question sequences, and on average 2.9 questions / sequence, it&rsquo;s a large dataset by semantic parsing standards.
+However, there are no logical forms, only the row, column, or cell(s) that contain the answer.</p>
+
+<p>To solve the problem, they treat it as choosing a sequence of actions, where each action generate a part of the execution instructions.
+The model follows the recent approach of considering the contents of the database as part of the calculation (e.g. by taking the dot product of the vector for a cell and the vector for the question).</p>
+
+<p>The system has consistently better performance than other QA systems on the new dataset (though no results are shown for the WikiTableQuestions dataset).
+At only 12.8% of sequences completely correct, there is plenty of scope for improvement.
+Based on the description of the operators there are definitely additional abilities that would be useful, so this model has potential to improve.
+That said, it seems difficult to generalise the model to handle more complicated databases with multiple interconnected tables.</p>
+
+<h2 id="citation">Citation</h2>
+
+<p><a href="https://aclweb.org/anthology/P/P17/P17-1167.pdf" target="_blank">Paper</a></p>
+
+<pre><code class="language-bibtex">@InProceedings{iyyer-yih-chang:2017:Long,
+  author    = {Iyyer, Mohit  and  Yih, Wen-tau  and  Chang, Ming-Wei},
+  title     = {Search-based Neural Structured Learning for Sequential Question Answering},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1821--1831},
+  url       = {http://aclweb.org/anthology/P17-1167}
+}
+</code></pre>
+
+    </div>
   </div>
-  
-  <div>
+
+</article>
+
+
+
+<div class="article-container">
+  <h3>Related</h3>
+  <ul>
     
-    <h2><a href="http://www.jkk.name/post/2017-10-09_parsing-autoencoder/"> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</a></h2>
+    <li><a href="/post/2017-10-09_parsing-autoencoder/"> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</a></li>
+    
+    <li><a href="/post/2017-10-06-madlibs/">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-09_parsing-autoencoder/"><span
+      aria-hidden="true">&larr;</span>  Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</a></li>
     
 
-<div class="article-metadata">
-
-  <span class="article-date">
     
-    <time datetime="2017-10-09 14:31:24 -0400 EDT" itemprop="datePublished">
-      Oct 9, 2017
-    </time>
-  </span>
-
-  
-  
-  
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/paper">paper</a
-    >, 
-    
-    <a href="/tags/nlp">nlp</a
-    >, 
-    
-    <a href="/tags/emnlp">emnlp</a
-    >, 
-    
-    <a href="/tags/semantic-parsing">semantic parsing</a
-    >
-    
-  </span>
-  
-  
-
-  
+  </ul>
+</nav>
 
 </div>
 
-    <div class="article-style"><p>
-      
-      By training a parser and language generation system together, we can use semantic parses without associated sentences for training (the sentence becomes a latent representation that is being learnt).
-      
-    </p></div>
-  </div>
+<div class="article-container">
   
-  <div>
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
     
-    <h2><a href="http://www.jkk.name/post/2017-10-06-madlibs/">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</a></h2>
     
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-jkk-name" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2017-10-06 13:31:43 -0400 EDT" itemprop="datePublished">
-      Oct 6, 2017
-    </time>
-  </span>
-
-  
-  
-  
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/paper">paper</a
-    >, 
-    
-    <a href="/tags/nlp">nlp</a
-    >, 
-    
-    <a href="/tags/emnlp">emnlp</a
-    >
-    
-  </span>
-  
-  
-
-  
 
 </div>
 
-    <div class="article-style"><p>
-      
-      A new task and associated evaluation method plus system for Mad Libs - filling in missing words in a story in a funny way. While the system does poorly, using it as a first pass with human rerankers produces funnier stories than people alone.
-      
-    </p></div>
-  </div>
-  
-  <div>
-    
-    <h2><a href="http://www.jkk.name/post/pizza/">Ordering Pizza for an Event with Vegetarians</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2017-09-27 00:00:00 -0400 EDT" itemprop="datePublished">
-      Sep 27, 2017
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/misc">misc</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      A simple model to help determine how much of each pizza type to order for an event.
-      
-    </p></div>
-  </div>
-  
-
-  
-
-
-</div>
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
@@ -400,6 +385,15 @@
     
 
     
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
     
 
     
