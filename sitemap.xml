@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-10-16_forumrnn/</loc>
+      <lastmod>2017-10-16T20:55:07-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-10-12_amralignment/</loc>
       <lastmod>2017-10-12T19:52:34-04:00</lastmod>
     </url>
@@ -415,6 +424,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/coreference/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/data/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -425,18 +444,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>http://www.jkk.name/tags/emnlp/</loc>
-      <lastmod>2017-10-12T19:52:34-04:00</lastmod>
+      <lastmod>2017-10-16T20:55:07-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -447,6 +456,16 @@
     
       <loc>http://www.jkk.name/tags/humour/</loc>
       <lastmod>2017-10-06T13:31:43-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/information-extraction/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -486,7 +505,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-10-12T19:52:34-04:00</lastmod>
+      <lastmod>2017-10-16T20:55:07-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -525,6 +544,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/syntax/</loc>
+      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/tacl/</loc>
       <lastmod>2017-10-11T17:29:04-04:00</lastmod>
       <priority>0</priority>
@@ -537,6 +566,16 @@
     
       <loc>http://www.jkk.name/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/word-vectors/</loc>
+      <lastmod>2017-10-16T20:55:07-04:00</lastmod>
       <priority>0</priority>
     </url>
     
