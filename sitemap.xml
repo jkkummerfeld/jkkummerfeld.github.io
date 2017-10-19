@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-10-18_neuralamr/</loc>
+      <lastmod>2017-10-18T21:31:05-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/post/2017-10-17_nedisambiguation/</loc>
+      <lastmod>2017-10-17T20:33:58-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-10-16_forumrnn/</loc>
       <lastmod>2017-10-16T20:55:07-04:00</lastmod>
     </url>
@@ -61,6 +79,15 @@
     
       <loc>http://www.jkk.name/post/2017-10-06-madlibs/</loc>
       <lastmod>2017-10-06T13:31:43-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/post/2017-10-05-deftnn/</loc>
+      <lastmod>2017-10-05T00:00:00-04:00</lastmod>
     </url>
     
   
@@ -415,7 +442,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/amr/</loc>
-      <lastmod>2017-10-12T19:52:34-04:00</lastmod>
+      <lastmod>2017-10-18T21:31:05-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -435,6 +462,16 @@
     <url>
     
       <loc>http://www.jkk.name/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/conll/</loc>
+      <lastmod>2017-10-17T20:33:58-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -463,8 +500,38 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/eacl/</loc>
+      <lastmod>2017-10-18T21:31:05-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/efficiency/</loc>
+      <lastmod>2017-10-05T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/emnlp/</loc>
       <lastmod>2017-10-16T20:55:07-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/entity-linking/</loc>
+      <lastmod>2017-10-17T20:33:58-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -523,8 +590,18 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/neural-network/</loc>
+      <lastmod>2017-10-05T00:00:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-10-16T20:55:07-04:00</lastmod>
+      <lastmod>2017-10-18T21:31:05-04:00</lastmod>
       <priority>0</priority>
     </url>
     
