@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-18_neuralamr/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-19_mace/">
 
   
 
-  <title>Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017) | Jonathan K. Kummerfeld</title>
+  <title>Learning Whom to Trust with MACE (Hovy et al., NAACL 2013) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</h1>
+    <h1 itemprop="name">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-18 21:31:05 -0400 EDT" itemprop="datePublished">
-      Oct 18, 2017
+    <time datetime="2017-10-19 17:08:50 -0400 EDT" itemprop="datePublished">
+      Oct 19, 2017
     </time>
   </span>
 
@@ -203,10 +203,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/eacl">eacl</a
+    <a href="/tags/naacl">naacl</a
     >, 
     
-    <a href="/tags/amr">amr</a
+    <a href="/tags/crowdsourcing">crowdsourcing</a
     >
     
   </span>
@@ -219,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Addressing%20the%20Data%20Sparsity%20Issue%20in%20Neural%20AMR%20Parsing%20%28Peng%20et%20al.%2c%20EACL%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-18_neuralamr%2f"
+         href="https://twitter.com/intent/tweet?text=Learning%20Whom%20to%20Trust%20with%20MACE%20%28Hovy%20et%20al.%2c%20NAACL%202013%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-19_mace%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-18_neuralamr%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-19_mace%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-18_neuralamr%2f&amp;title=Addressing%20the%20Data%20Sparsity%20Issue%20in%20Neural%20AMR%20Parsing%20%28Peng%20et%20al.%2c%20EACL%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-19_mace%2f&amp;title=Learning%20Whom%20to%20Trust%20with%20MACE%20%28Hovy%20et%20al.%2c%20NAACL%202013%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-18_neuralamr%2f&amp;title=Addressing%20the%20Data%20Sparsity%20Issue%20in%20Neural%20AMR%20Parsing%20%28Peng%20et%20al.%2c%20EACL%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-19_mace%2f&amp;title=Learning%20Whom%20to%20Trust%20with%20MACE%20%28Hovy%20et%20al.%2c%20NAACL%202013%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Addressing%20the%20Data%20Sparsity%20Issue%20in%20Neural%20AMR%20Parsing%20%28Peng%20et%20al.%2c%20EACL%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-18_neuralamr%2f">
+         href="mailto:?subject=Learning%20Whom%20to%20Trust%20with%20MACE%20%28Hovy%20et%20al.%2c%20NAACL%202013%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-19_mace%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,33 +262,50 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>This is another paper concerned with the challenge of sparsity in AMR parsing, specifically that there are an enormous number of output symbols in the parse trees and most are seen infrequently.
-The system they develop is based on the encoder-decoder with attention approach, which has previously done poorly for AMR, partially because of sparsity.</p>
+<p>The standard way to get high quality annotations is to get labels from multiple people and take a majority vote.
+Getting multiple annotations costs more, and the quality of annotators can vary considerably (with spamming at one extreme).
+One way to avoid the quality issue is to restrict who can do the task (must have done X previous tasks with an accept rate of Y), but that limits the pool of available workers.
+Another approach is to try to estimate the quality of annotator work using a statistical model.</p>
 
-<p>Their solution is to merge certain types of symbols into groups (dates, named entities, rare verbs, constants, etc) and have a standard way to map from the surface form to the output symbol.
-This is an alternative to the approach from the paper I <a href="http://www.jkk.name/post/2017-10-12_amralignment/" target="_blank">wrote about</a> last week.
-They also introduce a completely separate idea, which is a different way to take an AMR graph and turn it into a linear sequence.
-This change is necessary to make the output follow the form their model generates - a sequence (though there has been work on tree based LSTMs on the output side, so AMR could be directly generated, and I believe there has been some work on applying that to AMR).</p>
+<p>Here a generative model is used, with the following structure:</p>
 
-<p>Together these changes do substantially improve performance over previous encoder-decoder based work for AMR.
-However, there is still a substantial gap between the system and state-of-the-art, presumably because of the additional resources that other systems indirectly use by running external systems for NER, dependency parsing, etc.
-Given the recent success of multi-task learning with neural nets, it would be interesting to see if those resources could be used here to further boost performance.
-It may also be productive to combine these ideas with the graph abstraction ideas from AMR alignment paper.</p>
+<ul>
+<li>$T_i$, the true label, sampled with a uniform prior over labels</li>
+<li>$S_{ij}$, a binary variable indicating if the person is spamming or not, sampled as a Bernoulli variable with a Beta prior</li>
+<li>$A_{ij}$, the annotator&rsquo;s decision, if they are spamming it is sampled from a multinomial with parameters specific to them (with a Dirichlet prior), otherwise it is the true label</li>
+</ul>
+
+<p>$A$ is observed, but $T$ and $S$ are not, so they use expectation maximization to get both model parameters and variable values.
+To deal with nonconvexity they use 100 random restarts, deciding which is best based on how well the model describes the data.
+Note - this model (and the code) was the basis of the error detection paper I <a href="http://www.jkk.name/post/2017-10-13_errordetection/" target="_blank">wrote about</a> recently.</p>
+
+<p>For predicting annotator quality the model is consistently effective across three datasets, though the Beta and Dirichlet priors are key for one (where annotator agreement was high on average).
+For determining the correct answer it is slightly better than majority vote, though the gains are small.
+The real advantage comes in deciding whether to discard data, where the choice of what to discard can be guided by the estimate of quality (this is what the error detection paper was doing).
+A range of synthetic experiments also show positive results, though their design shares the assumptions about behaviour that are baked into the model.</p>
+
+<p>I found a few results particularly interesting:</p>
+
+<ul>
+<li>As the number of annotators is decreased, the benefit of this approach over majority vote grows to be quite substantial (the main experiments are for data with 10 annotators).</li>
+<li>If you do use majority vote, use an odd number of annotators. Switching to an even number mainly seems to create ties. The right number is also very data dependent.</li>
+<li>Providing gold information as supervision within EM doesn&rsquo;t help much unless it is quite substantial (20%+ of the data)</li>
+</ul>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://aclweb.org/anthology/E/E17/E17-1035.pdf" target="_blank">Paper</a></p>
+<p><a href="http://www.aclweb.org/anthology/N13-1132.pdf" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{peng-EtAl:2017:EACLlong1,
-  author    = {Peng, Xiaochang  and  Wang, Chuan  and  Gildea, Daniel  and  Xue, Nianwen},
-  title     = {Addressing the Data Sparsity Issue in Neural AMR Parsing},
-  booktitle = {Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 1, Long Papers},
-  month     = {April},
-  year      = {2017},
-  address   = {Valencia, Spain},
+<pre><code class="language-bibtex">@InProceedings{hovy-EtAl:2013:NAACL-HLT,
+  author    = {Hovy, Dirk  and  Berg-Kirkpatrick, Taylor  and  Vaswani, Ashish  and  Hovy, Eduard},
+  title     = {Learning Whom to Trust with MACE},
+  booktitle = {Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2013},
+  address   = {Atlanta, Georgia},
   publisher = {Association for Computational Linguistics},
-  pages     = {366--375},
-  url       = {http://www.aclweb.org/anthology/E17-1035}
+  pages     = {1120--1130},
+  url       = {http://www.aclweb.org/anthology/N13-1132}
 }
 </code></pre>
 
@@ -303,7 +320,7 @@ It may also be productive to combine these ideas with the graph abstraction idea
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-10-12_amralignment/">Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</a></li>
+    <li><a href="/post/2017-10-18_neuralamr/">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</a></li>
     
     <li><a href="/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
     
@@ -321,13 +338,10 @@ It may also be productive to combine these ideas with the graph abstraction idea
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-10-17_nedisambiguation/"><span
-      aria-hidden="true">&larr;</span> Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-18_neuralamr/"><span
+      aria-hidden="true">&larr;</span> Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

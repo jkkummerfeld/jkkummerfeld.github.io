@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-10-19_mace/</loc>
+      <lastmod>2017-10-19T17:08:50-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-10-18_neuralamr/</loc>
       <lastmod>2017-10-18T21:31:05-04:00</lastmod>
     </url>
@@ -490,6 +499,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/crowdsourcing/</loc>
+      <lastmod>2017-10-19T17:08:50-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/data/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -590,6 +609,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/naacl/</loc>
+      <lastmod>2017-10-19T17:08:50-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/neural-network/</loc>
       <lastmod>2017-10-05T00:00:00-04:00</lastmod>
       <priority>0</priority>
@@ -601,7 +630,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-10-18T21:31:05-04:00</lastmod>
+      <lastmod>2017-10-19T17:08:50-04:00</lastmod>
       <priority>0</priority>
     </url>
     
