@@ -227,7 +227,7 @@
 
   <div class="article-style" itemprop="articleBody">
     
-    Recurrent neural networks like LSTMs and GRUs have limited scope for parallelisation because each step depends on the one before it. This architecture also means that many steps of computation separate two words that are far apart, making it difficult to capture long-distance relations. A range of approaches have been used to try to address these issues, such as convolutional structures and other forms of recurrence (e.g. QRNNs). The idea in this work is to use attention, applied multiple times, to get a network that is fast while still capturing positional information.
+    <p>To get context-dependence without recurrence we can use a network that applies attention multiple times over both input and output (as it is generated).</p>
     
   </div>
   <p class="read-more">
