@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-20_onlyattention/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-23_alphagozero/">
 
   
 
-  <title>Attention Is All You Need (Vaswani et al., ArXiv 2017) | Jonathan K. Kummerfeld</title>
+  <title>Mastering the game of Go without human knowledge (Silver et al., Nature 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Attention Is All You Need (Vaswani et al., ArXiv 2017)</h1>
+    <h1 itemprop="name">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-20 15:25:23 -0400 EDT" itemprop="datePublished">
-      Oct 20, 2017
+    <time datetime="2017-10-23 21:12:57 -0400 EDT" itemprop="datePublished">
+      Oct 23, 2017
     </time>
   </span>
 
@@ -203,10 +203,7 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/arxiv">arxiv</a
-    >, 
-    
-    <a href="/tags/neural-network">neural-network</a
+    <a href="/tags/rl">rl</a
     >
     
   </span>
@@ -219,35 +216,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Attention%20Is%20All%20You%20Need%20%28Vaswani%20et%20al.%2c%20ArXiv%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-20_onlyattention%2f"
+         href="https://twitter.com/intent/tweet?text=Mastering%20the%20game%20of%20Go%20without%20human%20knowledge%20%28Silver%20et%20al.%2c%20Nature%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-20_onlyattention%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-20_onlyattention%2f&amp;title=Attention%20Is%20All%20You%20Need%20%28Vaswani%20et%20al.%2c%20ArXiv%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f&amp;title=Mastering%20the%20game%20of%20Go%20without%20human%20knowledge%20%28Silver%20et%20al.%2c%20Nature%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-20_onlyattention%2f&amp;title=Attention%20Is%20All%20You%20Need%20%28Vaswani%20et%20al.%2c%20ArXiv%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f&amp;title=Mastering%20the%20game%20of%20Go%20without%20human%20knowledge%20%28Silver%20et%20al.%2c%20Nature%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Attention%20Is%20All%20You%20Need%20%28Vaswani%20et%20al.%2c%20ArXiv%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-20_onlyattention%2f">
+         href="mailto:?subject=Mastering%20the%20game%20of%20Go%20without%20human%20knowledge%20%28Silver%20et%20al.%2c%20Nature%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,53 +259,33 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Recurrent neural networks like LSTMs and GRUs have limited scope for parallelisation because each step depends on the one before it.
-This architecture also means that many steps of computation separate two words that are far apart, making it difficult to capture long-distance relations.
-A range of approaches have been used to try to address these issues, such as convolutional structures and other forms of recurrence (e.g. QRNNs).
-The idea in this work is to use attention, applied multiple times, to get a network that is fast while still capturing positional information.</p>
+<p>This paper is an extension of the original AlphaGo work on using reinforcement learning to build a Go-player.
+Interestingly, the changes have simplified the overall model, as well as enabling it to do even better than the previous model, but now without any supervised training.</p>
 
-<p>To explain the structure I put together the figure below, which captures the network structure with a few simplifications:</p>
+<p>One key change is that there is a single core neural network learning to represent the game state.
+On top of that there are either a set of layers that produce an evaluation of the quality of a position, or there are a set of layers that place a distribution over moves.
+This ties in nicely to a lot of work happening at the moment on multi-task learning in NLP and elsewhere.</p>
 
-<p><img src="/img/post/google-attention.png" alt="Google Attention Network" /></p>
-
-<p>There a few ideas being brought together here:</p>
-
-<ul>
-<li><em>Positional encoding</em>, which is a vector of the same length as the word representation, but that depends only on the position in the input. Here they use $f(pos, dim) = sin(pos / 10000^{2 dim / d_w})$ for even dimensions and the cosine equivalent for odd dimensions (where $d_w$ is the number of dimensions.</li>
-<li><em>Multi-head attention</em>, where rather than running attention once on the full vector, multiple linear transforms are applied to get smaller vectors.</li>
-<li><em>Scaled dot product attention</em>, the equation is shown in the figure, the key new idea is to rescale by the square root of the dimensionality so that larger vectors don&rsquo;t produce excessively sharp distributions after the softmax is applied. The more general form of this described in the paper has keys ($K$), queries ($Q$) and values ($V$), but the network uses the same vector for the key and value. I show the query with a solid line and the values/keys with dotted lines. The matrix $V$ is formed by using the $v$ vectors as rows, while $Q$ is formed by duplicating $q$ in every row. Note, on the left hand side attention is over all input words, while on the right it is only over</li>
-<li><em>Layer normalisation</em>, a way to rescale weights to keep vector outputs in a nice range, from <a href="https://arxiv.org/abs/1607.06450" target="_blank">Ba, Kiros and Hinton (ArXiv 2016)</a>.</li>
-<li>Other details, (1) When the outputs are words, the vectors used to initially represent each input word are also used to represent the outputs and in the final linear transformation (though with some rescaling). (2) They use a formula I haven&rsquo;t seen before to adjust the learning rate during training, (3) dropout in several places and label smoothing are used for regularization.</li>
-</ul>
-
-<p>Simplifications in the figure:</p>
-
-<ul>
-<li>For multi-head attention I only show two transforms, while in practise they used 8.</li>
-<li>The shaded regions are duplicated 6 times to create a stack, with the output of one region acting as the input to the next copy of it. The links from left to right are always from the top of the input stack.</li>
-<li>The musical repeat signs indicate that the structure is essentially the same. On the output side this isn&rsquo;t quite true since the attention boxes only take inputs to their left (since output to the right doesn&rsquo;t exist when they are being calculated).</li>
-</ul>
-
-<p>In terms of experiments, it works at least as well if not better than prior approaches, and is a lot faster for machine translation (no speed numbers are given for parsing).
-There is also some nice analysis of what it ends out using the attention mechanism to focus on for each word.
-It seems like it can provide a way to effectively disambiguate the sense of a word based on its context.</p>
+<p>Getting into the details, they use monte-carlo tree search to choose actions during training, then update the model to better match the outcomes observed.
+Starting from a completely random initialisation, the argument for why this works is that at every point in self-play the MCTS informed outcomes are just slightly better than the current model.
+That edge is enough to provide a useful signal, without being such a drastic shift because in self-play the two sides are closely matched.
+Interestingly, while the unsupervised model is worse at predicting what expert human players will do in a game, it is still better at predicting which player will win.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://arxiv.org/pdf/1706.03762.pdf" target="_blank">ArXiv Paper</a></p>
+<p><a href="https://www.nature.com/nature/journal/v550/n7676/full/nature24270.html" target="_blank">Paper</a></p>
 
-<p>Google also has some blog posts up
-<a href="https://research.googleblog.com/2017/08/transformer-novel-neural-network.html" target="_blank">about the paper</a>
-and
-<a href="https://research.googleblog.com/2017/06/accelerating-deep-learning-research.html" target="_blank">about the library</a>
-they released.</p>
-
-<pre><code class="language-bibtex">@article{arxiv:1706.03762,
-  author    = {Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin},
-  title     = {Attention Is All You Need},
-  journal   = {ArXiv},
-  year      = {2017},
-  url       = {http://arxiv.org/abs/1706.03762},
+<pre><code class="language-bibtex">@Article{AlphaGoZero,
+  author = {Silver, David  and  Schrittwieser, Julian  and  Simonyan, Karen  and  Antonoglou, Ioannis  and  Huang, Aja  and  Guez, Arthur  and  Hubert, Thomas  and  Baker, Lucas  and  Lai, Matthew  and  Bolton, Adrian  and  Chen, Yutian  and  Lillicrap, Timothy  and  Hui, Fan  and  Sifre, Laurent  and  van den Driessche, George  and  Graepel, Thore  and  Hassabis, Demis},
+  title = {Mastering the game of Go without human knowledge},
+  journal = {Nature},
+  year = {2017},
+  volume = {550},
+  issue = {7676},
+  pages = {354-359},
+  publisher = {Macmillan Publishers Limited, part of Springer Nature},
+  doi = {10.1038/nature24270},
+  url = {http://www.nature.com/nature/journal/v550/n7676/abs/nature24270.html#supplementary-information},
 }
 </code></pre>
 
@@ -323,15 +300,15 @@ they released.</p>
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
+    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
     
     <li><a href="/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></li>
     
     <li><a href="/post/2017-10-18_neuralamr/">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</a></li>
     
-    <li><a href="/post/2017-10-17_nedisambiguation/">Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</a></li>
+    <li><a href="/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
     
-    <li><a href="/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></li>
+    <li><a href="/post/2017-10-17_nedisambiguation/">Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</a></li>
     
   </ul>
 </div>
@@ -341,13 +318,10 @@ they released.</p>
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-10-19_mace/"><span
-      aria-hidden="true">&larr;</span> Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-20_onlyattention/"><span
+      aria-hidden="true">&larr;</span> Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-10-23_alphagozero/">Mastering the game of Go without human knowledge (Silver et al., Nature 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

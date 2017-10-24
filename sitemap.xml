@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-10-23_alphagozero/</loc>
+      <lastmod>2017-10-23T21:12:57-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-10-20_onlyattention/</loc>
       <lastmod>2017-10-20T15:25:23-04:00</lastmod>
     </url>
@@ -649,7 +658,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-10-20T15:25:23-04:00</lastmod>
+      <lastmod>2017-10-23T21:12:57-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -660,6 +669,16 @@
     
       <loc>http://www.jkk.name/publication_types/</loc>
       <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/rl/</loc>
+      <lastmod>2017-10-23T21:12:57-04:00</lastmod>
       <priority>0</priority>
     </url>
     
