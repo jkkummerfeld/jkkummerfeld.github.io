@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-23_alphagozero/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-24_dynamictransition/">
 
   
 
-  <title>Mastering the game of Go without human knowledge (Silver et al., Nature 2017) | Jonathan K. Kummerfeld</title>
+  <title>Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</h1>
+    <h1 itemprop="name">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-23 21:12:57 -0400 EDT" itemprop="datePublished">
-      Oct 23, 2017
+    <time datetime="2017-10-24 13:06:04 -0400 EDT" itemprop="datePublished">
+      Oct 24, 2017
     </time>
   </span>
 
@@ -203,7 +203,7 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/rl">rl</a
+    <a href="/tags/syntax">syntax</a
     >
     
   </span>
@@ -216,35 +216,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Mastering%20the%20game%20of%20Go%20without%20human%20knowledge%20%28Silver%20et%20al.%2c%20Nature%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f"
+         href="https://twitter.com/intent/tweet?text=Dynamic%20Programming%20Algorithms%20for%20Transition-Based%20Dependency%20Parsers%20%28Kuhlmann%20et%20al.%2c%20ACL%202011%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-24_dynamictransition%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-24_dynamictransition%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f&amp;title=Mastering%20the%20game%20of%20Go%20without%20human%20knowledge%20%28Silver%20et%20al.%2c%20Nature%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-24_dynamictransition%2f&amp;title=Dynamic%20Programming%20Algorithms%20for%20Transition-Based%20Dependency%20Parsers%20%28Kuhlmann%20et%20al.%2c%20ACL%202011%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f&amp;title=Mastering%20the%20game%20of%20Go%20without%20human%20knowledge%20%28Silver%20et%20al.%2c%20Nature%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-24_dynamictransition%2f&amp;title=Dynamic%20Programming%20Algorithms%20for%20Transition-Based%20Dependency%20Parsers%20%28Kuhlmann%20et%20al.%2c%20ACL%202011%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Mastering%20the%20game%20of%20Go%20without%20human%20knowledge%20%28Silver%20et%20al.%2c%20Nature%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-23_alphagozero%2f">
+         href="mailto:?subject=Dynamic%20Programming%20Algorithms%20for%20Transition-Based%20Dependency%20Parsers%20%28Kuhlmann%20et%20al.%2c%20ACL%202011%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-24_dynamictransition%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -259,33 +259,31 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>This paper is an extension of the original AlphaGo work on using reinforcement learning to build a Go-player.
-Interestingly, the changes have simplified the overall model, as well as enabling it to do even better than the previous model, but now without any supervised training.</p>
+<p>This paper from 2011 explores the relationship between transition based parsing and dynamic programming based parsing.
+They show how to convert common dependency parsing systems (Arc-Standard and Arc-Eager) into dynamic programs, and how doing the reverse on a dynamic program gives the Arc-Hybrid approach (which has since been used in many places, and is now joined by additional systems like Arc-Swift).</p>
 
-<p>One key change is that there is a single core neural network learning to represent the game state.
-On top of that there are either a set of layers that produce an evaluation of the quality of a position, or there are a set of layers that place a distribution over moves.
-This ties in nicely to a lot of work happening at the moment on multi-task learning in NLP and elsewhere.</p>
+<p>The benefit of this transformation is that we can find exact answers without massive beams.
+The drawback is that the feature set is restricted.
+This paper is theoretical, so it doesn&rsquo;t give a direct measure of this tradeoff, though <a href="http://www.anthology.aclweb.org/D/D13/D13-1071.pdf" target="_blank">follow up work</a> shows that avoiding search errors is indeed beneficial.</p>
 
-<p>Getting into the details, they use monte-carlo tree search to choose actions during training, then update the model to better match the outcomes observed.
-Starting from a completely random initialisation, the argument for why this works is that at every point in self-play the MCTS informed outcomes are just slightly better than the current model.
-That edge is enough to provide a useful signal, without being such a drastic shift because in self-play the two sides are closely matched.
-Interestingly, while the unsupervised model is worse at predicting what expert human players will do in a game, it is still better at predicting which player will win.</p>
+<p>With all of the positive results using neural networks for multi-task learning, one thought this work leads to is whether we could treat different inference methods as different tasks.
+In other words, have a single model encoding the input, then have multiple inference algorithms with different extensions of that model, all trained simultaneously.
+The variation in available context for the different algorithms may force generality in the core representation shared across them.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://www.nature.com/nature/journal/v550/n7676/full/nature24270.html" target="_blank">Paper</a></p>
+<p><a href="http://aclweb.org/anthology/P/P11/P11-1068.pdf" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@Article{AlphaGoZero,
-  author = {Silver, David  and  Schrittwieser, Julian  and  Simonyan, Karen  and  Antonoglou, Ioannis  and  Huang, Aja  and  Guez, Arthur  and  Hubert, Thomas  and  Baker, Lucas  and  Lai, Matthew  and  Bolton, Adrian  and  Chen, Yutian  and  Lillicrap, Timothy  and  Hui, Fan  and  Sifre, Laurent  and  van den Driessche, George  and  Graepel, Thore  and  Hassabis, Demis},
-  title = {Mastering the game of Go without human knowledge},
-  journal = {Nature},
-  year = {2017},
-  volume = {550},
-  issue = {7676},
-  pages = {354-359},
-  publisher = {Macmillan Publishers Limited, part of Springer Nature},
-  doi = {10.1038/nature24270},
-  url = {http://www.nature.com/nature/journal/v550/n7676/abs/nature24270.html#supplementary-information},
+<pre><code class="language-bibtex">@InProceedings{kuhlmann-gomezrodriguez-satta:2011:ACL-HLT2011,
+  author    = {Kuhlmann, Marco  and  G\'{o}mez-Rodr\'{i}guez, Carlos  and  Satta, Giorgio},
+  title     = {Dynamic Programming Algorithms for Transition-Based Dependency Parsers},
+  booktitle = {Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2011},
+  address   = {Portland, Oregon, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {673--682},
+  url       = {http://www.aclweb.org/anthology/P11-1068}
 }
 </code></pre>
 
@@ -300,6 +298,8 @@ Interestingly, while the unsupervised model is worse at predicting what expert h
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/post/2017-10-23_alphagozero/">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</a></li>
+    
     <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
     
     <li><a href="/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></li>
@@ -307,8 +307,6 @@ Interestingly, while the unsupervised model is worse at predicting what expert h
     <li><a href="/post/2017-10-18_neuralamr/">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</a></li>
     
     <li><a href="/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
-    
-    <li><a href="/post/2017-10-17_nedisambiguation/">Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</a></li>
     
   </ul>
 </div>
@@ -318,13 +316,10 @@ Interestingly, while the unsupervised model is worse at predicting what expert h
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-10-20_onlyattention/"><span
-      aria-hidden="true">&larr;</span> Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-23_alphagozero/"><span
+      aria-hidden="true">&larr;</span> Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-10-24_dynamictransition/">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
