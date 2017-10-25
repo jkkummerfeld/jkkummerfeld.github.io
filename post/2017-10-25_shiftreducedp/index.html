@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/tags/paper/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-25_shiftreducedp/">
 
   
 
-  <title>Paper | Jonathan K. Kummerfeld</title>
+  <title>Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -169,121 +169,188 @@
 </nav>
 
 
-
-
-
-<div class="universal-wrapper">
-
-  <h1>Paper</h1>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
-  
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-25_shiftreducedp/">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></h2>
-    <div class="article-style">
-      
-      An implementation of the transition-parsing as a dynamic program idea, leading to fast parsing and strong performance.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-24_dynamictransition/">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></h2>
-    <div class="article-style">
-      
-      Transition based algorithms can be transformed into dynamic programs by defining sequences of actions that correspond to the same overall transformation.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-23_alphagozero/">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</a></h2>
-    <div class="article-style">
-      
-      By using a single core model to build a game state representation, which then gives input to both state evaluation and move choice, DeepMind are able to apply reinforcement learning with self-play with no supervision and achieve state-of-the-art performance.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></h2>
-    <div class="article-style">
-      
-      To get context-dependence without recurrence we can use a network that applies attention multiple times over both input and output (as it is generated).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></h2>
-    <div class="article-style">
-      
-      By using a generative model to explain worker annotations, we can more effectively predict the correct label, and which workers are spamming.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-18_neuralamr/">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</a></h2>
-    <div class="article-style">
-      
-      Another paper looking at the issue of output symbol sparsity in AMR parsing, though here the solution is to group the consistent but rare symbols (rather than graph fragments like the paper last week). This drastically increases neural model performance, but does not reach the level of hybrid systems.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-17_nedisambiguation/">Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</a></h2>
-    <div class="article-style">
-      
-      The WikiLinks dataset of text mentions that are hyperlinked to wikipedia articles provides a nice testing space for named entity disambiguation, and a neural network using attention over local context does reasonably well.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></h2>
-    <div class="article-style">
-      
-      A proposal for how to improve vector representations of sentences by using attention over (1) fixed vectors, and (2) a context sentence.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-13_errordetection/">Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</a></h2>
-    <div class="article-style">
-      
-      When labeling a dataset automatically there are going to be errors, but we can use a generative model and active learning to guide effort to checking the examples most likely to be incorrect.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-12_amralignment/">Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</a></h2>
-    <div class="article-style">
-      
-      Two ideas for improving AMR parsing: (1) take graph distance into consideration when generating alignments, (2) during parsing, for concept generation, generate individual concepts in some cases and frequently occurring subgraphs in other cases.
-      
-    </div>
-  </div>
+
+  <div class="article-container">
+    <h1 itemprop="name">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-10-25 14:44:13 -0400 EDT" itemprop="datePublished">
+      Oct 25, 2017
+    </time>
+  </span>
+
   
 
   
-<nav>
+  
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/paper">paper</a
+    >, 
+    
+    <a href="/tags/syntax">syntax</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Shift-Reduce%20Constituency%20Parsing%20with%20Dynamic%20Programming%20and%20POS%20Tag%20Lattice%20%28Mi%20and%20Huang%2c%202015%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f&amp;title=Shift-Reduce%20Constituency%20Parsing%20with%20Dynamic%20Programming%20and%20POS%20Tag%20Lattice%20%28Mi%20and%20Huang%2c%202015%29"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f&amp;title=Shift-Reduce%20Constituency%20Parsing%20with%20Dynamic%20Programming%20and%20POS%20Tag%20Lattice%20%28Mi%20and%20Huang%2c%202015%29"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Shift-Reduce%20Constituency%20Parsing%20with%20Dynamic%20Programming%20and%20POS%20Tag%20Lattice%20%28Mi%20and%20Huang%2c%202015%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>This paper is a follow-up to yesterday&rsquo;s, where the approach is implemented and evaluated on English and Chinese, with very strong results.
+The novel contribution is the idea of introducing alternating steps in the dynamic program to do unary steps (not a novel idea in general, but novel in its application to the dynamic programming version of shift-reduce parsing).</p>
+
+<p>What I found interesting here were the clear benefits of the dynamic program (DP) version.
+One way of viewing this is that the DP gives a more intelligent type of beam, avoiding the issue where the beam is filled with minor variations on a theme.
+Results are given for various beam sizes in both approaches, but it would be interesting to see a graph where the x-axis is number of items built.
+I suspect in that situation, the gap would be smaller.
+On speed, there is the nice theoretical bound of $O(n)$ for this approach, but that obscures a grammar constant related to the item structure.</p>
+
+<h2 id="citation">Citation</h2>
+
+<p><a href="http://www.aclweb.org/anthology/N15-1108" target="_blank">Paper</a></p>
+
+<pre><code class="language-bibtex@InProceedings{mi-huang:2015:NAACL-HLT,">  author    = {Mi, Haitao  and  Huang, Liang},
+  title     = {Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice},
+  booktitle = {Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {May--June},
+  year      = {2015},
+  address   = {Denver, Colorado},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1030--1035},
+  url       = {http://www.aclweb.org/anthology/N15-1108}
+}
+</code></pre>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container">
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/2017-10-24_dynamictransition/">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></li>
+    
+    <li><a href="/post/2017-10-23_alphagozero/">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</a></li>
+    
+    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
+    
+    <li><a href="/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></li>
+    
+    <li><a href="/post/2017-10-18_neuralamr/">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="container">
+  <nav>
   <ul class="pager">
     
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-24_dynamictransition/"><span
+      aria-hidden="true">&larr;</span> Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></li>
     
-    <li><a href="/tags/paper/page/2/">&gt;</a></li>
+
     
   </ul>
 </nav>
 
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-jkk-name" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
 
 </div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
