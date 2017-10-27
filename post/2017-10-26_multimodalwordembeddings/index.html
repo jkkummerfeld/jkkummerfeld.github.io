@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-25_shiftreducedp/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/">
 
   
 
-  <title>Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015) | Jonathan K. Kummerfeld</title>
+  <title>Multimodal Word Distributions (Athiwaratkun and Wilson, 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</h1>
+    <h1 itemprop="name">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-25 14:44:13 -0400 EDT" itemprop="datePublished">
-      Oct 25, 2017
+    <time datetime="2017-10-26 20:47:12 -0400 EDT" itemprop="datePublished">
+      Oct 26, 2017
     </time>
   </span>
 
@@ -203,7 +203,7 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/syntax">syntax</a
+    <a href="/tags/word-vectors">word-vectors</a
     >
     
   </span>
@@ -216,35 +216,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Shift-Reduce%20Constituency%20Parsing%20with%20Dynamic%20Programming%20and%20POS%20Tag%20Lattice%20%28Mi%20and%20Huang%2c%202015%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f"
+         href="https://twitter.com/intent/tweet?text=Multimodal%20Word%20Distributions%20%28Athiwaratkun%20and%20Wilson%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f&amp;title=Shift-Reduce%20Constituency%20Parsing%20with%20Dynamic%20Programming%20and%20POS%20Tag%20Lattice%20%28Mi%20and%20Huang%2c%202015%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f&amp;title=Multimodal%20Word%20Distributions%20%28Athiwaratkun%20and%20Wilson%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f&amp;title=Shift-Reduce%20Constituency%20Parsing%20with%20Dynamic%20Programming%20and%20POS%20Tag%20Lattice%20%28Mi%20and%20Huang%2c%202015%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f&amp;title=Multimodal%20Word%20Distributions%20%28Athiwaratkun%20and%20Wilson%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Shift-Reduce%20Constituency%20Parsing%20with%20Dynamic%20Programming%20and%20POS%20Tag%20Lattice%20%28Mi%20and%20Huang%2c%202015%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-25_shiftreducedp%2f">
+         href="mailto:?subject=Multimodal%20Word%20Distributions%20%28Athiwaratkun%20and%20Wilson%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -259,29 +259,36 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>This paper is a follow-up to yesterday&rsquo;s, where the approach is implemented and evaluated on English and Chinese, with very strong results.
-The novel contribution is the idea of introducing alternating steps in the dynamic program to do unary steps (not a novel idea in general, but novel in its application to the dynamic programming version of shift-reduce parsing).</p>
+<p>Word2Vec and other approaches provide a single vector representing a word&rsquo;s meaning, giving words spatially defined relationships capturing relatedness.
+A natural extension is to consider regions in that space and allow some words to take up larger or smaller regions.
+Another natural idea is to allow a single word to have multiple representations, to capture the different senses.
+This paper considers both of those ideas, using multiple gaussian distributions per word.</p>
 
-<p>What I found interesting here were the clear benefits of the dynamic program (DP) version.
-One way of viewing this is that the DP gives a more intelligent type of beam, avoiding the issue where the beam is filled with minor variations on a theme.
-Results are given for various beam sizes in both approaches, but it would be interesting to see a graph where the x-axis is number of items built.
-I suspect in that situation, the gap would be smaller.
-On speed, there is the nice theoretical bound of $O(n)$ for this approach, but that obscures a grammar constant related to the item structure.</p>
+<p>Using gaussians has the nice property that there is a closed form for calculating the amount of overlap between them, which is used as a measure of similarity.
+Following ideas from word2vec, during learning the aim is to increase similarity between words that occur together and decrease it between random pairs that do not occur together.
+Once the word representations are learned, KL divergence is used for similarity, along with the standard approaches that only look at the gaussian centres.</p>
+
+<p>In practise, two spherical distributions per word is sufficient.
+Performance is better than word2vec and several other approaches for multi-sense word embeddings.
+There was one puzzling line about the model suffering larger variance problems, but it was not quantified.</p>
+
+<p>It would be very interesting to inject some knowledge, such as from WordNet, to guide the number of gaussians per word, rather than giving them all N.
+The paper also doesn&rsquo;t get into details about the learned space, for example, are the two senses often far apart or close together? (in the latter case it is learning a slightly non-linear spatial representation).</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://www.aclweb.org/anthology/N15-1108" target="_blank">Paper</a></p>
+<p><a href="http://aclweb.org/anthology/P17-1151" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{mi-huang:2015:NAACL-HLT,
-  author    = {Mi, Haitao  and  Huang, Liang},
-  title     = {Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice},
-  booktitle = {Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
-  month     = {May--June},
-  year      = {2015},
-  address   = {Denver, Colorado},
+<pre><code class="language-bibtex">@InProceedings{athiwaratkun-wilson:2017:Long,
+  author    = {Athiwaratkun, Ben  and  Wilson, Andrew},
+  title     = {Multimodal Word Distributions},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
-  pages     = {1030--1035},
-  url       = {http://www.aclweb.org/anthology/N15-1108}
+  pages     = {1645--1656},
+  url       = {http://aclweb.org/anthology/P17-1151}
 }
 </code></pre>
 
@@ -296,15 +303,15 @@ On speed, there is the nice theoretical bound of $O(n)$ for this approach, but t
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></li>
+    
+    <li><a href="/post/2017-10-25_shiftreducedp/">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
+    
     <li><a href="/post/2017-10-24_dynamictransition/">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></li>
     
     <li><a href="/post/2017-10-23_alphagozero/">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</a></li>
     
     <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
-    
-    <li><a href="/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></li>
-    
-    <li><a href="/post/2017-10-18_neuralamr/">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</a></li>
     
   </ul>
 </div>
@@ -314,13 +321,10 @@ On speed, there is the nice theoretical bound of $O(n)$ for this approach, but t
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-10-24_dynamictransition/"><span
-      aria-hidden="true">&larr;</span> Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-25_shiftreducedp/"><span
+      aria-hidden="true">&larr;</span> Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
