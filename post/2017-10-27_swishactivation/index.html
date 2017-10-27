@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-27_swishactivation/">
 
   
 
-  <title>Multimodal Word Distributions (Athiwaratkun and Wilson, 2017) | Jonathan K. Kummerfeld</title>
+  <title>Swish: a Self-Gated Activation Function (Ramachandran et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</h1>
+    <h1 itemprop="name">Swish: a Self-Gated Activation Function (Ramachandran et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-26 20:47:12 -0400 EDT" itemprop="datePublished">
-      Oct 26, 2017
+    <time datetime="2017-10-27 11:22:45 -0400 EDT" itemprop="datePublished">
+      Oct 27, 2017
     </time>
   </span>
 
@@ -203,7 +203,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/word-vectors">word-vectors</a
+    <a href="/tags/neural-network">neural-network</a
+    >, 
+    
+    <a href="/tags/arxiv">arxiv</a
     >
     
   </span>
@@ -216,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Multimodal%20Word%20Distributions%20%28Athiwaratkun%20and%20Wilson%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f"
+         href="https://twitter.com/intent/tweet?text=Swish%3a%20a%20Self-Gated%20Activation%20Function%20%28Ramachandran%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-27_swishactivation%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-27_swishactivation%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f&amp;title=Multimodal%20Word%20Distributions%20%28Athiwaratkun%20and%20Wilson%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-27_swishactivation%2f&amp;title=Swish%3a%20a%20Self-Gated%20Activation%20Function%20%28Ramachandran%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f&amp;title=Multimodal%20Word%20Distributions%20%28Athiwaratkun%20and%20Wilson%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-27_swishactivation%2f&amp;title=Swish%3a%20a%20Self-Gated%20Activation%20Function%20%28Ramachandran%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Multimodal%20Word%20Distributions%20%28Athiwaratkun%20and%20Wilson%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-26_multimodalwordembeddings%2f">
+         href="mailto:?subject=Swish%3a%20a%20Self-Gated%20Activation%20Function%20%28Ramachandran%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-27_swishactivation%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -259,36 +262,36 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Word2Vec and other approaches provide a single vector representing a word&rsquo;s meaning, giving words spatially defined relationships capturing relatedness.
-A natural extension is to consider regions in that space and allow some words to take up larger or smaller regions.
-Another natural idea is to allow a single word to have multiple representations, to capture the different senses.
-This paper considers both of those ideas, using multiple gaussian distributions per word.</p>
+<p>Non-linear functions are the key to the representation power of neural networks.
+Many different ones have been proposed, though it is difficult to make theoretical claims of their properties and so the choice of which to use is generally empirical.
+This paper proposes a new non-linearity, $\text{swish}(x) = x \cdot \text{sigmoid}(x)$.</p>
 
-<p>Using gaussians has the nice property that there is a closed form for calculating the amount of overlap between them, which is used as a measure of similarity.
-Following ideas from word2vec, during learning the aim is to increase similarity between words that occur together and decrease it between random pairs that do not occur together.
-Once the word representations are learned, KL divergence is used for similarity, along with the standard approaches that only look at the gaussian centres.</p>
+<p>Interestingly, it was chosen by a combination of exhaustive search and search with reinforcement learning across a range of functions, evaluating on CIFAR-10 with a small model.
+ReLU variants were consistently second-best to swish variants, and generally the more complicated functions performed worse.
+They do mention two functions that performed well, but didn&rsquo;t generalise: $\text{cos}(x) - x$ and $\text{max}(x, \text{tanh}(x))$, which look like this:</p>
 
-<p>In practise, two spherical distributions per word is sufficient.
-Performance is better than word2vec and several other approaches for multi-sense word embeddings.
-There was one puzzling line about the model suffering larger variance problems, but it was not quantified.</p>
+<p><img src="/img/post/activation-functions.png" alt="Four activation functions" /></p>
 
-<p>It would be very interesting to inject some knowledge, such as from WordNet, to guide the number of gaussians per word, rather than giving them all N.
-The paper also doesn&rsquo;t get into details about the learned space, for example, are the two senses often far apart or close together? (in the latter case it is learning a slightly non-linear spatial representation).</p>
+<p>In a range of experiments in vision and machine translation swish does at least as well or slightly better than the alternatives.
+It also seems more robust to network depth and to work across different network structures.
+As for why it works so well, there are two main ideas: (1) it adds smoothness to the ReLU, (2) it has some sensitivity to negative inputs.
+Both of these seem particularly important at the start of training.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://aclweb.org/anthology/P17-1151" target="_blank">Paper</a></p>
+<p><a href="https://arxiv.org/pdf/1710.05941.pdf" target="_blank">ArXiv Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{athiwaratkun-wilson:2017:Long,
-  author    = {Athiwaratkun, Ben  and  Wilson, Andrew},
-  title     = {Multimodal Word Distributions},
-  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
-  month     = {July},
-  year      = {2017},
-  address   = {Vancouver, Canada},
-  publisher = {Association for Computational Linguistics},
-  pages     = {1645--1656},
-  url       = {http://aclweb.org/anthology/P17-1151}
+<pre><code class="language-bibtex">@ARTICLE{2017arXiv171005941R,
+   author = {{Ramachandran}, P. and {Zoph}, B. and {Le}, Q.~V.},
+    title = &quot;{Swish: a Self-Gated Activation Function}&quot;,
+  journal = {ArXiv e-prints},
+archivePrefix = &quot;arXiv&quot;,
+   eprint = {1710.05941},
+ keywords = {Computer Science - Neural and Evolutionary Computing, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Learning},
+     year = 2017,
+    month = oct,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv171005941R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 </code></pre>
 
@@ -303,15 +306,15 @@ The paper also doesn&rsquo;t get into details about the learned space, for examp
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></li>
+    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
+    
+    <li><a href="/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
+    
+    <li><a href="/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></li>
     
     <li><a href="/post/2017-10-25_shiftreducedp/">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
     
     <li><a href="/post/2017-10-24_dynamictransition/">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></li>
-    
-    <li><a href="/post/2017-10-23_alphagozero/">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</a></li>
-    
-    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
     
   </ul>
 </div>
@@ -321,13 +324,10 @@ The paper also doesn&rsquo;t get into details about the learned space, for examp
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-10-25_shiftreducedp/"><span
-      aria-hidden="true">&larr;</span> Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/"><span
+      aria-hidden="true">&larr;</span> Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-10-27_swishactivation/">Swish: a Self-Gated Activation Function (Ramachandran et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
