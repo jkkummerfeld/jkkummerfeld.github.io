@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/tags/paper/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-30_neuralsequence/">
 
   
 
-  <title>Paper | Jonathan K. Kummerfeld</title>
+  <title>Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -169,103 +169,198 @@
 </nav>
 
 
-
-
-
-<div class="universal-wrapper">
-
-  <h1>Paper</h1>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
-  
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></h2>
-    <div class="article-style">
-      
-      A proposal for how to improve vector representations of sentences by using attention over (1) fixed vectors, and (2) a context sentence.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-13_errordetection/">Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</a></h2>
-    <div class="article-style">
-      
-      When labeling a dataset automatically there are going to be errors, but we can use a generative model and active learning to guide effort to checking the examples most likely to be incorrect.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-12_amralignment/">Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</a></h2>
-    <div class="article-style">
-      
-      Two ideas for improving AMR parsing: (1) take graph distance into consideration when generating alignments, (2) during parsing, for concept generation, generate individual concepts in some cases and frequently occurring subgraphs in other cases.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-11_multimt/">Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</a></h2>
-    <div class="article-style">
-      
-      A translation model trained on sentence pairs from a mixture of languages can do very well across all of the languages, and even generalise somewhat to new pairs of the languages. That&rsquo;s useful as one model can do the work of $O(n^2)$ models, and with a fraction of the parameters.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-10_seqqa/">Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al., ACL 2017)</a></h2>
-    <div class="article-style">
-      
-      A new dataset containing multi-turn questions about a table, and a model that generates a kind of logical form, but scores actions based on the content of the table.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-09_parsing-autoencoder/"> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</a></h2>
-    <div class="article-style">
-      
-      By training a parser and language generation system together, we can use semantic parses without associated sentences for training (the sentence becomes a latent representation that is being learnt).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-06-madlibs/">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</a></h2>
-    <div class="article-style">
-      
-      A new task and associated evaluation method plus system for Mad Libs - filling in missing words in a story in a funny way. While the system does poorly, using it as a first pass with human rerankers produces funnier stories than people alone.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></h2>
-    <div class="article-style">
-      
-      GPU processing can be sped up ~2x by removing low impact rows from weight matrices, and switching to a specialised floating point representation.
-      
-    </div>
-  </div>
+
+  <div class="article-container">
+    <h1 itemprop="name">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2017-10-30 13:28:30 -0400 EDT" itemprop="datePublished">
+      Oct 30, 2017
+    </time>
+  </span>
+
   
 
   
-<nav>
+  
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/paper">paper</a
+    >, 
+    
+    <a href="/tags/arxiv">arxiv</a
+    >, 
+    
+    <a href="/tags/neural-network">neural-network</a
+    >, 
+    
+    <a href="/tags/language-model">language-model</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Dynamic%20Evaluation%20of%20Neural%20Sequence%20Models%20%28Krause%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f&amp;title=Dynamic%20Evaluation%20of%20Neural%20Sequence%20Models%20%28Krause%20et%20al.%2c%202017%29"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f&amp;title=Dynamic%20Evaluation%20of%20Neural%20Sequence%20Models%20%28Krause%20et%20al.%2c%202017%29"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Dynamic%20Evaluation%20of%20Neural%20Sequence%20Models%20%28Krause%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>Language is bursty, with rare words occurring in clumps, the simplest example being an unusual name that occurs a lot in one news article, but not in other articles.
+This paper is about how to modify a neural language model to take this into consideration, by adapting the model over time.</p>
+
+<p>The main idea is to have one model of overall word usage (global) and a separate model that shifts over time to take into consideration the current text (local).
+The idea of adapting is not new (as the paper makes clear), but the key here is an update rule that is a modified form of RMSprop, combining the local and global models.
+It also seems like performing the updates after every 5 words is important, balancing frequency with informativeness (though no ablation of frequencies is presented).
+Conveniently, this is orthogonal to many other ideas and can essentially be stapled on top of a range of sequential architectures, consistently leading to improvements.</p>
+
+<p>One question left open is how this would work in generation.
+The paper describes how it could be applied and could provide improvements, but it also seems likely to risk the repetitive outputs seen in many dialogue systems.</p>
+
+<h2 id="citation">Citation</h2>
+
+<p><a href="https://arxiv.org/pdf/1709.07432.pdf" target="_blank">ArXiv Paper</a></p>
+
+<pre><code class="language-bibtex">@ARTICLE{2017arXiv170907432K,
+   author = {{Krause}, B. and {Kahembwe}, E. and {Murray}, I. and {Renals}, S.},
+    title = &quot;{Dynamic Evaluation of Neural Sequence Models}&quot;,
+  journal = {ArXiv e-prints},
+archivePrefix = &quot;arXiv&quot;,
+   eprint = {1709.07432},
+ keywords = {Computer Science - Neural and Evolutionary Computing, Computer Science - Computation and Language},
+     year = 2017,
+    month = sep,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv170907432K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+}
+</code></pre>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+<div class="article-container">
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/2017-10-27_swishactivation/">Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
+    
+    <li><a href="/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
+    
+    <li><a href="/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></li>
+    
+    <li><a href="/post/2017-10-25_shiftreducedp/">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="container">
+  <nav>
   <ul class="pager">
     
-    <li><a href="/tags/paper/">&lt;</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-27_swishactivation/"><span
+      aria-hidden="true">&larr;</span> Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
     
+
     
   </ul>
 </nav>
 
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-jkk-name" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
 
 </div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
