@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-30_neuralsequence/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-10-31_realtimecaptioning/">
 
   
 
-  <title>Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</h1>
+    <h1 itemprop="name">Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-30 13:28:30 -0400 EDT" itemprop="datePublished">
-      Oct 30, 2017
+    <time datetime="2017-10-31 13:23:13 -0400 EDT" itemprop="datePublished">
+      Oct 31, 2017
     </time>
   </span>
 
@@ -203,13 +203,7 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/arxiv">arxiv</a
-    >, 
-    
-    <a href="/tags/neural-network">neural-network</a
-    >, 
-    
-    <a href="/tags/language-model">language-model</a
+    <a href="/tags/crowdsourcing">crowdsourcing</a
     >
     
   </span>
@@ -222,35 +216,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Dynamic%20Evaluation%20of%20Neural%20Sequence%20Models%20%28Krause%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f"
+         href="https://twitter.com/intent/tweet?text=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.%2c%202012%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f&amp;title=Dynamic%20Evaluation%20of%20Neural%20Sequence%20Models%20%28Krause%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f&amp;title=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.%2c%202012%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f&amp;title=Dynamic%20Evaluation%20of%20Neural%20Sequence%20Models%20%28Krause%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f&amp;title=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.%2c%202012%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Dynamic%20Evaluation%20of%20Neural%20Sequence%20Models%20%28Krause%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-30_neuralsequence%2f">
+         href="mailto:?subject=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.%2c%202012%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -265,32 +259,50 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Language is bursty, with rare words occurring in clumps, the simplest example being an unusual name that occurs a lot in one news article, but not in other articles.
-This paper is about how to modify a neural language model to take this into consideration, by adapting the model over time.</p>
+<p>For any given task, automatic systems are fast, while annotation is accurate.
+This work is about bridging that gap to provide a way for a team of annotators to produce real-time high quality labels.
+The specific application is speech transcription, in which automatic systems are not accurate, while average people are slow (experts can transcribe in real time, but are very expensive).</p>
 
-<p>The main idea is to have one model of overall word usage (global) and a separate model that shifts over time to take into consideration the current text (local).
-The idea of adapting is not new (as the paper makes clear), but the key here is an update rule that is a modified form of RMSprop, combining the local and global models.
-It also seems like performing the updates after every 5 words is important, balancing frequency with informativeness (though no ablation of frequencies is presented).
-Conveniently, this is orthogonal to many other ideas and can essentially be stapled on top of a range of sequential architectures, consistently leading to improvements.</p>
+<p>The solution is to carefully break up the task and combine annotations back together.
+To get it to work well there are a range of subtle design decisions:</p>
 
-<p>One question left open is how this would work in generation.
-The paper describes how it could be applied and could provide improvements, but it also seems likely to risk the repetitive outputs seen in many dialogue systems.</p>
+<ul>
+<li>People hear the entire audio stream, but with their section at normal volume and the rest quieter. This allows them to focus their effort while still understanding the context.</li>
+<li>The alignment process combines annotations with guidance from a language model and a model of typos based on keyboard layout.</li>
+<li>Words are locked in shortly after being typed, to encourage workers to go on rather than revising their own errors.</li>
+</ul>
+
+<p>Follow up work added several more ideas to improve performance:</p>
+
+<ul>
+<li>Time warping, slowing down to half speed for their section, then going to 1.5x for the rest.</li>
+<li>Use ASR as well, either as another worker (with very uncorrelated errors), or as a starting point for human editing (or vice versa).</li>
+<li>Use A* search rather than a greedy algorithm for the alignment.</li>
+</ul>
+
+<p>Performance does not reach the level of a professional, but is far better than ASR.
+From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lower than the professional.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://arxiv.org/pdf/1709.07432.pdf" target="_blank">ArXiv Paper</a></p>
+<p><a href="http://doi.acm.org/10.1145/2380116.2380122" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@ARTICLE{2017arXiv170907432K,
-   author = {{Krause}, B. and {Kahembwe}, E. and {Murray}, I. and {Renals}, S.},
-    title = &quot;{Dynamic Evaluation of Neural Sequence Models}&quot;,
-  journal = {ArXiv e-prints},
-archivePrefix = &quot;arXiv&quot;,
-   eprint = {1709.07432},
- keywords = {Computer Science - Neural and Evolutionary Computing, Computer Science - Computation and Language},
-     year = 2017,
-    month = sep,
-   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv170907432K},
-  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+<pre><code class="language-bibtex">@inproceedings{Lasecki:2012:RCG:2380116.2380122,
+ author = {Lasecki, Walter and Miller, Christopher and Sadilek, Adam and Abumoussa, Andrew and Borrello, Donato and Kushalnagar, Raja and Bigham, Jeffrey},
+ title = {Real-time Captioning by Groups of Non-experts},
+ booktitle = {Proceedings of the 25th Annual ACM Symposium on User Interface Software and Technology},
+ series = {UIST '12},
+ year = {2012},
+ isbn = {978-1-4503-1580-7},
+ location = {Cambridge, Massachusetts, USA},
+ pages = {23--34},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2380116.2380122},
+ doi = {10.1145/2380116.2380122},
+ acmid = {2380122},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {captioning, crowdsourcing, deaf, hard of hearing, real-time, text alignment, transcription},
 }
 </code></pre>
 
@@ -305,11 +317,11 @@ archivePrefix = &quot;arXiv&quot;,
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></li>
+    
+    <li><a href="/post/2017-10-30_neuralsequence/">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
+    
     <li><a href="/post/2017-10-27_swishactivation/">Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
-    
-    <li><a href="/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
     
     <li><a href="/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></li>
     
@@ -323,13 +335,10 @@ archivePrefix = &quot;arXiv&quot;,
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-10-27_swishactivation/"><span
-      aria-hidden="true">&larr;</span> Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-30_neuralsequence/"><span
+      aria-hidden="true">&larr;</span> Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-10-31_realtimecaptioning/">Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
