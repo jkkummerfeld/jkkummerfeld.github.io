@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-31_realtimecaptioning/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-1_mixtureofexperts/">
 
   
 
-  <title>Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012) | Jonathan K. Kummerfeld</title>
+  <title>Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012)</h1>
+    <h1 itemprop="name">Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-10-31 13:23:13 -0400 EDT" itemprop="datePublished">
-      Oct 31, 2017
+    <time datetime="2017-11-01 21:57:27 -0400 EDT" itemprop="datePublished">
+      Nov 1, 2017
     </time>
   </span>
 
@@ -203,7 +203,7 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/crowdsourcing">crowdsourcing</a
+    <a href="/tags/neural-network">neural-network</a
     >
     
   </span>
@@ -216,35 +216,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.%2c%202012%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f"
+         href="https://twitter.com/intent/tweet?text=Outrageously%20Large%20Neural%20Networks%3a%20The%20Sparsely-Gated%20Mixture-of-Experts%20Layer%20%28Shazeer%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-1_mixtureofexperts%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-1_mixtureofexperts%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f&amp;title=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.%2c%202012%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-1_mixtureofexperts%2f&amp;title=Outrageously%20Large%20Neural%20Networks%3a%20The%20Sparsely-Gated%20Mixture-of-Experts%20Layer%20%28Shazeer%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f&amp;title=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.%2c%202012%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-1_mixtureofexperts%2f&amp;title=Outrageously%20Large%20Neural%20Networks%3a%20The%20Sparsely-Gated%20Mixture-of-Experts%20Layer%20%28Shazeer%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.%2c%202012%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-31_realtimecaptioning%2f">
+         href="mailto:?subject=Outrageously%20Large%20Neural%20Networks%3a%20The%20Sparsely-Gated%20Mixture-of-Experts%20Layer%20%28Shazeer%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-1_mixtureofexperts%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -259,50 +259,34 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>For any given task, automatic systems are fast, while annotation is accurate.
-This work is about bridging that gap to provide a way for a team of annotators to produce real-time high quality labels.
-The specific application is speech transcription, in which automatic systems are not accurate, while average people are slow (experts can transcribe in real time, but are very expensive).</p>
+<p>Mixture of experts can be seen as an ensemble approach in which we assume that each of our models is effective under different circumstances and so we combine them by switching between which we use to make our decision.
+From this perspective the idea can be applied to any set of models, but here the idea is to train (1) the expert models, (2) our method of choosing between them, and (3) a set of common model components, all at the same time.</p>
 
-<p>The solution is to carefully break up the task and combine annotations back together.
-To get it to work well there are a range of subtle design decisions:</p>
+<p>The particular set up here is that they modify a series of LSTM layers, adding a new layer in between each pair of LSTMs.
+The new layer has a set of small feed-forward networks (the experts) and an even simpler network that chooses which expert to use.
+One big benefit of this is that a lot of computation can be avoided when we know some of the small feed-forward components are going to be ignored.
+As a result, they can scale up to massive networks while still having reasonable runtimes.</p>
 
-<ul>
-<li>People hear the entire audio stream, but with their section at normal volume and the rest quieter. This allows them to focus their effort while still understanding the context.</li>
-<li>The alignment process combines annotations with guidance from a language model and a model of typos based on keyboard layout.</li>
-<li>Words are locked in shortly after being typed, to encourage workers to go on rather than revising their own errors.</li>
-</ul>
-
-<p>Follow up work added several more ideas to improve performance:</p>
+<p>Some key things to make this all work:</p>
 
 <ul>
-<li>Time warping, slowing down to half speed for their section, then going to 1.5x for the rest.</li>
-<li>Use ASR as well, either as another worker (with very uncorrelated errors), or as a starting point for human editing (or vice versa).</li>
-<li>Use A* search rather than a greedy algorithm for the alignment.</li>
+<li>Enough machines to train it! Also, there is a careful mixture of data and model parallelism during training.</li>
+<li>Some noise in the expert selection process</li>
+<li>A loss that directly encourages the use of multiple experts</li>
 </ul>
 
-<p>Performance does not reach the level of a professional, but is far better than ASR.
-From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lower than the professional.</p>
+<p>One thing mentioned in passing is how this relates to a form of dropout (which can be viewed as training a set of overlapping experts, kind of).</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://doi.acm.org/10.1145/2380116.2380122" target="_blank">Paper</a></p>
+<p><a href="https://openreview.net/pdf?id=B1ckMDqlg" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@inproceedings{Lasecki:2012:RCG:2380116.2380122,
- author = {Lasecki, Walter and Miller, Christopher and Sadilek, Adam and Abumoussa, Andrew and Borrello, Donato and Kushalnagar, Raja and Bigham, Jeffrey},
- title = {Real-time Captioning by Groups of Non-experts},
- booktitle = {Proceedings of the 25th Annual ACM Symposium on User Interface Software and Technology},
- series = {UIST '12},
- year = {2012},
- isbn = {978-1-4503-1580-7},
- location = {Cambridge, Massachusetts, USA},
- pages = {23--34},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/2380116.2380122},
- doi = {10.1145/2380116.2380122},
- acmid = {2380122},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {captioning, crowdsourcing, deaf, hard of hearing, real-time, text alignment, transcription},
+<pre><code class="language-bibtex">@inproceedings{45929,
+	title = {Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer},
+	author  = {Noam Shazeer and Azalia Mirhoseini and Krzysztof Maziarz and Andy Davis and Quoc Le and Geoffrey Hinton and Jeff Dean},
+	year  = {2017},
+  booktitle = {ICLR},
+	URL = {https://openreview.net/pdf?id=B1ckMDqlg},
 }
 </code></pre>
 
@@ -317,15 +301,15 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></li>
-    
     <li><a href="/post/2017-10-30_neuralsequence/">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
     
     <li><a href="/post/2017-10-27_swishactivation/">Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></li>
+    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
     
-    <li><a href="/post/2017-10-25_shiftreducedp/">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
+    <li><a href="/post/2017-10-05-deftnn/">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
+    
+    <li><a href="/post/2017-10-31_realtimecaptioning/">Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012)</a></li>
     
   </ul>
 </div>
@@ -335,13 +319,10 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-10-30_neuralsequence/"><span
-      aria-hidden="true">&larr;</span> Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-10-31_realtimecaptioning/"><span
+      aria-hidden="true">&larr;</span> Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-1_mixtureofexperts/">Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
