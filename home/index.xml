@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes by Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/home/</link>
+    <description>Homes from the website of Jonathan K. Kummerfeld</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
+    <lastBuildDate>Wed, 27 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://www.jkk.name/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://www.jkk.name/home/about/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/home/about/</guid>
+      <description>&lt;p&gt;My email address is: jkummerf@umich.edu&lt;/p&gt;
+
+&lt;p&gt;I am a Postdoctoral Research Fellow, working at the &lt;a href=&#34;https://www.umich.edu/&#34; target=&#34;_blank&#34;&gt;University of Michigan&lt;/a&gt;, in &lt;a href=&#34;https://www.cse.umich.edu/&#34; target=&#34;_blank&#34;&gt;Computer Science and Engineering&lt;/a&gt;.
+My research focus is Natural Language Processing - in particular, I am working on &lt;a href=&#34;https://sapphire.eecs.umich.edu&#34; target=&#34;_blank&#34;&gt;Project Sapphire&lt;/a&gt;, a collaboration with IBM, developing a conversational academic adviser.
+I am also affiliated with two research groups: &lt;a href=&#34;http://lit.eecs.umich.edu/&#34; target=&#34;_blank&#34;&gt;Language and Information Technologies&lt;/a&gt;, and &lt;a href=&#34;http://web.eecs.umich.edu/~wlasecki/croma.html&#34; target=&#34;_blank&#34;&gt;Crowds+Machines&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I completed my PhD in the &lt;a href=&#34;http://web.eecs.umich.edu/~wlasecki/croma.html&#34; target=&#34;_blank&#34;&gt;UC Berkeley NLP Group&lt;/a&gt;, advised by &lt;a href=&#34;http://www.cs.berkeley.edu/~klein&#34; target=&#34;_blank&#34;&gt;Dan Klein&lt;/a&gt;, with a thesis on new algorithms related to syntactic parsing: error analysis, formalism conversion, and graph parsing.
+I completed my BSc (Adv) with honours and medal in the &lt;a href=&#34;http://www.schwa.org&#34; target=&#34;_blank&#34;&gt;University of Sydney Schwa Lab&lt;/a&gt; advised by &lt;a href=&#34;http://sydney.edu.au/engineering/it/~james&#34; target=&#34;_blank&#34;&gt;James Curran&lt;/a&gt;, with a thesis on an algorithm for faster CCG parsing.
+I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelschool.nsw.edu.au/&#34; target=&#34;_blank&#34;&gt;Emanuel School&lt;/a&gt;, receiving the Premier&amp;rsquo;s Award for my results in English, Mathematics, Physics, and Cosmology.&lt;/p&gt;
+
+&lt;p&gt;My &lt;a href=&#34;http://www.jkk.name/doc/jonathan-kummerfeld-cv.pdf&#34;&gt;CV&lt;/a&gt; is available as a pdf.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>http://www.jkk.name/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>http://www.jkk.name/home/software/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/home/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data</title>
+      <link>http://www.jkk.name/home/data/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/home/data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>http://www.jkk.name/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>http://www.jkk.name/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications by Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/publication/</link>
+    <description>Publications from the website of Jonathan K. Kummerfeld</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="http://www.jkk.name/publication/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation</title>
+      <link>http://www.jkk.name/publication/emnlp17forums/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/emnlp17forums/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection</title>
+      <link>http://www.jkk.name/publication/acl17paraphrase/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl17paraphrase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools for Automated Analysis of Cybercriminal Markets</title>
+      <link>http://www.jkk.name/publication/www17forums/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/www17forums/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parsing with Traces: An O($n^4$) Algorithm and a Structural Representation</title>
+      <link>http://www.jkk.name/publication/tacl17parsing/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/tacl17parsing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output</title>
+      <link>http://www.jkk.name/publication/thesis16parsing/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/thesis16parsing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Empirical Analysis of Optimization for Max-Margin NLP</title>
+      <link>http://www.jkk.name/publication/emnlp15learn/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/emnlp15learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Error-Driven Analysis of Challenges in Coreference Resolution</title>
+      <link>http://www.jkk.name/publication/emnlp13analysis/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/emnlp13analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Empirical Examination of Challenges in Chinese Parsing</title>
+      <link>http://www.jkk.name/publication/acl13analysis/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl13analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High-velocity Clouds in the Galactic All Sky Survey. I. Catalog</title>
+      <link>http://www.jkk.name/publication/astro13clouds/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/astro13clouds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output</title>
+      <link>http://www.jkk.name/publication/emnlp12analysis/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/emnlp12analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robust Conversion of CCG Derivations to Phrase Structure Trees</title>
+      <link>http://www.jkk.name/publication/acl12conversion/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mention Detection: Heuristics for the OntoNotes annotations</title>
+      <link>http://www.jkk.name/publication/conll12coreference/</link>
+      <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/conll12coreference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatiotemporal Hierarchy of Relaxation Events, Dynamical Heterogeneities, and Structural Reorganization in a Supercooled Liquid</title>
+      <link>http://www.jkk.name/publication/prl10chemistry/</link>
+      <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/prl10chemistry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Morphological Analysis Can Improve a CCG Parser for English</title>
+      <link>http://www.jkk.name/publication/coling10morph/</link>
+      <pubDate>Sun, 01 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/coling10morph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faster Parsing by Supertagger Adaptation</title>
+      <link>http://www.jkk.name/publication/acl10adapt/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl10adapt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Faster parsing and supertagging model estimation</title>
+      <link>http://www.jkk.name/publication/alta09tagging/</link>
+      <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/alta09tagging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive Supertagging for Faster Parsing</title>
+      <link>http://www.jkk.name/publication/thesis09adapt/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/thesis09adapt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Large-Scale Syntactic Processing: Parsing the Web</title>
+      <link>http://www.jkk.name/publication/report09jhu/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/report09jhu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Classification of Verb Particle Constructions with the Google Web1T Corpus</title>
+      <link>http://www.jkk.name/publication/alta08vpc/</link>
+      <pubDate>Mon, 01 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/alta08vpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The densest packing of AB binary hard-sphere homogeneous compounds across all size ratios</title>
+      <link>http://www.jkk.name/publication/chem08packing/</link>
+      <pubDate>Fri, 01 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/chem08packing/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
