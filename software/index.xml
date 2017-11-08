@@ -7,45 +7,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://www.jkk.name/software/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>CCG to PST</title>
-      <link>http://www.jkk.name/software/ccg2pst/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/software/ccg2pst/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Coreference Error Analysis</title>
-      <link>http://www.jkk.name/software/coreference-analysis/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+        <title>One-Endpoint Crossing Graph Parser</title>
       
-      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>One-Endpoint Crossing Graph Parser</title>
       <link>http://www.jkk.name/software/1ec-parsing/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/software/1ec-parsing/</guid>
-      <description></description>
+      
+        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://github.com/jkkummerfeld/1ec-graph-parser" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser</a></description>
+      
+
     </item>
     
     <item>
-      <title>Parse Error Analysis</title>
+      
+        <title>Coreference Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/coreference-analysis/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
+      
+        <description>A tool for classifying errors in coreference resolution. <a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-coreference-analyser</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>CCG to PST</title>
+      
+      <link>http://www.jkk.name/software/ccg2pst/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/ccg2pst/</guid>
+      
+        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Parse Error Analysis</title>
+      
       <link>http://www.jkk.name/software/parsing-analysis/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/software/parsing-analysis/</guid>
-      <description></description>
+      
+        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
+      
+
     </item>
     
   </channel>

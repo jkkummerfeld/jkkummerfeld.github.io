@@ -221,8 +221,26 @@
     
     <url>
     
+      <loc>http://www.jkk.name/data/cybercrime-forums/</loc>
+      <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/publication/emnlp17forums/</loc>
       <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/data/paraphrasing-sample/</loc>
+      <lastmod>2017-07-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -275,6 +293,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/software/1ec-parsing/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/publication/tacl17parsing/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -302,71 +329,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/data/ccg-model/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://www.jkk.name/software/ccg2pst/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://www.jkk.name/software/coreference-analysis/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://www.jkk.name/data/paraphrasing-sample/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://www.jkk.name/data/cybercrime-forums/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://www.jkk.name/software/1ec-parsing/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>http://www.jkk.name/software/parsing-analysis/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>http://www.jkk.name/data/shp-ptb/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -385,6 +349,15 @@
     
       <loc>http://www.jkk.name/publication/emnlp15learn/</loc>
       <lastmod>2015-09-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/software/coreference-analysis/</loc>
+      <lastmod>2013-10-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -412,6 +385,24 @@
     
       <loc>http://www.jkk.name/publication/astro13clouds/</loc>
       <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/software/ccg2pst/</loc>
+      <lastmod>2012-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/software/parsing-analysis/</loc>
+      <lastmod>2012-07-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -457,6 +448,15 @@
     
       <loc>http://www.jkk.name/publication/coling10morph/</loc>
       <lastmod>2010-08-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/data/ccg-model/</loc>
+      <lastmod>2010-07-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -608,7 +608,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/coreference/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2013-10-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -628,7 +628,7 @@
     <url>
     
       <loc>http://www.jkk.name/data/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-09-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -698,7 +698,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/information-extraction/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-09-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -818,7 +818,7 @@
     <url>
     
       <loc>http://www.jkk.name/software/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

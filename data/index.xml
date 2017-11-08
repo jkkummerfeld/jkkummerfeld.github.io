@@ -7,45 +7,65 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://www.jkk.name/data/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Adaptive CCG Supertagging Model</title>
-      <link>http://www.jkk.name/data/ccg-model/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/data/ccg-model/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Crowdsourced Paraphrases</title>
-      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+        <title>IE/NER from Cybercriminal Forums</title>
       
-      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>IE/NER from Cybercriminal Forums</title>
       <link>http://www.jkk.name/data/cybercrime-forums/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
-      <description></description>
+      
+        <description>Forum posts with annotations of products. <a href="https://evidencebasedsecurity.org/forums/#data" target="_blank">https://evidencebasedsecurity.org/forums/#data</a></description>
+      
+
     </item>
     
     <item>
-      <title>Spine and Arc version of the Penn Treebank</title>
+      
+        <title>Crowdsourced Paraphrases</title>
+      
+      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      
+        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Spine and Arc version of the Penn Treebank</title>
+      
       <link>http://www.jkk.name/data/shp-ptb/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/data/shp-ptb/</guid>
-      <description></description>
+      
+        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Adaptive CCG Supertagging Model</title>
+      
+      <link>http://www.jkk.name/data/ccg-model/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/ccg-model/</guid>
+      
+        <description>A model for the C&amp;C supertagger that gives the same results with smaller beam sizes, enabling faster parsing. TODO</description>
+      
+
     </item>
     
   </channel>

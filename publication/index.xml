@@ -13,183 +13,487 @@
     
     
     <item>
-      <title>Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation</title>
+      
+      <title>
+        "Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation",
+        
+          Greg Durrett, Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, Rebecca S. Portnoff, Sadia Afroz, Damon McCoy, Kirill Levchenko, Vern Paxson
+        
+        (EMNLP,
+        2017)
+      </title>
+      
       <link>http://www.jkk.name/publication/emnlp17forums/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/emnlp17forums/</guid>
-      <description></description>
+      
+        <description>
+          One weakness of machine-learned NLP models is that they typically perform poorly on out-of-domain data. In this work, we study the task of identifying products being bought and sold in online cybercrime forums, which exhibits particularly challenging cross-domain effects.  We formulate a task that represents a hybrid of slot-filling information extraction and named entity recognition and annotate data from four different forums.  Each of these forums constitutes its own &#34;fine-grained domain&#34; in that the forums cover different market sectors with different properties, even though all forums are in the broad domain of cybercrime. We characterize these domain differences in the context of a learning-based system: supervised models see decreased accuracy when applied to new forums, and standard techniques for semi-supervised learning and domain adaptation have limited effectiveness on this data, which suggests the need to improve these techniques. We release a dataset of 1,938 annotated posts from across the four forums.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection</title>
+      
+      <title>
+        "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
+        
+          Youxuan Jiang, Jonathan K. Kummerfeld, Walter S. Lasecki
+        
+        (ACL (short),
+        2017)
+      </title>
+      
       <link>http://www.jkk.name/publication/acl17paraphrase/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/acl17paraphrase/</guid>
-      <description></description>
+      
+        <description>
+          Linguistically diverse datasets are critical for training and evaluating robust machine learning systems, but data collection is a costly process that often requires experts. Crowdsourcing the process of paraphrase generation is an effective means of expanding natural language datasets, but there has been limited analysis of the trade-offs that arise when designing tasks. In this paper, we present the first systematic study of the key factors in crowdsourcing paraphrase collection. We consider variations in instructions, incentives, data domains, and workflows. We manually analyzed paraphrases for correctness, grammaticality, and linguistic diversity. Our observations provide new insight into the trade-offs between accuracy and diversity in crowd responses that arise as a result of task design, providing guidance for future paraphrase generation procedures.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Tools for Automated Analysis of Cybercriminal Markets</title>
+      
+      <title>
+        "Tools for Automated Analysis of Cybercriminal Markets",
+        
+          Rebecca S. Portnoff, Sadia Afroz, Greg Durrett, Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, Damon McCoy, Kirill Levchenko, Vern Paxson
+        
+        (WWW,
+        2017)
+      </title>
+      
       <link>http://www.jkk.name/publication/www17forums/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/www17forums/</guid>
-      <description></description>
+      
+        <description>
+          Underground forums are widely used by criminals to buy and sell a host of stolen items, datasets, resources, and criminal services.  These forums contain important resources for understanding cybercrime.  However, the number of forums, their size, and the domain expertise required to understand the markets makes manual exploration of these forums unscalable. In this work, we propose an automated, top-down approach for analyzing underground forums.  Our approach uses natural language processing and machine learning to automatically generate high-level information about underground forums, first identifying posts related to transactions, and then extracting products and prices. We also demonstrate, via a pair of case studies, how an analyst can use these automated approaches to investigate other categories of products and transactions. We use eight distinct forums to assess our tools: Antichat, Blackhat World, Carders, Darkode, Hack Forums, Hell, L33tCrew and Nulled. Our automated approach is fast and accurate, achieving over 80% accuracy in detecting post category, product, and prices.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Parsing with Traces: An O($n^4$) Algorithm and a Structural Representation</title>
+      
+      <title>
+        "Parsing with Traces: An O($n^4$) Algorithm and a Structural Representation",
+        
+          Jonathan K. Kummerfeld, Dan Klein
+        
+        (TACL,
+        2017)
+      </title>
+      
       <link>http://www.jkk.name/publication/tacl17parsing/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/tacl17parsing/</guid>
-      <description></description>
+      
+        <description>
+          General treebank analyses are graph structured, but parsers are typically restricted to tree structures for efficiency and modeling reasons.  We propose a new representation and algorithm for a class of graph structures that is flexible enough to cover almost all treebank structures, while still admitting efficient learning and inference. In particular, we consider directed, acyclic, one-endpoint-crossing graph structures, which cover most long-distance dislocation, shared argumentation, and similar tree-violating linguistic phenomena. We describe how to convert phrase structure parses, including traces, to our new representation in a reversible manner. Our dynamic program uniquely decomposes structures, is sound and complete, and covers 97.3% of the Penn English Treebank. We also implement a proofof-concept parser that recovers a range of null elements and trace types.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output</title>
+      
+      <title>
+        "Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output",
+        
+          Jonathan K. Kummerfeld
+        
+        (EECS Department, University of California, Berkeley,
+        2016)
+      </title>
+      
       <link>http://www.jkk.name/publication/thesis16parsing/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/thesis16parsing/</guid>
-      <description></description>
+      
+        <description>
+          Representation of syntactic structure is a core area of research in Computational Linguistics, disambiguating distinctions in meaning that are crucial for correct interpretation of language. Development of algorithms and statistical models over the past three decades has led to systems that are accurate enough to be deployed in industry, playing a key role in products such as Google Search and Apple Siri. However, syntactic parsers today are usually constrained to tree representations of language, and performance is interpreted through a single metric that conveys no linguistic information regarding remaining errors.
+
+In this dissertation, we present new algorithms for error analysis and parsing. The heart of our approach to error analysis is the use of structural transformations to identify more meaningful classes of errors, and to enable comparisons across formalisms. For parsing, we combine a novel dynamic program with careful choices in syntactic representation to create an efficient parser that produces graph structured output. Together, these developments allowed us to evaluate the outstanding challenges in parsing and to address a key weakness in current work.
+
+First, we present a search algorithm that, given two structures, finds a sequence of modifications leading from one structure to the other. We applied this algorithm to syntactic error analysis, where one structure is the output of a parser, the other is the correct parse, and each modification corresponds to fixing one error. We constructed a tool based on the algorithm and analyzed variations in behavior between parsers, types of text, and languages. Our observations shine light on several assumptions about syntactic errors, showing some to be true and others to be false. For example, prepositional phrase attachment errors are indeed a major issue, while coordination scope errors do not hurt performance as much as expected.
+
+Next, we describe an algorithm that builds a parse in one syntactic representation to match a parse in another representation. Specifically, we build phrase structure parses from Combinatory Categorial Grammar derivations. Our approach follows the philosophy of CCG, defining specific phrase structures for each lexical category and generic rules for combinatory steps. The new parse is built by following the CCG derivation bottom-up, gradually building the corresponding phrase structure parse. This produced significantly more accurate parses than past work, and enabled us to compare performance of several parsers across formalisms.
+
+Finally, we address a weakness we observed in phrase structure parsers: the exclusion of syntactic trace structures for computational convenience. We present an efficient dynamic programming algorithm that constructs the graph structure that has the highest score under an edge-factored scoring function. We define a parse representation compatible with the algorithm, and show how certain linguistic distinctions dramatically impact coverage. We also show various ways to modify the algorithm to improve performance by exploiting properties of observed linguistic structure. This approach to syntactic parsing is the first to cover virtually all structure encoded in the Penn Treebank.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>An Empirical Analysis of Optimization for Max-Margin NLP</title>
+      
+      <title>
+        "An Empirical Analysis of Optimization for Max-Margin NLP",
+        
+          Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, Dan Klein
+        
+        (EMNLP,
+        2015)
+      </title>
+      
       <link>http://www.jkk.name/publication/emnlp15learn/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/emnlp15learn/</guid>
-      <description></description>
+      
+        <description>
+          Despite the convexity of structured max-margin objectives (Taskar et al., 2004; Tsochantaridis et al., 2004), the many ways to optimize them are not equally effective in practice. We compare a range of online optimization methods over a variety of structured NLP tasks (coreference, summarization, parsing, etc) and find several broad trends. First, margin methods do tend to outperform both likelihood and the perceptron. Second, for max-margin objectives, primal  optimization methods are often more robust and progress faster than dual methods. This advantage  is most pronounced for tasks with dense or continuous-valued features. Overall, we argue for a particularly simple online primal subgradient descent method that, despite being rarely mentioned in the literature, is surprisingly effective in relation to its alternatives.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Error-Driven Analysis of Challenges in Coreference Resolution</title>
+      
+      <title>
+        "Error-Driven Analysis of Challenges in Coreference Resolution",
+        
+          Jonathan K. Kummerfeld, Dan Klein
+        
+        (EMNLP,
+        2013)
+      </title>
+      
       <link>http://www.jkk.name/publication/emnlp13analysis/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/emnlp13analysis/</guid>
-      <description></description>
+      
+        <description>
+          Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we first compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>An Empirical Examination of Challenges in Chinese Parsing</title>
+      
+      <title>
+        "An Empirical Examination of Challenges in Chinese Parsing",
+        
+          Jonathan K. Kummerfeld, Daniel Tse, James R. Curran, Dan Klein
+        
+        (ACL (short),
+        2013)
+      </title>
+      
       <link>http://www.jkk.name/publication/acl13analysis/</link>
       <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/acl13analysis/</guid>
-      <description></description>
+      
+        <description>
+          Aspects of Chinese syntax result in a distinctive mix of parsing challenges. However, the contribution of individual sources of error to overall difficulty is not well understood. We conduct a comprehensive automatic analysis of error types made by Chinese parsers, covering a broad range of error types for large sets of sentences, enabling the first empirical ranking of Chinese error types by their performance impact. We also investigate which error types are resolved by using gold part-of-speech tags, showing that improving Chinese tagging only addresses certain error types, leaving substantial outstanding challenges.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>High-velocity Clouds in the Galactic All Sky Survey. I. Catalog</title>
+      
+      <title>
+        "High-velocity Clouds in the Galactic All Sky Survey. I. Catalog",
+        
+          Vanessa A. Moss, Naomi M. McClure-Griffiths, Tara Murphy, D. J. Pisano, Jonathan K. Kummerfeld, James R. Curran
+        
+        (The Astrophysical Journal Supplement Series,
+        2013)
+      </title>
+      
       <link>http://www.jkk.name/publication/astro13clouds/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/astro13clouds/</guid>
-      <description></description>
+      
+        <description>
+          We present a catalogue of high-velocity clouds (HVCs) from the Galactic All Sky Survey (GASS) of southern-sky neutral hydrogen, which has 57 mK sensitivity and 1 km/s velocity resolution and was obtained with the Parkes Telescope. Our catalogue has been derived from the stray-radiation corrected second release of GASS. We describe the data and our method of identifying HVCs and analyse the overall properties of the GASS population. We catalogue a total of 1693 HVCs at declinations &lt; 0 deg, including 1111 positive velocity HVCs and 582 negative velocity HVCs. Our catalogue also includes 295 anomalous velocity clouds (AVCs). The cloud line-widths of our HVC population have a median FWHM of ~19 km/s, which is lower than found in previous surveys. The completeness of our catalogue is above 95% based on comparison with the HIPASS catalogue of HVCs, upon which we improve with an order of magnitude in spectral resolution. We find 758 new HVCs and AVCs with no HIPASS counterpart. The GASS catalogue will shed an unprecedented light on the distribution and kinematic structure of southern-sky HVCs, as well as delve further into the cloud populations that make up the anomalous velocity gas of the Milky Way.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output</title>
+      
+      <title>
+        "Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output",
+        
+          Jonathan K. Kummerfeld, David Hall, James R. Curran, Dan Klein
+        
+        (EMNLP,
+        2012)
+      </title>
+      
       <link>http://www.jkk.name/publication/emnlp12analysis/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/emnlp12analysis/</guid>
-      <description></description>
+      
+        <description>
+          Constituency parser performance is primarily interpreted through a single metric, F-score on WSJ section 23, that conveys no linguistic information regarding the remaining errors.  We classify errors within a set of linguistically meaningful types using tree transformations that repair groups of errors together. We use this analysis to answer a range of questions about parser behaviour, including what linguistic constructions are difficult for state-of-the-art parsers, what types of errors are being resolved by rerankers, and what types are introduced when parsing out-of-domain text.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Robust Conversion of CCG Derivations to Phrase Structure Trees</title>
+      
+      <title>
+        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
+        
+          Jonathan K. Kummerfeld, Dan Klein, James R. Curran
+        
+        (ACL (short),
+        2012)
+      </title>
+      
       <link>http://www.jkk.name/publication/acl12conversion/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/acl12conversion/</guid>
-      <description></description>
+      
+        <description>
+          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Mention Detection: Heuristics for the OntoNotes annotations</title>
+      
+      <title>
+        "Mention Detection: Heuristics for the OntoNotes annotations",
+        
+          Jonathan K. Kummerfeld, Mohit Bansal, David Burkett, Dan Klein
+        
+        (CoNLL Shared Task,
+        2011)
+      </title>
+      
       <link>http://www.jkk.name/publication/conll12coreference/</link>
       <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/conll12coreference/</guid>
-      <description></description>
+      
+        <description>
+          Our submission was a reduced version of the system described in Haghighi and Klein (2010), with extensions to improve mention detection to suit the OntoNotes annotation scheme. Including exact matching mention detection in this shared task added a new and challenging dimension to the problem, particularly for our system, which previously used a very permissive detection method. We improved this aspect of the system by adding filters based on the annotation scheme for OntoNotes and analysis of system behavior on the development set. These changes led to improvements in coreference F-score of 10.06, 5.71, 6.78, 6.63 and 3.09 on the MUC, B3 , Ceaf-e, Ceaf-m and Blanc, metrics, respectively, and a final task score of 47.10.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Spatiotemporal Hierarchy of Relaxation Events, Dynamical Heterogeneities, and Structural Reorganization in a Supercooled Liquid</title>
+      
+      <title>
+        "Spatiotemporal Hierarchy of Relaxation Events, Dynamical Heterogeneities, and Structural Reorganization in a Supercooled Liquid",
+        
+          Raphael Candelier, Asaph Widmer-Cooper, Jonathan K. Kummerfeld, Olivier Dauchot, Giulio Biroli, Peter Harrowell, David R. Reichman
+        
+        (Physical Review Letters,
+        2010)
+      </title>
+      
       <link>http://www.jkk.name/publication/prl10chemistry/</link>
       <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/prl10chemistry/</guid>
-      <description></description>
+      
+        <description>
+          We identify the pattern of microscopic dynamical relaxation for a two-dimensional glass-forming liquid. On short time scales, bursts of irreversible particle motion, called cage jumps, aggregate into clusters. On larger time scales, clusters aggregate both spatially and temporally into avalanches. This propagation of mobility takes place along the soft regions of the systems, which have been identified by computing isoconfigurational Debye-Waller maps. Our results characterize the way in which dynamical heterogeneity evolves in moderately supercooled liquids and reveal that it is astonishingly similar to the one found for dense glassy granular media.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Morphological Analysis Can Improve a CCG Parser for English</title>
+      
+      <title>
+        "Morphological Analysis Can Improve a CCG Parser for English",
+        
+          Matthew Honnibal, Jonathan K. Kummerfeld, James R. Curran
+        
+        (CoLing,
+        2010)
+      </title>
+      
       <link>http://www.jkk.name/publication/coling10morph/</link>
       <pubDate>Sun, 01 Aug 2010 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/coling10morph/</guid>
-      <description></description>
+      
+        <description>
+          Because English is a low morphology language, current statistical parsers tend to ignore morphology and accept some level of redundancy. This paper investigates how costly such redundancy is for a lexicalised grammar such as CCG.
+
+We use morphological analysis to split verb inflectional suffixes into separate tokens, so that they can receive their own lexical categories. We find that this improves accuracy when the splits are based on correct POS tags, but that errors in gold standard or automatically assigned POS tags are costly for the system. This shows that the parser can benefit from morphological analysis, so long as the analysis is correct.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Faster Parsing by Supertagger Adaptation</title>
+      
+      <title>
+        "Faster Parsing by Supertagger Adaptation",
+        
+          Jonathan K. Kummerfeld, Jessika Roesner, Tim Dawborn, James Haggerty, James R. Curran, Stephen Clark
+        
+        (ACL,
+        2010)
+      </title>
+      
       <link>http://www.jkk.name/publication/acl10adapt/</link>
       <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/acl10adapt/</guid>
-      <description></description>
+      
+        <description>
+          We propose a novel self-training method for a parser which uses a lexicalised grammar and supertagger, focusing on increasing the speed of the parser rather than its accuracy. The idea is to train the supertagger on large amounts of parser output, so that the supertagger can learn to supply the supertags that the parser will eventually choose as part of the highest scoring derivation. Since the supertagger supplies fewer supertags overall, the parsing speed is increased. We demonstrate the effectiveness of the method using a CCG supertagger and parser, obtaining significant speed increases on newspaper text with no loss in accuracy. We also show that the method can be used to adapt the CCG parser to new domains, obtaining accuracy and speed improvements for Wikipedia and biomedical text.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Faster parsing and supertagging model estimation</title>
+      
+      <title>
+        "Faster parsing and supertagging model estimation",
+        
+          Jonathan K. Kummerfeld, Jessika Roesner, James R. Curran
+        
+        (ALTA,
+        2009)
+      </title>
+      
       <link>http://www.jkk.name/publication/alta09tagging/</link>
       <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/alta09tagging/</guid>
-      <description></description>
+      
+        <description>
+          Parsers are often the bottleneck for data acquisition, processing text too slowly to be widely applied. One way to improve the efficiency of parsers is to construct more confident statistical models. More training data would enable the use of more sophisticated features and also provide more evidence for current features, but gold standard annotated data is limited and expensive to produce.
+
+We demonstrate faster methods for training a supertagger using hundreds of millions of automatically annotated words, constructing statistical models that further constrain the number of derivations the parser must consider. By introducing new features and using an automatically annotated corpus we are able to double parsing speed on Wikipedia and the Wall Street Journal, and gain accuracy slightly when parsing Section 00 of the Wall Street Journal.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Adaptive Supertagging for Faster Parsing</title>
+      
+      <title>
+        "Adaptive Supertagging for Faster Parsing",
+        
+          Jonathan K. Kummerfeld
+        
+        (The University of Sydney,
+        2009)
+      </title>
+      
       <link>http://www.jkk.name/publication/thesis09adapt/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/thesis09adapt/</guid>
-      <description></description>
+      
+        <description>
+          Statistical parsers are crucial for tackling the grand challenges of Natural Language Processing. The most effective approaches to these tasks are data driven, but parsers are too slow to be effectively used on large data sets. State-of-the-art parsers generally cannot process more than one sentence a second, and the fastest cannot process more than fifty sentences a second. The situation is even worse when they are applied outside of the domain of their training data. The fastest systems have two components, a parser, which has time complexity O(n3) and a supertagger, which has linear time complexity. By shifting work from the parser to the supertagger we dramatically improve speed.
+
+This work demonstrates several major novel ideas that improve parsing efficiency. The core idea is that the tags chosen by the parser are gold standard data for its supertagger. This leads to the second surprising conceptual development, that decreasing tagging accuracy can improve parsing performance. To demonstrate these ideas required extensive development of the C&amp;C supertagger, including imple- mentation of more efficient estimation algorithms and parallelisation of the training process. This was particularly challenging as the C&amp;C supertagger is a state-of-the-art high performance system designed with a focus on speed rather than flexibility.
+
+I was able to significantly improve performance on the standard evaluation corpus by using the parser to generate extremely large new resources for supertagger training. I have also shown that these methods provide significant benefits on another domain, Wikipedia text, without the cost of generating human annotated data sets. These parsing performance gains occur while supertagging accuracy decreases.
+
+Despite extensive use of supertaggers to improve parsing efficiency there has been no comprehensive study of the interaction between a supertagger and a parser. I present the first systematic exploration of the relationship, show the potential benefits of understanding it, and demonstrate a novel algorithm for optimising the parameters that define it.
+
+I have constructed models that process newspaper text 86% faster than previously, and Wikipedia text 30% faster, without any loss in accuracy and without the aid of extra gold standard resources in either domain. This work will lead directly to improvements in a range of Natural Language Processing tasks by enabling the use of far more parsed data.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Large-Scale Syntactic Processing: Parsing the Web</title>
+      
+      <title>
+        "Large-Scale Syntactic Processing: Parsing the Web",
+        
+          Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, Jonathan Kummerfeld, Tim Dawborn
+        
+        (Johns Hopkins University,
+        2009)
+      </title>
+      
       <link>http://www.jkk.name/publication/report09jhu/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/report09jhu/</guid>
-      <description></description>
+      
+        <description>
+          Scalable syntactic processing will underpin the sophisticated language technology needed for next generation information access. Companies are already using nlp tools to create web-scale question answering and &#34;semantic search&#34; engines. Massive amounts of parsed web data will also allow the automatic creation of semantic knowledge resources on an unprecedented scale. The web is a challenging arena for syntactic parsing, because of its scale and variety of styles, genres, and domains.
+
+The goals of our workshop were to scale and adapt an existing wide-coverage parser to Wikipedia text; improve the efficiency of the parser through various methods of chart pruning; use self-training to improve the efficiency and accuracy of the parser; use the parsed wiki data for an innovative form of bootstrapping to make the parser both more efficient and more accurate; and finally use the parsed web data for improved disambiguation of coordination structures, using a variety of syntactic and semantic knowledge sources.
+
+The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a state-of-the-art statistical parser based on Combinatory Categorial Grammar (ccg). The parser has been evaluated on a number of standard test sets achieving state-of-the-art accuracies. It has also recently been adapted successfully to the biomedical domain (Rimell and Clark, 2009). The parser is surprisingly efficient, given its detailed output, processing tens of sentences per second. For web-scale text processing, we aimed to make the parser an order of magnitude faster still. The C&amp;C parser is one of only very few parsers currently available which has the potential to produce detailed, accurate analyses at the scale we were considering.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>Classification of Verb Particle Constructions with the Google Web1T Corpus</title>
+      
+      <title>
+        "Classification of Verb Particle Constructions with the Google Web1T Corpus",
+        
+          Jonathan K. Kummerfeld, James R. Curran
+        
+        (ALTA,
+        2008)
+      </title>
+      
       <link>http://www.jkk.name/publication/alta08vpc/</link>
       <pubDate>Mon, 01 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/alta08vpc/</guid>
-      <description></description>
+      
+        <description>
+          Manually maintaining comprehensive databases of multi-word expressions, for example Verb-Particle Constructions (VPCs), is infeasible. We describe a new classifier for potential VPCs, which uses information in the Google Web1T corpus to perform a simple linguistic constituency test. Specifically, we consider the fronting test, comparing the frequencies of the two possible orderings of the given verb and particle. Using only a small set of queries for each verb-particle pair, the system was able to achieve an F-score of 78.4% in our evaluation while processing thousands of queries a second.
+        </description>
+      
+
     </item>
     
     <item>
-      <title>The densest packing of AB binary hard-sphere homogeneous compounds across all size ratios</title>
+      
+      <title>
+        "The densest packing of AB binary hard-sphere homogeneous compounds across all size ratios",
+        
+          Jonathan K Kummerfeld, Toby S Hudson, Peter Harrowell
+        
+        (The Journal of Physical Chemistry B,
+        2008)
+      </title>
+      
       <link>http://www.jkk.name/publication/chem08packing/</link>
       <pubDate>Fri, 01 Aug 2008 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/publication/chem08packing/</guid>
-      <description></description>
+      
+        <description>
+          This paper considers the homogeneous packing of binary hard spheres in an equimolar stoichiometry, and postulates the densest packing at each sphere size ratio. Monte Carlo simulated annealing optimizations are seeded with all known atomic inorganic crystal structures, and the search is performed within the degrees of freedom associated with each homogeneous AB structure type. Structures isopointal to the FeB structure type are found to have the highest packing fraction at all sphere size ratios. The optimized structures match or improve on the best previously demonstrated packings of this type, and show that compound structures can pack more densely than segregated close-packed structures at all radius ratios less than 0.62.
+        </description>
+      
+
     </item>
     
   </channel>
