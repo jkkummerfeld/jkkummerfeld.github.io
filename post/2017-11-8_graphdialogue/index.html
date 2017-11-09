@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-7_spineparsinglstm/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-8_graphdialogue/">
 
   
 
-  <title>Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</h1>
+    <h1 itemprop="name">Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-07 20:42:45 -0500 EST" itemprop="datePublished">
-      Nov 7, 2017
+    <time datetime="2017-11-08 18:46:04 -0500 EST" itemprop="datePublished">
+      Nov 8, 2017
     </time>
   </span>
 
@@ -203,10 +203,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/iwpt">iwpt</a
+    <a href="/tags/acl">acl</a
     >, 
     
-    <a href="/tags/syntax">syntax</a
+    <a href="/tags/dialogue">dialogue</a
     >
     
   </span>
@@ -219,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-7_spineparsinglstm%2f"
+         href="https://twitter.com/intent/tweet?text=Learning%20Symmetric%20Collaborative%20Dialogue%20Agents%20with%20Dynamic%20Knowledge%20Graph%20Embeddings%20%28He%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-8_graphdialogue%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-7_spineparsinglstm%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-8_graphdialogue%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-7_spineparsinglstm%2f&amp;title=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-8_graphdialogue%2f&amp;title=Learning%20Symmetric%20Collaborative%20Dialogue%20Agents%20with%20Dynamic%20Knowledge%20Graph%20Embeddings%20%28He%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-7_spineparsinglstm%2f&amp;title=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-8_graphdialogue%2f&amp;title=Learning%20Symmetric%20Collaborative%20Dialogue%20Agents%20with%20Dynamic%20Knowledge%20Graph%20Embeddings%20%28He%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-7_spineparsinglstm%2f">
+         href="mailto:?subject=Learning%20Symmetric%20Collaborative%20Dialogue%20Agents%20with%20Dynamic%20Knowledge%20Graph%20Embeddings%20%28He%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-8_graphdialogue%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,28 +262,51 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>This paper brings together work on neural dependency parsing with the idea of non-terminal spines as a way to represent constituency structure.
-Within the transition parsing inference process they can naturally fit the generation of a new spines by gradually building up the spine, which makes for a very elegant inference process.</p>
+<p>Task-oriented dialogue systems are often focused on a very narrow task, to the point where the state can be described completely with a tuple (e.g. preferences for a restaurant).
+This paper sets up a more challenging task with more complex language use, while still having a specific goal and directly relevant structured information.
+They collected 11,000 dialogues, where two people have private lists of friends and are trying to identify which friend they have in common.
+While this is a lot of data, the mechanical turk workers are clearly moving fast, with dialogues taking 1.5 minutes on average, and in 18% of cases they get the friend wrong.</p>
 
-<p>Surprisingly, it doesn&rsquo;t seem to matter what head choices are used to generate the spines (they tried leftmost word, rightmost word, and two standard schemes).
-This contrasts with my own observations that the choice of head had a big impact (0.5 F) on accuracy.
-I think the incrementally-built spines are the key difference.
-Decisions about higher up in the spine are difficult to make when looking at a single word, but with the incremental construction there is information about a larger context.</p>
+<p>The algorithmic contribution is that the lists of people are represented as a graph, where nodes are properties like company and hobby.
+The graph is used to generate vectors for each person by running a form of message passing over its structure.
+During generation, the LSTM uses attention over these vectors to inform the output choice.</p>
+
+<p>A few interesting things in the output:</p>
+
+<ul>
+<li>There are cases where the output is incorrect, as in, says a fact about the structured information / knowledge base that is false.</li>
+<li>Evaluation is tricky, and over the metrics they consider sometimes this wins, but sometimes the baseline system (rules) does better. In particular, success on bot-bot evaluation doesn&rsquo;t seem to clearly transfer to bot-human experiments.</li>
+<li>The utterances are very fluent, but that may be because it&rsquo;s essentially copying from the training data. It looks like there is diversity in the dataset, but a lot of utterances do fit a template of &ldquo;I have X who Y&rdquo;</li>
+</ul>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://www.aclweb.org/anthology/W17-6316" target="_blank">Paper</a></p>
+<p><a href="http://aclweb.org/anthology/P17-1162" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{ballesteros-carreras:2017:IWPT,
-  author    = {Ballesteros, Miguel  and  Carreras, Xavier},
-  title     = {Arc-Standard Spinal Parsing with Stack-LSTMs},
-  booktitle = {Proceedings of the 15th International Conference on Parsing Technologies},
-  month     = {September},
+<pre><code class="language-bibtex">@InProceedings{he-EtAl:2017:Long4,
+  author    = {He, He  and  Balakrishnan, Anusha  and  Eric, Mihail  and  Liang, Percy},
+  title     = {Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
   year      = {2017},
-  address   = {Pisa, Italy},
+  address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
-  pages     = {115--121},
-  url       = {http://www.aclweb.org/anthology/W17-6316}
+  pages     = {1766--1776},
+  abstract  = {We study a \emph{symmetric collaborative dialogue} setting
+	in which two agents, each with private knowledge,
+	must strategically communicate to achieve a common goal.
+	The open-ended dialogue state in this setting poses new challenges for existing
+	dialogue systems.
+	We collected a dataset of 11K human-human dialogues,
+	which exhibits interesting lexical, semantic, and strategic elements.
+	To model
+	both structured knowledge and unstructured language,
+	we propose a neural model with dynamic knowledge graph embeddings
+	that evolve as the dialogue progresses.
+	Automatic and human evaluations show that our model is both more effective
+	at achieving the goal and more human-like than baseline neural and rule-based
+	models.},
+  url       = {http://aclweb.org/anthology/P17-1162}
 }
 </code></pre>
 
@@ -298,15 +321,15 @@ Decisions about higher up in the spine are difficult to make when looking at a s
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-10-25_shiftreducedp/">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
-    
-    <li><a href="/post/2017-10-24_dynamictransition/">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></li>
-    
-    <li><a href="/post/2017-11-6_literarycharacters/">Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</a></li>
-    
     <li><a href="/post/2017-11-3_discourserelations/">Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</a></li>
     
-    <li><a href="/post/2017-11-1_mixtureofexperts/">Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</a></li>
+    <li><a href="/post/2017-10-13_errordetection/">Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</a></li>
+    
+    <li><a href="/post/2017-10-10_seqqa/">Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al., ACL 2017)</a></li>
+    
+    <li><a href="/post/2017-11-7_spineparsinglstm/">Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-11-6_literarycharacters/">Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</a></li>
     
   </ul>
 </div>
@@ -316,13 +339,10 @@ Decisions about higher up in the spine are difficult to make when looking at a s
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-11-6_literarycharacters/"><span
-      aria-hidden="true">&larr;</span> Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-11-7_spineparsinglstm/"><span
+      aria-hidden="true">&larr;</span> Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-8_graphdialogue/">Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
