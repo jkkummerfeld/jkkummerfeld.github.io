@@ -14,6 +14,53 @@
     
     <item>
       
+        <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-9_framesdataset/</link>
+      <pubDate>Thu, 09 Nov 2017 19:47:08 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-9_framesdataset/</guid>
+      
+        <description>
+
+&lt;p&gt;Another paper about a dataset of dialogues, but this time with structure.
+Like the paper from yesterday, the aim is a dataset of task-oriented conversations, but with more complexity than prior work.
+The difference is that this work includes a structured representation of the state of the conversation: frames.&lt;/p&gt;
+
+&lt;p&gt;A frame is essentially a tuple describing a query, e.g. (Destination: Sydney, Origin: Ann Arbor, price: 1500 USD).
+There are multiple frames in a dialogue (a departure from DSTC tasks), and utterances are labeled with dialogue acts that capture modifications to the frames as well as references to them.
+This structure sounds fairly general, though the focus here was on vacation planning, where the user is buying a package.
+The setup doesn&amp;rsquo;t maximise the potential complexity though, as there are a small number of set packages available, rather than the complex tradeoffs of flight+hotel combinations that exist in practise.
+Looking at the example dialogues in the paper, it has complete sentences of some complexity.
+One thing I&amp;rsquo;m still curious about is disagreements between annotators, as for the complete task the score was 0.62 +/- 5 (with dialogue acts being trickier than slot values, and no scores for frame references on their own).&lt;/p&gt;
+
+&lt;p&gt;Comparing to the Stanford dataset this is smaller (11k vs. 1.4k), but has more turns per dialogue (11 vs. 15) and probably longer turns too, judging by the examples.
+The tasks are completely different, but both come with small tables of information that are private to the two participants and required for almost every turn in the conversation.
+Evaluating on both could be a great way to show the flexibility of a dialogue system, but the lack of frames for the Stanford data and the difficulty of running a human evaluation for this data limits the feasible types of multi-domain experiments.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://aclweb.org/anthology/W17-5526&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{elasri-EtAl:2017:W17-55,
+  author    = {El Asri, Layla  and  Schulz, Hannes  and  Sharma, Shikhar  and  Zumer, Jeremie  and  Harris, Justin  and  Fine, Emery  and  Mehrotra, Rahul  and  Suleman, Kaheer},
+  title     = {Frames: a corpus for adding memory to goal-oriented dialogue systems},
+  booktitle = {Proceedings of the 18th Annual SIGdial Meeting on Discourse and Dialogue},
+  month     = {August},
+  year      = {2017},
+  address   = {Saarbrucken, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {207--219},
+  url       = {http://aclweb.org/anthology/W17-5526}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-8_graphdialogue/</link>
@@ -1343,20 +1390,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>IE/NER from Cybercriminal Forums</title>
-      
-      <link>http://www.jkk.name/data/cybercrime-forums/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
-      
-        <description>Forum posts with annotations of products. <a href="https://evidencebasedsecurity.org/forums/#data" target="_blank">https://evidencebasedsecurity.org/forums/#data</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation",
         
@@ -1374,6 +1407,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           One weakness of machine-learned NLP models is that they typically perform poorly on out-of-domain data. In this work, we study the task of identifying products being bought and sold in online cybercrime forums, which exhibits particularly challenging cross-domain effects.  We formulate a task that represents a hybrid of slot-filling information extraction and named entity recognition and annotate data from four different forums.  Each of these forums constitutes its own &#34;fine-grained domain&#34; in that the forums cover different market sectors with different properties, even though all forums are in the broad domain of cybercrime. We characterize these domain differences in the context of a learning-based system: supervised models see decreased accuracy when applied to new forums, and standard techniques for semi-supervised learning and domain adaptation have limited effectiveness on this data, which suggests the need to improve these techniques. We release a dataset of 1,938 annotated posts from across the four forums.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>IE/NER from Cybercriminal Forums</title>
+      
+      <link>http://www.jkk.name/data/cybercrime-forums/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
+      
+        <description>Forum posts with annotations of products. <a href="https://evidencebasedsecurity.org/forums/#data" target="_blank">https://evidencebasedsecurity.org/forums/#data</a></description>
       
 
     </item>

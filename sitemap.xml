@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-11-9_framesdataset/</loc>
+      <lastmod>2017-11-09T19:47:08-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-11-8_graphdialogue/</loc>
       <lastmod>2017-11-08T18:46:04-05:00</lastmod>
     </url>
@@ -646,8 +655,18 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/data/</loc>
+      <lastmod>2017-11-09T19:47:08-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/dialogue/</loc>
-      <lastmod>2017-11-08T18:46:04-05:00</lastmod>
+      <lastmod>2017-11-09T19:47:08-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -787,7 +806,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-11-08T18:46:04-05:00</lastmod>
+      <lastmod>2017-11-09T19:47:08-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -818,6 +837,16 @@
     
       <loc>http://www.jkk.name/tags/semantic-parsing/</loc>
       <lastmod>2017-10-10T13:43:36-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/sigdial/</loc>
+      <lastmod>2017-11-09T19:47:08-05:00</lastmod>
       <priority>0</priority>
     </url>
     
