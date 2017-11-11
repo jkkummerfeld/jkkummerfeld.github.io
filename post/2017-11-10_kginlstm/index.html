@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-9_framesdataset/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-10_kginlstm/">
 
   
 
-  <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</h1>
+    <h1 itemprop="name">Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-09 19:47:08 -0500 EST" itemprop="datePublished">
-      Nov 9, 2017
+    <time datetime="2017-11-10 15:37:15 -0500 EST" itemprop="datePublished">
+      Nov 10, 2017
     </time>
   </span>
 
@@ -203,13 +203,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/sigdial">sigdial</a
+    <a href="/tags/acl">acl</a
     >, 
     
-    <a href="/tags/dialogue">dialogue</a
-    >, 
-    
-    <a href="/tags/data">data</a
+    <a href="/tags/knowledge-graph">knowledge-graph</a
     >
     
   </span>
@@ -222,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Frames%3a%20a%20corpus%20for%20adding%20memory%20to%20goal-oriented%20dialogue%20systems%20%28El%20Asri%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-9_framesdataset%2f"
+         href="https://twitter.com/intent/tweet?text=Leveraging%20Knowledge%20Bases%20in%20LSTMs%20for%20Improving%20Machine%20Reading%20%28Yang%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-9_framesdataset%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-9_framesdataset%2f&amp;title=Frames%3a%20a%20corpus%20for%20adding%20memory%20to%20goal-oriented%20dialogue%20systems%20%28El%20Asri%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f&amp;title=Leveraging%20Knowledge%20Bases%20in%20LSTMs%20for%20Improving%20Machine%20Reading%20%28Yang%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-9_framesdataset%2f&amp;title=Frames%3a%20a%20corpus%20for%20adding%20memory%20to%20goal-oriented%20dialogue%20systems%20%28El%20Asri%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f&amp;title=Leveraging%20Knowledge%20Bases%20in%20LSTMs%20for%20Improving%20Machine%20Reading%20%28Yang%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Frames%3a%20a%20corpus%20for%20adding%20memory%20to%20goal-oriented%20dialogue%20systems%20%28El%20Asri%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-9_framesdataset%2f">
+         href="mailto:?subject=Leveraging%20Knowledge%20Bases%20in%20LSTMs%20for%20Improving%20Machine%20Reading%20%28Yang%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -265,35 +262,33 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Another paper about a dataset of dialogues, but this time with structure.
-Like the paper from yesterday, the aim is a dataset of task-oriented conversations, but with more complexity than prior work.
-The difference is that this work includes a structured representation of the state of the conversation: frames.</p>
+<p>Structured information sources have been effectively used for entity detection and typing in linear models with the information encoded as binary features.
+This paper looks at how to integrate vector representations of structured information into an LSTM.
+The solution is an additional processing step during output generation, in which the vectors for relevant entities in the structured data are combined with the standard LSTM output (note, they do not affect the cell itself, so the information is not passed on through the recurrence).</p>
 
-<p>A frame is essentially a tuple describing a query, e.g. (Destination: Sydney, Origin: Ann Arbor, price: 1500 USD).
-There are multiple frames in a dialogue (a departure from DSTC tasks), and utterances are labeled with dialogue acts that capture modifications to the frames as well as references to them.
-This structure sounds fairly general, though the focus here was on vacation planning, where the user is buying a package.
-The setup doesn&rsquo;t maximise the potential complexity though, as there are a small number of set packages available, rather than the complex tradeoffs of flight+hotel combinations that exist in practise.
-Looking at the example dialogues in the paper, it has complete sentences of some complexity.
-One thing I&rsquo;m still curious about is disagreements between annotators, as for the complete task the score was 0.62 +/- 5 (with dialogue acts being trickier than slot values, and no scores for frame references on their own).</p>
+<p>In this case the structured information is a set of tuples forming a graph of relations between entities, from either NELL or WordNet.
+The actual encoding of entities is an application of prior work; vectors representing tuples are trained with the objective that the score for any tuple is higher than made-up tuples (where the score is $v_a M_r v_b$ for entities $a$ and $b$ in relation $r$).
+The set of relevant entities for a particular word in the sentence is obtained by string matching, and then attention is used to combine them.
+There is also a kind of gating mechanism to choose how big a role the entities play in the prediction, using a combination of the input, hidden state, and cell state.</p>
 
-<p>Comparing to the Stanford dataset this is smaller (11k vs. 1.4k), but has more turns per dialogue (11 vs. 15) and probably longer turns too, judging by the examples.
-The tasks are completely different, but both come with small tables of information that are private to the two participants and required for almost every turn in the conversation.
-Evaluating on both could be a great way to show the flexibility of a dialogue system, but the lack of frames for the Stanford data and the difficulty of running a human evaluation for this data limits the feasible types of multi-domain experiments.</p>
+<p>The results are interesting not only because this method helps, but because of how well the standard LSTM does on this task, matching or exceeding prior results.
+This is even more impressive given how small ACE is (if I remember correctly).
+The other key observations are that having a sequence level loss (using a CRF) helps, and NELL and WordNet seem to be providing different types of information (as using both leads to further improvements).</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://aclweb.org/anthology/W17-5526" target="_blank">Paper</a></p>
+<p><a href="http://aclweb.org/anthology/P17-1132" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{elasri-EtAl:2017:W17-55,
-  author    = {El Asri, Layla  and  Schulz, Hannes  and  Sharma, Shikhar  and  Zumer, Jeremie  and  Harris, Justin  and  Fine, Emery  and  Mehrotra, Rahul  and  Suleman, Kaheer},
-  title     = {Frames: a corpus for adding memory to goal-oriented dialogue systems},
-  booktitle = {Proceedings of the 18th Annual SIGdial Meeting on Discourse and Dialogue},
-  month     = {August},
+<pre><code class="language-bibtex">@InProceedings{yang-mitchell:2017:Long,
+  author    = {Yang, Bishan  and  Mitchell, Tom},
+  title     = {Leveraging Knowledge Bases in LSTMs for Improving Machine Reading},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
   year      = {2017},
-  address   = {Saarbrucken, Germany},
+  address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
-  pages     = {207--219},
-  url       = {http://aclweb.org/anthology/W17-5526}
+  pages     = {1436--1446},
+  url       = {http://aclweb.org/anthology/P17-1132}
 }
 </code></pre>
 
@@ -312,11 +307,11 @@ Evaluating on both could be a great way to show the flexibility of a dialogue sy
     
     <li><a href="/post/2017-11-3_discourserelations/">Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</a></li>
     
-    <li><a href="/post/2017-11-7_spineparsinglstm/">Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</a></li>
+    <li><a href="/post/2017-10-13_errordetection/">Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</a></li>
     
-    <li><a href="/post/2017-11-6_literarycharacters/">Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</a></li>
+    <li><a href="/post/2017-10-10_seqqa/">Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al., ACL 2017)</a></li>
     
-    <li><a href="/post/2017-11-1_mixtureofexperts/">Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</a></li>
+    <li><a href="/post/2017-11-9_framesdataset/">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
     
   </ul>
 </div>
@@ -326,13 +321,10 @@ Evaluating on both could be a great way to show the flexibility of a dialogue sy
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-11-8_graphdialogue/"><span
-      aria-hidden="true">&larr;</span> Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-11-9_framesdataset/"><span
+      aria-hidden="true">&larr;</span> Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-10_kginlstm/">Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

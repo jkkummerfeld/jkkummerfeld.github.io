@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-11-10_kginlstm/</loc>
+      <lastmod>2017-11-10T15:37:15-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-11-9_framesdataset/</loc>
       <lastmod>2017-11-09T19:47:08-05:00</lastmod>
     </url>
@@ -567,7 +576,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/acl/</loc>
-      <lastmod>2017-11-08T18:46:04-05:00</lastmod>
+      <lastmod>2017-11-10T15:37:15-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -755,6 +764,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/knowledge-graph/</loc>
+      <lastmod>2017-11-10T15:37:15-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/language-model/</loc>
       <lastmod>2017-10-30T13:28:30-04:00</lastmod>
       <priority>0</priority>
@@ -806,7 +825,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-11-09T19:47:08-05:00</lastmod>
+      <lastmod>2017-11-10T15:37:15-05:00</lastmod>
       <priority>0</priority>
     </url>
     
