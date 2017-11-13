@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-10_kginlstm/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-13_languagegame/">
 
   
 
-  <title>Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</h1>
+    <h1 itemprop="name">Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-10 15:37:15 -0500 EST" itemprop="datePublished">
-      Nov 10, 2017
+    <time datetime="2017-11-13 09:47:08 -0500 EST" itemprop="datePublished">
+      Nov 13, 2017
     </time>
   </span>
 
@@ -203,10 +203,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/acl">acl</a
+    <a href="/tags/emnlp">emnlp</a
     >, 
     
-    <a href="/tags/knowledge-graph">knowledge-graph</a
+    <a href="/tags/grounded-language">grounded-language</a
     >
     
   </span>
@@ -219,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Leveraging%20Knowledge%20Bases%20in%20LSTMs%20for%20Improving%20Machine%20Reading%20%28Yang%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f"
+         href="https://twitter.com/intent/tweet?text=Natural%20Language%20Does%20Not%20Emerge%20%27Naturally%27%20in%20Multi-Agent%20Dialog%20%28Kottur%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-13_languagegame%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-13_languagegame%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f&amp;title=Leveraging%20Knowledge%20Bases%20in%20LSTMs%20for%20Improving%20Machine%20Reading%20%28Yang%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-13_languagegame%2f&amp;title=Natural%20Language%20Does%20Not%20Emerge%20%27Naturally%27%20in%20Multi-Agent%20Dialog%20%28Kottur%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f&amp;title=Leveraging%20Knowledge%20Bases%20in%20LSTMs%20for%20Improving%20Machine%20Reading%20%28Yang%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-13_languagegame%2f&amp;title=Natural%20Language%20Does%20Not%20Emerge%20%27Naturally%27%20in%20Multi-Agent%20Dialog%20%28Kottur%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Leveraging%20Knowledge%20Bases%20in%20LSTMs%20for%20Improving%20Machine%20Reading%20%28Yang%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-10_kginlstm%2f">
+         href="mailto:?subject=Natural%20Language%20Does%20Not%20Emerge%20%27Naturally%27%20in%20Multi-Agent%20Dialog%20%28Kottur%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-13_languagegame%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,33 +262,36 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Structured information sources have been effectively used for entity detection and typing in linear models with the information encoded as binary features.
-This paper looks at how to integrate vector representations of structured information into an LSTM.
-The solution is an additional processing step during output generation, in which the vectors for relevant entities in the structured data are combined with the standard LSTM output (note, they do not affect the cell itself, so the information is not passed on through the recurrence).</p>
+<p>In reference games, two players communicate in a shared world with the goal of one learning what the other is referring to.
+Their small scale and clear success criteria make them a convenient testbed for dialogue agents, going back decades, with recent work focusing on neural approaches.
+This paper considers a simple game and constrains models in various ways to improve performance and see how their communication varies, a line of work also appearing in recent papers by Jacob Andreas (<a href="http://aclweb.org/anthology/P/P17/P17-1022.pdf" target="_blank">ACL 2017</a>, <a href="https://aclanthology.info/pdf/D/D17/D17-1310.pdf" target="_blank">EMNLP 2017</a>).</p>
 
-<p>In this case the structured information is a set of tuples forming a graph of relations between entities, from either NELL or WordNet.
-The actual encoding of entities is an application of prior work; vectors representing tuples are trained with the objective that the score for any tuple is higher than made-up tuples (where the score is $v_a M_r v_b$ for entities $a$ and $b$ in relation $r$).
-The set of relevant entities for a particular word in the sentence is obtained by string matching, and then attention is used to combine them.
-There is also a kind of gating mechanism to choose how big a role the entities play in the prediction, using a combination of the input, hidden state, and cell state.</p>
+<p>The game in this case is to find out two properties of an object, where there are three possible properties, each with four possible values.
+Given enough flexibility, models will explicitly encode every possible structure of the world as a separate symbol, which does not generalise well.
+Limiting the vocabulary to one symbol per property and one per value helps, but in this particular game there are only 3 possible questions, and over two turns of dialogue the 12 value words are sufficient to encode the space.
+Limiting even further, to 4 words for values and providing each turn in isolation to the answerer does lead to some compositionality, but clearly not full compositionality as they still make errors on unseen combinations of the inputs.</p>
 
-<p>The results are interesting not only because this method helps, but because of how well the standard LSTM does on this task, matching or exceeding prior results.
-This is even more impressive given how small ACE is (if I remember correctly).
-The other key observations are that having a sequence level loss (using a CRF) helps, and NELL and WordNet seem to be providing different types of information (as using both leads to further improvements).</p>
+<p>It&rsquo;s a short paper, so they can only do so much, but some experiments I am curious about are:</p>
+
+<ul>
+<li>Decrease the questioner vocabulary to 2. This avoids the problem that the questioner can express the task in one step by saying what is not needed. It&rsquo;s still doable, by defining an order for questions, e.g. ask about attribute A vs. B first, then in the second step ask about either C or the other option from the first step. This is a little weird as symbols need to mean different things at different time steps, but would be interesting.</li>
+<li>Increase the number of attributes to 4. This also avoids the task expression problem, by forcing there to be compositionality on the questioner side (watching the video of the talk, someone asked this in the question time, and they didn&rsquo;t know).</li>
+</ul>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://aclweb.org/anthology/P17-1132" target="_blank">Paper</a></p>
+<p><a href="https://www.aclweb.org/anthology/D17-1320" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{yang-mitchell:2017:Long,
-  author    = {Yang, Bishan  and  Mitchell, Tom},
-  title     = {Leveraging Knowledge Bases in LSTMs for Improving Machine Reading},
-  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
-  month     = {July},
+<pre><code class="language-bibtex">@InProceedings{kottur-EtAl:2017:EMNLP2017,
+  author    = {Kottur, Satwik  and  Moura, Jos\'{e}  and  Lee, Stefan  and  Batra, Dhruv},
+  title     = {Natural Language Does Not Emerge 'Naturally' in Multi-Agent Dialog},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
   year      = {2017},
-  address   = {Vancouver, Canada},
+  address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
-  pages     = {1436--1446},
-  url       = {http://aclweb.org/anthology/P17-1132}
+  pages     = {2952--2957},
+  url       = {https://www.aclweb.org/anthology/D17-1320}
 }
 </code></pre>
 
@@ -303,15 +306,15 @@ The other key observations are that having a sequence level loss (using a CRF) h
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-11-8_graphdialogue/">Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</a></li>
+    <li><a href="/post/2017-11-6_literarycharacters/">Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</a></li>
     
-    <li><a href="/post/2017-11-3_discourserelations/">Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</a></li>
+    <li><a href="/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></li>
     
-    <li><a href="/post/2017-10-13_errordetection/">Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</a></li>
+    <li><a href="/post/2017-10-12_amralignment/">Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</a></li>
     
-    <li><a href="/post/2017-10-10_seqqa/">Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al., ACL 2017)</a></li>
+    <li><a href="/post/2017-10-09_parsing-autoencoder/"> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</a></li>
     
-    <li><a href="/post/2017-11-9_framesdataset/">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
+    <li><a href="/post/2017-10-06-madlibs/">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</a></li>
     
   </ul>
 </div>
@@ -321,13 +324,10 @@ The other key observations are that having a sequence level loss (using a CRF) h
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-11-9_framesdataset/"><span
-      aria-hidden="true">&larr;</span> Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-11-10_kginlstm/"><span
+      aria-hidden="true">&larr;</span> Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-13_languagegame/">Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

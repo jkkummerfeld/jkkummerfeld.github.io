@@ -14,6 +14,54 @@
     
     <item>
       
+        <title>Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-13_languagegame/</link>
+      <pubDate>Mon, 13 Nov 2017 09:47:08 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-13_languagegame/</guid>
+      
+        <description>
+
+&lt;p&gt;In reference games, two players communicate in a shared world with the goal of one learning what the other is referring to.
+Their small scale and clear success criteria make them a convenient testbed for dialogue agents, going back decades, with recent work focusing on neural approaches.
+This paper considers a simple game and constrains models in various ways to improve performance and see how their communication varies, a line of work also appearing in recent papers by Jacob Andreas (&lt;a href=&#34;http://aclweb.org/anthology/P/P17/P17-1022.pdf&#34; target=&#34;_blank&#34;&gt;ACL 2017&lt;/a&gt;, &lt;a href=&#34;https://aclanthology.info/pdf/D/D17/D17-1310.pdf&#34; target=&#34;_blank&#34;&gt;EMNLP 2017&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;The game in this case is to find out two properties of an object, where there are three possible properties, each with four possible values.
+Given enough flexibility, models will explicitly encode every possible structure of the world as a separate symbol, which does not generalise well.
+Limiting the vocabulary to one symbol per property and one per value helps, but in this particular game there are only 3 possible questions, and over two turns of dialogue the 12 value words are sufficient to encode the space.
+Limiting even further, to 4 words for values and providing each turn in isolation to the answerer does lead to some compositionality, but clearly not full compositionality as they still make errors on unseen combinations of the inputs.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a short paper, so they can only do so much, but some experiments I am curious about are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Decrease the questioner vocabulary to 2. This avoids the problem that the questioner can express the task in one step by saying what is not needed. It&amp;rsquo;s still doable, by defining an order for questions, e.g. ask about attribute A vs. B first, then in the second step ask about either C or the other option from the first step. This is a little weird as symbols need to mean different things at different time steps, but would be interesting.&lt;/li&gt;
+&lt;li&gt;Increase the number of attributes to 4. This also avoids the task expression problem, by forcing there to be compositionality on the questioner side (watching the video of the talk, someone asked this in the question time, and they didn&amp;rsquo;t know).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1320&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{kottur-EtAl:2017:EMNLP2017,
+  author    = {Kottur, Satwik  and  Moura, Jos\&#39;{e}  and  Lee, Stefan  and  Batra, Dhruv},
+  title     = {Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2952--2957},
+  url       = {https://www.aclweb.org/anthology/D17-1320}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-10_kginlstm/</link>
@@ -1472,20 +1520,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>Crowdsourced Paraphrases</title>
-      
-      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
-      
-        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
         
@@ -1509,6 +1543,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
+        <title>Crowdsourced Paraphrases</title>
+      
+      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      
+        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Tools for Automated Analysis of Cybercriminal Markets",
         
@@ -1526,6 +1574,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           Underground forums are widely used by criminals to buy and sell a host of stolen items, datasets, resources, and criminal services.  These forums contain important resources for understanding cybercrime.  However, the number of forums, their size, and the domain expertise required to understand the markets makes manual exploration of these forums unscalable. In this work, we propose an automated, top-down approach for analyzing underground forums.  Our approach uses natural language processing and machine learning to automatically generate high-level information about underground forums, first identifying posts related to transactions, and then extracting products and prices. We also demonstrate, via a pair of case studies, how an analyst can use these automated approaches to investigate other categories of products and transactions. We use eight distinct forums to assess our tools: Antichat, Blackhat World, Carders, Darkode, Hack Forums, Hell, L33tCrew and Nulled. Our automated approach is fast and accurate, achieving over 80% accuracy in detecting post category, product, and prices.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>One-Endpoint Crossing Graph Parser</title>
+      
+      <link>http://www.jkk.name/software/1ec-parsing/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/1ec-parsing/</guid>
+      
+        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://github.com/jkkummerfeld/1ec-graph-parser" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser</a></description>
       
 
     </item>
@@ -1578,20 +1640,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
       
         <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>One-Endpoint Crossing Graph Parser</title>
-      
-      <link>http://www.jkk.name/software/1ec-parsing/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/1ec-parsing/</guid>
-      
-        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://github.com/jkkummerfeld/1ec-graph-parser" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser</a></description>
       
 
     </item>
@@ -1735,43 +1783,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
-        <title>Parse Error Analysis</title>
-      
-      <link>http://www.jkk.name/software/parsing-analysis/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
-      
-        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
-        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
-        
-          Jonathan K. Kummerfeld, Dan Klein, James R. Curran
-        
-        (ACL (short),
-        2012)
-      </title>
-      
-      <link>http://www.jkk.name/publication/acl12conversion/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
-      
-        <description>
-          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output",
         
@@ -1803,6 +1814,43 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <guid>http://www.jkk.name/software/ccg2pst/</guid>
       
         <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
+        
+          Jonathan K. Kummerfeld, Dan Klein, James R. Curran
+        
+        (ACL (short),
+        2012)
+      </title>
+      
+      <link>http://www.jkk.name/publication/acl12conversion/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
+      
+        <description>
+          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Parse Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/parsing-analysis/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
+      
+        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
       
 
     </item>
