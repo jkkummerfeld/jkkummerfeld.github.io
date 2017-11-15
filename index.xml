@@ -14,6 +14,62 @@
     
     <item>
       
+        <title>Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-15_entityvectors/</link>
+      <pubDate>Wed, 15 Nov 2017 18:01:27 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-15_entityvectors/</guid>
+      
+        <description>
+
+&lt;p&gt;Since word2vec was released there have been a series of X2vec papers, though none have had the success of word vectors.
+In this case the idea is to represent entities and chunks of text (words, sentences, paragraphs).&lt;/p&gt;
+
+&lt;p&gt;Entities are represented with vectors.
+To get the vector for a chunk of text, they:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Sum word vectors for the text.&lt;/li&gt;
+&lt;li&gt;Rescale to be of unit length.&lt;/li&gt;
+&lt;li&gt;Multiply by a weight matrix and add a bias.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Then to learn these, negative log likelihood is used, where the probability is defined as a softmax over the dot product between entity and text vectors.
+The data is a portion of Wikipedia annotated with entities as indicated by links (plus they say the entity the page is about is implicitly part of every sentence).&lt;/p&gt;
+
+&lt;p&gt;With these new vectors in hand, they try textual similarity, with strong results.
+They also build a very simple entity linking system, a feed-forward network with these representations plus a few other features, and beat all prior work.
+Similarly
+They apply the same modeling approach to Quizball QA, also with strong results.&lt;/p&gt;
+
+&lt;p&gt;The simplicity and effectiveness of the model really is impressive.
+Some qualitative examples are included, but hard to find trends in.
+It does seem like a more reasonable vector learning approach than skip-thought and other similar approaches that rely only on text context - the entities provide something different, but clearly closely related.
+That said, I feel like more ablation is needed to see what role each of these pieces is playing (are they learning better vectors, or using them in a way that is more effective? Or both?).&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.transacl.org/ojs/index.php/tacl/article/view/1065&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@article{TACL1065,
+	author = {Yamada, Ikuya  and Shindo, Hiroyuki  and Takeda, Hideaki  and Takefuji, Yoshiyasu },
+	title = {Learning Distributed Representations of Texts and Entities from Knowledge Base},
+	journal = {Transactions of the Association for Computational Linguistics},
+	volume = {5},
+	year = {2017},
+	issn = {2307-387X},
+	url = {https://www.transacl.org/ojs/index.php/tacl/article/view/1065},
+	pages = {397--411}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>In-Order Transition-based Constituent Parsing (Liu et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-14_inorderparsing/</link>

@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-14_inorderparsing/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-15_entityvectors/">
 
   
 
-  <title>In-Order Transition-based Constituent Parsing (Liu et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">In-Order Transition-based Constituent Parsing (Liu et al., 2017)</h1>
+    <h1 itemprop="name">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-14 14:10:39 -0500 EST" itemprop="datePublished">
-      Nov 14, 2017
+    <time datetime="2017-11-15 18:01:27 -0500 EST" itemprop="datePublished">
+      Nov 15, 2017
     </time>
   </span>
 
@@ -201,12 +201,6 @@
     <i class="fa fa-tags"></i>
     
     <a href="/tags/paper">paper</a
-    >, 
-    
-    <a href="/tags/tacl">tacl</a
-    >, 
-    
-    <a href="/tags/syntax">syntax</a
     >
     
   </span>
@@ -219,35 +213,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=In-Order%20Transition-based%20Constituent%20Parsing%20%28Liu%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-14_inorderparsing%2f"
+         href="https://twitter.com/intent/tweet?text=Learning%20Distributed%20Representations%20of%20Texts%20and%20Entities%20from%20Knowledge%20Base%20%28Yamada%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-14_inorderparsing%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-14_inorderparsing%2f&amp;title=In-Order%20Transition-based%20Constituent%20Parsing%20%28Liu%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f&amp;title=Learning%20Distributed%20Representations%20of%20Texts%20and%20Entities%20from%20Knowledge%20Base%20%28Yamada%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-14_inorderparsing%2f&amp;title=In-Order%20Transition-based%20Constituent%20Parsing%20%28Liu%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f&amp;title=Learning%20Distributed%20Representations%20of%20Texts%20and%20Entities%20from%20Knowledge%20Base%20%28Yamada%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=In-Order%20Transition-based%20Constituent%20Parsing%20%28Liu%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-14_inorderparsing%2f">
+         href="mailto:?subject=Learning%20Distributed%20Representations%20of%20Texts%20and%20Entities%20from%20Knowledge%20Base%20%28Yamada%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,31 +256,44 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Shift-reduce constituency parsing incrementally builds the parse either bottom-up or top-down.
-The difference is whether a non-terminal is placed on the stack before or after the words that it spans.
-This corresponds to two forms of depth-first traversal of the tree: pre-order or post-order.</p>
+<p>Since word2vec was released there have been a series of X2vec papers, though none have had the success of word vectors.
+In this case the idea is to represent entities and chunks of text (words, sentences, paragraphs).</p>
 
-<p>The idea in this paper is to do an in-order traversal, which in a binary tree means traversing the left child of a node, then the node, then its right child.
-In this context that means putting the non-terminal symbol on the stack after the first word it spans, but before the rest.
-The model follows the stack-LSTM approach of Dyer et al., with non-terminals always fed into the LSTM first during composition, regardless of where it was inserted into the stack.</p>
+<p>Entities are represented with vectors.
+To get the vector for a chunk of text, they:</p>
 
-<p>This leads to a 0.5 F1 gain on standard parsing metrics, with no hyperparameter tuning.
-High-level error analysis seems to show it just does better everywhere.
-I wonder whether further gains could be realised with a label-sensitive ordering.</p>
+<ol>
+<li>Sum word vectors for the text.</li>
+<li>Rescale to be of unit length.</li>
+<li>Multiply by a weight matrix and add a bias.</li>
+</ol>
+
+<p>Then to learn these, negative log likelihood is used, where the probability is defined as a softmax over the dot product between entity and text vectors.
+The data is a portion of Wikipedia annotated with entities as indicated by links (plus they say the entity the page is about is implicitly part of every sentence).</p>
+
+<p>With these new vectors in hand, they try textual similarity, with strong results.
+They also build a very simple entity linking system, a feed-forward network with these representations plus a few other features, and beat all prior work.
+Similarly
+They apply the same modeling approach to Quizball QA, also with strong results.</p>
+
+<p>The simplicity and effectiveness of the model really is impressive.
+Some qualitative examples are included, but hard to find trends in.
+It does seem like a more reasonable vector learning approach than skip-thought and other similar approaches that rely only on text context - the entities provide something different, but clearly closely related.
+That said, I feel like more ablation is needed to see what role each of these pieces is playing (are they learning better vectors, or using them in a way that is more effective? Or both?).</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://www.transacl.org/ojs/index.php/tacl/article/view/1199" target="_blank">Paper</a></p>
+<p><a href="https://www.transacl.org/ojs/index.php/tacl/article/view/1065" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@article{TACL1199,
-	author = {Liu, Jiangming  and Zhang, Yue },
-	title = {In-Order Transition-based Constituent Parsing},
+<pre><code class="language-bibtex">@article{TACL1065,
+	author = {Yamada, Ikuya  and Shindo, Hiroyuki  and Takeda, Hideaki  and Takefuji, Yoshiyasu },
+	title = {Learning Distributed Representations of Texts and Entities from Knowledge Base},
 	journal = {Transactions of the Association for Computational Linguistics},
 	volume = {5},
 	year = {2017},
 	issn = {2307-387X},
-	url = {https://www.transacl.org/ojs/index.php/tacl/article/view/1199},
-	pages = {413--424}
+	url = {https://www.transacl.org/ojs/index.php/tacl/article/view/1065},
+	pages = {397--411}
 }
 </code></pre>
 
@@ -301,15 +308,15 @@ I wonder whether further gains could be realised with a label-sensitive ordering
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-11-7_spineparsinglstm/">Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-10-25_shiftreducedp/">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
-    
-    <li><a href="/post/2017-10-24_dynamictransition/">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></li>
-    
-    <li><a href="/post/2017-10-11_multimt/">Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</a></li>
+    <li><a href="/post/2017-11-14_inorderparsing/">In-Order Transition-based Constituent Parsing (Liu et al., 2017)</a></li>
     
     <li><a href="/post/2017-11-13_languagegame/">Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-11-10_kginlstm/">Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-11-9_framesdataset/">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-11-8_graphdialogue/">Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</a></li>
     
   </ul>
 </div>
@@ -319,13 +326,10 @@ I wonder whether further gains could be realised with a label-sensitive ordering
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-11-13_languagegame/"><span
-      aria-hidden="true">&larr;</span> Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-11-14_inorderparsing/"><span
+      aria-hidden="true">&larr;</span> In-Order Transition-based Constituent Parsing (Liu et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-15_entityvectors/">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
