@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-11-16_ucca/</loc>
+      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-11-15_entityvectors/</loc>
       <lastmod>2017-11-15T18:01:27-05:00</lastmod>
     </url>
@@ -41,7 +50,7 @@
     
     <url>
     
-      <loc>http://www.jkk.name/post/2017-11-9_framesdataset/</loc>
+      <loc>http://www.jkk.name/post/2017-11-09_framesdataset/</loc>
       <lastmod>2017-11-09T19:47:08-05:00</lastmod>
     </url>
     
@@ -50,7 +59,7 @@
     
     <url>
     
-      <loc>http://www.jkk.name/post/2017-11-8_graphdialogue/</loc>
+      <loc>http://www.jkk.name/post/2017-11-08_graphdialogue/</loc>
       <lastmod>2017-11-08T18:46:04-05:00</lastmod>
     </url>
     
@@ -59,7 +68,7 @@
     
     <url>
     
-      <loc>http://www.jkk.name/post/2017-11-7_spineparsinglstm/</loc>
+      <loc>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</loc>
       <lastmod>2017-11-07T20:42:45-05:00</lastmod>
     </url>
     
@@ -68,7 +77,7 @@
     
     <url>
     
-      <loc>http://www.jkk.name/post/2017-11-6_literarycharacters/</loc>
+      <loc>http://www.jkk.name/post/2017-11-06_literarycharacters/</loc>
       <lastmod>2017-11-06T20:16:28-05:00</lastmod>
     </url>
     
@@ -77,7 +86,7 @@
     
     <url>
     
-      <loc>http://www.jkk.name/post/2017-11-3_discourserelations/</loc>
+      <loc>http://www.jkk.name/post/2017-11-03_discourserelations/</loc>
       <lastmod>2017-11-03T15:40:32-04:00</lastmod>
     </url>
     
@@ -86,7 +95,7 @@
     
     <url>
     
-      <loc>http://www.jkk.name/post/2017-11-1_mixtureofexperts/</loc>
+      <loc>http://www.jkk.name/post/2017-11-01_mixtureofexperts/</loc>
       <lastmod>2017-11-01T21:57:27-04:00</lastmod>
     </url>
     
@@ -603,7 +612,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/acl/</loc>
-      <lastmod>2017-11-10T15:37:15-05:00</lastmod>
+      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -862,7 +871,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-11-15T18:01:27-05:00</lastmod>
+      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -922,7 +931,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/syntax/</loc>
-      <lastmod>2017-11-14T14:10:39-05:00</lastmod>
+      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -932,7 +941,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/tacl/</loc>
-      <lastmod>2017-11-14T14:10:39-05:00</lastmod>
+      <lastmod>2017-11-15T18:01:27-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -952,7 +961,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/word-vectors/</loc>
-      <lastmod>2017-10-26T20:47:12-04:00</lastmod>
+      <lastmod>2017-11-15T18:01:27-05:00</lastmod>
       <priority>0</priority>
     </url>
     

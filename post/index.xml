@@ -14,6 +14,54 @@
     
     <item>
       
+        <title>A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-16_ucca/</link>
+      <pubDate>Thu, 16 Nov 2017 17:24:59 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-16_ucca/</guid>
+      
+        <description>
+
+&lt;p&gt;Over the last few years interest has risen in parsing structures other than projective trees (including my dissertation!).
+There are now a range of different datasets with annotations for syntactic and/or semantic structure that include discontinuous constituents and graphs.
+This paper looks at UCCA, a proposed formalism that is somewhat similar to SRL, with non-terminals included to allow for easier handling of cases like coordination.&lt;/p&gt;
+
+&lt;p&gt;The parser is a transition based, with a transition system that covers all the structural phenomena in UCCA: non-terminals, discontinuous spans, and multiple parents.
+The key to consistent multiple parents is distinguishing the addition of edges that are the primary parent (to prevent multiple being added).
+To get discontinuity, they use a swap operation.
+They consider a range of models, including both linear and neural network examples.&lt;/p&gt;
+
+&lt;p&gt;The dataset is relatively small, with only 4,268 training sentences, and the task is hard, so performance is relatively low (50 - 75 for primary edges, 20-50 for others).
+The neural model consistently beats the linear ones, particularly for the non-primary edges.
+Comparing to other standard parsers (retrained on this data), the ability to generate the full space of structures makes a big difference.&lt;/p&gt;
+
+&lt;p&gt;It would be interesting to see coverage of this data for one-endpoint crossing graphs.
+If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://aclweb.org/anthology/P17-1104&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hershcovich-abend-rappoport:2017:Long,
+  author    = {Hershcovich, Daniel  and  Abend, Omri  and  Rappoport, Ari},
+  title     = {A Transition-Based Directed Acyclic Graph Parser for UCCA},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1127--1138},
+  url       = {http://aclweb.org/anthology/P17-1104}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-15_entityvectors/</link>
@@ -208,10 +256,10 @@ The other key observations are that having a sequence level loss (using a CRF) h
       
         <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</title>
       
-      <link>http://www.jkk.name/post/2017-11-9_framesdataset/</link>
+      <link>http://www.jkk.name/post/2017-11-09_framesdataset/</link>
       <pubDate>Thu, 09 Nov 2017 19:47:08 -0500</pubDate>
       
-      <guid>http://www.jkk.name/post/2017-11-9_framesdataset/</guid>
+      <guid>http://www.jkk.name/post/2017-11-09_framesdataset/</guid>
       
         <description>
 
@@ -255,10 +303,10 @@ Evaluating on both could be a great way to show the flexibility of a dialogue sy
       
         <title>Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</title>
       
-      <link>http://www.jkk.name/post/2017-11-8_graphdialogue/</link>
+      <link>http://www.jkk.name/post/2017-11-08_graphdialogue/</link>
       <pubDate>Wed, 08 Nov 2017 18:46:04 -0500</pubDate>
       
-      <guid>http://www.jkk.name/post/2017-11-8_graphdialogue/</guid>
+      <guid>http://www.jkk.name/post/2017-11-08_graphdialogue/</guid>
       
         <description>
 
@@ -318,10 +366,10 @@ During generation, the LSTM uses attention over these vectors to inform the outp
       
         <title>Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</title>
       
-      <link>http://www.jkk.name/post/2017-11-7_spineparsinglstm/</link>
+      <link>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</link>
       <pubDate>Tue, 07 Nov 2017 20:42:45 -0500</pubDate>
       
-      <guid>http://www.jkk.name/post/2017-11-7_spineparsinglstm/</guid>
+      <guid>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</guid>
       
         <description>
 
@@ -358,10 +406,10 @@ Decisions about higher up in the spine are difficult to make when looking at a s
       
         <title>Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</title>
       
-      <link>http://www.jkk.name/post/2017-11-6_literarycharacters/</link>
+      <link>http://www.jkk.name/post/2017-11-06_literarycharacters/</link>
       <pubDate>Mon, 06 Nov 2017 20:16:28 -0500</pubDate>
       
-      <guid>http://www.jkk.name/post/2017-11-6_literarycharacters/</guid>
+      <guid>http://www.jkk.name/post/2017-11-06_literarycharacters/</guid>
       
         <description>
 
@@ -406,10 +454,10 @@ It would be interesting to modify a coreference resolution system to process the
       
         <title>Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</title>
       
-      <link>http://www.jkk.name/post/2017-11-3_discourserelations/</link>
+      <link>http://www.jkk.name/post/2017-11-03_discourserelations/</link>
       <pubDate>Fri, 03 Nov 2017 15:40:32 -0400</pubDate>
       
-      <guid>http://www.jkk.name/post/2017-11-3_discourserelations/</guid>
+      <guid>http://www.jkk.name/post/2017-11-03_discourserelations/</guid>
       
         <description>
 
@@ -449,10 +497,10 @@ According to automatic metrics it is quite a bit better than running the summari
       
         <title>Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</title>
       
-      <link>http://www.jkk.name/post/2017-11-1_mixtureofexperts/</link>
+      <link>http://www.jkk.name/post/2017-11-01_mixtureofexperts/</link>
       <pubDate>Wed, 01 Nov 2017 21:57:27 -0400</pubDate>
       
-      <guid>http://www.jkk.name/post/2017-11-1_mixtureofexperts/</guid>
+      <guid>http://www.jkk.name/post/2017-11-01_mixtureofexperts/</guid>
       
         <description>
 

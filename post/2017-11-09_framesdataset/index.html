@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-15_entityvectors/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-09_framesdataset/">
 
   
 
-  <title>Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</h1>
+    <h1 itemprop="name">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-15 18:01:27 -0500 EST" itemprop="datePublished">
-      Nov 15, 2017
+    <time datetime="2017-11-09 19:47:08 -0500 EST" itemprop="datePublished">
+      Nov 9, 2017
     </time>
   </span>
 
@@ -203,10 +203,13 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/tacl">tacl</a
+    <a href="/tags/sigdial">sigdial</a
     >, 
     
-    <a href="/tags/word-vectors">word-vectors</a
+    <a href="/tags/dialogue">dialogue</a
+    >, 
+    
+    <a href="/tags/data">data</a
     >
     
   </span>
@@ -219,35 +222,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Learning%20Distributed%20Representations%20of%20Texts%20and%20Entities%20from%20Knowledge%20Base%20%28Yamada%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f"
+         href="https://twitter.com/intent/tweet?text=Frames%3a%20a%20corpus%20for%20adding%20memory%20to%20goal-oriented%20dialogue%20systems%20%28El%20Asri%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-09_framesdataset%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-09_framesdataset%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f&amp;title=Learning%20Distributed%20Representations%20of%20Texts%20and%20Entities%20from%20Knowledge%20Base%20%28Yamada%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-09_framesdataset%2f&amp;title=Frames%3a%20a%20corpus%20for%20adding%20memory%20to%20goal-oriented%20dialogue%20systems%20%28El%20Asri%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f&amp;title=Learning%20Distributed%20Representations%20of%20Texts%20and%20Entities%20from%20Knowledge%20Base%20%28Yamada%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-09_framesdataset%2f&amp;title=Frames%3a%20a%20corpus%20for%20adding%20memory%20to%20goal-oriented%20dialogue%20systems%20%28El%20Asri%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Learning%20Distributed%20Representations%20of%20Texts%20and%20Entities%20from%20Knowledge%20Base%20%28Yamada%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-15_entityvectors%2f">
+         href="mailto:?subject=Frames%3a%20a%20corpus%20for%20adding%20memory%20to%20goal-oriented%20dialogue%20systems%20%28El%20Asri%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-09_framesdataset%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,44 +265,35 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Since word2vec was released there have been a series of X2vec papers, though none have had the success of word vectors.
-In this case the idea is to represent entities and chunks of text (words, sentences, paragraphs).</p>
+<p>Another paper about a dataset of dialogues, but this time with structure.
+Like the paper from yesterday, the aim is a dataset of task-oriented conversations, but with more complexity than prior work.
+The difference is that this work includes a structured representation of the state of the conversation: frames.</p>
 
-<p>Entities are represented with vectors.
-To get the vector for a chunk of text, they:</p>
+<p>A frame is essentially a tuple describing a query, e.g. (Destination: Sydney, Origin: Ann Arbor, price: 1500 USD).
+There are multiple frames in a dialogue (a departure from DSTC tasks), and utterances are labeled with dialogue acts that capture modifications to the frames as well as references to them.
+This structure sounds fairly general, though the focus here was on vacation planning, where the user is buying a package.
+The setup doesn&rsquo;t maximise the potential complexity though, as there are a small number of set packages available, rather than the complex tradeoffs of flight+hotel combinations that exist in practise.
+Looking at the example dialogues in the paper, it has complete sentences of some complexity.
+One thing I&rsquo;m still curious about is disagreements between annotators, as for the complete task the score was 0.62 +/- 5 (with dialogue acts being trickier than slot values, and no scores for frame references on their own).</p>
 
-<ol>
-<li>Sum word vectors for the text.</li>
-<li>Rescale to be of unit length.</li>
-<li>Multiply by a weight matrix and add a bias.</li>
-</ol>
-
-<p>Then to learn these, negative log likelihood is used, where the probability is defined as a softmax over the dot product between entity and text vectors.
-The data is a portion of Wikipedia annotated with entities as indicated by links (plus they say the entity the page is about is implicitly part of every sentence).</p>
-
-<p>With these new vectors in hand, they try textual similarity, with strong results.
-They also build a very simple entity linking system, a feed-forward network with these representations plus a few other features, and beat all prior work.
-Similarly
-They apply the same modeling approach to Quizball QA, also with strong results.</p>
-
-<p>The simplicity and effectiveness of the model really is impressive.
-Some qualitative examples are included, but hard to find trends in.
-It does seem like a more reasonable vector learning approach than skip-thought and other similar approaches that rely only on text context - the entities provide something different, but clearly closely related.
-That said, I feel like more ablation is needed to see what role each of these pieces is playing (are they learning better vectors, or using them in a way that is more effective? Or both?).</p>
+<p>Comparing to the Stanford dataset this is smaller (11k vs. 1.4k), but has more turns per dialogue (11 vs. 15) and probably longer turns too, judging by the examples.
+The tasks are completely different, but both come with small tables of information that are private to the two participants and required for almost every turn in the conversation.
+Evaluating on both could be a great way to show the flexibility of a dialogue system, but the lack of frames for the Stanford data and the difficulty of running a human evaluation for this data limits the feasible types of multi-domain experiments.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://www.transacl.org/ojs/index.php/tacl/article/view/1065" target="_blank">Paper</a></p>
+<p><a href="http://aclweb.org/anthology/W17-5526" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@article{TACL1065,
-	author = {Yamada, Ikuya  and Shindo, Hiroyuki  and Takeda, Hideaki  and Takefuji, Yoshiyasu },
-	title = {Learning Distributed Representations of Texts and Entities from Knowledge Base},
-	journal = {Transactions of the Association for Computational Linguistics},
-	volume = {5},
-	year = {2017},
-	issn = {2307-387X},
-	url = {https://www.transacl.org/ojs/index.php/tacl/article/view/1065},
-	pages = {397--411}
+<pre><code class="language-bibtex">@InProceedings{elasri-EtAl:2017:W17-55,
+  author    = {El Asri, Layla  and  Schulz, Hannes  and  Sharma, Shikhar  and  Zumer, Jeremie  and  Harris, Justin  and  Fine, Emery  and  Mehrotra, Rahul  and  Suleman, Kaheer},
+  title     = {Frames: a corpus for adding memory to goal-oriented dialogue systems},
+  booktitle = {Proceedings of the 18th Annual SIGdial Meeting on Discourse and Dialogue},
+  month     = {August},
+  year      = {2017},
+  address   = {Saarbrucken, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {207--219},
+  url       = {http://aclweb.org/anthology/W17-5526}
 }
 </code></pre>
 
@@ -314,15 +308,15 @@ That said, I feel like more ablation is needed to see what role each of these pi
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-11-14_inorderparsing/">In-Order Transition-based Constituent Parsing (Liu et al., 2017)</a></li>
+    <li><a href="/post/2017-11-08_graphdialogue/">Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></li>
+    <li><a href="/post/2017-11-03_discourserelations/">Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></li>
+    <li><a href="/post/2017-11-07_spineparsinglstm/">Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-11_multimt/">Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</a></li>
+    <li><a href="/post/2017-11-06_literarycharacters/">Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</a></li>
     
-    <li><a href="/post/2017-11-13_languagegame/">Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</a></li>
+    <li><a href="/post/2017-11-01_mixtureofexperts/">Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</a></li>
     
   </ul>
 </div>
@@ -332,12 +326,12 @@ That said, I feel like more ablation is needed to see what role each of these pi
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-11-14_inorderparsing/"><span
-      aria-hidden="true">&larr;</span> In-Order Transition-based Constituent Parsing (Liu et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-11-08_graphdialogue/"><span
+      aria-hidden="true">&larr;</span> Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</a></li>
     
 
     
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-16_ucca/">A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017) <span
+    <li class="next"><a href="http://www.jkk.name/post/2017-11-10_kginlstm/">Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017) <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
