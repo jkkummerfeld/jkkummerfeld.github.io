@@ -14,6 +14,47 @@
     
     <item>
       
+        <title>A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
+      <pubDate>Fri, 17 Nov 2017 18:40:20 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</guid>
+      
+        <description>
+
+&lt;p&gt;Discourse parsing for Rhetorical Structure Theory is difficult partly because it involves a range of relation types at different scales (within and between sentences) and partly because there is relatively little annotated data available.
+To deal with the limited data, this paper breaks the task into two parts: (1) identify relations, (2) assign labels.
+Their system is state-of-the-art, and an ablation shows that the division of tasks helps performance.
+They also divide up the labeling step to have different classifiers for within sentences, between sentences in the same paragraph, and between paragraphs, which also helps a little.&lt;/p&gt;
+
+&lt;p&gt;I find the second improvement surprising, since an expanded feature set for a single classifier would be able to emulate their multi-classifier model, while having the advantage of sharing information between classes.
+The first improvement is more intuitive (a denser space makes for an easier problem), though I wonder whether this will be one point on the back-and-forth that usually occurs between sequential and joint models (with joint models usually winning in the end).
+This paper also continues the trend of transition-based inference applying effectively to tasks, which makes sense if our models are getting good enough that search errors are not a major issue.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://aclweb.org/anthology/P17-2029&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{wang-li-wang:2017:Short,
+  author    = {Wang, Yizhong  and  Li, Sujian  and  Wang, Houfeng},
+  title     = {A Two-Stage Parsing Method for Text-Level Discourse Analysis},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {184--188},
+  url       = {http://aclweb.org/anthology/P17-2029}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-16_ucca/</link>

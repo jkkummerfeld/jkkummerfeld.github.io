@@ -14,6 +14,47 @@
     
     <item>
       
+        <title>A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
+      <pubDate>Fri, 17 Nov 2017 18:40:20 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</guid>
+      
+        <description>
+
+&lt;p&gt;Discourse parsing for Rhetorical Structure Theory is difficult partly because it involves a range of relation types at different scales (within and between sentences) and partly because there is relatively little annotated data available.
+To deal with the limited data, this paper breaks the task into two parts: (1) identify relations, (2) assign labels.
+Their system is state-of-the-art, and an ablation shows that the division of tasks helps performance.
+They also divide up the labeling step to have different classifiers for within sentences, between sentences in the same paragraph, and between paragraphs, which also helps a little.&lt;/p&gt;
+
+&lt;p&gt;I find the second improvement surprising, since an expanded feature set for a single classifier would be able to emulate their multi-classifier model, while having the advantage of sharing information between classes.
+The first improvement is more intuitive (a denser space makes for an easier problem), though I wonder whether this will be one point on the back-and-forth that usually occurs between sequential and joint models (with joint models usually winning in the end).
+This paper also continues the trend of transition-based inference applying effectively to tasks, which makes sense if our models are getting good enough that search errors are not a major issue.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://aclweb.org/anthology/P17-2029&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{wang-li-wang:2017:Short,
+  author    = {Wang, Yizhong  and  Li, Sujian  and  Wang, Houfeng},
+  title     = {A Two-Stage Parsing Method for Text-Level Discourse Analysis},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {184--188},
+  url       = {http://aclweb.org/anthology/P17-2029}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-16_ucca/</link>
@@ -1667,6 +1708,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
+        <title>Crowdsourced Paraphrases</title>
+      
+      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      
+        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
         
@@ -1690,20 +1745,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>Crowdsourced Paraphrases</title>
-      
-      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
-      
-        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Tools for Automated Analysis of Cybercriminal Markets",
         
@@ -1721,6 +1762,21 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           Underground forums are widely used by criminals to buy and sell a host of stolen items, datasets, resources, and criminal services.  These forums contain important resources for understanding cybercrime.  However, the number of forums, their size, and the domain expertise required to understand the markets makes manual exploration of these forums unscalable. In this work, we propose an automated, top-down approach for analyzing underground forums.  Our approach uses natural language processing and machine learning to automatically generate high-level information about underground forums, first identifying posts related to transactions, and then extracting products and prices. We also demonstrate, via a pair of case studies, how an analyst can use these automated approaches to investigate other categories of products and transactions. We use eight distinct forums to assess our tools: Antichat, Blackhat World, Carders, Darkode, Hack Forums, Hell, L33tCrew and Nulled. Our automated approach is fast and accurate, achieving over 80% accuracy in detecting post category, product, and prices.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Example Talk</title>
+      
+      <link>http://www.jkk.name/talk/example-talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/talk/example-talk/</guid>
+      
+        <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
       
 
     </item>
@@ -1772,21 +1828,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
       <guid>http://www.jkk.name/data/shp-ptb/</guid>
       
         <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion</a></description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Example Talk</title>
-      
-      <link>http://www.jkk.name/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/talk/example-talk/</guid>
-      
-        <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
       
 
     </item>
@@ -1847,6 +1888,20 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
+        <title>Coreference Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/coreference-analysis/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
+      
+        <description>A tool for classifying errors in coreference resolution. <a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-coreference-analyser</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Error-Driven Analysis of Challenges in Coreference Resolution",
         
@@ -1864,20 +1919,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
         <description>
           Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we first compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
         </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Coreference Error Analysis</title>
-      
-      <link>http://www.jkk.name/software/coreference-analysis/</link>
-      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
-      
-        <description>A tool for classifying errors in coreference resolution. <a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-coreference-analyser</a></description>
       
 
     </item>
@@ -1930,43 +1971,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
-        <title>CCG to PST</title>
-      
-      <link>http://www.jkk.name/software/ccg2pst/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/ccg2pst/</guid>
-      
-        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
-        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
-        
-          Jonathan K. Kummerfeld, Dan Klein, James R. Curran
-        
-        (ACL (short),
-        2012)
-      </title>
-      
-      <link>http://www.jkk.name/publication/acl12conversion/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
-      
-        <description>
-          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output",
         
@@ -1990,6 +1994,20 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
+        <title>CCG to PST</title>
+      
+      <link>http://www.jkk.name/software/ccg2pst/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/ccg2pst/</guid>
+      
+        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Parse Error Analysis</title>
       
       <link>http://www.jkk.name/software/parsing-analysis/</link>
@@ -1998,6 +2016,29 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <guid>http://www.jkk.name/software/parsing-analysis/</guid>
       
         <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
+        
+          Jonathan K. Kummerfeld, Dan Klein, James R. Curran
+        
+        (ACL (short),
+        2012)
+      </title>
+      
+      <link>http://www.jkk.name/publication/acl12conversion/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
+      
+        <description>
+          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
+        </description>
       
 
     </item>
