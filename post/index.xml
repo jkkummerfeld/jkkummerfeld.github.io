@@ -14,6 +14,48 @@
     
     <item>
       
+        <title>Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-20_mrsparser/</link>
+      <pubDate>Mon, 20 Nov 2017 10:13:12 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-20_mrsparser/</guid>
+      
+        <description>
+
+&lt;p&gt;Like the &lt;a href=&#34;http://www.jkk.name/post/2017-11-16_ucca/&#34; target=&#34;_blank&#34;&gt;UCCA parser&lt;/a&gt;, this paper explores a transition-based neural model for semantic parsing, but for Minimal Recursion Semantics instead of Universal Conceptual Cognitive Annotation.
+Comparing MRS and UCCA, every word gets a non-terminal symbol in MRS, plus additional non-terminals for phenomena like quantification, while UCCA only introduces them for special cases like linking to a coordination.
+Both have discontinuous graph structures, creating a challenge for most parsers.&lt;/p&gt;
+
+&lt;p&gt;The UCCA and MRS parsers extend the basic shift-reduce transitions in different ways.
+Here, crossing edges can be added with a transition that forms edges between the front of the buffer and a word anywhere in the stack, while the UCCA parser used swapping and a additional reduce actions for graph edges.
+The models are similar, both using a form of stack-RNN, but with different structures (partly as a result of the different transition schemes).
+The results in this case are not state-of-the-art, though this task has received more attention, and the data is slightly biased (the parser that does better, ACE, is based on the grammar that was used to determine which sentences to include).
+However, the system can also be applied to AMR, and does fairly well, better than other neural AMR parsers at the time (and more recent ideas for improvements are large orthogonal).&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://aclweb.org/anthology/P17-1112&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{buys-blunsom:2017:Long,
+  author    = {Buys, Jan  and  Blunsom, Phil},
+  title     = {Robust Incremental Neural Semantic Graph Parsing},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1215--1226},
+  url       = {http://aclweb.org/anthology/P17-1112}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
