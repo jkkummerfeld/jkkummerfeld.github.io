@@ -14,6 +14,60 @@
     
     <item>
       
+        <title>Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-21_multiinputattention/</link>
+      <pubDate>Tue, 21 Nov 2017 16:42:19 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-21_multiinputattention/</guid>
+      
+        <description>
+
+&lt;p&gt;Attention, a weighted average over vectors with weights determined based on context (usually decoder state), has proven effective in many NLP tasks.
+There are several variants, and this paper adds new types that address the question of how to apply attention to different sources at the same time, such as text and an image.&lt;/p&gt;
+
+&lt;p&gt;They consider three general versions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Concatenation, just do attention separately then concatenate the vectors from the input sources&lt;/li&gt;
+&lt;li&gt;Flat, do the weighted average over all of the inputs&lt;/li&gt;
+&lt;li&gt;Hierarchical, do attention separately, but then combine the vectors with another phase of attention&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They also explore two variations that are orthogonal to the list above:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The first step and the last step in attention both involve the input vectors being multiplied by a weight matrix. Should that matrix be shared for the two steps, or different? (the first informs the decision of what to give high weight in the average, the second determines what is being averaged over)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;sentinel gates&lt;/em&gt;, a modification to the way the inputs and context vector are combined that allow one or the other to be ignored.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;They consider two tasks, (1) translation when both an image and source sentence are given, (2) post-editing a translated sentence with the original source given.
+The results show fairly clear trends, though the systems are not great compared to baselines (worse than a text only baseline for the first, and only slightly better than a direct MT system for the second).
+The trends are that hierarchical is best, the sentinel doesn&amp;rsquo;t help, and it is better to not share weights (though I wonder if that would be true when controlling for the total number of parameters).&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://aclweb.org/anthology/P17-2031&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{libovicky-helcl:2017:Short,
+  author    = {Libovick\&#39;{y}, Jind\v{r}ich  and  Helcl, Jind\v{r}ich},
+  title     = {Attention Strategies for Multi-Source Sequence-to-Sequence Learning},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {196--202},
+  url       = {http://aclweb.org/anthology/P17-2031}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-20_mrsparser/</link>
