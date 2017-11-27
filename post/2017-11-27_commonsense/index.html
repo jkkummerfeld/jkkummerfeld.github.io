@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-22_errorrepairparsing/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-27_commonsense/">
 
   
 
-  <title>Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>Ordinal Common-sense Inference (Zhang et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</h1>
+    <h1 itemprop="name">Ordinal Common-sense Inference (Zhang et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-22 15:48:53 -0500 EST" itemprop="datePublished">
-      Nov 22, 2017
+    <time datetime="2017-11-27 11:21:45 -0500 EST" itemprop="datePublished">
+      Nov 27, 2017
     </time>
   </span>
 
@@ -203,10 +203,7 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/acl">acl</a
-    >, 
-    
-    <a href="/tags/error-correction">error-correction</a
+    <a href="/tags/tacl">tacl</a
     >
     
   </span>
@@ -219,35 +216,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Error-repair%20Dependency%20Parsing%20for%20Ungrammatical%20Texts%20%28Sakaguchi%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-22_errorrepairparsing%2f"
+         href="https://twitter.com/intent/tweet?text=Ordinal%20Common-sense%20Inference%20%28Zhang%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-22_errorrepairparsing%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-22_errorrepairparsing%2f&amp;title=Error-repair%20Dependency%20Parsing%20for%20Ungrammatical%20Texts%20%28Sakaguchi%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f&amp;title=Ordinal%20Common-sense%20Inference%20%28Zhang%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-22_errorrepairparsing%2f&amp;title=Error-repair%20Dependency%20Parsing%20for%20Ungrammatical%20Texts%20%28Sakaguchi%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f&amp;title=Ordinal%20Common-sense%20Inference%20%28Zhang%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Error-repair%20Dependency%20Parsing%20for%20Ungrammatical%20Texts%20%28Sakaguchi%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-22_errorrepairparsing%2f">
+         href="mailto:?subject=Ordinal%20Common-sense%20Inference%20%28Zhang%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,36 +259,41 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>This work presents a system that parses sentences and identifies grammatical errors simultaneously.
-It&rsquo;s an intuitive combination - a syntactic model should assign higher probability to a parse for a fixed version of a sentence than the one with a mistake.</p>
+<p>When people read a sentence they form an entire world around it, making inferences about unwritten properties based on their prior knowledge.
+If we want NLP systems to do the same, we need data to train and test this common sense aspect of language understanding.</p>
 
-<p>They build on an incremental &lsquo;easy-first&rsquo; dependency parsing approach.
-Easy-First parsing starts with the set of words in the sentence and allows an edge to be created between any adjacent pair of words.
-Once an edge is created, the child is hidden beneath its parent, so now the parent is effectively adjacent to a word slightly further away.
-Then the process repeats, until there is only one word left (the root of the sentence).
-In a way it is like following a dynamic program, but with only a single state that ties together multiple cells.</p>
+<p>This paper is about a new dataset of automatically generated sentence pairs with human ratings.
+The ratings indicate that given the first sentence, the second sentence is either very likely, likely, plausible, technically possible, or impossible.
+These ratings are crowdsourced, using the median of three ratings per example.
+The pay rates are fairly low, at $3.45 / hour (1.99c / example and 20.71 seconds / example), though it&rsquo;s possible that the time is being skewed by outliers, and it&rsquo;s unclear exactly how pay was determined (does this include Amazon&rsquo;s cut? Why is it an average cost per example, rather than just the cost?).</p>
 
-<p>The change in this paper is the addition of actions that insert a word, delete a word, or alter a word.
-To make it work, there are constraints to avoid cycles of repeated actions (e.g. insert-delete-insert-delete&hellip;), and on the sets of allowed word substitutions.
-To produce additional training data, a tool is used to inject errors into grammatical text.
-On error detection, this approach does lead to improvements, though it changes a relatively small number of the sentences.
-On dependency parsing it is (unsurprisingly) worse than a baseline system on grammatical text.
-It does perform better on ungrammatical text, though the data is generated using the same process as the training data, creating a bias in the system&rsquo;s favour.</p>
+<p>The main contribution is the novel way of generating the sentences.
+For each prompt sentence, an argument is chosen, and then a hypothesis is generated in one of three ways (all trained with Gigaword).
+(1) A sequence-to-sequence model takes the full sentence as input and generates a sentence.
+(2) The same as (1), but with only the argument provided.
+(3) A sentence is sampled from templates generated by abstraction of sentences in the training data.
+Together these produce a diverse set of examples that get a range of ratings, with only &lsquo;likely&rsquo; being somewhat rarer.
+They also labeled some pairs from SNLI and COPA, to enable analysis of how this task compares.</p>
+
+<p>They also provide a set of baselines for the new task.
+Using the baselines, they show that the generated sentences are somewhat more difficult than the pairs from existing datasets.
+The standard metrics proposed are MSE and Spearman&rsquo;s Rho (both necessary because otherwise always guessing the middle would get an MSE better than any of the proposed baselines).
+Interestingly, regression does quite a bit better than a set of one-vs-all SVMs on MSE, and also slightly better on rho (I&rsquo;m surprised because while there is an ordinal scale, it doesn&rsquo;t feel like it should have a strong continuous interpretation).</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://aclweb.org/anthology/P17-2030" target="_blank">Paper</a></p>
+<p><a href="https://www.transacl.org/ojs/index.php/tacl/article/view/1082" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{sakaguchi-post-vandurme:2017:Short,
-  author    = {Sakaguchi, Keisuke  and  Post, Matt  and  Van Durme, Benjamin},
-  title     = {Error-repair Dependency Parsing for Ungrammatical Texts},
-  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
-  month     = {July},
-  year      = {2017},
-  address   = {Vancouver, Canada},
-  publisher = {Association for Computational Linguistics},
-  pages     = {189--195},
-  url       = {http://aclweb.org/anthology/P17-2030}
+<pre><code class="language-bibtex">@article{TACL1082,
+	author = {Zhang, Sheng  and Rudinger, Rachel  and Duh, Kevin  and Van Durme, Benjamin },
+	title = {Ordinal Common-sense Inference},
+	journal = {Transactions of the Association for Computational Linguistics},
+	volume = {5},
+	year = {2017},
+	keywords = {},
+	issn = {2307-387X},
+	url = {https://www.transacl.org/ojs/index.php/tacl/article/view/1082},
+	pages = {379--395}
 }
 </code></pre>
 
@@ -306,15 +308,15 @@ It does perform better on ungrammatical text, though the data is generated using
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/post/2017-11-15_entityvectors/">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-11-14_inorderparsing/">In-Order Transition-based Constituent Parsing (Liu et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-10-11_multimt/">Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</a></li>
+    
+    <li><a href="/post/2017-11-22_errorrepairparsing/">Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</a></li>
+    
     <li><a href="/post/2017-11-21_multiinputattention/">Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-11-20_mrsparser/">Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-11-17_twostagediscourseparsing/">A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-11-16_ucca/">A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-11-10_kginlstm/">Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</a></li>
     
   </ul>
 </div>
@@ -324,13 +326,10 @@ It does perform better on ungrammatical text, though the data is generated using
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-11-21_multiinputattention/"><span
-      aria-hidden="true">&larr;</span> Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-11-22_errorrepairparsing/"><span
+      aria-hidden="true">&larr;</span> Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-27_commonsense/">Ordinal Common-sense Inference (Zhang et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
