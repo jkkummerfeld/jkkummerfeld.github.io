@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-27_commonsense/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-28_interpretableembeddings/">
 
   
 
-  <title>Ordinal Common-sense Inference (Zhang et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Ordinal Common-sense Inference (Zhang et al., 2017)</h1>
+    <h1 itemprop="name">SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-27 11:21:45 -0500 EST" itemprop="datePublished">
-      Nov 27, 2017
+    <time datetime="2017-11-28 16:51:09 -0500 EST" itemprop="datePublished">
+      Nov 28, 2017
     </time>
   </span>
 
@@ -203,7 +203,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/tacl">tacl</a
+    <a href="/tags/arxiv">arxiv</a
+    >, 
+    
+    <a href="/tags/word-vectors">word-vectors</a
     >
     
   </span>
@@ -216,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Ordinal%20Common-sense%20Inference%20%28Zhang%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f"
+         href="https://twitter.com/intent/tweet?text=SPINE%3a%20SParse%20Interpretable%20Neural%20Embeddings%20%28Subramanian%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f&amp;title=Ordinal%20Common-sense%20Inference%20%28Zhang%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f&amp;title=SPINE%3a%20SParse%20Interpretable%20Neural%20Embeddings%20%28Subramanian%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f&amp;title=Ordinal%20Common-sense%20Inference%20%28Zhang%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f&amp;title=SPINE%3a%20SParse%20Interpretable%20Neural%20Embeddings%20%28Subramanian%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Ordinal%20Common-sense%20Inference%20%28Zhang%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-27_commonsense%2f">
+         href="mailto:?subject=SPINE%3a%20SParse%20Interpretable%20Neural%20Embeddings%20%28Subramanian%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -259,41 +262,40 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>When people read a sentence they form an entire world around it, making inferences about unwritten properties based on their prior knowledge.
-If we want NLP systems to do the same, we need data to train and test this common sense aspect of language understanding.</p>
+<p>The first step in almost any neural network model for language is to look up a vector for each token in the input.
+These vectors express relations between the words, but it is difficult to know exactly what relations.
+This work proposes a way to modify a vector space of words to have more interpretable dimensions.</p>
 
-<p>This paper is about a new dataset of automatically generated sentence pairs with human ratings.
-The ratings indicate that given the first sentence, the second sentence is either very likely, likely, plausible, technically possible, or impossible.
-These ratings are crowdsourced, using the median of three ratings per example.
-The pay rates are fairly low, at $3.45 / hour (1.99c / example and 20.71 seconds / example), though it&rsquo;s possible that the time is being skewed by outliers, and it&rsquo;s unclear exactly how pay was determined (does this include Amazon&rsquo;s cut? Why is it an average cost per example, rather than just the cost?).</p>
+<p>The core idea is actually more general, it is a new loss that encourages sparsity in an auto-encoder.
+In this case the model is very simple: input a word vector, apply an affine transformation and a pointwise nonlinearity, producing a hidden vector, then apply another affine transformation to get the output.
+The loss is a combination of how well the input and output match (reconstruction loss), plus a function that is minimised when the average activation is below a threshold (average sparsity loss), and the new idea, a loss that is minimised at either 0 or 1 for each hidden value.
+To get the hidden values to be bounded between 1 and 0, the nonlinearity used is a modified ReLU that stops increasing after reaching 1.
+After training, the hidden values become the new word vectors.</p>
 
-<p>The main contribution is the novel way of generating the sentences.
-For each prompt sentence, an argument is chosen, and then a hypothesis is generated in one of three ways (all trained with Gigaword).
-(1) A sequence-to-sequence model takes the full sentence as input and generates a sentence.
-(2) The same as (1), but with only the argument provided.
-(3) A sentence is sampled from templates generated by abstraction of sentences in the training data.
-Together these produce a diverse set of examples that get a range of ratings, with only &lsquo;likely&rsquo; being somewhat rarer.
-They also labeled some pairs from SNLI and COPA, to enable analysis of how this task compares.</p>
+<p>To evaluate interpretability they consider the top 4 words along each dimension, add a random word, and ask a person to identify the odd word out.
+Using either word2vec or GloVe as the initial vectors and applying this method, the results shown a dramatic difference (~25 vs. ~70).
+On downstream tasks the story is more mixed.
+With 1,000 dimensional vectors, there is usually an improvement for GloVe, but not for word2vec, and the differences are generally small.
+Apparently going up to 2,000 further improves interpretability scores, but &lsquo;at a severe cost&rsquo; for the downstream tasks.
+Going the other direction, to 500, hurts interpretability, and probably doesn&rsquo;t improve downstream performance (it isn&rsquo;t mentioned).</p>
 
-<p>They also provide a set of baselines for the new task.
-Using the baselines, they show that the generated sentences are somewhat more difficult than the pairs from existing datasets.
-The standard metrics proposed are MSE and Spearman&rsquo;s Rho (both necessary because otherwise always guessing the middle would get an MSE better than any of the proposed baselines).
-Interestingly, regression does quite a bit better than a set of one-vs-all SVMs on MSE, and also slightly better on rho (I&rsquo;m surprised because while there is an ordinal scale, it doesn&rsquo;t feel like it should have a strong continuous interpretation).</p>
+<p>I would be curious to see if taking these new word vectors and applying them to a downstream task like parsing, but letting them change during training, would be beneficial.
+The general idea of a sparse auto-encoder also seems cool and may have other applications.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://www.transacl.org/ojs/index.php/tacl/article/view/1082" target="_blank">Paper</a></p>
+<p><a href="https://arxiv.org/abs/1711.08792" target="_blank">ArXiv Paper</a></p>
 
-<pre><code class="language-bibtex">@article{TACL1082,
-	author = {Zhang, Sheng  and Rudinger, Rachel  and Duh, Kevin  and Van Durme, Benjamin },
-	title = {Ordinal Common-sense Inference},
-	journal = {Transactions of the Association for Computational Linguistics},
-	volume = {5},
-	year = {2017},
-	keywords = {},
-	issn = {2307-387X},
-	url = {https://www.transacl.org/ojs/index.php/tacl/article/view/1082},
-	pages = {379--395}
+<pre><code class="language-bibtex">@ARTICLE{2017arXiv171108792S,
+  author        = {{Subramanian}, A. and {Pruthi}, D. and {Jhamtani}, H. and {Berg-Kirkpatrick}, T. and {Hovy}, E.},
+  title         = {SPINE: SParse Interpretable Neural Embeddings},
+  journal       = {ArXiv e-prints},
+  archivePrefix = {arXiv},
+  eprint        = {1711.08792},
+  primaryClass  = {cs.CL},
+  year          = {2017},
+  month         = {November},
+  url           = {https://arxiv.org/abs/1711.08792},
 }
 </code></pre>
 
@@ -310,13 +312,13 @@ Interestingly, regression does quite a bit better than a set of one-vs-all SVMs 
     
     <li><a href="/post/2017-11-15_entityvectors/">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</a></li>
     
-    <li><a href="/post/2017-11-14_inorderparsing/">In-Order Transition-based Constituent Parsing (Liu et al., 2017)</a></li>
+    <li><a href="/post/2017-10-30_neuralsequence/">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-11_multimt/">Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</a></li>
+    <li><a href="/post/2017-10-27_swishactivation/">Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
     
-    <li><a href="/post/2017-11-22_errorrepairparsing/">Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</a></li>
+    <li><a href="/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></li>
     
-    <li><a href="/post/2017-11-21_multiinputattention/">Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</a></li>
+    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
     
   </ul>
 </div>
@@ -326,13 +328,10 @@ Interestingly, regression does quite a bit better than a set of one-vs-all SVMs 
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-11-22_errorrepairparsing/"><span
-      aria-hidden="true">&larr;</span> Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-11-27_commonsense/"><span
+      aria-hidden="true">&larr;</span> Ordinal Common-sense Inference (Zhang et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-28_interpretableembeddings/">SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

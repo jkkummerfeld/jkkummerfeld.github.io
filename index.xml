@@ -14,6 +14,58 @@
     
     <item>
       
+        <title>SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</link>
+      <pubDate>Tue, 28 Nov 2017 16:51:09 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</guid>
+      
+        <description>
+
+&lt;p&gt;The first step in almost any neural network model for language is to look up a vector for each token in the input.
+These vectors express relations between the words, but it is difficult to know exactly what relations.
+This work proposes a way to modify a vector space of words to have more interpretable dimensions.&lt;/p&gt;
+
+&lt;p&gt;The core idea is actually more general, it is a new loss that encourages sparsity in an auto-encoder.
+In this case the model is very simple: input a word vector, apply an affine transformation and a pointwise nonlinearity, producing a hidden vector, then apply another affine transformation to get the output.
+The loss is a combination of how well the input and output match (reconstruction loss), plus a function that is minimised when the average activation is below a threshold (average sparsity loss), and the new idea, a loss that is minimised at either 0 or 1 for each hidden value.
+To get the hidden values to be bounded between 1 and 0, the nonlinearity used is a modified ReLU that stops increasing after reaching 1.
+After training, the hidden values become the new word vectors.&lt;/p&gt;
+
+&lt;p&gt;To evaluate interpretability they consider the top 4 words along each dimension, add a random word, and ask a person to identify the odd word out.
+Using either word2vec or GloVe as the initial vectors and applying this method, the results shown a dramatic difference (~25 vs. ~70).
+On downstream tasks the story is more mixed.
+With 1,000 dimensional vectors, there is usually an improvement for GloVe, but not for word2vec, and the differences are generally small.
+Apparently going up to 2,000 further improves interpretability scores, but &amp;lsquo;at a severe cost&amp;rsquo; for the downstream tasks.
+Going the other direction, to 500, hurts interpretability, and probably doesn&amp;rsquo;t improve downstream performance (it isn&amp;rsquo;t mentioned).&lt;/p&gt;
+
+&lt;p&gt;I would be curious to see if taking these new word vectors and applying them to a downstream task like parsing, but letting them change during training, would be beneficial.
+The general idea of a sparse auto-encoder also seems cool and may have other applications.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1711.08792&#34; target=&#34;_blank&#34;&gt;ArXiv Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@ARTICLE{2017arXiv171108792S,
+  author        = {{Subramanian}, A. and {Pruthi}, D. and {Jhamtani}, H. and {Berg-Kirkpatrick}, T. and {Hovy}, E.},
+  title         = {SPINE: SParse Interpretable Neural Embeddings},
+  journal       = {ArXiv e-prints},
+  archivePrefix = {arXiv},
+  eprint        = {1711.08792},
+  primaryClass  = {cs.CL},
+  year          = {2017},
+  month         = {November},
+  url           = {https://arxiv.org/abs/1711.08792},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Ordinal Common-sense Inference (Zhang et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-27_commonsense/</link>
@@ -2168,6 +2220,20 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
+        <title>Parse Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/parsing-analysis/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
+      
+        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>CCG to PST</title>
       
       <link>http://www.jkk.name/software/ccg2pst/</link>
@@ -2199,20 +2265,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
         <description>
           We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
         </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Parse Error Analysis</title>
-      
-      <link>http://www.jkk.name/software/parsing-analysis/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
-      
-        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
       
 
     </item>
