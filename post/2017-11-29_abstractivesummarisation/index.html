@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-28_interpretableembeddings/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-11-29_abstractivesummarisation/">
 
   
 
-  <title>SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>Abstractive Document Summarization with a Graph-Based Attentional Neural Model (Tan et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</h1>
+    <h1 itemprop="name">Abstractive Document Summarization with a Graph-Based Attentional Neural Model (Tan et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-28 16:51:09 -0500 EST" itemprop="datePublished">
-      Nov 28, 2017
+    <time datetime="2017-11-29 19:14:05 -0500 EST" itemprop="datePublished">
+      Nov 29, 2017
     </time>
   </span>
 
@@ -203,10 +203,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/arxiv">arxiv</a
+    <a href="/tags/acl">acl</a
     >, 
     
-    <a href="/tags/word-vectors">word-vectors</a
+    <a href="/tags/summarisation">summarisation</a
     >
     
   </span>
@@ -219,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=SPINE%3a%20SParse%20Interpretable%20Neural%20Embeddings%20%28Subramanian%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f"
+         href="https://twitter.com/intent/tweet?text=Abstractive%20Document%20Summarization%20with%20a%20Graph-Based%20Attentional%20Neural%20Model%20%28Tan%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-29_abstractivesummarisation%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-29_abstractivesummarisation%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f&amp;title=SPINE%3a%20SParse%20Interpretable%20Neural%20Embeddings%20%28Subramanian%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-29_abstractivesummarisation%2f&amp;title=Abstractive%20Document%20Summarization%20with%20a%20Graph-Based%20Attentional%20Neural%20Model%20%28Tan%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f&amp;title=SPINE%3a%20SParse%20Interpretable%20Neural%20Embeddings%20%28Subramanian%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-29_abstractivesummarisation%2f&amp;title=Abstractive%20Document%20Summarization%20with%20a%20Graph-Based%20Attentional%20Neural%20Model%20%28Tan%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=SPINE%3a%20SParse%20Interpretable%20Neural%20Embeddings%20%28Subramanian%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-28_interpretableembeddings%2f">
+         href="mailto:?subject=Abstractive%20Document%20Summarization%20with%20a%20Graph-Based%20Attentional%20Neural%20Model%20%28Tan%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-11-29_abstractivesummarisation%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,40 +262,42 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>The first step in almost any neural network model for language is to look up a vector for each token in the input.
-These vectors express relations between the words, but it is difficult to know exactly what relations.
-This work proposes a way to modify a vector space of words to have more interpretable dimensions.</p>
+<p>Most effective summarisation systems are extractive, selecting the most important sentences in a document and sticking them together.
+Clearly that is not how people write summaries, but creating abstractive summaries means generating fluent language.
+At the same time, most datasets are based on news text, where the first few sentences are a strong baseline summary (by design, as journalists need to assume that the reader could stop at any point).
+This paper introduces several ideas to get state-of-the-art results on summarisation using an abstractive system.</p>
 
-<p>The core idea is actually more general, it is a new loss that encourages sparsity in an auto-encoder.
-In this case the model is very simple: input a word vector, apply an affine transformation and a pointwise nonlinearity, producing a hidden vector, then apply another affine transformation to get the output.
-The loss is a combination of how well the input and output match (reconstruction loss), plus a function that is minimised when the average activation is below a threshold (average sparsity loss), and the new idea, a loss that is minimised at either 0 or 1 for each hidden value.
-To get the hidden values to be bounded between 1 and 0, the nonlinearity used is a modified ReLU that stops increasing after reaching 1.
-After training, the hidden values become the new word vectors.</p>
+<p>There are three core new ideas, one for decoding and two for the model.
+The idea in decoding is a beam search in which the score is increased when adding bigrams that occur in the source but are not in the output.
+In the model, they propose a new form of attention based on PageRank, similar to previous methods used for ranking sentences in summarisation.
+For every pair of sentences plus the current decoder hidden vector, a similarity score is calculated ($h_1 M h_2$), where $M$ is a matrix of parameters.
+This produces a matrix of similarities, which they run PageRank on with initialisation set so that all weight starts on the decoder hidden vector.
+That produces a score for each input sentence, which is normalised to get attention values.
+The second idea is that they don&rsquo;t want to attend to the same sentence multiple times, so before normalising they subtract the previous score for that sentence (with it capped at 0 to avoid negative values).</p>
 
-<p>To evaluate interpretability they consider the top 4 words along each dimension, add a random word, and ask a person to identify the odd word out.
-Using either word2vec or GloVe as the initial vectors and applying this method, the results shown a dramatic difference (~25 vs. ~70).
-On downstream tasks the story is more mixed.
-With 1,000 dimensional vectors, there is usually an improvement for GloVe, but not for word2vec, and the differences are generally small.
-Apparently going up to 2,000 further improves interpretability scores, but &lsquo;at a severe cost&rsquo; for the downstream tasks.
-Going the other direction, to 500, hurts interpretability, and probably doesn&rsquo;t improve downstream performance (it isn&rsquo;t mentioned).</p>
+<p>Together, these lead to state of the art results, beating both extractive and abstractive systems.
+Though in human evaluation using the first three sentences as a summary remains a very strong baseline, only slightly behind this system on informativeness and ahead on coherence and fluency.
+Ablation shows that the decoding idea has the biggest impact, but the graph based attention does help.
+Interestingly, if the score in decoding is extremely biased to focus on the bigram addition aspect performance only decreases a little.
+That may reflect the nature of the metric, which is based on ngram overlap.</p>
 
-<p>I would be curious to see if taking these new word vectors and applying them to a downstream task like parsing, but letting them change during training, would be beneficial.
-The general idea of a sparse auto-encoder also seems cool and may have other applications.</p>
+<p>There are also a bunch of little details that may be crucial, like adding markers for entities (which seems like a possible space for a more elegant solution).
+I&rsquo;m not sure the beam search scoring idea has applications beyond summarisation, but thee modified attention might!</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://arxiv.org/abs/1711.08792" target="_blank">ArXiv Paper</a></p>
+<p><a href="http://aclweb.org/anthology/P17-1108" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@ARTICLE{2017arXiv171108792S,
-  author        = {{Subramanian}, A. and {Pruthi}, D. and {Jhamtani}, H. and {Berg-Kirkpatrick}, T. and {Hovy}, E.},
-  title         = {SPINE: SParse Interpretable Neural Embeddings},
-  journal       = {ArXiv e-prints},
-  archivePrefix = {arXiv},
-  eprint        = {1711.08792},
-  primaryClass  = {cs.CL},
-  year          = {2017},
-  month         = {November},
-  url           = {https://arxiv.org/abs/1711.08792},
+<pre><code class="language-bibtex">@InProceedings{tan-wan-xiao:2017:Long,
+  author    = {Tan, Jiwei  and  Wan, Xiaojun  and  Xiao, Jianguo},
+  title     = {Abstractive Document Summarization with a Graph-Based Attentional Neural Model},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1171--1181},
+  url       = {http://aclweb.org/anthology/P17-1108}
 }
 </code></pre>
 
@@ -310,15 +312,15 @@ The general idea of a sparse auto-encoder also seems cool and may have other app
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-11-15_entityvectors/">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</a></li>
+    <li><a href="/post/2017-11-22_errorrepairparsing/">Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-30_neuralsequence/">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
+    <li><a href="/post/2017-11-21_multiinputattention/">Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-27_swishactivation/">Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
+    <li><a href="/post/2017-11-20_mrsparser/">Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></li>
+    <li><a href="/post/2017-11-17_twostagediscourseparsing/">A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
+    <li><a href="/post/2017-11-16_ucca/">A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</a></li>
     
   </ul>
 </div>
@@ -328,13 +330,10 @@ The general idea of a sparse auto-encoder also seems cool and may have other app
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-11-27_commonsense/"><span
-      aria-hidden="true">&larr;</span> Ordinal Common-sense Inference (Zhang et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-11-28_interpretableembeddings/"><span
+      aria-hidden="true">&larr;</span> SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-11-29_abstractivesummarisation/">Abstractive Document Summarization with a Graph-Based Attentional Neural Model (Tan et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
