@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-11-30_taggingrelations/</loc>
+      <lastmod>2017-11-30T20:01:41-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-11-29_abstractivesummarisation/</loc>
       <lastmod>2017-11-29T19:14:05-05:00</lastmod>
     </url>
@@ -675,7 +684,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/acl/</loc>
-      <lastmod>2017-11-29T19:14:05-05:00</lastmod>
+      <lastmod>2017-11-30T20:01:41-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -954,7 +963,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-11-29T19:14:05-05:00</lastmod>
+      <lastmod>2017-11-30T20:01:41-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -965,6 +974,16 @@
     
       <loc>http://www.jkk.name/publication_types/</loc>
       <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/relation-extraction/</loc>
+      <lastmod>2017-11-30T20:01:41-05:00</lastmod>
       <priority>0</priority>
     </url>
     
