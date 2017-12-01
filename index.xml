@@ -14,6 +14,61 @@
     
     <item>
       
+        <title>A Local Detection Approach for Named Entity Recognition and Mention Detection (Xu et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-12-01_nonsequencener/</link>
+      <pubDate>Fri, 01 Dec 2017 15:28:59 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-12-01_nonsequencener/</guid>
+      
+        <description>
+
+&lt;p&gt;The classic NER system is a model that has a lot of curated features, like lists of people, and does inference by choosing the top scoring tag sequence for the whole sentence, using Viterbi decoding.
+The neural version swaps the curated features for word vectors, and viterbi inference for an LSTM (maybe with beam search).
+This paper makes the argument that in reality people are very good at identifying an entity in isolation, so why do global decoding for the best tag sequence?&lt;/p&gt;
+
+&lt;p&gt;Given that perspective, they make a model that scores every span of the sentence independently using a feedforward network.
+To get an input representing context, they use a weighted sum of word embeddings, where the weights decay exponentially further from the span (FOFE = Fixed-size Ordinally Forgetting Encoding).
+The authors point out that this gives a fixed length encoding that could be reversed to recover the original sequence (assuming arbitrary precision floating point numbers).
+Thinking about the calculation though, a word ten positions away is having its vector scaled down by a factor of a thousand, so it probably has negligible impact on the decision.
+They also apply this idea to the characters of the span itself in both directions.&lt;/p&gt;
+
+&lt;p&gt;One tradeoff with the independent classification idea is that it can select overlapping spans.
+This is a benefit in one sense, because it naturally handles nested entities (e.g. &amp;ldquo;[Member of the Order of [Australia]]&amp;ldquo;), but for partially overlapping spans we have to decide which to keep.
+Their solution is to sort by model score and keep the higher scoring option.&lt;/p&gt;
+
+&lt;p&gt;The experiments show this is comparable with previous work using LSTMs.
+There were a few things I found interesting in the results:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The FOFE encoding for characters is far worse than a CNN encoding when on their own, but give similar gains when combined with word level features. Since the FOFE essentially ignores the centre of long spans, this suggests they are both learning some representation of prefixes and suffixes.&lt;/li&gt;
+&lt;li&gt;They don&amp;rsquo;t try it, but this model seems very amenable to gazetteers, which may be a way to further boost performance.&lt;/li&gt;
+&lt;li&gt;They have an in-house dataset of 10,000 manually labeled documents (!), but it only gives a 3% gain on the KBP evaluation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://aclweb.org/anthology/P17-1114&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{xu-jiang-watcharawittayakul:2017:Long,
+  author    = {Xu, Mingbin  and  Jiang, Hui  and  Watcharawittayakul, Sedtawut},
+  title     = {A Local Detection Approach for Named Entity Recognition and Mention Detection},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1237--1247},
+  url       = {http://aclweb.org/anthology/P17-1114}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme (Zheng et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-11-30_taggingrelations/</link>
@@ -2149,6 +2204,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
+        <title>Spine and Arc version of the Penn Treebank</title>
+      
+      <link>http://www.jkk.name/data/shp-ptb/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/shp-ptb/</guid>
+      
+        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Parsing with Traces: An O($n^4$) Algorithm and a Structural Representation",
         
@@ -2166,20 +2235,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           General treebank analyses are graph structured, but parsers are typically restricted to tree structures for efficiency and modeling reasons.  We propose a new representation and algorithm for a class of graph structures that is flexible enough to cover almost all treebank structures, while still admitting efficient learning and inference. In particular, we consider directed, acyclic, one-endpoint-crossing graph structures, which cover most long-distance dislocation, shared argumentation, and similar tree-violating linguistic phenomena. We describe how to convert phrase structure parses, including traces, to our new representation in a reversible manner. Our dynamic program uniquely decomposes structures, is sound and complete, and covers 97.3% of the Penn English Treebank. We also implement a proofof-concept parser that recovers a range of null elements and trace types.
         </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Spine and Arc version of the Penn Treebank</title>
-      
-      <link>http://www.jkk.name/data/shp-ptb/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/shp-ptb/</guid>
-      
-        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion</a></description>
       
 
     </item>
