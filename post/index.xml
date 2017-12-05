@@ -14,6 +14,54 @@
     
     <item>
       
+        <title>A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-12-05_explainingpredictions/</link>
+      <pubDate>Tue, 05 Dec 2017 15:40:45 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-12-05_explainingpredictions/</guid>
+      
+        <description>
+
+&lt;p&gt;Interpreting the behaviour of statistical models in NLP has been hard for a long time, but it has gotten even harder with nonlinear models.
+The simplest method so far in NLP has been to look at the attention distributions in sequence to sequence models, but that doesn&amp;rsquo;t provide everything we need and obviously only applies when the model has attention.
+For looking at the dynamics of the hidden state in an LSTM the Harvard NLP group built a cool &lt;a href=&#34;http://lstm.seas.harvard.edu/&#34; target=&#34;_blank&#34;&gt;visualisation&lt;/a&gt;, but what about structured outputs?&lt;/p&gt;
+
+&lt;p&gt;This paper considers sequence to sequence models and determines which parts of the input were most important for determining each part of the output.
+The steps are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Use a variational autoencoder to get perturbed versions of the input&lt;/li&gt;
+&lt;li&gt;Use logistic regression to get scores for every output symbol indicating how sensitive it is to variations in parts of the input&lt;/li&gt;
+&lt;li&gt;Create a bipartite graph between inputs and outputs, then find high weight components in the graph&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;These components serve as the representation of which parts of the input determine which parts of the output.
+Experiments show results that match with past observations and intuitions, which is good for supporting the effectiveness of the method, but it&amp;rsquo;s a shame this didn&amp;rsquo;t uncover any exciting new patterns.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1042&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{alvarezmelis-jaakkola:2017:EMNLP2017,
+  author    = {Alvarez-Melis, David  and  Jaakkola, Tommi},
+  title     = {A causal framework for explaining the predictions of black-box sequence-to-sequence models},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {412--421},
+  url       = {https://www.aclweb.org/anthology/D17-1042}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>A Local Detection Approach for Named Entity Recognition and Mention Detection (Xu et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-12-01_nonsequencener/</link>
