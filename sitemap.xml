@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2017-12-07_rarewordvectors/</loc>
+      <lastmod>2017-12-07T20:45:39-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-12-06_coreferencearguments/</loc>
       <lastmod>2017-12-06T19:05:20-05:00</lastmod>
     </url>
@@ -869,7 +878,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/emnlp/</loc>
-      <lastmod>2017-12-06T19:05:20-05:00</lastmod>
+      <lastmod>2017-12-07T20:45:39-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1019,7 +1028,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-12-06T19:05:20-05:00</lastmod>
+      <lastmod>2017-12-07T20:45:39-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1120,6 +1129,16 @@
     
       <loc>http://www.jkk.name/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/word-embeddings/</loc>
+      <lastmod>2017-12-07T20:45:39-05:00</lastmod>
       <priority>0</priority>
     </url>
     

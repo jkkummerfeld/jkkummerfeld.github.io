@@ -14,6 +14,49 @@
     
     <item>
       
+        <title>High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-12-07_rarewordvectors/</link>
+      <pubDate>Thu, 07 Dec 2017 20:45:39 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-12-07_rarewordvectors/</guid>
+      
+        <description>
+
+&lt;p&gt;Word vectors are great for common words, but what about rare words?
+People can have a fairly good understanding of a word given only a few instances, but it&amp;rsquo;s fairly standard to turn all words with a frequency of less than 5 into UNK when learning word vectors.&lt;/p&gt;
+
+&lt;p&gt;One simple approach is to add up word vectors from the context of the rare word and use that as the representation.
+This paper proposes using a tweaked version of word2vec: keep vectors for frequent words fixed, increase the learning rate, use a fixed width context window, initialise with the additive approach, and only subsample by discarding frequent words.
+All of those make sense, though I am curious whether it would be better to just decrease subsampling or disable it entirely.&lt;/p&gt;
+
+&lt;p&gt;The results are mixed, with the improvement over the additive approach data dependent.
+That might partly reflect the tasks though - something downstream like POS tagging would have been interesting, particularly since the LSTM may already be capturing contextual information that covers what the additive approach has, but not what this adds.
+Ultimately this is not a solution to this problem, but it&amp;rsquo;s an idea to keep in mind.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1030&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{herbelot-baroni:2017:EMNLP2017,
+  author    = {Herbelot, Aur\&#39;{e}lie  and  Baroni, Marco},
+  title     = {High-risk learning: acquiring new word vectors from tiny data},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {304--309},
+  url       = {https://www.aclweb.org/anthology/D17-1030}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-12-06_coreferencearguments/</link>

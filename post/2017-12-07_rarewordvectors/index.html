@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-12-06_coreferencearguments/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-12-07_rarewordvectors/">
 
   
 
-  <title>Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</h1>
+    <h1 itemprop="name">High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-12-06 19:05:20 -0500 EST" itemprop="datePublished">
-      Dec 6, 2017
+    <time datetime="2017-12-07 20:45:39 -0500 EST" itemprop="datePublished">
+      Dec 7, 2017
     </time>
   </span>
 
@@ -206,7 +206,7 @@
     <a href="/tags/emnlp">emnlp</a
     >, 
     
-    <a href="/tags/coreference">coreference</a
+    <a href="/tags/word-embeddings">word-embeddings</a
     >
     
   </span>
@@ -219,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Revisiting%20Selectional%20Preferences%20for%20Coreference%20Resolution%20%28Heinzerling%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-06_coreferencearguments%2f"
+         href="https://twitter.com/intent/tweet?text=High-risk%20learning%3a%20acquiring%20new%20word%20vectors%20from%20tiny%20data%20%28Herbelot%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-07_rarewordvectors%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-06_coreferencearguments%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-07_rarewordvectors%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-06_coreferencearguments%2f&amp;title=Revisiting%20Selectional%20Preferences%20for%20Coreference%20Resolution%20%28Heinzerling%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-07_rarewordvectors%2f&amp;title=High-risk%20learning%3a%20acquiring%20new%20word%20vectors%20from%20tiny%20data%20%28Herbelot%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-06_coreferencearguments%2f&amp;title=Revisiting%20Selectional%20Preferences%20for%20Coreference%20Resolution%20%28Heinzerling%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-07_rarewordvectors%2f&amp;title=High-risk%20learning%3a%20acquiring%20new%20word%20vectors%20from%20tiny%20data%20%28Herbelot%20et%20al.%2c%202017%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Revisiting%20Selectional%20Preferences%20for%20Coreference%20Resolution%20%28Heinzerling%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-06_coreferencearguments%2f">
+         href="mailto:?subject=High-risk%20learning%3a%20acquiring%20new%20word%20vectors%20from%20tiny%20data%20%28Herbelot%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-07_rarewordvectors%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,35 +262,31 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Selectional preferences in this context are about how some verbs are more likely to take certain types of arguments (e.g. people laugh, computers do not).
-Many papers have added features or structures to coreference systems aiming to get at this kind of information.
-This paper presents another way of doing it and experiments that probe how useful it is (punchline: not very).</p>
+<p>Word vectors are great for common words, but what about rare words?
+People can have a fairly good understanding of a word given only a few instances, but it&rsquo;s fairly standard to turn all words with a frequency of less than 5 into UNK when learning word vectors.</p>
 
-<p>Their approach is to parse a large amount of text, producing noun-verb pairs.
-They learn vector representations of the relations and try to create a single space containing both entities and relations (e.g. Michigan gets a vector, as does attended@dobj).
-The goal is that entities end up in locations similar to the locations of relations they are selected for.</p>
+<p>One simple approach is to add up word vectors from the context of the rare word and use that as the representation.
+This paper proposes using a tweaked version of word2vec: keep vectors for frequent words fixed, increase the learning rate, use a fixed width context window, initialise with the additive approach, and only subsample by discarding frequent words.
+All of those make sense, though I am curious whether it would be better to just decrease subsampling or disable it entirely.</p>
 
-<p>For results, first it seems like these vector similarities do not correlate particularly strongly with being coreferent.
-It could be that the feature on its own isn&rsquo;t enough, or this representation might not be capturing it effectively.
-Adding this to the Stanford coreference system they are able to get slight gains, though the improvement might not be statistically significant.</p>
-
-<p>I&rsquo;m not sure exactly how to do this, but it would be neat if a vector at some point of the model could be modified to remove any correlation with these features, and see what that does to performance.
-If performance remains high, then this actually is an uninformative feature, but if it drops that suggests the model is already learning it.</p>
+<p>The results are mixed, with the improvement over the additive approach data dependent.
+That might partly reflect the tasks though - something downstream like POS tagging would have been interesting, particularly since the LSTM may already be capturing contextual information that covers what the additive approach has, but not what this adds.
+Ultimately this is not a solution to this problem, but it&rsquo;s an idea to keep in mind.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://www.aclweb.org/anthology/D17-1138" target="_blank">Paper</a></p>
+<p><a href="https://www.aclweb.org/anthology/D17-1030" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{heinzerling-moosavi-strube:2017:EMNLP2017,
-  author    = {Heinzerling, Benjamin  and  Moosavi, Nafise Sadat  and  Strube, Michael},
-  title     = {Revisiting Selectional Preferences for Coreference Resolution},
+<pre><code class="language-bibtex">@InProceedings{herbelot-baroni:2017:EMNLP2017,
+  author    = {Herbelot, Aur\'{e}lie  and  Baroni, Marco},
+  title     = {High-risk learning: acquiring new word vectors from tiny data},
   booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
   month     = {September},
   year      = {2017},
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
-  pages     = {1332--1339},
-  url       = {https://www.aclweb.org/anthology/D17-1138}
+  pages     = {304--309},
+  url       = {https://www.aclweb.org/anthology/D17-1030}
 }
 </code></pre>
 
@@ -305,6 +301,8 @@ If performance remains high, then this actually is an uninformative feature, but
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/post/2017-12-06_coreferencearguments/">Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</a></li>
+    
     <li><a href="/post/2017-12-05_explainingpredictions/">A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</a></li>
     
     <li><a href="/post/2017-11-13_languagegame/">Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</a></li>
@@ -312,8 +310,6 @@ If performance remains high, then this actually is an uninformative feature, but
     <li><a href="/post/2017-11-06_literarycharacters/">Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</a></li>
     
     <li><a href="/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></li>
-    
-    <li><a href="/post/2017-10-12_amralignment/">Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</a></li>
     
   </ul>
 </div>
@@ -323,13 +319,10 @@ If performance remains high, then this actually is an uninformative feature, but
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-12-05_multidomainparsing/"><span
-      aria-hidden="true">&larr;</span> Neural Semantic Parsing over Multiple Knowledge-bases (Herzig et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2017-12-06_coreferencearguments/"><span
+      aria-hidden="true">&larr;</span> Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-12-07_rarewordvectors/">High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
