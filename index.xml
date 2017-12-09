@@ -14,6 +14,52 @@
     
     <item>
       
+        <title>Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-12-08_crowdbias/</link>
+      <pubDate>Fri, 08 Dec 2017 19:49:09 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-12-08_crowdbias/</guid>
+      
+        <description>
+
+&lt;p&gt;Getting high quality annotations from crowdsourcing requires careful design.
+This paper looks at how one annotation a worker does can influence their next annotation, for example:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When scoring translations, a good example may make the next one look worse in comparison&lt;/li&gt;
+&lt;li&gt;For labeling tasks, we may expect a long sequence of the same label to be rare (the gambler&amp;rsquo;s fallacy)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To investigate this they fit a linear model with inputs (previous label, gold label, random noise) and see what the coefficients are.
+Across multiple tasks, there is a non-zero correlation with the previous label.
+Interestingly, there also seems to be a learning effect for good workers, where over time they become calibrated and show less sequence bias.
+Fortunately, there is a simple solution - for each worker, give every annotator their documents in a different random order!
+With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1306&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mathur-baldwin-cohn:2017:EMNLP2017,
+  author    = {Mathur, Nitika  and  Baldwin, Timothy  and  Cohn, Trevor},
+  title     = {Sequence Effects in Crowdsourced Annotations},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2860--2865},
+  url       = {https://www.aclweb.org/anthology/D17-1306}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-12-07_rarewordvectors/</link>
@@ -2564,20 +2610,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
-        <title>Parse Error Analysis</title>
-      
-      <link>http://www.jkk.name/software/parsing-analysis/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
-      
-        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
-      
-
-    </item>
-    
-    <item>
-      
         <title>CCG to PST</title>
       
       <link>http://www.jkk.name/software/ccg2pst/</link>
@@ -2586,29 +2618,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <guid>http://www.jkk.name/software/ccg2pst/</guid>
       
         <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
-        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
-        
-          Jonathan K. Kummerfeld, Dan Klein, James R. Curran
-        
-        (ACL (short),
-        2012)
-      </title>
-      
-      <link>http://www.jkk.name/publication/acl12conversion/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
-      
-        <description>
-          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
-        </description>
       
 
     </item>
@@ -2631,6 +2640,43 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       
         <description>
           Constituency parser performance is primarily interpreted through a single metric, F-score on WSJ section 23, that conveys no linguistic information regarding the remaining errors.  We classify errors within a set of linguistically meaningful types using tree transformations that repair groups of errors together. We use this analysis to answer a range of questions about parser behaviour, including what linguistic constructions are difficult for state-of-the-art parsers, what types of errors are being resolved by rerankers, and what types are introduced when parsing out-of-domain text.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Parse Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/parsing-analysis/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
+      
+        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
+        
+          Jonathan K. Kummerfeld, Dan Klein, James R. Curran
+        
+        (ACL (short),
+        2012)
+      </title>
+      
+      <link>http://www.jkk.name/publication/acl12conversion/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
+      
+        <description>
+          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
         </description>
       
 
@@ -2772,33 +2818,6 @@ We demonstrate faster methods for training a supertagger using hundreds of milli
     <item>
       
       <title>
-        "Large-Scale Syntactic Processing: Parsing the Web",
-        
-          Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, Jonathan Kummerfeld, Tim Dawborn
-        
-        (Johns Hopkins University,
-        2009)
-      </title>
-      
-      <link>http://www.jkk.name/publication/report09jhu/</link>
-      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/report09jhu/</guid>
-      
-        <description>
-          Scalable syntactic processing will underpin the sophisticated language technology needed for next generation information access. Companies are already using nlp tools to create web-scale question answering and &#34;semantic search&#34; engines. Massive amounts of parsed web data will also allow the automatic creation of semantic knowledge resources on an unprecedented scale. The web is a challenging arena for syntactic parsing, because of its scale and variety of styles, genres, and domains.
-
-The goals of our workshop were to scale and adapt an existing wide-coverage parser to Wikipedia text; improve the efficiency of the parser through various methods of chart pruning; use self-training to improve the efficiency and accuracy of the parser; use the parsed wiki data for an innovative form of bootstrapping to make the parser both more efficient and more accurate; and finally use the parsed web data for improved disambiguation of coordination structures, using a variety of syntactic and semantic knowledge sources.
-
-The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a state-of-the-art statistical parser based on Combinatory Categorial Grammar (ccg). The parser has been evaluated on a number of standard test sets achieving state-of-the-art accuracies. It has also recently been adapted successfully to the biomedical domain (Rimell and Clark, 2009). The parser is surprisingly efficient, given its detailed output, processing tens of sentences per second. For web-scale text processing, we aimed to make the parser an order of magnitude faster still. The C&amp;C parser is one of only very few parsers currently available which has the potential to produce detailed, accurate analyses at the scale we were considering.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "Adaptive Supertagging for Faster Parsing",
         
           Jonathan K. Kummerfeld
@@ -2822,6 +2841,33 @@ I was able to significantly improve performance on the standard evaluation corpu
 Despite extensive use of supertaggers to improve parsing efficiency there has been no comprehensive study of the interaction between a supertagger and a parser. I present the first systematic exploration of the relationship, show the potential benefits of understanding it, and demonstrate a novel algorithm for optimising the parameters that define it.
 
 I have constructed models that process newspaper text 86% faster than previously, and Wikipedia text 30% faster, without any loss in accuracy and without the aid of extra gold standard resources in either domain. This work will lead directly to improvements in a range of Natural Language Processing tasks by enabling the use of far more parsed data.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "Large-Scale Syntactic Processing: Parsing the Web",
+        
+          Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, Jonathan Kummerfeld, Tim Dawborn
+        
+        (Johns Hopkins University,
+        2009)
+      </title>
+      
+      <link>http://www.jkk.name/publication/report09jhu/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/report09jhu/</guid>
+      
+        <description>
+          Scalable syntactic processing will underpin the sophisticated language technology needed for next generation information access. Companies are already using nlp tools to create web-scale question answering and &#34;semantic search&#34; engines. Massive amounts of parsed web data will also allow the automatic creation of semantic knowledge resources on an unprecedented scale. The web is a challenging arena for syntactic parsing, because of its scale and variety of styles, genres, and domains.
+
+The goals of our workshop were to scale and adapt an existing wide-coverage parser to Wikipedia text; improve the efficiency of the parser through various methods of chart pruning; use self-training to improve the efficiency and accuracy of the parser; use the parsed wiki data for an innovative form of bootstrapping to make the parser both more efficient and more accurate; and finally use the parsed web data for improved disambiguation of coordination structures, using a variety of syntactic and semantic knowledge sources.
+
+The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a state-of-the-art statistical parser based on Combinatory Categorial Grammar (ccg). The parser has been evaluated on a number of standard test sets achieving state-of-the-art accuracies. It has also recently been adapted successfully to the biomedical domain (Rimell and Clark, 2009). The parser is surprisingly efficient, given its detailed output, processing tens of sentences per second. For web-scale text processing, we aimed to make the parser an order of magnitude faster still. The C&amp;C parser is one of only very few parsers currently available which has the potential to produce detailed, accurate analyses at the scale we were considering.
         </description>
       
 
@@ -2889,6 +2935,20 @@ I have constructed models that process newspaper text 86% faster than previously
     
     <item>
       
+        <title>Contact</title>
+      
+      <link>http://www.jkk.name/home/contact/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/home/contact/</guid>
+      
+        <description></description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Software</title>
       
       <link>http://www.jkk.name/home/software/</link>
@@ -2923,20 +2983,6 @@ I have constructed models that process newspaper text 86% faster than previously
       <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/home/posts/</guid>
-      
-        <description></description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Contact</title>
-      
-      <link>http://www.jkk.name/home/contact/</link>
-      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/home/contact/</guid>
       
         <description></description>
       

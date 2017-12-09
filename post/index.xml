@@ -14,6 +14,52 @@
     
     <item>
       
+        <title>Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-12-08_crowdbias/</link>
+      <pubDate>Fri, 08 Dec 2017 19:49:09 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-12-08_crowdbias/</guid>
+      
+        <description>
+
+&lt;p&gt;Getting high quality annotations from crowdsourcing requires careful design.
+This paper looks at how one annotation a worker does can influence their next annotation, for example:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When scoring translations, a good example may make the next one look worse in comparison&lt;/li&gt;
+&lt;li&gt;For labeling tasks, we may expect a long sequence of the same label to be rare (the gambler&amp;rsquo;s fallacy)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;To investigate this they fit a linear model with inputs (previous label, gold label, random noise) and see what the coefficients are.
+Across multiple tasks, there is a non-zero correlation with the previous label.
+Interestingly, there also seems to be a learning effect for good workers, where over time they become calibrated and show less sequence bias.
+Fortunately, there is a simple solution - for each worker, give every annotator their documents in a different random order!
+With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1306&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mathur-baldwin-cohn:2017:EMNLP2017,
+  author    = {Mathur, Nitika  and  Baldwin, Timothy  and  Cohn, Trevor},
+  title     = {Sequence Effects in Crowdsourced Annotations},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2860--2865},
+  url       = {https://www.aclweb.org/anthology/D17-1306}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-12-07_rarewordvectors/</link>
