@@ -14,6 +14,45 @@
     
     <item>
       
+        <title>The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
+      <pubDate>Tue, 12 Dec 2017 20:15:34 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</guid>
+      
+        <description>
+
+&lt;p&gt;It turns out that if the vectors learned by word2vec are projected into a plane they all point in the same direction.
+Also, the context vectors (which are part of the algorithm, but not retained afterwards) point the other way.
+When visualising with t-SNE this effect is not visible because of the way the space is warped to optimise the t-SNE objective.&lt;/p&gt;
+
+&lt;p&gt;This is surprising, and may seem problematic since it doesn&amp;rsquo;t fit our goals for what these vectors should be capturing.
+However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloVe does not have this property, and doesn&amp;rsquo;t seem to derive a great benefit from it.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1308&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mimno-thompson:2017:EMNLP2017,
+  author    = {Mimno, David  and  Thompson, Laure},
+  title     = {The strange geometry of skip-gram with negative sampling},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2873--2878},
+  url       = {https://www.aclweb.org/anthology/D17-1308}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-12-08_crowdbias/</link>

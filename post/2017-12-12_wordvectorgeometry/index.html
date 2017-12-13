@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/tags/word-vectors/">
+  <link rel="canonical" href="http://www.jkk.name/post/2017-12-12_wordvectorgeometry/">
 
   
 
-  <title>Word Vectors | Jonathan K. Kummerfeld</title>
+  <title>The strange geometry of skip-gram with negative sampling (Mimno et al., 2017) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -169,67 +169,190 @@
 </nav>
 
 
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
 
 
+  <div class="article-container">
+    <h1 itemprop="name">The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</h1>
+    
 
-<div class="universal-wrapper">
+<div class="article-metadata">
 
-  <h1>Word Vectors</h1>
+  <span class="article-date">
+    
+    <time datetime="2017-12-12 20:15:34 -0500 EST" itemprop="datePublished">
+      Dec 12, 2017
+    </time>
+  </span>
 
   
 
   
   
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-12-12_wordvectorgeometry/">The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</a></h2>
-    <div class="article-style">
+  
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/paper">paper</a
+    >, 
+    
+    <a href="/tags/emnlp">emnlp</a
+    >, 
+    
+    <a href="/tags/word-vectors">word-vectors</a
+    >
+    
+  </span>
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=The%20strange%20geometry%20of%20skip-gram%20with%20negative%20sampling%20%28Mimno%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-12_wordvectorgeometry%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-12_wordvectorgeometry%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-12_wordvectorgeometry%2f&amp;title=The%20strange%20geometry%20of%20skip-gram%20with%20negative%20sampling%20%28Mimno%20et%20al.%2c%202017%29"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-12_wordvectorgeometry%2f&amp;title=The%20strange%20geometry%20of%20skip-gram%20with%20negative%20sampling%20%28Mimno%20et%20al.%2c%202017%29"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=The%20strange%20geometry%20of%20skip-gram%20with%20negative%20sampling%20%28Mimno%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-12-12_wordvectorgeometry%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
       
-      Surprisingly, word2vec (negative skipgram sampling) produces vectors that point in a consistent direction, a pattern not seen in GloVe (but also one that doesn&rsquo;t seem to cause a problem for downstream tasks).
-      
+
+<p>It turns out that if the vectors learned by word2vec are projected into a plane they all point in the same direction.
+Also, the context vectors (which are part of the algorithm, but not retained afterwards) point the other way.
+When visualising with t-SNE this effect is not visible because of the way the space is warped to optimise the t-SNE objective.</p>
+
+<p>This is surprising, and may seem problematic since it doesn&rsquo;t fit our goals for what these vectors should be capturing.
+However, it doesn&rsquo;t seem to impact downstream tasks, for example, GloVe does not have this property, and doesn&rsquo;t seem to derive a great benefit from it.</p>
+
+<h2 id="citation">Citation</h2>
+
+<p><a href="https://www.aclweb.org/anthology/D17-1308" target="_blank">Paper</a></p>
+
+<pre><code class="language-bibtex">@InProceedings{mimno-thompson:2017:EMNLP2017,
+  author    = {Mimno, David  and  Thompson, Laure},
+  title     = {The strange geometry of skip-gram with negative sampling},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2873--2878},
+  url       = {https://www.aclweb.org/anthology/D17-1308}
+}
+</code></pre>
+
     </div>
   </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-11-28_interpretableembeddings/">SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</a></h2>
-    <div class="article-style">
-      
-      By introducing a new loss that encourages sparsity, an auto-encoder can be used to go from existing word vectors to new ones that are sparser and more interpretable, though the impact on downstream tasks is mixed.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-11-15_entityvectors/">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</a></h2>
-    <div class="article-style">
-      
-      Vectors for words and entities can be learned by trying to model the text written about the entities. This leads to word vectors that score well on similarity tasks and entity vectors that produce excellent results on entity linking and question answering.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</a></h2>
-    <div class="article-style">
-      
-      By switching from representing words as points in a vector space to multiple gaussian regions we can get a better model, scoring higher on multiple word similarity metrics than a range of techniques.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="http://www.jkk.name/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></h2>
-    <div class="article-style">
-      
-      A proposal for how to improve vector representations of sentences by using attention over (1) fixed vectors, and (2) a context sentence.
-      
-    </div>
-  </div>
-  
 
+</article>
+
+
+
+<div class="article-container">
+  <h3>Related</h3>
+  <ul>
+    
+    <li><a href="/post/2017-10-16_forumrnn/">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</a></li>
+    
+    <li><a href="/post/2017-12-08_crowdbias/">Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-12-07_rarewordvectors/">High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-12-06_coreferencearguments/">Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-12-05_explainingpredictions/">A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://www.jkk.name/post/2017-12-08_crowdbias/"><span
+      aria-hidden="true">&larr;</span> Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
   
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "www-jkk-name" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
 
 
 </div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">
