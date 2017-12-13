@@ -14,6 +14,43 @@
     
     <item>
       
+        <title>A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings (Yang et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</link>
+      <pubDate>Tue, 12 Dec 2017 20:25:40 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</guid>
+      
+        <description>
+
+&lt;p&gt;To construct word vectors from multi-domain data, use a separate vector for each domain and add a loss term to encourage them to agree.
+Here the loss is an l2 norm, weighted by a factor that depends on the frequency of the words in the two domains.
+The factor is the harmonic mean of the normalised frequency in each domain (so the lower frequency dominates the factor, pulling it lower).
+Across a range of tasks this consistently performs better than other approaches.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1312&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{yang-lu-zheng:2017:EMNLP2017,
+  author    = {Yang, Wei  and  Lu, Wei  and  Zheng, Vincent},
+  title     = {A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2898--2904},
+  url       = {https://www.aclweb.org/anthology/D17-1312}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
