@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2018-01-28_crowdassistant/</loc>
+      <lastmod>2018-01-28T16:01:20-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</loc>
       <lastmod>2017-12-12T20:25:40-05:00</lastmod>
     </url>
@@ -814,6 +823,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/categories/chi/</loc>
+      <lastmod>2018-01-28T16:01:20-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/conll/</loc>
       <lastmod>2017-10-17T20:33:58-04:00</lastmod>
       <priority>0</priority>
@@ -844,6 +863,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/categories/crowdsourcing/</loc>
+      <lastmod>2018-01-28T16:01:20-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/data/</loc>
       <lastmod>2017-09-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -866,6 +895,16 @@
     
       <loc>http://www.jkk.name/tags/dialogue/</loc>
       <lastmod>2017-11-09T19:47:08-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/categories/dialogue/</loc>
+      <lastmod>2018-01-28T16:01:20-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1055,7 +1094,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2017-12-12T20:25:40-05:00</lastmod>
+      <lastmod>2018-01-28T16:01:20-05:00</lastmod>
       <priority>0</priority>
     </url>
     
