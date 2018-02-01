@@ -14,6 +14,51 @@
     
     <item>
       
+        <title>Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations (Wieting et al., 2017)</title>
+      
+      <link>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</link>
+      <pubDate>Wed, 31 Jan 2018 19:25:36 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</guid>
+      
+        <description>
+
+&lt;p&gt;It would be convenient to have a way to represent sentences in a vector space, similar to the way vectors are frequently used to represent input words for a task.
+Quite a few sentence embeddings methods have been proposed, but none have really caught on.
+Building on prior work by the same authors, the approach here is to define a neural network that maps a sentence to a vector, then train it with a loss function that measures similarity between the vectors for paraphrases.&lt;/p&gt;
+
+&lt;p&gt;This paper scales up the approach, using millions of paraphrases, and explores a range of models.
+To get the paraphrases they use translation (start with a sentence, translate it to another language and back, then assume the translation is a paraphrase).
+For negative examples they use the sentence that the model currently thinks is most similar other than the correct one (choosing this from a large enough set is key).&lt;/p&gt;
+
+&lt;p&gt;The best model is very simple - concatenate together the average of word vectors and the average of character trigram vectors.
+That consistently beats prior work, including convolutional models, and LSTMs.
+In a way, this is nice as it is a simple way to get a sentence representation!
+On the other hand, this can&amp;rsquo;t possibly capture the semantics of a sentence fully since it doesn&amp;rsquo;t take word order into consideration at all.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1711.05732&#34; target=&#34;_blank&#34;&gt;ArXiv Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@ARTICLE{2017arXiv171105732W,
+  author        = {{Wieting}, J. and {Gimpel}, K.},
+  title         = {Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations},
+  journal       = {ArXiv e-prints},
+  archivePrefix = {arXiv},
+  eprint        = {1711.05732},
+  primaryClass  = {cs.CL},
+  year          = {2017},
+  month         = {November},
+  url           = {https://arxiv.org/abs/1711.05732},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</title>
       
       <link>http://www.jkk.name/post/2018-01-28_crowdassistant/</link>
