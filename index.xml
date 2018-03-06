@@ -14,6 +14,53 @@
     
     <item>
       
+        <title>Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</title>
+      
+      <link>http://www.jkk.name/post/2018-03-05_curriculum/</link>
+      <pubDate>Mon, 05 Mar 2018 21:09:58 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/2018-03-05_curriculum/</guid>
+      
+        <description>
+
+&lt;p&gt;Usually when we learn, we have a curriculum designed to incrementally build understanding.
+It seems reasonable that the same idea could be useful for machine learning, and indeed there is a large body of work on the topic.
+This paper explores the specific question of whether a curriculum can help develop task-specific word vectors, and whether we can determine an effective curriculum automatically.&lt;/p&gt;
+
+&lt;p&gt;They define a linear model with a range of features that characterise a paragraph of text, such as the number of distinct words, the number of prepositional phrases, and the average number of syllables per word.
+Paragraphs are sorted by the model and used to train word vectors with word2vec.
+These word vectors are then used as part of a model for a target task, giving a score that indicates the quality of the curriculum.
+Based on this score the weights for the model are updated, using a form of Bayesian optimisation.&lt;/p&gt;
+
+&lt;p&gt;One really nice aspect of this paper is the range of tasks considered: sentiment analysis, NER, POS tagging, and parsing.
+Learning a curriculum does improve performance slightly, and which features are important varies across the tasks (indicating the importance of task-specific curriculums).
+However, the models are somewhat restricted (as shown by the low absolute performance) because they do not change the word vectors during training.
+For most of this paper that&amp;rsquo;s a reasonable decision, as it allows a clearer learning signal, but it would have been interesting to also see the impact on the normal training scenario and a state-of-the-art model.
+In my experience (and in our soon-to-appear NAACL paper) we find that variations in word vectors can disappear during training for a downstream task.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.aclweb.org/anthology/P16-1013&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{tsvetkov-EtAl:2016:P16-1,
+  author    = {Tsvetkov, Yulia  and  Faruqui, Manaal  and  Ling, Wang  and  MacWhinney, Brian  and  Dyer, Chris},
+  title     = {Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {August},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {130--139},
+  url       = {http://www.aclweb.org/anthology/P16-1013}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations (Wieting et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</link>
@@ -2510,20 +2557,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>Crowdsourced Paraphrases</title>
-      
-      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
-      
-        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
         
@@ -2541,6 +2574,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           Linguistically diverse datasets are critical for training and evaluating robust machine learning systems, but data collection is a costly process that often requires experts. Crowdsourcing the process of paraphrase generation is an effective means of expanding natural language datasets, but there has been limited analysis of the trade-offs that arise when designing tasks. In this paper, we present the first systematic study of the key factors in crowdsourcing paraphrase collection. We consider variations in instructions, incentives, data domains, and workflows. We manually analyzed paraphrases for correctness, grammaticality, and linguistic diversity. Our observations provide new insight into the trade-offs between accuracy and diversity in crowd responses that arise as a result of task design, providing guidance for future paraphrase generation procedures.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Crowdsourced Paraphrases</title>
+      
+      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      
+        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
       
 
     </item>
@@ -2690,20 +2737,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
-        <title>Coreference Error Analysis</title>
-      
-      <link>http://www.jkk.name/software/coreference-analysis/</link>
-      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
-      
-        <description>A tool for classifying errors in coreference resolution. <a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-coreference-analyser</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Error-Driven Analysis of Challenges in Coreference Resolution",
         
@@ -2721,6 +2754,20 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
         <description>
           Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we first compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Coreference Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/coreference-analysis/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
+      
+        <description>A tool for classifying errors in coreference resolution. <a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-coreference-analyser</a></description>
       
 
     </item>
@@ -2773,20 +2820,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
-        <title>CCG to PST</title>
-      
-      <link>http://www.jkk.name/software/ccg2pst/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/ccg2pst/</guid>
-      
-        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output",
         
@@ -2810,14 +2843,14 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
-        <title>Parse Error Analysis</title>
+        <title>CCG to PST</title>
       
-      <link>http://www.jkk.name/software/parsing-analysis/</link>
+      <link>http://www.jkk.name/software/ccg2pst/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
+      <guid>http://www.jkk.name/software/ccg2pst/</guid>
       
-        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
+        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
       
 
     </item>
@@ -2841,6 +2874,20 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
         <description>
           We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Parse Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/parsing-analysis/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
+      
+        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
       
 
     </item>
@@ -2918,20 +2965,6 @@ We use morphological analysis to split verb inflectional suffixes into separate 
     
     <item>
       
-        <title>Adaptive CCG Supertagging Model</title>
-      
-      <link>http://www.jkk.name/data/ccg-model/</link>
-      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/ccg-model/</guid>
-      
-        <description>A model for the C&amp;C supertagger that gives the same results with smaller beam sizes, enabling faster parsing. TODO</description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Faster Parsing by Supertagger Adaptation",
         
@@ -2949,6 +2982,20 @@ We use morphological analysis to split verb inflectional suffixes into separate 
         <description>
           We propose a novel self-training method for a parser which uses a lexicalised grammar and supertagger, focusing on increasing the speed of the parser rather than its accuracy. The idea is to train the supertagger on large amounts of parser output, so that the supertagger can learn to supply the supertags that the parser will eventually choose as part of the highest scoring derivation. Since the supertagger supplies fewer supertags overall, the parsing speed is increased. We demonstrate the effectiveness of the method using a CCG supertagger and parser, obtaining significant speed increases on newspaper text with no loss in accuracy. We also show that the method can be used to adapt the CCG parser to new domains, obtaining accuracy and speed improvements for Wikipedia and biomedical text.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Adaptive CCG Supertagging Model</title>
+      
+      <link>http://www.jkk.name/data/ccg-model/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/ccg-model/</guid>
+      
+        <description>A model for the C&amp;C supertagger that gives the same results with smaller beam sizes, enabling faster parsing. TODO</description>
       
 
     </item>
@@ -3098,20 +3145,6 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
     
     <item>
       
-        <title>Contact</title>
-      
-      <link>http://www.jkk.name/home/contact/</link>
-      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/home/contact/</guid>
-      
-        <description></description>
-      
-
-    </item>
-    
-    <item>
-      
         <title>Software</title>
       
       <link>http://www.jkk.name/home/software/</link>
@@ -3126,12 +3159,12 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
     
     <item>
       
-        <title>Data</title>
+        <title>Contact</title>
       
-      <link>http://www.jkk.name/home/data/</link>
+      <link>http://www.jkk.name/home/contact/</link>
       <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/home/data/</guid>
+      <guid>http://www.jkk.name/home/contact/</guid>
       
         <description></description>
       
@@ -3146,6 +3179,20 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
       <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
       
       <guid>http://www.jkk.name/home/posts/</guid>
+      
+        <description></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Data</title>
+      
+      <link>http://www.jkk.name/home/data/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/home/data/</guid>
       
         <description></description>
       
