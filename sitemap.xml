@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2018-03-08_sql/</loc>
+      <lastmod>2018-03-08T20:11:48-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2018-03-05_curriculum/</loc>
       <lastmod>2018-03-05T21:09:58-05:00</lastmod>
     </url>
@@ -1092,7 +1101,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2018-03-05T21:09:58-05:00</lastmod>
+      <lastmod>2018-03-08T20:11:48-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1171,6 +1180,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/sql/</loc>
+      <lastmod>2018-03-08T20:11:48-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/summarisation/</loc>
       <lastmod>2017-11-29T19:14:05-05:00</lastmod>
       <priority>0</priority>
@@ -1203,6 +1222,16 @@
     
       <loc>http://www.jkk.name/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/tags/vldb/</loc>
+      <lastmod>2018-03-08T20:11:48-05:00</lastmod>
       <priority>0</priority>
     </url>
     
