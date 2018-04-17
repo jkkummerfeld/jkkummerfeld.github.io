@@ -14,6 +14,53 @@
     
     <item>
       
+        <title>An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</title>
+      
+      <link>http://www.jkk.name/post/2018-04-16_lm_analysis/</link>
+      <pubDate>Mon, 16 Apr 2018 20:55:22 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2018-04-16_lm_analysis/</guid>
+      
+        <description>
+
+&lt;p&gt;Assigning a probability distribution over the next word or character in a sequence (language modeling) is a useful component of many systems, such as speech recognition and translation.
+Recently neural networks have come to dominate in performance, with a range of clever innovations in network structure.
+This paper is not about new models, but rather explores the current evaluation and how well carefully tuned baseline models can do.&lt;/p&gt;
+
+&lt;p&gt;The key observations for me were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There are issues with the PTB dataset for character-level evaluation - it removes all punctuation, makes numbers &amp;lsquo;N&amp;rsquo;, and removes rare words (i.e. it is a character-level version of the token-level task).
+Given that the original Penn Treebank exists, I would have been interested to see a comparison with the PTB without any simplification.
+The other dataset, enwik8, makes sense as a testing ground for compression algorithms, but is a little odd for modeling language, since it is the first 100 million bytes of a Wikipedia XML dump.
+The paper does have another dataset, WikiText, which sounds good, but then there is no character-level evaluation!&lt;/li&gt;
+&lt;li&gt;The LSTM is able to achieve ~SotA results for character-level modeling.
+The key seems to be careful design of the softmax that produces the final probability distribution:
+(1) rare words are clustered and represented by a single value in the distribution calculation, and
+(2) word vectors are shared between input and output.&lt;/li&gt;
+&lt;li&gt;Dropout matters more than the network design, and multiple forms of dropout should be tuned jointly.
+This comes from analysis of a set of models trained with random variation in hyperparameters.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1803.08240&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@Article{2018arXiv180308240M,
+   author = {{Merity}, S. and {Shirish Keskar}, N. and {Socher}, R.},
+    title = {An Analysis of Neural Language Modeling at Multiple Scales},
+  journal = {ArXiv e-prints},
+     year = {2018},
+      url = {https://arxiv.org/abs/1803.08240},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Provenance for Natural Language Queries (Deutch et al., 2017)</title>
       
       <link>http://www.jkk.name/post/2018-03-08_sql/</link>
@@ -2604,6 +2651,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
+        <title>Crowdsourced Paraphrases</title>
+      
+      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      
+        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
         
@@ -2627,20 +2688,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>Crowdsourced Paraphrases</title>
-      
-      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
-      
-        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Tools for Automated Analysis of Cybercriminal Markets",
         
@@ -2658,20 +2705,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           Underground forums are widely used by criminals to buy and sell a host of stolen items, datasets, resources, and criminal services.  These forums contain important resources for understanding cybercrime.  However, the number of forums, their size, and the domain expertise required to understand the markets makes manual exploration of these forums unscalable. In this work, we propose an automated, top-down approach for analyzing underground forums.  Our approach uses natural language processing and machine learning to automatically generate high-level information about underground forums, first identifying posts related to transactions, and then extracting products and prices. We also demonstrate, via a pair of case studies, how an analyst can use these automated approaches to investigate other categories of products and transactions. We use eight distinct forums to assess our tools: Antichat, Blackhat World, Carders, Darkode, Hack Forums, Hell, L33tCrew and Nulled. Our automated approach is fast and accurate, achieving over 80% accuracy in detecting post category, product, and prices.
         </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>One-Endpoint Crossing Graph Parser</title>
-      
-      <link>http://www.jkk.name/software/1ec-parsing/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/1ec-parsing/</guid>
-      
-        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://github.com/jkkummerfeld/1ec-graph-parser" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser</a></description>
       
 
     </item>
@@ -2724,6 +2757,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
       
         <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>One-Endpoint Crossing Graph Parser</title>
+      
+      <link>http://www.jkk.name/software/1ec-parsing/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/1ec-parsing/</guid>
+      
+        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://github.com/jkkummerfeld/1ec-graph-parser" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser</a></description>
       
 
     </item>
@@ -2784,6 +2831,20 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
+        <title>Coreference Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/coreference-analysis/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
+      
+        <description>A tool for classifying errors in coreference resolution. <a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-coreference-analyser</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Error-Driven Analysis of Challenges in Coreference Resolution",
         
@@ -2801,20 +2862,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
         <description>
           Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we first compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
         </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Coreference Error Analysis</title>
-      
-      <link>http://www.jkk.name/software/coreference-analysis/</link>
-      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
-      
-        <description>A tool for classifying errors in coreference resolution. <a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-coreference-analyser</a></description>
       
 
     </item>
@@ -2867,6 +2914,20 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
+        <title>CCG to PST</title>
+      
+      <link>http://www.jkk.name/software/ccg2pst/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/ccg2pst/</guid>
+      
+        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output",
         
@@ -2884,20 +2945,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
         <description>
           Constituency parser performance is primarily interpreted through a single metric, F-score on WSJ section 23, that conveys no linguistic information regarding the remaining errors.  We classify errors within a set of linguistically meaningful types using tree transformations that repair groups of errors together. We use this analysis to answer a range of questions about parser behaviour, including what linguistic constructions are difficult for state-of-the-art parsers, what types of errors are being resolved by rerankers, and what types are introduced when parsing out-of-domain text.
         </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>CCG to PST</title>
-      
-      <link>http://www.jkk.name/software/ccg2pst/</link>
-      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/ccg2pst/</guid>
-      
-        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
       
 
     </item>
@@ -3012,6 +3059,20 @@ We use morphological analysis to split verb inflectional suffixes into separate 
     
     <item>
       
+        <title>Adaptive CCG Supertagging Model</title>
+      
+      <link>http://www.jkk.name/data/ccg-model/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/ccg-model/</guid>
+      
+        <description>A model for the C&amp;C supertagger that gives the same results with smaller beam sizes, enabling faster parsing. TODO</description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Faster Parsing by Supertagger Adaptation",
         
@@ -3029,20 +3090,6 @@ We use morphological analysis to split verb inflectional suffixes into separate 
         <description>
           We propose a novel self-training method for a parser which uses a lexicalised grammar and supertagger, focusing on increasing the speed of the parser rather than its accuracy. The idea is to train the supertagger on large amounts of parser output, so that the supertagger can learn to supply the supertags that the parser will eventually choose as part of the highest scoring derivation. Since the supertagger supplies fewer supertags overall, the parsing speed is increased. We demonstrate the effectiveness of the method using a CCG supertagger and parser, obtaining significant speed increases on newspaper text with no loss in accuracy. We also show that the method can be used to adapt the CCG parser to new domains, obtaining accuracy and speed improvements for Wikipedia and biomedical text.
         </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Adaptive CCG Supertagging Model</title>
-      
-      <link>http://www.jkk.name/data/ccg-model/</link>
-      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/ccg-model/</guid>
-      
-        <description>A model for the C&amp;C supertagger that gives the same results with smaller beam sizes, enabling faster parsing. TODO</description>
       
 
     </item>
@@ -3075,6 +3122,33 @@ We demonstrate faster methods for training a supertagger using hundreds of milli
     <item>
       
       <title>
+        "Large-Scale Syntactic Processing: Parsing the Web",
+        
+          Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, Jonathan Kummerfeld, Tim Dawborn
+        
+        (Johns Hopkins University,
+        2009)
+      </title>
+      
+      <link>http://www.jkk.name/publication/report09jhu/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/report09jhu/</guid>
+      
+        <description>
+          Scalable syntactic processing will underpin the sophisticated language technology needed for next generation information access. Companies are already using nlp tools to create web-scale question answering and &#34;semantic search&#34; engines. Massive amounts of parsed web data will also allow the automatic creation of semantic knowledge resources on an unprecedented scale. The web is a challenging arena for syntactic parsing, because of its scale and variety of styles, genres, and domains.
+
+The goals of our workshop were to scale and adapt an existing wide-coverage parser to Wikipedia text; improve the efficiency of the parser through various methods of chart pruning; use self-training to improve the efficiency and accuracy of the parser; use the parsed wiki data for an innovative form of bootstrapping to make the parser both more efficient and more accurate; and finally use the parsed web data for improved disambiguation of coordination structures, using a variety of syntactic and semantic knowledge sources.
+
+The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a state-of-the-art statistical parser based on Combinatory Categorial Grammar (ccg). The parser has been evaluated on a number of standard test sets achieving state-of-the-art accuracies. It has also recently been adapted successfully to the biomedical domain (Rimell and Clark, 2009). The parser is surprisingly efficient, given its detailed output, processing tens of sentences per second. For web-scale text processing, we aimed to make the parser an order of magnitude faster still. The C&amp;C parser is one of only very few parsers currently available which has the potential to produce detailed, accurate analyses at the scale we were considering.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "Adaptive Supertagging for Faster Parsing",
         
           Jonathan K. Kummerfeld
@@ -3098,33 +3172,6 @@ I was able to significantly improve performance on the standard evaluation corpu
 Despite extensive use of supertaggers to improve parsing efficiency there has been no comprehensive study of the interaction between a supertagger and a parser. I present the first systematic exploration of the relationship, show the potential benefits of understanding it, and demonstrate a novel algorithm for optimising the parameters that define it.
 
 I have constructed models that process newspaper text 86% faster than previously, and Wikipedia text 30% faster, without any loss in accuracy and without the aid of extra gold standard resources in either domain. This work will lead directly to improvements in a range of Natural Language Processing tasks by enabling the use of far more parsed data.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
-        "Large-Scale Syntactic Processing: Parsing the Web",
-        
-          Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, Jonathan Kummerfeld, Tim Dawborn
-        
-        (Johns Hopkins University,
-        2009)
-      </title>
-      
-      <link>http://www.jkk.name/publication/report09jhu/</link>
-      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/report09jhu/</guid>
-      
-        <description>
-          Scalable syntactic processing will underpin the sophisticated language technology needed for next generation information access. Companies are already using nlp tools to create web-scale question answering and &#34;semantic search&#34; engines. Massive amounts of parsed web data will also allow the automatic creation of semantic knowledge resources on an unprecedented scale. The web is a challenging arena for syntactic parsing, because of its scale and variety of styles, genres, and domains.
-
-The goals of our workshop were to scale and adapt an existing wide-coverage parser to Wikipedia text; improve the efficiency of the parser through various methods of chart pruning; use self-training to improve the efficiency and accuracy of the parser; use the parsed wiki data for an innovative form of bootstrapping to make the parser both more efficient and more accurate; and finally use the parsed web data for improved disambiguation of coordination structures, using a variety of syntactic and semantic knowledge sources.
-
-The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a state-of-the-art statistical parser based on Combinatory Categorial Grammar (ccg). The parser has been evaluated on a number of standard test sets achieving state-of-the-art accuracies. It has also recently been adapted successfully to the biomedical domain (Rimell and Clark, 2009). The parser is surprisingly efficient, given its detailed output, processing tens of sentences per second. For web-scale text processing, we aimed to make the parser an order of magnitude faster still. The C&amp;C parser is one of only very few parsers currently available which has the potential to produce detailed, accurate analyses at the scale we were considering.
         </description>
       
 
@@ -3206,12 +3253,12 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
     
     <item>
       
-        <title>Contact</title>
+        <title>Data</title>
       
-      <link>http://www.jkk.name/home/contact/</link>
+      <link>http://www.jkk.name/home/data/</link>
       <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/home/contact/</guid>
+      <guid>http://www.jkk.name/home/data/</guid>
       
         <description></description>
       
@@ -3234,12 +3281,12 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
     
     <item>
       
-        <title>Data</title>
+        <title>Contact</title>
       
-      <link>http://www.jkk.name/home/data/</link>
+      <link>http://www.jkk.name/home/contact/</link>
       <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/home/data/</guid>
+      <guid>http://www.jkk.name/home/contact/</guid>
       
         <description></description>
       

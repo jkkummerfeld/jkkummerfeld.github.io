@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2018-03-08_sql/">
+  <link rel="canonical" href="http://www.jkk.name/post/2018-04-16_lm_analysis/">
 
   
 
-  <title>Provenance for Natural Language Queries (Deutch et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Provenance for Natural Language Queries (Deutch et al., 2017)</h1>
+    <h1 itemprop="name">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2018-03-08 20:11:48 -0500 EST" itemprop="datePublished">
-      Mar 8, 2018
+    <time datetime="2018-04-16 20:55:22 -0400 EDT" itemprop="datePublished">
+      Apr 16, 2018
     </time>
   </span>
 
@@ -203,10 +203,10 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/vldb">vldb</a
+    <a href="/tags/language-model">language-model</a
     >, 
     
-    <a href="/tags/sql">sql</a
+    <a href="/tags/arxiv">arxiv</a
     >
     
   </span>
@@ -219,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Provenance%20for%20Natural%20Language%20Queries%20%28Deutch%20et%20al.%2c%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-03-08_sql%2f"
+         href="https://twitter.com/intent/tweet?text=An%20Analysis%20of%20Neural%20Language%20Modeling%20at%20Multiple%20Scales%20%28Merity%20et%20al.%2c%202018%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-03-08_sql%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-03-08_sql%2f&amp;title=Provenance%20for%20Natural%20Language%20Queries%20%28Deutch%20et%20al.%2c%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f&amp;title=An%20Analysis%20of%20Neural%20Language%20Modeling%20at%20Multiple%20Scales%20%28Merity%20et%20al.%2c%202018%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-03-08_sql%2f&amp;title=Provenance%20for%20Natural%20Language%20Queries%20%28Deutch%20et%20al.%2c%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f&amp;title=An%20Analysis%20of%20Neural%20Language%20Modeling%20at%20Multiple%20Scales%20%28Merity%20et%20al.%2c%202018%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Provenance%20for%20Natural%20Language%20Queries%20%28Deutch%20et%20al.%2c%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-03-08_sql%2f">
+         href="mailto:?subject=An%20Analysis%20of%20Neural%20Language%20Modeling%20at%20Multiple%20Scales%20%28Merity%20et%20al.%2c%202018%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,35 +262,35 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Being able to query a database in natural language could help make data accessible to more people.
-Systems that do this have to solve two challenges: (1) understanding the query and (2) expressing the response in a way the user will understand.
-Recently there have been papers in the NLP community on the first challenge, but this paper comes from the DB community and considers the second.</p>
+<p>Assigning a probability distribution over the next word or character in a sequence (language modeling) is a useful component of many systems, such as speech recognition and translation.
+Recently neural networks have come to dominate in performance, with a range of clever innovations in network structure.
+This paper is not about new models, but rather explores the current evaluation and how well carefully tuned baseline models can do.</p>
 
-<p>The approach assumes we have a syntactic parse of the query and an alignment between the parse and the SQL query it corresponds to (they rely on prior work for this query interpretation piece).
-Given that, the new idea in this paper is to take the database results and use the alignment to insert values for each field into the original parse, and from there into the original question.
-To avoid extremely long sentences (when there are multiple result rows) they define a procedure to identify ways to summarise results.</p>
+<p>The key observations for me were:</p>
 
-<p>However, I&rsquo;m not convinced by the evaluation.
-The dataset they use was collected by (1) enumerating the 196 types of queries people could ask using the Microsoft Academic Search service, and (2) a person manually writing a question for each query.
-As a result, the questions feel very formulaic and also only cover cases that we already have a user-friendly interface for, making it unclear how well this will generalise to more natural data.
-Still, this work explores an interesting problem and it&rsquo;s cool to see a direct use of syntactic parsing!</p>
+<ul>
+<li>There are issues with the PTB dataset for character-level evaluation - it removes all punctuation, makes numbers &lsquo;N&rsquo;, and removes rare words (i.e. it is a character-level version of the token-level task).
+Given that the original Penn Treebank exists, I would have been interested to see a comparison with the PTB without any simplification.
+The other dataset, enwik8, makes sense as a testing ground for compression algorithms, but is a little odd for modeling language, since it is the first 100 million bytes of a Wikipedia XML dump.
+The paper does have another dataset, WikiText, which sounds good, but then there is no character-level evaluation!</li>
+<li>The LSTM is able to achieve ~SotA results for character-level modeling.
+The key seems to be careful design of the softmax that produces the final probability distribution:
+(1) rare words are clustered and represented by a single value in the distribution calculation, and
+(2) word vectors are shared between input and output.</li>
+<li>Dropout matters more than the network design, and multiple forms of dropout should be tuned jointly.
+This comes from analysis of a set of models trained with random variation in hyperparameters.</li>
+</ul>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="http://www.vldb.org/pvldb/vol10/p577-deutch.pdf" target="_blank">Paper</a></p>
+<p><a href="https://arxiv.org/abs/1803.08240" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@Article{Deutch:2017,
-  author = {Deutch, Daniel and Frost, Nave and Gilad, Amir},
-  title = {Provenance for Natural Language Queries},
-  journal = {Proceedings of the VLDB Endowment},
-  volume = {10},
-  number = {5},
-  month = {Jan},
-  year = {2017},
-  issn = {2150-8097},
-  pages = {577--588},
-  doi = {10.14778/3055540.3055550},
-  url = {http://www.vldb.org/pvldb/vol10/p577-deutch.pdf},
+<pre><code class="language-bibtex">@Article{2018arXiv180308240M,
+   author = {{Merity}, S. and {Shirish Keskar}, N. and {Socher}, R.},
+    title = {An Analysis of Neural Language Modeling at Multiple Scales},
+  journal = {ArXiv e-prints},
+     year = {2018},
+      url = {https://arxiv.org/abs/1803.08240},
 }
 </code></pre>
 
@@ -305,15 +305,15 @@ Still, this work explores an interesting problem and it&rsquo;s cool to see a di
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2018-03-05_curriculum/">Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</a></li>
+    <li><a href="/post/2017-10-30_neuralsequence/">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
     
     <li><a href="/post/2018-01-31_sentencerepfromparaphrases/">Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations (Wieting et al., 2017)</a></li>
     
-    <li><a href="/post/2018-01-28_crowdassistant/">Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</a></li>
+    <li><a href="/post/2017-11-28_interpretableembeddings/">SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</a></li>
     
-    <li><a href="/post/2017-12-12_multidomainwordvector/">A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings (Yang et al., 2017)</a></li>
+    <li><a href="/post/2017-10-27_swishactivation/">Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
     
-    <li><a href="/post/2017-12-12_wordvectorgeometry/">The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</a></li>
+    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
     
   </ul>
 </div>
@@ -323,13 +323,10 @@ Still, this work explores an interesting problem and it&rsquo;s cool to see a di
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2018-03-05_curriculum/"><span
-      aria-hidden="true">&larr;</span> Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2018-03-08_sql/"><span
+      aria-hidden="true">&larr;</span> Provenance for Natural Language Queries (Deutch et al., 2017)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2018-04-16_lm_analysis/">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
