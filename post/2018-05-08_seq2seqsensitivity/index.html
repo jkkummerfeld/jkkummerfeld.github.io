@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2018-04-16_lm_analysis/">
+  <link rel="canonical" href="http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/">
 
   
 
-  <title>An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018) | Jonathan K. Kummerfeld</title>
+  <title>The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</h1>
+    <h1 itemprop="name">The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2018-04-16 20:55:22 -0400 EDT" itemprop="datePublished">
-      Apr 16, 2018
+    <time datetime="2018-05-08 09:00:31 -0400 EDT" itemprop="datePublished">
+      May 8, 2018
     </time>
   </span>
 
@@ -203,10 +203,13 @@
     <a href="/tags/paper">paper</a
     >, 
     
-    <a href="/tags/language-model">language-model</a
+    <a href="/tags/gen-deep">gen-deep</a
     >, 
     
-    <a href="/tags/arxiv">arxiv</a
+    <a href="/tags/analysis">analysis</a
+    >, 
+    
+    <a href="/tags/neural-network">neural-network</a
     >
     
   </span>
@@ -219,35 +222,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=An%20Analysis%20of%20Neural%20Language%20Modeling%20at%20Multiple%20Scales%20%28Merity%20et%20al.%2c%202018%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f"
+         href="https://twitter.com/intent/tweet?text=The%20Fine%20Line%20between%20Linguistic%20Generalization%20and%20Failure%20in%20Seq2Seq-Attention%20Models%20%28Weber%20et%20al.%2c%202018%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f&amp;title=An%20Analysis%20of%20Neural%20Language%20Modeling%20at%20Multiple%20Scales%20%28Merity%20et%20al.%2c%202018%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f&amp;title=The%20Fine%20Line%20between%20Linguistic%20Generalization%20and%20Failure%20in%20Seq2Seq-Attention%20Models%20%28Weber%20et%20al.%2c%202018%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f&amp;title=An%20Analysis%20of%20Neural%20Language%20Modeling%20at%20Multiple%20Scales%20%28Merity%20et%20al.%2c%202018%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f&amp;title=The%20Fine%20Line%20between%20Linguistic%20Generalization%20and%20Failure%20in%20Seq2Seq-Attention%20Models%20%28Weber%20et%20al.%2c%202018%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=An%20Analysis%20of%20Neural%20Language%20Modeling%20at%20Multiple%20Scales%20%28Merity%20et%20al.%2c%202018%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-04-16_lm_analysis%2f">
+         href="mailto:?subject=The%20Fine%20Line%20between%20Linguistic%20Generalization%20and%20Failure%20in%20Seq2Seq-Attention%20Models%20%28Weber%20et%20al.%2c%202018%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -262,35 +265,43 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>Assigning a probability distribution over the next word or character in a sequence (language modeling) is a useful component of many systems, such as speech recognition and translation.
-Recently neural networks have come to dominate in performance, with a range of clever innovations in network structure.
-This paper is not about new models, but rather explores the current evaluation and how well carefully tuned baseline models can do.</p>
+<p>We know that training a neural network involves optimising over a non-convex space, but using standard evaluation methods we see that our models usually end up doing reasonably well.
+This paper asks an important question - are those metrics measuring generalisability effectively?
+In particular, if we sample our test set from a slightly different distribution of data, do models still work well?</p>
 
-<p>The key observations for me were:</p>
+<p>As a controlled set up they form a simple dataset as follows for each sentence:</p>
 
 <ul>
-<li>There are issues with the PTB dataset for character-level evaluation - it removes all punctuation, makes numbers &lsquo;N&rsquo;, and removes rare words (i.e. it is a character-level version of the token-level task).
-Given that the original Penn Treebank exists, I would have been interested to see a comparison with the PTB without any simplification.
-The other dataset, enwik8, makes sense as a testing ground for compression algorithms, but is a little odd for modeling language, since it is the first 100 million bytes of a Wikipedia XML dump.
-The paper does have another dataset, WikiText, which sounds good, but then there is no character-level evaluation!</li>
-<li>The LSTM is able to achieve ~SotA results for character-level modeling.
-The key seems to be careful design of the softmax that produces the final probability distribution:
-(1) rare words are clustered and represented by a single value in the distribution calculation, and
-(2) word vectors are shared between input and output.</li>
-<li>Dropout matters more than the network design, and multiple forms of dropout should be tuned jointly.
-This comes from analysis of a set of models trained with random variation in hyperparameters.</li>
+<li>Go through the sentence left to right</li>
+<li>For each word generate three words in the output, where the output words are randomly sampled from a small vocabulary that is unique to each input word</li>
 </ul>
+
+<p>This is clearly learnable and it seems reasonable that a sequence-to-sequence neural model with attention should be able to learn it.
+Experiments show they do, getting close to 100% on a test set sampled the same way as the training set (input length 5-10, no symbol used twice).
+However, if the test set is slightly different, with sequences of length 11-15, then results vary from 0% to 98% depending on the random seed in training (other variations also lead to large variations).
+What this means is that sometimes the model is not learning to generalise.
+They also show that the models that do generalise can only do so in one way (e.g. remain effective when length varies, or remain effective when symbols are used more than once in the input).</p>
+
+<p>A few takeaways:</p>
+
+<ul>
+<li>Make sure your training and testing data are sampled from the distribution you are interested in</li>
+<li>More study of training data order and weight initialisation is needed (these are the two factors impacted by the random seed)</li>
+</ul>
+
+<p>Incidentally, I am a co-author on an ACL paper that points out a similar issue for mapping text questions to SQL queries.
+If we restrict the test set to be novel queries (i.e. the model has to generalise) performance falls through the floor.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://arxiv.org/abs/1803.08240" target="_blank">Paper</a></p>
+<p><a href="https://arxiv.org/abs/1805.01445" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@Article{2018arXiv180308240M,
-   author = {{Merity}, S. and {Shirish Keskar}, N. and {Socher}, R.},
-    title = {An Analysis of Neural Language Modeling at Multiple Scales},
-  journal = {ArXiv e-prints},
+<pre><code class="language-bibtex">@Article{Weber:2018:GenDeep,
+   author = {Noah Weber, Leena Shekhar, Niranjan Balasubramanian},
+    title = {The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models},
+  journal = {Workshop on New Forms of Generalization in Deep Learning and NLP (NAACL 2018)},
      year = {2018},
-      url = {https://arxiv.org/abs/1803.08240},
+      url = {https://arxiv.org/abs/1805.01445},
 }
 </code></pre>
 
@@ -305,15 +316,15 @@ This comes from analysis of a set of models trained with random variation in hyp
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/post/2017-12-05_explainingpredictions/">A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-11-21_multiinputattention/">Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-11-01_mixtureofexperts/">Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</a></li>
+    
     <li><a href="/post/2017-10-30_neuralsequence/">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
     
-    <li><a href="/post/2018-01-31_sentencerepfromparaphrases/">Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations (Wieting et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-11-28_interpretableembeddings/">SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</a></li>
-    
     <li><a href="/post/2017-10-27_swishactivation/">Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-10-20_onlyattention/">Attention Is All You Need (Vaswani et al., ArXiv 2017)</a></li>
     
   </ul>
 </div>
@@ -323,13 +334,10 @@ This comes from analysis of a set of models trained with random variation in hyp
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2018-03-08_sql/"><span
-      aria-hidden="true">&larr;</span> Provenance for Natural Language Queries (Deutch et al., 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2018-04-16_lm_analysis/"><span
+      aria-hidden="true">&larr;</span> An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/">The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

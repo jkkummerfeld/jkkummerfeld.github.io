@@ -14,6 +14,61 @@
     
     <item>
       
+        <title>The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</title>
+      
+      <link>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
+      <pubDate>Tue, 08 May 2018 09:00:31 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
+      
+        <description>
+
+&lt;p&gt;We know that training a neural network involves optimising over a non-convex space, but using standard evaluation methods we see that our models usually end up doing reasonably well.
+This paper asks an important question - are those metrics measuring generalisability effectively?
+In particular, if we sample our test set from a slightly different distribution of data, do models still work well?&lt;/p&gt;
+
+&lt;p&gt;As a controlled set up they form a simple dataset as follows for each sentence:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go through the sentence left to right&lt;/li&gt;
+&lt;li&gt;For each word generate three words in the output, where the output words are randomly sampled from a small vocabulary that is unique to each input word&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is clearly learnable and it seems reasonable that a sequence-to-sequence neural model with attention should be able to learn it.
+Experiments show they do, getting close to 100% on a test set sampled the same way as the training set (input length 5-10, no symbol used twice).
+However, if the test set is slightly different, with sequences of length 11-15, then results vary from 0% to 98% depending on the random seed in training (other variations also lead to large variations).
+What this means is that sometimes the model is not learning to generalise.
+They also show that the models that do generalise can only do so in one way (e.g. remain effective when length varies, or remain effective when symbols are used more than once in the input).&lt;/p&gt;
+
+&lt;p&gt;A few takeaways:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Make sure your training and testing data are sampled from the distribution you are interested in&lt;/li&gt;
+&lt;li&gt;More study of training data order and weight initialisation is needed (these are the two factors impacted by the random seed)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Incidentally, I am a co-author on an ACL paper that points out a similar issue for mapping text questions to SQL queries.
+If we restrict the test set to be novel queries (i.e. the model has to generalise) performance falls through the floor.&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1805.01445&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@Article{Weber:2018:GenDeep,
+   author = {Noah Weber, Leena Shekhar, Niranjan Balasubramanian},
+    title = {The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models},
+  journal = {Workshop on New Forms of Generalization in Deep Learning and NLP (NAACL 2018)},
+     year = {2018},
+      url = {https://arxiv.org/abs/1805.01445},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</title>
       
       <link>http://www.jkk.name/post/2018-04-16_lm_analysis/</link>
