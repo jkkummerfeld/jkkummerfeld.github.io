@@ -5,8 +5,53 @@
     
     <url>
     
+      <loc>http://www.jkk.name/publication/acl18sql/</loc>
+      <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/publication/naacl18data/</loc>
+      <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/publication/naacl18summary/</loc>
+      <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/publication/naacl18embeddings/</loc>
+      <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</loc>
       <lastmod>2018-05-08T09:00:31-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/publication/lrec18amr/</loc>
+      <lastmod>2018-05-01T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -780,7 +825,7 @@
     <url>
     
       <loc>http://www.jkk.name/publication_types/1/</loc>
-      <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-07-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1139,7 +1184,7 @@
     <url>
     
       <loc>http://www.jkk.name/publication_types/</loc>
-      <lastmod>2017-09-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-07-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
