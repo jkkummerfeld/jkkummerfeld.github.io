@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/">
+  <link rel="canonical" href="http://www.jkk.name/post/2018-06-12_parseradaptation/">
 
   
 
-  <title>The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018) | Jonathan K. Kummerfeld</title>
+  <title>Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</h1>
+    <h1 itemprop="name">Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2018-05-08 09:00:31 -0400 EDT" itemprop="datePublished">
-      May 8, 2018
+    <time datetime="2018-06-12 20:33:00 -0400 EDT" itemprop="datePublished">
+      Jun 12, 2018
     </time>
   </span>
 
@@ -191,6 +191,20 @@
 
   
   
+  
+  <span class="article-categories">
+    <i class="fa fa-folder"></i>
+    
+    <a href="/categories/acl">acl</a
+    >, 
+    
+    <a href="/categories/domain-adaptation">domain-adaptation</a
+    >, 
+    
+    <a href="/categories/syntax">syntax</a
+    >
+    
+  </span>
   
   
 
@@ -201,15 +215,6 @@
     <i class="fa fa-tags"></i>
     
     <a href="/tags/paper">paper</a
-    >, 
-    
-    <a href="/tags/gen-deep">gen-deep</a
-    >, 
-    
-    <a href="/tags/analysis">analysis</a
-    >, 
-    
-    <a href="/tags/neural-network">neural-network</a
     >
     
   </span>
@@ -222,35 +227,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=The%20Fine%20Line%20between%20Linguistic%20Generalization%20and%20Failure%20in%20Seq2Seq-Attention%20Models%20%28Weber%20et%20al.%2c%202018%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f"
+         href="https://twitter.com/intent/tweet?text=Extending%20a%20Parser%20to%20Distant%20Domains%20Using%20a%20Few%20Dozen%20Partially%20Annotated%20Examples%20%28Vidur%20Joshi%20et%20al.%2c%202018%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-06-12_parseradaptation%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-06-12_parseradaptation%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f&amp;title=The%20Fine%20Line%20between%20Linguistic%20Generalization%20and%20Failure%20in%20Seq2Seq-Attention%20Models%20%28Weber%20et%20al.%2c%202018%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-06-12_parseradaptation%2f&amp;title=Extending%20a%20Parser%20to%20Distant%20Domains%20Using%20a%20Few%20Dozen%20Partially%20Annotated%20Examples%20%28Vidur%20Joshi%20et%20al.%2c%202018%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f&amp;title=The%20Fine%20Line%20between%20Linguistic%20Generalization%20and%20Failure%20in%20Seq2Seq-Attention%20Models%20%28Weber%20et%20al.%2c%202018%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-06-12_parseradaptation%2f&amp;title=Extending%20a%20Parser%20to%20Distant%20Domains%20Using%20a%20Few%20Dozen%20Partially%20Annotated%20Examples%20%28Vidur%20Joshi%20et%20al.%2c%202018%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=The%20Fine%20Line%20between%20Linguistic%20Generalization%20and%20Failure%20in%20Seq2Seq-Attention%20Models%20%28Weber%20et%20al.%2c%202018%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-05-08_seq2seqsensitivity%2f">
+         href="mailto:?subject=Extending%20a%20Parser%20to%20Distant%20Domains%20Using%20a%20Few%20Dozen%20Partially%20Annotated%20Examples%20%28Vidur%20Joshi%20et%20al.%2c%202018%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-06-12_parseradaptation%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -265,43 +270,40 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>We know that training a neural network involves optimising over a non-convex space, but using standard evaluation methods we see that our models usually end up doing reasonably well.
-This paper asks an important question - are those metrics measuring generalisability effectively?
-In particular, if we sample our test set from a slightly different distribution of data, do models still work well?</p>
+<p>Virtually all systems trained using data have trouble when applied to datasets that differ even slightly - even switching from Wall Street Journal text to New York Times text can hurt parsing performance slightly.
+Extensive work has explored how to adapt to new domains (including <a href="http://jkk.name/publication/acl10adapt/" target="_blank">one of my own</a>), but generally these approaches only made up a fraction of the gap in performance.</p>
 
-<p>As a controlled set up they form a simple dataset as follows for each sentence:</p>
-
-<ul>
-<li>Go through the sentence left to right</li>
-<li>For each word generate three words in the output, where the output words are randomly sampled from a small vocabulary that is unique to each input word</li>
-</ul>
-
-<p>This is clearly learnable and it seems reasonable that a sequence-to-sequence neural model with attention should be able to learn it.
-Experiments show they do, getting close to 100% on a test set sampled the same way as the training set (input length 5-10, no symbol used twice).
-However, if the test set is slightly different, with sequences of length 11-15, then results vary from 0% to 98% depending on the random seed in training (other variations also lead to large variations).
-What this means is that sometimes the model is not learning to generalise.
-They also show that the models that do generalise can only do so in one way (e.g. remain effective when length varies, or remain effective when symbols are used more than once in the input).</p>
-
-<p>A few takeaways:</p>
+<p>This paper shows two interesting new approaches to this issue:</p>
 
 <ul>
-<li>Make sure your training and testing data are sampled from the distribution you are interested in</li>
-<li>More study of training data order and weight initialisation is needed (these are the two factors impacted by the random seed)</li>
+<li>Use <a href="https://allennlp.org/elmo" target="_blank">ELMo</a>, a type of word representation trained on massive amounts of text.</li>
+<li>Train a span-based parser with partial annotations.</li>
 </ul>
 
-<p>Incidentally, I am a co-author on an ACL paper that points out a similar issue for mapping text questions to SQL queries.
-If we restrict the test set to be novel queries (i.e. the model has to generalise) performance falls through the floor.</p>
+<p>The first is straightforward, and further demonstrates the effectiveness of ELMo.
+To give a sense of how much this helps, the Charniak parser goes from 92 on the WSJ to 85 on the Brown corpus, while this model goes from 94 to 90.
+The second idea takes advantage of <a href="https://aclanthology.info/papers/P17-1076/p17-1076" target="_blank">a recent parsing model</a> with a simple approach:</p>
+
+<ol>
+<li>Independently assign a score to every span of a sentence, indicating whether it is part of the parse.</li>
+<li>Find the maximum scoring set of spans using a dynamic program.</li>
+</ol>
+
+<p>The structure of the scoring step allows for a convenient form of partial annotations.
+Simply label the tricky spans in a sentence (e.g. to indicate where a prepositional phrase attaches / does not attach).
+During training on partially annotated sentences, only the labeled spans are used to update the model.
+This gives dramatic gains across multiple datasets.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://arxiv.org/abs/1805.01445" target="_blank">Paper</a></p>
+<p><a href="https://arxiv.org/abs/1805.06556" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@Article{Weber:2018:GenDeep,
-   author = {Noah Weber, Leena Shekhar, Niranjan Balasubramanian},
-    title = {The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models},
-  journal = {Workshop on New Forms of Generalization in Deep Learning and NLP (NAACL 2018)},
-     year = {2018},
-      url = {https://arxiv.org/abs/1805.01445},
+<pre><code class="language-bibtex">@InProceedings{Joshi:2018:ACL,
+  author    = {Vidur Joshi, Matthew Peters, Mark Hopkins},
+  title     = {Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples},
+  booktitle = {ACL},
+  year      = {2018},
+  url       = {https://arxiv.org/abs/1805.06556},
 }
 </code></pre>
 
@@ -316,15 +318,15 @@ If we restrict the test set to be novel queries (i.e. the model has to generalis
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-12-05_explainingpredictions/">A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</a></li>
+    <li><a href="/post/2018-05-08_seq2seqsensitivity/">The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</a></li>
     
-    <li><a href="/post/2017-11-21_multiinputattention/">Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</a></li>
+    <li><a href="/post/2018-04-16_lm_analysis/">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</a></li>
     
-    <li><a href="/post/2017-11-01_mixtureofexperts/">Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</a></li>
+    <li><a href="/post/2018-03-08_sql/">Provenance for Natural Language Queries (Deutch et al., 2017)</a></li>
     
-    <li><a href="/post/2017-10-30_neuralsequence/">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
+    <li><a href="/post/2018-03-05_curriculum/">Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</a></li>
     
-    <li><a href="/post/2017-10-27_swishactivation/">Searching for Activation Functions (Ramachandran et al., 2017)</a></li>
+    <li><a href="/post/2018-01-31_sentencerepfromparaphrases/">Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations (Wieting et al., 2017)</a></li>
     
   </ul>
 </div>
@@ -334,13 +336,10 @@ If we restrict the test set to be novel queries (i.e. the model has to generalis
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2018-04-16_lm_analysis/"><span
-      aria-hidden="true">&larr;</span> An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/"><span
+      aria-hidden="true">&larr;</span> The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2018-06-12_parseradaptation/">Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

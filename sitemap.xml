@@ -5,8 +5,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/publication/acl18sql/</loc>
-      <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+      <loc>http://www.jkk.name/post/2018-06-12_parseradaptation/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
     </url>
     
   
@@ -33,6 +33,15 @@
     <url>
     
       <loc>http://www.jkk.name/publication/naacl18embeddings/</loc>
+      <lastmod>2018-06-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/publication/acl18sql/</loc>
       <lastmod>2018-06-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -825,7 +834,7 @@
     <url>
     
       <loc>http://www.jkk.name/publication_types/1/</loc>
-      <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -856,6 +865,16 @@
     
       <loc>http://www.jkk.name/tags/acl/</loc>
       <lastmod>2018-03-05T21:09:58-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/categories/acl/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -905,6 +924,7 @@
     <url>
     
       <loc>http://www.jkk.name/categories/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -985,6 +1005,16 @@
     
       <loc>http://www.jkk.name/tags/discourse/</loc>
       <lastmod>2017-11-17T18:40:20-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/categories/domain-adaptation/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1174,7 +1204,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2018-05-08T09:00:31-04:00</lastmod>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1184,7 +1214,7 @@
     <url>
     
       <loc>http://www.jkk.name/publication_types/</loc>
-      <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-06-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1275,6 +1305,16 @@
     
       <loc>http://www.jkk.name/tags/syntax/</loc>
       <lastmod>2017-11-16T17:24:59-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/categories/syntax/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
