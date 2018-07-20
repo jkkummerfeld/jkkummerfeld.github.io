@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://www.jkk.name/data/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      
+        <title>Text to SQL datasets</title>
+      
+      <link>http://www.jkk.name/data/text-to-sql/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/text-to-sql/</guid>
+      
+        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://github.com/jkkummerfeld/text2sql-data" target="_blank">https://github.com/jkkummerfeld/text2sql-data</a></description>
+      
+
+    </item>
     
     <item>
       
