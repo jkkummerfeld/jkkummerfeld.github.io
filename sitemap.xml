@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/software/neural-tagger/</loc>
+      <lastmod>2018-08-13T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/software/text2sql-baseline/</loc>
       <lastmod>2018-07-12T00:00:00+00:00</lastmod>
     </url>
@@ -1221,6 +1230,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/neural-networks/</loc>
+      <lastmod>2018-08-13T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/paper/</loc>
       <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
@@ -1292,7 +1311,7 @@
     <url>
     
       <loc>http://www.jkk.name/software/</loc>
-      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+      <lastmod>2018-08-13T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

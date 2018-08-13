@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Aug 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://www.jkk.name/software/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      
+        <title>Neural POS tagging</title>
+      
+      <link>http://www.jkk.name/software/neural-tagger/</link>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/neural-tagger/</guid>
+      
+        <description>Implementations of a POS tagger in DyNet, PyTorch, and Tensorflow, visualised to show the overall picture and make comparisons easy. <a href="https://jkk.name/neural-tagger-tutorial/" target="_blank">https://jkk.name/neural-tagger-tutorial/</a></description>
+      
+
+    </item>
     
     <item>
       

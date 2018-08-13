@@ -14,6 +14,20 @@
     
     <item>
       
+        <title>Neural POS tagging</title>
+      
+      <link>http://www.jkk.name/software/neural-tagger/</link>
+      <pubDate>Mon, 13 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/neural-tagger/</guid>
+      
+        <description>Implementations of a POS tagger in DyNet, PyTorch, and Tensorflow, visualised to show the overall picture and make comparisons easy. <a href="https://jkk.name/neural-tagger-tutorial/" target="_blank">https://jkk.name/neural-tagger-tutorial/</a></description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Text to SQL Baseline</title>
       
       <link>http://www.jkk.name/software/text2sql-baseline/</link>
@@ -118,29 +132,6 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
     <item>
       
       <title>
-        "Factors Influencing the Surprising Instability of Word Embeddings",
-        
-          Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea
-        
-        (NAACL,
-        2018)
-      </title>
-      
-      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
-      
-        <description>
-          Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "Effective Crowdsourcing for a New Type of Summarization Task",
         
           Youxuan Jiang, Catherine Finegan-Dollak, Jonathan K. Kummerfeld, Walter Lasecki
@@ -179,6 +170,29 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
       
         <description>
           Industrial dialogue systems such as Apple Siri and Google Assistant require large scale diverse training data to enable their sophisticated conversation capabilities. Crowdsourcing is a scalable and inexpensive data collection method, but collecting high quality data efficiently requires thoughtful orchestration of crowdsourcing jobs. Prior study of data collection process has focused on tasks with limited scope and performed intrinsic data analysis, which may not be indicative of impact on trained model performance. In this paper, we present a study of crowdsourcing methods for a user intent classification task in one of our deployed dialogue systems. Our task requires classification over 47 possible user intents and contains many intent pairs with subtle differences. We consider different crowdsourcing job types and job prompts, quantitatively analyzing the quality of collected data and downstream model performance on a test set of real user queries from production logs. Our observations provide insight into how design decisions impact crowdsourced data quality, with clear recommendations for future data collection for dialogue systems.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "Factors Influencing the Surprising Instability of Word Embeddings",
+        
+          Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea
+        
+        (NAACL,
+        2018)
+      </title>
+      
+      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
+      
+        <description>
+          Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
         </description>
       
 
