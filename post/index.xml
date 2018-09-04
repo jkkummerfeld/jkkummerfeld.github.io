@@ -14,6 +14,53 @@
     
     <item>
       
+        <title>Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</title>
+      
+      <link>http://www.jkk.name/post/2018-09-04_featureengineering/</link>
+      <pubDate>Tue, 04 Sep 2018 10:37:23 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2018-09-04_featureengineering/</guid>
+      
+        <description>
+
+&lt;p&gt;A common argument in favour of neural networks is that they do not require &amp;lsquo;feature engineering&amp;rsquo;, manually defining functions that produce useful representations of the input data (e.g. a function that checks if a word is in a list of cities and returns 1 or 0).
+This paper argues that there is in fact still value in such functions.&lt;/p&gt;
+
+&lt;p&gt;The task is named entity recognition and the model is a CRF with a bidirectional LSTM using character and word embeddings.
+The functions in this case are (1) part of speech tags, (2) word shapes, and (3) gazetteers.
+Importantly, as well as receiving these as inputs, the model has to predict them as outputs (in both cases using predictions, not gold values).
+The improvement on the test set is substantial, ~0.8 F1.
+Ablation indicates that POS tags and word shape are particularly important, and having both the input and output is important.
+Interestingly, the shift on the development set is more marginal, ~0.3 F1, and the ablation doesn&amp;rsquo;t show as clear trends.&lt;/p&gt;
+
+&lt;p&gt;Overall, my takeaway is that these kinds of features (which are not very hard to define) are worth the effort.
+However, there are a few more values I would have liked to see:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Multi-task learning (they kind of get at this with one ablation, but it is on non-gold output)&lt;/li&gt;
+&lt;li&gt;Cross-validation results (given the difference between dev and test)&lt;/li&gt;
+&lt;li&gt;ELMo (the paper argues that it is orthogonal, which is reasonable, but I&amp;rsquo;m still curious)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1808.09075&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Wu:2018:EMNLP,
+  author    = {Minghao Wu, Fei Liu and Trevor Cohn},
+  title     = {Evaluating the Utility of Hand-crafted Features in Sequence Labelling},
+  booktitle = {EMNLP},
+  year      = {2018},
+  url       = {https://arxiv.org/abs/1808.09075},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</title>
       
       <link>http://www.jkk.name/post/2018-06-12_parseradaptation/</link>
