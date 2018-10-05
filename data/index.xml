@@ -21,7 +21,7 @@
       
       <guid>http://www.jkk.name/data/text-to-sql/</guid>
       
-        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://github.com/jkkummerfeld/text2sql-data" target="_blank">https://github.com/jkkummerfeld/text2sql-data</a></description>
+        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://jkk.name/text2sql-data" target="_blank">https://jkk.name/text2sql-data</a></description>
       
 
     </item>
@@ -63,7 +63,7 @@
       
       <guid>http://www.jkk.name/data/shp-ptb/</guid>
       
-        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion</a></description>
+        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://jkk.name/1ec-graph-parser/format-conversion" target="_blank">https://jkk.name/1ec-graph-parser/format-conversion</a></description>
       
 
     </item>

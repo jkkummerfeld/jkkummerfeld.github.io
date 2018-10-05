@@ -82,7 +82,7 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
       
       <guid>http://www.jkk.name/software/text2sql-baseline/</guid>
       
-        <description>A simple LSTM-based model that uses templates and slot-filing to map questions to SQL queries. <a href="https://github.com/jkkummerfeld/text2sql-data/tree/master/systems/baseline-template" target="_blank">https://github.com/jkkummerfeld/text2sql-data/tree/master/systems/baseline-template</a></description>
+        <description>A simple LSTM-based model that uses templates and slot-filing to map questions to SQL queries. <a href="https://jkk.name/text2sql-data/systems/baseline-template/" target="_blank">https://jkk.name/text2sql-data/systems/baseline-template/</a></description>
       
 
     </item>
@@ -96,7 +96,7 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
       
       <guid>http://www.jkk.name/data/text-to-sql/</guid>
       
-        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://github.com/jkkummerfeld/text2sql-data" target="_blank">https://github.com/jkkummerfeld/text2sql-data</a></description>
+        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://jkk.name/text2sql-data" target="_blank">https://jkk.name/text2sql-data</a></description>
       
 
     </item>
@@ -3052,7 +3052,7 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
       
       <guid>http://www.jkk.name/data/shp-ptb/</guid>
       
-        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser/tree/master/format-conversion</a></description>
+        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://jkk.name/1ec-graph-parser/format-conversion" target="_blank">https://jkk.name/1ec-graph-parser/format-conversion</a></description>
       
 
     </item>
@@ -3081,7 +3081,7 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
       
       <guid>http://www.jkk.name/software/1ec-parsing/</guid>
       
-        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://github.com/jkkummerfeld/1ec-graph-parser" target="_blank">https://github.com/jkkummerfeld/1ec-graph-parser</a></description>
+        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://jkk.name/1ec-graph-parser" target="_blank">https://jkk.name/1ec-graph-parser</a></description>
       
 
     </item>
@@ -3149,7 +3149,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       
       <guid>http://www.jkk.name/software/coreference-analysis/</guid>
       
-        <description>A tool for classifying errors in coreference resolution. <a href="https://github.com/jkkummerfeld/berkeley-coreference-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-coreference-analyser</a></description>
+        <description>A tool for classifying errors in coreference resolution. <a href="https://jkk.name/berkeley-coreference-analyser" target="_blank">https://jkk.name/berkeley-coreference-analyser</a></description>
       
 
     </item>
@@ -3232,7 +3232,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       
       <guid>http://www.jkk.name/software/ccg2pst/</guid>
       
-        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://github.com/jkkummerfeld/berkeley-ccg2pst" target="_blank">https://github.com/jkkummerfeld/berkeley-ccg2pst</a></description>
+        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://jkk.name/berkeley-ccg2pst" target="_blank">https://jkk.name/berkeley-ccg2pst</a></description>
       
 
     </item>
@@ -3292,7 +3292,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       
       <guid>http://www.jkk.name/software/parsing-analysis/</guid>
       
-        <description>A tool for classifying mistakes in the output of parsers. <a href="https://github.com/jkkummerfeld/berkeley-parser-analyser" target="_blank">https://github.com/jkkummerfeld/berkeley-parser-analyser</a></description>
+        <description>A tool for classifying mistakes in the output of parsers. <a href="https://jkk.name/berkeley-parser-analyser" target="_blank">https://jkk.name/berkeley-parser-analyser</a></description>
       
 
     </item>
