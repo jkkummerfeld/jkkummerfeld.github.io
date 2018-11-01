@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/publication/arxiv18disentangle/</loc>
+      <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2018-09-04_featureengineering/</loc>
       <lastmod>2018-09-04T10:37:23-04:00</lastmod>
     </url>
@@ -880,7 +889,7 @@
     <url>
     
       <loc>http://www.jkk.name/publication_types/2/</loc>
-      <lastmod>2013-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-10-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -899,8 +908,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/categories/acl/</loc>
-      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+      <loc>http://www.jkk.name/tags/acl/</loc>
+      <lastmod>2018-03-05T21:09:58-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -909,8 +918,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/acl/</loc>
-      <lastmod>2018-03-05T21:09:58-05:00</lastmod>
+      <loc>http://www.jkk.name/categories/acl/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1349,8 +1358,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/categories/syntax/</loc>
-      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+      <loc>http://www.jkk.name/tags/syntax/</loc>
+      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1359,8 +1368,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/syntax/</loc>
-      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
+      <loc>http://www.jkk.name/categories/syntax/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
