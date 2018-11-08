@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2018-09-04_featureengineering/">
+  <link rel="canonical" href="http://www.jkk.name/post/2018-11-08_corefdata/">
 
   
 
-  <title>Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018) | Jonathan K. Kummerfeld</title>
+  <title>PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018) | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</h1>
+    <h1 itemprop="name">PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2018-09-04 10:37:23 -0400 EDT" itemprop="datePublished">
-      Sep 4, 2018
+    <time datetime="2018-11-08 11:29:32 -0500 EST" itemprop="datePublished">
+      Nov 8, 2018
     </time>
   </span>
 
@@ -201,6 +201,12 @@
     <i class="fa fa-tags"></i>
     
     <a href="/tags/paper">paper</a
+    >, 
+    
+    <a href="/tags/data">data</a
+    >, 
+    
+    <a href="/tags/coreference">coreference</a
     >
     
   </span>
@@ -213,35 +219,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Evaluating%20the%20Utility%20of%20Hand-crafted%20Features%20in%20Sequence%20Labelling%20%28Minghao%20Wu%20et%20al.%2c%202018%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-09-04_featureengineering%2f"
+         href="https://twitter.com/intent/tweet?text=PreCo%3a%20A%20Large-scale%20Dataset%20in%20Preschool%20Vocabulary%20for%20Coreference%20Resolution%20%28Chen%20et%20al.%2c%202018%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-09-04_featureengineering%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-09-04_featureengineering%2f&amp;title=Evaluating%20the%20Utility%20of%20Hand-crafted%20Features%20in%20Sequence%20Labelling%20%28Minghao%20Wu%20et%20al.%2c%202018%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f&amp;title=PreCo%3a%20A%20Large-scale%20Dataset%20in%20Preschool%20Vocabulary%20for%20Coreference%20Resolution%20%28Chen%20et%20al.%2c%202018%29"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-09-04_featureengineering%2f&amp;title=Evaluating%20the%20Utility%20of%20Hand-crafted%20Features%20in%20Sequence%20Labelling%20%28Minghao%20Wu%20et%20al.%2c%202018%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f&amp;title=PreCo%3a%20A%20Large-scale%20Dataset%20in%20Preschool%20Vocabulary%20for%20Coreference%20Resolution%20%28Chen%20et%20al.%2c%202018%29"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Evaluating%20the%20Utility%20of%20Hand-crafted%20Features%20in%20Sequence%20Labelling%20%28Minghao%20Wu%20et%20al.%2c%202018%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-09-04_featureengineering%2f">
+         href="mailto:?subject=PreCo%3a%20A%20Large-scale%20Dataset%20in%20Preschool%20Vocabulary%20for%20Coreference%20Resolution%20%28Chen%20et%20al.%2c%202018%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -256,35 +262,38 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<p>A common argument in favour of neural networks is that they do not require &lsquo;feature engineering&rsquo;, manually defining functions that produce useful representations of the input data (e.g. a function that checks if a word is in a list of cities and returns 1 or 0).
-This paper argues that there is in fact still value in such functions.</p>
-
-<p>The task is named entity recognition and the model is a CRF with a bidirectional LSTM using character and word embeddings.
-The functions in this case are (1) part of speech tags, (2) word shapes, and (3) gazetteers.
-Importantly, as well as receiving these as inputs, the model has to predict them as outputs (in both cases using predictions, not gold values).
-The improvement on the test set is substantial, ~0.8 F1.
-Ablation indicates that POS tags and word shape are particularly important, and having both the input and output is important.
-Interestingly, the shift on the development set is more marginal, ~0.3 F1, and the ablation doesn&rsquo;t show as clear trends.</p>
-
-<p>Overall, my takeaway is that these kinds of features (which are not very hard to define) are worth the effort.
-However, there are a few more values I would have liked to see:</p>
+<p>The OntoNotes dataset, which is the focus of almost all coreference resolution research, had several compromises in its development (as is the case for any dataset).
+Some of these are discussed in my <a href="http://jkk.name/publication/conll11coreference/" target="_blank">CoNLL Shared Task submission paper</a>, the biggest being the choice to not annotate mentions that are not coreferent.
+This paper describes a new dataset that has a different set of compromises, specifically:</p>
 
 <ul>
-<li>Multi-task learning (they kind of get at this with one ablation, but it is on non-gold output)</li>
-<li>Cross-validation results (given the difference between dev and test)</li>
-<li>ELMo (the paper argues that it is orthogonal, which is reasonable, but I&rsquo;m still curious)</li>
+<li>A broader definition of coreference (e.g. appositives are coreferent)</li>
+<li>All mentions annotated</li>
+<li>Different annotation methods for different subsets of the data (training data is double annotated and then adjudicated, while the development and test data is triple annotated, all pairs of annotations are adjudicated, then the outcomes are merged by voting)</li>
+<li>A variety of genres, but generally simpler language</li>
 </ul>
+
+<p>The dataset is 10x the size of OntoNotes and freely available, which is fantastic.
+The source text is 2/3rds the RACE dataset (English reading comprehension exams from China), and 1/3rd scraped websites.
+Measurements of annotator agreement suggest the annotations are not as consistent as OntoNotes, but still good enough to be a useful resource.
+I do disagree with one aspect of the paper&rsquo;s analysis - the results show a substantial gain in performance when providing gold mentions, suggesting to me that it remains an important challenge in coreference resolution.
+I&rsquo;m also curious whether my <a href="http://jkk.name/publication/emnlp13analysis/" target="_blank">coreference analysis tool</a> would find different patterns in errors on this dataset compared to OntoNotes.</p>
 
 <h2 id="citation">Citation</h2>
 
-<p><a href="https://arxiv.org/abs/1808.09075" target="_blank">Paper</a></p>
+<p><a href="http://aclweb.org/anthology/D18-1016" target="_blank">Paper</a></p>
 
-<pre><code class="language-bibtex">@InProceedings{Wu:2018:EMNLP,
-  author    = {Minghao Wu, Fei Liu and Trevor Cohn},
-  title     = {Evaluating the Utility of Hand-crafted Features in Sequence Labelling},
-  booktitle = {EMNLP},
+<p><a href="https://preschool-lab.github.io/PreCo/" target="_blank">Data</a></p>
+
+<pre><code class="language-bibtex">@InProceedings{Chen:EMNLP:2018,
+  author    = {Chen, Hong and Fan, Zhenhua and Lu, Hao and Yuille, Alan and Rong, Shu},
+  title     = {PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
   year      = {2018},
-  url       = {https://arxiv.org/abs/1808.09075},
+  publisher = {Association for Computational Linguistics},
+  pages     = {172--181},
+  location  = {Brussels, Belgium},
+  url       = {http://aclweb.org/anthology/D18-1016},
 }
 </code></pre>
 
@@ -299,15 +308,15 @@ However, there are a few more values I would have liked to see:</p>
   <h3>Related</h3>
   <ul>
     
+    <li><a href="/post/2017-12-06_coreferencearguments/">Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</a></li>
+    
+    <li><a href="/post/2017-11-09_framesdataset/">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
+    
+    <li><a href="/post/2018-09-04_featureengineering/">Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</a></li>
+    
     <li><a href="/post/2018-06-12_parseradaptation/">Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</a></li>
     
     <li><a href="/post/2018-05-08_seq2seqsensitivity/">The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</a></li>
-    
-    <li><a href="/post/2018-04-16_lm_analysis/">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</a></li>
-    
-    <li><a href="/post/2018-03-08_sql/">Provenance for Natural Language Queries (Deutch et al., 2017)</a></li>
-    
-    <li><a href="/post/2018-03-05_curriculum/">Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</a></li>
     
   </ul>
 </div>
@@ -317,13 +326,10 @@ However, there are a few more values I would have liked to see:</p>
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2018-06-12_parseradaptation/"><span
-      aria-hidden="true">&larr;</span> Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2018-09-04_featureengineering/"><span
+      aria-hidden="true">&larr;</span> Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2018-11-08_corefdata/">PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
