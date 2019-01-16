@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>http://www.jkk.name/publication/dstc19task1/</loc>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/publication/ws18dstc/</loc>
+      <lastmod>2018-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2018-11-08_corefdata/</loc>
       <lastmod>2018-11-08T11:29:32-05:00</lastmod>
     </url>
@@ -888,7 +906,7 @@
     <url>
     
       <loc>http://www.jkk.name/publication_types/1/</loc>
-      <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -917,8 +935,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/acl/</loc>
-      <lastmod>2018-03-05T21:09:58-05:00</lastmod>
+      <loc>http://www.jkk.name/categories/acl/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -927,8 +945,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/categories/acl/</loc>
-      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+      <loc>http://www.jkk.name/tags/acl/</loc>
+      <lastmod>2018-03-05T21:09:58-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1278,7 +1296,7 @@
     <url>
     
       <loc>http://www.jkk.name/publication_types/</loc>
-      <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+      <lastmod>2019-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1367,8 +1385,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/syntax/</loc>
-      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
+      <loc>http://www.jkk.name/categories/syntax/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1377,8 +1395,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/categories/syntax/</loc>
-      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+      <loc>http://www.jkk.name/tags/syntax/</loc>
+      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
       <priority>0</priority>
     </url>
     
