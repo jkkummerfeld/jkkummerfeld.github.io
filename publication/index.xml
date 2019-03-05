@@ -17,7 +17,7 @@
       <title>
         "Outlier Detection for Improved Data Quality and Diversity in Dialog Systems",
         
-          Stefan Larson, Anish Mahendran, Andrew Lee, Jonathan K. Kummerfeld, Parker Hill, Michael Laurenzano, Johann Hauswald, Lingjia Tang and Jason Mars
+          Stefan Larson, Anish Mahendran, Andrew Lee, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Parker Hill, Michael Laurenzano, Johann Hauswald, Lingjia Tang and Jason Mars
         
         (Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers),
         2019)
@@ -40,7 +40,7 @@
       <title>
         "Look Who&#39;s Talking: Inferring Speaker Attributes from Personal Longitudinal Dialog",
         
-          Charles Welch, Veronica Perez-Rosas, Jonathan Kummerfeld, and Rada Mihalcea
+          Charles Welch, Veronica Perez-Rosas, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, and Rada Mihalcea
         
         (CICLing,
         2019)
@@ -63,7 +63,7 @@
       <title>
         "DSTC7 Task 1: Noetic End-to-End Response Selection",
         
-          Chulaka Gunasekara, Jonathan K. Kummerfeld, Lazaros Polymenakos, and Walter S. Lasecki
+          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, and Walter S. Lasecki
         
         (DSTC,
         2019)
@@ -86,7 +86,7 @@
       <title>
         "Dialog System Technology Challenge 7",
         
-          Koichiro Yoshino, Chiori Hori, Julien Perez, Luis Fernando D&#39;Haro, Lazaros Polymenakos, Chulaka Gunasekara, Walter S. Lasecki, Jonathan K. Kummerfeld, Michel Galley, Chris Brockett, Jianfeng Gao, Bill Dolan, Xiang Gao, Huda Alamari, Tim K. Marks, Devi Parikh and Dhruv Batra
+          Koichiro Yoshino, Chiori Hori, Julien Perez, Luis Fernando D&#39;Haro, Lazaros Polymenakos, Chulaka Gunasekara, Walter S. Lasecki, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Michel Galley, Chris Brockett, Jianfeng Gao, Bill Dolan, Xiang Gao, Huda Alamari, Tim K. Marks, Devi Parikh and Dhruv Batra
         
         (ConvAI Workshop,
         2018)
@@ -109,7 +109,7 @@
       <title>
         "Analyzing Assumptions in Conversation Disentanglement Research Through the Lens of a New Dataset and Model",
         
-          Jonathan K. Kummerfeld, Sai R. Gouravajhala, Joseph Peper, Vignesh Athreya, Chulaka Gunasekara, Jatin Ganhotra, Siva Sankalp Patel, Lazaros Polymenakos, Walter S. Lasecki
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Sai R. Gouravajhala, Joseph Peper, Vignesh Athreya, Chulaka Gunasekara, Jatin Ganhotra, Siva Sankalp Patel, Lazaros Polymenakos, Walter S. Lasecki
         
         (ArXiv e-prints,
         2018)
@@ -132,7 +132,7 @@
       <title>
         "Improving Text-to-SQL Evaluation Methodology",
         
-          Catherine Finegan-Dollak\*, Jonathan K. Kummerfeld\*, Li Zhang, Karthik Ramanathan, Sesh Sadasivam, Rui Zhang, Dragomir Radev
+          Catherine Finegan-Dollak\*, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld\*&lt;/span&gt;, Li Zhang, Karthik Ramanathan, Sesh Sadasivam, Rui Zhang, Dragomir Radev
         
         (ACL,
         2018)
@@ -155,7 +155,7 @@
       <title>
         "Factors Influencing the Surprising Instability of Word Embeddings",
         
-          Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea
+          Laura Wendlandt, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
         
         (NAACL,
         2018)
@@ -178,7 +178,7 @@
       <title>
         "Data Collection for Dialogue System: A Startup Perspective",
         
-          Yiping Kang, Yunqi Zhang, Jonathan K. Kummerfeld, Parker Hill, Johann Hauswald, Michael A. Laurenzano, Lingjia Tang, Jason Mars
+          Yiping Kang, Yunqi Zhang, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Parker Hill, Johann Hauswald, Michael A. Laurenzano, Lingjia Tang, Jason Mars
         
         (NAACL (industry),
         2018)
@@ -201,7 +201,7 @@
       <title>
         "Effective Crowdsourcing for a New Type of Summarization Task",
         
-          Youxuan Jiang, Catherine Finegan-Dollak, Jonathan K. Kummerfeld, Walter Lasecki
+          Youxuan Jiang, Catherine Finegan-Dollak, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter Lasecki
         
         (NAACL (short),
         2018)
@@ -224,7 +224,7 @@
       <title>
         "World Knowledge for Abstract Meaning Representation Parsing",
         
-          Charles Welch, Jonathan K. Kummerfeld, Song Feng, Rada Mihalcea
+          Charles Welch, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Song Feng, Rada Mihalcea
         
         (LREC,
         2018)
@@ -247,7 +247,7 @@
       <title>
         "Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation",
         
-          Greg Durrett, Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, Rebecca S. Portnoff, Sadia Afroz, Damon McCoy, Kirill Levchenko, Vern Paxson
+          Greg Durrett, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Taylor Berg-Kirkpatrick, Rebecca S. Portnoff, Sadia Afroz, Damon McCoy, Kirill Levchenko, Vern Paxson
         
         (EMNLP,
         2017)
@@ -270,7 +270,7 @@
       <title>
         "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
         
-          Youxuan Jiang, Jonathan K. Kummerfeld, Walter S. Lasecki
+          Youxuan Jiang, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter S. Lasecki
         
         (ACL (short),
         2017)
@@ -293,7 +293,7 @@
       <title>
         "Tools for Automated Analysis of Cybercriminal Markets",
         
-          Rebecca S. Portnoff, Sadia Afroz, Greg Durrett, Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, Damon McCoy, Kirill Levchenko, Vern Paxson
+          Rebecca S. Portnoff, Sadia Afroz, Greg Durrett, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Taylor Berg-Kirkpatrick, Damon McCoy, Kirill Levchenko, Vern Paxson
         
         (WWW,
         2017)
@@ -316,7 +316,7 @@
       <title>
         "Parsing with Traces: An O($n^4$) Algorithm and a Structural Representation",
         
-          Jonathan K. Kummerfeld, Dan Klein
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Dan Klein
         
         (TACL,
         2017)
@@ -339,7 +339,7 @@
       <title>
         "Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output",
         
-          Jonathan K. Kummerfeld
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;
         
         (EECS Department, University of California, Berkeley,
         2016)
@@ -370,7 +370,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "An Empirical Analysis of Optimization for Max-Margin NLP",
         
-          Jonathan K. Kummerfeld, Taylor Berg-Kirkpatrick, Dan Klein
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Taylor Berg-Kirkpatrick, Dan Klein
         
         (EMNLP,
         2015)
@@ -393,7 +393,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "Error-Driven Analysis of Challenges in Coreference Resolution",
         
-          Jonathan K. Kummerfeld, Dan Klein
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Dan Klein
         
         (EMNLP,
         2013)
@@ -416,7 +416,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "An Empirical Examination of Challenges in Chinese Parsing",
         
-          Jonathan K. Kummerfeld, Daniel Tse, James R. Curran, Dan Klein
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Daniel Tse, James R. Curran, Dan Klein
         
         (ACL (short),
         2013)
@@ -439,7 +439,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "High-velocity Clouds in the Galactic All Sky Survey. I. Catalog",
         
-          Vanessa A. Moss, Naomi M. McClure-Griffiths, Tara Murphy, D. J. Pisano, Jonathan K. Kummerfeld, James R. Curran
+          Vanessa A. Moss, Naomi M. McClure-Griffiths, Tara Murphy, D. J. Pisano, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, James R. Curran
         
         (The Astrophysical Journal Supplement Series,
         2013)
@@ -462,7 +462,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output",
         
-          Jonathan K. Kummerfeld, David Hall, James R. Curran, Dan Klein
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, David Hall, James R. Curran, Dan Klein
         
         (EMNLP,
         2012)
@@ -485,7 +485,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "Robust Conversion of CCG Derivations to Phrase Structure Trees",
         
-          Jonathan K. Kummerfeld, Dan Klein, James R. Curran
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Dan Klein, James R. Curran
         
         (ACL (short),
         2012)
@@ -508,7 +508,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "Mention Detection: Heuristics for the OntoNotes annotations",
         
-          Jonathan K. Kummerfeld, Mohit Bansal, David Burkett, Dan Klein
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Mohit Bansal, David Burkett, Dan Klein
         
         (CoNLL Shared Task,
         2011)
@@ -531,7 +531,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "Spatiotemporal Hierarchy of Relaxation Events, Dynamical Heterogeneities, and Structural Reorganization in a Supercooled Liquid",
         
-          Raphael Candelier, Asaph Widmer-Cooper, Jonathan K. Kummerfeld, Olivier Dauchot, Giulio Biroli, Peter Harrowell, David R. Reichman
+          Raphael Candelier, Asaph Widmer-Cooper, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Olivier Dauchot, Giulio Biroli, Peter Harrowell, David R. Reichman
         
         (Physical Review Letters,
         2010)
@@ -554,7 +554,7 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
       <title>
         "Morphological Analysis Can Improve a CCG Parser for English",
         
-          Matthew Honnibal, Jonathan K. Kummerfeld, James R. Curran
+          Matthew Honnibal, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, James R. Curran
         
         (CoLing,
         2010)
@@ -579,7 +579,7 @@ We use morphological analysis to split verb inflectional suffixes into separate 
       <title>
         "Faster Parsing by Supertagger Adaptation",
         
-          Jonathan K. Kummerfeld, Jessika Roesner, Tim Dawborn, James Haggerty, James R. Curran, Stephen Clark
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Jessika Roesner, Tim Dawborn, James Haggerty, James R. Curran, Stephen Clark
         
         (ACL,
         2010)
@@ -602,7 +602,7 @@ We use morphological analysis to split verb inflectional suffixes into separate 
       <title>
         "Faster parsing and supertagging model estimation",
         
-          Jonathan K. Kummerfeld, Jessika Roesner, James R. Curran
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Jessika Roesner, James R. Curran
         
         (ALTA,
         2009)
@@ -627,7 +627,7 @@ We demonstrate faster methods for training a supertagger using hundreds of milli
       <title>
         "Adaptive Supertagging for Faster Parsing",
         
-          Jonathan K. Kummerfeld
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;
         
         (The University of Sydney,
         2009)
@@ -658,7 +658,7 @@ I have constructed models that process newspaper text 86% faster than previously
       <title>
         "Large-Scale Syntactic Processing: Parsing the Web",
         
-          Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, Jonathan Kummerfeld, Tim Dawborn
+          Stephen Clark, Ann Copestake, James R. Curran, Yue Zhang, Aurelie Herbelot, James Haggerty, Byung-Gyu Ahn, Curt Van Wyk, Jessika Roesner, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Tim Dawborn
         
         (Johns Hopkins University,
         2009)
@@ -685,7 +685,7 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
       <title>
         "Classification of Verb Particle Constructions with the Google Web1T Corpus",
         
-          Jonathan K. Kummerfeld, James R. Curran
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, James R. Curran
         
         (ALTA,
         2008)
@@ -708,7 +708,7 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
       <title>
         "The densest packing of AB binary hard-sphere homogeneous compounds across all size ratios",
         
-          Jonathan K Kummerfeld, Toby S Hudson, Peter Harrowell
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Toby S Hudson, Peter Harrowell
         
         (The Journal of Physical Chemistry B,
         2008)
