@@ -15,9 +15,55 @@
     <item>
       
       <title>
+        "Outlier Detection for Improved Data Quality and Diversity in Dialog Systems",
+        
+          Stefan Larson, Anish Mahendran, Andrew Lee, Jonathan K. Kummerfeld, Parker Hill, Michael Laurenzano, Johann Hauswald, Lingjia Tang and Jason Mars
+        
+        (Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers),
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/naacl19outliers/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/naacl19outliers/</guid>
+      
+        <description>
+          
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "Look Who&#39;s Talking: Inferring Speaker Attributes from Personal Longitudinal Dialog",
+        
+          Charles Welch, Veronica Perez-Rosas, Jonathan Kummerfeld, and Rada Mihalcea
+        
+        (CICLing,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/cicling19personal/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/cicling19personal/</guid>
+      
+        <description>
+          
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "DSTC7 Task 1: Noetic End-to-End Response Selection",
         
-          Jonathan K. Kummerfeld  Lazaros Polymenakos  Chulaka Gunasekara, Walter S. Lasecki
+          Chulaka Gunasekara, Jonathan K. Kummerfeld, Lazaros Polymenakos, and Walter S. Lasecki
         
         (DSTC,
         2019)
@@ -40,7 +86,7 @@
       <title>
         "Dialog System Technology Challenge 7",
         
-          Chiori Hori  Julien Perez  Luis Fernando D’Haro  Lazaros Polymenakos  Chulaka Gunasekara  Walter S. Lasecki  Jonathan K. Kummerfeld  Michel Galley  Chris Brockett  Jianfeng Gao  Bill Dolan  Xiang Gao  Huda Alamari  Tim K. Marks  Devi Parikh Koichiro Yoshino, Dhruv Batra
+          Koichiro Yoshino, Chiori Hori, Julien Perez, Luis Fernando D&#39;Haro, Lazaros Polymenakos, Chulaka Gunasekara, Walter S. Lasecki, Jonathan K. Kummerfeld, Michel Galley, Chris Brockett, Jianfeng Gao, Bill Dolan, Xiang Gao, Huda Alamari, Tim K. Marks, Devi Parikh and Dhruv Batra
         
         (ConvAI Workshop,
         2018)
@@ -298,21 +344,21 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
     <item>
       
       <title>
-        "Effective Crowdsourcing for a New Type of Summarization Task",
+        "Factors Influencing the Surprising Instability of Word Embeddings",
         
-          Youxuan Jiang, Catherine Finegan-Dollak, Jonathan K. Kummerfeld, Walter Lasecki
+          Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea
         
-        (NAACL (short),
+        (NAACL,
         2018)
       </title>
       
-      <link>http://www.jkk.name/publication/naacl18summary/</link>
+      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/naacl18summary/</guid>
+      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
       
         <description>
-          Most summarization research focuses on summarizing the entire given text, but in practice readers are often interested in only one aspect of the document or conversation. We propose &#39;targeted summarization&#39; as an umbrella category for summarization tasks that intentionally consider only parts of the input data. This covers query-based summarization, update summarization, and a new task we propose where the goal is to summarize a particular aspect of a document. However, collecting data for this new task is hard because directly asking annotators (e.g., crowd workers) to write summaries leads to data with low accuracy when there are a large number of facts to include.  We introduce a novel crowdsourcing workflow, Pin-Refine, that allows us to collect highquality summaries for our task, a necessary step for the development of automatic systems.
+          Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
         </description>
       
 
@@ -344,21 +390,21 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
     <item>
       
       <title>
-        "Factors Influencing the Surprising Instability of Word Embeddings",
+        "Effective Crowdsourcing for a New Type of Summarization Task",
         
-          Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea
+          Youxuan Jiang, Catherine Finegan-Dollak, Jonathan K. Kummerfeld, Walter Lasecki
         
-        (NAACL,
+        (NAACL (short),
         2018)
       </title>
       
-      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
+      <link>http://www.jkk.name/publication/naacl18summary/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
+      <guid>http://www.jkk.name/publication/naacl18summary/</guid>
       
         <description>
-          Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
+          Most summarization research focuses on summarizing the entire given text, but in practice readers are often interested in only one aspect of the document or conversation. We propose &#39;targeted summarization&#39; as an umbrella category for summarization tasks that intentionally consider only parts of the input data. This covers query-based summarization, update summarization, and a new task we propose where the goal is to summarize a particular aspect of a document. However, collecting data for this new task is hard because directly asking annotators (e.g., crowd workers) to write summaries leads to data with low accuracy when there are a large number of facts to include.  We introduce a novel crowdsourcing workflow, Pin-Refine, that allows us to collect highquality summaries for our task, a necessary step for the development of automatic systems.
         </description>
       
 
@@ -3044,20 +3090,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>IE/NER from Cybercriminal Forums</title>
-      
-      <link>http://www.jkk.name/data/cybercrime-forums/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
-      
-        <description>Forum posts with annotations of products. <a href="https://evidencebasedsecurity.org/forums/#data" target="_blank">https://evidencebasedsecurity.org/forums/#data</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation",
         
@@ -3075,6 +3107,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           One weakness of machine-learned NLP models is that they typically perform poorly on out-of-domain data. In this work, we study the task of identifying products being bought and sold in online cybercrime forums, which exhibits particularly challenging cross-domain effects.  We formulate a task that represents a hybrid of slot-filling information extraction and named entity recognition and annotate data from four different forums.  Each of these forums constitutes its own &#39;fine-grained domain&#39; in that the forums cover different market sectors with different properties, even though all forums are in the broad domain of cybercrime. We characterize these domain differences in the context of a learning-based system: supervised models see decreased accuracy when applied to new forums, and standard techniques for semi-supervised learning and domain adaptation have limited effectiveness on this data, which suggests the need to improve these techniques. We release a dataset of 1,938 annotated posts from across the four forums.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>IE/NER from Cybercriminal Forums</title>
+      
+      <link>http://www.jkk.name/data/cybercrime-forums/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
+      
+        <description>Forum posts with annotations of products. <a href="https://evidencebasedsecurity.org/forums/#data" target="_blank">https://evidencebasedsecurity.org/forums/#data</a></description>
       
 
     </item>
@@ -3141,20 +3187,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>Spine and Arc version of the Penn Treebank</title>
-      
-      <link>http://www.jkk.name/data/shp-ptb/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/shp-ptb/</guid>
-      
-        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://jkk.name/1ec-graph-parser/format-conversion" target="_blank">https://jkk.name/1ec-graph-parser/format-conversion</a></description>
-      
-
-    </item>
-    
-    <item>
-      
         <title>Example Talk</title>
       
       <link>http://www.jkk.name/talk/example-talk/</link>
@@ -3178,6 +3210,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
       <guid>http://www.jkk.name/software/1ec-parsing/</guid>
       
         <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://jkk.name/1ec-graph-parser" target="_blank">https://jkk.name/1ec-graph-parser</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Spine and Arc version of the Penn Treebank</title>
+      
+      <link>http://www.jkk.name/data/shp-ptb/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/shp-ptb/</guid>
+      
+        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://jkk.name/1ec-graph-parser/format-conversion" target="_blank">https://jkk.name/1ec-graph-parser/format-conversion</a></description>
       
 
     </item>
@@ -3344,14 +3390,14 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
-        <title>CCG to PST</title>
+        <title>Parse Error Analysis</title>
       
-      <link>http://www.jkk.name/software/ccg2pst/</link>
+      <link>http://www.jkk.name/software/parsing-analysis/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/software/ccg2pst/</guid>
+      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
       
-        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://jkk.name/berkeley-ccg2pst" target="_blank">https://jkk.name/berkeley-ccg2pst</a></description>
+        <description>A tool for classifying mistakes in the output of parsers. <a href="https://jkk.name/berkeley-parser-analyser" target="_blank">https://jkk.name/berkeley-parser-analyser</a></description>
       
 
     </item>
@@ -3404,14 +3450,14 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
-        <title>Parse Error Analysis</title>
+        <title>CCG to PST</title>
       
-      <link>http://www.jkk.name/software/parsing-analysis/</link>
+      <link>http://www.jkk.name/software/ccg2pst/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
+      <guid>http://www.jkk.name/software/ccg2pst/</guid>
       
-        <description>A tool for classifying mistakes in the output of parsers. <a href="https://jkk.name/berkeley-parser-analyser" target="_blank">https://jkk.name/berkeley-parser-analyser</a></description>
+        <description>A tool for converting CCG derivations into PTB-style phrase structure trees. <a href="https://jkk.name/berkeley-ccg2pst" target="_blank">https://jkk.name/berkeley-ccg2pst</a></description>
       
 
     </item>
