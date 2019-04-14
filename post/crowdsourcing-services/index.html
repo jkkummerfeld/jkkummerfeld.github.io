@@ -58,11 +58,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2018-11-08_corefdata/">
+  <link rel="canonical" href="http://www.jkk.name/post/crowdsourcing-services/">
 
   
 
-  <title>PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018) | Jonathan K. Kummerfeld</title>
+  <title>Crowdsourcing Services | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -175,15 +175,15 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</h1>
+    <h1 itemprop="name">Crowdsourcing Services</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2018-11-08 11:29:32 -0500 EST" itemprop="datePublished">
-      Nov 8, 2018
+    <time datetime="2019-04-14 10:49:35 -0400 EDT" itemprop="datePublished">
+      Apr 14, 2019
     </time>
   </span>
 
@@ -201,12 +201,6 @@
     <i class="fa fa-tags"></i>
     
     <a href="/tags/paper">paper</a
-    >, 
-    
-    <a href="/tags/data">data</a
-    >, 
-    
-    <a href="/tags/coreference">coreference</a
     >
     
   </span>
@@ -219,35 +213,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=PreCo%3a%20A%20Large-scale%20Dataset%20in%20Preschool%20Vocabulary%20for%20Coreference%20Resolution%20%28Chen%20et%20al.%2c%202018%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f"
+         href="https://twitter.com/intent/tweet?text=Crowdsourcing%20Services&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2fcrowdsourcing-services%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2fcrowdsourcing-services%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f&amp;title=PreCo%3a%20A%20Large-scale%20Dataset%20in%20Preschool%20Vocabulary%20for%20Coreference%20Resolution%20%28Chen%20et%20al.%2c%202018%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2fcrowdsourcing-services%2f&amp;title=Crowdsourcing%20Services"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f&amp;title=PreCo%3a%20A%20Large-scale%20Dataset%20in%20Preschool%20Vocabulary%20for%20Coreference%20Resolution%20%28Chen%20et%20al.%2c%202018%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2fcrowdsourcing-services%2f&amp;title=Crowdsourcing%20Services"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=PreCo%3a%20A%20Large-scale%20Dataset%20in%20Preschool%20Vocabulary%20for%20Coreference%20Resolution%20%28Chen%20et%20al.%2c%202018%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2018-11-08_corefdata%2f">
+         href="mailto:?subject=Crowdsourcing%20Services&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2fcrowdsourcing-services%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -260,42 +254,37 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
+The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.
+Recently, <a href="http://users.umiacs.umd.edu/~hal/" target="_blank">Hal Daumé III</a> mentioned on <a href="https://twitter.com/haldaume3/status/1113889907586535425" target="_blank">Twitter</a> that Figure Eight, a paid crowdsourcing service, had removed their free licenses for academics, and asked for alternatives.
+A bunch of people had suggestions which I wanted to record for my own future reference, hence this blog post.</p>
 
-<p>The OntoNotes dataset, which is the focus of almost all coreference resolution research, had several compromises in its development (as is the case for any dataset).
-Some of these are discussed in my <a href="http://jkk.name/publication/conll11coreference/" target="_blank">CoNLL Shared Task submission paper</a>, the biggest being the choice to not annotate mentions that are not coreferent.
-This paper describes a new dataset that has a different set of compromises, specifically:</p>
+<p>These fell into a few categories:</p>
 
 <ul>
-<li>A broader definition of coreference (e.g. appositives are coreferent)</li>
-<li>All mentions annotated</li>
-<li>Different annotation methods for different subsets of the data (training data is double annotated and then adjudicated, while the development and test data is triple annotated, all pairs of annotations are adjudicated, then the outcomes are merged by voting)</li>
-<li>A variety of genres, but generally simpler language</li>
+<li>Crowd providers, which directly connect with workers.</li>
+<li>Annotation tools, which are designed to integrate with crowd providers (or your own internal workers).</li>
+<li>Crowd enhancers, which provide a layer on top of the providers that adds features (e.g. active learning, nice templates, sophisticated workflows).</li>
 </ul>
 
-<p>The dataset is 10x the size of OntoNotes and freely available, which is fantastic.
-The source text is 2/3rds the RACE dataset (English reading comprehension exams from China), and 1/3rd scraped websites.
-Measurements of annotator agreement suggest the annotations are not as consistent as OntoNotes, but still good enough to be a useful resource.
-I do disagree with one aspect of the paper&rsquo;s analysis - the results show a substantial gain in performance when providing gold mentions, suggesting to me that it remains an important challenge in coreference resolution.
-I&rsquo;m also curious whether my <a href="http://jkk.name/publication/emnlp13analysis/" target="_blank">coreference analysis tool</a> would find different patterns in errors on this dataset compared to OntoNotes.</p>
+<p>I decided not to break the list into parts because it was sometimes unclear whether a service was using their own crowd or providing a layer over another, but I have roughly sorted them.
+Where possible I have included pricing, though some services did not make it easy to find.
+Take note of the description in each case because the data collected varies substantially.
+Also note that many tasks can be structured as a classification task (e.g. &ldquo;Is this coreference link correct?&rdquo;), making many of these services more flexible than the &lsquo;text classification&rsquo; label below may seem (though structuring your task so costs don&rsquo;t explode may require some thought).</p>
 
-<h2 id="citation">Citation</h2>
-
-<p><a href="http://aclweb.org/anthology/D18-1016" target="_blank">Paper</a></p>
-
-<p><a href="https://preschool-lab.github.io/PreCo/" target="_blank">Data</a></p>
-
-<pre><code class="language-bibtex">@InProceedings{Chen:EMNLP:2018,
-  author    = {Chen, Hong and Fan, Zhenhua and Lu, Hao and Yuille, Alan and Rong, Shu},
-  title     = {PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution},
-  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
-  year      = {2018},
-  publisher = {Association for Computational Linguistics},
-  pages     = {172--181},
-  location  = {Brussels, Belgium},
-  url       = {http://aclweb.org/anthology/D18-1016},
-}
-</code></pre>
+<ul>
+<li><a href="https://www.mturk.com/" target="_blank">Mechanical Turk</a>, a small set of templates and the option to define a web UI that does whatever you want. Cost is a 20% fee on top of whatever you choose to pay workers (though note it jumps to 40% if you have more than 10 assignments for a HIT!).</li>
+<li><a href="https://www.figure-eight.com/" target="_blank">Figure Eight</a> (included for completeness, did not investigate further due to the cost)</li>
+<li><a href="http://www.gethybrid.io/" target="_blank">Hybrid</a>, seems to be any task you can define in text (including with links?). 40% fee, though there is a <a href="http://www.gethybrid.io/faq" target="_blank">discount</a> of some type for academic and non-profit institutions.</li>
+<li><a href="https://prolific.ac/" target="_blank">Prolific</a>, seems to be that you just provide a link to a site for annotations (originally intended for survey research). 30% fee. Last year they had a <a href="https://blog.prolific.ac/announcing-2018-junior-grant-winners/" target="_blank">research grant</a> program.</li>
+<li><a href="https://gorilla.sc/" target="_blank">Gorilla</a>, designed for social science research, but could be used for any classification or free text task. Costs $1.19 / response, though note that you construct a questionnaire with a series of questions. There are also <a href="https://gorilla.sc/support/reference/subscription-FAQ#subscription-types" target="_blank">discounts</a> available when collecting thousands of responses.</li>
+<li><a href="https://scale.ai/" target="_blank">Scale</a>, classification tasks for 8c / annotation. There is an academic program, but details are not available online (mentioned <a href="https://twitter.com/umbrant/status/1114312024970764290" target="_blank">here</a>).</li>
+<li><a href="https://aws.amazon.com/sagemaker/groundtruth/" target="_blank">Amazon SageMaker Ground Truth</a>, text classification for 8c / label, decreasing after 50,000 annotations + a workflow fee of 1.2c / label.</li>
+<li><a href="https://imerit.net/" target="_blank">iMerit</a>, NER, classification, and sentiment tasks. When used on the Amazon Marketplace they are 5 dollars / hour (India based workers) or 25 (US based workers).</li>
+<li><a href="https://www.cromalab.net/LegionTools/" target="_blank">LegionTools</a>, an interface for mechanical turk that handles integration with their APIs. Designed particularly for real-time systems. Free.</li>
+<li><a href="https://prodi.gy/" target="_blank">Prodigy</a>, span classification (e.g. NER), which can also be used to handle other tasks if they are broken down into decisions (e.g. is this syntactic relation correct?). Cost is whatever you pay a crowd provider + $390 for a lifetime license, and $10k for a university-wide lifetime license.</li>
+<li><a href="https://www.lighttag.io/" target="_blank">LightTAG</a>, span classification and links. Cost is 1c / annotation + the cost from a crowd provider, but there is an academic license that makes it free.</li>
+</ul>
 
     </div>
   </div>
@@ -308,15 +297,15 @@ I&rsquo;m also curious whether my <a href="http://jkk.name/publication/emnlp13an
   <h3>Related</h3>
   <ul>
     
-    <li><a href="/post/2017-12-06_coreferencearguments/">Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</a></li>
-    
-    <li><a href="/post/2017-11-09_framesdataset/">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
+    <li><a href="/post/2018-11-08_corefdata/">PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</a></li>
     
     <li><a href="/post/2018-09-04_featureengineering/">Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</a></li>
     
     <li><a href="/post/2018-06-12_parseradaptation/">Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</a></li>
     
     <li><a href="/post/2018-05-08_seq2seqsensitivity/">The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</a></li>
+    
+    <li><a href="/post/2018-04-16_lm_analysis/">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</a></li>
     
   </ul>
 </div>
@@ -326,13 +315,10 @@ I&rsquo;m also curious whether my <a href="http://jkk.name/publication/emnlp13an
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2018-09-04_featureengineering/"><span
-      aria-hidden="true">&larr;</span> Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/post/2018-11-08_corefdata/"><span
+      aria-hidden="true">&larr;</span> PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/crowdsourcing-services/">Crowdsourcing Services <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>

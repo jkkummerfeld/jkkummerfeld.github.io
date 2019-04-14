@@ -37,6 +37,51 @@
     
     <item>
       
+        <title>Crowdsourcing Services</title>
+      
+      <link>http://www.jkk.name/post/crowdsourcing-services/</link>
+      <pubDate>Sun, 14 Apr 2019 10:49:35 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/crowdsourcing-services/</guid>
+      
+        <description>&lt;p&gt;Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
+The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.
+Recently, &lt;a href=&#34;http://users.umiacs.umd.edu/~hal/&#34; target=&#34;_blank&#34;&gt;Hal Daumé III&lt;/a&gt; mentioned on &lt;a href=&#34;https://twitter.com/haldaume3/status/1113889907586535425&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; that Figure Eight, a paid crowdsourcing service, had removed their free licenses for academics, and asked for alternatives.
+A bunch of people had suggestions which I wanted to record for my own future reference, hence this blog post.&lt;/p&gt;
+
+&lt;p&gt;These fell into a few categories:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Crowd providers, which directly connect with workers.&lt;/li&gt;
+&lt;li&gt;Annotation tools, which are designed to integrate with crowd providers (or your own internal workers).&lt;/li&gt;
+&lt;li&gt;Crowd enhancers, which provide a layer on top of the providers that adds features (e.g. active learning, nice templates, sophisticated workflows).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I decided not to break the list into parts because it was sometimes unclear whether a service was using their own crowd or providing a layer over another, but I have roughly sorted them.
+Where possible I have included pricing, though some services did not make it easy to find.
+Take note of the description in each case because the data collected varies substantially.
+Also note that many tasks can be structured as a classification task (e.g. &amp;ldquo;Is this coreference link correct?&amp;rdquo;), making many of these services more flexible than the &amp;lsquo;text classification&amp;rsquo; label below may seem (though structuring your task so costs don&amp;rsquo;t explode may require some thought).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.mturk.com/&#34; target=&#34;_blank&#34;&gt;Mechanical Turk&lt;/a&gt;, a small set of templates and the option to define a web UI that does whatever you want. Cost is a 20% fee on top of whatever you choose to pay workers (though note it jumps to 40% if you have more than 10 assignments for a HIT!).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.figure-eight.com/&#34; target=&#34;_blank&#34;&gt;Figure Eight&lt;/a&gt; (included for completeness, did not investigate further due to the cost)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.gethybrid.io/&#34; target=&#34;_blank&#34;&gt;Hybrid&lt;/a&gt;, seems to be any task you can define in text (including with links?). 40% fee, though there is a &lt;a href=&#34;http://www.gethybrid.io/faq&#34; target=&#34;_blank&#34;&gt;discount&lt;/a&gt; of some type for academic and non-profit institutions.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://prolific.ac/&#34; target=&#34;_blank&#34;&gt;Prolific&lt;/a&gt;, seems to be that you just provide a link to a site for annotations (originally intended for survey research). 30% fee. Last year they had a &lt;a href=&#34;https://blog.prolific.ac/announcing-2018-junior-grant-winners/&#34; target=&#34;_blank&#34;&gt;research grant&lt;/a&gt; program.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gorilla.sc/&#34; target=&#34;_blank&#34;&gt;Gorilla&lt;/a&gt;, designed for social science research, but could be used for any classification or free text task. Costs $1.19 / response, though note that you construct a questionnaire with a series of questions. There are also &lt;a href=&#34;https://gorilla.sc/support/reference/subscription-FAQ#subscription-types&#34; target=&#34;_blank&#34;&gt;discounts&lt;/a&gt; available when collecting thousands of responses.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://scale.ai/&#34; target=&#34;_blank&#34;&gt;Scale&lt;/a&gt;, classification tasks for 8c / annotation. There is an academic program, but details are not available online (mentioned &lt;a href=&#34;https://twitter.com/umbrant/status/1114312024970764290&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/sagemaker/groundtruth/&#34; target=&#34;_blank&#34;&gt;Amazon SageMaker Ground Truth&lt;/a&gt;, text classification for 8c / label, decreasing after 50,000 annotations + a workflow fee of 1.2c / label.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://imerit.net/&#34; target=&#34;_blank&#34;&gt;iMerit&lt;/a&gt;, NER, classification, and sentiment tasks. When used on the Amazon Marketplace they are 5 dollars / hour (India based workers) or 25 (US based workers).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cromalab.net/LegionTools/&#34; target=&#34;_blank&#34;&gt;LegionTools&lt;/a&gt;, an interface for mechanical turk that handles integration with their APIs. Designed particularly for real-time systems. Free.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://prodi.gy/&#34; target=&#34;_blank&#34;&gt;Prodigy&lt;/a&gt;, span classification (e.g. NER), which can also be used to handle other tasks if they are broken down into decisions (e.g. is this syntactic relation correct?). Cost is whatever you pay a crowd provider + $390 for a lifetime license, and $10k for a university-wide lifetime license.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.lighttag.io/&#34; target=&#34;_blank&#34;&gt;LightTAG&lt;/a&gt;, span classification and links. Cost is 1c / annotation + the cost from a crowd provider, but there is an academic license that makes it free.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Look Who&#39;s Talking: Inferring Speaker Attributes from Personal Longitudinal Dialog",
         
