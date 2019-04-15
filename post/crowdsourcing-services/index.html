@@ -254,7 +254,9 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
+      
+
+<p>Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
 The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.
 Recently, <a href="http://users.umiacs.umd.edu/~hal/" target="_blank">Hal Daumé III</a> mentioned on <a href="https://twitter.com/haldaume3/status/1113889907586535425" target="_blank">Twitter</a> that Figure Eight, a paid crowdsourcing service, had removed their free licenses for academics, and asked for alternatives.
 A bunch of people had suggestions which I wanted to record for my own future reference, hence this blog post.</p>
@@ -263,11 +265,12 @@ A bunch of people had suggestions which I wanted to record for my own future ref
 
 <ul>
 <li>Crowd providers, which directly connect with workers.</li>
-<li>Annotation tools, which are designed to integrate with crowd providers (or your own internal workers).</li>
 <li>Crowd enhancers, which provide a layer on top of the providers that adds features (e.g. active learning, nice templates, sophisticated workflows).</li>
+<li>Annotation tools, which are designed to integrate with crowd providers (or your own internal workers).</li>
+<li>Interfaces, which make it easier to use one of the crowd providers.</li>
 </ul>
 
-<p>I decided not to break the list into parts because it was sometimes unclear whether a service was using their own crowd or providing a layer over another, but I have roughly sorted them.
+<p>I decided not to break the first two categories apart because it was sometimes unclear whether a service was using their own crowd or providing a layer over another, but I have roughly sorted them.
 Where possible I have included pricing, though some services did not make it easy to find.
 Take note of the description in each case because the data collected varies substantially.
 Also note that many tasks can be structured as a classification task (e.g. &ldquo;Is this coreference link correct?&rdquo;), making many of these services more flexible than the &lsquo;text classification&rsquo; label below may seem (though structuring your task so costs don&rsquo;t explode may require some thought).</p>
@@ -281,7 +284,23 @@ Also note that many tasks can be structured as a classification task (e.g. &ldqu
 <li><a href="https://scale.ai/" target="_blank">Scale</a>, classification tasks for 8c / annotation. There is an academic program, but details are not available online (mentioned <a href="https://twitter.com/umbrant/status/1114312024970764290" target="_blank">here</a>).</li>
 <li><a href="https://aws.amazon.com/sagemaker/groundtruth/" target="_blank">Amazon SageMaker Ground Truth</a>, text classification for 8c / label, decreasing after 50,000 annotations + a workflow fee of 1.2c / label.</li>
 <li><a href="https://imerit.net/" target="_blank">iMerit</a>, NER, classification, and sentiment tasks. When used on the Amazon Marketplace they are 5 dollars / hour (India based workers) or 25 (US based workers).</li>
-<li><a href="https://www.cromalab.net/LegionTools/" target="_blank">LegionTools</a>, an interface for mechanical turk that handles integration with their APIs. Designed particularly for real-time systems. Free and self-host-able.</li>
+</ul>
+
+<h2 id="mechanical-turk-integration-interfaces">Mechanical Turk Integration Interfaces</h2>
+
+<p>These are interfaces for Mechanical Turk that provide an easier way to set up HITs without having to mess with Amazon&rsquo;s APIs yourself.
+Both are free, but have slightly different features:</p>
+
+<ul>
+<li><a href="https://www.cromalab.net/LegionTools/" target="_blank">LegionTools</a>, self-hosted or not, includes key features for real-time systems.</li>
+<li><a href="https://github.com/webis-de/mturk-manager" target="_blank">MTurk Manager</a>, self-hosted, includes features for custom views of responses from workers.</li>
+</ul>
+
+<h2 id="annotation-user-interfaces">Annotation User Interfaces</h2>
+
+<p>There are many annotation tools for NLP (e.g. my own, <a href="http://jkk.name/slate/" target="_blank">SLATE</a>!), but these annotation tools are designed to integrate with providers above to collect annotations.</p>
+
+<ul>
 <li><a href="https://prodi.gy/" target="_blank">Prodigy</a>, span classification (e.g. NER), multiple choice questions (which can be used to do a wide range of tasks), and relations (see <a href="https://prodi.gy/features/" target="_blank">examples</a>). Cost is whatever you pay a crowd provider + 390 for a lifetime license, or 10k for a university-wide lifetime license, though they also often give free licenses to academics. One distinctive property is that you download and run it yourself, providing complete control over your data.</li>
 <li><a href="https://www.lighttag.io/" target="_blank">LightTAG</a>, span classification and links. Cost is 1c / annotation + the cost from a crowd provider, but there is an academic license that makes it free.</li>
 </ul>

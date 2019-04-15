@@ -21,7 +21,9 @@
       
       <guid>http://www.jkk.name/post/crowdsourcing-services/</guid>
       
-        <description>&lt;p&gt;Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
+        <description>
+
+&lt;p&gt;Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
 The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.
 Recently, &lt;a href=&#34;http://users.umiacs.umd.edu/~hal/&#34; target=&#34;_blank&#34;&gt;Hal Daumé III&lt;/a&gt; mentioned on &lt;a href=&#34;https://twitter.com/haldaume3/status/1113889907586535425&#34; target=&#34;_blank&#34;&gt;Twitter&lt;/a&gt; that Figure Eight, a paid crowdsourcing service, had removed their free licenses for academics, and asked for alternatives.
 A bunch of people had suggestions which I wanted to record for my own future reference, hence this blog post.&lt;/p&gt;
@@ -30,11 +32,12 @@ A bunch of people had suggestions which I wanted to record for my own future ref
 
 &lt;ul&gt;
 &lt;li&gt;Crowd providers, which directly connect with workers.&lt;/li&gt;
-&lt;li&gt;Annotation tools, which are designed to integrate with crowd providers (or your own internal workers).&lt;/li&gt;
 &lt;li&gt;Crowd enhancers, which provide a layer on top of the providers that adds features (e.g. active learning, nice templates, sophisticated workflows).&lt;/li&gt;
+&lt;li&gt;Annotation tools, which are designed to integrate with crowd providers (or your own internal workers).&lt;/li&gt;
+&lt;li&gt;Interfaces, which make it easier to use one of the crowd providers.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;I decided not to break the list into parts because it was sometimes unclear whether a service was using their own crowd or providing a layer over another, but I have roughly sorted them.
+&lt;p&gt;I decided not to break the first two categories apart because it was sometimes unclear whether a service was using their own crowd or providing a layer over another, but I have roughly sorted them.
 Where possible I have included pricing, though some services did not make it easy to find.
 Take note of the description in each case because the data collected varies substantially.
 Also note that many tasks can be structured as a classification task (e.g. &amp;ldquo;Is this coreference link correct?&amp;rdquo;), making many of these services more flexible than the &amp;lsquo;text classification&amp;rsquo; label below may seem (though structuring your task so costs don&amp;rsquo;t explode may require some thought).&lt;/p&gt;
@@ -48,7 +51,23 @@ Also note that many tasks can be structured as a classification task (e.g. &amp;
 &lt;li&gt;&lt;a href=&#34;https://scale.ai/&#34; target=&#34;_blank&#34;&gt;Scale&lt;/a&gt;, classification tasks for 8c / annotation. There is an academic program, but details are not available online (mentioned &lt;a href=&#34;https://twitter.com/umbrant/status/1114312024970764290&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/sagemaker/groundtruth/&#34; target=&#34;_blank&#34;&gt;Amazon SageMaker Ground Truth&lt;/a&gt;, text classification for 8c / label, decreasing after 50,000 annotations + a workflow fee of 1.2c / label.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://imerit.net/&#34; target=&#34;_blank&#34;&gt;iMerit&lt;/a&gt;, NER, classification, and sentiment tasks. When used on the Amazon Marketplace they are 5 dollars / hour (India based workers) or 25 (US based workers).&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cromalab.net/LegionTools/&#34; target=&#34;_blank&#34;&gt;LegionTools&lt;/a&gt;, an interface for mechanical turk that handles integration with their APIs. Designed particularly for real-time systems. Free and self-host-able.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;mechanical-turk-integration-interfaces&#34;&gt;Mechanical Turk Integration Interfaces&lt;/h2&gt;
+
+&lt;p&gt;These are interfaces for Mechanical Turk that provide an easier way to set up HITs without having to mess with Amazon&amp;rsquo;s APIs yourself.
+Both are free, but have slightly different features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cromalab.net/LegionTools/&#34; target=&#34;_blank&#34;&gt;LegionTools&lt;/a&gt;, self-hosted or not, includes key features for real-time systems.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/webis-de/mturk-manager&#34; target=&#34;_blank&#34;&gt;MTurk Manager&lt;/a&gt;, self-hosted, includes features for custom views of responses from workers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;annotation-user-interfaces&#34;&gt;Annotation User Interfaces&lt;/h2&gt;
+
+&lt;p&gt;There are many annotation tools for NLP (e.g. my own, &lt;a href=&#34;http://jkk.name/slate/&#34; target=&#34;_blank&#34;&gt;SLATE&lt;/a&gt;!), but these annotation tools are designed to integrate with providers above to collect annotations.&lt;/p&gt;
+
+&lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://prodi.gy/&#34; target=&#34;_blank&#34;&gt;Prodigy&lt;/a&gt;, span classification (e.g. NER), multiple choice questions (which can be used to do a wide range of tasks), and relations (see &lt;a href=&#34;https://prodi.gy/features/&#34; target=&#34;_blank&#34;&gt;examples&lt;/a&gt;). Cost is whatever you pay a crowd provider + 390 for a lifetime license, or 10k for a university-wide lifetime license, though they also often give free licenses to academics. One distinctive property is that you download and run it yourself, providing complete control over your data.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.lighttag.io/&#34; target=&#34;_blank&#34;&gt;LightTAG&lt;/a&gt;, span classification and links. Cost is 1c / annotation + the cost from a crowd provider, but there is an academic license that makes it free.&lt;/li&gt;
 &lt;/ul&gt;
