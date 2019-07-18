@@ -14,6 +14,114 @@
     
     <item>
       
+        <title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</title>
+      
+      <link>http://www.jkk.name/post/2019-07-10_disentanglement/</link>
+      <pubDate>Wed, 10 Jul 2019 11:19:06 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2019-07-10_disentanglement/</guid>
+      
+        <description>
+
+&lt;p&gt;This post is about my own paper to appear at ACL later this month.
+What is interesting about this paper will depend on your research interests, so that&amp;rsquo;s how I&amp;rsquo;ve broken down this blog post.&lt;/p&gt;
+
+&lt;p&gt;A few key points first:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jkk.name/irc-disentanglement/&#34; target=&#34;_blank&#34;&gt;Data and code&lt;/a&gt; are available on Github.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://github.com/jkkummerfeld/irc-disentanglement/raw/master/acl19irc.pdf&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt; is also available.&lt;/li&gt;
+&lt;li&gt;The general-purpose span labeling and linking &lt;a href=&#34;https://jkk.name/slate/&#34; target=&#34;_blank&#34;&gt;annotation tool&lt;/a&gt; we used is also appearing at ACL.&lt;/li&gt;
+&lt;li&gt;Check out &lt;a href=&#34;https://github.com/dstc8-track2/NOESIS-II&#34; target=&#34;_blank&#34;&gt;DSTC 8 Track 2&lt;/a&gt;, which is based on this work.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;you-study-discourse&#34;&gt;You study discourse&lt;/h3&gt;
+
+&lt;p&gt;We investigated discourse structure when multiple conversations are occurring in the same stream of communication.
+In our case, the stream is a technical support channel for Ubuntu on Internet Relay Chat (IRC).
+We annotated each message with which message(s) it was a response to.
+As far as we are aware, this is the first large-scale corpus with this kind of discourse structure in synchronous chat.
+Here is an example from the data, with annotations marked by edges and colours:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We don&amp;rsquo;t frame the paper as being about reply-structure though.
+Instead, we focus on a byproduct of these annotations - conversation disentanglement.
+Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
+The key prior work on the disentanglement problem is &lt;a href=&#34;https://www.aclweb.org/anthology/P08-1095&#34; target=&#34;_blank&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
+We annotated their data with our annotation scheme and 75,000 additional messages.&lt;/p&gt;
+
+&lt;p&gt;We built a set of simple models for predicting reply-structure and did some analysis of assumptions about discourse from prior disentanglement work, but there is certainly more scope for study here.
+One direction would be to develop better models for this task.
+Another would be to study patterns in the data to understand how people are able to follow the conversation.&lt;/p&gt;
+
+&lt;h3 id=&#34;you-work-on-dialogue&#34;&gt;You work on dialogue&lt;/h3&gt;
+
+&lt;p&gt;There has been a lot of work recently using the Ubuntu dataset from &lt;a href=&#34;https://github.com/rkadlec/ubuntu-ranking-dataset-creator&#34; target=&#34;_blank&#34;&gt;Lowe et al., (2015)&lt;/a&gt;, which was produced by heuristically disentangling conversations from the same IRC channel we use.
+Their work opened up a fantastic research opportunity by providing 930,000 conversations for training and evaluating dialogue systems.
+However, they were unable to evaluate the quality of their conversations because they had no annotated data.&lt;/p&gt;
+
+&lt;p&gt;Using our data, we found that only 20% of their conversations are a true prefix of a conversation (since their next utterance classification task cuts the conversation off part-way, being a true prefix is all that matters).
+Many conversations are missing messages, and some have extra messages from other conversations.
+Unsurprisingly, our trained model does better, producing conversations that are a true prefix 81% of the time.
+We also noticed that their heuristic was incorrectly linking messages far apart in time.
+This is not tested by our evaluation set, so we constructed this figure, which shows the problem is quite common:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The purple results are based on the output of our model over the entire Ubuntu IRC logs.
+That output is the basis of &lt;a href=&#34;https://github.com/dstc8-track2/NOESIS-II&#34; target=&#34;_blank&#34;&gt;DSTC 8 Track 2&lt;/a&gt;.
+Once the competition finishes (October 20th, 2019) we will release all of the conversations.&lt;/p&gt;
+
+&lt;h3 id=&#34;you-am-interested-in-studying-online-communities&#34;&gt;You am interested in studying online communities&lt;/h3&gt;
+
+&lt;p&gt;This is not my area of expertise, but our data and models could enable the exploration of interesting questions.
+For example:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is the structure of the community? By looking at who asks for help and who responds we could see patterns of behaviour.&lt;/li&gt;
+&lt;li&gt;How does a community evolve over time? This data spans 15 years, during which there were many Ubuntu releases, Stackoverflow was created, other Ubuntu forums were created, etc. It seems likely that those events and more would be reflected in the data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It would be interesting to apply the model to other communities, but that would require additional in-domain data to get good results.
+We have no plans to collect additional data at this stage, and for other channels there are copyright questions that might be difficult to resolve (the Ubuntu channels have an open access license).&lt;/p&gt;
+
+&lt;h3 id=&#34;you-mainly-care-about-neural-network-architectures&#34;&gt;You mainly care about neural network architectures&lt;/h3&gt;
+
+&lt;p&gt;We experimented with a bunch of ideas that didn&amp;rsquo;t improve performance, so our final model is very simple (a feedforward network with features representing the logs and sentences represented by averaging and max-pooling GloVe embeddings).
+Maybe that means there is an opportunity for you to improve on our results with a fancy model?
+One of our motivations for making such a large new resource was to make it possible to train sophisticated models.&lt;/p&gt;
+
+&lt;h3 id=&#34;acknowledgments&#34;&gt;Acknowledgments&lt;/h3&gt;
+
+&lt;p&gt;This project has been going since I started at Michigan as a postdoc funded by a grant from IBM.
+The final paper is the result of collaboration with a largre group of people from Michigan and IBM.
+Thank you!&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/jkkummerfeld/irc-disentanglement/raw/master/acl19irc.pdf&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{acl19disentangle,
+  author    = {Jonathan K. Kummerfeld and Sai R. Gouravajhala and Joseph Peper and Vignesh Athreya and Chulaka Gunasekara and Jatin Ganhotra and Siva Sankalp Patel and Lazaros Polymenakos and Walter S. Lasecki},
+  title     = {A Large-Scale Corpus for Conversation Disentanglement},
+  booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  location  = {Florence, Italy},
+  month     = {July},
+  year      = {2019},
+  url       = {https://github.com/jkkummerfeld/irc-disentanglement/raw/master/acl19irc.pdf},
+  arxiv     = {https://arxiv.org/abs/1810.11118},
+  software  = {https://jkk.name/irc-disentanglement},
+  data      = {https://jkk.name/irc-disentanglement},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Crowdsourcing Services</title>
       
       <link>http://www.jkk.name/post/crowdsourcing-services/</link>

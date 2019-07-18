@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/2019-07-10_disentanglement/</loc>
+      <lastmod>2019-07-10T11:19:06-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/publication/acl19disentangle/</loc>
       <lastmod>2019-07-01T00:00:00+00:00</lastmod>
     </url>
@@ -971,8 +980,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/categories/acl/</loc>
-      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+      <loc>http://www.jkk.name/tags/acl/</loc>
+      <lastmod>2019-07-10T11:19:06-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -981,8 +990,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/acl/</loc>
-      <lastmod>2018-03-05T21:09:58-05:00</lastmod>
+      <loc>http://www.jkk.name/categories/acl/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1092,7 +1101,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/data/</loc>
-      <lastmod>2018-11-08T11:29:32-05:00</lastmod>
+      <lastmod>2019-07-10T11:19:06-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1102,7 +1111,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/dialogue/</loc>
-      <lastmod>2018-01-28T16:01:20-05:00</lastmod>
+      <lastmod>2019-07-10T11:19:06-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1112,7 +1121,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/discourse/</loc>
-      <lastmod>2017-11-17T18:40:20-05:00</lastmod>
+      <lastmod>2019-07-10T11:19:06-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1322,7 +1331,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/paper/</loc>
-      <lastmod>2018-11-08T11:29:32-05:00</lastmod>
+      <lastmod>2019-07-10T11:19:06-04:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1421,8 +1430,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/categories/syntax/</loc>
-      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+      <loc>http://www.jkk.name/tags/syntax/</loc>
+      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1431,8 +1440,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/syntax/</loc>
-      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
+      <loc>http://www.jkk.name/categories/syntax/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     
