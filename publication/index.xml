@@ -15,21 +15,21 @@
     <item>
       
       <title>
-        "SLATE: A Super-Lightweight Annotation Tool for Experts",
+        "An Evaluation for Intent Classification and Out-of-Scope Prediction",
         
-          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;
+          Stefan Larson, Anish Mahendran, Joseph J. Peper, Christopher Clarke, Andrew Lee, Parker Hill, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Kevin Leach, Michael A. Laurenzano, Lingjia Tang and Jason Mars
         
-        (ACL (demo),
+        (EMNLP (short),
         2019)
       </title>
       
-      <link>http://www.jkk.name/publication/acl19slate/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <link>http://www.jkk.name/publication/emnlp19data/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/acl19slate/</guid>
+      <guid>http://www.jkk.name/publication/emnlp19data/</guid>
       
         <description>
-          Many annotation tools have been developed, covering a wide variety of tasks and providing features like user management, pre-processing, and automatic labeling. However, all of these tools use a Graphical User Interface, and often require substantial effort for installation and configuration. This paper presents a new annotation tool that is designed to fill the niche of a lightweight interface for users with a terminal-based workflow. Slate supports annotation at different scales (spans of characters, tokens, and lines, or a document) and of different types (free text, labels, and links), with easily customisable keybindings, and unicode support. In a user study comparing with other tools it was consistently the easiest to install and use. Slate fills a need not met by existing systems, and has already been used to annotate two corpora, one of which involved over 250 hours of annotation effort.
+          
         </description>
       
 
@@ -53,6 +53,29 @@
       
         <description>
           Disentangling conversations mixed together in a single stream of messages is a difficult task, made harder by the lack of large manually annotated datasets. We created a new dataset of 77,563 messages manually annotated with reply-structure graphs that both disentangle conversations and define internal conversation structure. Our data is 16 times larger than all previously released datasets combined, the first to include adjudication of annotation disagreements, and the first to include context. We use our data to re-examine prior work, in particular, finding that 89% of conversations in a widely used dialogue corpus are either missing messages or contain extra messages. Our manually-annotated data presents an opportunity to develop robust data-driven methods for conversation disentanglement, which will help advance dialogue research.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "SLATE: A Super-Lightweight Annotation Tool for Experts",
+        
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;
+        
+        (ACL (demo),
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/acl19slate/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl19slate/</guid>
+      
+        <description>
+          Many annotation tools have been developed, covering a wide variety of tasks and providing features like user management, pre-processing, and automatic labeling. However, all of these tools use a Graphical User Interface, and often require substantial effort for installation and configuration. This paper presents a new annotation tool that is designed to fill the niche of a lightweight interface for users with a terminal-based workflow. Slate supports annotation at different scales (spans of characters, tokens, and lines, or a document) and of different types (free text, labels, and links), with easily customisable keybindings, and unicode support. In a user study comparing with other tools it was consistently the easiest to install and use. Slate fills a need not met by existing systems, and has already been used to annotate two corpora, one of which involved over 250 hours of annotation effort.
         </description>
       
 
@@ -199,21 +222,21 @@
     <item>
       
       <title>
-        "Factors Influencing the Surprising Instability of Word Embeddings",
+        "Data Collection for a Production Dialogue System: A Startup Perspective",
         
-          Laura Wendlandt, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
+          Yiping Kang, Yunqi Zhang, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Parker Hill, Johann Hauswald, Michael A. Laurenzano, Lingjia Tang, Jason Mars
         
-        (NAACL,
+        (NAACL (industry),
         2018)
       </title>
       
-      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
+      <link>http://www.jkk.name/publication/naacl18data/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
+      <guid>http://www.jkk.name/publication/naacl18data/</guid>
       
         <description>
-          Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
+          Industrial dialogue systems such as Apple Siri and Google Assistant require large scale diverse training data to enable their sophisticated conversation capabilities. Crowdsourcing is a scalable and inexpensive data collection method, but collecting high quality data efficiently requires thoughtful orchestration of crowdsourcing jobs. Prior study of data collection process has focused on tasks with limited scope and performed intrinsic data analysis, which may not be indicative of impact on trained model performance. In this paper, we present a study of crowdsourcing methods for a user intent classification task in one of our deployed dialogue systems. Our task requires classification over 47 possible user intents and contains many intent pairs with subtle differences. We consider different crowdsourcing job types and job prompts, quantitatively analyzing the quality of collected data and downstream model performance on a test set of real user queries from production logs. Our observations provide insight into how design decisions impact crowdsourced data quality, with clear recommendations for future data collection for dialogue systems.
         </description>
       
 
@@ -245,21 +268,21 @@
     <item>
       
       <title>
-        "Data Collection for a Production Dialogue System: A Startup Perspective",
+        "Factors Influencing the Surprising Instability of Word Embeddings",
         
-          Yiping Kang, Yunqi Zhang, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Parker Hill, Johann Hauswald, Michael A. Laurenzano, Lingjia Tang, Jason Mars
+          Laura Wendlandt, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
         
-        (NAACL (industry),
+        (NAACL,
         2018)
       </title>
       
-      <link>http://www.jkk.name/publication/naacl18data/</link>
+      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/naacl18data/</guid>
+      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
       
         <description>
-          Industrial dialogue systems such as Apple Siri and Google Assistant require large scale diverse training data to enable their sophisticated conversation capabilities. Crowdsourcing is a scalable and inexpensive data collection method, but collecting high quality data efficiently requires thoughtful orchestration of crowdsourcing jobs. Prior study of data collection process has focused on tasks with limited scope and performed intrinsic data analysis, which may not be indicative of impact on trained model performance. In this paper, we present a study of crowdsourcing methods for a user intent classification task in one of our deployed dialogue systems. Our task requires classification over 47 possible user intents and contains many intent pairs with subtle differences. We consider different crowdsourcing job types and job prompts, quantitatively analyzing the quality of collected data and downstream model performance on a test set of real user queries from production logs. Our observations provide insight into how design decisions impact crowdsourced data quality, with clear recommendations for future data collection for dialogue systems.
+          Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
         </description>
       
 

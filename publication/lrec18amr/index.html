@@ -327,6 +327,16 @@
 </a>
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
+  if (document.getElementById('lrec18amr-citations').style.display == 'block') {
+  document.getElementById('lrec18amr-citations').style.display='none';
+  } else {
+  document.getElementById('lrec18amr-citations').style.display='block';
+  }
+  ">
+  <span style="font-size:large;">Citations</span>
+</a>
+
 
 <div id="lrec18amr-bib" style="display: none;margin-left:20px;" style="text-align:right;">
       <pre>
@@ -334,12 +344,10 @@
   author    = {Charles Welch and Jonathan K. Kummerfeld and Song Feng and Rada Mihalcea},
   title     = {World Knowledge for Abstract Meaning Representation Parsing},
   booktitle = {Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)},
-  shortvenue = {LREC},
   year      = {2018},
   month     = {May},
   location  = {Miyazaki, Japan},
   url       = {http://www.lrec-conf.org/proceedings/lrec2018/pdf/1085.pdf},
-  abstract  = {In this paper we explore the role played by world knowledge in semantic parsing. We look at the types of errors that currently exist in a state-of-the-art Abstract Meaning Representation (AMR) parser, and explore the problem of how to integrate world knowledge to reduce these errors. We look at three types of knowledge from (1) WordNet hypernyms and super senses, (2) Wikipedia entity links, and (3) retraining a named entity recognizer to identify concepts in AMR. The retrained entity recognizer is not perfect and cannot recognize all concepts in AMR and we examine the limitations of the named entity features using a set of oracles. The oracles show how performance increases if it can recognize different subsets of AMR concepts. These results show improvement on multiple fine-grained metrics, including a 6% increase in named entity F-score, and provide insight into the potential of world knowledge for future work in Abstract Meaning Representation parsing.},
 }
 
       </pre>
@@ -351,6 +359,13 @@
 </div>
 
 <div id="lrec18amr-citations" style="display: none;margin-left:20px; font-size:smaller; " style="text-align:right;">
+	
+		<p>
+      
+        <a href="https://www.aclweb.org/anthology/P19-2006">Towards Turkish Abstract Meaning Representation</a>,
+      
+			Zahra Azin, Gulcsen Eryigit, ACL: SRW, 2019
+		</p>
 	
 </div>
 
