@@ -14,6 +14,24 @@
     
     <url>
     
+      <loc>http://www.jkk.name/data/irc/</loc>
+      <lastmod>2019-09-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/software/slate/</loc>
+      <lastmod>2019-09-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/2019-07-10_disentanglement/</loc>
       <lastmod>2019-07-10T11:19:06-04:00</lastmod>
     </url>
@@ -1039,7 +1057,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/annotation/</loc>
-      <lastmod>2017-12-08T19:49:09-05:00</lastmod>
+      <lastmod>2019-09-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1109,7 +1127,7 @@
     <url>
     
       <loc>http://www.jkk.name/data/</loc>
-      <lastmod>2018-07-12T00:00:00+00:00</lastmod>
+      <lastmod>2019-09-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1139,7 +1157,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/discourse/</loc>
-      <lastmod>2019-07-10T11:19:06-04:00</lastmod>
+      <lastmod>2019-09-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1419,7 +1437,7 @@
     <url>
     
       <loc>http://www.jkk.name/software/</loc>
-      <lastmod>2018-08-13T00:00:00+00:00</lastmod>
+      <lastmod>2019-09-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

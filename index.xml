@@ -37,6 +37,34 @@
     
     <item>
       
+        <title>IRC Disentanglement</title>
+      
+      <link>http://www.jkk.name/data/irc/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/irc/</guid>
+      
+        <description>Annotation of IRC messages with reply-to structure, which disentangles simultaneous conversations. The largest such annotated resource. <a href="https://jkk.name/irc-disentanglement/" target="_blank">https://jkk.name/irc-disentanglement/</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>SLATE: A Super-Lightweight Annotation Tool for Experts</title>
+      
+      <link>http://www.jkk.name/software/slate/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/slate/</guid>
+      
+        <description>A terminal-based text annotation tool in Python. <a href="https://jkk.name/slate" target="_blank">https://jkk.name/slate</a></description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</title>
       
       <link>http://www.jkk.name/post/2019-07-10_disentanglement/</link>
@@ -302,29 +330,6 @@ Both are free, but have slightly different features:&lt;/p&gt;
     <item>
       
       <title>
-        "DSTC7 Task 1: Noetic End-to-End Response Selection",
-        
-          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, and Walter S. Lasecki
-        
-        (DSTC,
-        2019)
-      </title>
-      
-      <link>http://www.jkk.name/publication/dstc19task1/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/dstc19task1/</guid>
-      
-        <description>
-          Goal-oriented dialogue in complex domains is an extremely challenging problem and there are relatively few datasets. This task provided two new resources that presented different challenges: one was focused but small, while the other was large but diverse. We also considered several new variations on the next utterance selection problem: (1) increasing the number of candidates, (2) including paraphrases, and (3) not including a correct option in the candidate set. Twenty teams participated, developing a range of neural network models, including some that successfully incorporated external data to boost performance. Both datasets have been publicly released, enabling future work to build on these results, working towards robust goal-oriented dialogue systems.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "Learning from Personal Longitudinal Dialog Data",
         
           Charles Welch, Ver&oacute;nica P&eacute;rez-Rosas, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
@@ -340,6 +345,29 @@ Both are free, but have slightly different features:&lt;/p&gt;
       
         <description>
           We explore the use of longitudinal dialog data for two dialog prediction tasks: next message prediction and response time prediction. We show that a neural model using personal data that leverages a combination of message content, style matching, time features, and speaker attributes leads to the best results for both tasks, with error rate reductions of up to 15% compared to a classifier that relies exclusively on message content and to a classifier that does not use personal data.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "DSTC7 Task 1: Noetic End-to-End Response Selection",
+        
+          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, and Walter S. Lasecki
+        
+        (DSTC,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/dstc19task1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/dstc19task1/</guid>
+      
+        <description>
+          Goal-oriented dialogue in complex domains is an extremely challenging problem and there are relatively few datasets. This task provided two new resources that presented different challenges: one was focused but small, while the other was large but diverse. We also considered several new variations on the next utterance selection problem: (1) increasing the number of candidates, (2) including paraphrases, and (3) not including a correct option in the candidate set. Twenty teams participated, developing a range of neural network models, including some that successfully incorporated external data to boost performance. Both datasets have been publicly released, enabling future work to build on these results, working towards robust goal-oriented dialogue systems.
         </description>
       
 
@@ -481,20 +509,6 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
     
     <item>
       
-        <title>Text to SQL datasets</title>
-      
-      <link>http://www.jkk.name/data/text-to-sql/</link>
-      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/text-to-sql/</guid>
-      
-        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://jkk.name/text2sql-data" target="_blank">https://jkk.name/text2sql-data</a></description>
-      
-
-    </item>
-    
-    <item>
-      
         <title>Text to SQL Baseline</title>
       
       <link>http://www.jkk.name/software/text2sql-baseline/</link>
@@ -503,6 +517,20 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
       <guid>http://www.jkk.name/software/text2sql-baseline/</guid>
       
         <description>A simple LSTM-based model that uses templates and slot-filing to map questions to SQL queries. <a href="https://jkk.name/text2sql-data/systems/baseline-template/" target="_blank">https://jkk.name/text2sql-data/systems/baseline-template/</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Text to SQL datasets</title>
+      
+      <link>http://www.jkk.name/data/text-to-sql/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/text-to-sql/</guid>
+      
+        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://jkk.name/text2sql-data" target="_blank">https://jkk.name/text2sql-data</a></description>
       
 
     </item>
@@ -3316,8 +3344,9 @@ $N$ and $P$ are both positive numbers, so we can safely cancel the $N$s and divi
         <description>&lt;p&gt;My email address is: jkummerf@umich.edu&lt;/p&gt;
 
 &lt;p&gt;I am a Postdoctoral Research Fellow, working at the &lt;a href=&#34;https://www.umich.edu/&#34; target=&#34;_blank&#34;&gt;University of Michigan&lt;/a&gt;, in &lt;a href=&#34;https://www.cse.umich.edu/&#34; target=&#34;_blank&#34;&gt;Computer Science and Engineering&lt;/a&gt;.
-My research focus is Natural Language Processing - in particular, I am working on &lt;a href=&#34;https://sapphire.eecs.umich.edu&#34; target=&#34;_blank&#34;&gt;Project Sapphire&lt;/a&gt;, a collaboration with IBM, developing a conversational academic adviser.
-I am also affiliated with two research groups: &lt;a href=&#34;http://lit.eecs.umich.edu/&#34; target=&#34;_blank&#34;&gt;Language and Information Technologies&lt;/a&gt;, and &lt;a href=&#34;http://web.eecs.umich.edu/~wlasecki/croma.html&#34; target=&#34;_blank&#34;&gt;Crowds+Machines&lt;/a&gt;.&lt;/p&gt;
+I am based in the &lt;a href=&#34;http://web.eecs.umich.edu/~wlasecki/croma.html&#34; target=&#34;_blank&#34;&gt;Crowds+Machines lab&lt;/a&gt;, working on a range of projects at the intersection of Natural Language Processing and Crowdsourcing.
+In particular, I am improving our ability to generalise models across domains by combining human and machine effort in novel ways.
+I am also part of the &lt;a href=&#34;http://lit.eecs.umich.edu/&#34; target=&#34;_blank&#34;&gt;Language and Information Technologies group&lt;/a&gt; and advise the NLP research team at &lt;a href=&#34;https://clinc.com/&#34; target=&#34;_blank&#34;&gt;Clinc&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I completed my PhD in the &lt;a href=&#34;http://web.eecs.umich.edu/~wlasecki/croma.html&#34; target=&#34;_blank&#34;&gt;UC Berkeley NLP Group&lt;/a&gt;, advised by &lt;a href=&#34;http://www.cs.berkeley.edu/~klein&#34; target=&#34;_blank&#34;&gt;Dan Klein&lt;/a&gt;, with a thesis on new algorithms related to syntactic parsing: error analysis, formalism conversion, and graph parsing.
 I completed my BSc (Adv) with honours and medal in the &lt;a href=&#34;http://www.schwa.org&#34; target=&#34;_blank&#34;&gt;University of Sydney Schwa Lab&lt;/a&gt; advised by &lt;a href=&#34;http://sydney.edu.au/engineering/it/~james&#34; target=&#34;_blank&#34;&gt;James Curran&lt;/a&gt;, with a thesis on an algorithm for faster CCG parsing.
@@ -3325,20 +3354,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
 
 &lt;p&gt;My &lt;a href=&#34;http://www.jkk.name/doc/jonathan-kummerfeld-cv.pdf&#34;&gt;CV&lt;/a&gt; is available as a pdf.&lt;/p&gt;
 </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>IE/NER from Cybercriminal Forums</title>
-      
-      <link>http://www.jkk.name/data/cybercrime-forums/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
-      
-        <description>Forum posts with annotations of products. <a href="https://evidencebasedsecurity.org/forums/#data" target="_blank">https://evidencebasedsecurity.org/forums/#data</a></description>
       
 
     </item>
@@ -3362,6 +3377,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           One weakness of machine-learned NLP models is that they typically perform poorly on out-of-domain data. In this work, we study the task of identifying products being bought and sold in online cybercrime forums, which exhibits particularly challenging cross-domain effects.  We formulate a task that represents a hybrid of slot-filling information extraction and named entity recognition and annotate data from four different forums.  Each of these forums constitutes its own &#39;fine-grained domain&#39; in that the forums cover different market sectors with different properties, even though all forums are in the broad domain of cybercrime. We characterize these domain differences in the context of a learning-based system: supervised models see decreased accuracy when applied to new forums, and standard techniques for semi-supervised learning and domain adaptation have limited effectiveness on this data, which suggests the need to improve these techniques. We release a dataset of 1,938 annotated posts from across the four forums.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>IE/NER from Cybercriminal Forums</title>
+      
+      <link>http://www.jkk.name/data/cybercrime-forums/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
+      
+        <description>Forum posts with annotations of products. <a href="https://evidencebasedsecurity.org/forums/#data" target="_blank">https://evidencebasedsecurity.org/forums/#data</a></description>
       
 
     </item>

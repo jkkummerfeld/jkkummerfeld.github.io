@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Mon, 13 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://www.jkk.name/software/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      
+        <title>SLATE: A Super-Lightweight Annotation Tool for Experts</title>
+      
+      <link>http://www.jkk.name/software/slate/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/slate/</guid>
+      
+        <description>A terminal-based text annotation tool in Python. <a href="https://jkk.name/slate" target="_blank">https://jkk.name/slate</a></description>
+      
+
+    </item>
     
     <item>
       

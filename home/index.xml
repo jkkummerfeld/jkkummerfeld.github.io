@@ -24,8 +24,9 @@
         <description>&lt;p&gt;My email address is: jkummerf@umich.edu&lt;/p&gt;
 
 &lt;p&gt;I am a Postdoctoral Research Fellow, working at the &lt;a href=&#34;https://www.umich.edu/&#34; target=&#34;_blank&#34;&gt;University of Michigan&lt;/a&gt;, in &lt;a href=&#34;https://www.cse.umich.edu/&#34; target=&#34;_blank&#34;&gt;Computer Science and Engineering&lt;/a&gt;.
-My research focus is Natural Language Processing - in particular, I am working on &lt;a href=&#34;https://sapphire.eecs.umich.edu&#34; target=&#34;_blank&#34;&gt;Project Sapphire&lt;/a&gt;, a collaboration with IBM, developing a conversational academic adviser.
-I am also affiliated with two research groups: &lt;a href=&#34;http://lit.eecs.umich.edu/&#34; target=&#34;_blank&#34;&gt;Language and Information Technologies&lt;/a&gt;, and &lt;a href=&#34;http://web.eecs.umich.edu/~wlasecki/croma.html&#34; target=&#34;_blank&#34;&gt;Crowds+Machines&lt;/a&gt;.&lt;/p&gt;
+I am based in the &lt;a href=&#34;http://web.eecs.umich.edu/~wlasecki/croma.html&#34; target=&#34;_blank&#34;&gt;Crowds+Machines lab&lt;/a&gt;, working on a range of projects at the intersection of Natural Language Processing and Crowdsourcing.
+In particular, I am improving our ability to generalise models across domains by combining human and machine effort in novel ways.
+I am also part of the &lt;a href=&#34;http://lit.eecs.umich.edu/&#34; target=&#34;_blank&#34;&gt;Language and Information Technologies group&lt;/a&gt; and advise the NLP research team at &lt;a href=&#34;https://clinc.com/&#34; target=&#34;_blank&#34;&gt;Clinc&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;I completed my PhD in the &lt;a href=&#34;http://web.eecs.umich.edu/~wlasecki/croma.html&#34; target=&#34;_blank&#34;&gt;UC Berkeley NLP Group&lt;/a&gt;, advised by &lt;a href=&#34;http://www.cs.berkeley.edu/~klein&#34; target=&#34;_blank&#34;&gt;Dan Klein&lt;/a&gt;, with a thesis on new algorithms related to syntactic parsing: error analysis, formalism conversion, and graph parsing.
 I completed my BSc (Adv) with honours and medal in the &lt;a href=&#34;http://www.schwa.org&#34; target=&#34;_blank&#34;&gt;University of Sydney Schwa Lab&lt;/a&gt; advised by &lt;a href=&#34;http://sydney.edu.au/engineering/it/~james&#34; target=&#34;_blank&#34;&gt;James Curran&lt;/a&gt;, with a thesis on an algorithm for faster CCG parsing.
