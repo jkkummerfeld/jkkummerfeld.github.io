@@ -15,6 +15,29 @@
     <item>
       
       <title>
+        "No-Press Diplomacy: Modeling Multi-Agent Gameplay",
+        
+          Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn&eacute;, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Joelle Pineau, Satinder Singh, Aaron Courville
+        
+        (NeurIPS,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
+      
+        <description>
+          
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "An Evaluation for Intent Classification and Out-of-Scope Prediction",
         
           Stefan Larson, Anish Mahendran, Joseph J. Peper, Christopher Clarke, Andrew Lee, Parker Hill, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Kevin Leach, Michael A. Laurenzano, Lingjia Tang and Jason Mars
@@ -322,29 +345,6 @@ Both are free, but have slightly different features:&lt;/p&gt;
       
         <description>
           We examine a large dialog corpus obtained from the conversation history of a single individual with 104 conversation partners. The corpus consists of half a million instant messages, across several messaging platforms. We focus our analyses on seven speaker attributes, each of which partitions the set of speakers, namely: gender; relative age; family member; romantic partner; classmate; co-worker; and native to the same country. In addition to the content of the messages, we examine conversational aspects such as the time messages are sent, messaging frequency, psycholinguistic word categories, linguistic mirroring, and graph-based features reflecting how people in the corpus mention each other. We present two sets of experiments predicting each attribute using (1) short context windows; and (2) a larger set of messages. We find that using all features leads to gains of 9-14% over using message text only.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
-        "No-Press Diplomacy: Modeling Multi-Agent Gameplay",
-        
-          Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn&eacute;, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Joelle Pineau, Satinder Singh, Aaron Courville
-        
-        (Advances in Neural Information Processing Systems 32,
-        2019)
-      </title>
-      
-      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
-      
-        <description>
-          
         </description>
       
 
