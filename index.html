@@ -552,6 +552,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 </a>
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1909.02128">
   <span style="font-size:large;">arXiv</span>
 </a>
@@ -577,6 +578,16 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 </a>
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
+  if (document.getElementById('neurips19diplomacy-abstract').style.display == 'block') {
+  document.getElementById('neurips19diplomacy-abstract').style.display='none';
+  } else {
+  document.getElementById('neurips19diplomacy-abstract').style.display='block';
+  }
+  ">
+  <span style="font-size:large;">Abstract</span>
+</a>
+
 
 
 <div id="neurips19diplomacy-bib" style="display: none;margin-left:20px;" style="text-align:right;">
@@ -596,7 +607,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 </div>
 <div id="neurips19diplomacy-abstract" style="display: none;margin-left:20px;" style="text-align:right;">
   <p>
-    
+    Diplomacy is a seven-player non-stochastic, non-cooperative game, where agents acquire resources through a mix of teamwork and betrayal. Reliance on trust and coordination makes Diplomacy the first non-cooperative multi-agent benchmark for complex sequential social dilemmas in a rich environment. In this work, we focus on training an agent that learns to play the No Press version of Diplomacy where there is no dedicated communication channel between players. We present DipNet, a neural-network-based policy model for No Press Diplomacy. The model was trained on a new dataset of more than 150,000 human games. Our model is trained by supervised learning (SL) from expert trajectories, which is then used to initialize a reinforcement learning (RL) agent trained through self-play. Both the SL and RL agents demonstrate state-of-the-art No Press performance by beating popular rule-based bots.
   </p>
 </div>
 
@@ -615,7 +626,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
         
           <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
   
-    <div itemprop="name">An Evaluation for Intent Classification and Out-of-Scope Prediction</div>
+  <div itemprop="name"><a href="https://arxiv.org/abs/1909.02027">An Evaluation for Intent Classification and Out-of-Scope Prediction</a></div>
   
   <div itemprop="author">
     Stefan Larson, Anish Mahendran, Joseph J. Peper, Christopher Clarke, Andrew Lee, Parker Hill, <span style='text-decoration:underline;'>Jonathan K. Kummerfeld</span>, Kevin Leach, Michael A. Laurenzano, Lingjia Tang and Jason Mars</div>
@@ -628,6 +639,15 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 </a>
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1909.02027">
+  <span style="font-size:large;">PDF</span>
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1909.02027">
+  <span style="font-size:large;">arXiv</span>
+</a>
 
 
 
@@ -635,6 +655,10 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 
 
 
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/clinc/oos-eval">
+  <span style="font-size:large;">Dataset</span>
+</a>
 
 
 
@@ -650,6 +674,16 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 </a>
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
+  if (document.getElementById('emnlp19data-abstract').style.display == 'block') {
+  document.getElementById('emnlp19data-abstract').style.display='none';
+  } else {
+  document.getElementById('emnlp19data-abstract').style.display='block';
+  }
+  ">
+  <span style="font-size:large;">Abstract</span>
+</a>
+
 
 
 <div id="emnlp19data-bib" style="display: none;margin-left:20px;" style="text-align:right;">
@@ -663,14 +697,15 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
   location  = {Hong Kong, China},
   pages     = {},
   url       = {},
-  data      = {},
+  data      = {https://github.com/clinc/oos-eval},
+  arxiv     = {https://arxiv.org/abs/1909.02027},
 }
 
       </pre>
 </div>
 <div id="emnlp19data-abstract" style="display: none;margin-left:20px;" style="text-align:right;">
   <p>
-    
+    Task-oriented dialog systems need to know when a query falls outside their range of supported intents, but current text classification corpora only define label sets that cover every example. We introduce a new dataset that includes queries that are out-of-scope&mdash;i.e., queries that do not fall into any of the system&rsquo;s supported intents. This poses a new challenge because models cannot assume that every query at inference time belongs to a system-supported intent class. Our dataset also covers 150 intent classes over 10 domains, capturing the breadth that a production task-oriented agent must handle. We evaluate a range of benchmark classifiers on our dataset along with several different out-of-scope identification schemes. We find that while the classifiers perform well on in-scope intent classification, they struggle to identify out-of-scope queries. Our dataset and evaluation fill an important gap in the field, offering a way of more rigorously and realistically benchmarking text classification in task-driven dialog systems.
   </p>
 </div>
 
@@ -704,6 +739,11 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 
 <a class="btn btn-primary btn-outline btn-xs" href="https://www.aclweb.org/anthology/P19-1374">
   <span style="font-size:large;">PDF</span>
+</a>
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/post/2019-07-10_disentanglement/">
+  <span style="font-size:large;">Blog Post</span>
 </a>
 
 
@@ -776,6 +816,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
   arxiv     = {https://arxiv.org/abs/1810.11118},
   software  = {https://jkk.name/irc-disentanglement},
   data      = {https://jkk.name/irc-disentanglement},
+  blog_post = {/post/2019-07-10_disentanglement/},
 }
 
       </pre>
@@ -902,6 +943,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="https://jkk.name/slate">
   <span style="font-size:large;">Code</span>
 </a>
@@ -986,6 +1028,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="https://aclweb.org/anthology/papers/N/N19/N19-1051/">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1904.03122">
@@ -1076,6 +1119,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1904.11610">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1904.11610">
@@ -1181,6 +1225,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
   if (document.getElementById('dstc19task1-bib').style.display == 'block') {
   document.getElementById('dstc19task1-bib').style.display='none';
@@ -1255,6 +1300,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="https://sentic.net/personal-longitudinal-dialog-data.pdf">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -1345,6 +1391,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1901.03461">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1901.03461">
@@ -1567,6 +1614,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 </a>
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1806.09029">
   <span style="font-size:large;">arXiv</span>
 </a>
@@ -1697,6 +1745,13 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 			Jingjing Li, Wenlu Wang, Wei-Shinn Ku, Yingtao Tian, Haixun Wang, ACM SIGSPATIAL International Conference on Advances in Geographic Information Systems, 2019
 		</p>
 	
+		<p>
+      
+        Editing-Based SQL Query Generation for Cross-Domain Context-Dependent Questions
+      
+			Rui Zhang, Tao Yu, He Yang Er, Sungrok Shim, Eric Xue, Xi Victoria Lin, Tianze Shi, Caiming Xiong, Richard Socher, Dragomir Radev, EMNLP, 2019
+		</p>
+	
 </div>
 </p>
 </div>
@@ -1726,6 +1781,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://aclweb.org/anthology/N18-3005">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -1868,6 +1924,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
   if (document.getElementById('naacl18summary-bib').style.display == 'block') {
   document.getElementById('naacl18summary-bib').style.display='none';
@@ -1974,6 +2031,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://aclweb.org/anthology/N18-1190">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1804.09692">
@@ -2103,6 +2161,13 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 			Armineh Nourbakhsh, Grace Bang, 2nd KDD Workshop on Anomaly Detection in Finance, 2019
 		</p>
 	
+		<p>
+      
+        Weighted posets: Learning surface order from dependency trees
+      
+			William Dyer, Syntaxfest, 2019
+		</p>
+	
 </div>
 </p>
 </div>
@@ -2132,6 +2197,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/1085.pdf">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -2238,6 +2304,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="https://www.aclweb.org/anthology/D17-1275">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1708.09609">
@@ -2380,6 +2447,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://aclweb.org/anthology/P17-2017">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1704.05753">
@@ -2541,6 +2609,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/pub/www17forums.pdf">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -2721,6 +2790,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 </a>
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1707.04221">
   <span style="font-size:large;">arXiv</span>
 </a>
@@ -2872,6 +2942,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
   if (document.getElementById('thesis16parsing-bib').style.display == 'block') {
   document.getElementById('thesis16parsing-bib').style.display='none';
@@ -2967,6 +3038,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/pub/emnlp15learn.pdf">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -3133,6 +3205,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.aclweb.org/anthology/D13-1027">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -3367,6 +3440,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/pub/acl13analysis_keynote.key">
   <span style="font-size:large;">Slides</span>
 </a>
@@ -3562,6 +3636,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 </a>
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1309.4104">
   <span style="font-size:large;">arXiv</span>
 </a>
@@ -3680,6 +3755,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.aclweb.org/anthology/D12-1096">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -4008,6 +4084,13 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 			Trang Tran, Jiahong Yuan, Yang Liu, Mari Ostendorf, Interspeech, 2019
 		</p>
 	
+		<p>
+      
+        Integration of a Multilingual Preordering Component into a Commercial SMT Platform
+      
+			Anita Ramm, Riccardo Superbo, Dimitar Shterionov, Tony O&#39;Dowd, Alexander Fraser, The Prague Bulletin of Mathematical Linguistics, 2017
+		</p>
+	
 </div>
 </p>
 </div>
@@ -4037,6 +4120,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.aclweb.org/anthology/P12-2021">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -4159,6 +4243,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.aclweb.org/anthology/W11-1916">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -4327,6 +4412,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 <a class="btn btn-primary btn-outline btn-xs" href="http://prl.aps.org/abstract/PRL/v105/i13/e135702">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/0912.0193">
@@ -4704,6 +4790,7 @@ I received my Higher School Certificate at <a href="http://www.emanuelschool.nsw
 
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
   if (document.getElementById('coling10morph-bib').style.display == 'block') {
   document.getElementById('coling10morph-bib').style.display='none';
@@ -4815,6 +4902,7 @@ We use morphological analysis to split verb inflectional suffixes into separate 
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.aclweb.org/anthology/P/P10/P10-1036.pdf">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -4992,6 +5080,7 @@ We use morphological analysis to split verb inflectional suffixes into separate 
 
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/pub/alta09tagging_slides.pdf">
   <span style="font-size:large;">PDF Slides</span>
 </a>
@@ -5085,6 +5174,7 @@ We demonstrate faster methods for training a supertagger using hundreds of milli
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/pub/thesis09adapt_thesis.pdf">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -5197,6 +5287,7 @@ We demonstrate faster methods for training a supertagger using hundreds of milli
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/pub/report09jhu.pdf">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 
@@ -5371,6 +5462,7 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
 
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="http://www.jkk.name/pub/alta08vpc_poster.eps">
   <span style="font-size:large;">Poster</span>
 </a>
@@ -5518,6 +5610,7 @@ The focus of the research was the C&amp;C parser (Clark and Curran, 2007c), a st
 <a class="btn btn-primary btn-outline btn-xs" href="http://pubs.acs.org/doi/abs/10.1021/jp804953r">
   <span style="font-size:large;">PDF</span>
 </a>
+
 
 
 

@@ -226,7 +226,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text"></p>
+  <p class="pub-abstract" itemprop="text">Diplomacy is a seven-player non-stochastic, non-cooperative game, where agents acquire resources through a mix of teamwork and betrayal. Reliance on trust and coordination makes Diplomacy the first non-cooperative multi-agent benchmark for complex sequential social dilemmas in a rich environment. In this work, we focus on training an agent that learns to play the No Press version of Diplomacy where there is no dedicated communication channel between players. We present DipNet, a neural-network-based policy model for No Press Diplomacy. The model was trained on a new dataset of more than 150,000 human games. Our model is trained by supervised learning (SL) from expert trajectories, which is then used to initialize a reinforcement learning (RL) agent trained through self-play. Both the SL and RL agents demonstrate state-of-the-art No Press performance by beating popular rule-based bots.</p>
 
   
   <div class="row">
@@ -295,6 +295,7 @@
 </a>
 
 
+
 <a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1909.02128">
   <span style="font-size:large;">arXiv</span>
 </a>
@@ -320,6 +321,16 @@
 </a>
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
+  if (document.getElementById('neurips19diplomacy-abstract').style.display == 'block') {
+  document.getElementById('neurips19diplomacy-abstract').style.display='none';
+  } else {
+  document.getElementById('neurips19diplomacy-abstract').style.display='block';
+  }
+  ">
+  <span style="font-size:large;">Abstract</span>
+</a>
+
 
 
 <div id="neurips19diplomacy-bib" style="display: none;margin-left:20px;" style="text-align:right;">
@@ -339,7 +350,7 @@
 </div>
 <div id="neurips19diplomacy-abstract" style="display: none;margin-left:20px;" style="text-align:right;">
   <p>
-    
+    Diplomacy is a seven-player non-stochastic, non-cooperative game, where agents acquire resources through a mix of teamwork and betrayal. Reliance on trust and coordination makes Diplomacy the first non-cooperative multi-agent benchmark for complex sequential social dilemmas in a rich environment. In this work, we focus on training an agent that learns to play the No Press version of Diplomacy where there is no dedicated communication channel between players. We present DipNet, a neural-network-based policy model for No Press Diplomacy. The model was trained on a new dataset of more than 150,000 human games. Our model is trained by supervised learning (SL) from expert trajectories, which is then used to initialize a reinforcement learning (RL) agent trained through self-play. Both the SL and RL agents demonstrate state-of-the-art No Press performance by beating popular rule-based bots.
   </p>
 </div>
 

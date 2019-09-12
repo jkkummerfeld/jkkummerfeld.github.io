@@ -226,7 +226,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text"></p>
+  <p class="pub-abstract" itemprop="text">Task-oriented dialog systems need to know when a query falls outside their range of supported intents, but current text classification corpora only define label sets that cover every example. We introduce a new dataset that includes queries that are out-of-scope&mdash;i.e., queries that do not fall into any of the system&rsquo;s supported intents. This poses a new challenge because models cannot assume that every query at inference time belongs to a system-supported intent class. Our dataset also covers 150 intent classes over 10 domains, capturing the breadth that a production task-oriented agent must handle. We evaluate a range of benchmark classifiers on our dataset along with several different out-of-scope identification schemes. We find that while the classifiers perform well on in-scope intent classification, they struggle to identify out-of-scope queries. Our dataset and evaluation fill an important gap in the field, offering a way of more rigorously and realistically benchmarking text classification in task-driven dialog systems.</p>
 
   
   <div class="row">
@@ -290,6 +290,15 @@
 </a>
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1909.02027">
+  <span style="font-size:large;">PDF</span>
+</a>
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://arxiv.org/abs/1909.02027">
+  <span style="font-size:large;">arXiv</span>
+</a>
 
 
 
@@ -297,6 +306,10 @@
 
 
 
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://github.com/clinc/oos-eval">
+  <span style="font-size:large;">Dataset</span>
+</a>
 
 
 
@@ -312,6 +325,16 @@
 </a>
 
 
+<a class="btn btn-primary btn-outline btn-xs" href="javascript:;" onClick="
+  if (document.getElementById('emnlp19data-abstract').style.display == 'block') {
+  document.getElementById('emnlp19data-abstract').style.display='none';
+  } else {
+  document.getElementById('emnlp19data-abstract').style.display='block';
+  }
+  ">
+  <span style="font-size:large;">Abstract</span>
+</a>
+
 
 
 <div id="emnlp19data-bib" style="display: none;margin-left:20px;" style="text-align:right;">
@@ -325,14 +348,15 @@
   location  = {Hong Kong, China},
   pages     = {},
   url       = {},
-  data      = {},
+  data      = {https://github.com/clinc/oos-eval},
+  arxiv     = {https://arxiv.org/abs/1909.02027},
 }
 
       </pre>
 </div>
 <div id="emnlp19data-abstract" style="display: none;margin-left:20px;" style="text-align:right;">
   <p>
-    
+    Task-oriented dialog systems need to know when a query falls outside their range of supported intents, but current text classification corpora only define label sets that cover every example. We introduce a new dataset that includes queries that are out-of-scope&mdash;i.e., queries that do not fall into any of the system&rsquo;s supported intents. This poses a new challenge because models cannot assume that every query at inference time belongs to a system-supported intent class. Our dataset also covers 150 intent classes over 10 domains, capturing the breadth that a production task-oriented agent must handle. We evaluate a range of benchmark classifiers on our dataset along with several different out-of-scope identification schemes. We find that while the classifiers perform well on in-scope intent classification, they struggle to identify out-of-scope queries. Our dataset and evaluation fill an important gap in the field, offering a way of more rigorously and realistically benchmarking text classification in task-driven dialog systems.
   </p>
 </div>
 
