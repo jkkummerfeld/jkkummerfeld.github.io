@@ -60,6 +60,61 @@
     
     <item>
       
+        <title>No-Press Diplomacy: Modeling Multi-Agent Gameplay (Paquette et al., 2019)</title>
+      
+      <link>http://www.jkk.name/post/2019-09-13_diplomacynopress/</link>
+      <pubDate>Fri, 13 Sep 2019 13:00:23 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2019-09-13_diplomacynopress/</guid>
+      
+        <description>
+
+&lt;p&gt;Games have been a focus of AI research for decades, from Samuel&amp;rsquo;s checkers program in the 1950s, to Deep Blue playing Chess in the 1990s, and AlphaGo playing Go in the 2010s.
+All of those are two-player sequential games.
+In this paper (to appear at NeurIPS), we looked at Diplomacy, a seven player game with simultaneous turns.&lt;/p&gt;
+
+&lt;p&gt;The paper makes three main contributions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A neural model that plays the game.&lt;/li&gt;
+&lt;li&gt;Software to play the game (determining the outcomes of player actions is a non-trivial problem).&lt;/li&gt;
+&lt;li&gt;Experiments with supervised learning and reinforcement learning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Our paper only considers the version of the game where players can not talk to each other (No Press).
+Engaging in conversation in the game is a fascinating challenge that will involve a lot more work.&lt;/p&gt;
+
+&lt;p&gt;How well does the bot play the game?
+It convincingly beats prior systems designed for the game.
+Playing against it, I saw an impressive improvement over the course of the project.
+Early on I won trivially with mostly conservative moves.
+Later I had to carefully consider my moves, and was unable to win as certain powers (e.g. Austria).
+Eventually I was unable to beat the bot without playing several times, using observations from one game to inform my strategy in subsequent games.
+I am not an expert player, but I doubt a human playing one power in the game with no prior knowledge can win against the bot.
+However, I think a single bot playing against six skilled humans would almost definitely lose (we did not test this setting).&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1909.02128&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{neurips19diplomacy,
+  author    = {Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn{\&#39;e}, Jonathan K. Kummerfeld, Joelle Pineau, Satinder Singh, Aaron Courville},
+  title     = {No-Press Diplomacy: Modeling Multi-Agent Gameplay},
+  booktitle = {Advances in Neural Information Processing Systems 32},
+  year      = {2019},
+  month     = {December},
+  pages     = {},
+  url       = {},
+  arxiv     = {https://arxiv.org/abs/1909.02128},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>IRC Disentanglement</title>
       
       <link>http://www.jkk.name/data/irc/</link>
@@ -197,29 +252,6 @@ Thank you!&lt;/p&gt;
     <item>
       
       <title>
-        "A Large-Scale Corpus for Conversation Disentanglement",
-        
-          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Sai R. Gouravajhala, Joseph J. Peper, Vignesh Athreya, Chulaka Gunasekara, Jatin Ganhotra, Siva Sankalp Patel, Lazaros Polymenakos, Walter S. Lasecki
-        
-        (ACL,
-        2019)
-      </title>
-      
-      <link>http://www.jkk.name/publication/acl19disentangle/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
-      
-        <description>
-          Disentangling conversations mixed together in a single stream of messages is a difficult task, made harder by the lack of large manually annotated datasets. We created a new dataset of 77,563 messages manually annotated with reply-structure graphs that both disentangle conversations and define internal conversation structure. Our data is 16 times larger than all previously released datasets combined, the first to include adjudication of annotation disagreements, and the first to include context. We use our data to re-examine prior work, in particular, finding that 89% of conversations in a widely used dialogue corpus are either missing messages or contain extra messages. Our manually-annotated data presents an opportunity to develop robust data-driven methods for conversation disentanglement, which will help advance dialogue research.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "SLATE: A Super-Lightweight Annotation Tool for Experts",
         
           &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;
@@ -235,6 +267,29 @@ Thank you!&lt;/p&gt;
       
         <description>
           Many annotation tools have been developed, covering a wide variety of tasks and providing features like user management, pre-processing, and automatic labeling. However, all of these tools use a Graphical User Interface, and often require substantial effort for installation and configuration. This paper presents a new annotation tool that is designed to fill the niche of a lightweight interface for users with a terminal-based workflow. Slate supports annotation at different scales (spans of characters, tokens, and lines, or a document) and of different types (free text, labels, and links), with easily customisable keybindings, and unicode support. In a user study comparing with other tools it was consistently the easiest to install and use. Slate fills a need not met by existing systems, and has already been used to annotate two corpora, one of which involved over 250 hours of annotation effort.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "A Large-Scale Corpus for Conversation Disentanglement",
+        
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Sai R. Gouravajhala, Joseph J. Peper, Vignesh Athreya, Chulaka Gunasekara, Jatin Ganhotra, Siva Sankalp Patel, Lazaros Polymenakos, Walter S. Lasecki
+        
+        (ACL,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/acl19disentangle/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
+      
+        <description>
+          Disentangling conversations mixed together in a single stream of messages is a difficult task, made harder by the lack of large manually annotated datasets. We created a new dataset of 77,563 messages manually annotated with reply-structure graphs that both disentangle conversations and define internal conversation structure. Our data is 16 times larger than all previously released datasets combined, the first to include adjudication of annotation disagreements, and the first to include context. We use our data to re-examine prior work, in particular, finding that 89% of conversations in a widely used dialogue corpus are either missing messages or contain extra messages. Our manually-annotated data presents an opportunity to develop robust data-driven methods for conversation disentanglement, which will help advance dialogue research.
         </description>
       
 
@@ -353,29 +408,6 @@ Both are free, but have slightly different features:&lt;/p&gt;
     <item>
       
       <title>
-        "Learning from Personal Longitudinal Dialog Data",
-        
-          Charles Welch, Ver&oacute;nica P&eacute;rez-Rosas, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
-        
-        (IEEE Intelligent Systems,
-        2019)
-      </title>
-      
-      <link>http://www.jkk.name/publication/ieee19personal/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/ieee19personal/</guid>
-      
-        <description>
-          We explore the use of longitudinal dialog data for two dialog prediction tasks: next message prediction and response time prediction. We show that a neural model using personal data that leverages a combination of message content, style matching, time features, and speaker attributes leads to the best results for both tasks, with error rate reductions of up to 15% compared to a classifier that relies exclusively on message content and to a classifier that does not use personal data.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "DSTC7 Task 1: Noetic End-to-End Response Selection",
         
           Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, and Walter S. Lasecki
@@ -391,6 +423,29 @@ Both are free, but have slightly different features:&lt;/p&gt;
       
         <description>
           Goal-oriented dialogue in complex domains is an extremely challenging problem and there are relatively few datasets. This task provided two new resources that presented different challenges: one was focused but small, while the other was large but diverse. We also considered several new variations on the next utterance selection problem: (1) increasing the number of candidates, (2) including paraphrases, and (3) not including a correct option in the candidate set. Twenty teams participated, developing a range of neural network models, including some that successfully incorporated external data to boost performance. Both datasets have been publicly released, enabling future work to build on these results, working towards robust goal-oriented dialogue systems.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "Learning from Personal Longitudinal Dialog Data",
+        
+          Charles Welch, Ver&oacute;nica P&eacute;rez-Rosas, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
+        
+        (IEEE Intelligent Systems,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/ieee19personal/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/ieee19personal/</guid>
+      
+        <description>
+          We explore the use of longitudinal dialog data for two dialog prediction tasks: next message prediction and response time prediction. We show that a neural model using personal data that leverages a combination of message content, style matching, time features, and speaker attributes leads to the best results for both tasks, with error rate reductions of up to 15% compared to a classifier that relies exclusively on message content and to a classifier that does not use personal data.
         </description>
       
 
@@ -659,29 +714,6 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
     <item>
       
       <title>
-        "Effective Crowdsourcing for a New Type of Summarization Task",
-        
-          Youxuan Jiang, Catherine Finegan-Dollak, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter Lasecki
-        
-        (NAACL (short),
-        2018)
-      </title>
-      
-      <link>http://www.jkk.name/publication/naacl18summary/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/naacl18summary/</guid>
-      
-        <description>
-          Most summarization research focuses on summarizing the entire given text, but in practice readers are often interested in only one aspect of the document or conversation. We propose &#39;targeted summarization&#39; as an umbrella category for summarization tasks that intentionally consider only parts of the input data. This covers query-based summarization, update summarization, and a new task we propose where the goal is to summarize a particular aspect of a document. However, collecting data for this new task is hard because directly asking annotators (e.g., crowd workers) to write summaries leads to data with low accuracy when there are a large number of facts to include.  We introduce a novel crowdsourcing workflow, Pin-Refine, that allows us to collect highquality summaries for our task, a necessary step for the development of automatic systems.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "Factors Influencing the Surprising Instability of Word Embeddings",
         
           Laura Wendlandt, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
@@ -697,6 +729,29 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
       
         <description>
           Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "Effective Crowdsourcing for a New Type of Summarization Task",
+        
+          Youxuan Jiang, Catherine Finegan-Dollak, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter Lasecki
+        
+        (NAACL (short),
+        2018)
+      </title>
+      
+      <link>http://www.jkk.name/publication/naacl18summary/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/naacl18summary/</guid>
+      
+        <description>
+          Most summarization research focuses on summarizing the entire given text, but in practice readers are often interested in only one aspect of the document or conversation. We propose &#39;targeted summarization&#39; as an umbrella category for summarization tasks that intentionally consider only parts of the input data. This covers query-based summarization, update summarization, and a new task we propose where the goal is to summarize a particular aspect of a document. However, collecting data for this new task is hard because directly asking annotators (e.g., crowd workers) to write summaries leads to data with low accuracy when there are a large number of facts to include.  We introduce a novel crowdsourcing workflow, Pin-Refine, that allows us to collect highquality summaries for our task, a necessary step for the development of automatic systems.
         </description>
       
 

@@ -14,6 +14,61 @@
     
     <item>
       
+        <title>No-Press Diplomacy: Modeling Multi-Agent Gameplay (Paquette et al., 2019)</title>
+      
+      <link>http://www.jkk.name/post/2019-09-13_diplomacynopress/</link>
+      <pubDate>Fri, 13 Sep 2019 13:00:23 -0400</pubDate>
+      
+      <guid>http://www.jkk.name/post/2019-09-13_diplomacynopress/</guid>
+      
+        <description>
+
+&lt;p&gt;Games have been a focus of AI research for decades, from Samuel&amp;rsquo;s checkers program in the 1950s, to Deep Blue playing Chess in the 1990s, and AlphaGo playing Go in the 2010s.
+All of those are two-player sequential games.
+In this paper (to appear at NeurIPS), we looked at Diplomacy, a seven player game with simultaneous turns.&lt;/p&gt;
+
+&lt;p&gt;The paper makes three main contributions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A neural model that plays the game.&lt;/li&gt;
+&lt;li&gt;Software to play the game (determining the outcomes of player actions is a non-trivial problem).&lt;/li&gt;
+&lt;li&gt;Experiments with supervised learning and reinforcement learning.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Our paper only considers the version of the game where players can not talk to each other (No Press).
+Engaging in conversation in the game is a fascinating challenge that will involve a lot more work.&lt;/p&gt;
+
+&lt;p&gt;How well does the bot play the game?
+It convincingly beats prior systems designed for the game.
+Playing against it, I saw an impressive improvement over the course of the project.
+Early on I won trivially with mostly conservative moves.
+Later I had to carefully consider my moves, and was unable to win as certain powers (e.g. Austria).
+Eventually I was unable to beat the bot without playing several times, using observations from one game to inform my strategy in subsequent games.
+I am not an expert player, but I doubt a human playing one power in the game with no prior knowledge can win against the bot.
+However, I think a single bot playing against six skilled humans would almost definitely lose (we did not test this setting).&lt;/p&gt;
+
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://arxiv.org/abs/1909.02128&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{neurips19diplomacy,
+  author    = {Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn{\&#39;e}, Jonathan K. Kummerfeld, Joelle Pineau, Satinder Singh, Aaron Courville},
+  title     = {No-Press Diplomacy: Modeling Multi-Agent Gameplay},
+  booktitle = {Advances in Neural Information Processing Systems 32},
+  year      = {2019},
+  month     = {December},
+  pages     = {},
+  url       = {},
+  arxiv     = {https://arxiv.org/abs/1909.02128},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</title>
       
       <link>http://www.jkk.name/post/2019-07-10_disentanglement/</link>
