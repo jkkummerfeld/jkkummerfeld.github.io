@@ -466,7 +466,7 @@ Extensive work has explored how to adapt to new domains (including &lt;a href=&#
 
 &lt;p&gt;The first is straightforward, and further demonstrates the effectiveness of ELMo.
 To give a sense of how much this helps, the Charniak parser goes from 92 on the WSJ to 85 on the Brown corpus, while this model goes from 94 to 90.
-The second idea takes advantage of &lt;a href=&#34;https://aclanthology.info/papers/P17-1076/p17-1076&#34; target=&#34;_blank&#34;&gt;a recent parsing model&lt;/a&gt; with a simple approach:&lt;/p&gt;
+The second idea takes advantage of &lt;a href=&#34;https://www.aclweb.org/anthology/P17-1076.pdf&#34; target=&#34;_blank&#34;&gt;a recent parsing model&lt;/a&gt; with a simple approach:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Independently assign a score to every span of a sentence, indicating whether it is part of the parse.&lt;/li&gt;
@@ -1694,7 +1694,7 @@ I wonder whether further gains could be realised with a label-sensitive ordering
 
 &lt;p&gt;In reference games, two players communicate in a shared world with the goal of one learning what the other is referring to.
 Their small scale and clear success criteria make them a convenient testbed for dialogue agents, going back decades, with recent work focusing on neural approaches.
-This paper considers a simple game and constrains models in various ways to improve performance and see how their communication varies, a line of work also appearing in recent papers by Jacob Andreas (&lt;a href=&#34;http://aclweb.org/anthology/P/P17/P17-1022.pdf&#34; target=&#34;_blank&#34;&gt;ACL 2017&lt;/a&gt;, &lt;a href=&#34;https://aclanthology.info/pdf/D/D17/D17-1310.pdf&#34; target=&#34;_blank&#34;&gt;EMNLP 2017&lt;/a&gt;).&lt;/p&gt;
+This paper considers a simple game and constrains models in various ways to improve performance and see how their communication varies, a line of work also appearing in recent papers by Jacob Andreas (&lt;a href=&#34;https://www.aclweb.org/anthology/P17-1022.pdf&#34; target=&#34;_blank&#34;&gt;ACL 2017&lt;/a&gt;, &lt;a href=&#34;https://www.aclweb.org/anthology/D17-1311.pdf&#34; target=&#34;_blank&#34;&gt;EMNLP 2017&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;The game in this case is to find out two properties of an object, where there are three possible properties, each with four possible values.
 Given enough flexibility, models will explicitly encode every possible structure of the world as a separate symbol, which does not generalise well.
