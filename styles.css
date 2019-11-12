@@ -281,8 +281,9 @@ blockquote p:last-child {
 }
 
 #profile ul.network-icon {
+  text-align: left;
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
