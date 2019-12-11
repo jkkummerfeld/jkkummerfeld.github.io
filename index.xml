@@ -15,6 +15,29 @@
     <item>
       
       <title>
+        "The Eighth Dialog System Technology Challenge",
+        
+          Seokhwan Kim, Michel Galley, Chulaka Gunasekara, Sungjin Lee, Adam Atkinson, Baolin Peng, Hannes Schulz, Jianfeng Gao, Jinchao Li, Mahmoud Adada, Minlie Huang, Luis Lastras, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter S. Lasecki, Chiori Hori, Anoop Cherian, Tim K. Marks, Abhinav Rastogi, Xiaoxue Zang, Srinivas Sunkara, Raghav Gupta
+        
+        (ConvAI Workshop,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/ws19dstc/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/ws19dstc/</guid>
+      
+        <description>
+          This paper introduces the Eighth Dialog System Technology Challenge. In line with recent challenges, the eighth edition focuses on applying end-to-end dialog technologies in a pragmatic way for multi-domain task-completion, noetic response selection, audio visual scene-aware dialog, and schema-guided dialog state tracking tasks. This paper describes the task definition, provided datasets, and evaluation set-up for each track. We also summarize the results of the submitted systems to highlight the overall trends of the state-of-the-art technologies for the tasks.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "No-Press Diplomacy: Modeling Multi-Agent Gameplay",
         
           Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn&eacute;, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Joelle Pineau, Satinder Singh, Aaron Courville
@@ -88,7 +111,7 @@ Pro: Easy to spend more or less time on each poster.
 Con: Easy to start skimming titles and figures without learning much (particularly when tired).&lt;/li&gt;
 &lt;li&gt;Talk to people.
 Pro: A great way to (1) learn about what other people are doing / thinking about right now, (2) make connections / network, (3) make specific people aware of your own work.
-Con: Sometimes conversations become just small talk, which is not always worthwhile. It can also be hard to approach new people.&lt;/li&gt;
+Con: Sometimes conversations become just small talk, which is not always worthwhile (Edit: see clarification in the postscript). It can also be hard to approach new people.&lt;/li&gt;
 &lt;li&gt;Relax.
 Pro: Being focused and engaged is tiring, a break can be rejuvenating.
 Con: Missing out on work being presented.&lt;/li&gt;
@@ -160,6 +183,29 @@ I am eager to see how the changes work out and also hope that having stepped bac
 
 &lt;p&gt;While putting this together I found this series of tweets from Chinmay Kulkarni interesting.
 Our opinions differ on certain points, so check them out: &lt;a href=&#34;https://twitter.com/chinmay/status/988410612316286976?s=20&#34; target=&#34;_blank&#34;&gt;https://twitter.com/chinmay/status/988410612316286976?s=20&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;postscript-responses&#34;&gt;Postscript: Responses&lt;/h2&gt;
+
+&lt;p&gt;After &lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1175843866878066689&#34; target=&#34;_blank&#34;&gt;sharing this&lt;/a&gt; on Twitter, there was some interesting discussion.
+For posterity, I&amp;rsquo;m summarising that and other comments I got here:&lt;/p&gt;
+
+&lt;p&gt;General
+- Be willing to leave a poster, talk, or conversation. It may feel polite to stay, but time is valuable, so once something no longer seems interesting, move on to something else. This is one reason to sit on the aisle in a talk.
+- Note taking is important because there is simply too much happening to remember. One suggestion was to track who you talked to and what it was about.
+- Consider going to random things and trying to understand them. This can lead to unexpected links to your own work and may be more interesting (as everything is new).&lt;/p&gt;
+
+&lt;p&gt;Talks vs. Posters
+- Talks can give a lot of content in a brief period and convey the presenter&amp;rsquo;s view of the most important idea.
+- Staying for a complete talk session can expose you to work that is relevant to your interests, but you might have otherwise missed.
+- Talks are often recorded now, so you can watch them later instead (but be honest with yourself about whether you will).
+- Demos and Industry track presentations may have content not in the paper.
+- Attending a talk is a nice way to connect with someone. It means you are guaranteed to find them and there is a starting place for conversation.
+- Interactions at posters can make you feel part of the community in a way talks don&amp;rsquo;t.
+- As the community grows we may need to explore other structures. For example, at RSS, work is presented as both a four minute talk and a poster session (NAACL tried a 1-minute-madness at least once, which is a similar idea).&lt;/p&gt;
+
+&lt;p&gt;Social
+- I clarified my small talk point above. I definitely see it is valuable, but if every conversation is small talk then you are missing an opportunity to have a conversation you couldn&amp;rsquo;t have outside of a conference.
+- People vary in their preferences regarding staying up late or not. Some see it is valuable time to connect. Others get the same from morning activities like running groups.&lt;/p&gt;
 </description>
       
 
@@ -359,29 +405,6 @@ Thank you!&lt;/p&gt;
     <item>
       
       <title>
-        "A Large-Scale Corpus for Conversation Disentanglement",
-        
-          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Sai R. Gouravajhala, Joseph J. Peper, Vignesh Athreya, Chulaka Gunasekara, Jatin Ganhotra, Siva Sankalp Patel, Lazaros Polymenakos, Walter S. Lasecki
-        
-        (ACL,
-        2019)
-      </title>
-      
-      <link>http://www.jkk.name/publication/acl19disentangle/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
-      
-        <description>
-          Disentangling conversations mixed together in a single stream of messages is a difficult task, made harder by the lack of large manually annotated datasets. We created a new dataset of 77,563 messages manually annotated with reply-structure graphs that both disentangle conversations and define internal conversation structure. Our data is 16 times larger than all previously released datasets combined, the first to include adjudication of annotation disagreements, and the first to include context. We use our data to re-examine prior work, in particular, finding that 89% of conversations in a widely used dialogue corpus are either missing messages or contain extra messages. Our manually-annotated data presents an opportunity to develop robust data-driven methods for conversation disentanglement, which will help advance dialogue research.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "SLATE: A Super-Lightweight Annotation Tool for Experts",
         
           &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;
@@ -397,6 +420,29 @@ Thank you!&lt;/p&gt;
       
         <description>
           Many annotation tools have been developed, covering a wide variety of tasks and providing features like user management, pre-processing, and automatic labeling. However, all of these tools use a Graphical User Interface, and often require substantial effort for installation and configuration. This paper presents a new annotation tool that is designed to fill the niche of a lightweight interface for users with a terminal-based workflow. Slate supports annotation at different scales (spans of characters, tokens, and lines, or a document) and of different types (free text, labels, and links), with easily customisable keybindings, and unicode support. In a user study comparing with other tools it was consistently the easiest to install and use. Slate fills a need not met by existing systems, and has already been used to annotate two corpora, one of which involved over 250 hours of annotation effort.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "A Large-Scale Corpus for Conversation Disentanglement",
+        
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Sai R. Gouravajhala, Joseph J. Peper, Vignesh Athreya, Chulaka Gunasekara, Jatin Ganhotra, Siva Sankalp Patel, Lazaros Polymenakos, Walter S. Lasecki
+        
+        (ACL,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/acl19disentangle/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
+      
+        <description>
+          Disentangling conversations mixed together in a single stream of messages is a difficult task, made harder by the lack of large manually annotated datasets. We created a new dataset of 77,563 messages manually annotated with reply-structure graphs that both disentangle conversations and define internal conversation structure. Our data is 16 times larger than all previously released datasets combined, the first to include adjudication of annotation disagreements, and the first to include context. We use our data to re-examine prior work, in particular, finding that 89% of conversations in a widely used dialogue corpus are either missing messages or contain extra messages. Our manually-annotated data presents an opportunity to develop robust data-driven methods for conversation disentanglement, which will help advance dialogue research.
         </description>
       
 
@@ -694,20 +740,6 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
     
     <item>
       
-        <title>Text to SQL Baseline</title>
-      
-      <link>http://www.jkk.name/software/text2sql-baseline/</link>
-      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/text2sql-baseline/</guid>
-      
-        <description>A simple LSTM-based model that uses templates and slot-filing to map questions to SQL queries. <a href="https://jkk.name/text2sql-data/systems/baseline-template/" target="_blank">https://jkk.name/text2sql-data/systems/baseline-template/</a></description>
-      
-
-    </item>
-    
-    <item>
-      
         <title>Text to SQL datasets</title>
       
       <link>http://www.jkk.name/data/text-to-sql/</link>
@@ -716,6 +748,20 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
       <guid>http://www.jkk.name/data/text-to-sql/</guid>
       
         <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://jkk.name/text2sql-data" target="_blank">https://jkk.name/text2sql-data</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Text to SQL Baseline</title>
+      
+      <link>http://www.jkk.name/software/text2sql-baseline/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/text2sql-baseline/</guid>
+      
+        <description>A simple LSTM-based model that uses templates and slot-filing to map questions to SQL queries. <a href="https://jkk.name/text2sql-data/systems/baseline-template/" target="_blank">https://jkk.name/text2sql-data/systems/baseline-template/</a></description>
       
 
     </item>
@@ -798,6 +844,29 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
     <item>
       
       <title>
+        "Data Collection for a Production Dialogue System: A Startup Perspective",
+        
+          Yiping Kang, Yunqi Zhang, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Parker Hill, Johann Hauswald, Michael A. Laurenzano, Lingjia Tang, Jason Mars
+        
+        (NAACL (industry),
+        2018)
+      </title>
+      
+      <link>http://www.jkk.name/publication/naacl18data/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/naacl18data/</guid>
+      
+        <description>
+          Industrial dialogue systems such as Apple Siri and Google Assistant require large scale diverse training data to enable their sophisticated conversation capabilities. Crowdsourcing is a scalable and inexpensive data collection method, but collecting high quality data efficiently requires thoughtful orchestration of crowdsourcing jobs. Prior study of data collection process has focused on tasks with limited scope and performed intrinsic data analysis, which may not be indicative of impact on trained model performance. In this paper, we present a study of crowdsourcing methods for a user intent classification task in one of our deployed dialogue systems. Our task requires classification over 47 possible user intents and contains many intent pairs with subtle differences. We consider different crowdsourcing job types and job prompts, quantitatively analyzing the quality of collected data and downstream model performance on a test set of real user queries from production logs. Our observations provide insight into how design decisions impact crowdsourced data quality, with clear recommendations for future data collection for dialogue systems.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "Effective Crowdsourcing for a New Type of Summarization Task",
         
           Youxuan Jiang, Catherine Finegan-Dollak, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter Lasecki
@@ -836,29 +905,6 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
       
         <description>
           Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
-        "Data Collection for a Production Dialogue System: A Startup Perspective",
-        
-          Yiping Kang, Yunqi Zhang, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Parker Hill, Johann Hauswald, Michael A. Laurenzano, Lingjia Tang, Jason Mars
-        
-        (NAACL (industry),
-        2018)
-      </title>
-      
-      <link>http://www.jkk.name/publication/naacl18data/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/naacl18data/</guid>
-      
-        <description>
-          Industrial dialogue systems such as Apple Siri and Google Assistant require large scale diverse training data to enable their sophisticated conversation capabilities. Crowdsourcing is a scalable and inexpensive data collection method, but collecting high quality data efficiently requires thoughtful orchestration of crowdsourcing jobs. Prior study of data collection process has focused on tasks with limited scope and performed intrinsic data analysis, which may not be indicative of impact on trained model performance. In this paper, we present a study of crowdsourcing methods for a user intent classification task in one of our deployed dialogue systems. Our task requires classification over 47 possible user intents and contains many intent pairs with subtle differences. We consider different crowdsourcing job types and job prompts, quantitatively analyzing the quality of collected data and downstream model performance on a test set of real user queries from production logs. Our observations provide insight into how design decisions impact crowdsourced data quality, with clear recommendations for future data collection for dialogue systems.
         </description>
       
 
@@ -3582,20 +3628,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>Crowdsourced Paraphrases</title>
-      
-      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
-      
-        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
         
@@ -3619,6 +3651,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
+        <title>Crowdsourced Paraphrases</title>
+      
+      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      
+        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Tools for Automated Analysis of Cybercriminal Markets",
         
@@ -3636,6 +3682,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           Underground forums are widely used by criminals to buy and sell a host of stolen items, datasets, resources, and criminal services.  These forums contain important resources for understanding cybercrime.  However, the number of forums, their size, and the domain expertise required to understand the markets makes manual exploration of these forums unscalable. In this work, we propose an automated, top-down approach for analyzing underground forums.  Our approach uses natural language processing and machine learning to automatically generate high-level information about underground forums, first identifying posts related to transactions, and then extracting products and prices. We also demonstrate, via a pair of case studies, how an analyst can use these automated approaches to investigate other categories of products and transactions. We use eight distinct forums to assess our tools: Antichat, Blackhat World, Carders, Darkode, Hack Forums, Hell, L33tCrew and Nulled. Our automated approach is fast and accurate, achieving over 80% accuracy in detecting post category, product, and prices.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>One-Endpoint Crossing Graph Parser</title>
+      
+      <link>http://www.jkk.name/software/1ec-parsing/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/1ec-parsing/</guid>
+      
+        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://jkk.name/1ec-graph-parser" target="_blank">https://jkk.name/1ec-graph-parser</a></description>
       
 
     </item>
@@ -3688,20 +3748,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
       
         <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
 </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>One-Endpoint Crossing Graph Parser</title>
-      
-      <link>http://www.jkk.name/software/1ec-parsing/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/1ec-parsing/</guid>
-      
-        <description>A range of tools related to one-endpoint crossing graphs - parsing, format conversion, and evaluation. <a href="https://jkk.name/1ec-graph-parser" target="_blank">https://jkk.name/1ec-graph-parser</a></description>
       
 
     </item>
@@ -3846,21 +3892,21 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     <item>
       
       <title>
-        "Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output",
+        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
         
-          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, David Hall, James R. Curran, Dan Klein
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Dan Klein, James R. Curran
         
-        (EMNLP,
+        (ACL (short),
         2012)
       </title>
       
-      <link>http://www.jkk.name/publication/emnlp12analysis/</link>
+      <link>http://www.jkk.name/publication/acl12conversion/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/emnlp12analysis/</guid>
+      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
       
         <description>
-          Constituency parser performance is primarily interpreted through a single metric, F-score on WSJ section 23, that conveys no linguistic information regarding the remaining errors.  We classify errors within a set of linguistically meaningful types using tree transformations that repair groups of errors together. We use this analysis to answer a range of questions about parser behaviour, including what linguistic constructions are difficult for state-of-the-art parsers, what types of errors are being resolved by rerankers, and what types are introduced when parsing out-of-domain text.
+          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
         </description>
       
 
@@ -3897,21 +3943,21 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     <item>
       
       <title>
-        "Robust Conversion of CCG Derivations to Phrase Structure Trees",
+        "Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output",
         
-          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Dan Klein, James R. Curran
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, David Hall, James R. Curran, Dan Klein
         
-        (ACL (short),
+        (EMNLP,
         2012)
       </title>
       
-      <link>http://www.jkk.name/publication/acl12conversion/</link>
+      <link>http://www.jkk.name/publication/emnlp12analysis/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
+      <guid>http://www.jkk.name/publication/emnlp12analysis/</guid>
       
         <description>
-          We propose an improved, bottom-up method for converting CCG derivations into PTB-style phrase structure trees. In contrast with past work (Clark and Curran, 2009), which used simple transductions on category pairs, our approach uses richer transductions attached to single categories. Our conversion preserves more sentences under round-trip conversion (51.1% vs. 39.6%) and is more robust. In particular, unlike past methods, ours does not require ad-hoc rules over non-local features, and so can be easily integrated into a parser.
+          Constituency parser performance is primarily interpreted through a single metric, F-score on WSJ section 23, that conveys no linguistic information regarding the remaining errors.  We classify errors within a set of linguistically meaningful types using tree transformations that repair groups of errors together. We use this analysis to answer a range of questions about parser behaviour, including what linguistic constructions are difficult for state-of-the-art parsers, what types of errors are being resolved by rerankers, and what types are introduced when parsing out-of-domain text.
         </description>
       
 
