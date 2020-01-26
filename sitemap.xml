@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/post/paper-reading/</loc>
+      <lastmod>2020-01-26T16:09:06-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/publication/neurips19diplomacy/</loc>
       <lastmod>2019-12-01T00:00:00+00:00</lastmod>
     </url>
@@ -1052,16 +1061,6 @@
     
     <url>
     
-      <loc>http://www.jkk.name/categories/acl/</loc>
-      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>http://www.jkk.name/tags/acl/</loc>
       <lastmod>2019-07-10T11:19:06-04:00</lastmod>
       <priority>0</priority>
@@ -1072,8 +1071,18 @@
     
     <url>
     
+      <loc>http://www.jkk.name/categories/acl/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/advice/</loc>
-      <lastmod>2019-09-22T10:49:35-04:00</lastmod>
+      <lastmod>2020-01-26T16:09:06-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1522,8 +1531,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/categories/syntax/</loc>
-      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+      <loc>http://www.jkk.name/tags/syntax/</loc>
+      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1532,8 +1541,8 @@
     
     <url>
     
-      <loc>http://www.jkk.name/tags/syntax/</loc>
-      <lastmod>2017-11-16T17:24:59-05:00</lastmod>
+      <loc>http://www.jkk.name/categories/syntax/</loc>
+      <lastmod>2018-06-12T20:33:00-04:00</lastmod>
       <priority>0</priority>
     </url>
     

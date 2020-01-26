@@ -14,6 +14,88 @@
     
     <item>
       
+        <title>Paper Reading</title>
+      
+      <link>http://www.jkk.name/post/paper-reading/</link>
+      <pubDate>Sun, 26 Jan 2020 16:09:06 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/post/paper-reading/</guid>
+      
+        <description>&lt;p&gt;Keeping up with research is hard.
+I&amp;rsquo;ve previously made lists of papers I wanted to read, and then only gotten to a small fraction of them.
+Simply resolving to read more papers hasn&amp;rsquo;t worked for me.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m trying out a new approach.
+The goals are (1) read less of more papers, and (2) read more papers that are critical to my work.
+Sometimes just the introduction or abstract is enough for me to get the ideas I need from the paper.
+I want to read the whole paper only if it is really relevant to me.
+The problem is that it&amp;rsquo;s easy to start reading a paper and then just keep going, and without a process it can be easy to put off starting at all.
+This is the process I&amp;rsquo;ve worked out (in Chrome) to do this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go through the proceedings for a conference on the ACL anthology and read every title. Based on the title, decide whether to read the abstract. Based on the abstract, decide whether to read the introduction, in which case open the paper in a tab.&lt;/li&gt;
+&lt;li&gt;Bookmark all tabs. Either use &lt;code&gt;Shift+Command+D&lt;/code&gt; or Bookmarks -&amp;gt; Bookmark All Tabs.&lt;/li&gt;
+&lt;li&gt;Export the folder of bookmarks to a file. To do this, go to &lt;code&gt;chrome://bookmarks&lt;/code&gt;, select the new folder then use the menu on the far right of the blue bar to select Export Bookmarks.&lt;/li&gt;
+&lt;li&gt;Run the code below, with &lt;code&gt;bookmarks_DATE.html&lt;/code&gt; as input (note, requires &lt;code&gt;PyPDF2&lt;/code&gt;). This produces a pdf with only the introduction of each paper (approximately).&lt;/li&gt;
+&lt;li&gt;Read through the pdf this produces and flag the papers to read all of.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This will hopefully produce a list that is short enough to read all of (and maybe write blog posts about!).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Python&#34;&gt;# Get the paper URLs
+import sys
+papers = {}
+for line in sys.stdin:
+    if &#39;www.aclweb.org&#39; in line:
+        content = line.strip()
+        url = content.split()[1].split(&#39;&amp;quot;&#39;)[1][:-1] + &amp;quot;.pdf&amp;quot;
+        name = content.split(&amp;quot; - ACL Anthology&amp;quot;)[0].split(&amp;quot;&amp;gt;&amp;quot;)[-1]
+        papers[name] = url
+
+# Download the papers
+import io, requests
+PDFs = {}
+for name, url in papers.items():
+    r = requests.get(url, auth=(&#39;usrname&#39;, &#39;password&#39;), verify=False,stream=True)
+    assert 200 &amp;lt;= r.status_code &amp;lt; 400
+    r.raw.decode_content = True
+    PDFs[name] = io.BytesIO(r.content)
+
+# Get the Introductions
+from PyPDF2 import PdfFileReader, PdfFileWriter
+import string
+pdf_writer = PdfFileWriter()
+for name, raw_pdf in PDFs.items():
+    pdf = PdfFileReader(raw_pdf)
+    page0 = pdf.getPage(0)
+    pdf_writer.addPage(page0)
+    text = page0.extractText().split(&#39;\n&#39;)
+    done = False
+    for part in text:
+        # Try to find the start of section 2
+        if part.startswith(&#39;2&#39;) and len(part) &amp;gt; 1:
+            if part[1] in string.ascii_letters:
+                done = True
+    if not done:
+        page1 = pdf.getPage(1)
+        start = page1.extractText().split(&#39;\n&#39;)[0]
+        # Try to find the start of section 2
+        if start.startswith(&#39;2&#39;) and len(start) &amp;gt; 1:
+            if start[1] in string.ascii_letters:
+                done = True
+        if not done:
+            pdf_writer.addPage(page1)
+
+with open(&#39;example.pdf&#39;, &#39;wb&#39;) as out:
+    pdf_writer.write(out)
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      
+
+    </item>
+    
+    <item>
+      
         <title>Approaching Conferences</title>
       
       <link>http://www.jkk.name/post/2019-09-22_conferenceapproach/</link>
