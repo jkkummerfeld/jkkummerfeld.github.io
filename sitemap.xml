@@ -23,6 +23,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/publication/dstc20task2/</loc>
+      <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/publication/csl20dstc/</loc>
       <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     </url>
@@ -51,6 +60,15 @@
     <url>
     
       <loc>http://www.jkk.name/publication/emnlp19data/</loc>
+      <lastmod>2019-11-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/publication/ws19voids/</loc>
       <lastmod>2019-11-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -105,6 +123,15 @@
     <url>
     
       <loc>http://www.jkk.name/publication/acl19disentangle/</loc>
+      <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://www.jkk.name/publication/ws19nlp-convai/</loc>
       <lastmod>2019-07-01T00:00:00+00:00</lastmod>
     </url>
     

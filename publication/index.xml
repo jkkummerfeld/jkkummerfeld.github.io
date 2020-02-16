@@ -15,6 +15,52 @@
     <item>
       
       <title>
+        "Crowdsourced Detection of Emotionally Manipulative Language",
+        
+          Jordan S. Huffaker, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter S. Lasecki, Mark S. Ackerman
+        
+        (CHI,
+        2020)
+      </title>
+      
+      <link>http://www.jkk.name/publication/chi20anchor/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/chi20anchor/</guid>
+      
+        <description>
+          Detecting rhetoric that manipulates readers’ emotions requires distinguishing intrinsically emotional content (IEC; e.g., a parent losing a child) from emotionally manipulative language (EML; e.g., using fear-inducing language to spread anti-vaccine propaganda). However, this remains an open classifcation challenge for both automatic and crowdsourcing approaches. Machine Learning approaches only work in narrow domains where labeled training data is available, and non-expert annotators tend to confate IEC with EML. We introduce an approach, anchor comparison, that leverages workers’ ability to identify and remove instances of EML in text to create a paraphrased &#39;anchor text&#39;, which is then used as a comparison point to classify EML in the original content. We evaluate our approach with a dataset of news-style text snippets and show that precision and recall can be tuned for system builders’ needs. Our contribution is a crowdsourcing approach that enables non-expert disentanglement of social references from content.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "NOESIS II: Predicting Responses, Identifying Success, and Managing Complexity in Task-Oriented Dialogue",
+        
+          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Luis Lastras, and Walter S. Lasecki
+        
+        (AAAI Wokshop: Dialogue System Technology Challenges,
+        2020)
+      </title>
+      
+      <link>http://www.jkk.name/publication/dstc20task2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/dstc20task2/</guid>
+      
+        <description>
+          Real-world conversation often involves more than two participants and complex conversation structures, but most datasets for dialogue research simplify the task to make it more tractable. This shared task built on prior tasks for goal-oriented dialogue, moving towards more realistic settings. Seventeen teams participated in the primary task, predicting the next utterance in a multi-party conversation, and several teams participated in supplementary tasks. All of the datasets have been publicly released, providing a standard benchmark for future work in this space.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "Overview of the seventh Dialog System Technology Challenge: DSTC7",
         
           Luis Fernando D&#39;Haro, Koichiro Yoshino, Chiori Hori, Tim K. Marks, Lazaros Polymenakos, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Michel Galley, Xiang Gao
@@ -30,29 +76,6 @@
       
         <description>
           This paper provides detailed information about the seventh Dialog System Technology Challenge (DSTC7) and its three tracks aimed to explore the problem of building robust and accurate end-to-end dialog systems. In more detail, DSTC7 focuses on developing and exploring end-to-end technologies for the following three pragmatic challenges: (1) sentence selection for multiple domains, (2) generation of informational responses grounded in external knowledge, and (3) audio visual scene-aware dialog to allow conversations with users about objects and events around them. This paper summarizes the overall setup and results of DSTC7, including detailed descriptions of the different tracks, provided datasets and annotations, overview of the submitted systems and their final results. For Track 1, LSTM-based models performed best across both datasets, allowing teams to effectively handle task variants where no correct answer was present or when multiple paraphrases were included. For Track 2, RNN-based architectures augmented to incorporate facts by using two types of encoders: a dialog encoder and a fact encoder plus using attention mechanisms and a pointer-generator approach provided the best results. Finally, for Track 3, the best model used Hierarchical Attention mechanisms to combine the text and vision information obtaining a 22% better result than the baseline LSTM system for the human rating score. More than 220 participants were registered and about 40 teams participated in the final challenge. 32 scientific papers reporting the systems submitted to DSTC7, and 3 general technical papers for dialog technologies, were presented during the one-day wrap-up workshop at AAAI-19. During the workshop, we reviewed the state-of-the-art systems, shared novel approaches to the DSTC7 tasks, and discussed the future directions for the challenge (DSTC8)
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
-        "Crowdsourced Detection of Emotionally Manipulative Language",
-        
-          Jordan S. Huffaker, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter S. Lasecki, Mark S. Ackerman
-        
-        (Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems,
-        2020)
-      </title>
-      
-      <link>http://www.jkk.name/publication/chi20anchor/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/chi20anchor/</guid>
-      
-        <description>
-          Detecting rhetoric that manipulates readers’ emotions requires distinguishing intrinsically emotional content (IEC; e.g., a parent losing a child) from emotionally manipulative language (EML; e.g., using fear-inducing language to spread anti-vaccine propaganda). However, this remains an open classifcation challenge for both automatic and crowdsourcing approaches. Machine Learning approaches only work in narrow domains where labeled training data is available, and non-expert annotators tend to confate IEC with EML. We introduce an approach, anchor comparison, that leverages workers’ ability to identify and remove instances of EML in text to create a paraphrased &#39;anchor text&#39;, which is then used as a comparison point to classify EML in the original content. We evaluate our approach with a dataset of news-style text snippets and show that precision and recall can be tuned for system builders’ needs. Our contribution is a crowdsourcing approach that enables non-expert disentanglement of social references from content.
         </description>
       
 
@@ -88,7 +111,7 @@
         
           Seokhwan Kim, Michel Galley, Chulaka Gunasekara, Sungjin Lee, Adam Atkinson, Baolin Peng, Hannes Schulz, Jianfeng Gao, Jinchao Li, Mahmoud Adada, Minlie Huang, Luis Lastras, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter S. Lasecki, Chiori Hori, Anoop Cherian, Tim K. Marks, Abhinav Rastogi, Xiaoxue Zang, Srinivas Sunkara, Raghav Gupta
         
-        (ConvAI Workshop,
+        (NeurIPS Workshop: Conversational AI: Today&#39;s Practice and Tomorrow&#39;s Potential,
         2019)
       </title>
       
@@ -130,21 +153,21 @@
     <item>
       
       <title>
-        "SLATE: A Super-Lightweight Annotation Tool for Experts",
+        "Training Data Voids: Novel Attacks Against NLP Content Moderation",
         
-          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;
+          Jordan S. Huffaker, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter S. Lasecki, Mark S. Ackerman
         
-        (ACL (demo),
+        (CSCW Workshop: Volunteer Work: Mapping the Future of Moderation Research,
         2019)
       </title>
       
-      <link>http://www.jkk.name/publication/acl19slate/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <link>http://www.jkk.name/publication/ws19voids/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/acl19slate/</guid>
+      <guid>http://www.jkk.name/publication/ws19voids/</guid>
       
         <description>
-          Many annotation tools have been developed, covering a wide variety of tasks and providing features like user management, pre-processing, and automatic labeling. However, all of these tools use a Graphical User Interface, and often require substantial effort for installation and configuration. This paper presents a new annotation tool that is designed to fill the niche of a lightweight interface for users with a terminal-based workflow. Slate supports annotation at different scales (spans of characters, tokens, and lines, or a document) and of different types (free text, labels, and links), with easily customisable keybindings, and unicode support. In a user study comparing with other tools it was consistently the easiest to install and use. Slate fills a need not met by existing systems, and has already been used to annotate two corpora, one of which involved over 250 hours of annotation effort.
+          
         </description>
       
 
@@ -168,6 +191,52 @@
       
         <description>
           Disentangling conversations mixed together in a single stream of messages is a difficult task, made harder by the lack of large manually annotated datasets. We created a new dataset of 77,563 messages manually annotated with reply-structure graphs that both disentangle conversations and define internal conversation structure. Our data is 16 times larger than all previously released datasets combined, the first to include adjudication of annotation disagreements, and the first to include context. We use our data to re-examine prior work, in particular, finding that 89% of conversations in a widely used dialogue corpus are either missing messages or contain extra messages. Our manually-annotated data presents an opportunity to develop robust data-driven methods for conversation disentanglement, which will help advance dialogue research.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "DSTC7 Task 1: Noetic End-to-End Response Selection",
+        
+          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, Walter S. Lasecki
+        
+        (ACL Workshop: NLP for Conversational AI,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/ws19nlp-convai/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/ws19nlp-convai/</guid>
+      
+        <description>
+          
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "SLATE: A Super-Lightweight Annotation Tool for Experts",
+        
+          &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;
+        
+        (ACL (demo),
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/acl19slate/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/acl19slate/</guid>
+      
+        <description>
+          Many annotation tools have been developed, covering a wide variety of tasks and providing features like user management, pre-processing, and automatic labeling. However, all of these tools use a Graphical User Interface, and often require substantial effort for installation and configuration. This paper presents a new annotation tool that is designed to fill the niche of a lightweight interface for users with a terminal-based workflow. Slate supports annotation at different scales (spans of characters, tokens, and lines, or a document) and of different types (free text, labels, and links), with easily customisable keybindings, and unicode support. In a user study comparing with other tools it was consistently the easiest to install and use. Slate fills a need not met by existing systems, and has already been used to annotate two corpora, one of which involved over 250 hours of annotation effort.
         </description>
       
 
@@ -222,6 +291,29 @@
     <item>
       
       <title>
+        "DSTC7 Task 1: Noetic End-to-End Response Selection",
+        
+          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, Walter S. Lasecki
+        
+        (AAAI Wokshop: Dialogue System Technology Challenges,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/dstc19task1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/dstc19task1/</guid>
+      
+        <description>
+          Goal-oriented dialogue in complex domains is an extremely challenging problem and there are relatively few datasets. This task provided two new resources that presented different challenges: one was focused but small, while the other was large but diverse. We also considered several new variations on the next utterance selection problem: (1) increasing the number of candidates, (2) including paraphrases, and (3) not including a correct option in the candidate set. Twenty teams participated, developing a range of neural network models, including some that successfully incorporated external data to boost performance. Both datasets have been publicly released, enabling future work to build on these results, working towards robust goal-oriented dialogue systems.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "Learning from Personal Longitudinal Dialog Data",
         
           Charles Welch, Ver&oacute;nica P&eacute;rez-Rosas, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
@@ -245,34 +337,11 @@
     <item>
       
       <title>
-        "DSTC7 Task 1: Noetic End-to-End Response Selection",
-        
-          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, and Walter S. Lasecki
-        
-        (DSTC,
-        2019)
-      </title>
-      
-      <link>http://www.jkk.name/publication/dstc19task1/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/dstc19task1/</guid>
-      
-        <description>
-          Goal-oriented dialogue in complex domains is an extremely challenging problem and there are relatively few datasets. This task provided two new resources that presented different challenges: one was focused but small, while the other was large but diverse. We also considered several new variations on the next utterance selection problem: (1) increasing the number of candidates, (2) including paraphrases, and (3) not including a correct option in the candidate set. Twenty teams participated, developing a range of neural network models, including some that successfully incorporated external data to boost performance. Both datasets have been publicly released, enabling future work to build on these results, working towards robust goal-oriented dialogue systems.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "Dialog System Technology Challenge 7",
         
           Koichiro Yoshino, Chiori Hori, Julien Perez, Luis Fernando D&#39;Haro, Lazaros Polymenakos, Chulaka Gunasekara, Walter S. Lasecki, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Michel Galley, Chris Brockett, Jianfeng Gao, Bill Dolan, Xiang Gao, Huda Alamari, Tim K. Marks, Devi Parikh, Dhruv Batra
         
-        (ConvAI Workshop,
+        (NeurIPS Workshop: Conversational AI: Today&#39;s Practice and Tomorrow&#39;s Potential,
         2018)
       </title>
       
