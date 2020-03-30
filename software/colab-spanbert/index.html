@@ -17,11 +17,6 @@
     
   
   
-    
-    
-    <link rel="stylesheet" href="/css/highlight.min.css">
-    
-  
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
@@ -58,11 +53,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-06-madlibs/">
+  <link rel="canonical" href="http://www.jkk.name/software/colab-spanbert/">
 
   
 
-  <title>Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017) | Jonathan K. Kummerfeld</title>
+  <title>Colaboratoy Notebook for Coreference Resolution with SpanBERT | Jonathan K. Kummerfeld</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -169,85 +164,51 @@
 </nav>
 
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
+<article class="article article-software" itemscope itemtype="http://schema.org/Article">
 
   
 
 
   <div class="article-container">
-    <h1 itemprop="name">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</h1>
-    
 
-<div class="article-metadata">
-
-  <span class="article-date">
-    
-    <time datetime="2017-10-06 13:31:43 -0400 -0400" itemprop="datePublished">
-      Oct 6, 2017
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/paper">paper</a
-    >, 
-    
-    <a href="/tags/emnlp">emnlp</a
-    >, 
-    
-    <a href="/tags/humour">humour</a
-    >
-    
-  </span>
-  
-  
-
-  
-  
+    <div class="pub-title">
+      <h1 itemprop="name">Colaboratoy Notebook for Coreference Resolution with SpanBERT</h1>
+      <span class="pub-authors" itemprop="author">&nbsp;</span>
+      <span class="pull-right">
+        
 <div class="share-box" aria-hidden="true">
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Filling%20the%20Blanks%20%28hint%3a%20plural%20noun%29%20for%20Mad%20Libs%20Humor%20%28Hossain%20et%20al.%2c%20EMNLP%202017%29&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-06-madlibs%2f"
+         href="https://twitter.com/intent/tweet?text=Colaboratoy%20Notebook%20for%20Coreference%20Resolution%20with%20SpanBERT&amp;url=http%3a%2f%2fwww.jkk.name%2fsoftware%2fcolab-spanbert%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-06-madlibs%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.jkk.name%2fsoftware%2fcolab-spanbert%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-06-madlibs%2f&amp;title=Filling%20the%20Blanks%20%28hint%3a%20plural%20noun%29%20for%20Mad%20Libs%20Humor%20%28Hossain%20et%20al.%2c%20EMNLP%202017%29"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.jkk.name%2fsoftware%2fcolab-spanbert%2f&amp;title=Colaboratoy%20Notebook%20for%20Coreference%20Resolution%20with%20SpanBERT"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-06-madlibs%2f&amp;title=Filling%20the%20Blanks%20%28hint%3a%20plural%20noun%29%20for%20Mad%20Libs%20Humor%20%28Hossain%20et%20al.%2c%20EMNLP%202017%29"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fwww.jkk.name%2fsoftware%2fcolab-spanbert%2f&amp;title=Colaboratoy%20Notebook%20for%20Coreference%20Resolution%20with%20SpanBERT"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Filling%20the%20Blanks%20%28hint%3a%20plural%20noun%29%20for%20Mad%20Libs%20Humor%20%28Hossain%20et%20al.%2c%20EMNLP%202017%29&amp;body=http%3a%2f%2fwww.jkk.name%2fpost%2f2017-10-06-madlibs%2f">
+         href="mailto:?subject=Colaboratoy%20Notebook%20for%20Coreference%20Resolution%20with%20SpanBERT&amp;body=http%3a%2f%2fwww.jkk.name%2fsoftware%2fcolab-spanbert%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -255,100 +216,31 @@
 </div>
 
 
-  
+      </span>
+    </div>
 
-</div>
+    
+    <a class="btn btn-primary btn-outline" href="https://colab.research.google.com/drive/1SlERO9Uc9541qv6yH26LJz5IM9j7YVra" target="_blank"></a>
+    
 
     <div class="article-style" itemprop="articleBody">
       
-
-<p>Humor is an incredibly difficult problem, as this paper makes clear in its background section.
-Most work has considered very specific types of jokes (e.g. &ldquo;that&rsquo;s what she said&rdquo;, or pairs of words that sound similar to form riddles).
-This work contributes (1) a new task, (2) an evaluation method, and (3) an example system.</p>
-
-<p>The task is Mad Libs, where a story has some words removed and people choose new words to make the story funny.
-If you are familiar with the normal version, one key difference is that here people have access to the complete story when they are choosing their words.
-A set of 40 &lsquo;stories&rsquo; were written based on Simple Wikipedia articles, and workers on Mechanical Turk wrote words to fill them, with filtering based on judging by other workers.</p>
-
-<p>The evaluation method involved recruiting a set of judges on Mechanical Turk and asking a series of questions to measure humour for a given response.
-As well as judging the overall story, they were asked to select which words contributed the most.
-By aggregating these selections as votes, each word was scored as funny or not.</p>
-
-<p>The system is a linear classifier with a range of features, including scores from a language model.
-On its own, it performs very poorly, but using it as a filter to restrict the space of words a person can choose from actually leads to better performance than people on their own.
-Of course, it&rsquo;s difficult to analyse the source of improvement;
-The authors theorise that it is because it prevents people from selecting words that only they would see is funny.
-Another interpretation is that the constraint gives them a smaller space to think about and so they can find more interesting plays on words.</p>
-
-<p>Finally, as a non-expert in this area, this paper had some nice discussion of the tradeoffs between different ways of generating humour (incongruous vs. coherent content strategies).</p>
-
-<h2 id="citation">Citation</h2>
-
-<p><a href="https://www.aclweb.org/anthology/D17-1068" target="_blank">Paper</a></p>
-
-<pre><code class="language-bibtex">@InProceedings{hossain-EtAl:2017:EMNLP2017,
-  author    = {Hossain, Nabil  and  Krumm, John  and  Vanderwende, Lucy  and  Horvitz, Eric  and  Kautz, Henry},
-  title     = {Filling the Blanks (hint: plural noun) for Mad Libs Humor},
-  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
-  month     = {September},
-  year      = {2017},
-  address   = {Copenhagen, Denmark},
-  publisher = {Association for Computational Linguistics},
-  pages     = {649--658},
-  url       = {https://www.aclweb.org/anthology/D17-1068},
-}
-</code></pre>
-
     </div>
+
   </div>
-
 </article>
-
-
-
 
 <div class="container">
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://www.jkk.name/post/2017-10-05-deftnn/"><span
-      aria-hidden="true">&larr;</span> DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</a></li>
+    <li class="previous"><a href="http://www.jkk.name/software/slate/"><span
+      aria-hidden="true">&larr;</span> SLATE: A Super-Lightweight Annotation Tool for Experts</a></li>
     
 
-    
-    <li class="next"><a href="http://www.jkk.name/post/2017-10-09_parsing-autoencoder/"> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016) <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
-
-</div>
-
-<div class="article-container">
-  
-<section id="comments">
-  <div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "www-jkk-name" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</section>
-
 
 </div>
 
@@ -384,17 +276,6 @@ Another interpretation is that the constraint gives them a smaller space to thin
     
 
     
-    
-      
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
-      
-
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
     
 
     

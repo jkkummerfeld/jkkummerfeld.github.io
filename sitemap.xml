@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>http://www.jkk.name/software/colab-spanbert/</loc>
+      <lastmod>2020-03-30T16:00:26-05:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/post/paper-reading/</loc>
       <lastmod>2020-01-26T16:09:06-05:00</lastmod>
     </url>
@@ -762,7 +771,7 @@
     <url>
     
       <loc>http://www.jkk.name/post/2017-10-05-deftnn/</loc>
-      <lastmod>2017-10-05T00:00:00-04:00</lastmod>
+      <lastmod>2017-10-05T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -771,7 +780,7 @@
     <url>
     
       <loc>http://www.jkk.name/post/pizza/</loc>
-      <lastmod>2017-09-27T00:00:00-04:00</lastmod>
+      <lastmod>2017-09-27T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -825,7 +834,7 @@
     <url>
     
       <loc>http://www.jkk.name/post/</loc>
-      <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+      <lastmod>2017-01-01T00:00:00-06:00</lastmod>
     </url>
     
   
@@ -1196,6 +1205,16 @@
     
     <url>
     
+      <loc>http://www.jkk.name/tags/colab/</loc>
+      <lastmod>2020-03-30T16:00:26-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://www.jkk.name/tags/conll/</loc>
       <lastmod>2017-10-17T20:33:58-04:00</lastmod>
       <priority>0</priority>
@@ -1287,7 +1306,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/efficiency/</loc>
-      <lastmod>2017-10-05T00:00:00-04:00</lastmod>
+      <lastmod>2017-10-05T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1407,7 +1426,7 @@
     <url>
     
       <loc>http://www.jkk.name/tags/misc/</loc>
-      <lastmod>2017-09-27T00:00:00-04:00</lastmod>
+      <lastmod>2017-09-27T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1547,7 +1566,7 @@
     <url>
     
       <loc>http://www.jkk.name/software/</loc>
-      <lastmod>2019-09-02T00:00:00+00:00</lastmod>
+      <lastmod>2020-03-30T16:00:26-05:00</lastmod>
       <priority>0</priority>
     </url>
     

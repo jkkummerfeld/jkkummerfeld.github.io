@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0600</lastBuildDate>
     
         <atom:link href="http://www.jkk.name/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -3139,7 +3139,7 @@ Another interpretation is that the constraint gives them a smaller space to thin
         <title>DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</title>
       
       <link>http://www.jkk.name/post/2017-10-05-deftnn/</link>
-      <pubDate>Thu, 05 Oct 2017 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 -0500</pubDate>
       
       <guid>http://www.jkk.name/post/2017-10-05-deftnn/</guid>
       
@@ -3196,7 +3196,7 @@ Many AI researchers have tried switching to 16 bit representations to save space
         <title>Ordering Pizza for an Event with Vegetarians</title>
       
       <link>http://www.jkk.name/post/pizza/</link>
-      <pubDate>Wed, 27 Sep 2017 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 -0500</pubDate>
       
       <guid>http://www.jkk.name/post/pizza/</guid>
       

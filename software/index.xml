@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 16:00:26 -0500</lastBuildDate>
     
         <atom:link href="http://www.jkk.name/software/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      
+        <title>Colaboratoy Notebook for Coreference Resolution with SpanBERT</title>
+      
+      <link>http://www.jkk.name/software/colab-spanbert/</link>
+      <pubDate>Mon, 30 Mar 2020 16:00:26 -0500</pubDate>
+      
+      <guid>http://www.jkk.name/software/colab-spanbert/</guid>
+      
+        <description>A notebook that (1) sets up the SpanBERT code and model, and (2) runs inference on text you provide. <a href="https://colab.research.google.com/drive/1SlERO9Uc9541qv6yH26LJz5IM9j7YVra" target="_blank">https://colab.research.google.com/drive/1SlERO9Uc9541qv6yH26LJz5IM9j7YVra</a></description>
+      
+
+    </item>
     
     <item>
       
