@@ -111,6 +111,29 @@ with open(&#39;example.pdf&#39;, &#39;wb&#39;) as out:
     <item>
       
       <title>
+        "Analyzing the Surprising Variability in Word Embedding Stability Across Languages",
+        
+          Laura Burdick, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
+        
+        (ArXiv,
+        2020)
+      </title>
+      
+      <link>http://www.jkk.name/publication/arxiv20embeddings/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/arxiv20embeddings/</guid>
+      
+        <description>
+          Word embeddings are powerful representations that form the foundation of many natural language processing architectures and tasks, both in English and in other languages. To gain further insight into word embeddings in multiple languages, we explore their stability, defined as the overlap between the nearest neighbors of a word in different embedding spaces. We discuss linguistic properties that are related to stability, drawing out insights about how morphological and other features relate to stability. This has implications for the usage of embeddings, particularly in research that uses embeddings to study language trends.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "Overview of the seventh Dialog System Technology Challenge: DSTC7",
         
           Luis Fernando D&#39;Haro, Koichiro Yoshino, Chiori Hori, Tim K. Marks, Lazaros Polymenakos, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Michel Galley, Xiang Gao
@@ -180,29 +203,6 @@ with open(&#39;example.pdf&#39;, &#39;wb&#39;) as out:
     <item>
       
       <title>
-        "No-Press Diplomacy: Modeling Multi-Agent Gameplay",
-        
-          Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn&eacute;, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Joelle Pineau, Satinder Singh, Aaron Courville
-        
-        (NeurIPS,
-        2019)
-      </title>
-      
-      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
-      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
-      
-        <description>
-          Diplomacy is a seven-player non-stochastic, non-cooperative game, where agents acquire resources through a mix of teamwork and betrayal. Reliance on trust and coordination makes Diplomacy the first non-cooperative multi-agent benchmark for complex sequential social dilemmas in a rich environment. In this work, we focus on training an agent that learns to play the No Press version of Diplomacy where there is no dedicated communication channel between players. We present DipNet, a neural-network-based policy model for No Press Diplomacy. The model was trained on a new dataset of more than 150,000 human games. Our model is trained by supervised learning (SL) from expert trajectories, which is then used to initialize a reinforcement learning (RL) agent trained through self-play. Both the SL and RL agents demonstrate state-of-the-art No Press performance by beating popular rule-based bots.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "The Eighth Dialog System Technology Challenge",
         
           Seokhwan Kim, Michel Galley, Chulaka Gunasekara, Sungjin Lee, Adam Atkinson, Baolin Peng, Hannes Schulz, Jianfeng Gao, Jinchao Li, Mahmoud Adada, Minlie Huang, Luis Lastras, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter S. Lasecki, Chiori Hori, Anoop Cherian, Tim K. Marks, Abhinav Rastogi, Xiaoxue Zang, Srinivas Sunkara, Raghav Gupta
@@ -218,6 +218,29 @@ with open(&#39;example.pdf&#39;, &#39;wb&#39;) as out:
       
         <description>
           This paper introduces the Eighth Dialog System Technology Challenge. In line with recent challenges, the eighth edition focuses on applying end-to-end dialog technologies in a pragmatic way for multi-domain task-completion, noetic response selection, audio visual scene-aware dialog, and schema-guided dialog state tracking tasks. This paper describes the task definition, provided datasets, and evaluation set-up for each track. We also summarize the results of the submitted systems to highlight the overall trends of the state-of-the-art technologies for the tasks.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "No-Press Diplomacy: Modeling Multi-Agent Gameplay",
+        
+          Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn&eacute;, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Joelle Pineau, Satinder Singh, Aaron Courville
+        
+        (NeurIPS,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
+      
+        <description>
+          Diplomacy is a seven-player non-stochastic, non-cooperative game, where agents acquire resources through a mix of teamwork and betrayal. Reliance on trust and coordination makes Diplomacy the first non-cooperative multi-agent benchmark for complex sequential social dilemmas in a rich environment. In this work, we focus on training an agent that learns to play the No Press version of Diplomacy where there is no dedicated communication channel between players. We present DipNet, a neural-network-based policy model for No Press Diplomacy. The model was trained on a new dataset of more than 150,000 human games. Our model is trained by supervised learning (SL) from expert trajectories, which is then used to initialize a reinforcement learning (RL) agent trained through self-play. Both the SL and RL agents demonstrate state-of-the-art No Press performance by beating popular rule-based bots.
         </description>
       
 
@@ -786,29 +809,6 @@ Both are free, but have slightly different features:&lt;/p&gt;
     <item>
       
       <title>
-        "DSTC7 Task 1: Noetic End-to-End Response Selection",
-        
-          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, Walter S. Lasecki
-        
-        (AAAI Wokshop: Dialogue System Technology Challenges,
-        2019)
-      </title>
-      
-      <link>http://www.jkk.name/publication/dstc19task1/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/dstc19task1/</guid>
-      
-        <description>
-          Goal-oriented dialogue in complex domains is an extremely challenging problem and there are relatively few datasets. This task provided two new resources that presented different challenges: one was focused but small, while the other was large but diverse. We also considered several new variations on the next utterance selection problem: (1) increasing the number of candidates, (2) including paraphrases, and (3) not including a correct option in the candidate set. Twenty teams participated, developing a range of neural network models, including some that successfully incorporated external data to boost performance. Both datasets have been publicly released, enabling future work to build on these results, working towards robust goal-oriented dialogue systems.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
         "Learning from Personal Longitudinal Dialog Data",
         
           Charles Welch, Ver&oacute;nica P&eacute;rez-Rosas, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
@@ -824,6 +824,29 @@ Both are free, but have slightly different features:&lt;/p&gt;
       
         <description>
           We explore the use of longitudinal dialog data for two dialog prediction tasks: next message prediction and response time prediction. We show that a neural model using personal data that leverages a combination of message content, style matching, time features, and speaker attributes leads to the best results for both tasks, with error rate reductions of up to 15% compared to a classifier that relies exclusively on message content and to a classifier that does not use personal data.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "DSTC7 Task 1: Noetic End-to-End Response Selection",
+        
+          Chulaka Gunasekara, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Lazaros Polymenakos, Walter S. Lasecki
+        
+        (AAAI Wokshop: Dialogue System Technology Challenges,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/dstc19task1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/dstc19task1/</guid>
+      
+        <description>
+          Goal-oriented dialogue in complex domains is an extremely challenging problem and there are relatively few datasets. This task provided two new resources that presented different challenges: one was focused but small, while the other was large but diverse. We also considered several new variations on the next utterance selection problem: (1) increasing the number of candidates, (2) including paraphrases, and (3) not including a correct option in the candidate set. Twenty teams participated, developing a range of neural network models, including some that successfully incorporated external data to boost performance. Both datasets have been publicly released, enabling future work to build on these results, working towards robust goal-oriented dialogue systems.
         </description>
       
 
@@ -965,20 +988,6 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
     
     <item>
       
-        <title>Text to SQL datasets</title>
-      
-      <link>http://www.jkk.name/data/text-to-sql/</link>
-      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/text-to-sql/</guid>
-      
-        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://jkk.name/text2sql-data" target="_blank">https://jkk.name/text2sql-data</a></description>
-      
-
-    </item>
-    
-    <item>
-      
         <title>Text to SQL Baseline</title>
       
       <link>http://www.jkk.name/software/text2sql-baseline/</link>
@@ -987,6 +996,20 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
       <guid>http://www.jkk.name/software/text2sql-baseline/</guid>
       
         <description>A simple LSTM-based model that uses templates and slot-filing to map questions to SQL queries. <a href="https://jkk.name/text2sql-data/systems/baseline-template/" target="_blank">https://jkk.name/text2sql-data/systems/baseline-template/</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Text to SQL datasets</title>
+      
+      <link>http://www.jkk.name/data/text-to-sql/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/text-to-sql/</guid>
+      
+        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://jkk.name/text2sql-data" target="_blank">https://jkk.name/text2sql-data</a></description>
       
 
     </item>
@@ -1069,6 +1092,29 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
     <item>
       
       <title>
+        "Factors Influencing the Surprising Instability of Word Embeddings",
+        
+          Laura Wendlandt, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
+        
+        (NAACL,
+        2018)
+      </title>
+      
+      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
+      
+        <description>
+          Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
         "Effective Crowdsourcing for a New Type of Summarization Task",
         
           Youxuan Jiang, Catherine Finegan-Dollak, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Walter Lasecki
@@ -1107,29 +1153,6 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
       
         <description>
           Industrial dialogue systems such as Apple Siri and Google Assistant require large scale diverse training data to enable their sophisticated conversation capabilities. Crowdsourcing is a scalable and inexpensive data collection method, but collecting high quality data efficiently requires thoughtful orchestration of crowdsourcing jobs. Prior study of data collection process has focused on tasks with limited scope and performed intrinsic data analysis, which may not be indicative of impact on trained model performance. In this paper, we present a study of crowdsourcing methods for a user intent classification task in one of our deployed dialogue systems. Our task requires classification over 47 possible user intents and contains many intent pairs with subtle differences. We consider different crowdsourcing job types and job prompts, quantitatively analyzing the quality of collected data and downstream model performance on a test set of real user queries from production logs. Our observations provide insight into how design decisions impact crowdsourced data quality, with clear recommendations for future data collection for dialogue systems.
-        </description>
-      
-
-    </item>
-    
-    <item>
-      
-      <title>
-        "Factors Influencing the Surprising Instability of Word Embeddings",
-        
-          Laura Wendlandt, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
-        
-        (NAACL,
-        2018)
-      </title>
-      
-      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
-      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
-      
-        <description>
-          Despite the recent popularity of word embedding methods, there is only a small body of work exploring the limitations of these representations. In this paper, we consider one aspect of embedding spaces, namely their stability. We show that even relatively high frequency words (100-200 occurrences) are often unstable. We provide empirical evidence for how various factors contribute to the stability of word embeddings, and we analyze the effects of stability on downstream tasks.
         </description>
       
 
@@ -3851,6 +3874,20 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
+        <title>Crowdsourced Paraphrases</title>
+      
+      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      
+        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
         
@@ -3874,20 +3911,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
     
     <item>
       
-        <title>Crowdsourced Paraphrases</title>
-      
-      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
-      
-        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
-      
-
-    </item>
-    
-    <item>
-      
       <title>
         "Tools for Automated Analysis of Cybercriminal Markets",
         
@@ -3905,6 +3928,21 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
         <description>
           Underground forums are widely used by criminals to buy and sell a host of stolen items, datasets, resources, and criminal services.  These forums contain important resources for understanding cybercrime.  However, the number of forums, their size, and the domain expertise required to understand the markets makes manual exploration of these forums unscalable. In this work, we propose an automated, top-down approach for analyzing underground forums.  Our approach uses natural language processing and machine learning to automatically generate high-level information about underground forums, first identifying posts related to transactions, and then extracting products and prices. We also demonstrate, via a pair of case studies, how an analyst can use these automated approaches to investigate other categories of products and transactions. We use eight distinct forums to assess our tools: Antichat, Blackhat World, Carders, Darkode, Hack Forums, Hell, L33tCrew and Nulled. Our automated approach is fast and accurate, achieving over 80% accuracy in detecting post category, product, and prices.
         </description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>Example Talk</title>
+      
+      <link>http://www.jkk.name/talk/example-talk/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/talk/example-talk/</guid>
+      
+        <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
       
 
     </item>
@@ -3956,21 +3994,6 @@ I received my Higher School Certificate at &lt;a href=&#34;http://www.emanuelsch
       <guid>http://www.jkk.name/data/shp-ptb/</guid>
       
         <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://jkk.name/1ec-graph-parser/format-conversion" target="_blank">https://jkk.name/1ec-graph-parser/format-conversion</a></description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Example Talk</title>
-      
-      <link>http://www.jkk.name/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/talk/example-talk/</guid>
-      
-        <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
       
 
     </item>
@@ -4031,6 +4054,20 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
     
     <item>
       
+        <title>Coreference Error Analysis</title>
+      
+      <link>http://www.jkk.name/software/coreference-analysis/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
+      
+        <description>A tool for classifying errors in coreference resolution. <a href="https://jkk.name/berkeley-coreference-analyser" target="_blank">https://jkk.name/berkeley-coreference-analyser</a></description>
+      
+
+    </item>
+    
+    <item>
+      
       <title>
         "Error-Driven Analysis of Challenges in Coreference Resolution",
         
@@ -4048,20 +4085,6 @@ Finally, we address a weakness we observed in phrase structure parsers: the excl
         <description>
           Coreference resolution metrics quantify errors but do not analyze them. Here, we consider an automated method of categorizing errors in the output of a coreference system into intuitive underlying error types. Using this tool, we first compare the error distributions across a large set of systems, then analyze common errors across the top ten systems, empirically characterizing the major unsolved challenges of the coreference resolution task.
         </description>
-      
-
-    </item>
-    
-    <item>
-      
-        <title>Coreference Error Analysis</title>
-      
-      <link>http://www.jkk.name/software/coreference-analysis/</link>
-      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      
-      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
-      
-        <description>A tool for classifying errors in coreference resolution. <a href="https://jkk.name/berkeley-coreference-analyser" target="_blank">https://jkk.name/berkeley-coreference-analyser</a></description>
       
 
     </item>

@@ -84,21 +84,21 @@
     <item>
       
       <title>
-        "No-Press Diplomacy: Modeling Multi-Agent Gameplay",
+        "Analyzing the Surprising Variability in Word Embedding Stability Across Languages",
         
-          Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn&eacute;, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Joelle Pineau, Satinder Singh, Aaron Courville
+          Laura Burdick, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Rada Mihalcea
         
-        (NeurIPS,
-        2019)
+        (ArXiv,
+        2020)
       </title>
       
-      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
-      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <link>http://www.jkk.name/publication/arxiv20embeddings/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
+      <guid>http://www.jkk.name/publication/arxiv20embeddings/</guid>
       
         <description>
-          Diplomacy is a seven-player non-stochastic, non-cooperative game, where agents acquire resources through a mix of teamwork and betrayal. Reliance on trust and coordination makes Diplomacy the first non-cooperative multi-agent benchmark for complex sequential social dilemmas in a rich environment. In this work, we focus on training an agent that learns to play the No Press version of Diplomacy where there is no dedicated communication channel between players. We present DipNet, a neural-network-based policy model for No Press Diplomacy. The model was trained on a new dataset of more than 150,000 human games. Our model is trained by supervised learning (SL) from expert trajectories, which is then used to initialize a reinforcement learning (RL) agent trained through self-play. Both the SL and RL agents demonstrate state-of-the-art No Press performance by beating popular rule-based bots.
+          Word embeddings are powerful representations that form the foundation of many natural language processing architectures and tasks, both in English and in other languages. To gain further insight into word embeddings in multiple languages, we explore their stability, defined as the overlap between the nearest neighbors of a word in different embedding spaces. We discuss linguistic properties that are related to stability, drawing out insights about how morphological and other features relate to stability. This has implications for the usage of embeddings, particularly in research that uses embeddings to study language trends.
         </description>
       
 
@@ -122,6 +122,29 @@
       
         <description>
           This paper introduces the Eighth Dialog System Technology Challenge. In line with recent challenges, the eighth edition focuses on applying end-to-end dialog technologies in a pragmatic way for multi-domain task-completion, noetic response selection, audio visual scene-aware dialog, and schema-guided dialog state tracking tasks. This paper describes the task definition, provided datasets, and evaluation set-up for each track. We also summarize the results of the submitted systems to highlight the overall trends of the state-of-the-art technologies for the tasks.
+        </description>
+      
+
+    </item>
+    
+    <item>
+      
+      <title>
+        "No-Press Diplomacy: Modeling Multi-Agent Gameplay",
+        
+          Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn&eacute;, &lt;span style=&#39;text-decoration:underline;&#39;&gt;Jonathan K. Kummerfeld&lt;/span&gt;, Joelle Pineau, Satinder Singh, Aaron Courville
+        
+        (NeurIPS,
+        2019)
+      </title>
+      
+      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
+      
+        <description>
+          Diplomacy is a seven-player non-stochastic, non-cooperative game, where agents acquire resources through a mix of teamwork and betrayal. Reliance on trust and coordination makes Diplomacy the first non-cooperative multi-agent benchmark for complex sequential social dilemmas in a rich environment. In this work, we focus on training an agent that learns to play the No Press version of Diplomacy where there is no dedicated communication channel between players. We present DipNet, a neural-network-based policy model for No Press Diplomacy. The model was trained on a new dataset of more than 150,000 human games. Our model is trained by supervised learning (SL) from expert trajectories, which is then used to initialize a reinforcement learning (RL) agent trained through self-play. Both the SL and RL agents demonstrate state-of-the-art No Press performance by beating popular rule-based bots.
         </description>
       
 
