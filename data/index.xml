@@ -7,10 +7,38 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="http://www.jkk.name/data/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      
+        <title>DSTC 7 track 1: Next Utterance Selection</title>
+      
+      <link>http://www.jkk.name/data/dstc7/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/dstc7/</guid>
+      
+        <description>Data from Noetic End-to-End Response Selection Challenge. Dialogue from Ubuntu tech support and Michigan course advising. <a href="https://ibm.github.io/dstc-noesis/public/index.html" target="_blank">https://ibm.github.io/dstc-noesis/public/index.html</a></description>
+      
+
+    </item>
+    
+    <item>
+      
+        <title>DSTC 8 track 2: Next Utterance Selection</title>
+      
+      <link>http://www.jkk.name/data/dstc8/</link>
+      <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.jkk.name/data/dstc8/</guid>
+      
+        <description>Data from NOESIS II: Predicting Responses, Identifying Success, and Managing Complexity in Task-Oriented Dialogue. Dialogue from Ubuntu tech support and Michigan course advising. <a href="https://github.com/dstc8-track2/NOESIS-II/" target="_blank">https://github.com/dstc8-track2/NOESIS-II/</a></description>
+      
+
+    </item>
     
     <item>
       
