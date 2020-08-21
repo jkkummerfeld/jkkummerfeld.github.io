@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coreference | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/coreference/</link>
+      <atom:link href="http://www.jkk.name/tag/coreference/index.xml" rel="self" type="application/rss+xml" />
+    <description>coreference</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 08 Nov 2018 11:29:32 -0500</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>coreference</title>
+      <link>http://www.jkk.name/tag/coreference/</link>
+    </image>
+    
+    <item>
+      <title>PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</title>
+      <link>http://www.jkk.name/post/2018-11-08_corefdata/</link>
+      <pubDate>Thu, 08 Nov 2018 11:29:32 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2018-11-08_corefdata/</guid>
+      <description>&lt;p&gt;The OntoNotes dataset, which is the focus of almost all coreference resolution research, had several compromises in its development (as is the case for any dataset).
+Some of these are discussed in my 
+&lt;a href=&#34;http://jkk.name/publication/conll11coreference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoNLL Shared Task submission paper&lt;/a&gt;, the biggest being the choice to not annotate mentions that are not coreferent.
+This paper describes a new dataset that has a different set of compromises, specifically:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A broader definition of coreference (e.g. appositives are coreferent)&lt;/li&gt;
+&lt;li&gt;All mentions annotated&lt;/li&gt;
+&lt;li&gt;Different annotation methods for different subsets of the data (training data is double annotated and then adjudicated, while the development and test data is triple annotated, all pairs of annotations are adjudicated, then the outcomes are merged by voting)&lt;/li&gt;
+&lt;li&gt;A variety of genres, but generally simpler language&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The dataset is 10x the size of OntoNotes and freely available, which is fantastic.
+The source text is 2/3rds the RACE dataset (English reading comprehension exams from China), and 1/3rd scraped websites.
+Measurements of annotator agreement suggest the annotations are not as consistent as OntoNotes, but still good enough to be a useful resource.
+I do disagree with one aspect of the paper&amp;rsquo;s analysis - the results show a substantial gain in performance when providing gold mentions, suggesting to me that it remains an important challenge in coreference resolution.
+I&amp;rsquo;m also curious whether my 
+&lt;a href=&#34;http://jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/D18-1016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://preschool-lab.github.io/PreCo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Chen:EMNLP:2018,
+  author    = {Chen, Hong and Fan, Zhenhua and Lu, Hao and Yuille, Alan and Rong, Shu},
+  title     = {PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution},
+  booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2018},
+  publisher = {Association for Computational Linguistics},
+  pages     = {172--181},
+  location  = {Brussels, Belgium},
+  url       = {http://aclweb.org/anthology/D18-1016},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-12-06_coreferencearguments/</link>
+      <pubDate>Wed, 06 Dec 2017 19:05:20 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-12-06_coreferencearguments/</guid>
+      <description>&lt;p&gt;Selectional preferences in this context are about how some verbs are more likely to take certain types of arguments (e.g. people laugh, computers do not).
+Many papers have added features or structures to coreference systems aiming to get at this kind of information.
+This paper presents another way of doing it and experiments that probe how useful it is (punchline: not very).&lt;/p&gt;
+&lt;p&gt;Their approach is to parse a large amount of text, producing noun-verb pairs.
+They learn vector representations of the relations and try to create a single space containing both entities and relations (e.g. Michigan gets a vector, as does attended@dobj).
+The goal is that entities end up in locations similar to the locations of relations they are selected for.&lt;/p&gt;
+&lt;p&gt;For results, first it seems like these vector similarities do not correlate particularly strongly with being coreferent.
+It could be that the feature on its own isn&amp;rsquo;t enough, or this representation might not be capturing it effectively.
+Adding this to the Stanford coreference system they are able to get slight gains, though the improvement might not be statistically significant.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m not sure exactly how to do this, but it would be neat if a vector at some point of the model could be modified to remove any correlation with these features, and see what that does to performance.
+If performance remains high, then this actually is an uninformative feature, but if it drops that suggests the model is already learning it.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1138&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{heinzerling-moosavi-strube:2017:EMNLP2017,
+  author    = {Heinzerling, Benjamin  and  Moosavi, Nafise Sadat  and  Strube, Michael},
+  title     = {Revisiting Selectional Preferences for Coreference Resolution},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1332--1339},
+  url       = {https://www.aclweb.org/anthology/D17-1138}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Coreference Error Analysis</title>
+      <link>http://www.jkk.name/software/coreference-analysis/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

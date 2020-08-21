@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Walter S. Lasecki | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/walter-s.-lasecki/</link>
+      <atom:link href="http://www.jkk.name/author/walter-s.-lasecki/index.xml" rel="self" type="application/rss+xml" />
+    <description>Walter S. Lasecki</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Walter S. Lasecki</title>
+      <link>http://www.jkk.name/author/walter-s.-lasecki/</link>
+    </image>
+    
+    <item>
+      <title>Crowdsourced Detection of Emotionally Manipulative Language</title>
+      <link>http://www.jkk.name/publication/chi20anchor/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/chi20anchor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Eighth Dialog System Technology Challenge</title>
+      <link>http://www.jkk.name/publication/ws-neurips-convai19dstc/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-neurips-convai19dstc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training Data Voids: Novel Attacks Against NLP Content Moderation</title>
+      <link>http://www.jkk.name/publication/ws-cscw19voids/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-cscw19voids/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Large-Scale Corpus for Conversation Disentanglement</title>
+      <link>http://www.jkk.name/publication/acl19disentangle/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DSTC7 Task 1: Noetic End-to-End Response Selection</title>
+      <link>http://www.jkk.name/publication/ws-acl-convai19dstc7/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-acl-convai19dstc7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DSTC7 Task 1: Noetic End-to-End Response Selection</title>
+      <link>http://www.jkk.name/publication/ws-aaai-dstc19task1/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-aaai-dstc19task1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dialog System Technology Challenge 7</title>
+      <link>http://www.jkk.name/publication/ws-neurips-convai18dstc/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-neurips-convai18dstc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection</title>
+      <link>http://www.jkk.name/publication/acl17paraphrase/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/acl17paraphrase/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

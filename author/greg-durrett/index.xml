@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Greg Durrett | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/greg-durrett/</link>
+      <atom:link href="http://www.jkk.name/author/greg-durrett/index.xml" rel="self" type="application/rss+xml" />
+    <description>Greg Durrett</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Greg Durrett</title>
+      <link>http://www.jkk.name/author/greg-durrett/</link>
+    </image>
+    
+    <item>
+      <title>Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation</title>
+      <link>http://www.jkk.name/publication/emnlp17forums/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp17forums/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools for Automated Analysis of Cybercriminal Markets</title>
+      <link>http://www.jkk.name/publication/www17forums/</link>
+      <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/www17forums/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

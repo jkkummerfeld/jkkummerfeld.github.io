@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>syntax | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/syntax/</link>
+      <atom:link href="http://www.jkk.name/tag/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <description>syntax</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 16 Nov 2017 17:24:59 -0500</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>syntax</title>
+      <link>http://www.jkk.name/tag/syntax/</link>
+    </image>
+    
+    <item>
+      <title>A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-16_ucca/</link>
+      <pubDate>Thu, 16 Nov 2017 17:24:59 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-16_ucca/</guid>
+      <description>&lt;p&gt;Over the last few years interest has risen in parsing structures other than projective trees (including my dissertation!).
+There are now a range of different datasets with annotations for syntactic and/or semantic structure that include discontinuous constituents and graphs.
+This paper looks at UCCA, a proposed formalism that is somewhat similar to SRL, with non-terminals included to allow for easier handling of cases like coordination.&lt;/p&gt;
+&lt;p&gt;The parser is a transition based, with a transition system that covers all the structural phenomena in UCCA: non-terminals, discontinuous spans, and multiple parents.
+The key to consistent multiple parents is distinguishing the addition of edges that are the primary parent (to prevent multiple being added).
+To get discontinuity, they use a swap operation.
+They consider a range of models, including both linear and neural network examples.&lt;/p&gt;
+&lt;p&gt;The dataset is relatively small, with only 4,268 training sentences, and the task is hard, so performance is relatively low (50 - 75 for primary edges, 20-50 for others).
+The neural model consistently beats the linear ones, particularly for the non-primary edges.
+Comparing to other standard parsers (retrained on this data), the ability to generate the full space of structures makes a big difference.&lt;/p&gt;
+&lt;p&gt;It would be interesting to see coverage of this data for one-endpoint crossing graphs.
+If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/P17-1104&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hershcovich-abend-rappoport:2017:Long,
+  author    = {Hershcovich, Daniel  and  Abend, Omri  and  Rappoport, Ari},
+  title     = {A Transition-Based Directed Acyclic Graph Parser for UCCA},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1127--1138},
+  url       = {http://aclweb.org/anthology/P17-1104}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>In-Order Transition-based Constituent Parsing (Liu et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-14_inorderparsing/</link>
+      <pubDate>Tue, 14 Nov 2017 14:10:39 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-14_inorderparsing/</guid>
+      <description>&lt;p&gt;Shift-reduce constituency parsing incrementally builds the parse either bottom-up or top-down.
+The difference is whether a non-terminal is placed on the stack before or after the words that it spans.
+This corresponds to two forms of depth-first traversal of the tree: pre-order or post-order.&lt;/p&gt;
+&lt;p&gt;The idea in this paper is to do an in-order traversal, which in a binary tree means traversing the left child of a node, then the node, then its right child.
+In this context that means putting the non-terminal symbol on the stack after the first word it spans, but before the rest.
+The model follows the stack-LSTM approach of Dyer et al., with non-terminals always fed into the LSTM first during composition, regardless of where it was inserted into the stack.&lt;/p&gt;
+&lt;p&gt;This leads to a 0.5 F1 gain on standard parsing metrics, with no hyperparameter tuning.
+High-level error analysis seems to show it just does better everywhere.
+I wonder whether further gains could be realised with a label-sensitive ordering.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.transacl.org/ojs/index.php/tacl/article/view/1199&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@article{TACL1199,
+	author = {Liu, Jiangming  and Zhang, Yue },
+	title = {In-Order Transition-based Constituent Parsing},
+	journal = {Transactions of the Association for Computational Linguistics},
+	volume = {5},
+	year = {2017},
+	issn = {2307-387X},
+	url = {https://www.transacl.org/ojs/index.php/tacl/article/view/1199},
+	pages = {413--424}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</link>
+      <pubDate>Tue, 07 Nov 2017 20:42:45 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</guid>
+      <description>&lt;p&gt;This paper brings together work on neural dependency parsing with the idea of non-terminal spines as a way to represent constituency structure.
+Within the transition parsing inference process they can naturally fit the generation of a new spines by gradually building up the spine, which makes for a very elegant inference process.&lt;/p&gt;
+&lt;p&gt;Surprisingly, it doesn&amp;rsquo;t seem to matter what head choices are used to generate the spines (they tried leftmost word, rightmost word, and two standard schemes).
+This contrasts with my own observations that the choice of head had a big impact (0.5 F) on accuracy.
+I think the incrementally-built spines are the key difference.
+Decisions about higher up in the spine are difficult to make when looking at a single word, but with the incremental construction there is information about a larger context.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.aclweb.org/anthology/W17-6316&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{ballesteros-carreras:2017:IWPT,
+  author    = {Ballesteros, Miguel  and  Carreras, Xavier},
+  title     = {Arc-Standard Spinal Parsing with Stack-LSTMs},
+  booktitle = {Proceedings of the 15th International Conference on Parsing Technologies},
+  month     = {September},
+  year      = {2017},
+  address   = {Pisa, Italy},
+  publisher = {Association for Computational Linguistics},
+  pages     = {115--121},
+  url       = {http://www.aclweb.org/anthology/W17-6316}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</title>
+      <link>http://www.jkk.name/post/2017-10-25_shiftreducedp/</link>
+      <pubDate>Wed, 25 Oct 2017 14:44:13 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-25_shiftreducedp/</guid>
+      <description>&lt;p&gt;This paper is a follow-up to yesterday&amp;rsquo;s, where the approach is implemented and evaluated on English and Chinese, with very strong results.
+The novel contribution is the idea of introducing alternating steps in the dynamic program to do unary steps (not a novel idea in general, but novel in its application to the dynamic programming version of shift-reduce parsing).&lt;/p&gt;
+&lt;p&gt;What I found interesting here were the clear benefits of the dynamic program (DP) version.
+One way of viewing this is that the DP gives a more intelligent type of beam, avoiding the issue where the beam is filled with minor variations on a theme.
+Results are given for various beam sizes in both approaches, but it would be interesting to see a graph where the x-axis is number of items built.
+I suspect in that situation, the gap would be smaller.
+On speed, there is the nice theoretical bound of $O(n)$ for this approach, but that obscures a grammar constant related to the item structure.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.aclweb.org/anthology/N15-1108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mi-huang:2015:NAACL-HLT,
+  author    = {Mi, Haitao  and  Huang, Liang},
+  title     = {Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice},
+  booktitle = {Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {May--June},
+  year      = {2015},
+  address   = {Denver, Colorado},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1030--1035},
+  url       = {http://www.aclweb.org/anthology/N15-1108}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</title>
+      <link>http://www.jkk.name/post/2017-10-24_dynamictransition/</link>
+      <pubDate>Tue, 24 Oct 2017 13:06:04 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-24_dynamictransition/</guid>
+      <description>&lt;p&gt;This paper from 2011 explores the relationship between transition based parsing and dynamic programming based parsing.
+They show how to convert common dependency parsing systems (Arc-Standard and Arc-Eager) into dynamic programs, and how doing the reverse on a dynamic program gives the Arc-Hybrid approach (which has since been used in many places, and is now joined by additional systems like Arc-Swift).&lt;/p&gt;
+&lt;p&gt;The benefit of this transformation is that we can find exact answers without massive beams.
+The drawback is that the feature set is restricted.
+This paper is theoretical, so it doesn&amp;rsquo;t give a direct measure of this tradeoff, though 
+&lt;a href=&#34;http://www.anthology.aclweb.org/D/D13/D13-1071.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;follow up work&lt;/a&gt; shows that avoiding search errors is indeed beneficial.&lt;/p&gt;
+&lt;p&gt;With all of the positive results using neural networks for multi-task learning, one thought this work leads to is whether we could treat different inference methods as different tasks.
+In other words, have a single model encoding the input, then have multiple inference algorithms with different extensions of that model, all trained simultaneously.
+The variation in available context for the different algorithms may force generality in the core representation shared across them.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/P/P11/P11-1068.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{kuhlmann-gomezrodriguez-satta:2011:ACL-HLT2011,
+  author    = {Kuhlmann, Marco  and  G\&#39;{o}mez-Rodr\&#39;{i}guez, Carlos  and  Satta, Giorgio},
+  title     = {Dynamic Programming Algorithms for Transition-Based Dependency Parsers},
+  booktitle = {Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2011},
+  address   = {Portland, Oregon, USA},
+  publisher = {Association for Computational Linguistics},
+  pages     = {673--682},
+  url       = {http://www.aclweb.org/anthology/P11-1068}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>One-Endpoint Crossing Graph Parser</title>
+      <link>http://www.jkk.name/software/1ec-parsing/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/software/1ec-parsing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spine and Arc version of the Penn Treebank</title>
+      <link>http://www.jkk.name/data/shp-ptb/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/data/shp-ptb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CCG to PST</title>
+      <link>http://www.jkk.name/software/ccg2pst/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/software/ccg2pst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parse Error Analysis</title>
+      <link>http://www.jkk.name/software/parsing-analysis/</link>
+      <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive CCG Supertagging Model</title>
+      <link>http://www.jkk.name/data/ccg-model/</link>
+      <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/data/ccg-model/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

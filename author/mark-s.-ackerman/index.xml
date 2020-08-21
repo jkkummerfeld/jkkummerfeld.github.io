@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mark S. Ackerman | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/mark-s.-ackerman/</link>
+      <atom:link href="http://www.jkk.name/author/mark-s.-ackerman/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mark S. Ackerman</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Mark S. Ackerman</title>
+      <link>http://www.jkk.name/author/mark-s.-ackerman/</link>
+    </image>
+    
+    <item>
+      <title>Crowdsourced Detection of Emotionally Manipulative Language</title>
+      <link>http://www.jkk.name/publication/chi20anchor/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/chi20anchor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Training Data Voids: Novel Attacks Against NLP Content Moderation</title>
+      <link>http://www.jkk.name/publication/ws-cscw19voids/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-cscw19voids/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

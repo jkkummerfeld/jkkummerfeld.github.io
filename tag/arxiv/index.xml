@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>arxiv | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/arxiv/</link>
+      <atom:link href="http://www.jkk.name/tag/arxiv/index.xml" rel="self" type="application/rss+xml" />
+    <description>arxiv</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 16 Apr 2018 20:55:22 -0400</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>arxiv</title>
+      <link>http://www.jkk.name/tag/arxiv/</link>
+    </image>
+    
+    <item>
+      <title>An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</title>
+      <link>http://www.jkk.name/post/2018-04-16_lm_analysis/</link>
+      <pubDate>Mon, 16 Apr 2018 20:55:22 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2018-04-16_lm_analysis/</guid>
+      <description>&lt;p&gt;Assigning a probability distribution over the next word or character in a sequence (language modeling) is a useful component of many systems, such as speech recognition and translation.
+Recently neural networks have come to dominate in performance, with a range of clever innovations in network structure.
+This paper is not about new models, but rather explores the current evaluation and how well carefully tuned baseline models can do.&lt;/p&gt;
+&lt;p&gt;The key observations for me were:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There are issues with the PTB dataset for character-level evaluation - it removes all punctuation, makes numbers &amp;lsquo;N&amp;rsquo;, and removes rare words (i.e. it is a character-level version of the token-level task).
+Given that the original Penn Treebank exists, I would have been interested to see a comparison with the PTB without any simplification.
+The other dataset, enwik8, makes sense as a testing ground for compression algorithms, but is a little odd for modeling language, since it is the first 100 million bytes of a Wikipedia XML dump.
+The paper does have another dataset, WikiText, which sounds good, but then there is no character-level evaluation!&lt;/li&gt;
+&lt;li&gt;The LSTM is able to achieve ~SotA results for character-level modeling.
+The key seems to be careful design of the softmax that produces the final probability distribution:
+(1) rare words are clustered and represented by a single value in the distribution calculation, and
+(2) word vectors are shared between input and output.&lt;/li&gt;
+&lt;li&gt;Dropout matters more than the network design, and multiple forms of dropout should be tuned jointly.
+This comes from analysis of a set of models trained with random variation in hyperparameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1803.08240&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@Article{2018arXiv180308240M,
+   author = {{Merity}, S. and {Shirish Keskar}, N. and {Socher}, R.},
+    title = {An Analysis of Neural Language Modeling at Multiple Scales},
+  journal = {ArXiv e-prints},
+     year = {2018},
+      url = {https://arxiv.org/abs/1803.08240},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations (Wieting et al., 2017)</title>
+      <link>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</link>
+      <pubDate>Wed, 31 Jan 2018 19:25:36 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</guid>
+      <description>&lt;p&gt;It would be convenient to have a way to represent sentences in a vector space, similar to the way vectors are frequently used to represent input words for a task.
+Quite a few sentence embeddings methods have been proposed, but none have really caught on.
+Building on prior work by the same authors, the approach here is to define a neural network that maps a sentence to a vector, then train it with a loss function that measures similarity between the vectors for paraphrases.&lt;/p&gt;
+&lt;p&gt;This paper scales up the approach, using millions of paraphrases, and explores a range of models.
+To get the paraphrases they use translation (start with a sentence, translate it to another language and back, then assume the translation is a paraphrase).
+For negative examples they use the sentence that the model currently thinks is most similar other than the correct one (choosing this from a large enough set is key).&lt;/p&gt;
+&lt;p&gt;The best model is very simple - concatenate together the average of word vectors and the average of character trigram vectors.
+That consistently beats prior work, including convolutional models, and LSTMs.
+In a way, this is nice as it is a simple way to get a sentence representation!
+On the other hand, this can&amp;rsquo;t possibly capture the semantics of a sentence fully since it doesn&amp;rsquo;t take word order into consideration at all.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1711.05732&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@ARTICLE{2017arXiv171105732W,
+  author        = {{Wieting}, J. and {Gimpel}, K.},
+  title         = {Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations},
+  journal       = {ArXiv e-prints},
+  archivePrefix = {arXiv},
+  eprint        = {1711.05732},
+  primaryClass  = {cs.CL},
+  year          = {2017},
+  month         = {November},
+  url           = {https://arxiv.org/abs/1711.05732},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</link>
+      <pubDate>Tue, 28 Nov 2017 16:51:09 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</guid>
+      <description>&lt;p&gt;The first step in almost any neural network model for language is to look up a vector for each token in the input.
+These vectors express relations between the words, but it is difficult to know exactly what relations.
+This work proposes a way to modify a vector space of words to have more interpretable dimensions.&lt;/p&gt;
+&lt;p&gt;The core idea is actually more general, it is a new loss that encourages sparsity in an auto-encoder.
+In this case the model is very simple: input a word vector, apply an affine transformation and a pointwise nonlinearity, producing a hidden vector, then apply another affine transformation to get the output.
+The loss is a combination of how well the input and output match (reconstruction loss), plus a function that is minimised when the average activation is below a threshold (average sparsity loss), and the new idea, a loss that is minimised at either 0 or 1 for each hidden value.
+To get the hidden values to be bounded between 1 and 0, the nonlinearity used is a modified ReLU that stops increasing after reaching 1.
+After training, the hidden values become the new word vectors.&lt;/p&gt;
+&lt;p&gt;To evaluate interpretability they consider the top 4 words along each dimension, add a random word, and ask a person to identify the odd word out.
+Using either word2vec or GloVe as the initial vectors and applying this method, the results shown a dramatic difference (~25 vs. ~70).
+On downstream tasks the story is more mixed.
+With 1,000 dimensional vectors, there is usually an improvement for GloVe, but not for word2vec, and the differences are generally small.
+Apparently going up to 2,000 further improves interpretability scores, but &amp;lsquo;at a severe cost&amp;rsquo; for the downstream tasks.
+Going the other direction, to 500, hurts interpretability, and probably doesn&amp;rsquo;t improve downstream performance (it isn&amp;rsquo;t mentioned).&lt;/p&gt;
+&lt;p&gt;I would be curious to see if taking these new word vectors and applying them to a downstream task like parsing, but letting them change during training, would be beneficial.
+The general idea of a sparse auto-encoder also seems cool and may have other applications.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1711.08792&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@ARTICLE{2017arXiv171108792S,
+  author        = {{Subramanian}, A. and {Pruthi}, D. and {Jhamtani}, H. and {Berg-Kirkpatrick}, T. and {Hovy}, E.},
+  title         = {SPINE: SParse Interpretable Neural Embeddings},
+  journal       = {ArXiv e-prints},
+  archivePrefix = {arXiv},
+  eprint        = {1711.08792},
+  primaryClass  = {cs.CL},
+  year          = {2017},
+  month         = {November},
+  url           = {https://arxiv.org/abs/1711.08792},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-30_neuralsequence/</link>
+      <pubDate>Mon, 30 Oct 2017 13:28:30 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-30_neuralsequence/</guid>
+      <description>&lt;p&gt;Language is bursty, with rare words occurring in clumps, the simplest example being an unusual name that occurs a lot in one news article, but not in other articles.
+This paper is about how to modify a neural language model to take this into consideration, by adapting the model over time.&lt;/p&gt;
+&lt;p&gt;The main idea is to have one model of overall word usage (global) and a separate model that shifts over time to take into consideration the current text (local).
+The idea of adapting is not new (as the paper makes clear), but the key here is an update rule that is a modified form of RMSprop, combining the local and global models.
+It also seems like performing the updates after every 5 words is important, balancing frequency with informativeness (though no ablation of frequencies is presented).
+Conveniently, this is orthogonal to many other ideas and can essentially be stapled on top of a range of sequential architectures, consistently leading to improvements.&lt;/p&gt;
+&lt;p&gt;One question left open is how this would work in generation.
+The paper describes how it could be applied and could provide improvements, but it also seems likely to risk the repetitive outputs seen in many dialogue systems.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/pdf/1709.07432.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@ARTICLE{2017arXiv170907432K,
+   author = {{Krause}, B. and {Kahembwe}, E. and {Murray}, I. and {Renals}, S.},
+    title = &amp;quot;{Dynamic Evaluation of Neural Sequence Models}&amp;quot;,
+  journal = {ArXiv e-prints},
+archivePrefix = &amp;quot;arXiv&amp;quot;,
+   eprint = {1709.07432},
+ keywords = {Computer Science - Neural and Evolutionary Computing, Computer Science - Computation and Language},
+     year = 2017,
+    month = sep,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv170907432K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Searching for Activation Functions (Ramachandran et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-27_swishactivation/</link>
+      <pubDate>Fri, 27 Oct 2017 11:22:45 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-27_swishactivation/</guid>
+      <description>&lt;h2 id=&#34;update&#34;&gt;Update&lt;/h2&gt;
+&lt;p&gt;After prior work came to light that uses the same non-linearity, this paper was updated to focus more on the search process used to investigate the space.
+One new takeaway for me was how diverse the effective activation functions were (see figures in the new version of the paper).&lt;/p&gt;
+&lt;h2 id=&#34;original-post&#34;&gt;Original Post&lt;/h2&gt;
+&lt;p&gt;Non-linear functions are the key to the representation power of neural networks.
+Many different ones have been proposed, though it is difficult to make theoretical claims of their properties and so the choice of which to use is generally empirical.
+This paper proposes a new non-linearity, $\text{swish}(x) = x \cdot \text{sigmoid}(x)$.&lt;/p&gt;
+&lt;p&gt;Interestingly, it was chosen by a combination of exhaustive search and search with reinforcement learning across a range of functions, evaluating on CIFAR-10 with a small model.
+ReLU variants were consistently second-best to swish variants, and generally the more complicated functions performed worse.
+They do mention two functions that performed well, but didn&amp;rsquo;t generalise: $\text{cos}(x) - x$ and $\text{max}(x, \text{tanh}(x))$, which look like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/activation-functions.png&#34; alt=&#34;Four activation functions&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In a range of experiments in vision and machine translation swish does at least as well or slightly better than the alternatives.
+It also seems more robust to network depth and to work across different network structures.
+As for why it works so well, there are two main ideas: (1) it adds smoothness to the ReLU, (2) it has some sensitivity to negative inputs.
+Both of these seem particularly important at the start of training.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/pdf/1710.05941.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@ARTICLE{2017arXiv171005941R,
+   author = {{Ramachandran}, P. and {Zoph}, B. and {Le}, Q.~V.},
+    title = &amp;quot;{Swish: a Self-Gated Activation Function}&amp;quot;,
+  journal = {ArXiv e-prints},
+archivePrefix = &amp;quot;arXiv&amp;quot;,
+   eprint = {1710.05941},
+ keywords = {Computer Science - Neural and Evolutionary Computing, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Learning},
+     year = 2017,
+    month = oct,
+   adsurl = {http://adsabs.harvard.edu/abs/2017arXiv171005941R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Attention Is All You Need (Vaswani et al., ArXiv 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-20_onlyattention/</link>
+      <pubDate>Fri, 20 Oct 2017 15:25:23 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-20_onlyattention/</guid>
+      <description>&lt;p&gt;Recurrent neural networks like LSTMs and GRUs have limited scope for parallelisation because each step depends on the one before it.
+This architecture also means that many steps of computation separate two words that are far apart, making it difficult to capture long-distance relations.
+A range of approaches have been used to try to address these issues, such as convolutional structures and other forms of recurrence (e.g. QRNNs).
+The idea in this work is to use attention, applied multiple times, to get a network that is fast while still capturing positional information.&lt;/p&gt;
+&lt;p&gt;To explain the structure I put together the figure below, which captures the network structure with a few simplifications:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/google-attention.png&#34; alt=&#34;Google Attention Network&#34;&gt;&lt;/p&gt;
+&lt;p&gt;There a few ideas being brought together here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Positional encoding&lt;/em&gt;, which is a vector of the same length as the word representation, but that depends only on the position in the input. Here they use $f(pos, dim) = sin(pos / 10000^{2 dim / d_w})$ for even dimensions and the cosine equivalent for odd dimensions (where $d_w$ is the number of dimensions.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Multi-head attention&lt;/em&gt;, where rather than running attention once on the full vector, multiple linear transforms are applied to get smaller vectors.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Scaled dot product attention&lt;/em&gt;, the equation is shown in the figure, the key new idea is to rescale by the square root of the dimensionality so that larger vectors don&amp;rsquo;t produce excessively sharp distributions after the softmax is applied. The more general form of this described in the paper has keys ($K$), queries ($Q$) and values ($V$), but the network uses the same vector for the key and value. I show the query with a solid line and the values/keys with dotted lines. The matrix $V$ is formed by using the $v$ vectors as rows, while $Q$ is formed by duplicating $q$ in every row. Note, on the left hand side attention is over all input words, while on the right it is only over the words produced so far (ie. content to the left).&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Layer normalisation&lt;/em&gt;, a way to rescale weights to keep vector outputs in a nice range, from 
+&lt;a href=&#34;https://arxiv.org/abs/1607.06450&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ba, Kiros and Hinton (ArXiv 2016)&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Other details, (1) When the outputs are words, the vectors used to initially represent each input word are also used to represent the outputs and in the final linear transformation (though with some rescaling). (2) They use a formula I haven&amp;rsquo;t seen before to adjust the learning rate during training, (3) dropout in several places and label smoothing are used for regularization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Simplifications in the figure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For multi-head attention I only show two transforms, while in practise they used 8.&lt;/li&gt;
+&lt;li&gt;The shaded regions are duplicated 6 times to create a stack, with the output of one region acting as the input to the next copy of it. The links from left to right are always from the top of the input stack.&lt;/li&gt;
+&lt;li&gt;The musical repeat signs indicate that the structure is essentially the same. On the output side this isn&amp;rsquo;t quite true since the attention boxes only take inputs to their left (since output to the right doesn&amp;rsquo;t exist when they are being calculated).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In terms of experiments, it works at least as well if not better than prior approaches, and is a lot faster for machine translation (no speed numbers are given for parsing).
+There is also some nice analysis of what it ends out using the attention mechanism to focus on for each word.
+It seems like it can provide a way to effectively disambiguate the sense of a word based on its context.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/pdf/1706.03762.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Google also has some blog posts up
+
+&lt;a href=&#34;https://research.googleblog.com/2017/08/transformer-novel-neural-network.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;about the paper&lt;/a&gt;
+and
+
+&lt;a href=&#34;https://research.googleblog.com/2017/06/accelerating-deep-learning-research.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;about the library&lt;/a&gt;
+they released.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@article{arxiv:1706.03762,
+  author    = {Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin},
+  title     = {Attention Is All You Need},
+  journal   = {ArXiv},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1706.03762},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

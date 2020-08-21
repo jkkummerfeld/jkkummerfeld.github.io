@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>error-correction | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/error-correction/</link>
+      <atom:link href="http://www.jkk.name/tag/error-correction/index.xml" rel="self" type="application/rss+xml" />
+    <description>error-correction</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 22 Nov 2017 15:48:53 -0500</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>error-correction</title>
+      <link>http://www.jkk.name/tag/error-correction/</link>
+    </image>
+    
+    <item>
+      <title>Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-22_errorrepairparsing/</link>
+      <pubDate>Wed, 22 Nov 2017 15:48:53 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-22_errorrepairparsing/</guid>
+      <description>&lt;p&gt;This work presents a system that parses sentences and identifies grammatical errors simultaneously.
+It&amp;rsquo;s an intuitive combination - a syntactic model should assign higher probability to a parse for a fixed version of a sentence than the one with a mistake.&lt;/p&gt;
+&lt;p&gt;They build on an incremental &amp;lsquo;easy-first&amp;rsquo; dependency parsing approach.
+Easy-First parsing starts with the set of words in the sentence and allows an edge to be created between any adjacent pair of words.
+Once an edge is created, the child is hidden beneath its parent, so now the parent is effectively adjacent to a word slightly further away.
+Then the process repeats, until there is only one word left (the root of the sentence).
+In a way it is like following a dynamic program, but with only a single state that ties together multiple cells.&lt;/p&gt;
+&lt;p&gt;The change in this paper is the addition of actions that insert a word, delete a word, or alter a word.
+To make it work, there are constraints to avoid cycles of repeated actions (e.g. insert-delete-insert-delete&amp;hellip;), and on the sets of allowed word substitutions.
+To produce additional training data, a tool is used to inject errors into grammatical text.
+On error detection, this approach does lead to improvements, though it changes a relatively small number of the sentences.
+On dependency parsing it is (unsurprisingly) worse than a baseline system on grammatical text.
+It does perform better on ungrammatical text, though the data is generated using the same process as the training data, creating a bias in the system&amp;rsquo;s favour.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/P17-2030&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{sakaguchi-post-vandurme:2017:Short,
+  author    = {Sakaguchi, Keisuke  and  Post, Matt  and  Van Durme, Benjamin},
+  title     = {Error-repair Dependency Parsing for Ungrammatical Texts},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {189--195},
+  url       = {http://aclweb.org/anthology/P17-2030}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

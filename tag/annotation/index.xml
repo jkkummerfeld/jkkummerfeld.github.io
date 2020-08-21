@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>annotation | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/annotation/</link>
+      <atom:link href="http://www.jkk.name/tag/annotation/index.xml" rel="self" type="application/rss+xml" />
+    <description>annotation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>annotation</title>
+      <link>http://www.jkk.name/tag/annotation/</link>
+    </image>
+    
+    <item>
+      <title>SLATE: A Super-Lightweight Annotation Tool for Experts</title>
+      <link>http://www.jkk.name/software/slate/</link>
+      <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/software/slate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-12-08_crowdbias/</link>
+      <pubDate>Fri, 08 Dec 2017 19:49:09 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-12-08_crowdbias/</guid>
+      <description>&lt;p&gt;Getting high quality annotations from crowdsourcing requires careful design.
+This paper looks at how one annotation a worker does can influence their next annotation, for example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When scoring translations, a good example may make the next one look worse in comparison&lt;/li&gt;
+&lt;li&gt;For labeling tasks, we may expect a long sequence of the same label to be rare (the gambler&amp;rsquo;s fallacy)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To investigate this they fit a linear model with inputs (previous label, gold label, random noise) and see what the coefficients are.
+Across multiple tasks, there is a non-zero correlation with the previous label.
+Interestingly, there also seems to be a learning effect for good workers, where over time they become calibrated and show less sequence bias.
+Fortunately, there is a simple solution - for each worker, give every annotator their documents in a different random order!
+With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1306&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mathur-baldwin-cohn:2017:EMNLP2017,
+  author    = {Mathur, Nitika  and  Baldwin, Timothy  and  Cohn, Trevor},
+  title     = {Sequence Effects in Crowdsourced Annotations},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2860--2865},
+  url       = {https://www.aclweb.org/anthology/D17-1306}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-13_errordetection/</link>
+      <pubDate>Fri, 13 Oct 2017 13:32:19 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-13_errordetection/</guid>
+      <description>&lt;p&gt;Active learning doesn&amp;rsquo;t seem to get much attention in NLP, probably because of fear that developing data based on the errors of one model will introduce a particular sampling bias.
+This paper is a nice example of a problem it can be applied to that doesn&amp;rsquo;t raise that issue: detecting all the errors in a system&amp;rsquo;s output.&lt;/p&gt;
+&lt;p&gt;The scenario is that you have a bunch of models for doing a task (e.g. POS tagging) and a new dataset with no labeled data, which you would like to label.
+Having a person label the data would take a long time and doesn&amp;rsquo;t take advantage of these systems.
+At the same time, we can&amp;rsquo;t just run the systems and use their output because they aren&amp;rsquo;t perfect, particularly out of domain.
+We could run the systems and check their output, which could be faster than annotating directly, but would still take a long time.
+If we don&amp;rsquo;t mind having some errors, we can check just some output, but how do we decide what to check?&lt;/p&gt;
+&lt;p&gt;This paper applies the generative model from 
+&lt;a href=&#34;http://www.aclweb.org/anthology/N13-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MACE&lt;/a&gt; to build a generative model of system outputs.
+The model is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For each example, sample the true label with a uniform prior&lt;/li&gt;
+&lt;li&gt;Then, for each classifier, sample from a Bernoulli distribution to decide if they are good or not&lt;/li&gt;
+&lt;li&gt;A good classifier returns the true label, a not good classifier samples from a multinomial over the options&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Since we don&amp;rsquo;t know the parameters of the model, or the true labels, use expectation maximisation to learn.&lt;/p&gt;
+&lt;p&gt;This work takes that model, trains it and uses it to identify the sample that is most uncertain.
+A person annotates it, the correct label replaces one of the system predictions, and EM is run again.
+This is repeated until either there appear to be no more errors, or annotators run out of time.&lt;/p&gt;
+&lt;p&gt;How well does it work?
+The main metric is precision: how many of the instances asked for annotation actually have errors.
+For POS tagging on WSJ text, the taggers initially get 2.5% of words wrong.
+To get that down to 1.1% the precision is 33%, and to get it to 0.65% precision is 17.6%.
+On an out of domain dataset, the error rate is 10% initially, and is down to 5% with a precision of 50%.
+Put differently, in a dataset of 25,000 tokens, with 2,500 errors, after checking 2,500 tokens, there are only 1,250 errors (another 2,500 checks brings it down to 730).
+It also works well for NER, and consistently does better than the alternative they compare to (consider the taggers a committee and find the examples with highest entropy, i.e. greatest disagreement).&lt;/p&gt;
+&lt;p&gt;This seems like a natural fit for 
+&lt;a href=&#34;https://prodi.gy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prodigy&lt;/a&gt; and something that could be broadly useful.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/P/P17/P17-1107.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{rehbein-ruppenhofer:2017:Long,
+  author    = {Rehbein, Ines  and  Ruppenhofer, Josef},
+  title     = {Detecting annotation noise in automatically labelled data},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1160--1170},
+  url       = {http://aclweb.org/anthology/P17-1107}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

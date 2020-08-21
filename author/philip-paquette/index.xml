@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philip Paquette | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/philip-paquette/</link>
+      <atom:link href="http://www.jkk.name/author/philip-paquette/index.xml" rel="self" type="application/rss+xml" />
+    <description>Philip Paquette</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Philip Paquette</title>
+      <link>http://www.jkk.name/author/philip-paquette/</link>
+    </image>
+    
+    <item>
+      <title>No-Press Diplomacy: Modeling Multi-Agent Gameplay</title>
+      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
+      <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

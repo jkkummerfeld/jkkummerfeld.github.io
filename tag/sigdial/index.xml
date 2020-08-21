@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sigdial | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/sigdial/</link>
+      <atom:link href="http://www.jkk.name/tag/sigdial/index.xml" rel="self" type="application/rss+xml" />
+    <description>sigdial</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 09 Nov 2017 19:47:08 -0500</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>sigdial</title>
+      <link>http://www.jkk.name/tag/sigdial/</link>
+    </image>
+    
+    <item>
+      <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-09_framesdataset/</link>
+      <pubDate>Thu, 09 Nov 2017 19:47:08 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-09_framesdataset/</guid>
+      <description>&lt;p&gt;Another paper about a dataset of dialogues, but this time with structure.
+Like the paper from yesterday, the aim is a dataset of task-oriented conversations, but with more complexity than prior work.
+The difference is that this work includes a structured representation of the state of the conversation: frames.&lt;/p&gt;
+&lt;p&gt;A frame is essentially a tuple describing a query, e.g. (Destination: Sydney, Origin: Ann Arbor, price: 1500 USD).
+There are multiple frames in a dialogue (a departure from DSTC tasks), and utterances are labeled with dialogue acts that capture modifications to the frames as well as references to them.
+This structure sounds fairly general, though the focus here was on vacation planning, where the user is buying a package.
+The setup doesn&amp;rsquo;t maximise the potential complexity though, as there are a small number of set packages available, rather than the complex tradeoffs of flight+hotel combinations that exist in practise.
+Looking at the example dialogues in the paper, it has complete sentences of some complexity.
+One thing I&amp;rsquo;m still curious about is disagreements between annotators, as for the complete task the score was 0.62 +/- 5 (with dialogue acts being trickier than slot values, and no scores for frame references on their own).&lt;/p&gt;
+&lt;p&gt;Comparing to the Stanford dataset this is smaller (11k vs. 1.4k), but has more turns per dialogue (11 vs. 15) and probably longer turns too, judging by the examples.
+The tasks are completely different, but both come with small tables of information that are private to the two participants and required for almost every turn in the conversation.
+Evaluating on both could be a great way to show the flexibility of a dialogue system, but the lack of frames for the Stanford data and the difficulty of running a human evaluation for this data limits the feasible types of multi-domain experiments.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/W17-5526&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{elasri-EtAl:2017:W17-55,
+  author    = {El Asri, Layla  and  Schulz, Hannes  and  Sharma, Shikhar  and  Zumer, Jeremie  and  Harris, Justin  and  Fine, Emery  and  Mehrotra, Rahul  and  Suleman, Kaheer},
+  title     = {Frames: a corpus for adding memory to goal-oriented dialogue systems},
+  booktitle = {Proceedings of the 18th Annual SIGdial Meeting on Discourse and Dialogue},
+  month     = {August},
+  year      = {2017},
+  address   = {Saarbrucken, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {207--219},
+  url       = {http://aclweb.org/anthology/W17-5526}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

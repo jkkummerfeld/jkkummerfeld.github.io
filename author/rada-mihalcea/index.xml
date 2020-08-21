@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rada Mihalcea | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/rada-mihalcea/</link>
+      <atom:link href="http://www.jkk.name/author/rada-mihalcea/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rada Mihalcea</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Rada Mihalcea</title>
+      <link>http://www.jkk.name/author/rada-mihalcea/</link>
+    </image>
+    
+    <item>
+      <title>Analyzing the Surprising Variability in Word Embedding Stability Across Languages</title>
+      <link>http://www.jkk.name/publication/arxiv20embeddings/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/arxiv20embeddings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Look Who&#39;s Talking: Inferring Speaker Attributes from Personal Longitudinal Dialog</title>
+      <link>http://www.jkk.name/publication/cicling19personal/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/cicling19personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning from Personal Longitudinal Dialog Data</title>
+      <link>http://www.jkk.name/publication/ieee19personal/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ieee19personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Factors Influencing the Surprising Instability of Word Embeddings</title>
+      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>World Knowledge for Abstract Meaning Representation Parsing</title>
+      <link>http://www.jkk.name/publication/lrec18amr/</link>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/lrec18amr/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

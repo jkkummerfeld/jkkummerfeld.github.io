@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>word-vectors | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/word-vectors/</link>
+      <atom:link href="http://www.jkk.name/tag/word-vectors/index.xml" rel="self" type="application/rss+xml" />
+    <description>word-vectors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 05 Mar 2018 21:09:58 -0500</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>word-vectors</title>
+      <link>http://www.jkk.name/tag/word-vectors/</link>
+    </image>
+    
+    <item>
+      <title>Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</title>
+      <link>http://www.jkk.name/post/2018-03-05_curriculum/</link>
+      <pubDate>Mon, 05 Mar 2018 21:09:58 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2018-03-05_curriculum/</guid>
+      <description>&lt;p&gt;Usually when we learn, we have a curriculum designed to incrementally build understanding.
+It seems reasonable that the same idea could be useful for machine learning, and indeed there is a large body of work on the topic.
+This paper explores the specific question of whether a curriculum can help develop task-specific word vectors, and whether we can determine an effective curriculum automatically.&lt;/p&gt;
+&lt;p&gt;They define a linear model with a range of features that characterise a paragraph of text, such as the number of distinct words, the number of prepositional phrases, and the average number of syllables per word.
+Paragraphs are sorted by the model and used to train word vectors with word2vec.
+These word vectors are then used as part of a model for a target task, giving a score that indicates the quality of the curriculum.
+Based on this score the weights for the model are updated, using a form of Bayesian optimisation.&lt;/p&gt;
+&lt;p&gt;One really nice aspect of this paper is the range of tasks considered: sentiment analysis, NER, POS tagging, and parsing.
+Learning a curriculum does improve performance slightly, and which features are important varies across the tasks (indicating the importance of task-specific curriculums).
+However, the models are somewhat restricted (as shown by the low absolute performance) because they do not change the word vectors during training.
+For most of this paper that&amp;rsquo;s a reasonable decision, as it allows a clearer learning signal, but it would have been interesting to also see the impact on the normal training scenario and a state-of-the-art model.
+In my experience (and in our soon-to-appear NAACL paper) we find that variations in word vectors can disappear during training for a downstream task.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.aclweb.org/anthology/P16-1013&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{tsvetkov-EtAl:2016:P16-1,
+  author    = {Tsvetkov, Yulia  and  Faruqui, Manaal  and  Ling, Wang  and  MacWhinney, Brian  and  Dyer, Chris},
+  title     = {Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {August},
+  year      = {2016},
+  address   = {Berlin, Germany},
+  publisher = {Association for Computational Linguistics},
+  pages     = {130--139},
+  url       = {http://www.aclweb.org/anthology/P16-1013}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings (Yang et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</link>
+      <pubDate>Tue, 12 Dec 2017 20:25:40 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</guid>
+      <description>&lt;p&gt;To construct word vectors from multi-domain data, use a separate vector for each domain and add a loss term to encourage them to agree.
+Here the loss is an l2 norm, weighted by a factor that depends on the frequency of the words in the two domains.
+The factor is the harmonic mean of the normalised frequency in each domain (so the lower frequency dominates the factor, pulling it lower).
+Across a range of tasks this consistently performs better than other approaches.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{yang-lu-zheng:2017:EMNLP2017,
+  author    = {Yang, Wei  and  Lu, Wei  and  Zheng, Vincent},
+  title     = {A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2898--2904},
+  url       = {https://www.aclweb.org/anthology/D17-1312}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
+      <pubDate>Tue, 12 Dec 2017 20:15:34 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</guid>
+      <description>&lt;p&gt;It turns out that if the vectors learned by word2vec are projected into a plane they all point in the same direction.
+Also, the context vectors (which are part of the algorithm, but not retained afterwards) point the other way.
+When visualising with t-SNE this effect is not visible because of the way the space is warped to optimise the t-SNE objective.&lt;/p&gt;
+&lt;p&gt;This is surprising, and may seem problematic since it doesn&amp;rsquo;t fit our goals for what these vectors should be capturing.
+However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloVe does not have this property, and doesn&amp;rsquo;t seem to derive a great benefit from it.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1308&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mimno-thompson:2017:EMNLP2017,
+  author    = {Mimno, David  and  Thompson, Laure},
+  title     = {The strange geometry of skip-gram with negative sampling},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2873--2878},
+  url       = {https://www.aclweb.org/anthology/D17-1308}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</link>
+      <pubDate>Tue, 28 Nov 2017 16:51:09 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</guid>
+      <description>&lt;p&gt;The first step in almost any neural network model for language is to look up a vector for each token in the input.
+These vectors express relations between the words, but it is difficult to know exactly what relations.
+This work proposes a way to modify a vector space of words to have more interpretable dimensions.&lt;/p&gt;
+&lt;p&gt;The core idea is actually more general, it is a new loss that encourages sparsity in an auto-encoder.
+In this case the model is very simple: input a word vector, apply an affine transformation and a pointwise nonlinearity, producing a hidden vector, then apply another affine transformation to get the output.
+The loss is a combination of how well the input and output match (reconstruction loss), plus a function that is minimised when the average activation is below a threshold (average sparsity loss), and the new idea, a loss that is minimised at either 0 or 1 for each hidden value.
+To get the hidden values to be bounded between 1 and 0, the nonlinearity used is a modified ReLU that stops increasing after reaching 1.
+After training, the hidden values become the new word vectors.&lt;/p&gt;
+&lt;p&gt;To evaluate interpretability they consider the top 4 words along each dimension, add a random word, and ask a person to identify the odd word out.
+Using either word2vec or GloVe as the initial vectors and applying this method, the results shown a dramatic difference (~25 vs. ~70).
+On downstream tasks the story is more mixed.
+With 1,000 dimensional vectors, there is usually an improvement for GloVe, but not for word2vec, and the differences are generally small.
+Apparently going up to 2,000 further improves interpretability scores, but &amp;lsquo;at a severe cost&amp;rsquo; for the downstream tasks.
+Going the other direction, to 500, hurts interpretability, and probably doesn&amp;rsquo;t improve downstream performance (it isn&amp;rsquo;t mentioned).&lt;/p&gt;
+&lt;p&gt;I would be curious to see if taking these new word vectors and applying them to a downstream task like parsing, but letting them change during training, would be beneficial.
+The general idea of a sparse auto-encoder also seems cool and may have other applications.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1711.08792&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@ARTICLE{2017arXiv171108792S,
+  author        = {{Subramanian}, A. and {Pruthi}, D. and {Jhamtani}, H. and {Berg-Kirkpatrick}, T. and {Hovy}, E.},
+  title         = {SPINE: SParse Interpretable Neural Embeddings},
+  journal       = {ArXiv e-prints},
+  archivePrefix = {arXiv},
+  eprint        = {1711.08792},
+  primaryClass  = {cs.CL},
+  year          = {2017},
+  month         = {November},
+  url           = {https://arxiv.org/abs/1711.08792},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-15_entityvectors/</link>
+      <pubDate>Wed, 15 Nov 2017 18:01:27 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-15_entityvectors/</guid>
+      <description>&lt;p&gt;Since word2vec was released there have been a series of X2vec papers, though none have had the success of word vectors.
+In this case the idea is to represent entities and chunks of text (words, sentences, paragraphs).&lt;/p&gt;
+&lt;p&gt;Entities are represented with vectors.
+To get the vector for a chunk of text, they:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Sum word vectors for the text.&lt;/li&gt;
+&lt;li&gt;Rescale to be of unit length.&lt;/li&gt;
+&lt;li&gt;Multiply by a weight matrix and add a bias.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Then to learn these, negative log likelihood is used, where the probability is defined as a softmax over the dot product between entity and text vectors.
+The data is a portion of Wikipedia annotated with entities as indicated by links (plus they say the entity the page is about is implicitly part of every sentence).&lt;/p&gt;
+&lt;p&gt;With these new vectors in hand, they try textual similarity, with strong results.
+They also build a very simple entity linking system, a feed-forward network with these representations plus a few other features, and beat all prior work.
+Similarly
+They apply the same modeling approach to Quizball QA, also with strong results.&lt;/p&gt;
+&lt;p&gt;The simplicity and effectiveness of the model really is impressive.
+Some qualitative examples are included, but hard to find trends in.
+It does seem like a more reasonable vector learning approach than skip-thought and other similar approaches that rely only on text context - the entities provide something different, but clearly closely related.
+That said, I feel like more ablation is needed to see what role each of these pieces is playing (are they learning better vectors, or using them in a way that is more effective? Or both?).&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.transacl.org/ojs/index.php/tacl/article/view/1065&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@article{TACL1065,
+	author = {Yamada, Ikuya  and Shindo, Hiroyuki  and Takeda, Hideaki  and Takefuji, Yoshiyasu },
+	title = {Learning Distributed Representations of Texts and Entities from Knowledge Base},
+	journal = {Transactions of the Association for Computational Linguistics},
+	volume = {5},
+	year = {2017},
+	issn = {2307-387X},
+	url = {https://www.transacl.org/ojs/index.php/tacl/article/view/1065},
+	pages = {397--411}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</link>
+      <pubDate>Thu, 26 Oct 2017 20:47:12 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</guid>
+      <description>&lt;p&gt;Word2Vec and other approaches provide a single vector representing a word&amp;rsquo;s meaning, giving words spatially defined relationships capturing relatedness.
+A natural extension is to consider regions in that space and allow some words to take up larger or smaller regions.
+Another natural idea is to allow a single word to have multiple representations, to capture the different senses.
+This paper considers both of those ideas, using multiple gaussian distributions per word.&lt;/p&gt;
+&lt;p&gt;Using gaussians has the nice property that there is a closed form for calculating the amount of overlap between them, which is used as a measure of similarity.
+Following ideas from word2vec, during learning the aim is to increase similarity between words that occur together and decrease it between random pairs that do not occur together.
+Once the word representations are learned, KL divergence is used for similarity, along with the standard approaches that only look at the gaussian centres.&lt;/p&gt;
+&lt;p&gt;In practise, two spherical distributions per word is sufficient.
+Performance is better than word2vec and several other approaches for multi-sense word embeddings.
+There was one puzzling line about the model suffering larger variance problems, but it was not quantified.&lt;/p&gt;
+&lt;p&gt;It would be very interesting to inject some knowledge, such as from WordNet, to guide the number of gaussians per word, rather than giving them all N.
+The paper also doesn&amp;rsquo;t get into details about the learned space, for example, are the two senses often far apart or close together? (in the latter case it is learning a slightly non-linear spatial representation).&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/P17-1151&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{athiwaratkun-wilson:2017:Long,
+  author    = {Athiwaratkun, Ben  and  Wilson, Andrew},
+  title     = {Multimodal Word Distributions},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1645--1656},
+  url       = {http://aclweb.org/anthology/P17-1151}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-16_forumrnn/</link>
+      <pubDate>Mon, 16 Oct 2017 20:55:07 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-16_forumrnn/</guid>
+      <description>&lt;p&gt;Attention - a weighted average over a set of vectors representing context - has consistently produced positive results.
+Here we see an example of how it can be applied in the case of modeling a threaded discussion.&lt;/p&gt;
+&lt;p&gt;Attention is applied in two ways.
+First, over a fixed set of vectors.
+This is intended to provide a mechanism to choose between several different sub-models contained within a single model.
+Put differently, the vectors provide a set of latent representations that capture each of the different types of posts in the subreddit.
+Second, attention over the current utterance is used in the process of predicting responses (at training time only).
+This provides an additional source of input to the model, by forcing it to explain the response utterances using the same representations as a source of information.&lt;/p&gt;
+&lt;p&gt;The application is a new task, using values assigned to posts = upvotes - downvotes (i.e. Reddit karma).
+Predicting the specific value is hard, so the task is split into 7 binary decisions about whether a post has a score higher or lower than some value.
+On this task the new approach provides consistent gains, though overall performance remains low (53 - 56%).
+Confusingly though, one of the figures (number 4) seems to suggest that it was a single multi-way decision, not a set of binary decisions.
+I&amp;rsquo;m also curious about the data, in particular what the distribution of scores is.
+The paper mentions it is Zipfian, but surely it would be something double-sided with a massive peak at 0 and a rapid drop in either direction?&lt;/p&gt;
+&lt;p&gt;Overall, this is further evidence of the versatility of the idea of attention!&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/D17-1242.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{cheng-fang-ostendorf:2017:EMNLP2017,
+  author    = {Cheng, Hao  and  Fang, Hao  and  Ostendorf, Mari},
+  title     = {A Factored Neural Network Model for Characterizing Online Discussions in Vector Space},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {2286--2296},
+  url       = {https://www.aclweb.org/anthology/D17-1242}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siva Sankalp Patel | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/siva-sankalp-patel/</link>
+      <atom:link href="http://www.jkk.name/author/siva-sankalp-patel/index.xml" rel="self" type="application/rss+xml" />
+    <description>Siva Sankalp Patel</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Siva Sankalp Patel</title>
+      <link>http://www.jkk.name/author/siva-sankalp-patel/</link>
+    </image>
+    
+    <item>
+      <title>A Large-Scale Corpus for Conversation Disentanglement</title>
+      <link>http://www.jkk.name/publication/acl19disentangle/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

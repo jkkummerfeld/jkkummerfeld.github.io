@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>knowledge-graph | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/knowledge-graph/</link>
+      <atom:link href="http://www.jkk.name/tag/knowledge-graph/index.xml" rel="self" type="application/rss+xml" />
+    <description>knowledge-graph</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 10 Nov 2017 15:37:15 -0500</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>knowledge-graph</title>
+      <link>http://www.jkk.name/tag/knowledge-graph/</link>
+    </image>
+    
+    <item>
+      <title>Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-11-10_kginlstm/</link>
+      <pubDate>Fri, 10 Nov 2017 15:37:15 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-11-10_kginlstm/</guid>
+      <description>&lt;p&gt;Structured information sources have been effectively used for entity detection and typing in linear models with the information encoded as binary features.
+This paper looks at how to integrate vector representations of structured information into an LSTM.
+The solution is an additional processing step during output generation, in which the vectors for relevant entities in the structured data are combined with the standard LSTM output (note, they do not affect the cell itself, so the information is not passed on through the recurrence).&lt;/p&gt;
+&lt;p&gt;In this case the structured information is a set of tuples forming a graph of relations between entities, from either NELL or WordNet.
+The actual encoding of entities is an application of prior work; vectors representing tuples are trained with the objective that the score for any tuple is higher than made-up tuples (where the score is $v_a M_r v_b$ for entities $a$ and $b$ in relation $r$).
+The set of relevant entities for a particular word in the sentence is obtained by string matching, and then attention is used to combine them.
+There is also a kind of gating mechanism to choose how big a role the entities play in the prediction, using a combination of the input, hidden state, and cell state.&lt;/p&gt;
+&lt;p&gt;The results are interesting not only because this method helps, but because of how well the standard LSTM does on this task, matching or exceeding prior results.
+This is even more impressive given how small ACE is (if I remember correctly).
+The other key observations are that having a sequence level loss (using a CRF) helps, and NELL and WordNet seem to be providing different types of information (as using both leads to further improvements).&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/P17-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{yang-mitchell:2017:Long,
+  author    = {Yang, Bishan  and  Mitchell, Tom},
+  title     = {Leveraging Knowledge Bases in LSTMs for Improving Machine Reading},
+  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  month     = {July},
+  year      = {2017},
+  address   = {Vancouver, Canada},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1436--1446},
+  url       = {http://aclweb.org/anthology/P17-1132}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

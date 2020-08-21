@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rl | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/rl/</link>
+      <atom:link href="http://www.jkk.name/tag/rl/index.xml" rel="self" type="application/rss+xml" />
+    <description>rl</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 23 Oct 2017 21:12:57 -0400</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>rl</title>
+      <link>http://www.jkk.name/tag/rl/</link>
+    </image>
+    
+    <item>
+      <title>Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-23_alphagozero/</link>
+      <pubDate>Mon, 23 Oct 2017 21:12:57 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-23_alphagozero/</guid>
+      <description>&lt;p&gt;This paper is an extension of the original AlphaGo work on using reinforcement learning to build a Go-player.
+Interestingly, the changes have simplified the overall model, as well as enabling it to do even better than the previous model, but now without any supervised training.&lt;/p&gt;
+&lt;p&gt;One key change is that there is a single core neural network learning to represent the game state.
+On top of that there are either a set of layers that produce an evaluation of the quality of a position, or there are a set of layers that place a distribution over moves.
+This ties in nicely to a lot of work happening at the moment on multi-task learning in NLP and elsewhere.&lt;/p&gt;
+&lt;p&gt;Getting into the details, they use monte-carlo tree search to choose actions during training, then update the model to better match the outcomes observed.
+Starting from a completely random initialisation, the argument for why this works is that at every point in self-play the MCTS informed outcomes are just slightly better than the current model.
+That edge is enough to provide a useful signal, without being such a drastic shift because in self-play the two sides are closely matched.
+Interestingly, while the unsupervised model is worse at predicting what expert human players will do in a game, it is still better at predicting which player will win.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.nature.com/nature/journal/v550/n7676/full/nature24270.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@Article{AlphaGoZero,
+  author = {Silver, David  and  Schrittwieser, Julian  and  Simonyan, Karen  and  Antonoglou, Ioannis  and  Huang, Aja  and  Guez, Arthur  and  Hubert, Thomas  and  Baker, Lucas  and  Lai, Matthew  and  Bolton, Adrian  and  Chen, Yutian  and  Lillicrap, Timothy  and  Hui, Fan  and  Sifre, Laurent  and  van den Driessche, George  and  Graepel, Thore  and  Hassabis, Demis},
+  title = {Mastering the game of Go without human knowledge},
+  journal = {Nature},
+  year = {2017},
+  volume = {550},
+  issue = {7676},
+  pages = {354-359},
+  publisher = {Macmillan Publishers Limited, part of Springer Nature},
+  doi = {10.1038/nature24270},
+  url = {http://www.nature.com/nature/journal/v550/n7676/abs/nature24270.html#supplementary-information},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

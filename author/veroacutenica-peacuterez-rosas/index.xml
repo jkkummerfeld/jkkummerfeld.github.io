@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ver&amp;oacute;nica P&amp;eacute;rez-Rosas | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/veroacutenica-peacuterez-rosas/</link>
+      <atom:link href="http://www.jkk.name/author/veroacutenica-peacuterez-rosas/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ver&amp;oacute;nica P&amp;eacute;rez-Rosas</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Ver&amp;oacute;nica P&amp;eacute;rez-Rosas</title>
+      <link>http://www.jkk.name/author/veroacutenica-peacuterez-rosas/</link>
+    </image>
+    
+    <item>
+      <title>Look Who&#39;s Talking: Inferring Speaker Attributes from Personal Longitudinal Dialog</title>
+      <link>http://www.jkk.name/publication/cicling19personal/</link>
+      <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/cicling19personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning from Personal Longitudinal Dialog Data</title>
+      <link>http://www.jkk.name/publication/ieee19personal/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ieee19personal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

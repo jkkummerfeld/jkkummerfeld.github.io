@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eacl | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/eacl/</link>
+      <atom:link href="http://www.jkk.name/tag/eacl/index.xml" rel="self" type="application/rss+xml" />
+    <description>eacl</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 18 Oct 2017 21:31:05 -0400</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>eacl</title>
+      <link>http://www.jkk.name/tag/eacl/</link>
+    </image>
+    
+    <item>
+      <title>Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</title>
+      <link>http://www.jkk.name/post/2017-10-18_neuralamr/</link>
+      <pubDate>Wed, 18 Oct 2017 21:31:05 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-18_neuralamr/</guid>
+      <description>&lt;p&gt;This is another paper concerned with the challenge of sparsity in AMR parsing, specifically that there are an enormous number of output symbols in the parse trees and most are seen infrequently.
+The system they develop is based on the encoder-decoder with attention approach, which has previously done poorly for AMR, partially because of sparsity.&lt;/p&gt;
+&lt;p&gt;Their solution is to merge certain types of symbols into groups (dates, named entities, rare verbs, constants, etc) and have a standard way to map from the surface form to the output symbol.
+This is an alternative to the approach from the paper I 
+&lt;a href=&#34;http://www.jkk.name/post/2017-10-12_amralignment/&#34;&gt;wrote about&lt;/a&gt; last week.
+They also introduce a completely separate idea, which is a different way to take an AMR graph and turn it into a linear sequence.
+This change is necessary to make the output follow the form their model generates - a sequence (though there has been work on tree based LSTMs on the output side, so AMR could be directly generated, and I believe there has been some work on applying that to AMR).&lt;/p&gt;
+&lt;p&gt;Together these changes do substantially improve performance over previous encoder-decoder based work for AMR.
+However, there is still a substantial gap between the system and state-of-the-art, presumably because of the additional resources that other systems indirectly use by running external systems for NER, dependency parsing, etc.
+Given the recent success of multi-task learning with neural nets, it would be interesting to see if those resources could be used here to further boost performance.
+It may also be productive to combine these ideas with the graph abstraction ideas from AMR alignment paper.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://aclweb.org/anthology/E/E17/E17-1035.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{peng-EtAl:2017:EACLlong1,
+  author    = {Peng, Xiaochang  and  Wang, Chuan  and  Gildea, Daniel  and  Xue, Nianwen},
+  title     = {Addressing the Data Sparsity Issue in Neural AMR Parsing},
+  booktitle = {Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics: Volume 1, Long Papers},
+  month     = {April},
+  year      = {2017},
+  address   = {Valencia, Spain},
+  publisher = {Association for Computational Linguistics},
+  pages     = {366--375},
+  url       = {http://www.aclweb.org/anthology/E17-1035}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

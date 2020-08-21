@@ -1,127 +1,79 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data by Jonathan K. Kummerfeld</title>
+    <title>Data | Jonathan K. Kummerfeld</title>
     <link>http://www.jkk.name/data/</link>
-    <description>Data from the website of Jonathan K. Kummerfeld</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2017 Jonathan K. Kummerfeld</copyright>
-    <lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-        <atom:link href="http://www.jkk.name/data/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="http://www.jkk.name/data/index.xml" rel="self" type="application/rss+xml" />
+    <description>Data</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Data</title>
+      <link>http://www.jkk.name/data/</link>
+    </image>
     
     <item>
-      
-        <title>DSTC 7 track 1: Next Utterance Selection</title>
-      
+      <title>DSTC 7 track 1: Next Utterance Selection</title>
       <link>http://www.jkk.name/data/dstc7/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      
       <guid>http://www.jkk.name/data/dstc7/</guid>
-      
-        <description>Data from Noetic End-to-End Response Selection Challenge. Dialogue from Ubuntu tech support and Michigan course advising. <a href="https://ibm.github.io/dstc-noesis/public/index.html" target="_blank">https://ibm.github.io/dstc-noesis/public/index.html</a></description>
-      
-
+      <description></description>
     </item>
     
     <item>
-      
-        <title>DSTC 8 track 2: Next Utterance Selection</title>
-      
+      <title>DSTC 8 track 2: Next Utterance Selection</title>
       <link>http://www.jkk.name/data/dstc8/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      
       <guid>http://www.jkk.name/data/dstc8/</guid>
-      
-        <description>Data from NOESIS II: Predicting Responses, Identifying Success, and Managing Complexity in Task-Oriented Dialogue. Dialogue from Ubuntu tech support and Michigan course advising. <a href="https://github.com/dstc8-track2/NOESIS-II/" target="_blank">https://github.com/dstc8-track2/NOESIS-II/</a></description>
-      
-
+      <description></description>
     </item>
     
     <item>
-      
-        <title>IRC Disentanglement</title>
-      
+      <title>IRC Disentanglement</title>
       <link>http://www.jkk.name/data/irc/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      
       <guid>http://www.jkk.name/data/irc/</guid>
-      
-        <description>Annotation of IRC messages with reply-to structure, which disentangles simultaneous conversations. The largest such annotated resource. <a href="https://jkk.name/irc-disentanglement/" target="_blank">https://jkk.name/irc-disentanglement/</a></description>
-      
-
+      <description></description>
     </item>
     
     <item>
-      
-        <title>Text to SQL datasets</title>
-      
+      <title>Text to SQL datasets</title>
       <link>http://www.jkk.name/data/text-to-sql/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
-      
       <guid>http://www.jkk.name/data/text-to-sql/</guid>
-      
-        <description>A collection of datasets containing questions in English paired with SQL queries for a provided database. Our version homogenises the style of the SQL and corrects errors in previous versions of the data. <a href="https://jkk.name/text2sql-data" target="_blank">https://jkk.name/text2sql-data</a></description>
-      
-
+      <description></description>
     </item>
     
     <item>
-      
-        <title>IE/NER from Cybercriminal Forums</title>
-      
+      <title>IE/NER from Cybercriminal Forums</title>
       <link>http://www.jkk.name/data/cybercrime-forums/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      
       <guid>http://www.jkk.name/data/cybercrime-forums/</guid>
-      
-        <description>Forum posts with annotations of products. <a href="https://evidencebasedsecurity.org/forums/#data" target="_blank">https://evidencebasedsecurity.org/forums/#data</a></description>
-      
-
+      <description></description>
     </item>
     
     <item>
-      
-        <title>Crowdsourced Paraphrases</title>
-      
+      <title>Crowdsourced Paraphrases</title>
       <link>http://www.jkk.name/data/paraphrasing-sample/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
-      
-        <description>Paraphrases collected while conducting experiments on factors influencing crowd performance. <a href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank">http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip</a></description>
-      
-
+      <description></description>
     </item>
     
     <item>
-      
-        <title>Spine and Arc version of the Penn Treebank</title>
-      
+      <title>Spine and Arc version of the Penn Treebank</title>
       <link>http://www.jkk.name/data/shp-ptb/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>http://www.jkk.name/data/shp-ptb/</guid>
-      
-        <description>Code to convert the standard Penn Treebank into a version where each word is assigned a spine of non-terminals, and arcs to indicate attachments from one spine to another. <a href="https://jkk.name/1ec-graph-parser/format-conversion" target="_blank">https://jkk.name/1ec-graph-parser/format-conversion</a></description>
-      
-
+      <description></description>
     </item>
     
     <item>
-      
-        <title>Adaptive CCG Supertagging Model</title>
-      
+      <title>Adaptive CCG Supertagging Model</title>
       <link>http://www.jkk.name/data/ccg-model/</link>
       <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
-      
       <guid>http://www.jkk.name/data/ccg-model/</guid>
-      
-        <description>A model for the C&amp;C supertagger that gives the same results with smaller beam sizes, enabling faster parsing. TODO</description>
-      
-
+      <description></description>
     </item>
     
   </channel>

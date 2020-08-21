@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>acl | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/category/acl/</link>
+      <atom:link href="http://www.jkk.name/category/acl/index.xml" rel="self" type="application/rss+xml" />
+    <description>acl</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 12 Jun 2018 20:33:00 -0400</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>acl</title>
+      <link>http://www.jkk.name/category/acl/</link>
+    </image>
+    
+    <item>
+      <title>Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</title>
+      <link>http://www.jkk.name/post/2018-06-12_parseradaptation/</link>
+      <pubDate>Tue, 12 Jun 2018 20:33:00 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2018-06-12_parseradaptation/</guid>
+      <description>&lt;p&gt;Virtually all systems trained using data have trouble when applied to datasets that differ even slightly - even switching from Wall Street Journal text to New York Times text can hurt parsing performance slightly.
+Extensive work has explored how to adapt to new domains (including 
+&lt;a href=&#34;http://jkk.name/publication/acl10adapt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;one of my own&lt;/a&gt;), but generally these approaches only made up a fraction of the gap in performance.&lt;/p&gt;
+&lt;p&gt;This paper shows two interesting new approaches to this issue:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use 
+&lt;a href=&#34;https://allennlp.org/elmo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ELMo&lt;/a&gt;, a type of word representation trained on massive amounts of text.&lt;/li&gt;
+&lt;li&gt;Train a span-based parser with partial annotations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first is straightforward, and further demonstrates the effectiveness of ELMo.
+To give a sense of how much this helps, the Charniak parser goes from 92 on the WSJ to 85 on the Brown corpus, while this model goes from 94 to 90.
+The second idea takes advantage of 
+&lt;a href=&#34;https://www.aclweb.org/anthology/P17-1076.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a recent parsing model&lt;/a&gt; with a simple approach:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Independently assign a score to every span of a sentence, indicating whether it is part of the parse.&lt;/li&gt;
+&lt;li&gt;Find the maximum scoring set of spans using a dynamic program.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The structure of the scoring step allows for a convenient form of partial annotations.
+Simply label the tricky spans in a sentence (e.g. to indicate where a prepositional phrase attaches / does not attach).
+During training on partially annotated sentences, only the labeled spans are used to update the model.
+This gives dramatic gains across multiple datasets.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1805.06556&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Joshi:2018:ACL,
+  author    = {Vidur Joshi, Matthew Peters, Mark Hopkins},
+  title     = {Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples},
+  booktitle = {ACL},
+  year      = {2018},
+  url       = {https://arxiv.org/abs/1805.06556},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

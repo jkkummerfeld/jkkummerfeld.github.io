@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Johann Hauswald | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/johann-hauswald/</link>
+      <atom:link href="http://www.jkk.name/author/johann-hauswald/index.xml" rel="self" type="application/rss+xml" />
+    <description>Johann Hauswald</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Johann Hauswald</title>
+      <link>http://www.jkk.name/author/johann-hauswald/</link>
+    </image>
+    
+    <item>
+      <title>Outlier Detection for Improved Data Quality and Diversity in Dialog Systems</title>
+      <link>http://www.jkk.name/publication/naacl19outliers/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/naacl19outliers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Collection for a Production Dialogue System: A Startup Perspective</title>
+      <link>http://www.jkk.name/publication/naacl18data/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/naacl18data/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

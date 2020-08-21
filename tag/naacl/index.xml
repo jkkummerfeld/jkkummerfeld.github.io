@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>naacl | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/naacl/</link>
+      <atom:link href="http://www.jkk.name/tag/naacl/index.xml" rel="self" type="application/rss+xml" />
+    <description>naacl</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 19 Oct 2017 17:08:50 -0400</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>naacl</title>
+      <link>http://www.jkk.name/tag/naacl/</link>
+    </image>
+    
+    <item>
+      <title>Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</title>
+      <link>http://www.jkk.name/post/2017-10-19_mace/</link>
+      <pubDate>Thu, 19 Oct 2017 17:08:50 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2017-10-19_mace/</guid>
+      <description>&lt;p&gt;The standard way to get high quality annotations is to get labels from multiple people and take a majority vote.
+Getting multiple annotations costs more, and the quality of annotators can vary considerably (with spamming at one extreme).
+One way to avoid the quality issue is to restrict who can do the task (must have done X previous tasks with an accept rate of Y), but that limits the pool of available workers.
+Another approach is to try to estimate the quality of annotator work using a statistical model.&lt;/p&gt;
+&lt;p&gt;Here a generative model is used, with the following structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$T_i$, the true label, sampled with a uniform prior over labels&lt;/li&gt;
+&lt;li&gt;$S_{ij}$, a binary variable indicating if the person is spamming or not, sampled as a Bernoulli variable with a Beta prior&lt;/li&gt;
+&lt;li&gt;$A_{ij}$, the annotator&amp;rsquo;s decision, if they are spamming it is sampled from a multinomial with parameters specific to them (with a Dirichlet prior), otherwise it is the true label&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$A$ is observed, but $T$ and $S$ are not, so they use expectation maximization to get both model parameters and variable values.
+To deal with nonconvexity they use 100 random restarts, deciding which is best based on how well the model describes the data.
+Note - this model (and the code) was the basis of the error detection paper I 
+&lt;a href=&#34;http://www.jkk.name/post/2017-10-13_errordetection/&#34;&gt;wrote about&lt;/a&gt; recently.&lt;/p&gt;
+&lt;p&gt;For predicting annotator quality the model is consistently effective across three datasets, though the Beta and Dirichlet priors are key for one (where annotator agreement was high on average).
+For determining the correct answer it is slightly better than majority vote, though the gains are small.
+The real advantage comes in deciding whether to discard data, where the choice of what to discard can be guided by the estimate of quality (this is what the error detection paper was doing).
+A range of synthetic experiments also show positive results, though their design shares the assumptions about behaviour that are baked into the model.&lt;/p&gt;
+&lt;p&gt;I found a few results particularly interesting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;As the number of annotators is decreased, the benefit of this approach over majority vote grows to be quite substantial (the main experiments are for data with 10 annotators).&lt;/li&gt;
+&lt;li&gt;If you do use majority vote, use an odd number of annotators. Switching to an even number mainly seems to create ties. The right number is also very data dependent.&lt;/li&gt;
+&lt;li&gt;Providing gold information as supervision within EM doesn&amp;rsquo;t help much unless it is quite substantial (20%+ of the data)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.aclweb.org/anthology/N13-1132.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hovy-EtAl:2013:NAACL-HLT,
+  author    = {Hovy, Dirk  and  Berg-Kirkpatrick, Taylor  and  Vaswani, Ashish  and  Hovy, Eduard},
+  title     = {Learning Whom to Trust with MACE},
+  booktitle = {Proceedings of the 2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+  month     = {June},
+  year      = {2013},
+  address   = {Atlanta, Georgia},
+  publisher = {Association for Computational Linguistics},
+  pages     = {1120--1130},
+  url       = {http://www.aclweb.org/anthology/N13-1132}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

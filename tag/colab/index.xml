@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>colab | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/colab/</link>
+      <atom:link href="http://www.jkk.name/tag/colab/index.xml" rel="self" type="application/rss+xml" />
+    <description>colab</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 30 Mar 2020 16:00:26 -0500</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>colab</title>
+      <link>http://www.jkk.name/tag/colab/</link>
+    </image>
+    
+    <item>
+      <title>Colaboratoy Notebook for Coreference Resolution with SpanBERT</title>
+      <link>http://www.jkk.name/software/colab-spanbert/</link>
+      <pubDate>Mon, 30 Mar 2020 16:00:26 -0500</pubDate>
+      <guid>http://www.jkk.name/software/colab-spanbert/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

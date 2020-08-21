@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>analysis | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/tag/analysis/</link>
+      <atom:link href="http://www.jkk.name/tag/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>analysis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 08 May 2018 09:00:31 -0400</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>analysis</title>
+      <link>http://www.jkk.name/tag/analysis/</link>
+    </image>
+    
+    <item>
+      <title>The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</title>
+      <link>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
+      <pubDate>Tue, 08 May 2018 09:00:31 -0400</pubDate>
+      <guid>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
+      <description>&lt;p&gt;We know that training a neural network involves optimising over a non-convex space, but using standard evaluation methods we see that our models usually end up doing reasonably well.
+This paper asks an important question - are those metrics measuring generalisability effectively?
+In particular, if we sample our test set from a slightly different distribution of data, do models still work well?&lt;/p&gt;
+&lt;p&gt;As a controlled set up they form a simple dataset as follows for each sentence:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go through the sentence left to right&lt;/li&gt;
+&lt;li&gt;For each word generate three words in the output, where the output words are randomly sampled from a small vocabulary that is unique to each input word&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is clearly learnable and it seems reasonable that a sequence-to-sequence neural model with attention should be able to learn it.
+Experiments show they do, getting close to 100% on a test set sampled the same way as the training set (input length 5-10, no symbol used twice).
+However, if the test set is slightly different, with sequences of length 11-15, then results vary from 0% to 98% depending on the random seed in training (other variations also lead to large variations).
+What this means is that sometimes the model is not learning to generalise.
+They also show that the models that do generalise can only do so in one way (e.g. remain effective when length varies, or remain effective when symbols are used more than once in the input).&lt;/p&gt;
+&lt;p&gt;A few takeaways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make sure your training and testing data are sampled from the distribution you are interested in&lt;/li&gt;
+&lt;li&gt;More study of training data order and weight initialisation is needed (these are the two factors impacted by the random seed)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Incidentally, I am a co-author on an ACL paper that points out a similar issue for mapping text questions to SQL queries.
+If we restrict the test set to be novel queries (i.e. the model has to generalise) performance falls through the floor.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://arxiv.org/abs/1805.01445&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@Article{Weber:2018:GenDeep,
+   author = {Noah Weber, Leena Shekhar, Niranjan Balasubramanian},
+    title = {The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models},
+  journal = {Workshop on New Forms of Generalization in Deep Learning and NLP (NAACL 2018)},
+     year = {2018},
+      url = {https://arxiv.org/abs/1805.01445},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</title>
+      <link>http://www.jkk.name/post/2017-12-05_explainingpredictions/</link>
+      <pubDate>Tue, 05 Dec 2017 15:40:45 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2017-12-05_explainingpredictions/</guid>
+      <description>&lt;p&gt;Interpreting the behaviour of statistical models in NLP has been hard for a long time, but it has gotten even harder with nonlinear models.
+The simplest method so far in NLP has been to look at the attention distributions in sequence to sequence models, but that doesn&amp;rsquo;t provide everything we need and obviously only applies when the model has attention.
+For looking at the dynamics of the hidden state in an LSTM the Harvard NLP group built a cool 
+&lt;a href=&#34;http://lstm.seas.harvard.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;visualisation&lt;/a&gt;, but what about structured outputs?&lt;/p&gt;
+&lt;p&gt;This paper considers sequence to sequence models and determines which parts of the input were most important for determining each part of the output.
+The steps are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use a variational autoencoder to get perturbed versions of the input&lt;/li&gt;
+&lt;li&gt;Use logistic regression to get scores for every output symbol indicating how sensitive it is to variations in parts of the input&lt;/li&gt;
+&lt;li&gt;Create a bipartite graph between inputs and outputs, then find high weight components in the graph&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;These components serve as the representation of which parts of the input determine which parts of the output.
+Experiments show results that match with past observations and intuitions, which is good for supporting the effectiveness of the method, but it&amp;rsquo;s a shame this didn&amp;rsquo;t uncover any exciting new patterns.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1042&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{alvarezmelis-jaakkola:2017:EMNLP2017,
+  author    = {Alvarez-Melis, David  and  Jaakkola, Tommi},
+  title     = {A causal framework for explaining the predictions of black-box sequence-to-sequence models},
+  booktitle = {Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing},
+  month     = {September},
+  year      = {2017},
+  address   = {Copenhagen, Denmark},
+  publisher = {Association for Computational Linguistics},
+  pages     = {412--421},
+  url       = {https://www.aclweb.org/anthology/D17-1042}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
