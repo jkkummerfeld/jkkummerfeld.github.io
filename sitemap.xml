@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.jkk.name/tag/analysis/</loc>
+    <lastmod>2020-09-03T14:44:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/post/2020-09-03_checklist/</loc>
+    <lastmod>2020-09-03T14:44:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/data/</loc>
+    <lastmod>2020-09-03T14:44:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/</loc>
+    <lastmod>2020-09-03T14:44:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/paper/</loc>
+    <lastmod>2020-09-03T14:44:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/post/</loc>
+    <lastmod>2020-09-03T14:44:29-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tags/</loc>
+    <lastmod>2020-09-03T14:44:29-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.jkk.name/data/</loc>
     <lastmod>2020-06-23T00:00:00+00:00</lastmod>
   </url>
@@ -19,16 +54,6 @@
   
   <url>
     <loc>http://www.jkk.name/data/dstc8/</loc>
-    <lastmod>2020-06-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/</loc>
-    <lastmod>2020-06-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tags/</loc>
     <lastmod>2020-06-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -54,11 +79,6 @@
   
   <url>
     <loc>http://www.jkk.name/post/paper-reading/</loc>
-    <lastmod>2020-01-26T16:09:06-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/post/</loc>
     <lastmod>2020-01-26T16:09:06-05:00</lastmod>
   </url>
   
@@ -388,11 +408,6 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/tag/paper/</loc>
-    <lastmod>2019-09-13T13:00:23-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/tag/annotation/</loc>
     <lastmod>2019-09-02T00:00:00+00:00</lastmod>
   </url>
@@ -419,11 +434,6 @@
   
   <url>
     <loc>http://www.jkk.name/tag/acl/</loc>
-    <lastmod>2019-07-10T11:19:06-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/data/</loc>
     <lastmod>2019-07-10T11:19:06-04:00</lastmod>
   </url>
   
@@ -690,11 +700,6 @@
   <url>
     <loc>http://www.jkk.name/author/yunqi-zhang/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/analysis/</loc>
-    <lastmod>2018-05-08T09:00:31-04:00</lastmod>
   </url>
   
   <url>

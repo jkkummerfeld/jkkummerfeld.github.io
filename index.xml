@@ -5,12 +5,68 @@
     <link>http://www.jkk.name/</link>
       <atom:link href="http://www.jkk.name/index.xml" rel="self" type="application/rss+xml" />
     <description>Jonathan K. Kummerfeld</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 03 Sep 2020 14:44:29 -0500</lastBuildDate>
     <image>
       <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Jonathan K. Kummerfeld</title>
       <link>http://www.jkk.name/</link>
     </image>
+    
+    <item>
+      <title>Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</title>
+      <link>http://www.jkk.name/post/2020-09-03_checklist/</link>
+      <pubDate>Thu, 03 Sep 2020 14:44:29 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2020-09-03_checklist/</guid>
+      <description>&lt;p&gt;It is difficult to predict how well a model will work in the real world.
+Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to.
+This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories.
+Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data.&lt;/p&gt;
+&lt;p&gt;The paper organises these tests along two axes.
+One is the type of test:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Invariance: Giving the same answer when changes are made that should not impact the model prediction.&lt;/li&gt;
+&lt;li&gt;Directional: Giving an answer that differs in a way that matches the intended impact of a change.&lt;/li&gt;
+&lt;li&gt;Minimum Function Tests: A range of other tests that consider specific cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The other axis is the linguistic property being varied:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vocabulary Change&lt;/li&gt;
+&lt;li&gt;Named Entity Variation&lt;/li&gt;
+&lt;li&gt;Temporal Shift&lt;/li&gt;
+&lt;li&gt;Negation&lt;/li&gt;
+&lt;li&gt;Semantic Role Swap&lt;/li&gt;
+&lt;li&gt;Various Other Changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example, an invariance test on vocabulary would be that replacing words with their synonyms should not change the result.&lt;/p&gt;
+&lt;p&gt;The paper tests the idea on (1) sentiment analysis on SST-2, (2) identifying matching questions on QQP, and (3) machien comprehension on SQuAD.
+Researchers / developers using the method are more effective at finding issues than those asked to write tests without this framework to approach the problem.&lt;/p&gt;
+&lt;p&gt;Understanding system errors has been an interest of mine for a long time now (back to my 2012 parsing paper) and from my experience with startups it is definitely challenging to develop effective tests for NLP models.
+I&amp;rsquo;m curious to see how this approach works out when used iteratively.
+When users modify their model or data to address the problems do they actually fix them or just overfit to the new set of tests?
+Another open question is how to apply these to problems with more structured output (e.g. text-to-SQL).
+Some would easily apply, e.g. invariance tests, while others would be more difficult.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.442/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{ribeiro-etal-2020-beyond,
+    title = &amp;quot;Beyond Accuracy: Behavioral Testing of {NLP} Models with {C}heck{L}ist&amp;quot;,
+    author = &amp;quot;Ribeiro, Marco Tulio  and
+      Wu, Tongshuang  and
+      Guestrin, Carlos  and
+      Singh, Sameer&amp;quot;,
+    booktitle = &amp;quot;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&amp;quot;,
+    month = &amp;quot;jul&amp;quot;,
+    year = &amp;quot;2020&amp;quot;,
+    address = &amp;quot;Online&amp;quot;,
+    publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
+    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.442&amp;quot;,
+    doi = &amp;quot;10.18653/v1/2020.acl-main.442&amp;quot;,
+    pages = &amp;quot;4902--4912&amp;quot;,
+    abstract = &amp;quot;Although measuring held-out accuracy has been the primary approach to evaluate generalization, it often overestimates the performance of NLP models, while alternative approaches for evaluating models either focus on individual tasks or on specific behaviors. Inspired by principles of behavioral testing in software engineering, we introduce CheckList, a task-agnostic methodology for testing NLP models. CheckList includes a matrix of general linguistic capabilities and test types that facilitate comprehensive test ideation, as well as a software tool to generate a large and diverse number of test cases quickly. We illustrate the utility of CheckList with tests for three tasks, identifying critical failures in both commercial and state-of-art models. In a user study, a team responsible for a commercial sentiment analysis model found new and actionable bugs in an extensively tested model. In another user study, NLP practitioners with CheckList created twice as many tests, and found almost three times as many bugs as users without it.&amp;quot;,
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>DSTC 7 track 1: Next Utterance Selection</title>

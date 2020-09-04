@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Linguistically diverse datasets are critical for training and evaluating robust machine learning systems, but data collection is a costly process that often requires experts. Crowdsourcing the process of paraphrase generation is an effective means of expanding natural language datasets, but there has been limited analysis of the trade-offs that arise when designing tasks. In this paper, we present the first systematic study of the key factors in crowdsourcing paraphrase collection. We consider variations in instructions, incentives, data domains, and workflows. We manually analyzed paraphrases for correctness, grammaticality, and linguistic diversity. Our observations provide new insight into the trade-offs between accuracy and diversity in crowd responses that arise as a result of task design, providing guidance for future paraphrase generation procedures.">
+  <meta name="description" content="It is difficult to predict how well a model will work in the real world. Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to. This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories. Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/publication/acl17paraphrase/">
+  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/post/2020-09-03_checklist/">
 
   
 
@@ -66,6 +66,14 @@
     
       
     
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
     
 
     
@@ -264,7 +272,7 @@
   <link rel="icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://www.jkk.name/publication/acl17paraphrase/">
+  <link rel="canonical" href="http://www.jkk.name/post/2020-09-03_checklist/">
 
   
   
@@ -283,15 +291,15 @@
   <meta property="twitter:creator" content="@jkkummerfeld">
   
   <meta property="og:site_name" content="Jonathan K. Kummerfeld">
-  <meta property="og:url" content="http://www.jkk.name/publication/acl17paraphrase/">
-  <meta property="og:title" content="Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection | Jonathan K. Kummerfeld">
-  <meta property="og:description" content="Linguistically diverse datasets are critical for training and evaluating robust machine learning systems, but data collection is a costly process that often requires experts. Crowdsourcing the process of paraphrase generation is an effective means of expanding natural language datasets, but there has been limited analysis of the trade-offs that arise when designing tasks. In this paper, we present the first systematic study of the key factors in crowdsourcing paraphrase collection. We consider variations in instructions, incentives, data domains, and workflows. We manually analyzed paraphrases for correctness, grammaticality, and linguistic diversity. Our observations provide new insight into the trade-offs between accuracy and diversity in crowd responses that arise as a result of task design, providing guidance for future paraphrase generation procedures."><meta property="og:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="http://www.jkk.name/post/2020-09-03_checklist/">
+  <meta property="og:title" content="Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper) | Jonathan K. Kummerfeld">
+  <meta property="og:description" content="It is difficult to predict how well a model will work in the real world. Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to. This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories. Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data."><meta property="og:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2017-07-01T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-09-03T14:44:29-05:00">
     
-    <meta property="article:modified_time" content="2017-07-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-09-03T14:44:29-05:00">
   
 
   
@@ -303,6 +311,8 @@
 
 
 
+
+  
 
 
 
@@ -310,19 +320,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://www.jkk.name/publication/acl17paraphrase/"
+    "@id": "http://www.jkk.name/post/2020-09-03_checklist/"
   },
-  "headline": "Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection",
+  "headline": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)",
   
-  "datePublished": "2017-07-01T00:00:00Z",
-  "dateModified": "2017-07-01T00:00:00Z",
+  "datePublished": "2020-09-03T14:44:29-05:00",
+  "dateModified": "2020-09-03T14:44:29-05:00",
   
   "author": {
     "@type": "Person",
-    "name": "Youxuan Jiang"
+    "name": "Jonathan K. Kummerfeld"
   },
   
   "publisher": {
@@ -333,7 +343,7 @@
       "url": "http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Linguistically diverse datasets are critical for training and evaluating robust machine learning systems, but data collection is a costly process that often requires experts. Crowdsourcing the process of paraphrase generation is an effective means of expanding natural language datasets, but there has been limited analysis of the trade-offs that arise when designing tasks. In this paper, we present the first systematic study of the key factors in crowdsourcing paraphrase collection. We consider variations in instructions, incentives, data domains, and workflows. We manually analyzed paraphrases for correctness, grammaticality, and linguistic diversity. Our observations provide new insight into the trade-offs between accuracy and diversity in crowd responses that arise as a result of task design, providing guidance for future paraphrase generation procedures."
+  "description": "It is difficult to predict how well a model will work in the real world. Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to. This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories. Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data."
 }
 </script>
 
@@ -351,7 +361,7 @@
 
 
 
-  <title>Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection | Jonathan K. Kummerfeld</title>
+  <title>Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper) | Jonathan K. Kummerfeld</title>
 
 </head>
 
@@ -624,7 +634,7 @@
 
 
 
-  <div class="pub">
+  <article class="article">
 
   
 
@@ -645,7 +655,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection</h1>
+  <h1>Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</h1>
 
   
 
@@ -657,16 +667,6 @@
 
   
   
-  
-  
-  <div>
-    
-
-  
-  <span >Youxuan Jiang</span>, <span style='text-decoration:underline;'>Jonathan K. Kummerfeld</span>, <span >Walter S. Lasecki</span>
-  </div>
-  
-  
 
   
   <span class="article-date">
@@ -674,7 +674,7 @@
     
       
     
-    July 2017
+    Sep 3, 2020
   </span>
   
 
@@ -685,6 +685,9 @@
   
   
   
+  <span class="middot-divider"></span>
+  <a href="http://www.jkk.name/post/2020-09-03_checklist/#disqus_thread"></a>
+  
 
   
   
@@ -703,271 +706,7 @@
 
 
 
-  
 
-
-
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="http://www.aclweb.org/anthology/P17-2017.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/acl17paraphrase/cite.bib">
-  Cite
-</button>
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="javascript:;" onClick="
-  if (document.getElementById('acl17paraphrase-abstract').style.display == 'block') {
-  document.getElementById('acl17paraphrase-abstract').style.display='none';
-  } else {
-  document.getElementById('acl17paraphrase-abstract').style.display='block';
-  }
-  ">
-    Abstract
-</a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="http://aclweb.org/anthology/attachments/P/P17/P17-2017.Datasets.zip" target="_blank" rel="noopener">
-  Dataset
-</a>
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="https://vimeo.com/234958413" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://www.aclweb.org/anthology/attachments/P17-2017.Presentation.pdf" target="_blank" rel="noopener">
-    
-    PDF Slides
-  </a>
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/1704.05753" target="_blank" rel="noopener">
-    
-    ArXiv
-  </a>
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="javascript:;" onClick="
-  if (document.getElementById('acl17paraphrase-citations').style.display == 'block') {
-  document.getElementById('acl17paraphrase-citations').style.display='none';
-  } else {
-  document.getElementById('acl17paraphrase-citations').style.display='block';
-  }
-  ">
-  Citations (17)
-</a>
-
-
-<div id="acl17paraphrase-abstract" style="display: none;margin-left:20px;" style="text-align:right;">
-  <p>
-    Linguistically diverse datasets are critical for training and evaluating robust machine learning systems, but data collection is a costly process that often requires experts. Crowdsourcing the process of paraphrase generation is an effective means of expanding natural language datasets, but there has been limited analysis of the trade-offs that arise when designing tasks. In this paper, we present the first systematic study of the key factors in crowdsourcing paraphrase collection. We consider variations in instructions, incentives, data domains, and workflows. We manually analyzed paraphrases for correctness, grammaticality, and linguistic diversity. Our observations provide new insight into the trade-offs between accuracy and diversity in crowd responses that arise as a result of task design, providing guidance for future paraphrase generation procedures.
-  </p>
-</div>
-
-<div id="acl17paraphrase-citations" style="display: none;margin-left:20px; font-size:smaller; " style="text-align:right;">
-  
-    <p>
-      
-        <a href="https://link.springer.com/chapter/10.1007/978-3-319-91662-0_8">Effective Crowdsourced Generation of Training Data for Chatbots Natural Language Understanding</a>,
-      
-      <br />
-      R. Bapat, P. Kucherbaev, and A. Bozzon, ICWE, 2018
-    </p>
-  
-    <p>
-      
-        <a href="http://www.lrec-conf.org/proceedings/lrec2018/pdf/502.pdf">SPADE: Evaluation Dataset for Monolingual Phrase Alignment</a>,
-      
-      <br />
-      Yuki Arase1, Junichi Tsujii?, LREC, 2018
-    </p>
-  
-    <p>
-      
-        <a href="https://arxiv.org/pdf/1805.12346.pdf">Crowdsourcing for Reminiscence Chatbot Design</a>,
-      
-      <br />
-      Svetlana Nikitina, Florian Daniel, Marcos Baez, Fabio Casati, HCOMP, 2018
-    </p>
-  
-    <p>
-      
-        <a href="http://dx.doi.org/10.1145/3234695.3236343">Towards More Robust Speech Interactions for Deaf and Hard of Hearing Users</a>,
-      
-      <br />
-      Raymond Fok, Harmanpreet Kaur, Skanda Palani, Martez E. Mott and Walter S. Lasecki, ASSETS, 2018
-    </p>
-  
-    <p>
-      
-        <a href="https://www.aclweb.org/anthology/N19-1026.pdf">A Study of Incorrect Paraphrases in Crowdsourced User Utterances</a>,
-      
-      <br />
-      Mohammad-Ali Yaghoub-Zadeh-Fard, Boualem Benatallah, Moshe Chai Barukh, Shayan Zamanirad, NAACL, 2019
-    </p>
-  
-    <p>
-      
-        Optimizing the Design and Cost for Crowdsourced Conversational Utterances
-      
-      <br />
-      Phoebe Liu, Joan Xiao, Tong Liu, Dylan F. Glas, Workshop on Data Collection, Curation, and Labeling (DCCL) for Mining and Learning, 2019
-    </p>
-  
-    <p>
-      
-        Personalizing crowdsourced human-robot interaction through curiosity-driven learning
-      
-      <br />
-      Phoebe Liu, Malcolm Doering, Dylan F. Glas, Takayuki Kanda, Dana Kulic, Hiroshi Ishiguro, Personalization in Long-Term Human-Robot Interaction, 2019
-    </p>
-  
-    <p>
-      
-        PKU Paraphrase Bank: A Sentence-Level Paraphrase Corpus for Chinese
-      
-      <br />
-      Bowei Zhang, Weiwei Sun, Xiaojun Wan, Zongming Guo, Natural Language Processing and Chinese Computing, 2019
-    </p>
-  
-    <p>
-      
-        Efficient Elicitation Approaches to Estimate Collective Crowd Answers
-      
-      <br />
-      John Joon Young Chung, Jean Y. Song, Sindhu Kutty, Sungsoo (Ray) Hong, Juho Kim, Walter S. Lasecki, CSCW, 2019
-    </p>
-  
-    <p>
-      
-        Optimizing for Happiness and Productivity: Modeling Opportune Moments for Transitions and Breaks at Work
-      
-      <br />
-      Harmanpreet Kaur, Alex C. Williams, Daniel McDuff, Mary Czerwinski, Jaime Teevan, Shamsi Iqbal, CHI, 2020
-    </p>
-  
-    <p>
-      
-        Dynamic word recommendation to obtain diverse crowdsourced paraphrases of user utterances
-      
-      <br />
-      Mohammad-Ali Yaghoub-Zadeh-Fard, Boualem Benatallah, Fabio Casati, Moshe Chai Barukh, Shayan Zamanirad, IUI, 2020
-    </p>
-  
-    <p>
-      
-        The Influence of Input Data Complexity on Crowdsourcing Quality
-      
-      <br />
-      Christopher Tauchmann, Johannes Daxenberger, Margot Mieskes, IUI, 2020
-    </p>
-  
-    <p>
-      
-        User Utterance Acquisition for Training Task-Oriented Bots: A Review of Challenges, Techniques and Opportunities
-      
-      <br />
-      Mohammad-Ali Yaghoub-Zadeh-Fard, Boualem Benatallah, Fabio Casati, Moshe Chai Barukh, Shayan Zamanirad, IEEE Internet Computing, 2020
-    </p>
-  
-    <p>
-      
-        Emotional Speech Corpus for Persuasive Dialogue System
-      
-      <br />
-      Sara Asai, Koichiro Yoshino, Seitaro Shinagawa, Sakriani Sakti, Satoshi Nakamura, LREC, 2020
-    </p>
-  
-    <p>
-      
-        C-Reference: Improving 2D to 3D Object Pose Estimation Accuracy via Crowdsourced Joint Object Estimation
-      
-      <br />
-      Jean Y. Song, John Joon Young Chung, David F. Fouhey, Walter S. Lasecki, CSCW, 2020
-    </p>
-  
-    <p>
-      
-        <a href="https://www.aclweb.org/anthology/P18-1042">{P}ara{NMT}-50{M}: Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations</a>,
-      
-      <br />
-      John Wieting, Kevin Gimpel, ACL, 2018
-    </p>
-  
-    <p>
-      
-        <a href="https://www.aclweb.org/anthology/D19-5503">Multilingual Whispers: Generating Paraphrases with Translation</a>,
-      
-      <br />
-      Christian Federmann, Oussama Elachqar, Chris Quirk, W-NUT, 2019
-    </p>
-  
-</div>
-
-</div>
 
 
   
@@ -977,49 +716,57 @@
 
   <div class="article-container">
 
-    
-    <h3>Abstract</h3>
-    <p class="pub-abstract">Linguistically diverse datasets are critical for training and evaluating robust machine learning systems, but data collection is a costly process that often requires experts. Crowdsourcing the process of paraphrase generation is an effective means of expanding natural language datasets, but there has been limited analysis of the trade-offs that arise when designing tasks. In this paper, we present the first systematic study of the key factors in crowdsourcing paraphrase collection. We consider variations in instructions, incentives, data domains, and workflows. We manually analyzed paraphrases for correctness, grammaticality, and linguistic diversity. Our observations provide new insight into the trade-offs between accuracy and diversity in crowd responses that arise as a result of task design, providing guidance for future paraphrase generation procedures.</p>
-    
+    <div class="article-style">
+      <p>It is difficult to predict how well a model will work in the real world.
+Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to.
+This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories.
+Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data.</p>
+<p>The paper organises these tests along two axes.
+One is the type of test:</p>
+<ul>
+<li>Invariance: Giving the same answer when changes are made that should not impact the model prediction.</li>
+<li>Directional: Giving an answer that differs in a way that matches the intended impact of a change.</li>
+<li>Minimum Function Tests: A range of other tests that consider specific cases.</li>
+</ul>
+<p>The other axis is the linguistic property being varied:</p>
+<ul>
+<li>Vocabulary Change</li>
+<li>Named Entity Variation</li>
+<li>Temporal Shift</li>
+<li>Negation</li>
+<li>Semantic Role Swap</li>
+<li>Various Other Changes</li>
+</ul>
+<p>For example, an invariance test on vocabulary would be that replacing words with their synonyms should not change the result.</p>
+<p>The paper tests the idea on (1) sentiment analysis on SST-2, (2) identifying matching questions on QQP, and (3) machien comprehension on SQuAD.
+Researchers / developers using the method are more effective at finding issues than those asked to write tests without this framework to approach the problem.</p>
+<p>Understanding system errors has been an interest of mine for a long time now (back to my 2012 parsing paper) and from my experience with startups it is definitely challenging to develop effective tests for NLP models.
+I&rsquo;m curious to see how this approach works out when used iteratively.
+When users modify their model or data to address the problems do they actually fix them or just overfit to the new set of tests?
+Another open question is how to apply these to problems with more structured output (e.g. text-to-SQL).
+Some would easily apply, e.g. invariance tests, while others would be more difficult.</p>
+<h2 id="citation">Citation</h2>
+<p>
+<a href="https://www.aclweb.org/anthology/2020.acl-main.442/" target="_blank" rel="noopener">Paper</a></p>
+<pre><code class="language-bibtex">@inproceedings{ribeiro-etal-2020-beyond,
+    title = &quot;Beyond Accuracy: Behavioral Testing of {NLP} Models with {C}heck{L}ist&quot;,
+    author = &quot;Ribeiro, Marco Tulio  and
+      Wu, Tongshuang  and
+      Guestrin, Carlos  and
+      Singh, Sameer&quot;,
+    booktitle = &quot;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&quot;,
+    month = &quot;jul&quot;,
+    year = &quot;2020&quot;,
+    address = &quot;Online&quot;,
+    publisher = &quot;Association for Computational Linguistics&quot;,
+    url = &quot;https://www.aclweb.org/anthology/2020.acl-main.442&quot;,
+    doi = &quot;10.18653/v1/2020.acl-main.442&quot;,
+    pages = &quot;4902--4912&quot;,
+    abstract = &quot;Although measuring held-out accuracy has been the primary approach to evaluate generalization, it often overestimates the performance of NLP models, while alternative approaches for evaluating models either focus on individual tasks or on specific behaviors. Inspired by principles of behavioral testing in software engineering, we introduce CheckList, a task-agnostic methodology for testing NLP models. CheckList includes a matrix of general linguistic capabilities and test types that facilitate comprehensive test ideation, as well as a software tool to generate a large and diverse number of test cases quickly. We illustrate the utility of CheckList with tests for three tasks, identifying critical failures in both commercial and state-of-art models. In a user study, a team responsible for a commercial sentiment analysis model found new and actionable bugs in an extensively tested model. In another user study, NLP practitioners with CheckList created twice as many tests, and found almost three times as many bugs as users without it.&quot;,
+}
+</code></pre>
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Type</div>
-          <div class="col-12 col-md-9">
-            
-            
-            <a href="http://www.jkk.name/publication/#1">
-              Conference paper
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
     </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)</div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    <div class="space-below"></div>
-
-    <div class="article-style"></div>
 
     
 
@@ -1027,6 +774,16 @@
 
 
 
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/paper/">paper</a>
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/analysis/">analysis</a>
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/data/">data</a>
+  
+</div>
 
 
 
@@ -1041,7 +798,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/publication/acl17paraphrase/&amp;text=Understanding%20Task%20Design%20Trade-offs%20in%20Crowdsourced%20Paraphrase%20Collection" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/post/2020-09-03_checklist/&amp;text=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -1054,7 +811,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/publication/acl17paraphrase/&amp;t=Understanding%20Task%20Design%20Trade-offs%20in%20Crowdsourced%20Paraphrase%20Collection" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/post/2020-09-03_checklist/&amp;t=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1067,7 +824,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Understanding%20Task%20Design%20Trade-offs%20in%20Crowdsourced%20Paraphrase%20Collection&amp;body=http://www.jkk.name/publication/acl17paraphrase/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29&amp;body=http://www.jkk.name/post/2020-09-03_checklist/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1080,7 +837,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/publication/acl17paraphrase/&amp;title=Understanding%20Task%20Design%20Trade-offs%20in%20Crowdsourced%20Paraphrase%20Collection" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/post/2020-09-03_checklist/&amp;title=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1093,7 +850,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Understanding%20Task%20Design%20Trade-offs%20in%20Crowdsourced%20Paraphrase%20Collection%20http://www.jkk.name/publication/acl17paraphrase/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29%20http://www.jkk.name/post/2020-09-03_checklist/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1106,7 +863,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/publication/acl17paraphrase/&amp;title=Understanding%20Task%20Design%20Trade-offs%20in%20Crowdsourced%20Paraphrase%20Collection" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/post/2020-09-03_checklist/&amp;title=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1126,19 +883,7 @@
 
 
   
-    
-    
-
-
-
-
-
   
-
-
-  
-    
-    
 
 
 
@@ -1359,31 +1104,64 @@
   
 
 
+
+
+
+
+
+<section id="comments">
   
     
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
     
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "www-jkk-name" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
 
 
 
 
 
   
-
-
   
-
-
-
-
-
-
-
-
-
-
-
-
-  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="http://www.jkk.name/post/2019-07-10_disentanglement/">A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2018-11-08_corefdata/">PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/">The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2017-12-05_explainingpredictions/">A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2017-11-09_framesdataset/">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
+      
+    </ul>
+  </div>
   
 
 
@@ -1391,7 +1169,7 @@
 
 
   </div>
-</div>
+</article>
 
       
 
@@ -1407,6 +1185,12 @@
       
 
       
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+      
 
     
 
@@ -1415,7 +1199,7 @@
 
     
     
-    <script>const code_highlighting = false;</script>
+    <script>const code_highlighting = true;</script>
     
 
     
