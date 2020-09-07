@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Stack-LSTM models for dependency parsing can be adapted to constituency parsing by considering spinal version of the parse and adding a single &#39;create-node&#39; operation to the transition-based parsing scheme, giving an elegant algorithm and competitive results.">
+  <meta name="description" content="Natural language interfaces to computer systems are an exciting area with new workshops ([WNLI](https://www.aclweb.org/anthology/volumes/2020.nli-1/) at ACL and [IntEx-SemPar](https://intex-sempar.github.io/) at EMNLP), a range of datasets (including my own work on [text-to-SQL](/publication/acl18sql/)), and many papers. Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code. This paper considers an interesting application: interaction with data visualisation tools.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/post/2017-11-07_spineparsinglstm/">
+  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/post/2020-09-07_chartdialogs/">
 
   
 
@@ -272,7 +272,7 @@
   <link rel="icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-11-07_spineparsinglstm/">
+  <link rel="canonical" href="http://www.jkk.name/post/2020-09-07_chartdialogs/">
 
   
   
@@ -291,15 +291,15 @@
   <meta property="twitter:creator" content="@jkkummerfeld">
   
   <meta property="og:site_name" content="Jonathan K. Kummerfeld">
-  <meta property="og:url" content="http://www.jkk.name/post/2017-11-07_spineparsinglstm/">
-  <meta property="og:title" content="Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017) | Jonathan K. Kummerfeld">
-  <meta property="og:description" content="Stack-LSTM models for dependency parsing can be adapted to constituency parsing by considering spinal version of the parse and adding a single &#39;create-node&#39; operation to the transition-based parsing scheme, giving an elegant algorithm and competitive results."><meta property="og:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="http://www.jkk.name/post/2020-09-07_chartdialogs/">
+  <meta property="og:title" content="ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020) | Jonathan K. Kummerfeld">
+  <meta property="og:description" content="Natural language interfaces to computer systems are an exciting area with new workshops ([WNLI](https://www.aclweb.org/anthology/volumes/2020.nli-1/) at ACL and [IntEx-SemPar](https://intex-sempar.github.io/) at EMNLP), a range of datasets (including my own work on [text-to-SQL](/publication/acl18sql/)), and many papers. Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code. This paper considers an interesting application: interaction with data visualisation tools."><meta property="og:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2017-11-07T20:42:45-05:00">
+      <meta property="article:published_time" content="2020-09-07T14:41:34-05:00">
     
-    <meta property="article:modified_time" content="2017-11-07T20:42:45-05:00">
+    <meta property="article:modified_time" content="2020-09-07T14:41:34-05:00">
   
 
   
@@ -323,12 +323,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://www.jkk.name/post/2017-11-07_spineparsinglstm/"
+    "@id": "http://www.jkk.name/post/2020-09-07_chartdialogs/"
   },
-  "headline": "Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)",
+  "headline": "ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)",
   
-  "datePublished": "2017-11-07T20:42:45-05:00",
-  "dateModified": "2017-11-07T20:42:45-05:00",
+  "datePublished": "2020-09-07T14:41:34-05:00",
+  "dateModified": "2020-09-07T14:41:34-05:00",
   
   "author": {
     "@type": "Person",
@@ -343,7 +343,7 @@
       "url": "http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Stack-LSTM models for dependency parsing can be adapted to constituency parsing by considering spinal version of the parse and adding a single 'create-node' operation to the transition-based parsing scheme, giving an elegant algorithm and competitive results."
+  "description": "Natural language interfaces to computer systems are an exciting area with new workshops ([WNLI](https://www.aclweb.org/anthology/volumes/2020.nli-1/) at ACL and [IntEx-SemPar](https://intex-sempar.github.io/) at EMNLP), a range of datasets (including my own work on [text-to-SQL](/publication/acl18sql/)), and many papers. Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code. This paper considers an interesting application: interaction with data visualisation tools."
 }
 </script>
 
@@ -361,7 +361,7 @@
 
 
 
-  <title>Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017) | Jonathan K. Kummerfeld</title>
+  <title>ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020) | Jonathan K. Kummerfeld</title>
 
 </head>
 
@@ -655,7 +655,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</h1>
+  <h1>ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</h1>
 
   
 
@@ -674,7 +674,7 @@
     
       
     
-    Nov 7, 2017
+    Sep 7, 2020
   </span>
   
 
@@ -686,7 +686,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="http://www.jkk.name/post/2017-11-07_spineparsinglstm/#disqus_thread"></a>
+  <a href="http://www.jkk.name/post/2020-09-07_chartdialogs/#disqus_thread"></a>
   
 
   
@@ -717,25 +717,41 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>This paper brings together work on neural dependency parsing with the idea of non-terminal spines as a way to represent constituency structure.
-Within the transition parsing inference process they can naturally fit the generation of a new spines by gradually building up the spine, which makes for a very elegant inference process.</p>
-<p>Surprisingly, it doesn&rsquo;t seem to matter what head choices are used to generate the spines (they tried leftmost word, rightmost word, and two standard schemes).
-This contrasts with my own observations that the choice of head had a big impact (0.5 F) on accuracy.
-I think the incrementally-built spines are the key difference.
-Decisions about higher up in the spine are difficult to make when looking at a single word, but with the incremental construction there is information about a larger context.</p>
+      <p>Natural language interfaces to computer systems are an exciting area with new workshops (
+<a href="https://www.aclweb.org/anthology/volumes/2020.nli-1/" target="_blank" rel="noopener">WNLI</a> at ACL and 
+<a href="https://intex-sempar.github.io/" target="_blank" rel="noopener">IntEx-SemPar</a> at EMNLP), a range of datasets (including my own work on 
+<a href="http://www.jkk.name/publication/acl18sql/">text-to-SQL</a>), and many papers.
+Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code.
+This paper considers an interesting application: interaction with data visualisation tools.</p>
+<p>Using the full flexibility of these tools is a tall order, so this work focuses on commands to modify style parameters of a figure.
+For that setting, the problem can be framed as task-oriented dialogue in which each style parameter (e.g. x-axis font size) is a slot that needs to be defined.
+Using this framing of the problem, the paper presents a new dataset of 3,200 conversations in which a person modifies the style of a plot.
+These were collected on Mechanical Turk by having one worker describe a target plot and another worker manipulating values for parameters to match it.
+There are 12 plot types with 3-13 properties, with the target plot randomly generated.
+Baseline approaches do fairly well, but far short of a human (either another worker or one of the authors).</p>
+<p>It&rsquo;s a large resource with high agreement between annotators and the paper presents detailed analysis and helpful examples.
+One experiment I&rsquo;d be curious to see is results with a fixed number of training examples per plot type (or per slot type).
+Histograms and scatter plots appear particularly difficult in the breakdown of results by plot type, but they are also the types with the fewest examples (a tenth as many as the type with the most).</p>
+<p>I find this general topic exciting because it brings together several areas of NLP and it seems feasible to create a useful system in the near future.
+Hopefully there will be progress on models for this dataset and development of additional resources.
+In particular, there was a decision here to limit generation to slot-values, which is powerful, but does not capture the full flexibility of matplotlib (at least not without further work on representing more features this way).
+Arbitrary code generation would be a fantastic extension, though creating the data would require some creativity as the approach used here wouldn&rsquo;t directly work.</p>
 <h2 id="citation">Citation</h2>
 <p>
-<a href="http://www.aclweb.org/anthology/W17-6316" target="_blank" rel="noopener">Paper</a></p>
-<pre><code class="language-bibtex">@InProceedings{ballesteros-carreras:2017:IWPT,
-  author    = {Ballesteros, Miguel  and  Carreras, Xavier},
-  title     = {Arc-Standard Spinal Parsing with Stack-LSTMs},
-  booktitle = {Proceedings of the 15th International Conference on Parsing Technologies},
-  month     = {September},
-  year      = {2017},
-  address   = {Pisa, Italy},
-  publisher = {Association for Computational Linguistics},
-  pages     = {115--121},
-  url       = {http://www.aclweb.org/anthology/W17-6316}
+<a href="https://www.aclweb.org/anthology/2020.acl-main.328.pdf" target="_blank" rel="noopener">Paper</a></p>
+<pre><code class="language-bibtex">@inproceedings{shao-nakashole-2020-chartdialogs,
+    title = &quot;{C}hart{D}ialogs: {P}lotting from {N}atural {L}anguage {I}nstructions&quot;,
+    author = &quot;Shao, Yutong  and
+      Nakashole, Ndapa&quot;,
+    booktitle = &quot;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&quot;,
+    month = &quot;jul&quot;,
+    year = &quot;2020&quot;,
+    address = &quot;Online&quot;,
+    publisher = &quot;Association for Computational Linguistics&quot;,
+    url = &quot;https://www.aclweb.org/anthology/2020.acl-main.328&quot;,
+    doi = &quot;10.18653/v1/2020.acl-main.328&quot;,
+    pages = &quot;3559--3574&quot;,
+    abstract = &quot;This paper presents the problem of conversational plotting agents that carry out plotting actions from natural language instructions. To facilitate the development of such agents, we introduce ChartDialogs, a new multi-turn dialog dataset, covering a popular plotting library, matplotlib. The dataset contains over 15,000 dialog turns from 3,200 dialogs covering the majority of matplotlib plot types. Extensive experiments show the best-performing method achieving 61{\%} plotting accuracy, demonstrating that the dataset presents a non-trivial challenge for future research on this task.&quot;,
 }
 </code></pre>
 
@@ -752,9 +768,13 @@ Decisions about higher up in the spine are difficult to make when looking at a s
   
   <a class="badge badge-light" href="http://www.jkk.name/tag/paper/">paper</a>
   
-  <a class="badge badge-light" href="http://www.jkk.name/tag/iwpt/">iwpt</a>
+  <a class="badge badge-light" href="http://www.jkk.name/tag/dialogue/">dialogue</a>
   
-  <a class="badge badge-light" href="http://www.jkk.name/tag/syntax/">syntax</a>
+  <a class="badge badge-light" href="http://www.jkk.name/tag/data/">data</a>
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/grounded-language/">grounded-language</a>
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/nli/">nli</a>
   
 </div>
 
@@ -771,7 +791,7 @@ Decisions about higher up in the spine are difficult to make when looking at a s
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/post/2017-11-07_spineparsinglstm/&amp;text=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.,%202017%29" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/post/2020-09-07_chartdialogs/&amp;text=ChartDialogs:%20Plotting%20from%20Natural%20Language%20Instructions%20%28Shao%20and%20Nakashole,%20ACL%202020%29" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -784,7 +804,7 @@ Decisions about higher up in the spine are difficult to make when looking at a s
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/post/2017-11-07_spineparsinglstm/&amp;t=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.,%202017%29" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/post/2020-09-07_chartdialogs/&amp;t=ChartDialogs:%20Plotting%20from%20Natural%20Language%20Instructions%20%28Shao%20and%20Nakashole,%20ACL%202020%29" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -797,7 +817,7 @@ Decisions about higher up in the spine are difficult to make when looking at a s
       
       
       <li>
-        <a href="mailto:?subject=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.,%202017%29&amp;body=http://www.jkk.name/post/2017-11-07_spineparsinglstm/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=ChartDialogs:%20Plotting%20from%20Natural%20Language%20Instructions%20%28Shao%20and%20Nakashole,%20ACL%202020%29&amp;body=http://www.jkk.name/post/2020-09-07_chartdialogs/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -810,7 +830,7 @@ Decisions about higher up in the spine are difficult to make when looking at a s
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/post/2017-11-07_spineparsinglstm/&amp;title=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.,%202017%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/post/2020-09-07_chartdialogs/&amp;title=ChartDialogs:%20Plotting%20from%20Natural%20Language%20Instructions%20%28Shao%20and%20Nakashole,%20ACL%202020%29" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -823,7 +843,7 @@ Decisions about higher up in the spine are difficult to make when looking at a s
       
       
       <li>
-        <a href="whatsapp://send?text=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.,%202017%29%20http://www.jkk.name/post/2017-11-07_spineparsinglstm/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=ChartDialogs:%20Plotting%20from%20Natural%20Language%20Instructions%20%28Shao%20and%20Nakashole,%20ACL%202020%29%20http://www.jkk.name/post/2020-09-07_chartdialogs/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -836,7 +856,7 @@ Decisions about higher up in the spine are difficult to make when looking at a s
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/post/2017-11-07_spineparsinglstm/&amp;title=Arc-Standard%20Spinal%20Parsing%20with%20Stack-LSTMs%20%28Ballesteros%20et%20al.,%202017%29" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/post/2020-09-07_chartdialogs/&amp;title=ChartDialogs:%20Plotting%20from%20Natural%20Language%20Instructions%20%28Shao%20and%20Nakashole,%20ACL%202020%29" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1123,15 +1143,15 @@ Decisions about higher up in the spine are difficult to make when looking at a s
     <h3>Related</h3>
     <ul>
       
-      <li><a href="http://www.jkk.name/post/2017-11-16_ucca/">A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</a></li>
+      <li><a href="http://www.jkk.name/post/2019-07-10_disentanglement/">A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</a></li>
       
-      <li><a href="http://www.jkk.name/post/2017-11-14_inorderparsing/">In-Order Transition-based Constituent Parsing (Liu et al., 2017)</a></li>
+      <li><a href="http://www.jkk.name/post/2017-11-09_framesdataset/">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</a></li>
       
-      <li><a href="http://www.jkk.name/post/2017-10-25_shiftreducedp/">Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</a></li>
+      <li><a href="http://www.jkk.name/post/2020-09-03_checklist/">Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</a></li>
       
-      <li><a href="http://www.jkk.name/post/2017-10-24_dynamictransition/">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</a></li>
+      <li><a href="http://www.jkk.name/post/2018-11-08_corefdata/">PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</a></li>
       
-      <li><a href="http://www.jkk.name/post/2020-09-07_chartdialogs/">ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</a></li>
+      <li><a href="http://www.jkk.name/post/2018-01-28_crowdassistant/">Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</a></li>
       
     </ul>
   </div>

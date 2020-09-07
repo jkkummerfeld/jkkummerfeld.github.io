@@ -5,12 +5,57 @@
     <link>http://www.jkk.name/tag/dialogue/</link>
       <atom:link href="http://www.jkk.name/tag/dialogue/index.xml" rel="self" type="application/rss+xml" />
     <description>dialogue</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 23 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 07 Sep 2020 14:41:34 -0500</lastBuildDate>
     <image>
       <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>dialogue</title>
       <link>http://www.jkk.name/tag/dialogue/</link>
     </image>
+    
+    <item>
+      <title>ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</title>
+      <link>http://www.jkk.name/post/2020-09-07_chartdialogs/</link>
+      <pubDate>Mon, 07 Sep 2020 14:41:34 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
+      <description>&lt;p&gt;Natural language interfaces to computer systems are an exciting area with new workshops (
+&lt;a href=&#34;https://www.aclweb.org/anthology/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
+&lt;a href=&#34;https://intex-sempar.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IntEx-SemPar&lt;/a&gt; at EMNLP), a range of datasets (including my own work on 
+&lt;a href=&#34;http://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
+Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code.
+This paper considers an interesting application: interaction with data visualisation tools.&lt;/p&gt;
+&lt;p&gt;Using the full flexibility of these tools is a tall order, so this work focuses on commands to modify style parameters of a figure.
+For that setting, the problem can be framed as task-oriented dialogue in which each style parameter (e.g. x-axis font size) is a slot that needs to be defined.
+Using this framing of the problem, the paper presents a new dataset of 3,200 conversations in which a person modifies the style of a plot.
+These were collected on Mechanical Turk by having one worker describe a target plot and another worker manipulating values for parameters to match it.
+There are 12 plot types with 3-13 properties, with the target plot randomly generated.
+Baseline approaches do fairly well, but far short of a human (either another worker or one of the authors).&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a large resource with high agreement between annotators and the paper presents detailed analysis and helpful examples.
+One experiment I&amp;rsquo;d be curious to see is results with a fixed number of training examples per plot type (or per slot type).
+Histograms and scatter plots appear particularly difficult in the breakdown of results by plot type, but they are also the types with the fewest examples (a tenth as many as the type with the most).&lt;/p&gt;
+&lt;p&gt;I find this general topic exciting because it brings together several areas of NLP and it seems feasible to create a useful system in the near future.
+Hopefully there will be progress on models for this dataset and development of additional resources.
+In particular, there was a decision here to limit generation to slot-values, which is powerful, but does not capture the full flexibility of matplotlib (at least not without further work on representing more features this way).
+Arbitrary code generation would be a fantastic extension, though creating the data would require some creativity as the approach used here wouldn&amp;rsquo;t directly work.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.328.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{shao-nakashole-2020-chartdialogs,
+    title = &amp;quot;{C}hart{D}ialogs: {P}lotting from {N}atural {L}anguage {I}nstructions&amp;quot;,
+    author = &amp;quot;Shao, Yutong  and
+      Nakashole, Ndapa&amp;quot;,
+    booktitle = &amp;quot;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&amp;quot;,
+    month = &amp;quot;jul&amp;quot;,
+    year = &amp;quot;2020&amp;quot;,
+    address = &amp;quot;Online&amp;quot;,
+    publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
+    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.328&amp;quot;,
+    doi = &amp;quot;10.18653/v1/2020.acl-main.328&amp;quot;,
+    pages = &amp;quot;3559--3574&amp;quot;,
+    abstract = &amp;quot;This paper presents the problem of conversational plotting agents that carry out plotting actions from natural language instructions. To facilitate the development of such agents, we introduce ChartDialogs, a new multi-turn dialog dataset, covering a popular plotting library, matplotlib. The dataset contains over 15,000 dialog turns from 3,200 dialogs covering the majority of matplotlib plot types. Extensive experiments show the best-performing method achieving 61{\%} plotting accuracy, demonstrating that the dataset presents a non-trivial challenge for future research on this task.&amp;quot;,
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>DSTC 7 track 1: Next Utterance Selection</title>
