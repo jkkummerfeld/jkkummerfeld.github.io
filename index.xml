@@ -34,7 +34,8 @@ This is still an interesting result, but I&amp;rsquo;m left with a few questions
 &lt;li&gt;How does the sampled data differ from iid data? Is there a significant shift in the distribution of class types?&lt;/li&gt;
 &lt;li&gt;What about using a hybrid approach, with some data sampled iid and other data sampled randomly?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Overall, what I take away from this work is that active learning may not be the right choice for building a small dataset in NLP.&lt;/p&gt;
+&lt;p&gt;Overall, what I take away from this work is that active learning may not be the right choice for building a small dataset in NLP.
+For large datasets, building models, or other tasks and domains the conclusions are less clear, though it is certainly worth being aware of the risk that a dataset made with active learning may not be equally useful to all models.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.aclweb.org/anthology/D19-1003.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
