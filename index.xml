@@ -53,6 +53,8 @@ Maybe targeted re-annotation could be used to add them to PropBank (identifying 
 &lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.626/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://github.com/plroit/qasrl-gs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1309592830537543681?s=20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My Tweet&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{roit-etal-2020-controlled,
     title = &amp;quot;Controlled Crowdsourcing for High-Quality {QA}-{SRL} Annotation&amp;quot;,
     author = &amp;quot;Roit, Paul  and
