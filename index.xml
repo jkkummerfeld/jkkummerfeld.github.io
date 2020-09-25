@@ -5,12 +5,77 @@
     <link>http://www.jkk.name/</link>
       <atom:link href="http://www.jkk.name/index.xml" rel="self" type="application/rss+xml" />
     <description>Jonathan K. Kummerfeld</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 17 Sep 2020 15:08:35 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 25 Sep 2020 10:17:18 -0500</lastBuildDate>
     <image>
       <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Jonathan K. Kummerfeld</title>
       <link>http://www.jkk.name/</link>
     </image>
+    
+    <item>
+      <title>Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</title>
+      <link>http://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
+      <pubDate>Fri, 25 Sep 2020 10:17:18 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
+      <description>&lt;p&gt;Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.
+Over the last few years, 
+&lt;a href=&#34;https://www.cs.washington.edu/people/faculty/lsz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luke Zettlemoyer&amp;rsquo;s Group&lt;/a&gt; has been exploring using question-answer pairs to represent this structure.
+This approach has the big advantage that it is easier to explain than the sense inventory and role types of more traditional SRL resources like PropBank.
+However, even with that advantage, crowdsourcing this annotation is difficult, as this paper shows.&lt;/p&gt;
+&lt;p&gt;I got three main things out of this paper:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It shifted my approach to crowdsourcing to consider workers more like traditional expert annotators.&lt;/li&gt;
+&lt;li&gt;It reinforced the idea that small shifts in crowd workflows can have a major impact on annotation quality.&lt;/li&gt;
+&lt;li&gt;QA-SRL can capture roles not covered by PropBank.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The work also provides a new dataset that will be useful for future work on this problem, and useful benchmarks of systems and measurements of data quality.
+Expanding on the three points above:&lt;/p&gt;
+&lt;p&gt;Crowd workers: The paper argues in favour of putting more time into training workers.
+Most of the work I&amp;rsquo;ve seen in NLP for crowdsourcing (including my own) focuses on modifying task design or using ML post-processing to improve results.
+Here, they run a large-scale qualification task and filter workers based on their performance, then train those workers by paying them to read a set of instructions (23 text-dense slides) and do two small annotation rounds with feedback after each one.
+This increases the upfront cost, but reduces the cost of annotation by reducing the need for multiple annotations of each item.
+The paper doesn&amp;rsquo;t provide quite enough detail to quantify the cost.
+We do know that to get to 11 workers they needed to train 30 workers at a cost of 2 hours each plus 30 minutes of researcher time each.
+If we assume 60 workers did the preliminary round, each taking 5 minutes, and that workers cost &lt;span&gt;$&lt;/span&gt;12 / hour (&lt;span&gt;$&lt;/span&gt;10 to the workers, &lt;span&gt;$&lt;/span&gt;2 to Amazon), that&amp;rsquo;s almost &lt;span&gt;$&lt;/span&gt;800 plus 15 hours of researcher time.
+For a large annotation effort, the savings during annotation will make that worth it (or, as in this case, it will lead to higher quality data).
+I am curious which aspect was more important though - filtering the pool of workers, or training workers.&lt;/p&gt;
+&lt;p&gt;Workflow impact: In previous QA-SRL work, one worker wrote a question and its answers and two workers checked the question and independently added answers.
+Here, two workers independently write a question+answer and a third work consolidates the annotations into a final annotation.
+The cost for a label is about the same (54c / predicate vs. 51c / predicate), but coverage is considerably higher.
+The design space for crowd workflows is huge and this is another example of how important it is to explore.
+It&amp;rsquo;s also possible that the changes in recruitment and training were more critical than the workflow shift, but the study didn&amp;rsquo;t include evaluation with only one or the other.&lt;/p&gt;
+&lt;p&gt;QA-SRL vs. PropBank: This may be less surprising to someone who works more on SRL, but they found their approach captured many implicit roles that PropBank does not.
+Specifically, of 100 annotated arguments that were not in PropBank, 68 were valid implicit arguments.
+I&amp;rsquo;m curious about what those implicit arguments are capturing.
+Maybe targeted re-annotation could be used to add them to PropBank (identifying relevant sentences by trace parsing).&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.626/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/plroit/qasrl-gs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{roit-etal-2020-controlled,
+    title = &amp;quot;Controlled Crowdsourcing for High-Quality {QA}-{SRL} Annotation&amp;quot;,
+    author = &amp;quot;Roit, Paul  and
+      Klein, Ayal  and
+      Stepanov, Daniela  and
+      Mamou, Jonathan  and
+      Michael, Julian  and
+      Stanovsky, Gabriel  and
+      Zettlemoyer, Luke  and
+      Dagan, Ido&amp;quot;,
+    booktitle = &amp;quot;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&amp;quot;,
+    month = &amp;quot;jul&amp;quot;,
+    year = &amp;quot;2020&amp;quot;,
+    address = &amp;quot;Online&amp;quot;,
+    publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
+    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.626&amp;quot;,
+    doi = &amp;quot;10.18653/v1/2020.acl-main.626&amp;quot;,
+    pages = &amp;quot;7008--7013&amp;quot;,
+    abstract = &amp;quot;Question-answer driven Semantic Role Labeling (QA-SRL) was proposed as an attractive open and natural flavour of SRL, potentially attainable from laymen. Recently, a large-scale crowdsourced QA-SRL corpus and a trained parser were released. Trying to replicate the QA-SRL annotation for new texts, we found that the resulting annotations were lacking in quality, particularly in coverage, making them insufficient for further research and evaluation. In this paper, we present an improved crowdsourcing protocol for complex semantic annotation, involving worker selection and training, and a data consolidation phase. Applying this protocol to QA-SRL yielded high-quality annotation with drastically higher coverage, producing a new gold evaluation dataset. We believe that our annotation protocol and gold standard will facilitate future replicable research of natural semantic annotations.&amp;quot;,
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Practical Obstacles to Deploying Active Learning (Lowell, et al., EMNLP 2019)</title>

@@ -33,7 +33,7 @@
   <meta name="description" content="Postdoctoral Research Fellow">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/tag/annotation/">
+  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/tag/srl/">
 
   
 
@@ -267,14 +267,14 @@
   
 
   
-  <link rel="alternate" href="http://www.jkk.name/tag/annotation/index.xml" type="application/rss+xml" title="Jonathan K. Kummerfeld">
+  <link rel="alternate" href="http://www.jkk.name/tag/srl/index.xml" type="application/rss+xml" title="Jonathan K. Kummerfeld">
   
 
   <link rel="manifest" href="http://www.jkk.name/index.webmanifest">
   <link rel="icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://www.jkk.name/tag/annotation/">
+  <link rel="canonical" href="http://www.jkk.name/tag/srl/">
 
   
   
@@ -293,12 +293,12 @@
   <meta property="twitter:creator" content="@jkkummerfeld">
   
   <meta property="og:site_name" content="Jonathan K. Kummerfeld">
-  <meta property="og:url" content="http://www.jkk.name/tag/annotation/">
-  <meta property="og:title" content="annotation | Jonathan K. Kummerfeld">
+  <meta property="og:url" content="http://www.jkk.name/tag/srl/">
+  <meta property="og:title" content="srl | Jonathan K. Kummerfeld">
   <meta property="og:description" content="Postdoctoral Research Fellow"><meta property="og:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-09-17T15:08:35-05:00">
+    <meta property="og:updated_time" content="2020-09-25T10:17:18-05:00">
   
 
   
@@ -315,7 +315,7 @@
 
 
 
-  <title>annotation | Jonathan K. Kummerfeld</title>
+  <title>srl | Jonathan K. Kummerfeld</title>
 
 </head>
 
@@ -609,7 +609,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1>annotation</h1>
+  <h1>srl</h1>
 
   
 
@@ -627,49 +627,10 @@
     
     
     <div>
-      <h2><a href="http://www.jkk.name/post/2020-09-17_activelearningbrittle/" >Practical Obstacles to Deploying Active Learning (Lowell, et al., EMNLP 2019)</a></h2>
+      <h2><a href="http://www.jkk.name/post/2020-09-25_crowdqasrl/" >Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</a></h2>
       <div class="article-style">
         
-          Training models requires massive amounts of labeled data.  We usually sample data iid from the target domain (e.g. newspapers), but it seems intuitive that this means we wast effort labeling samples that are obvious or easy and so not informative during training.  Active Learning follows that intuition, labeling data incrementally, selecting the next example(s) to label based on what a model considers uncertain.  Lots of work has shown this can be effective for that model, but if the labeled dataset is then used to train another model will it also do well?
-        
-      </div>
-    </div>
-  
-    
-    
-    
-      
-      
-    
-    <div>
-      <h2><a href="https://jkk.name/slate" target="_blank" rel="noopener">SLATE: A Super-Lightweight Annotation Tool for Experts</a></h2>
-      <div class="article-style">
-        
-          A terminal-based text annotation tool in Python.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="http://www.jkk.name/post/2017-12-08_crowdbias/" >Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</a></h2>
-      <div class="article-style">
-        
-          Annotator sequence bias, where the label for one item affects the label for the next, occurs across a range of datasets. Avoid it by separately randomise the order of items for each annotator.
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="http://www.jkk.name/post/2017-10-13_errordetection/" >Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</a></h2>
-      <div class="article-style">
-        
-          When labeling a dataset automatically there are going to be errors, but we can use a generative model and active learning to guide effort to checking the examples most likely to be incorrect.
+          Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.  Over the last few years, [Luke Zettlemoyer's Group](https://www.cs.washington.edu/people/faculty/lsz/) has been exploring using question-answer pairs to represent this structure.  This approach has the big advantage that it is easier to explain than the sense inventory and role types of more traditional SRL resources like PropBank.  However, even with that advantage, crowdsourcing this annotation is difficult, as this paper shows.
         
       </div>
     </div>

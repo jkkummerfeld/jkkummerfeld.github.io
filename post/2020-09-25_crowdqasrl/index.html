@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="It is difficult to predict how well a model will work in the real world. Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to. This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories. Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data.">
+  <meta name="description" content="Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.  Over the last few years, [Luke Zettlemoyer&#39;s Group](https://www.cs.washington.edu/people/faculty/lsz/) has been exploring using question-answer pairs to represent this structure.  This approach has the big advantage that it is easier to explain than the sense inventory and role types of more traditional SRL resources like PropBank.  However, even with that advantage, crowdsourcing this annotation is difficult, as this paper shows.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/post/2020-09-03_checklist/">
+  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/post/2020-09-25_crowdqasrl/">
 
   
 
@@ -272,7 +272,7 @@
   <link rel="icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2020-09-03_checklist/">
+  <link rel="canonical" href="http://www.jkk.name/post/2020-09-25_crowdqasrl/">
 
   
   
@@ -291,15 +291,15 @@
   <meta property="twitter:creator" content="@jkkummerfeld">
   
   <meta property="og:site_name" content="Jonathan K. Kummerfeld">
-  <meta property="og:url" content="http://www.jkk.name/post/2020-09-03_checklist/">
-  <meta property="og:title" content="Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper) | Jonathan K. Kummerfeld">
-  <meta property="og:description" content="It is difficult to predict how well a model will work in the real world. Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to. This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories. Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data."><meta property="og:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="http://www.jkk.name/post/2020-09-25_crowdqasrl/">
+  <meta property="og:title" content="Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020) | Jonathan K. Kummerfeld">
+  <meta property="og:description" content="Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.  Over the last few years, [Luke Zettlemoyer&#39;s Group](https://www.cs.washington.edu/people/faculty/lsz/) has been exploring using question-answer pairs to represent this structure.  This approach has the big advantage that it is easier to explain than the sense inventory and role types of more traditional SRL resources like PropBank.  However, even with that advantage, crowdsourcing this annotation is difficult, as this paper shows."><meta property="og:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-09-03T14:44:29-05:00">
+      <meta property="article:published_time" content="2020-09-25T10:17:18-05:00">
     
-    <meta property="article:modified_time" content="2020-09-03T14:44:29-05:00">
+    <meta property="article:modified_time" content="2020-09-25T10:17:18-05:00">
   
 
   
@@ -323,12 +323,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://www.jkk.name/post/2020-09-03_checklist/"
+    "@id": "http://www.jkk.name/post/2020-09-25_crowdqasrl/"
   },
-  "headline": "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)",
+  "headline": "Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)",
   
-  "datePublished": "2020-09-03T14:44:29-05:00",
-  "dateModified": "2020-09-03T14:44:29-05:00",
+  "datePublished": "2020-09-25T10:17:18-05:00",
+  "dateModified": "2020-09-25T10:17:18-05:00",
   
   "author": {
     "@type": "Person",
@@ -343,7 +343,7 @@
       "url": "http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "It is difficult to predict how well a model will work in the real world. Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to. This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories. Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data."
+  "description": "Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.  Over the last few years, [Luke Zettlemoyer's Group](https://www.cs.washington.edu/people/faculty/lsz/) has been exploring using question-answer pairs to represent this structure.  This approach has the big advantage that it is easier to explain than the sense inventory and role types of more traditional SRL resources like PropBank.  However, even with that advantage, crowdsourcing this annotation is difficult, as this paper shows."
 }
 </script>
 
@@ -361,7 +361,7 @@
 
 
 
-  <title>Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper) | Jonathan K. Kummerfeld</title>
+  <title>Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020) | Jonathan K. Kummerfeld</title>
 
 </head>
 
@@ -655,7 +655,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</h1>
+  <h1>Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</h1>
 
   
 
@@ -674,7 +674,7 @@
     
       
     
-    Sep 3, 2020
+    Sep 25, 2020
   </span>
   
 
@@ -686,7 +686,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="http://www.jkk.name/post/2020-09-03_checklist/#disqus_thread"></a>
+  <a href="http://www.jkk.name/post/2020-09-25_crowdqasrl/#disqus_thread"></a>
   
 
   
@@ -717,52 +717,61 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>It is difficult to predict how well a model will work in the real world.
-Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to.
-This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories.
-Together, these become a process of designing specific tests that measure how well a model handles certain types of variation in data.</p>
-<p>The paper organises these tests along two axes.
-One is the type of test:</p>
-<ul>
-<li>Invariance: Giving the same answer when changes are made that should not impact the model prediction.</li>
-<li>Directional: Giving an answer that differs in a way that matches the intended impact of a change.</li>
-<li>Minimum Function Tests: A range of other tests that consider specific cases.</li>
-</ul>
-<p>The other axis is the linguistic property being varied:</p>
-<ul>
-<li>Vocabulary Change</li>
-<li>Named Entity Variation</li>
-<li>Temporal Shift</li>
-<li>Negation</li>
-<li>Semantic Role Swap</li>
-<li>Various Other Changes</li>
-</ul>
-<p>For example, an invariance test on vocabulary would be that replacing words with their synonyms should not change the result.</p>
-<p>The paper tests the idea on (1) sentiment analysis on SST-2, (2) identifying matching questions on QQP, and (3) machien comprehension on SQuAD.
-Researchers / developers using the method are more effective at finding issues than those asked to write tests without this framework to approach the problem.</p>
-<p>Understanding system errors has been an interest of mine for a long time now (back to my 2012 parsing paper) and from my experience with startups it is definitely challenging to develop effective tests for NLP models.
-I&rsquo;m curious to see how this approach works out when used iteratively.
-When users modify their model or data to address the problems do they actually fix them or just overfit to the new set of tests?
-Another open question is how to apply these to problems with more structured output (e.g. text-to-SQL).
-Some would easily apply, e.g. invariance tests, while others would be more difficult.</p>
+      <p>Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.
+Over the last few years, 
+<a href="https://www.cs.washington.edu/people/faculty/lsz/" target="_blank" rel="noopener">Luke Zettlemoyer&rsquo;s Group</a> has been exploring using question-answer pairs to represent this structure.
+This approach has the big advantage that it is easier to explain than the sense inventory and role types of more traditional SRL resources like PropBank.
+However, even with that advantage, crowdsourcing this annotation is difficult, as this paper shows.</p>
+<p>I got three main things out of this paper:</p>
+<ol>
+<li>It shifted my approach to crowdsourcing to consider workers more like traditional expert annotators.</li>
+<li>It reinforced the idea that small shifts in crowd workflows can have a major impact on annotation quality.</li>
+<li>QA-SRL can capture roles not covered by PropBank.</li>
+</ol>
+<p>The work also provides a new dataset that will be useful for future work on this problem, and useful benchmarks of systems and measurements of data quality.
+Expanding on the three points above:</p>
+<p>Crowd workers: The paper argues in favour of putting more time into training workers.
+Most of the work I&rsquo;ve seen in NLP for crowdsourcing (including my own) focuses on modifying task design or using ML post-processing to improve results.
+Here, they run a large-scale qualification task and filter workers based on their performance, then train those workers by paying them to read a set of instructions (23 text-dense slides) and do two small annotation rounds with feedback after each one.
+This increases the upfront cost, but reduces the cost of annotation by reducing the need for multiple annotations of each item.
+The paper doesn&rsquo;t provide quite enough detail to quantify the cost.
+We do know that to get to 11 workers they needed to train 30 workers at a cost of 2 hours each plus 30 minutes of researcher time each.
+If we assume 60 workers did the preliminary round, each taking 5 minutes, and that workers cost <span>$</span>12 / hour (<span>$</span>10 to the workers, <span>$</span>2 to Amazon), that&rsquo;s almost <span>$</span>800 plus 15 hours of researcher time.
+For a large annotation effort, the savings during annotation will make that worth it (or, as in this case, it will lead to higher quality data).
+I am curious which aspect was more important though - filtering the pool of workers, or training workers.</p>
+<p>Workflow impact: In previous QA-SRL work, one worker wrote a question and its answers and two workers checked the question and independently added answers.
+Here, two workers independently write a question+answer and a third work consolidates the annotations into a final annotation.
+The cost for a label is about the same (54c / predicate vs. 51c / predicate), but coverage is considerably higher.
+The design space for crowd workflows is huge and this is another example of how important it is to explore.
+It&rsquo;s also possible that the changes in recruitment and training were more critical than the workflow shift, but the study didn&rsquo;t include evaluation with only one or the other.</p>
+<p>QA-SRL vs. PropBank: This may be less surprising to someone who works more on SRL, but they found their approach captured many implicit roles that PropBank does not.
+Specifically, of 100 annotated arguments that were not in PropBank, 68 were valid implicit arguments.
+I&rsquo;m curious about what those implicit arguments are capturing.
+Maybe targeted re-annotation could be used to add them to PropBank (identifying relevant sentences by trace parsing).</p>
 <h2 id="citation">Citation</h2>
 <p>
-<a href="https://www.aclweb.org/anthology/2020.acl-main.442/" target="_blank" rel="noopener">Paper</a></p>
-<pre><code class="language-bibtex">@inproceedings{ribeiro-etal-2020-beyond,
-    title = &quot;Beyond Accuracy: Behavioral Testing of {NLP} Models with {C}heck{L}ist&quot;,
-    author = &quot;Ribeiro, Marco Tulio  and
-      Wu, Tongshuang  and
-      Guestrin, Carlos  and
-      Singh, Sameer&quot;,
+<a href="https://www.aclweb.org/anthology/2020.acl-main.626/" target="_blank" rel="noopener">Paper</a></p>
+<p>
+<a href="https://github.com/plroit/qasrl-gs" target="_blank" rel="noopener">Code</a></p>
+<pre><code class="language-bibtex">@inproceedings{roit-etal-2020-controlled,
+    title = &quot;Controlled Crowdsourcing for High-Quality {QA}-{SRL} Annotation&quot;,
+    author = &quot;Roit, Paul  and
+      Klein, Ayal  and
+      Stepanov, Daniela  and
+      Mamou, Jonathan  and
+      Michael, Julian  and
+      Stanovsky, Gabriel  and
+      Zettlemoyer, Luke  and
+      Dagan, Ido&quot;,
     booktitle = &quot;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&quot;,
     month = &quot;jul&quot;,
     year = &quot;2020&quot;,
     address = &quot;Online&quot;,
     publisher = &quot;Association for Computational Linguistics&quot;,
-    url = &quot;https://www.aclweb.org/anthology/2020.acl-main.442&quot;,
-    doi = &quot;10.18653/v1/2020.acl-main.442&quot;,
-    pages = &quot;4902--4912&quot;,
-    abstract = &quot;Although measuring held-out accuracy has been the primary approach to evaluate generalization, it often overestimates the performance of NLP models, while alternative approaches for evaluating models either focus on individual tasks or on specific behaviors. Inspired by principles of behavioral testing in software engineering, we introduce CheckList, a task-agnostic methodology for testing NLP models. CheckList includes a matrix of general linguistic capabilities and test types that facilitate comprehensive test ideation, as well as a software tool to generate a large and diverse number of test cases quickly. We illustrate the utility of CheckList with tests for three tasks, identifying critical failures in both commercial and state-of-art models. In a user study, a team responsible for a commercial sentiment analysis model found new and actionable bugs in an extensively tested model. In another user study, NLP practitioners with CheckList created twice as many tests, and found almost three times as many bugs as users without it.&quot;,
+    url = &quot;https://www.aclweb.org/anthology/2020.acl-main.626&quot;,
+    doi = &quot;10.18653/v1/2020.acl-main.626&quot;,
+    pages = &quot;7008--7013&quot;,
+    abstract = &quot;Question-answer driven Semantic Role Labeling (QA-SRL) was proposed as an attractive open and natural flavour of SRL, potentially attainable from laymen. Recently, a large-scale crowdsourced QA-SRL corpus and a trained parser were released. Trying to replicate the QA-SRL annotation for new texts, we found that the resulting annotations were lacking in quality, particularly in coverage, making them insufficient for further research and evaluation. In this paper, we present an improved crowdsourcing protocol for complex semantic annotation, involving worker selection and training, and a data consolidation phase. Applying this protocol to QA-SRL yielded high-quality annotation with drastically higher coverage, producing a new gold evaluation dataset. We believe that our annotation protocol and gold standard will facilitate future replicable research of natural semantic annotations.&quot;,
 }
 </code></pre>
 
@@ -777,9 +786,11 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="http://www.jkk.name/tag/paper/">paper</a>
+  <a class="badge badge-light" href="http://www.jkk.name/tag/srl/">srl</a>
   
-  <a class="badge badge-light" href="http://www.jkk.name/tag/analysis/">analysis</a>
+  <a class="badge badge-light" href="http://www.jkk.name/tag/crowdsourcing/">crowdsourcing</a>
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/paper/">paper</a>
   
   <a class="badge badge-light" href="http://www.jkk.name/tag/data/">data</a>
   
@@ -798,7 +809,7 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/post/2020-09-03_checklist/&amp;text=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/post/2020-09-25_crowdqasrl/&amp;text=Controlled%20Crowdsourcing%20for%20High-Quality%20QA-SRL%20Annotation%20%28Roit,%20et%20al.,%20ACL%202020%29" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -811,7 +822,7 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/post/2020-09-03_checklist/&amp;t=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/post/2020-09-25_crowdqasrl/&amp;t=Controlled%20Crowdsourcing%20for%20High-Quality%20QA-SRL%20Annotation%20%28Roit,%20et%20al.,%20ACL%202020%29" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -824,7 +835,7 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
       
       
       <li>
-        <a href="mailto:?subject=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29&amp;body=http://www.jkk.name/post/2020-09-03_checklist/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Controlled%20Crowdsourcing%20for%20High-Quality%20QA-SRL%20Annotation%20%28Roit,%20et%20al.,%20ACL%202020%29&amp;body=http://www.jkk.name/post/2020-09-25_crowdqasrl/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -837,7 +848,7 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/post/2020-09-03_checklist/&amp;title=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/post/2020-09-25_crowdqasrl/&amp;title=Controlled%20Crowdsourcing%20for%20High-Quality%20QA-SRL%20Annotation%20%28Roit,%20et%20al.,%20ACL%202020%29" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -850,7 +861,7 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
       
       
       <li>
-        <a href="whatsapp://send?text=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29%20http://www.jkk.name/post/2020-09-03_checklist/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Controlled%20Crowdsourcing%20for%20High-Quality%20QA-SRL%20Annotation%20%28Roit,%20et%20al.,%20ACL%202020%29%20http://www.jkk.name/post/2020-09-25_crowdqasrl/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -863,7 +874,7 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/post/2020-09-03_checklist/&amp;title=Beyond%20Accuracy:%20Behavioral%20Testing%20of%20NLP%20Models%20with%20CheckList%20%28Ribeiro,%20et%20al.,%20ACL%202020%20Best%20Paper%29" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/post/2020-09-25_crowdqasrl/&amp;title=Controlled%20Crowdsourcing%20for%20High-Quality%20QA-SRL%20Annotation%20%28Roit,%20et%20al.,%20ACL%202020%29" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1150,15 +1161,15 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
     <h3>Related</h3>
     <ul>
       
-      <li><a href="http://www.jkk.name/post/2020-09-25_crowdqasrl/">Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</a></li>
-      
       <li><a href="http://www.jkk.name/post/2020-09-07_chartdialogs/">ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2020-09-03_checklist/">Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</a></li>
       
       <li><a href="http://www.jkk.name/post/2019-07-10_disentanglement/">A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</a></li>
       
       <li><a href="http://www.jkk.name/post/2018-11-08_corefdata/">PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</a></li>
       
-      <li><a href="http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/">The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</a></li>
+      <li><a href="http://www.jkk.name/post/2018-01-28_crowdassistant/">Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</a></li>
       
     </ul>
   </div>

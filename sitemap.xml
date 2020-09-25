@@ -3,27 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.jkk.name/category/annotation/</loc>
-    <lastmod>2020-09-17T15:08:35-05:00</lastmod>
+    <loc>http://www.jkk.name/post/2020-09-25_crowdqasrl/</loc>
+    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.jkk.name/categories/</loc>
-    <lastmod>2020-09-17T15:08:35-05:00</lastmod>
+    <loc>http://www.jkk.name/tag/crowdsourcing/</loc>
+    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/data/</loc>
+    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.jkk.name/</loc>
-    <lastmod>2020-09-17T15:08:35-05:00</lastmod>
+    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.jkk.name/category/paper/</loc>
-    <lastmod>2020-09-17T15:08:35-05:00</lastmod>
+    <loc>http://www.jkk.name/tag/paper/</loc>
+    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.jkk.name/post/</loc>
+    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/srl/</loc>
+    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tags/</loc>
+    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/annotation/</loc>
     <lastmod>2020-09-17T15:08:35-05:00</lastmod>
   </url>
   
@@ -34,11 +54,6 @@
   
   <url>
     <loc>http://www.jkk.name/post/2020-09-07_chartdialogs/</loc>
-    <lastmod>2020-09-07T14:41:34-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/data/</loc>
     <lastmod>2020-09-07T14:41:34-05:00</lastmod>
   </url>
   
@@ -54,16 +69,6 @@
   
   <url>
     <loc>http://www.jkk.name/tag/nli/</loc>
-    <lastmod>2020-09-07T14:41:34-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/paper/</loc>
-    <lastmod>2020-09-07T14:41:34-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tags/</loc>
     <lastmod>2020-09-07T14:41:34-05:00</lastmod>
   </url>
   
@@ -443,11 +448,6 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/tag/annotation/</loc>
-    <lastmod>2019-09-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/tag/discourse/</loc>
     <lastmod>2019-09-02T00:00:00+00:00</lastmod>
   </url>
@@ -525,11 +525,6 @@
   <url>
     <loc>http://www.jkk.name/publication/naacl19outliers/</loc>
     <lastmod>2019-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/crowdsourcing/</loc>
-    <lastmod>2019-04-14T10:49:35-04:00</lastmod>
   </url>
   
   <url>
@@ -674,6 +669,11 @@
   
   <url>
     <loc>http://www.jkk.name/category/acl/</loc>
+    <lastmod>2018-06-12T20:33:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/categories/</loc>
     <lastmod>2018-06-12T20:33:00-04:00</lastmod>
   </url>
   
