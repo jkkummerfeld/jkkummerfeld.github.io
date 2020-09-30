@@ -19,7 +19,7 @@
       <guid>http://www.jkk.name/post/2020-09-29_pretraininglm/</guid>
       <description>&lt;p&gt;This paper explores two questions.
 First, what is the impact of a few key design decisions for word embeddings in language models?
-Second, based on the first answer, how can we improve results in the situation where we have 50 million+ words of text, but only 1 GPU for training?&lt;/p&gt;
+Second, based on the first answer, how can we improve results in the situation where we have 10 million+ words of text, but only 1 GPU for training?&lt;/p&gt;
 &lt;h2 id=&#34;the-impact-of-tying-freezing-and-pretraining&#34;&gt;The impact of tying, freezing, and pretraining&lt;/h2&gt;
 &lt;p&gt;It is standard practise to tie the input and output embeddings of language models (i.e., use the same weights in both places), training them together and initialising them randomly.
 Several papers have shown that this improves results by providing more frequent updates to the input embeddings.
