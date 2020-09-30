@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.jkk.name/post/2020-09-29_pretraininglm/</loc>
+    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/</loc>
+    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/language-model/</loc>
+    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/paper/</loc>
+    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/post/</loc>
+    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tags/</loc>
+    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/word-embeddings/</loc>
+    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.jkk.name/post/2020-09-25_crowdqasrl/</loc>
     <lastmod>2020-09-25T10:17:18-05:00</lastmod>
   </url>
@@ -18,27 +53,7 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/</loc>
-    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/paper/</loc>
-    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/post/</loc>
-    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/tag/srl/</loc>
-    <lastmod>2020-09-25T10:17:18-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tags/</loc>
     <lastmod>2020-09-25T10:17:18-05:00</lastmod>
   </url>
   
@@ -83,6 +98,116 @@
   </url>
   
   <url>
+    <loc>http://www.jkk.name/publication-type/1/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/publication/emnlp-findings20srl/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/adrian-cheung/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/anish-mahendran/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/authors/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/charles-welch/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/publication/emnlp20demographics/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/eric-guldan/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/huaiyu-zhu/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/publication/emnlp20lm/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/publication/emnlp20taboo/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/jonathan-k.-kummerfeld/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/kevin-leach/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/publication_types/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/publication/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/rada-mihalcea/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/rishi-tekriwal/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/stefan-larson-amd-anthony-zheng/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/veronica-perez-rosas/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/walter-lasecki/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/youxuan-jiang/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/author/yunyao-li/</loc>
+    <lastmod>2020-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.jkk.name/data/</loc>
     <lastmod>2020-06-23T00:00:00+00:00</lastmod>
   </url>
@@ -123,11 +248,6 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/publication-type/1/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/publication-type/2/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -148,11 +268,6 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/authors/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/author/chiori-hori/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -164,11 +279,6 @@
   
   <url>
     <loc>http://www.jkk.name/publication/chi20anchor/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/author/jonathan-k.-kummerfeld/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -219,21 +329,6 @@
   
   <url>
     <loc>http://www.jkk.name/publication/csl20dstc/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/publication_types/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/publication/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/author/rada-mihalcea/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -388,22 +483,12 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/author/anish-mahendran/</loc>
-    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/author/christopher-clarke/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.jkk.name/author/joseph-j.-peper/</loc>
-    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/author/kevin-leach/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -533,17 +618,7 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/author/charles-welch/</loc>
-    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/publication/cicling19personal/</loc>
-    <lastmod>2019-04-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/author/veronica-perez-rosas/</loc>
     <lastmod>2019-04-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -713,17 +788,7 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/author/walter-lasecki/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/author/yiping-kang/</loc>
-    <lastmod>2018-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/author/youxuan-jiang/</loc>
     <lastmod>2018-06-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -764,11 +829,6 @@
   
   <url>
     <loc>http://www.jkk.name/tag/arxiv/</loc>
-    <lastmod>2018-04-16T20:55:22-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/language-model/</loc>
     <lastmod>2018-04-16T20:55:22-04:00</lastmod>
   </url>
   
@@ -834,11 +894,6 @@
   
   <url>
     <loc>http://www.jkk.name/post/2017-12-07_rarewordvectors/</loc>
-    <lastmod>2017-12-07T20:45:39-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/word-embeddings/</loc>
     <lastmod>2017-12-07T20:45:39-05:00</lastmod>
   </url>
   

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yunyao Li | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/yunyao-li/</link>
+      <atom:link href="http://www.jkk.name/author/yunyao-li/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yunyao Li</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Yunyao Li</title>
+      <link>http://www.jkk.name/author/yunyao-li/</link>
+    </image>
+    
+    <item>
+      <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels</title>
+      <link>http://www.jkk.name/publication/emnlp-findings20srl/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp-findings20srl/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

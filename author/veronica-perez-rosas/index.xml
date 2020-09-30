@@ -5,12 +5,20 @@
     <link>http://www.jkk.name/author/veronica-perez-rosas/</link>
       <atom:link href="http://www.jkk.name/author/veronica-perez-rosas/index.xml" rel="self" type="application/rss+xml" />
     <description>Verónica Pérez-Rosas</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 01 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Verónica Pérez-Rosas</title>
       <link>http://www.jkk.name/author/veronica-perez-rosas/</link>
     </image>
+    
+    <item>
+      <title>Compositional Demographic Word Embeddings</title>
+      <link>http://www.jkk.name/publication/emnlp20demographics/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp20demographics/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Look Who&#39;s Talking: Inferring Speaker Attributes from Personal Longitudinal Dialog</title>

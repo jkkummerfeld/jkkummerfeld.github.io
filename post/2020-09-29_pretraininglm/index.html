@@ -1,0 +1,1425 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Jonathan K. Kummerfeld">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This paper explores two questions. First, what is the impact of a few key design decisions for word embeddings in language models? Second, based on the first answer, how can we improve results in the situation where we have 50 million&#43; words of text, but only 1 GPU for training?">
+
+  
+  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/post/2020-09-29_pretraininglm/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+
+  
+  
+  
+  <script src="http://www.jkk.name/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="http://www.jkk.name/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19179423-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-19179423-2', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="http://www.jkk.name/index.webmanifest">
+  <link rel="icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="http://www.jkk.name/post/2020-09-29_pretraininglm/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="twitter:site" content="@jkkummerfeld">
+  <meta property="twitter:creator" content="@jkkummerfeld">
+  
+  <meta property="og:site_name" content="Jonathan K. Kummerfeld">
+  <meta property="og:url" content="http://www.jkk.name/post/2020-09-29_pretraininglm/">
+  <meta property="og:title" content="Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020) | Jonathan K. Kummerfeld">
+  <meta property="og:description" content="This paper explores two questions. First, what is the impact of a few key design decisions for word embeddings in language models? Second, based on the first answer, how can we improve results in the situation where we have 50 million&#43; words of text, but only 1 GPU for training?"><meta property="og:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-09-29T13:38:24-05:00">
+    
+    <meta property="article:modified_time" content="2020-09-29T13:38:24-05:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://www.jkk.name/post/2020-09-29_pretraininglm/"
+  },
+  "headline": "Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)",
+  
+  "datePublished": "2020-09-29T13:38:24-05:00",
+  "dateModified": "2020-09-29T13:38:24-05:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Jonathan K. Kummerfeld"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jonathan K. Kummerfeld",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://www.jkk.name/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "This paper explores two questions. First, what is the impact of a few key design decisions for word embeddings in language models? Second, based on the first answer, how can we improve results in the situation where we have 50 million+ words of text, but only 1 GPU for training?"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020) | Jonathan K. Kummerfeld</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="http://www.jkk.name/">Jonathan K. Kummerfeld</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="http://www.jkk.name/">Jonathan K. Kummerfeld</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="http://www.jkk.name/doc/jonathan-kummerfeld-cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="http://www.jkk.name/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="http://www.jkk.name/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="http://www.jkk.name/#software"><span>Software</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="http://www.jkk.name/#data"><span>Data</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="http://www.jkk.name/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Sep 29, 2020
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="http://www.jkk.name/post/2020-09-29_pretraininglm/#disqus_thread"></a>
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>This paper explores two questions.
+First, what is the impact of a few key design decisions for word embeddings in language models?
+Second, based on the first answer, how can we improve results in the situation where we have 50 million+ words of text, but only 1 GPU for training?</p>
+<h2 id="the-impact-of-tying-freezing-and-pretraining">The impact of tying, freezing, and pretraining</h2>
+<p>It is standard practise to tie the input and output embeddings of language models (i.e., use the same weights in both places), training them together and initialising them randomly.
+Several papers have shown that this improves results by providing more frequent updates to the input embeddings.
+But if you have data available for pretraining it is less clear that this is the right approach.
+To explore this I&rsquo;m going to use a few symbols:</p>
+<p><img src="http://www.jkk.name/img/post/pretraining-lm-vary-key.jpg" alt="Key for Variations on LM table"></p>
+<p>Here are the results of training an 
+<a href="https://github.com/salesforce/awd-lstm-lm" target="_blank" rel="noopener">AWD-LSTM</a> with all variations of these parameters, evaluated on the standard LM development set of the PTB (Std) and a variation that has actual words instead of unk (Rare):</p>
+<p><img src="http://www.jkk.name/img/post/pretraining-lm-vary.jpg" alt="Variations on LM (for written form of table see bottom of page)"></p>
+<p>Light blue shows the standard configuration and light red shows our proposal.
+The table is ranked by performance on Std and has four clear sections:</p>
+<p>(a) Frozen random output embeddings.</p>
+<p>(b) Frozen pretrained output embeddings.</p>
+<p>(c) Frozen random input embeddings.</p>
+<p>(d) Various configurations.</p>
+<p>I was surprised by the dramatic difference between input and output embeddings here.
+Freezing the output embeddings, even with a good embedding space, leads to terrible performance.
+In contrast, freezing input embeddings is fine if they are pretrained, and has a far smaller impact when they are random.</p>
+<p>Evaluating with rare words, the big picture is mostly the same, but pretraining has a bigger impact.
+One interesting difference is that the top five models all use pretrained input embeddings, with a large gap from there to the next results.
+At the same time, pretraining the output embeddings seems to have only a small impact (when holding all other variables fixed).
+Finally, the best results freeze the input embeddings.
+Our explanation is that embeddings become inconsistent when they aren&rsquo;t frozen.
+The vectors for words in the training set are moved but the ones seen only in pretraining stay where they are, leading to an inconsistent embedding space.</p>
+<p>The paper then goes through a series of experiments to explore this, varying data domain, similarity of pretraining data, and more.
+Here I&rsquo;m going to jump straight to the final results.
+The table below considers a dataset with 43 million in-domain tokens for pretraining and 7 million for LM training.
+The other models are the standard AWD-LSTM, an n-gram language model, and two version of GPT-2 (without finetuning):</p>
+<p><img src="http://www.jkk.name/img/post/pretraining-final.jpg" alt="Final results (for written form of table see bottom of page)"></p>
+<p>For word level prediction perplexity is reduced by 4.
+However, if we train and test with BPE there is no improvement (see the 
+<a href="https://arxiv.org/abs/1911.11423" target="_blank" rel="noopener">SHA-RNN paper</a> for some issues with comparing BPE and word evaluation).
+So if your application works with BPE this finding isn&rsquo;t useful, but for word-level modeling it probably is.</p>
+<p>A few notes about this work:</p>
+<ul>
+<li>A natural next step would be to explore ways to train the language model with more data.
+Modifying the AWD-LSTM code to support training sets larger than GPU memory could render pretraining unnecessary (though at the cost of much longer training).
+In some experiments (not in the paper), we found that when the pretraining set and training set were the same, pretraining didn&rsquo;t improve performance, but it did speed up training.</li>
+<li>Properties of evaluation datasets have shaped the direction of work on language modeling.
+It&rsquo;s important to think beyond the hyperparameters that are easy to vary (e.g., hidden vector dimensions) when adapting a model for a new scenario.</li>
+<li>Writing robust research code is hard.
+We tried getting several other models to run with our variations, but going beyond reproducing results to actually modifying code proved hard.
+Even for the AWD-LSTM, we failed to reproduce results except when we went back to one of the earliest releases.</li>
+<li>This paper was saved by author response.
+The initial reviews were 3.5, 2.5, 3.5 and based on the response and reviewer discussion the 2.5 went to a 4.
+The response contained answers to reviewer questions, including a bunch of statistics about the data that are now in the final paper.
+I have always been a fan of author response.
+It can lead to more informed acceptance decisions and more useful feedback to authors.
+To achieve that, both authors and reviewers need to engage with it though.
+In particular, reviewers need to give something of substance to be responded to and they need to carefully read and consider the response.</li>
+</ul>
+<h2 id="citation">Citation</h2>
+<p>
+<a href="http://www.jkk.name/pub/emnlp20lm.pdf" target="_blank" rel="noopener">Paper</a></p>
+<pre><code class="language-bibtex">@InProceedings{emnlp20lm,
+  title     = {Improving Low Compute Language Modeling with In-Domain Embedding Initialisation},
+  author    = {Charles Welch and Rada Mihalcea and Jonathan K. Kummerfeld},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
+  month     = {November},
+  year      = {2020},
+  url       = {http://www.jkk.name/pub/emnlp20lm.pdf},
+  abstract  = {Many NLP applications, such as biomedical data and technical support, have 10-100 million tokens of in-domain data and limited computational resources for learning from it. How should we train a language model in this scenario? Most language modeling research considers either a small dataset with a closed vocabulary (like the standard 1 million token Penn Treebank), or the whole web with byte-pair encoding. We show that for our target setting in English, initialising and freezing input embeddings using in-domain data can improve language model performance by providing a useful representation of rare words, and this pattern holds across several different domains. In the process, we show that the standard convention of tying input and output embeddings does not improve perplexity when initializing with embeddings trained on in-domain data.},
+}
+</code></pre>
+<h2 id="tables-in-written-form">Tables in written form</h2>
+<h3 id="table-with-training-variations">Table with training variations</h3>
+<p>Each section is presented separately below, with the model described using five words followed by the result on the standard data and the result on the data with rare words.</p>
+<p>First section:</p>
+<ul>
+<li>tied   frozen   dice  frozen   dice, 680, 1120</li>
+<li>untied frozen   dice  frozen   dice, 680, 1120</li>
+<li>untied unfrozen dice  frozen   dice, 680, 431</li>
+<li>untied unfrozen train frozen   dice, 220, 372</li>
+<li>untied frozen   train frozen   dice, 218, 360</li>
+</ul>
+<p>Second section:</p>
+<ul>
+<li>untied frozen   dice  frozen   train, 121, 202</li>
+<li>untied unfrozen dice  frozen   train, 95.0, 170</li>
+<li>untied unfrozen train frozen   train, 91.3, 147</li>
+<li>tied   frozen   train frozen   train, 90.7, 136</li>
+<li>untied frozen   train frozen   train, 90.7, 136</li>
+</ul>
+<p>Third section:</p>
+<ul>
+<li>untied frozen   dice  unfrozen dice, 82.2, 143</li>
+<li>untied frozen   dice  unfrozen train, 81.4, 142</li>
+</ul>
+<p>Fourth section:</p>
+<ul>
+<li>untied unfrozen dice  unfrozen dice, 65.3, 120</li>
+<li>untied unfrozen dice  unfrozen train, 64.1, 113</li>
+<li>untied unfrozen train unfrozen dice, 62.5, 105</li>
+<li>untied unfrozen train unfrozen train, 61.7, 98.5</li>
+<li>untied frozen   train unfrozen train, 61.6, 97.1</li>
+<li>tied   unfrozen dice  unfrozen dice, 61.3, 112</li>
+<li>untied frozen   train unfrozen dice, 61.1, 98.1</li>
+<li>tied   unfrozen train unfrozen train, 59.8, 98.7</li>
+</ul>
+<h3 id="final-results-table">Final results table</h3>
+<p>Models with word level evaluation, giving development results then test results:</p>
+<ul>
+<li>N-Gram, 92.3, 95.0</li>
+<li>Baseline AWD-LSTM, 52.8, 53.5</li>
+<li>Our approach, 49.0, 49.4</li>
+</ul>
+<p>Models with BPE evaluation:</p>
+<ul>
+<li>N-Gram, 56.7, 55.3</li>
+<li>GPT-2 (112m), 46.4, 43.8</li>
+<li>Baseline AWD-LSTM, 37.8, 36.7</li>
+<li>Our approach, 38.3, 37.2</li>
+<li>GPT-2 (774m), 32.5, 33.7</li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Dice Icon by Andrew Doane from the Noun Project.
+Fire and Snowflake Icons by Freepik from <a href="http://www.flaticon.com">www.flaticon.com</a>.</p>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/paper/">paper</a>
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/language-model/">language-model</a>
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/word-embeddings/">word-embeddings</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/post/2020-09-29_pretraininglm/&amp;text=Improving%20Low%20Compute%20Language%20Modeling%20with%20In-Domain%20Embedding%20Initialisation%20%28Welch,%20Mihalcea,%20and%20Kummerfeld,%20EMNLP%202020%29" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/post/2020-09-29_pretraininglm/&amp;t=Improving%20Low%20Compute%20Language%20Modeling%20with%20In-Domain%20Embedding%20Initialisation%20%28Welch,%20Mihalcea,%20and%20Kummerfeld,%20EMNLP%202020%29" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Improving%20Low%20Compute%20Language%20Modeling%20with%20In-Domain%20Embedding%20Initialisation%20%28Welch,%20Mihalcea,%20and%20Kummerfeld,%20EMNLP%202020%29&amp;body=http://www.jkk.name/post/2020-09-29_pretraininglm/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/post/2020-09-29_pretraininglm/&amp;title=Improving%20Low%20Compute%20Language%20Modeling%20with%20In-Domain%20Embedding%20Initialisation%20%28Welch,%20Mihalcea,%20and%20Kummerfeld,%20EMNLP%202020%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Improving%20Low%20Compute%20Language%20Modeling%20with%20In-Domain%20Embedding%20Initialisation%20%28Welch,%20Mihalcea,%20and%20Kummerfeld,%20EMNLP%202020%29%20http://www.jkk.name/post/2020-09-29_pretraininglm/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/post/2020-09-29_pretraininglm/&amp;title=Improving%20Low%20Compute%20Language%20Modeling%20with%20In-Domain%20Embedding%20Initialisation%20%28Welch,%20Mihalcea,%20and%20Kummerfeld,%20EMNLP%202020%29" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="http://www.jkk.name/author/jonathan-k.-kummerfeld/avatar_hu15b23b12852705f749d7e78ea4634ce8_564306_270x270_fill_q90_lanczos_center.jpg" alt="Jonathan K. Kummerfeld">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="http://www.jkk.name/">Jonathan K. Kummerfeld</a></h5>
+        <h6 class="card-subtitle">Postdoctoral Research Fellow</h6>
+        <p class="card-text">Postdoc working on Natural Language Processing and Crowdsourcing.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:jkummerf@umich.edu" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//scholar.google.com/citations?user=OsoNG9AAAAAJ" >
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//github.com/jkkummerfeld" >
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//twitter.com/jkkummerfeld" >
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//medium.com/@jkkummerfeld" >
+        <i class="fab fa-medium"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//arxiv.org/a/kummerfeld_j_1" >
+        <i class="ai ai-arxiv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//orcid.org/0000-0001-5030-3016" >
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//linkedin.com/in/jkkummerfeld/" >
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//dblp.uni-trier.de/pers/hd/k/Kummerfeld:Jonathan_K=" >
+        <i class="ai ai-dblp"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//semanticscholar.org/author/Jonathan-K.-Kummerfeld/1727211" >
+        <i class="ai ai-semantic-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="//aclweb.org/anthology/people/j/jonathan-k-kummerfeld/" >
+        <i class="icon icon-acl-logo"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://www.jkk.name/doc/jonathan-kummerfeld-cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+<section id="comments">
+  
+    
+<div id="disqus_thread"></div>
+<script>
+  let disqus_config = function () {
+    
+    
+    
+  };
+  (function() {
+    if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+      document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+      return;
+    }
+    var d = document, s = d.createElement('script'); s.async = true;
+    s.src = 'https://' + "www-jkk-name" + '.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+</section>
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="http://www.jkk.name/post/2018-04-16_lm_analysis/">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2017-12-07_rarewordvectors/">High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2017-10-30_neuralsequence/">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2020-09-25_crowdqasrl/">Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</a></li>
+      
+      <li><a href="http://www.jkk.name/post/2020-09-17_activelearningbrittle/">Practical Obstacles to Deploying Active Learning (Lowell, et al., EMNLP 2019)</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = false;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks",
+        'slides' : "Slides"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://www-jkk-name.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="http://www.jkk.name/js/academic.min.66c553246b0f279a03be6e5597f72b52.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 Jonathan K. Kummerfeld
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+
+    Published with a <a href="https://github.com/jkkummerfeld/hugo-academic" target="_blank">fork</a> of the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic Website Builder</a>.
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
