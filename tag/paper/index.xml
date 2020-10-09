@@ -5,12 +5,58 @@
     <link>http://www.jkk.name/tag/paper/</link>
       <atom:link href="http://www.jkk.name/tag/paper/index.xml" rel="self" type="application/rss+xml" />
     <description>paper</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 29 Sep 2020 13:38:24 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 04 Oct 2020 15:10:12 -0500</lastBuildDate>
     <image>
       <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>paper</title>
       <link>http://www.jkk.name/tag/paper/</link>
     </image>
+    
+    <item>
+      <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels (Jiang, et al., Findings of EMNLP 2020)</title>
+      <link>http://www.jkk.name/post/2020-10-04_crowdsrl/</link>
+      <pubDate>Sun, 04 Oct 2020 15:10:12 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
+      <description>&lt;p&gt;My 
+&lt;a href=&#34;http://jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
+This post covers a paper I contributed to that also considers crowdsourcing SRL, but collects the more traditional form of annotation used in resources like Propbank.&lt;/p&gt;
+&lt;p&gt;The core new idea is a filtering process in which workers identify &lt;em&gt;incorrect&lt;/em&gt; answers for a task.
+This is the first step of a three stage process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Five workers iteratively filter the options for a label (either for a predicate or argument) until there are only three.&lt;/li&gt;
+&lt;li&gt;Five workers select the correct answer.&lt;/li&gt;
+&lt;li&gt;If the workers disagree or any of them indicates uncertainty, ask an expert to annotate the example.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To make this work, we use an automatic system for identifying spans for predicates and arguments.
+This is better than going straight to the second step because it makes the set of labels less overwhelming, focusing effort on the subtle distinctions between the options.&lt;/p&gt;
+&lt;p&gt;This mixture of crowd and expert effort achieves high accuracy (94%) while only having 12% of examples annotated by experts.
+The cost is about 52 cents per label for crowd work plus the cost of the expert.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a little tricky to compare the cost with prior work.
+Comparing to other work on SRL, we spend more on the crowd, but less on experts.
+Whether that trade-off is worth it will depend on the cost of experts.
+In practise, our experts are often members of the research team and so their time is a stronger constraint than the crowdsourcing budget.
+In that case, our approach comes out ahead as we can get more data annotated per unit of expert effort (by a factor of four).
+The QA-SRL work is quite a bit cheaper, at 54 cents per predicate with 2.9 roles on average (which would be ~$2 + expert effort for our approach), but the type of annotations collected are quite different, with ours providing labels from the sense inventory in Propbank.&lt;/p&gt;
+&lt;p&gt;I see a range of interesting potential improvements for future work.
+First, bringing in methods of worker training in order to improve their accuracy and so reduce the need for duplicate effort.
+Second, combining with ideas from other work, such as having a model deciding whether examples are easy or hard and changing how they are processed accordingly, or using QA-SRL annotation to inform the process.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp-findings20srl,
+  title     = {A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels},
+  author    = {Youxuan Jiang and Huaiyu Zhu and Jonathan K. Kummerfeld and Yunyao Li and Walter Lasecki},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
+  shortvenue = {Findings of EMNLP},
+  month     = {November},
+  year      = {2020},
+  location  = {Online},
+  url       = {http://www.jkk.name/pub/emnlp-findings20srl.pdf},
+  abstract  = {Resources for Semantic Role Labeling (SRL) are typically annotated by experts at great expense. Prior attempts to develop crowdsourcing methods have either had low accuracy or required substantial expert annotation. We propose a new multi-stage crowd workflow that substantially reduces expert involvement without sacrificing accuracy. In particular, we introduce a unique filter stage based on the key observation that crowd workers are able to almost perfectly filter out incorrect options for labels. Our three-stage workflow produces annotations with 95\% accuracy for predicate labels and 93\% for argument labels, which is comparable to expert agreement. Compared to prior work on crowdsourcing for SRL, we decrease expert effort by 4x, from 56\% to 14\% of cases. Our approach enables more scalable annotation of SRL, and could enable annotation of NLP tasks that have previously been considered too complex to effectively crowdsource.},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)</title>
