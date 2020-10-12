@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.jkk.name/post/2020-10-10_demographicembeddings/</loc>
+    <lastmod>2020-10-10T20:25:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/</loc>
+    <lastmod>2020-10-10T20:25:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/language-model/</loc>
+    <lastmod>2020-10-10T20:25:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/paper/</loc>
+    <lastmod>2020-10-10T20:25:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/post/</loc>
+    <lastmod>2020-10-10T20:25:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tags/</loc>
+    <lastmod>2020-10-10T20:25:11-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.jkk.name/tag/word-embeddings/</loc>
+    <lastmod>2020-10-10T20:25:11-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.jkk.name/post/2020-10-04_crowdsrl/</loc>
     <lastmod>2020-10-04T15:10:12-05:00</lastmod>
   </url>
@@ -18,27 +53,7 @@
   </url>
   
   <url>
-    <loc>http://www.jkk.name/</loc>
-    <lastmod>2020-10-04T15:10:12-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/paper/</loc>
-    <lastmod>2020-10-04T15:10:12-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/post/</loc>
-    <lastmod>2020-10-04T15:10:12-05:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.jkk.name/tag/srl/</loc>
-    <lastmod>2020-10-04T15:10:12-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tags/</loc>
     <lastmod>2020-10-04T15:10:12-05:00</lastmod>
   </url>
   
@@ -119,16 +134,6 @@
   
   <url>
     <loc>http://www.jkk.name/post/2020-09-29_pretraininglm/</loc>
-    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/language-model/</loc>
-    <lastmod>2020-09-29T13:38:24-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.jkk.name/tag/word-embeddings/</loc>
     <lastmod>2020-09-29T13:38:24-05:00</lastmod>
   </url>
   
