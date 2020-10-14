@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anthony Zheng | Jonathan K. Kummerfeld</title>
+    <link>http://www.jkk.name/author/anthony-zheng/</link>
+      <atom:link href="http://www.jkk.name/author/anthony-zheng/index.xml" rel="self" type="application/rss+xml" />
+    <description>Anthony Zheng</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 01 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <title>Anthony Zheng</title>
+      <link>http://www.jkk.name/author/anthony-zheng/</link>
+    </image>
+    
+    <item>
+      <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness</title>
+      <link>http://www.jkk.name/publication/emnlp20taboo/</link>
+      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp20taboo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
