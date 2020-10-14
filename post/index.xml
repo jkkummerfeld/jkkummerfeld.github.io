@@ -85,7 +85,7 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
 &lt;a href=&#34;http://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20taboo,
   title     = {Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness},
-  author    = {Stefan Larson amd Anthony Zheng and Anish Mahendran and Rishi Tekriwal and Adrian Cheung and Eric Guldan and Kevin Leach and Jonathan K. Kummerfeld},
+  author    = {Stefan Larson and Anthony Zheng and Anish Mahendran and Rishi Tekriwal and Adrian Cheung and Eric Guldan and Kevin Leach and Jonathan K. Kummerfeld},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   month     = {November},
   year      = {2020},
