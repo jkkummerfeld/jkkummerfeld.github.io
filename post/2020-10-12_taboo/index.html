@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="By dividing a task up among multiple annotators carefully we can achieve high-quality real-time annotation of data, in this case transcription of audio.">
+  <meta name="description" content="When we crowdsource data for tasks like SRL and sentiment analysis we only care about accuracy.  For tasks where workers write new content, such as paraphrasing and creating questions, we also care about data diversity.  If our data is not diverse then models trained on it will not be robust in the real world.  The core idea of this paper is to encourage creativity by constraining workers.">
 
   
-  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/post/2017-10-31_realtimecaptioning/">
+  <link rel="alternate" hreflang="en-us" href="http://www.jkk.name/post/2020-10-12_taboo/">
 
   
 
@@ -272,7 +272,7 @@
   <link rel="icon" type="image/png" href="http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="http://www.jkk.name/post/2017-10-31_realtimecaptioning/">
+  <link rel="canonical" href="http://www.jkk.name/post/2020-10-12_taboo/">
 
   
   
@@ -291,15 +291,15 @@
   <meta property="twitter:creator" content="@jkkummerfeld">
   
   <meta property="og:site_name" content="Jonathan K. Kummerfeld">
-  <meta property="og:url" content="http://www.jkk.name/post/2017-10-31_realtimecaptioning/">
-  <meta property="og:title" content="Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012) | Jonathan K. Kummerfeld">
-  <meta property="og:description" content="By dividing a task up among multiple annotators carefully we can achieve high-quality real-time annotation of data, in this case transcription of audio."><meta property="og:image" content="http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="http://www.jkk.name/post/2020-10-12_taboo/">
+  <meta property="og:title" content="Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020) | Jonathan K. Kummerfeld">
+  <meta property="og:description" content="When we crowdsource data for tasks like SRL and sentiment analysis we only care about accuracy.  For tasks where workers write new content, such as paraphrasing and creating questions, we also care about data diversity.  If our data is not diverse then models trained on it will not be robust in the real world.  The core idea of this paper is to encourage creativity by constraining workers."><meta property="og:image" content="http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2017-10-31T13:23:13-04:00">
+      <meta property="article:published_time" content="2020-10-12T10:28:13-05:00">
     
-    <meta property="article:modified_time" content="2017-10-31T13:23:13-04:00">
+    <meta property="article:modified_time" content="2020-10-12T10:28:13-05:00">
   
 
   
@@ -323,12 +323,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://www.jkk.name/post/2017-10-31_realtimecaptioning/"
+    "@id": "http://www.jkk.name/post/2020-10-12_taboo/"
   },
-  "headline": "Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012)",
+  "headline": "Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)",
   
-  "datePublished": "2017-10-31T13:23:13-04:00",
-  "dateModified": "2017-10-31T13:23:13-04:00",
+  "datePublished": "2020-10-12T10:28:13-05:00",
+  "dateModified": "2020-10-12T10:28:13-05:00",
   
   "author": {
     "@type": "Person",
@@ -343,7 +343,7 @@
       "url": "http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "By dividing a task up among multiple annotators carefully we can achieve high-quality real-time annotation of data, in this case transcription of audio."
+  "description": "When we crowdsource data for tasks like SRL and sentiment analysis we only care about accuracy.  For tasks where workers write new content, such as paraphrasing and creating questions, we also care about data diversity.  If our data is not diverse then models trained on it will not be robust in the real world.  The core idea of this paper is to encourage creativity by constraining workers."
 }
 </script>
 
@@ -361,7 +361,7 @@
 
 
 
-  <title>Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012) | Jonathan K. Kummerfeld</title>
+  <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020) | Jonathan K. Kummerfeld</title>
 
 </head>
 
@@ -655,7 +655,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012)</h1>
+  <h1>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)</h1>
 
   
 
@@ -674,7 +674,7 @@
     
       
     
-    Oct 31, 2017
+    Oct 12, 2020
   </span>
   
 
@@ -686,7 +686,7 @@
   
   
   <span class="middot-divider"></span>
-  <a href="http://www.jkk.name/post/2017-10-31_realtimecaptioning/#disqus_thread"></a>
+  <a href="http://www.jkk.name/post/2020-10-12_taboo/#disqus_thread"></a>
   
 
   
@@ -717,43 +717,80 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>For any given task, automatic systems are fast, while annotation is accurate.
-This work is about bridging that gap to provide a way for a team of annotators to produce real-time high quality labels.
-The specific application is speech transcription, in which automatic systems are not accurate, while average people are slow (experts can transcribe in real time, but are very expensive).</p>
-<p>The solution is to carefully break up the task and combine annotations back together.
-To get it to work well there are a range of subtle design decisions:</p>
+      <p>When we crowdsource data for tasks like SRL and sentiment analysis we only care about accuracy.
+For tasks where workers write new content, such as paraphrasing and creating questions, we also care about data diversity.
+If our data is not diverse then models trained on it will not be robust in the real world.
+The core idea of this paper is to encourage creativity by constraining workers.</p>
+<p>We use three steps:</p>
+<ol>
+<li>Collect some data.</li>
+<li>Create a taboo list of words / phrases based on the data collected.</li>
+<li>Return to step 1, but tell workers they can&rsquo;t use things in the taboo list.</li>
+</ol>
+<p>We explored this idea for task-oriented dialogue.
+We identified taboo words using an SVM with a bag-of-words to identify common words associated with specific intents or slot values.
+Depending on the taboo word, we got quite different paraphrases.
+For example, for the sentence &ldquo;What is the capital of Florida?&rdquo; we collected paraphrases with various taboo words:</p>
+<table>
+<thead>
+<tr>
+<th>Taboo Word</th>
+<th>Paraphrases</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>what city is the state capital of florida</td>
+</tr>
+<tr>
+<td>florida</td>
+<td>what is the capital of the sunshine state</td>
+</tr>
+<tr>
+<td>capital</td>
+<td>where is the seat of government in florida</td>
+</tr>
+<tr>
+<td>what</td>
+<td>tell me the name of florida&rsquo;s capital</td>
+</tr>
+</tbody>
+</table>
+<p>These examples show interesting variations, but to see if the variations are significant we tried collecting new test sets for five intent classification datasets and four slot filling datasets.
+With just two taboo words, a BERT based model trained on the original dataset did considerably worse on our new data.
+The drop varied from 2 to 33 points, with a median of 9.
+This indicates that we are capturing ways of expressing these intents that are not well covered by the original data.</p>
+<p>Addressing this issue is simple - train on data collected with our method!
+Interestingly, this approach is complementary to the outlier-based approach from 
+<a href="http://jkk.name/publication/naacl19outliers/" target="_blank" rel="noopener">our NAACL 2019 paper</a>.
+Examples collected using one approach are hard for models trained on data from the other.
+Fortunately, training with data from a mix of the two leads to strong results on both.</p>
+<p>I&rsquo;m particularly excited about this work because the general idea could be applied in so many ways:</p>
 <ul>
-<li>People hear the entire audio stream, but with their section at normal volume and the rest quieter. This allows them to focus their effort while still understanding the context.</li>
-<li>The alignment process combines annotations with guidance from a language model and a model of typos based on keyboard layout.</li>
-<li>Words are locked in shortly after being typed, to encourage workers to go on rather than revising their own errors.</li>
+<li>Change the task.</li>
+<li>Vary the type of taboo item (e.g. phrases instead of words).</li>
+<li>Try other ways of selecting taboo items.</li>
+<li>Use a different mapping from taboo items to tasks.</li>
 </ul>
-<p>Follow up work added several more ideas to improve performance:</p>
-<ul>
-<li>Time warping, slowing down to half speed for their section, then going to 1.5x for the rest.</li>
-<li>Use ASR as well, either as another worker (with very uncorrelated errors), or as a starting point for human editing (or vice versa).</li>
-<li>Use A* search rather than a greedy algorithm for the alignment.</li>
-</ul>
-<p>Performance does not reach the level of a professional, but is far better than ASR.
-From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lower than the professional.</p>
+<p>In fact, more specific versions of this idea have already been used.
+
+<a href="https://dl.acm.org/doi/10.1145/985692.985733" target="_blank" rel="noopener">Luis von Ahn&rsquo;s ESP game</a> for image captioning used a taboo list.
+Each image had a list of complete labels previously assigned to the image.
+New labels could not match an existing label.
+That work predates this paper by 16 years, but hasn&rsquo;t had much traction in the NLP community, possibly because of the limitation of requiring complete matches on labels (making it impractical for sentences or even phrases).
+I&rsquo;m hopeful that our more general version will be useful in a range of crowdsourcing efforts.</p>
 <h2 id="citation">Citation</h2>
 <p>
-<a href="http://doi.acm.org/10.1145/2380116.2380122" target="_blank" rel="noopener">Paper</a></p>
-<pre><code class="language-bibtex">@inproceedings{Lasecki:2012:RCG:2380116.2380122,
- author = {Lasecki, Walter and Miller, Christopher and Sadilek, Adam and Abumoussa, Andrew and Borrello, Donato and Kushalnagar, Raja and Bigham, Jeffrey},
- title = {Real-time Captioning by Groups of Non-experts},
- booktitle = {Proceedings of the 25th Annual ACM Symposium on User Interface Software and Technology},
- series = {UIST '12},
- year = {2012},
- isbn = {978-1-4503-1580-7},
- location = {Cambridge, Massachusetts, USA},
- pages = {23--34},
- numpages = {12},
- url = {http://doi.acm.org/10.1145/2380116.2380122},
- doi = {10.1145/2380116.2380122},
- acmid = {2380122},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {captioning, crowdsourcing, deaf, hard of hearing, real-time, text alignment, transcription},
+<a href="http://www.jkk.name/pub/emnlp20taboo.pdf" target="_blank" rel="noopener">Paper</a></p>
+<pre><code class="language-bibtex">@InProceedings{emnlp20taboo,
+  title     = {Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness},
+  author    = {Stefan Larson amd Anthony Zheng and Anish Mahendran and Rishi Tekriwal and Adrian Cheung and Eric Guldan and Kevin Leach and Jonathan K. Kummerfeld},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
+  month     = {November},
+  year      = {2020},
+  location  = {Online},
+  url       = {http://www.jkk.name/pub/emnlp20taboo.pdf},
 }
 </code></pre>
 
@@ -768,9 +805,9 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="http://www.jkk.name/tag/paper/">paper</a>
-  
   <a class="badge badge-light" href="http://www.jkk.name/tag/crowdsourcing/">crowdsourcing</a>
+  
+  <a class="badge badge-light" href="http://www.jkk.name/tag/dialogue/">dialogue</a>
   
 </div>
 
@@ -787,7 +824,7 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/post/2017-10-31_realtimecaptioning/&amp;text=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.,%202012%29" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=http://www.jkk.name/post/2020-10-12_taboo/&amp;text=Iterative%20Feature%20Mining%20for%20Constraint-Based%20Data%20Collection%20to%20Increase%20Data%20Diversity%20and%20Model%20Robustness%20%28Larson,%20et%20al.,%20EMNLP%202020%29" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -800,7 +837,7 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/post/2017-10-31_realtimecaptioning/&amp;t=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.,%202012%29" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=http://www.jkk.name/post/2020-10-12_taboo/&amp;t=Iterative%20Feature%20Mining%20for%20Constraint-Based%20Data%20Collection%20to%20Increase%20Data%20Diversity%20and%20Model%20Robustness%20%28Larson,%20et%20al.,%20EMNLP%202020%29" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -813,7 +850,7 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
       
       
       <li>
-        <a href="mailto:?subject=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.,%202012%29&amp;body=http://www.jkk.name/post/2017-10-31_realtimecaptioning/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Iterative%20Feature%20Mining%20for%20Constraint-Based%20Data%20Collection%20to%20Increase%20Data%20Diversity%20and%20Model%20Robustness%20%28Larson,%20et%20al.,%20EMNLP%202020%29&amp;body=http://www.jkk.name/post/2020-10-12_taboo/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -826,7 +863,7 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/post/2017-10-31_realtimecaptioning/&amp;title=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.,%202012%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=http://www.jkk.name/post/2020-10-12_taboo/&amp;title=Iterative%20Feature%20Mining%20for%20Constraint-Based%20Data%20Collection%20to%20Increase%20Data%20Diversity%20and%20Model%20Robustness%20%28Larson,%20et%20al.,%20EMNLP%202020%29" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -839,7 +876,7 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
       
       
       <li>
-        <a href="whatsapp://send?text=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.,%202012%29%20http://www.jkk.name/post/2017-10-31_realtimecaptioning/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=Iterative%20Feature%20Mining%20for%20Constraint-Based%20Data%20Collection%20to%20Increase%20Data%20Diversity%20and%20Model%20Robustness%20%28Larson,%20et%20al.,%20EMNLP%202020%29%20http://www.jkk.name/post/2020-10-12_taboo/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -852,7 +889,7 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/post/2017-10-31_realtimecaptioning/&amp;title=Real-time%20Captioning%20by%20Groups%20of%20Non-experts%20%28Lasecki%20et%20al.,%202012%29" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=http://www.jkk.name/post/2020-10-12_taboo/&amp;title=Iterative%20Feature%20Mining%20for%20Constraint-Based%20Data%20Collection%20to%20Increase%20Data%20Diversity%20and%20Model%20Robustness%20%28Larson,%20et%20al.,%20EMNLP%202020%29" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1139,15 +1176,15 @@ From the paper it&rsquo;s tricky to see a final cost, but it is certainly far lo
     <h3>Related</h3>
     <ul>
       
+      <li><a href="http://www.jkk.name/post/2018-01-28_crowdassistant/">Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</a></li>
+      
       <li><a href="http://www.jkk.name/post/2020-10-04_crowdsrl/">A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels (Jiang, et al., Findings of EMNLP 2020)</a></li>
       
       <li><a href="http://www.jkk.name/post/2020-09-25_crowdqasrl/">Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</a></li>
       
-      <li><a href="http://www.jkk.name/post/2018-01-28_crowdassistant/">Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</a></li>
+      <li><a href="http://www.jkk.name/post/2020-09-07_chartdialogs/">ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</a></li>
       
-      <li><a href="http://www.jkk.name/post/2017-10-19_mace/">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</a></li>
-      
-      <li><a href="http://www.jkk.name/post/2020-10-12_taboo/">Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)</a></li>
+      <li><a href="http://www.jkk.name/data/dstc7/">DSTC 7 track 1: Next Utterance Selection</a></li>
       
     </ul>
   </div>

@@ -5,12 +5,96 @@
     <link>http://www.jkk.name/tag/dialogue/</link>
       <atom:link href="http://www.jkk.name/tag/dialogue/index.xml" rel="self" type="application/rss+xml" />
     <description>dialogue</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 07 Sep 2020 14:41:34 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 12 Oct 2020 10:28:13 -0500</lastBuildDate>
     <image>
       <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>dialogue</title>
       <link>http://www.jkk.name/tag/dialogue/</link>
     </image>
+    
+    <item>
+      <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)</title>
+      <link>http://www.jkk.name/post/2020-10-12_taboo/</link>
+      <pubDate>Mon, 12 Oct 2020 10:28:13 -0500</pubDate>
+      <guid>http://www.jkk.name/post/2020-10-12_taboo/</guid>
+      <description>&lt;p&gt;When we crowdsource data for tasks like SRL and sentiment analysis we only care about accuracy.
+For tasks where workers write new content, such as paraphrasing and creating questions, we also care about data diversity.
+If our data is not diverse then models trained on it will not be robust in the real world.
+The core idea of this paper is to encourage creativity by constraining workers.&lt;/p&gt;
+&lt;p&gt;We use three steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Collect some data.&lt;/li&gt;
+&lt;li&gt;Create a taboo list of words / phrases based on the data collected.&lt;/li&gt;
+&lt;li&gt;Return to step 1, but tell workers they can&amp;rsquo;t use things in the taboo list.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We explored this idea for task-oriented dialogue.
+We identified taboo words using an SVM with a bag-of-words to identify common words associated with specific intents or slot values.
+Depending on the taboo word, we got quite different paraphrases.
+For example, for the sentence &amp;ldquo;What is the capital of Florida?&amp;rdquo; we collected paraphrases with various taboo words:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Taboo Word&lt;/th&gt;
+&lt;th&gt;Paraphrases&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;what city is the state capital of florida&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;florida&lt;/td&gt;
+&lt;td&gt;what is the capital of the sunshine state&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;capital&lt;/td&gt;
+&lt;td&gt;where is the seat of government in florida&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;what&lt;/td&gt;
+&lt;td&gt;tell me the name of florida&amp;rsquo;s capital&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;These examples show interesting variations, but to see if the variations are significant we tried collecting new test sets for five intent classification datasets and four slot filling datasets.
+With just two taboo words, a BERT based model trained on the original dataset did considerably worse on our new data.
+The drop varied from 2 to 33 points, with a median of 9.
+This indicates that we are capturing ways of expressing these intents that are not well covered by the original data.&lt;/p&gt;
+&lt;p&gt;Addressing this issue is simple - train on data collected with our method!
+Interestingly, this approach is complementary to the outlier-based approach from 
+&lt;a href=&#34;http://jkk.name/publication/naacl19outliers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;our NAACL 2019 paper&lt;/a&gt;.
+Examples collected using one approach are hard for models trained on data from the other.
+Fortunately, training with data from a mix of the two leads to strong results on both.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m particularly excited about this work because the general idea could be applied in so many ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Change the task.&lt;/li&gt;
+&lt;li&gt;Vary the type of taboo item (e.g. phrases instead of words).&lt;/li&gt;
+&lt;li&gt;Try other ways of selecting taboo items.&lt;/li&gt;
+&lt;li&gt;Use a different mapping from taboo items to tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In fact, more specific versions of this idea have already been used.
+
+&lt;a href=&#34;https://dl.acm.org/doi/10.1145/985692.985733&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luis von Ahn&amp;rsquo;s ESP game&lt;/a&gt; for image captioning used a taboo list.
+Each image had a list of complete labels previously assigned to the image.
+New labels could not match an existing label.
+That work predates this paper by 16 years, but hasn&amp;rsquo;t had much traction in the NLP community, possibly because of the limitation of requiring complete matches on labels (making it impractical for sentences or even phrases).
+I&amp;rsquo;m hopeful that our more general version will be useful in a range of crowdsourcing efforts.&lt;/p&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href=&#34;http://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20taboo,
+  title     = {Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness},
+  author    = {Stefan Larson amd Anthony Zheng and Anish Mahendran and Rishi Tekriwal and Adrian Cheung and Eric Guldan and Kevin Leach and Jonathan K. Kummerfeld},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
+  month     = {November},
+  year      = {2020},
+  location  = {Online},
+  url       = {http://www.jkk.name/pub/emnlp20taboo.pdf},
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</title>
