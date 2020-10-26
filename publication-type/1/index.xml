@@ -5,12 +5,44 @@
     <link>http://www.jkk.name/publication-type/1/</link>
       <atom:link href="http://www.jkk.name/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>1</title>
       <link>http://www.jkk.name/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Compositional Demographic Word Embeddings</title>
+      <link>http://www.jkk.name/publication/emnlp20demographics/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp20demographics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation</title>
+      <link>http://www.jkk.name/publication/emnlp20lm/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp20lm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness</title>
+      <link>http://www.jkk.name/publication/emnlp20taboo/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp20taboo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels</title>
+      <link>http://www.jkk.name/publication/emnlp-findings20srl/</link>
+      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp-findings20srl/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Exploring the Value of Personalized Word Embeddings</title>
@@ -33,38 +65,6 @@
       <link>http://www.jkk.name/publication/hcomp20fair/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
       <guid>http://www.jkk.name/publication/hcomp20fair/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels</title>
-      <link>http://www.jkk.name/publication/emnlp-findings20srl/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp-findings20srl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Compositional Demographic Word Embeddings</title>
-      <link>http://www.jkk.name/publication/emnlp20demographics/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20demographics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation</title>
-      <link>http://www.jkk.name/publication/emnlp20lm/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20lm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness</title>
-      <link>http://www.jkk.name/publication/emnlp20taboo/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20taboo/</guid>
       <description></description>
     </item>
     
@@ -117,18 +117,18 @@
     </item>
     
     <item>
-      <title>A Large-Scale Corpus for Conversation Disentanglement</title>
-      <link>http://www.jkk.name/publication/acl19disentangle/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
+      <title>DSTC7 Task 1: Noetic End-to-End Response Selection</title>
+      <link>http://www.jkk.name/publication/ws-acl-convai19dstc7/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-acl-convai19dstc7/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>DSTC7 Task 1: Noetic End-to-End Response Selection</title>
-      <link>http://www.jkk.name/publication/ws-acl-convai19dstc7/</link>
+      <title>A Large-Scale Corpus for Conversation Disentanglement</title>
+      <link>http://www.jkk.name/publication/acl19disentangle/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ws-acl-convai19dstc7/</guid>
+      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
       <description></description>
     </item>
     

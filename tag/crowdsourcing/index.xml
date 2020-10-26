@@ -85,7 +85,7 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
 &lt;a href=&#34;http://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20taboo,
   title     = {Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness},
-  author    = {Stefan Larson and Anthony Zheng and Anish Mahendran and Rishi Tekriwal and Adrian Cheung and Eric Guldan and Kevin Leach and Jonathan K. Kummerfeld},
+  author    = {Larson, Stefan and Zheng, Anthony and Mahendran, Anish and Tekriwal, Rishi and Cheung, Adrian and Guldan, Eric and Leach, Kevin and Kummerfeld, Jonathan K.},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   month     = {November},
   year      = {2020},
@@ -131,7 +131,7 @@ Second, combining with ideas from other work, such as having a model deciding wh
 &lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1314632048070594560&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My Tweet&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp-findings20srl,
   title     = {A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels},
-  author    = {Youxuan Jiang and Huaiyu Zhu and Jonathan K. Kummerfeld and Yunyao Li and Walter Lasecki},
+  author    = {Jiang, Youxuan and Zhu, Huaiyu and Kummerfeld, Jonathan K. and Li, Yunyao and Lasecki, Walter},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   shortvenue = {Findings of EMNLP},
   month     = {November},
@@ -297,7 +297,7 @@ However, rather than keeping it weekday-ly, I plan to do three times a week, at 
 &lt;a href=&#34;https://www.cs.cmu.edu/~tinghaoh/pdf/2018/2018_chi.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{blah,
   title = {Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time},
-  author = {Ting-Hao (Kenneth) Huang, Joseph Chee Chang, and Jeffrey P. Bigham},
+  author    = {Huang, Ting-Hao (Kenneth) and Chang, Joseph Chee and Bigham, Jeffrey P.},
   booktitle = {CHI},
   year = {2018},
   url = {https://www.cs.cmu.edu/~tinghaoh/pdf/2018/2018_chi.pdf},

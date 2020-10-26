@@ -49,7 +49,7 @@ For more detailed discussion of these and other issues see the &amp;ldquo;Limita
 &lt;a href=&#34;https://arxiv.org/pdf/2010.02986.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20demographics,
   title     = {Compositional Demographic Word Embeddings},
-  author    = {Charles Welch and Jonathan K. Kummerfeld and Ver{\&#39;o}nica P{\&#39;e}rez-Rosas and Rada Mihalcea},
+  author    = {Welch, Charles and Kummerfeld, Jonathan K. and P{\&#39;e}rez-Rosas, Ver{\&#39;o}nica and Mihalcea, Rada},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   month     = {November},
   year      = {2020},
@@ -125,7 +125,7 @@ In particular, reviewers need to give something of substance to be responded to 
 &lt;a href=&#34;http://www.jkk.name/pub/emnlp20lm.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20lm,
   title     = {Improving Low Compute Language Modeling with In-Domain Embedding Initialisation},
-  author    = {Charles Welch and Rada Mihalcea and Jonathan K. Kummerfeld},
+  author    = {Welch, Charles and Mihalcea, Rada and Kummerfeld, Jonathan K.},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   month     = {November},
   year      = {2020},

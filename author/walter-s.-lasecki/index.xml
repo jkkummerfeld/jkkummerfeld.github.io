@@ -21,6 +21,14 @@
     </item>
     
     <item>
+      <title>NOESIS II: Predicting Responses, Identifying Success, and Managing Complexity in Task-Oriented Dialogue</title>
+      <link>http://www.jkk.name/publication/ws-aaai-dstc20task2/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-aaai-dstc20task2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Eighth Dialog System Technology Challenge</title>
       <link>http://www.jkk.name/publication/ws-neurips-convai19dstc/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
@@ -37,18 +45,18 @@
     </item>
     
     <item>
-      <title>A Large-Scale Corpus for Conversation Disentanglement</title>
-      <link>http://www.jkk.name/publication/acl19disentangle/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
+      <title>DSTC7 Task 1: Noetic End-to-End Response Selection</title>
+      <link>http://www.jkk.name/publication/ws-acl-convai19dstc7/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/ws-acl-convai19dstc7/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>DSTC7 Task 1: Noetic End-to-End Response Selection</title>
-      <link>http://www.jkk.name/publication/ws-acl-convai19dstc7/</link>
+      <title>A Large-Scale Corpus for Conversation Disentanglement</title>
+      <link>http://www.jkk.name/publication/acl19disentangle/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ws-acl-convai19dstc7/</guid>
+      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
       <description></description>
     </item>
     

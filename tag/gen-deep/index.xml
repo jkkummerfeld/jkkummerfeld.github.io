@@ -41,7 +41,7 @@ If we restrict the test set to be novel queries (i.e. the model has to generalis
 &lt;p&gt;
 &lt;a href=&#34;https://arxiv.org/abs/1805.01445&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@Article{Weber:2018:GenDeep,
-   author = {Noah Weber, Leena Shekhar, Niranjan Balasubramanian},
+  author    = {Weber, Noah and Shekhar, Leena and Balasubramanian, Niranjan},
     title = {The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models},
   journal = {Workshop on New Forms of Generalization in Deep Learning and NLP (NAACL 2018)},
      year = {2018},

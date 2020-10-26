@@ -85,7 +85,7 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
 &lt;a href=&#34;http://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20taboo,
   title     = {Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness},
-  author    = {Stefan Larson and Anthony Zheng and Anish Mahendran and Rishi Tekriwal and Adrian Cheung and Eric Guldan and Kevin Leach and Jonathan K. Kummerfeld},
+  author    = {Larson, Stefan and Zheng, Anthony and Mahendran, Anish and Tekriwal, Rishi and Cheung, Adrian and Guldan, Eric and Leach, Kevin and Kummerfeld, Jonathan K.},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   month     = {November},
   year      = {2020},
@@ -133,7 +133,7 @@ For more detailed discussion of these and other issues see the &amp;ldquo;Limita
 &lt;a href=&#34;https://arxiv.org/pdf/2010.02986.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20demographics,
   title     = {Compositional Demographic Word Embeddings},
-  author    = {Charles Welch and Jonathan K. Kummerfeld and Ver{\&#39;o}nica P{\&#39;e}rez-Rosas and Rada Mihalcea},
+  author    = {Welch, Charles and Kummerfeld, Jonathan K. and P{\&#39;e}rez-Rosas, Ver{\&#39;o}nica and Mihalcea, Rada},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   month     = {November},
   year      = {2020},
@@ -180,7 +180,7 @@ Second, combining with ideas from other work, such as having a model deciding wh
 &lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1314632048070594560&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My Tweet&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp-findings20srl,
   title     = {A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels},
-  author    = {Youxuan Jiang and Huaiyu Zhu and Jonathan K. Kummerfeld and Yunyao Li and Walter Lasecki},
+  author    = {Jiang, Youxuan and Zhu, Huaiyu and Kummerfeld, Jonathan K. and Li, Yunyao and Lasecki, Walter},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   shortvenue = {Findings of EMNLP},
   month     = {November},
@@ -257,7 +257,7 @@ In particular, reviewers need to give something of substance to be responded to 
 &lt;a href=&#34;http://www.jkk.name/pub/emnlp20lm.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20lm,
   title     = {Improving Low Compute Language Modeling with In-Domain Embedding Initialisation},
-  author    = {Charles Welch and Rada Mihalcea and Jonathan K. Kummerfeld},
+  author    = {Welch, Charles and Mihalcea, Rada and Kummerfeld, Jonathan K.},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   month     = {November},
   year      = {2020},
@@ -769,7 +769,7 @@ However, I think a single bot playing against six skilled humans would almost de
 &lt;p&gt;
 &lt;a href=&#34;https://arxiv.org/abs/1909.02128&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{neurips19diplomacy,
-  author    = {Philip Paquette, Yuchen Lu, Steven Bocco, Max O. Smith, Satya Ortiz-Gagn{\&#39;e}, Jonathan K. Kummerfeld, Joelle Pineau, Satinder Singh, Aaron Courville},
+  author    = {Paquette, Philip and Lu, Yuchen and Bocco, Steven and Smith, Max O. and Ortiz-Gagn{\&#39;e}, Satya and Kummerfeld, Jonathan K. and Pineau, Joelle and Singh, Satinder and Courville, Aaron},
   title     = {No-Press Diplomacy: Modeling Multi-Agent Gameplay},
   booktitle = {Advances in Neural Information Processing Systems 32},
   year      = {2019},
@@ -852,7 +852,7 @@ Thank you!&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://github.com/jkkummerfeld/irc-disentanglement/raw/master/acl19irc.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{acl19disentangle,
-  author    = {Jonathan K. Kummerfeld and Sai R. Gouravajhala and Joseph Peper and Vignesh Athreya and Chulaka Gunasekara and Jatin Ganhotra and Siva Sankalp Patel and Lazaros Polymenakos and Walter S. Lasecki},
+  author    = {Kummerfeld, Jonathan K. and Gouravajhala, Sai R. and Peper, Joseph and Athreya, Vignesh and Gunasekara, Chulaka and Ganhotra, Jatin and Patel, Siva Sankalp and Polymenakos, Lazaros and Lasecki, Walter S.},
   title     = {A Large-Scale Corpus for Conversation Disentanglement},
   booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
   location  = {Florence, Italy},
@@ -997,7 +997,7 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://arxiv.org/abs/1808.09075&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Wu:2018:EMNLP,
-  author    = {Minghao Wu, Fei Liu and Trevor Cohn},
+  author    = {Wu, Minghao and Liu, Fei and Cohn, Trevor},
   title     = {Evaluating the Utility of Hand-crafted Features in Sequence Labelling},
   booktitle = {EMNLP},
   year      = {2018},
@@ -1037,7 +1037,7 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://arxiv.org/abs/1805.06556&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Joshi:2018:ACL,
-  author    = {Vidur Joshi, Matthew Peters, Mark Hopkins},
+  author    = {Joshi, Vidur and Peters, Matthew and Hopkins, Mark},
   title     = {Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples},
   booktitle = {ACL},
   year      = {2018},
@@ -1076,7 +1076,7 @@ If we restrict the test set to be novel queries (i.e. the model has to generalis
 &lt;p&gt;
 &lt;a href=&#34;https://arxiv.org/abs/1805.01445&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@Article{Weber:2018:GenDeep,
-   author = {Noah Weber, Leena Shekhar, Niranjan Balasubramanian},
+  author    = {Weber, Noah and Shekhar, Leena and Balasubramanian, Niranjan},
     title = {The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models},
   journal = {Workshop on New Forms of Generalization in Deep Learning and NLP (NAACL 2018)},
      year = {2018},
@@ -1244,7 +1244,7 @@ However, rather than keeping it weekday-ly, I plan to do three times a week, at 
 &lt;a href=&#34;https://www.cs.cmu.edu/~tinghaoh/pdf/2018/2018_chi.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{blah,
   title = {Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time},
-  author = {Ting-Hao (Kenneth) Huang, Joseph Chee Chang, and Jeffrey P. Bigham},
+  author    = {Huang, Ting-Hao (Kenneth) and Chang, Joseph Chee and Bigham, Jeffrey P.},
   booktitle = {CHI},
   year = {2018},
   url = {https://www.cs.cmu.edu/~tinghaoh/pdf/2018/2018_chi.pdf},
@@ -2196,7 +2196,7 @@ As a result, they can scale up to massive networks while still having reasonable
 &lt;a href=&#34;https://openreview.net/pdf?id=B1ckMDqlg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{45929,
 	title = {Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer},
-	author  = {Noam Shazeer and Azalia Mirhoseini and Krzysztof Maziarz and Andy Davis and Quoc Le and Geoffrey Hinton and Jeff Dean},
+  author    = {Shazeer, Noam and Mirhoseini, Azalia and Maziarz, Krzysztof and Davis, Andy and Le, Quoc and Hinton, Geoffrey and Dean, Jeff},
 	year  = {2017},
   booktitle = {ICLR},
 	URL = {https://openreview.net/pdf?id=B1ckMDqlg},
@@ -2493,7 +2493,7 @@ and
 &lt;a href=&#34;https://research.googleblog.com/2017/06/accelerating-deep-learning-research.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;about the library&lt;/a&gt;
 they released.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@article{arxiv:1706.03762,
-  author    = {Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin},
+  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
   title     = {Attention Is All You Need},
   journal   = {ArXiv},
   year      = {2017},
@@ -2946,7 +2946,7 @@ Many AI researchers have tried switching to 16 bit representations to save space
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Hill:MICRO:2017,
-  author = {Parker Hill, Animesh Jain, Mason Hill1, Babak Zamirai, Chang-Hong Hsu, Michael A. Laurenzano, Scott Mahlke, Lingjia Tang and Jason Mars},
+  author    = {Hill, Parker and Jain, Animesh and Hill1, Mason and Zamirai, Babak and Hsu, Chang-Hong and Laurenzano, Michael A. and Mahlke, Scott and Tang, Lingjia and Mars, Jason},
   title = {DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission},
   booktitle = {The 50th Annual IEEE/ACM International Symposium on Microarchitecture},
   year = {2017},

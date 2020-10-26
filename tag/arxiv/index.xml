@@ -230,7 +230,7 @@ and
 &lt;a href=&#34;https://research.googleblog.com/2017/06/accelerating-deep-learning-research.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;about the library&lt;/a&gt;
 they released.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@article{arxiv:1706.03762,
-  author    = {Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin},
+  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
   title     = {Attention Is All You Need},
   journal   = {ArXiv},
   year      = {2017},

@@ -42,7 +42,7 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://arxiv.org/abs/1805.06556&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Joshi:2018:ACL,
-  author    = {Vidur Joshi, Matthew Peters, Mark Hopkins},
+  author    = {Joshi, Vidur and Peters, Matthew and Hopkins, Mark},
   title     = {Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples},
   booktitle = {ACL},
   year      = {2018},

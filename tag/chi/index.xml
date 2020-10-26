@@ -32,7 +32,7 @@ However, rather than keeping it weekday-ly, I plan to do three times a week, at 
 &lt;a href=&#34;https://www.cs.cmu.edu/~tinghaoh/pdf/2018/2018_chi.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{blah,
   title = {Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time},
-  author = {Ting-Hao (Kenneth) Huang, Joseph Chee Chang, and Jeffrey P. Bigham},
+  author    = {Huang, Ting-Hao (Kenneth) and Chang, Joseph Chee and Bigham, Jeffrey P.},
   booktitle = {CHI},
   year = {2018},
   url = {https://www.cs.cmu.edu/~tinghaoh/pdf/2018/2018_chi.pdf},

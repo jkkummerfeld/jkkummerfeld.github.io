@@ -5,7 +5,7 @@
     <link>http://www.jkk.name/author/stefan-larson/</link>
       <atom:link href="http://www.jkk.name/author/stefan-larson/index.xml" rel="self" type="application/rss+xml" />
     <description>Stefan Larson</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Stefan Larson</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>Inconsistencies in Crowdsourced Slot-Filling Annotations: A Typology and Identification Methods</title>
-      <link>http://www.jkk.name/publication/coling20svp/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/coling20svp/</guid>
+      <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness</title>
+      <link>http://www.jkk.name/publication/emnlp20taboo/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/emnlp20taboo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness</title>
-      <link>http://www.jkk.name/publication/emnlp20taboo/</link>
-      <pubDate>Tue, 01 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20taboo/</guid>
+      <title>Inconsistencies in Crowdsourced Slot-Filling Annotations: A Typology and Identification Methods</title>
+      <link>http://www.jkk.name/publication/coling20svp/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>http://www.jkk.name/publication/coling20svp/</guid>
       <description></description>
     </item>
     

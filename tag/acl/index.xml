@@ -82,7 +82,7 @@ Thank you!&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://github.com/jkkummerfeld/irc-disentanglement/raw/master/acl19irc.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{acl19disentangle,
-  author    = {Jonathan K. Kummerfeld and Sai R. Gouravajhala and Joseph Peper and Vignesh Athreya and Chulaka Gunasekara and Jatin Ganhotra and Siva Sankalp Patel and Lazaros Polymenakos and Walter S. Lasecki},
+  author    = {Kummerfeld, Jonathan K. and Gouravajhala, Sai R. and Peper, Joseph and Athreya, Vignesh and Gunasekara, Chulaka and Ganhotra, Jatin and Patel, Siva Sankalp and Polymenakos, Lazaros and Lasecki, Walter S.},
   title     = {A Large-Scale Corpus for Conversation Disentanglement},
   booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
   location  = {Florence, Italy},

@@ -42,7 +42,7 @@ Many AI researchers have tried switching to 16 bit representations to save space
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Hill:MICRO:2017,
-  author = {Parker Hill, Animesh Jain, Mason Hill1, Babak Zamirai, Chang-Hong Hsu, Michael A. Laurenzano, Scott Mahlke, Lingjia Tang and Jason Mars},
+  author    = {Hill, Parker and Jain, Animesh and Hill1, Mason and Zamirai, Babak and Hsu, Chang-Hong and Laurenzano, Michael A. and Mahlke, Scott and Tang, Lingjia and Mars, Jason},
   title = {DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission},
   booktitle = {The 50th Annual IEEE/ACM International Symposium on Microarchitecture},
   year = {2017},

@@ -47,7 +47,7 @@ Second, combining with ideas from other work, such as having a model deciding wh
 &lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1314632048070594560&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My Tweet&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp-findings20srl,
   title     = {A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels},
-  author    = {Youxuan Jiang and Huaiyu Zhu and Jonathan K. Kummerfeld and Yunyao Li and Walter Lasecki},
+  author    = {Jiang, Youxuan and Zhu, Huaiyu and Kummerfeld, Jonathan K. and Li, Yunyao and Lasecki, Walter},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   shortvenue = {Findings of EMNLP},
   month     = {November},
