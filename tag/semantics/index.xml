@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>semantics | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/semantics/</link>
-      <atom:link href="http://www.jkk.name/tag/semantics/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/semantics/</link>
+      <atom:link href="https://www.jkk.name/tag/semantics/index.xml" rel="self" type="application/rss+xml" />
     <description>semantics</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 12 Jul 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>semantics</title>
-      <link>http://www.jkk.name/tag/semantics/</link>
+      <link>https://www.jkk.name/tag/semantics/</link>
     </image>
     
     <item>
       <title>Text to SQL Baseline</title>
-      <link>http://www.jkk.name/software/text2sql-baseline/</link>
+      <link>https://www.jkk.name/software/text2sql-baseline/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/software/text2sql-baseline/</guid>
+      <guid>https://www.jkk.name/software/text2sql-baseline/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Text to SQL datasets</title>
-      <link>http://www.jkk.name/data/text-to-sql/</link>
+      <link>https://www.jkk.name/data/text-to-sql/</link>
       <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/data/text-to-sql/</guid>
+      <guid>https://www.jkk.name/data/text-to-sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations (Wieting et al., 2017)</title>
-      <link>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</link>
+      <link>https://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</link>
       <pubDate>Wed, 31 Jan 2018 19:25:36 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</guid>
+      <guid>https://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</guid>
       <description>&lt;p&gt;It would be convenient to have a way to represent sentences in a vector space, similar to the way vectors are frequently used to represent input words for a task.
 Quite a few sentence embeddings methods have been proposed, but none have really caught on.
 Building on prior work by the same authors, the approach here is to define a neural network that maps a sentence to a vector, then train it with a loss function that measures similarity between the vectors for paraphrases.&lt;/p&gt;

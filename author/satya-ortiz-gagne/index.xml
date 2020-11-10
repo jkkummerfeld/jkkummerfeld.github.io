@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Satya Ortiz-Gagné | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/author/satya-ortiz-gagne/</link>
-      <atom:link href="http://www.jkk.name/author/satya-ortiz-gagne/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/author/satya-ortiz-gagne/</link>
+      <atom:link href="https://www.jkk.name/author/satya-ortiz-gagne/index.xml" rel="self" type="application/rss+xml" />
     <description>Satya Ortiz-Gagné</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Satya Ortiz-Gagné</title>
-      <link>http://www.jkk.name/author/satya-ortiz-gagne/</link>
+      <link>https://www.jkk.name/author/satya-ortiz-gagne/</link>
     </image>
     
     <item>
       <title>No-Press Diplomacy: Modeling Multi-Agent Gameplay</title>
-      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
+      <link>https://www.jkk.name/publication/neurips19diplomacy/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
+      <guid>https://www.jkk.name/publication/neurips19diplomacy/</guid>
       <description></description>
     </item>
     

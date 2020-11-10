@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>summarisation | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/summarisation/</link>
-      <atom:link href="http://www.jkk.name/tag/summarisation/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/summarisation/</link>
+      <atom:link href="https://www.jkk.name/tag/summarisation/index.xml" rel="self" type="application/rss+xml" />
     <description>summarisation</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 29 Nov 2017 19:14:05 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>summarisation</title>
-      <link>http://www.jkk.name/tag/summarisation/</link>
+      <link>https://www.jkk.name/tag/summarisation/</link>
     </image>
     
     <item>
       <title>Abstractive Document Summarization with a Graph-Based Attentional Neural Model (Tan et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-29_abstractivesummarisation/</link>
+      <link>https://www.jkk.name/post/2017-11-29_abstractivesummarisation/</link>
       <pubDate>Wed, 29 Nov 2017 19:14:05 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-29_abstractivesummarisation/</guid>
+      <guid>https://www.jkk.name/post/2017-11-29_abstractivesummarisation/</guid>
       <description>&lt;p&gt;Most effective summarisation systems are extractive, selecting the most important sentences in a document and sticking them together.
 Clearly that is not how people write summaries, but creating abstractive summaries means generating fluent language.
 At the same time, most datasets are based on news text, where the first few sentences are a strong baseline summary (by design, as journalists need to assume that the reader could stop at any point).

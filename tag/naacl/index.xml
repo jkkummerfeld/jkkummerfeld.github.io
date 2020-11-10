@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>naacl | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/naacl/</link>
-      <atom:link href="http://www.jkk.name/tag/naacl/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/naacl/</link>
+      <atom:link href="https://www.jkk.name/tag/naacl/index.xml" rel="self" type="application/rss+xml" />
     <description>naacl</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 19 Oct 2017 17:08:50 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>naacl</title>
-      <link>http://www.jkk.name/tag/naacl/</link>
+      <link>https://www.jkk.name/tag/naacl/</link>
     </image>
     
     <item>
       <title>Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</title>
-      <link>http://www.jkk.name/post/2017-10-19_mace/</link>
+      <link>https://www.jkk.name/post/2017-10-19_mace/</link>
       <pubDate>Thu, 19 Oct 2017 17:08:50 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-19_mace/</guid>
+      <guid>https://www.jkk.name/post/2017-10-19_mace/</guid>
       <description>&lt;p&gt;The standard way to get high quality annotations is to get labels from multiple people and take a majority vote.
 Getting multiple annotations costs more, and the quality of annotators can vary considerably (with spamming at one extreme).
 One way to avoid the quality issue is to restrict who can do the task (must have done X previous tasks with an accept rate of Y), but that limits the pool of available workers.
@@ -30,7 +30,7 @@ Another approach is to try to estimate the quality of annotator work using a sta
 &lt;p&gt;$A$ is observed, but $T$ and $S$ are not, so they use expectation maximization to get both model parameters and variable values.
 To deal with nonconvexity they use 100 random restarts, deciding which is best based on how well the model describes the data.
 Note - this model (and the code) was the basis of the error detection paper I 
-&lt;a href=&#34;http://www.jkk.name/post/2017-10-13_errordetection/&#34;&gt;wrote about&lt;/a&gt; recently.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/post/2017-10-13_errordetection/&#34;&gt;wrote about&lt;/a&gt; recently.&lt;/p&gt;
 &lt;p&gt;For predicting annotator quality the model is consistently effective across three datasets, though the Beta and Dirichlet priors are key for one (where annotator agreement was high on average).
 For determining the correct answer it is slightly better than majority vote, though the gains are small.
 The real advantage comes in deciding whether to discard data, where the choice of what to discard can be guided by the estimate of quality (this is what the error detection paper was doing).

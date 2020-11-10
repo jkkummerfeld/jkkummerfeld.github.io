@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>entity-linking | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/entity-linking/</link>
-      <atom:link href="http://www.jkk.name/tag/entity-linking/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/entity-linking/</link>
+      <atom:link href="https://www.jkk.name/tag/entity-linking/index.xml" rel="self" type="application/rss+xml" />
     <description>entity-linking</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 17 Oct 2017 20:33:58 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>entity-linking</title>
-      <link>http://www.jkk.name/tag/entity-linking/</link>
+      <link>https://www.jkk.name/tag/entity-linking/</link>
     </image>
     
     <item>
       <title>Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-17_nedisambiguation/</link>
+      <link>https://www.jkk.name/post/2017-10-17_nedisambiguation/</link>
       <pubDate>Tue, 17 Oct 2017 20:33:58 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-17_nedisambiguation/</guid>
+      <guid>https://www.jkk.name/post/2017-10-17_nedisambiguation/</guid>
       <description>&lt;p&gt;Several NLP tasks aim to identify information regarding entities, such as when two sections of text are referring to the same thing, or which thing out of a large set (e.g. things in Wikipedia) a piece of text is about.
 This paper focuses on a subset of entity linking, trying to determine which entity out of a set of candidates is the correct one (in a way a kind of reranker for entity linking).&lt;/p&gt;
 &lt;p&gt;The task is based on a really cool dataset from Google+UMass, which collected text that was hyperlinked to wikipedia articles.

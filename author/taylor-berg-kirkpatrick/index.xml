@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Taylor Berg-Kirkpatrick | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/author/taylor-berg-kirkpatrick/</link>
-      <atom:link href="http://www.jkk.name/author/taylor-berg-kirkpatrick/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/author/taylor-berg-kirkpatrick/</link>
+      <atom:link href="https://www.jkk.name/author/taylor-berg-kirkpatrick/index.xml" rel="self" type="application/rss+xml" />
     <description>Taylor Berg-Kirkpatrick</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 01 Sep 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Taylor Berg-Kirkpatrick</title>
-      <link>http://www.jkk.name/author/taylor-berg-kirkpatrick/</link>
+      <link>https://www.jkk.name/author/taylor-berg-kirkpatrick/</link>
     </image>
     
     <item>
       <title>Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation</title>
-      <link>http://www.jkk.name/publication/emnlp17forums/</link>
+      <link>https://www.jkk.name/publication/emnlp17forums/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp17forums/</guid>
+      <guid>https://www.jkk.name/publication/emnlp17forums/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools for Automated Analysis of Cybercriminal Markets</title>
-      <link>http://www.jkk.name/publication/www17forums/</link>
+      <link>https://www.jkk.name/publication/www17forums/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/www17forums/</guid>
+      <guid>https://www.jkk.name/publication/www17forums/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An Empirical Analysis of Optimization for Max-Margin NLP</title>
-      <link>http://www.jkk.name/publication/emnlp15learn/</link>
+      <link>https://www.jkk.name/publication/emnlp15learn/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp15learn/</guid>
+      <guid>https://www.jkk.name/publication/emnlp15learn/</guid>
       <description></description>
     </item>
     

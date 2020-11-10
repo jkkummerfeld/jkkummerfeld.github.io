@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>chi | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/chi/</link>
-      <atom:link href="http://www.jkk.name/tag/chi/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/chi/</link>
+      <atom:link href="https://www.jkk.name/tag/chi/index.xml" rel="self" type="application/rss+xml" />
     <description>chi</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 28 Jan 2018 16:01:20 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>chi</title>
-      <link>http://www.jkk.name/tag/chi/</link>
+      <link>https://www.jkk.name/tag/chi/</link>
     </image>
     
     <item>
       <title>Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-01-28_crowdassistant/</link>
+      <link>https://www.jkk.name/post/2018-01-28_crowdassistant/</link>
       <pubDate>Sun, 28 Jan 2018 16:01:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-01-28_crowdassistant/</guid>
+      <guid>https://www.jkk.name/post/2018-01-28_crowdassistant/</guid>
       <description>&lt;p&gt;There is a lot of interest in dialogue agents, but a lot of work sits at one of two extremes: either chit-chat agents that just chat, or task-oriented agents that aim to call a specific API for the user.
 This work is about trying to integrate a range of systems from both categories, to get something more general purpose as a result.&lt;/p&gt;
 &lt;p&gt;The core approach is a hybrid system that switches between different agents behind the scenes (an approach taken by a number of Alexa Prize teams).

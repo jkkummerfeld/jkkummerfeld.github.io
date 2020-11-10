@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lingjia Tang | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/author/lingjia-tang/</link>
-      <atom:link href="http://www.jkk.name/author/lingjia-tang/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/author/lingjia-tang/</link>
+      <atom:link href="https://www.jkk.name/author/lingjia-tang/index.xml" rel="self" type="application/rss+xml" />
     <description>Lingjia Tang</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 01 Nov 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Lingjia Tang</title>
-      <link>http://www.jkk.name/author/lingjia-tang/</link>
+      <link>https://www.jkk.name/author/lingjia-tang/</link>
     </image>
     
     <item>
       <title>An Evaluation for Intent Classification and Out-of-Scope Prediction</title>
-      <link>http://www.jkk.name/publication/emnlp19data/</link>
+      <link>https://www.jkk.name/publication/emnlp19data/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp19data/</guid>
+      <guid>https://www.jkk.name/publication/emnlp19data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Outlier Detection for Improved Data Quality and Diversity in Dialog Systems</title>
-      <link>http://www.jkk.name/publication/naacl19outliers/</link>
+      <link>https://www.jkk.name/publication/naacl19outliers/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/naacl19outliers/</guid>
+      <guid>https://www.jkk.name/publication/naacl19outliers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Collection for a Production Dialogue System: A Startup Perspective</title>
-      <link>http://www.jkk.name/publication/naacl18data/</link>
+      <link>https://www.jkk.name/publication/naacl18data/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/naacl18data/</guid>
+      <guid>https://www.jkk.name/publication/naacl18data/</guid>
       <description></description>
     </item>
     

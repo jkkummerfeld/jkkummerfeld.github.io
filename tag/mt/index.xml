@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mt | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/mt/</link>
-      <atom:link href="http://www.jkk.name/tag/mt/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/mt/</link>
+      <atom:link href="https://www.jkk.name/tag/mt/index.xml" rel="self" type="application/rss+xml" />
     <description>mt</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 11 Oct 2017 17:29:04 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>mt</title>
-      <link>http://www.jkk.name/tag/mt/</link>
+      <link>https://www.jkk.name/tag/mt/</link>
     </image>
     
     <item>
       <title>Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-11_multimt/</link>
+      <link>https://www.jkk.name/post/2017-10-11_multimt/</link>
       <pubDate>Wed, 11 Oct 2017 17:29:04 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-11_multimt/</guid>
+      <guid>https://www.jkk.name/post/2017-10-11_multimt/</guid>
       <description>&lt;p&gt;This paper is a detailed analysis of a surprisingly effective simple idea: train a machine translation system with sentence pairs from multiple languages, adjusting the input to have an extra token at the end that says what the target language is.
 To deal with class imbalance, data is oversampled to have all language pairs be equally represented (though even without that, it works fairly well).&lt;/p&gt;
 &lt;p&gt;The biggest advantage of this approach is that a single model can handle translation between many pairs, rather than needing $O(n^2)$ models for $n$ languages.

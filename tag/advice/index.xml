@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>advice | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/advice/</link>
-      <atom:link href="http://www.jkk.name/tag/advice/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/advice/</link>
+      <atom:link href="https://www.jkk.name/tag/advice/index.xml" rel="self" type="application/rss+xml" />
     <description>advice</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 26 Jan 2020 16:09:06 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>advice</title>
-      <link>http://www.jkk.name/tag/advice/</link>
+      <link>https://www.jkk.name/tag/advice/</link>
     </image>
     
     <item>
       <title>Paper Reading</title>
-      <link>http://www.jkk.name/post/paper-reading/</link>
+      <link>https://www.jkk.name/post/paper-reading/</link>
       <pubDate>Sun, 26 Jan 2020 16:09:06 -0500</pubDate>
-      <guid>http://www.jkk.name/post/paper-reading/</guid>
+      <guid>https://www.jkk.name/post/paper-reading/</guid>
       <description>&lt;p&gt;Keeping up with research is hard.
 I&amp;rsquo;ve previously made lists of papers I wanted to read, and then only gotten to a small fraction of them.
 Simply resolving to read more papers hasn&amp;rsquo;t worked for me.&lt;/p&gt;
@@ -86,9 +86,9 @@ with open(&#39;example.pdf&#39;, &#39;wb&#39;) as out:
     
     <item>
       <title>Approaching Conferences</title>
-      <link>http://www.jkk.name/post/2019-09-22_conferenceapproach/</link>
+      <link>https://www.jkk.name/post/2019-09-22_conferenceapproach/</link>
       <pubDate>Sun, 22 Sep 2019 10:49:35 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2019-09-22_conferenceapproach/</guid>
+      <guid>https://www.jkk.name/post/2019-09-22_conferenceapproach/</guid>
       <description>&lt;p&gt;Am I getting the most out of the time I put into conferences?
 This year NAACL and ACL ran mentoring programs to help newer members of the community and in the process of giving advice I started to question whether my own approach to conferences was effective.
 Most online advice is aimed at students attending for the first time.

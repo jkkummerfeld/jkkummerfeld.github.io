@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>rl | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/rl/</link>
-      <atom:link href="http://www.jkk.name/tag/rl/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/rl/</link>
+      <atom:link href="https://www.jkk.name/tag/rl/index.xml" rel="self" type="application/rss+xml" />
     <description>rl</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 23 Oct 2017 21:12:57 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>rl</title>
-      <link>http://www.jkk.name/tag/rl/</link>
+      <link>https://www.jkk.name/tag/rl/</link>
     </image>
     
     <item>
       <title>Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-23_alphagozero/</link>
+      <link>https://www.jkk.name/post/2017-10-23_alphagozero/</link>
       <pubDate>Mon, 23 Oct 2017 21:12:57 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-23_alphagozero/</guid>
+      <guid>https://www.jkk.name/post/2017-10-23_alphagozero/</guid>
       <description>&lt;p&gt;This paper is an extension of the original AlphaGo work on using reinforcement learning to build a Go-player.
 Interestingly, the changes have simplified the overall model, as well as enabling it to do even better than the previous model, but now without any supervised training.&lt;/p&gt;
 &lt;p&gt;One key change is that there is a single core neural network learning to represent the game state.

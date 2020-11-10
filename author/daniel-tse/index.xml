@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Daniel Tse | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/author/daniel-tse/</link>
-      <atom:link href="http://www.jkk.name/author/daniel-tse/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/author/daniel-tse/</link>
+      <atom:link href="https://www.jkk.name/author/daniel-tse/index.xml" rel="self" type="application/rss+xml" />
     <description>Daniel Tse</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 01 Aug 2013 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Daniel Tse</title>
-      <link>http://www.jkk.name/author/daniel-tse/</link>
+      <link>https://www.jkk.name/author/daniel-tse/</link>
     </image>
     
     <item>
       <title>An Empirical Examination of Challenges in Chinese Parsing</title>
-      <link>http://www.jkk.name/publication/acl13analysis/</link>
+      <link>https://www.jkk.name/publication/acl13analysis/</link>
       <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl13analysis/</guid>
+      <guid>https://www.jkk.name/publication/acl13analysis/</guid>
       <description></description>
     </item>
     

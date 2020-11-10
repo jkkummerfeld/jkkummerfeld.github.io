@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dialogue | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/dialogue/</link>
-      <atom:link href="http://www.jkk.name/tag/dialogue/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/dialogue/</link>
+      <atom:link href="https://www.jkk.name/tag/dialogue/index.xml" rel="self" type="application/rss+xml" />
     <description>dialogue</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 12 Oct 2020 10:28:13 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>dialogue</title>
-      <link>http://www.jkk.name/tag/dialogue/</link>
+      <link>https://www.jkk.name/tag/dialogue/</link>
     </image>
     
     <item>
       <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-10-12_taboo/</link>
+      <link>https://www.jkk.name/post/2020-10-12_taboo/</link>
       <pubDate>Mon, 12 Oct 2020 10:28:13 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-10-12_taboo/</guid>
+      <guid>https://www.jkk.name/post/2020-10-12_taboo/</guid>
       <description>&lt;p&gt;When we crowdsource data for tasks like SRL and sentiment analysis we only care about accuracy.
 For tasks where workers write new content, such as paraphrasing and creating questions, we also care about data diversity.
 If our data is not diverse then models trained on it will not be robust in the real world.
@@ -63,7 +63,7 @@ The drop varied from 2 to 33 points, with a median of 9.
 This indicates that we are capturing ways of expressing these intents that are not well covered by the original data.&lt;/p&gt;
 &lt;p&gt;Addressing this issue is simple - train on data collected with our method!
 Interestingly, this approach is complementary to the outlier-based approach from 
-&lt;a href=&#34;http://jkk.name/publication/naacl19outliers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;our NAACL 2019 paper&lt;/a&gt;.
+&lt;a href=&#34;https://www.jkk.name/publication/naacl19outliers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;our NAACL 2019 paper&lt;/a&gt;.
 Examples collected using one approach are hard for models trained on data from the other.
 Fortunately, training with data from a mix of the two leads to strong results on both.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m particularly excited about this work because the general idea could be applied in so many ways:&lt;/p&gt;
@@ -82,7 +82,7 @@ That work predates this paper by 16 years, but hasn&amp;rsquo;t had much tractio
 I&amp;rsquo;m hopeful that our more general version will be useful in a range of crowdsourcing efforts.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20taboo,
   title     = {Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness},
   author    = {Larson, Stefan and Zheng, Anthony and Mahendran, Anish and Tekriwal, Rishi and Cheung, Adrian and Guldan, Eric and Leach, Kevin and Kummerfeld, Jonathan K.},
@@ -90,7 +90,7 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
   month     = {November},
   year      = {2020},
   location  = {Online},
-  url       = {http://www.jkk.name/pub/emnlp20taboo.pdf},
+  url       = {https://www.jkk.name/pub/emnlp20taboo.pdf},
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -98,13 +98,13 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
     
     <item>
       <title>ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</title>
-      <link>http://www.jkk.name/post/2020-09-07_chartdialogs/</link>
+      <link>https://www.jkk.name/post/2020-09-07_chartdialogs/</link>
       <pubDate>Mon, 07 Sep 2020 14:41:34 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
+      <guid>https://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
       <description>&lt;p&gt;Natural language interfaces to computer systems are an exciting area with new workshops (
 &lt;a href=&#34;https://www.aclweb.org/anthology/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
 &lt;a href=&#34;https://intex-sempar.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IntEx-SemPar&lt;/a&gt; at EMNLP), a range of datasets (including my own work on 
-&lt;a href=&#34;http://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
+&lt;a href=&#34;https://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
 Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code.
 This paper considers an interesting application: interaction with data visualisation tools.&lt;/p&gt;
 &lt;p&gt;Using the full flexibility of these tools is a tall order, so this work focuses on commands to modify style parameters of a figure.
@@ -143,25 +143,25 @@ Arbitrary code generation would be a fantastic extension, though creating the da
     
     <item>
       <title>DSTC 7 track 1: Next Utterance Selection</title>
-      <link>http://www.jkk.name/data/dstc7/</link>
+      <link>https://www.jkk.name/data/dstc7/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/data/dstc7/</guid>
+      <guid>https://www.jkk.name/data/dstc7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DSTC 8 track 2: Next Utterance Selection</title>
-      <link>http://www.jkk.name/data/dstc8/</link>
+      <link>https://www.jkk.name/data/dstc8/</link>
       <pubDate>Tue, 23 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/data/dstc8/</guid>
+      <guid>https://www.jkk.name/data/dstc8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</title>
-      <link>http://www.jkk.name/post/2019-07-10_disentanglement/</link>
+      <link>https://www.jkk.name/post/2019-07-10_disentanglement/</link>
       <pubDate>Wed, 10 Jul 2019 11:19:06 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2019-07-10_disentanglement/</guid>
+      <guid>https://www.jkk.name/post/2019-07-10_disentanglement/</guid>
       <description>&lt;p&gt;This post is about my own paper to appear at ACL later this month.
 What is interesting about this paper will depend on your research interests, so that&amp;rsquo;s how I&amp;rsquo;ve broken down this blog post.&lt;/p&gt;
 &lt;p&gt;A few key points first:&lt;/p&gt;
@@ -181,7 +181,7 @@ In our case, the stream is a technical support channel for Ubuntu on Internet Re
 We annotated each message with which message(s) it was a response to.
 As far as we are aware, this is the first large-scale corpus with this kind of discourse structure in synchronous chat.
 Here is an example from the data, with annotations marked by edges and colours:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We don&amp;rsquo;t frame the paper as being about reply-structure though.
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
@@ -201,7 +201,7 @@ Many conversations are missing messages, and some have extra messages from other
 Unsurprisingly, our trained model does better, producing conversations that are a true prefix 81% of the time.
 We also noticed that their heuristic was incorrectly linking messages far apart in time.
 This is not tested by our evaluation set, so we constructed this figure, which shows the problem is quite common:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The purple results are based on the output of our model over the entire Ubuntu IRC logs.
 That output is the basis of 
 &lt;a href=&#34;https://github.com/dstc8-track2/NOESIS-II&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DSTC 8 Track 2&lt;/a&gt;.
@@ -244,9 +244,9 @@ Thank you!&lt;/p&gt;
     
     <item>
       <title>Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-01-28_crowdassistant/</link>
+      <link>https://www.jkk.name/post/2018-01-28_crowdassistant/</link>
       <pubDate>Sun, 28 Jan 2018 16:01:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-01-28_crowdassistant/</guid>
+      <guid>https://www.jkk.name/post/2018-01-28_crowdassistant/</guid>
       <description>&lt;p&gt;There is a lot of interest in dialogue agents, but a lot of work sits at one of two extremes: either chit-chat agents that just chat, or task-oriented agents that aim to call a specific API for the user.
 This work is about trying to integrate a range of systems from both categories, to get something more general purpose as a result.&lt;/p&gt;
 &lt;p&gt;The core approach is a hybrid system that switches between different agents behind the scenes (an approach taken by a number of Alexa Prize teams).
@@ -273,9 +273,9 @@ However, rather than keeping it weekday-ly, I plan to do three times a week, at 
     
     <item>
       <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-09_framesdataset/</link>
+      <link>https://www.jkk.name/post/2017-11-09_framesdataset/</link>
       <pubDate>Thu, 09 Nov 2017 19:47:08 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-09_framesdataset/</guid>
+      <guid>https://www.jkk.name/post/2017-11-09_framesdataset/</guid>
       <description>&lt;p&gt;Another paper about a dataset of dialogues, but this time with structure.
 Like the paper from yesterday, the aim is a dataset of task-oriented conversations, but with more complexity than prior work.
 The difference is that this work includes a structured representation of the state of the conversation: frames.&lt;/p&gt;
@@ -308,9 +308,9 @@ Evaluating on both could be a great way to show the flexibility of a dialogue sy
     
     <item>
       <title>Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-08_graphdialogue/</link>
+      <link>https://www.jkk.name/post/2017-11-08_graphdialogue/</link>
       <pubDate>Wed, 08 Nov 2017 18:46:04 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-08_graphdialogue/</guid>
+      <guid>https://www.jkk.name/post/2017-11-08_graphdialogue/</guid>
       <description>&lt;p&gt;Task-oriented dialogue systems are often focused on a very narrow task, to the point where the state can be described completely with a tuple (e.g. preferences for a restaurant).
 This paper sets up a more challenging task with more complex language use, while still having a specific goal and directly relevant structured information.
 They collected 11,000 dialogues, where two people have private lists of friends and are trying to identify which friend they have in common.
@@ -358,9 +358,9 @@ During generation, the LSTM uses attention over these vectors to inform the outp
     
     <item>
       <title>Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-03_discourserelations/</link>
+      <link>https://www.jkk.name/post/2017-11-03_discourserelations/</link>
       <pubDate>Fri, 03 Nov 2017 15:40:32 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-03_discourserelations/</guid>
+      <guid>https://www.jkk.name/post/2017-11-03_discourserelations/</guid>
       <description>&lt;p&gt;Automatically generating high quality meeting notes and summaries would be awesome, but involves solving many challenges.
 Here, they assume speech recognition is already done and we also know the structure over utterances indicating which previous utterance each is a response to.
 The task is to label each of those utterance-utterance pairs with a type (e.g. elaboration) and to select the key phrase of each utterance.&lt;/p&gt;

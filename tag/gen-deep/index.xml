@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gen-deep | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/gen-deep/</link>
-      <atom:link href="http://www.jkk.name/tag/gen-deep/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/gen-deep/</link>
+      <atom:link href="https://www.jkk.name/tag/gen-deep/index.xml" rel="self" type="application/rss+xml" />
     <description>gen-deep</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 08 May 2018 09:00:31 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>gen-deep</title>
-      <link>http://www.jkk.name/tag/gen-deep/</link>
+      <link>https://www.jkk.name/tag/gen-deep/</link>
     </image>
     
     <item>
       <title>The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
+      <link>https://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
       <pubDate>Tue, 08 May 2018 09:00:31 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
+      <guid>https://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
       <description>&lt;p&gt;We know that training a neural network involves optimising over a non-convex space, but using standard evaluation methods we see that our models usually end up doing reasonably well.
 This paper asks an important question - are those metrics measuring generalisability effectively?
 In particular, if we sample our test set from a slightly different distribution of data, do models still work well?&lt;/p&gt;

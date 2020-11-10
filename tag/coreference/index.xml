@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>coreference | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/coreference/</link>
-      <atom:link href="http://www.jkk.name/tag/coreference/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/coreference/</link>
+      <atom:link href="https://www.jkk.name/tag/coreference/index.xml" rel="self" type="application/rss+xml" />
     <description>coreference</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 08 Nov 2018 11:29:32 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>coreference</title>
-      <link>http://www.jkk.name/tag/coreference/</link>
+      <link>https://www.jkk.name/tag/coreference/</link>
     </image>
     
     <item>
       <title>PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-11-08_corefdata/</link>
+      <link>https://www.jkk.name/post/2018-11-08_corefdata/</link>
       <pubDate>Thu, 08 Nov 2018 11:29:32 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-11-08_corefdata/</guid>
+      <guid>https://www.jkk.name/post/2018-11-08_corefdata/</guid>
       <description>&lt;p&gt;The OntoNotes dataset, which is the focus of almost all coreference resolution research, had several compromises in its development (as is the case for any dataset).
 Some of these are discussed in my 
-&lt;a href=&#34;http://jkk.name/publication/conll11coreference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoNLL Shared Task submission paper&lt;/a&gt;, the biggest being the choice to not annotate mentions that are not coreferent.
+&lt;a href=&#34;https://www.jkk.name/publication/conll11coreference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoNLL Shared Task submission paper&lt;/a&gt;, the biggest being the choice to not annotate mentions that are not coreferent.
 This paper describes a new dataset that has a different set of compromises, specifically:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A broader definition of coreference (e.g. appositives are coreferent)&lt;/li&gt;
@@ -32,7 +32,7 @@ The source text is 2/3rds the RACE dataset (English reading comprehension exams 
 Measurements of annotator agreement suggest the annotations are not as consistent as OntoNotes, but still good enough to be a useful resource.
 I do disagree with one aspect of the paper&amp;rsquo;s analysis - the results show a substantial gain in performance when providing gold mentions, suggesting to me that it remains an important challenge in coreference resolution.
 I&amp;rsquo;m also curious whether my 
-&lt;a href=&#34;http://jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;http://aclweb.org/anthology/D18-1016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
@@ -54,9 +54,9 @@ I&amp;rsquo;m also curious whether my
     
     <item>
       <title>Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-06_coreferencearguments/</link>
+      <link>https://www.jkk.name/post/2017-12-06_coreferencearguments/</link>
       <pubDate>Wed, 06 Dec 2017 19:05:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-06_coreferencearguments/</guid>
+      <guid>https://www.jkk.name/post/2017-12-06_coreferencearguments/</guid>
       <description>&lt;p&gt;Selectional preferences in this context are about how some verbs are more likely to take certain types of arguments (e.g. people laugh, computers do not).
 Many papers have added features or structures to coreference systems aiming to get at this kind of information.
 This paper presents another way of doing it and experiments that probe how useful it is (punchline: not very).&lt;/p&gt;
@@ -88,9 +88,9 @@ If performance remains high, then this actually is an uninformative feature, but
     
     <item>
       <title>Coreference Error Analysis</title>
-      <link>http://www.jkk.name/software/coreference-analysis/</link>
+      <link>https://www.jkk.name/software/coreference-analysis/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/software/coreference-analysis/</guid>
+      <guid>https://www.jkk.name/software/coreference-analysis/</guid>
       <description></description>
     </item>
     

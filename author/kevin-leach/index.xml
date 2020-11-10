@@ -2,37 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kevin Leach | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/author/kevin-leach/</link>
-      <atom:link href="http://www.jkk.name/author/kevin-leach/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/author/kevin-leach/</link>
+      <atom:link href="https://www.jkk.name/author/kevin-leach/index.xml" rel="self" type="application/rss+xml" />
     <description>Kevin Leach</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Kevin Leach</title>
-      <link>http://www.jkk.name/author/kevin-leach/</link>
+      <link>https://www.jkk.name/author/kevin-leach/</link>
     </image>
     
     <item>
       <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness</title>
-      <link>http://www.jkk.name/publication/emnlp20taboo/</link>
-      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20taboo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Inconsistencies in Crowdsourced Slot-Filling Annotations: A Typology and Identification Methods</title>
-      <link>http://www.jkk.name/publication/coling20svp/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/coling20svp/</guid>
+      <link>https://www.jkk.name/publication/emnlp20taboo/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp20taboo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An Evaluation for Intent Classification and Out-of-Scope Prediction</title>
-      <link>http://www.jkk.name/publication/emnlp19data/</link>
+      <link>https://www.jkk.name/publication/emnlp19data/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp19data/</guid>
+      <guid>https://www.jkk.name/publication/emnlp19data/</guid>
       <description></description>
     </item>
     

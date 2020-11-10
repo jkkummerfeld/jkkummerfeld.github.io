@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>7 | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/publication-type/7/</link>
-      <atom:link href="http://www.jkk.name/publication-type/7/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/publication-type/7/</link>
+      <atom:link href="https://www.jkk.name/publication-type/7/index.xml" rel="self" type="application/rss+xml" />
     <description>7</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>7</title>
-      <link>http://www.jkk.name/publication-type/7/</link>
+      <link>https://www.jkk.name/publication-type/7/</link>
     </image>
     
     <item>
       <title>Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output</title>
-      <link>http://www.jkk.name/publication/thesis16parsing/</link>
+      <link>https://www.jkk.name/publication/thesis16parsing/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/thesis16parsing/</guid>
+      <guid>https://www.jkk.name/publication/thesis16parsing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adaptive Supertagging for Faster Parsing</title>
-      <link>http://www.jkk.name/publication/thesis09adapt/</link>
+      <link>https://www.jkk.name/publication/thesis09adapt/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/thesis09adapt/</guid>
+      <guid>https://www.jkk.name/publication/thesis09adapt/</guid>
       <description></description>
     </item>
     

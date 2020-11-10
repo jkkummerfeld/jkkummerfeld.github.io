@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ner | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/ner/</link>
-      <atom:link href="http://www.jkk.name/tag/ner/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/ner/</link>
+      <atom:link href="https://www.jkk.name/tag/ner/index.xml" rel="self" type="application/rss+xml" />
     <description>ner</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 01 Dec 2017 15:28:59 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>ner</title>
-      <link>http://www.jkk.name/tag/ner/</link>
+      <link>https://www.jkk.name/tag/ner/</link>
     </image>
     
     <item>
       <title>A Local Detection Approach for Named Entity Recognition and Mention Detection (Xu et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-01_nonsequencener/</link>
+      <link>https://www.jkk.name/post/2017-12-01_nonsequencener/</link>
       <pubDate>Fri, 01 Dec 2017 15:28:59 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-01_nonsequencener/</guid>
+      <guid>https://www.jkk.name/post/2017-12-01_nonsequencener/</guid>
       <description>&lt;p&gt;The classic NER system is a model that has a lot of curated features, like lists of people, and does inference by choosing the top scoring tag sequence for the whole sentence, using Viterbi decoding.
 The neural version swaps the curated features for word vectors, and viterbi inference for an LSTM (maybe with beam search).
 This paper makes the argument that in reality people are very good at identifying an entity in isolation, so why do global decoding for the best tag sequence?&lt;/p&gt;

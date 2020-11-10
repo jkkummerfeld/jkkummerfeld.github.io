@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sigdial | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/sigdial/</link>
-      <atom:link href="http://www.jkk.name/tag/sigdial/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/sigdial/</link>
+      <atom:link href="https://www.jkk.name/tag/sigdial/index.xml" rel="self" type="application/rss+xml" />
     <description>sigdial</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 09 Nov 2017 19:47:08 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>sigdial</title>
-      <link>http://www.jkk.name/tag/sigdial/</link>
+      <link>https://www.jkk.name/tag/sigdial/</link>
     </image>
     
     <item>
       <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-09_framesdataset/</link>
+      <link>https://www.jkk.name/post/2017-11-09_framesdataset/</link>
       <pubDate>Thu, 09 Nov 2017 19:47:08 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-09_framesdataset/</guid>
+      <guid>https://www.jkk.name/post/2017-11-09_framesdataset/</guid>
       <description>&lt;p&gt;Another paper about a dataset of dialogues, but this time with structure.
 Like the paper from yesterday, the aim is a dataset of task-oriented conversations, but with more complexity than prior work.
 The difference is that this work includes a structured representation of the state of the conversation: frames.&lt;/p&gt;

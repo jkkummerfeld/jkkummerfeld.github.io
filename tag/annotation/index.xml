@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>annotation | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/annotation/</link>
-      <atom:link href="http://www.jkk.name/tag/annotation/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/annotation/</link>
+      <atom:link href="https://www.jkk.name/tag/annotation/index.xml" rel="self" type="application/rss+xml" />
     <description>annotation</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 04 Oct 2020 15:10:12 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>annotation</title>
-      <link>http://www.jkk.name/tag/annotation/</link>
+      <link>https://www.jkk.name/tag/annotation/</link>
     </image>
     
     <item>
       <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels (Jiang, et al., Findings of EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-10-04_crowdsrl/</link>
+      <link>https://www.jkk.name/post/2020-10-04_crowdsrl/</link>
       <pubDate>Sun, 04 Oct 2020 15:10:12 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
+      <guid>https://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
       <description>&lt;p&gt;My 
-&lt;a href=&#34;http://jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
+&lt;a href=&#34;https://www.jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
 This post covers a paper I contributed to that also considers crowdsourcing SRL, but collects the more traditional form of annotation used in resources like Propbank.&lt;/p&gt;
 &lt;p&gt;The core new idea is a filtering process in which workers identify &lt;em&gt;incorrect&lt;/em&gt; answers for a task.
 This is the first step of a three stage process:&lt;/p&gt;
@@ -42,7 +42,7 @@ First, bringing in methods of worker training in order to improve their accuracy
 Second, combining with ideas from other work, such as having a model deciding whether examples are easy or hard and changing how they are processed accordingly, or using QA-SRL annotation to inform the process.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1314632048070594560&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My Tweet&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp-findings20srl,
@@ -53,7 +53,7 @@ Second, combining with ideas from other work, such as having a model deciding wh
   month     = {November},
   year      = {2020},
   location  = {Online},
-  url       = {http://www.jkk.name/pub/emnlp-findings20srl.pdf},
+  url       = {https://www.jkk.name/pub/emnlp-findings20srl.pdf},
   abstract  = {Resources for Semantic Role Labeling (SRL) are typically annotated by experts at great expense. Prior attempts to develop crowdsourcing methods have either had low accuracy or required substantial expert annotation. We propose a new multi-stage crowd workflow that substantially reduces expert involvement without sacrificing accuracy. In particular, we introduce a unique filter stage based on the key observation that crowd workers are able to almost perfectly filter out incorrect options for labels. Our three-stage workflow produces annotations with 95\% accuracy for predicate labels and 93\% for argument labels, which is comparable to expert agreement. Compared to prior work on crowdsourcing for SRL, we decrease expert effort by 4x, from 56\% to 14\% of cases. Our approach enables more scalable annotation of SRL, and could enable annotation of NLP tasks that have previously been considered too complex to effectively crowdsource.},
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -62,9 +62,9 @@ Second, combining with ideas from other work, such as having a model deciding wh
     
     <item>
       <title>Practical Obstacles to Deploying Active Learning (Lowell, et al., EMNLP 2019)</title>
-      <link>http://www.jkk.name/post/2020-09-17_activelearningbrittle/</link>
+      <link>https://www.jkk.name/post/2020-09-17_activelearningbrittle/</link>
       <pubDate>Thu, 17 Sep 2020 15:08:35 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-17_activelearningbrittle/</guid>
+      <guid>https://www.jkk.name/post/2020-09-17_activelearningbrittle/</guid>
       <description>&lt;p&gt;Training models requires massive amounts of labeled data.
 We usually sample data iid from the target domain (e.g. newspapers), but it seems intuitive that this means we wast effort labeling samples that are obvious or easy and so not informative during training.
 Active Learning follows that intuition, labeling data incrementally, selecting the next example(s) to label based on what a model considers uncertain.
@@ -111,17 +111,17 @@ For large datasets, building models, or other tasks and domains the conclusions 
     
     <item>
       <title>SLATE: A Super-Lightweight Annotation Tool for Experts</title>
-      <link>http://www.jkk.name/software/slate/</link>
+      <link>https://www.jkk.name/software/slate/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/software/slate/</guid>
+      <guid>https://www.jkk.name/software/slate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-08_crowdbias/</link>
+      <link>https://www.jkk.name/post/2017-12-08_crowdbias/</link>
       <pubDate>Fri, 08 Dec 2017 19:49:09 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-08_crowdbias/</guid>
+      <guid>https://www.jkk.name/post/2017-12-08_crowdbias/</guid>
       <description>&lt;p&gt;Getting high quality annotations from crowdsourcing requires careful design.
 This paper looks at how one annotation a worker does can influence their next annotation, for example:&lt;/p&gt;
 &lt;ul&gt;
@@ -153,9 +153,9 @@ With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
     
     <item>
       <title>Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-13_errordetection/</link>
+      <link>https://www.jkk.name/post/2017-10-13_errordetection/</link>
       <pubDate>Fri, 13 Oct 2017 13:32:19 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-13_errordetection/</guid>
+      <guid>https://www.jkk.name/post/2017-10-13_errordetection/</guid>
       <description>&lt;p&gt;Active learning doesn&amp;rsquo;t seem to get much attention in NLP, probably because of fear that developing data based on the errors of one model will introduce a particular sampling bias.
 This paper is a nice example of a problem it can be applied to that doesn&amp;rsquo;t raise that issue: detecting all the errors in a system&amp;rsquo;s output.&lt;/p&gt;
 &lt;p&gt;The scenario is that you have a bunch of models for doing a task (e.g. POS tagging) and a new dataset with no labeled data, which you would like to label.

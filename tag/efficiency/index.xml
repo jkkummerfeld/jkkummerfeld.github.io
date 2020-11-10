@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>efficiency | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/efficiency/</link>
-      <atom:link href="http://www.jkk.name/tag/efficiency/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/efficiency/</link>
+      <atom:link href="https://www.jkk.name/tag/efficiency/index.xml" rel="self" type="application/rss+xml" />
     <description>efficiency</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 05 Oct 2017 00:00:00 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>efficiency</title>
-      <link>http://www.jkk.name/tag/efficiency/</link>
+      <link>https://www.jkk.name/tag/efficiency/</link>
     </image>
     
     <item>
       <title>DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-05-deftnn/</link>
+      <link>https://www.jkk.name/post/2017-10-05-deftnn/</link>
       <pubDate>Thu, 05 Oct 2017 00:00:00 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-05-deftnn/</guid>
+      <guid>https://www.jkk.name/post/2017-10-05-deftnn/</guid>
       <description>&lt;p&gt;This paper proposes two techniques for speeding up neural network execution on GPUs:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Reduce computation when doing matrix-multiply by removing rows.&lt;/li&gt;

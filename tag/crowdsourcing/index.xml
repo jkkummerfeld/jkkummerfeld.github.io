@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>crowdsourcing | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/crowdsourcing/</link>
-      <atom:link href="http://www.jkk.name/tag/crowdsourcing/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/crowdsourcing/</link>
+      <atom:link href="https://www.jkk.name/tag/crowdsourcing/index.xml" rel="self" type="application/rss+xml" />
     <description>crowdsourcing</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 12 Oct 2020 10:28:13 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>crowdsourcing</title>
-      <link>http://www.jkk.name/tag/crowdsourcing/</link>
+      <link>https://www.jkk.name/tag/crowdsourcing/</link>
     </image>
     
     <item>
       <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-10-12_taboo/</link>
+      <link>https://www.jkk.name/post/2020-10-12_taboo/</link>
       <pubDate>Mon, 12 Oct 2020 10:28:13 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-10-12_taboo/</guid>
+      <guid>https://www.jkk.name/post/2020-10-12_taboo/</guid>
       <description>&lt;p&gt;When we crowdsource data for tasks like SRL and sentiment analysis we only care about accuracy.
 For tasks where workers write new content, such as paraphrasing and creating questions, we also care about data diversity.
 If our data is not diverse then models trained on it will not be robust in the real world.
@@ -63,7 +63,7 @@ The drop varied from 2 to 33 points, with a median of 9.
 This indicates that we are capturing ways of expressing these intents that are not well covered by the original data.&lt;/p&gt;
 &lt;p&gt;Addressing this issue is simple - train on data collected with our method!
 Interestingly, this approach is complementary to the outlier-based approach from 
-&lt;a href=&#34;http://jkk.name/publication/naacl19outliers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;our NAACL 2019 paper&lt;/a&gt;.
+&lt;a href=&#34;https://www.jkk.name/publication/naacl19outliers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;our NAACL 2019 paper&lt;/a&gt;.
 Examples collected using one approach are hard for models trained on data from the other.
 Fortunately, training with data from a mix of the two leads to strong results on both.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m particularly excited about this work because the general idea could be applied in so many ways:&lt;/p&gt;
@@ -82,7 +82,7 @@ That work predates this paper by 16 years, but hasn&amp;rsquo;t had much tractio
 I&amp;rsquo;m hopeful that our more general version will be useful in a range of crowdsourcing efforts.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20taboo,
   title     = {Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness},
   author    = {Larson, Stefan and Zheng, Anthony and Mahendran, Anish and Tekriwal, Rishi and Cheung, Adrian and Guldan, Eric and Leach, Kevin and Kummerfeld, Jonathan K.},
@@ -90,7 +90,7 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
   month     = {November},
   year      = {2020},
   location  = {Online},
-  url       = {http://www.jkk.name/pub/emnlp20taboo.pdf},
+  url       = {https://www.jkk.name/pub/emnlp20taboo.pdf},
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -98,11 +98,11 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
     
     <item>
       <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels (Jiang, et al., Findings of EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-10-04_crowdsrl/</link>
+      <link>https://www.jkk.name/post/2020-10-04_crowdsrl/</link>
       <pubDate>Sun, 04 Oct 2020 15:10:12 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
+      <guid>https://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
       <description>&lt;p&gt;My 
-&lt;a href=&#34;http://jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
+&lt;a href=&#34;https://www.jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
 This post covers a paper I contributed to that also considers crowdsourcing SRL, but collects the more traditional form of annotation used in resources like Propbank.&lt;/p&gt;
 &lt;p&gt;The core new idea is a filtering process in which workers identify &lt;em&gt;incorrect&lt;/em&gt; answers for a task.
 This is the first step of a three stage process:&lt;/p&gt;
@@ -126,7 +126,7 @@ First, bringing in methods of worker training in order to improve their accuracy
 Second, combining with ideas from other work, such as having a model deciding whether examples are easy or hard and changing how they are processed accordingly, or using QA-SRL annotation to inform the process.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1314632048070594560&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My Tweet&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp-findings20srl,
@@ -137,7 +137,7 @@ Second, combining with ideas from other work, such as having a model deciding wh
   month     = {November},
   year      = {2020},
   location  = {Online},
-  url       = {http://www.jkk.name/pub/emnlp-findings20srl.pdf},
+  url       = {https://www.jkk.name/pub/emnlp-findings20srl.pdf},
   abstract  = {Resources for Semantic Role Labeling (SRL) are typically annotated by experts at great expense. Prior attempts to develop crowdsourcing methods have either had low accuracy or required substantial expert annotation. We propose a new multi-stage crowd workflow that substantially reduces expert involvement without sacrificing accuracy. In particular, we introduce a unique filter stage based on the key observation that crowd workers are able to almost perfectly filter out incorrect options for labels. Our three-stage workflow produces annotations with 95\% accuracy for predicate labels and 93\% for argument labels, which is comparable to expert agreement. Compared to prior work on crowdsourcing for SRL, we decrease expert effort by 4x, from 56\% to 14\% of cases. Our approach enables more scalable annotation of SRL, and could enable annotation of NLP tasks that have previously been considered too complex to effectively crowdsource.},
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -146,9 +146,9 @@ Second, combining with ideas from other work, such as having a model deciding wh
     
     <item>
       <title>Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</title>
-      <link>http://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
+      <link>https://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
       <pubDate>Fri, 25 Sep 2020 10:17:18 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
+      <guid>https://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
       <description>&lt;p&gt;Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.
 Over the last few years, 
 &lt;a href=&#34;https://www.cs.washington.edu/people/faculty/lsz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luke Zettlemoyer&amp;rsquo;s Group&lt;/a&gt; has been exploring using question-answer pairs to represent this structure.
@@ -213,9 +213,9 @@ Maybe targeted re-annotation could be used to add them to PropBank (identifying 
     
     <item>
       <title>Crowdsourcing Services</title>
-      <link>http://www.jkk.name/post/crowdsourcing-services/</link>
+      <link>https://www.jkk.name/post/crowdsourcing-services/</link>
       <pubDate>Sun, 14 Apr 2019 10:49:35 -0400</pubDate>
-      <guid>http://www.jkk.name/post/crowdsourcing-services/</guid>
+      <guid>https://www.jkk.name/post/crowdsourcing-services/</guid>
       <description>&lt;p&gt;Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
 The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.
 Recently, 
@@ -266,7 +266,7 @@ Both are free, but have slightly different features:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;annotation-user-interfaces&#34;&gt;Annotation User Interfaces&lt;/h2&gt;
 &lt;p&gt;There are many annotation tools for NLP (e.g. my own, 
-&lt;a href=&#34;http://jkk.name/slate/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SLATE&lt;/a&gt;!), but these annotation tools are designed to integrate with providers above to collect annotations.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/slate/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SLATE&lt;/a&gt;!), but these annotation tools are designed to integrate with providers above to collect annotations.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://prodi.gy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prodigy&lt;/a&gt;, span classification (e.g. NER), multiple choice questions (which can be used to do a wide range of tasks), and relations (see 
@@ -279,9 +279,9 @@ Both are free, but have slightly different features:&lt;/p&gt;
     
     <item>
       <title>Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-01-28_crowdassistant/</link>
+      <link>https://www.jkk.name/post/2018-01-28_crowdassistant/</link>
       <pubDate>Sun, 28 Jan 2018 16:01:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-01-28_crowdassistant/</guid>
+      <guid>https://www.jkk.name/post/2018-01-28_crowdassistant/</guid>
       <description>&lt;p&gt;There is a lot of interest in dialogue agents, but a lot of work sits at one of two extremes: either chit-chat agents that just chat, or task-oriented agents that aim to call a specific API for the user.
 This work is about trying to integrate a range of systems from both categories, to get something more general purpose as a result.&lt;/p&gt;
 &lt;p&gt;The core approach is a hybrid system that switches between different agents behind the scenes (an approach taken by a number of Alexa Prize teams).
@@ -308,9 +308,9 @@ However, rather than keeping it weekday-ly, I plan to do three times a week, at 
     
     <item>
       <title>Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012)</title>
-      <link>http://www.jkk.name/post/2017-10-31_realtimecaptioning/</link>
+      <link>https://www.jkk.name/post/2017-10-31_realtimecaptioning/</link>
       <pubDate>Tue, 31 Oct 2017 13:23:13 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-31_realtimecaptioning/</guid>
+      <guid>https://www.jkk.name/post/2017-10-31_realtimecaptioning/</guid>
       <description>&lt;p&gt;For any given task, automatic systems are fast, while annotation is accurate.
 This work is about bridging that gap to provide a way for a team of annotators to produce real-time high quality labels.
 The specific application is speech transcription, in which automatic systems are not accurate, while average people are slow (experts can transcribe in real time, but are very expensive).&lt;/p&gt;
@@ -355,9 +355,9 @@ From the paper it&amp;rsquo;s tricky to see a final cost, but it is certainly fa
     
     <item>
       <title>Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</title>
-      <link>http://www.jkk.name/post/2017-10-19_mace/</link>
+      <link>https://www.jkk.name/post/2017-10-19_mace/</link>
       <pubDate>Thu, 19 Oct 2017 17:08:50 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-19_mace/</guid>
+      <guid>https://www.jkk.name/post/2017-10-19_mace/</guid>
       <description>&lt;p&gt;The standard way to get high quality annotations is to get labels from multiple people and take a majority vote.
 Getting multiple annotations costs more, and the quality of annotators can vary considerably (with spamming at one extreme).
 One way to avoid the quality issue is to restrict who can do the task (must have done X previous tasks with an accept rate of Y), but that limits the pool of available workers.
@@ -371,7 +371,7 @@ Another approach is to try to estimate the quality of annotator work using a sta
 &lt;p&gt;$A$ is observed, but $T$ and $S$ are not, so they use expectation maximization to get both model parameters and variable values.
 To deal with nonconvexity they use 100 random restarts, deciding which is best based on how well the model describes the data.
 Note - this model (and the code) was the basis of the error detection paper I 
-&lt;a href=&#34;http://www.jkk.name/post/2017-10-13_errordetection/&#34;&gt;wrote about&lt;/a&gt; recently.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/post/2017-10-13_errordetection/&#34;&gt;wrote about&lt;/a&gt; recently.&lt;/p&gt;
 &lt;p&gt;For predicting annotator quality the model is consistently effective across three datasets, though the Beta and Dirichlet priors are key for one (where annotator agreement was high on average).
 For determining the correct answer it is slightly better than majority vote, though the gains are small.
 The real advantage comes in deciding whether to discard data, where the choice of what to discard can be guided by the estimate of quality (this is what the error detection paper was doing).

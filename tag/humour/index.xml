@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>humour | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/humour/</link>
-      <atom:link href="http://www.jkk.name/tag/humour/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/humour/</link>
+      <atom:link href="https://www.jkk.name/tag/humour/index.xml" rel="self" type="application/rss+xml" />
     <description>humour</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 06 Oct 2017 13:31:43 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>humour</title>
-      <link>http://www.jkk.name/tag/humour/</link>
+      <link>https://www.jkk.name/tag/humour/</link>
     </image>
     
     <item>
       <title>Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-06-madlibs/</link>
+      <link>https://www.jkk.name/post/2017-10-06-madlibs/</link>
       <pubDate>Fri, 06 Oct 2017 13:31:43 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-06-madlibs/</guid>
+      <guid>https://www.jkk.name/post/2017-10-06-madlibs/</guid>
       <description>&lt;p&gt;Humor is an incredibly difficult problem, as this paper makes clear in its background section.
 Most work has considered very specific types of jokes (e.g. &amp;ldquo;that&amp;rsquo;s what she said&amp;rdquo;, or pairs of words that sound similar to form riddles).
 This work contributes (1) a new task, (2) an evaluation method, and (3) an example system.&lt;/p&gt;

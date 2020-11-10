@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>emnlp | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/emnlp/</link>
-      <atom:link href="http://www.jkk.name/tag/emnlp/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/emnlp/</link>
+      <atom:link href="https://www.jkk.name/tag/emnlp/index.xml" rel="self" type="application/rss+xml" />
     <description>emnlp</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 12 Dec 2017 20:25:40 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>emnlp</title>
-      <link>http://www.jkk.name/tag/emnlp/</link>
+      <link>https://www.jkk.name/tag/emnlp/</link>
     </image>
     
     <item>
       <title>A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings (Yang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</link>
+      <link>https://www.jkk.name/post/2017-12-12_multidomainwordvector/</link>
       <pubDate>Tue, 12 Dec 2017 20:25:40 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</guid>
+      <guid>https://www.jkk.name/post/2017-12-12_multidomainwordvector/</guid>
       <description>&lt;p&gt;To construct word vectors from multi-domain data, use a separate vector for each domain and add a loss term to encourage them to agree.
 Here the loss is an l2 norm, weighted by a factor that depends on the frequency of the words in the two domains.
 The factor is the harmonic mean of the normalised frequency in each domain (so the lower frequency dominates the factor, pulling it lower).
@@ -41,9 +41,9 @@ Across a range of tasks this consistently performs better than other approaches.
     
     <item>
       <title>The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
+      <link>https://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
       <pubDate>Tue, 12 Dec 2017 20:15:34 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</guid>
+      <guid>https://www.jkk.name/post/2017-12-12_wordvectorgeometry/</guid>
       <description>&lt;p&gt;It turns out that if the vectors learned by word2vec are projected into a plane they all point in the same direction.
 Also, the context vectors (which are part of the algorithm, but not retained afterwards) point the other way.
 When visualising with t-SNE this effect is not visible because of the way the space is warped to optimise the t-SNE objective.&lt;/p&gt;
@@ -69,9 +69,9 @@ However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloV
     
     <item>
       <title>Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-08_crowdbias/</link>
+      <link>https://www.jkk.name/post/2017-12-08_crowdbias/</link>
       <pubDate>Fri, 08 Dec 2017 19:49:09 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-08_crowdbias/</guid>
+      <guid>https://www.jkk.name/post/2017-12-08_crowdbias/</guid>
       <description>&lt;p&gt;Getting high quality annotations from crowdsourcing requires careful design.
 This paper looks at how one annotation a worker does can influence their next annotation, for example:&lt;/p&gt;
 &lt;ul&gt;
@@ -103,9 +103,9 @@ With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
     
     <item>
       <title>High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-07_rarewordvectors/</link>
+      <link>https://www.jkk.name/post/2017-12-07_rarewordvectors/</link>
       <pubDate>Thu, 07 Dec 2017 20:45:39 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-07_rarewordvectors/</guid>
+      <guid>https://www.jkk.name/post/2017-12-07_rarewordvectors/</guid>
       <description>&lt;p&gt;Word vectors are great for common words, but what about rare words?
 People can have a fairly good understanding of a word given only a few instances, but it&amp;rsquo;s fairly standard to turn all words with a frequency of less than 5 into UNK when learning word vectors.&lt;/p&gt;
 &lt;p&gt;One simple approach is to add up word vectors from the context of the rare word and use that as the representation.
@@ -134,9 +134,9 @@ Ultimately this is not a solution to this problem, but it&amp;rsquo;s an idea to
     
     <item>
       <title>Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-06_coreferencearguments/</link>
+      <link>https://www.jkk.name/post/2017-12-06_coreferencearguments/</link>
       <pubDate>Wed, 06 Dec 2017 19:05:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-06_coreferencearguments/</guid>
+      <guid>https://www.jkk.name/post/2017-12-06_coreferencearguments/</guid>
       <description>&lt;p&gt;Selectional preferences in this context are about how some verbs are more likely to take certain types of arguments (e.g. people laugh, computers do not).
 Many papers have added features or structures to coreference systems aiming to get at this kind of information.
 This paper presents another way of doing it and experiments that probe how useful it is (punchline: not very).&lt;/p&gt;
@@ -168,9 +168,9 @@ If performance remains high, then this actually is an uninformative feature, but
     
     <item>
       <title>A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-05_explainingpredictions/</link>
+      <link>https://www.jkk.name/post/2017-12-05_explainingpredictions/</link>
       <pubDate>Tue, 05 Dec 2017 15:40:45 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-05_explainingpredictions/</guid>
+      <guid>https://www.jkk.name/post/2017-12-05_explainingpredictions/</guid>
       <description>&lt;p&gt;Interpreting the behaviour of statistical models in NLP has been hard for a long time, but it has gotten even harder with nonlinear models.
 The simplest method so far in NLP has been to look at the attention distributions in sequence to sequence models, but that doesn&amp;rsquo;t provide everything we need and obviously only applies when the model has attention.
 For looking at the dynamics of the hidden state in an LSTM the Harvard NLP group built a cool 
@@ -204,9 +204,9 @@ Experiments show results that match with past observations and intuitions, which
     
     <item>
       <title>Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-13_languagegame/</link>
+      <link>https://www.jkk.name/post/2017-11-13_languagegame/</link>
       <pubDate>Mon, 13 Nov 2017 09:47:08 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-13_languagegame/</guid>
+      <guid>https://www.jkk.name/post/2017-11-13_languagegame/</guid>
       <description>&lt;p&gt;In reference games, two players communicate in a shared world with the goal of one learning what the other is referring to.
 Their small scale and clear success criteria make them a convenient testbed for dialogue agents, going back decades, with recent work focusing on neural approaches.
 This paper considers a simple game and constrains models in various ways to improve performance and see how their communication varies, a line of work also appearing in recent papers by Jacob Andreas (
@@ -241,9 +241,9 @@ Limiting even further, to 4 words for values and providing each turn in isolatio
     
     <item>
       <title>Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</title>
-      <link>http://www.jkk.name/post/2017-11-06_literarycharacters/</link>
+      <link>https://www.jkk.name/post/2017-11-06_literarycharacters/</link>
       <pubDate>Mon, 06 Nov 2017 20:16:28 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-06_literarycharacters/</guid>
+      <guid>https://www.jkk.name/post/2017-11-06_literarycharacters/</guid>
       <description>&lt;p&gt;NLP tools seem like a natural fit for literary analysis, but the domain shift from news text is large enough to degrade performance to the point where tools are not useful.
 Here the specific question is how many characters are there in novels?
 NER + coreference would seem to be enough, but an off-the-shelf system fares poorly (and I doubt improvements in the last few years would change that story).&lt;/p&gt;
@@ -278,9 +278,9 @@ It would be interesting to modify a coreference resolution system to process the
     
     <item>
       <title>A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-16_forumrnn/</link>
+      <link>https://www.jkk.name/post/2017-10-16_forumrnn/</link>
       <pubDate>Mon, 16 Oct 2017 20:55:07 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-16_forumrnn/</guid>
+      <guid>https://www.jkk.name/post/2017-10-16_forumrnn/</guid>
       <description>&lt;p&gt;Attention - a weighted average over a set of vectors representing context - has consistently produced positive results.
 Here we see an example of how it can be applied in the case of modeling a threaded discussion.&lt;/p&gt;
 &lt;p&gt;Attention is applied in two ways.
@@ -316,9 +316,9 @@ The paper mentions it is Zipfian, but surely it would be something double-sided 
     
     <item>
       <title>Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-12_amralignment/</link>
+      <link>https://www.jkk.name/post/2017-10-12_amralignment/</link>
       <pubDate>Thu, 12 Oct 2017 19:52:34 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-12_amralignment/</guid>
+      <guid>https://www.jkk.name/post/2017-10-12_amralignment/</guid>
       <description>&lt;p&gt;Abstract Meaning Representation (AMR) structures represent sentence meaning with labeled nodes (concepts) that are related to the words in the sentence, but not explicitly linked to them.
 This is a problem for most parsing algorithms, which need a way to efficiently decompose the structure in order to learn how to generate it.
 In dependency parsing there are no abstract nodes to generate, in constituency parsing there is a very small set of node types, and for CCG, TAG, etc the labels come from a constrained space.
@@ -358,9 +358,9 @@ With concept identification at 83 F there is still plenty of scope for improveme
     
     <item>
       <title> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</title>
-      <link>http://www.jkk.name/post/2017-10-09_parsing-autoencoder/</link>
+      <link>https://www.jkk.name/post/2017-10-09_parsing-autoencoder/</link>
       <pubDate>Mon, 09 Oct 2017 14:31:24 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-09_parsing-autoencoder/</guid>
+      <guid>https://www.jkk.name/post/2017-10-09_parsing-autoencoder/</guid>
       <description>&lt;p&gt;Semantic parsing datasets are small because they are expensive to produce (logical forms don&amp;rsquo;t occur naturally and writing them down takes time).
 The idea here is to do semi-supervised learning by implementing both a parser and a generator, which are trained together as a form of autoencoder where the intermediate representation is natural language.&lt;/p&gt;
 &lt;p&gt;The architecture has four LSTMs:&lt;/p&gt;
@@ -404,9 +404,9 @@ How to tradeoff the different data scenarios seems like an interesting challenge
     
     <item>
       <title>Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-06-madlibs/</link>
+      <link>https://www.jkk.name/post/2017-10-06-madlibs/</link>
       <pubDate>Fri, 06 Oct 2017 13:31:43 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-06-madlibs/</guid>
+      <guid>https://www.jkk.name/post/2017-10-06-madlibs/</guid>
       <description>&lt;p&gt;Humor is an incredibly difficult problem, as this paper makes clear in its background section.
 Most work has considered very specific types of jokes (e.g. &amp;ldquo;that&amp;rsquo;s what she said&amp;rdquo;, or pairs of words that sound similar to form riddles).
 This work contributes (1) a new task, (2) an evaluation method, and (3) an example system.&lt;/p&gt;

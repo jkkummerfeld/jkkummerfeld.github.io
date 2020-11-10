@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/post/</link>
-      <atom:link href="http://www.jkk.name/post/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/post/</link>
+      <atom:link href="https://www.jkk.name/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 12 Oct 2020 10:28:13 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
-      <link>http://www.jkk.name/post/</link>
+      <link>https://www.jkk.name/post/</link>
     </image>
     
     <item>
       <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-10-12_taboo/</link>
+      <link>https://www.jkk.name/post/2020-10-12_taboo/</link>
       <pubDate>Mon, 12 Oct 2020 10:28:13 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-10-12_taboo/</guid>
+      <guid>https://www.jkk.name/post/2020-10-12_taboo/</guid>
       <description>&lt;p&gt;When we crowdsource data for tasks like SRL and sentiment analysis we only care about accuracy.
 For tasks where workers write new content, such as paraphrasing and creating questions, we also care about data diversity.
 If our data is not diverse then models trained on it will not be robust in the real world.
@@ -63,7 +63,7 @@ The drop varied from 2 to 33 points, with a median of 9.
 This indicates that we are capturing ways of expressing these intents that are not well covered by the original data.&lt;/p&gt;
 &lt;p&gt;Addressing this issue is simple - train on data collected with our method!
 Interestingly, this approach is complementary to the outlier-based approach from 
-&lt;a href=&#34;http://jkk.name/publication/naacl19outliers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;our NAACL 2019 paper&lt;/a&gt;.
+&lt;a href=&#34;https://www.jkk.name/publication/naacl19outliers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;our NAACL 2019 paper&lt;/a&gt;.
 Examples collected using one approach are hard for models trained on data from the other.
 Fortunately, training with data from a mix of the two leads to strong results on both.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m particularly excited about this work because the general idea could be applied in so many ways:&lt;/p&gt;
@@ -82,7 +82,7 @@ That work predates this paper by 16 years, but hasn&amp;rsquo;t had much tractio
 I&amp;rsquo;m hopeful that our more general version will be useful in a range of crowdsourcing efforts.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/pub/emnlp20taboo.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20taboo,
   title     = {Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness},
   author    = {Larson, Stefan and Zheng, Anthony and Mahendran, Anish and Tekriwal, Rishi and Cheung, Adrian and Guldan, Eric and Leach, Kevin and Kummerfeld, Jonathan K.},
@@ -90,7 +90,7 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
   month     = {November},
   year      = {2020},
   location  = {Online},
-  url       = {http://www.jkk.name/pub/emnlp20taboo.pdf},
+  url       = {https://www.jkk.name/pub/emnlp20taboo.pdf},
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -98,19 +98,19 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
     
     <item>
       <title>Compositional Demographic Word Embeddings (Welch et al., EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-10-10_demographicembeddings/</link>
+      <link>https://www.jkk.name/post/2020-10-10_demographicembeddings/</link>
       <pubDate>Sat, 10 Oct 2020 20:25:11 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-10-10_demographicembeddings/</guid>
+      <guid>https://www.jkk.name/post/2020-10-10_demographicembeddings/</guid>
       <description>&lt;p&gt;Most work in NLP uses datasets with a diverse set of speakers.
 In practise, everyone speaks / writes slightly differently and our models would be better if they accounted for that.
 This has been the motivation for a line of work by 
 &lt;a href=&#34;http://cfwelch.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Charlie Welch&lt;/a&gt; that I&amp;rsquo;ve been a collaborator on (in
 
-&lt;a href=&#34;http://jkk.name/publication/cicling19personal&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CICLing 2019&lt;/a&gt;,
+&lt;a href=&#34;https://www.jkk.name/publication/cicling19personal&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CICLing 2019&lt;/a&gt;,
 
-&lt;a href=&#34;http://jkk.name/publication/ieee19personal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE Intelligent Systems 2019&lt;/a&gt;,
+&lt;a href=&#34;https://www.jkk.name/publication/ieee19personal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IEEE Intelligent Systems 2019&lt;/a&gt;,
 
-&lt;a href=&#34;http://jkk.name/publication/coling20personal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoLing 2020&lt;/a&gt;,
+&lt;a href=&#34;https://www.jkk.name/publication/coling20personal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoLing 2020&lt;/a&gt;,
 and this paper).&lt;/p&gt;
 &lt;p&gt;Here, the question is how to improve language modeling for a new user of a service who voluntarily provided some demographic information, but you have no other data for.
 Our solution is a language model that (1) has a separate word embedding space for each individual demographic value, and (2) forms a word embedding for a given user by composing the embeddings for their demographics.
@@ -147,11 +147,11 @@ For more detailed discussion of these and other issues see the &amp;ldquo;Limita
     
     <item>
       <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels (Jiang, et al., Findings of EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-10-04_crowdsrl/</link>
+      <link>https://www.jkk.name/post/2020-10-04_crowdsrl/</link>
       <pubDate>Sun, 04 Oct 2020 15:10:12 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
+      <guid>https://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
       <description>&lt;p&gt;My 
-&lt;a href=&#34;http://jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
+&lt;a href=&#34;https://www.jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
 This post covers a paper I contributed to that also considers crowdsourcing SRL, but collects the more traditional form of annotation used in resources like Propbank.&lt;/p&gt;
 &lt;p&gt;The core new idea is a filtering process in which workers identify &lt;em&gt;incorrect&lt;/em&gt; answers for a task.
 This is the first step of a three stage process:&lt;/p&gt;
@@ -175,7 +175,7 @@ First, bringing in methods of worker training in order to improve their accuracy
 Second, combining with ideas from other work, such as having a model deciding whether examples are easy or hard and changing how they are processed accordingly, or using QA-SRL annotation to inform the process.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1314632048070594560&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My Tweet&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp-findings20srl,
@@ -186,7 +186,7 @@ Second, combining with ideas from other work, such as having a model deciding wh
   month     = {November},
   year      = {2020},
   location  = {Online},
-  url       = {http://www.jkk.name/pub/emnlp-findings20srl.pdf},
+  url       = {https://www.jkk.name/pub/emnlp-findings20srl.pdf},
   abstract  = {Resources for Semantic Role Labeling (SRL) are typically annotated by experts at great expense. Prior attempts to develop crowdsourcing methods have either had low accuracy or required substantial expert annotation. We propose a new multi-stage crowd workflow that substantially reduces expert involvement without sacrificing accuracy. In particular, we introduce a unique filter stage based on the key observation that crowd workers are able to almost perfectly filter out incorrect options for labels. Our three-stage workflow produces annotations with 95\% accuracy for predicate labels and 93\% for argument labels, which is comparable to expert agreement. Compared to prior work on crowdsourcing for SRL, we decrease expert effort by 4x, from 56\% to 14\% of cases. Our approach enables more scalable annotation of SRL, and could enable annotation of NLP tasks that have previously been considered too complex to effectively crowdsource.},
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -195,9 +195,9 @@ Second, combining with ideas from other work, such as having a model deciding wh
     
     <item>
       <title>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-09-29_pretraininglm/</link>
+      <link>https://www.jkk.name/post/2020-09-29_pretraininglm/</link>
       <pubDate>Tue, 29 Sep 2020 13:38:24 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-29_pretraininglm/</guid>
+      <guid>https://www.jkk.name/post/2020-09-29_pretraininglm/</guid>
       <description>&lt;p&gt;This paper explores two questions.
 First, what is the impact of a few key design decisions for word embeddings in language models?
 Second, based on the first answer, how can we improve results in the situation where we have 10 million+ words of text, but only 1 GPU for training?&lt;/p&gt;
@@ -206,10 +206,10 @@ Second, based on the first answer, how can we improve results in the situation w
 Several papers have shown that this improves results by providing more frequent updates to the input embeddings.
 But if you have data available for pretraining it is less clear that this is the right approach.
 To explore this I&amp;rsquo;m going to use a few symbols:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/pretraining-lm-vary-key.jpg&#34; alt=&#34;Key for Variations on LM table&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/pretraining-lm-vary-key.jpg&#34; alt=&#34;Key for Variations on LM table&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Here are the results of training an 
 &lt;a href=&#34;https://github.com/salesforce/awd-lstm-lm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AWD-LSTM&lt;/a&gt; with all variations of these parameters, evaluated on the standard LM development set of the PTB (Std) and a variation that has actual words instead of unk (Rare):&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/pretraining-lm-vary.jpg&#34; alt=&#34;Variations on LM (for written form of table see bottom of page)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/pretraining-lm-vary.jpg&#34; alt=&#34;Variations on LM (for written form of table see bottom of page)&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Light blue shows the standard configuration and light red shows our proposal.
 The table is ranked by performance on Std and has four clear sections:&lt;/p&gt;
 &lt;p&gt;(a) Frozen random output embeddings.&lt;/p&gt;
@@ -229,7 +229,7 @@ The vectors for words in the training set are moved but the ones seen only in pr
 Here I&amp;rsquo;m going to jump straight to the final results.
 The table below considers a dataset with 43 million in-domain tokens for pretraining and 7 million for LM training.
 The other models are the standard AWD-LSTM, an n-gram language model, and two version of GPT-2 (without finetuning):&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/pretraining-final.jpg&#34; alt=&#34;Final results (for written form of table see bottom of page)&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/pretraining-final.jpg&#34; alt=&#34;Final results (for written form of table see bottom of page)&#34;&gt;&lt;/p&gt;
 &lt;p&gt;For word level prediction perplexity is reduced by 4.
 However, if we train and test with BPE there is no improvement (see the 
 &lt;a href=&#34;https://arxiv.org/abs/1911.11423&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SHA-RNN paper&lt;/a&gt; for some issues with comparing BPE and word evaluation).
@@ -254,14 +254,14 @@ In particular, reviewers need to give something of substance to be responded to 
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.jkk.name/pub/emnlp20lm.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/pub/emnlp20lm.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp20lm,
   title     = {Improving Low Compute Language Modeling with In-Domain Embedding Initialisation},
   author    = {Welch, Charles and Mihalcea, Rada and Kummerfeld, Jonathan K.},
   booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing},
   month     = {November},
   year      = {2020},
-  url       = {http://www.jkk.name/pub/emnlp20lm.pdf},
+  url       = {https://www.jkk.name/pub/emnlp20lm.pdf},
   abstract  = {Many NLP applications, such as biomedical data and technical support, have 10-100 million tokens of in-domain data and limited computational resources for learning from it. How should we train a language model in this scenario? Most language modeling research considers either a small dataset with a closed vocabulary (like the standard 1 million token Penn Treebank), or the whole web with byte-pair encoding. We show that for our target setting in English, initialising and freezing input embeddings using in-domain data can improve language model performance by providing a useful representation of rare words, and this pattern holds across several different domains. In the process, we show that the standard convention of tying input and output embeddings does not improve perplexity when initializing with embeddings trained on in-domain data.},
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -323,9 +323,9 @@ Fire and Snowflake Icons by Freepik from &lt;a href=&#34;http://www.flaticon.com
     
     <item>
       <title>Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</title>
-      <link>http://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
+      <link>https://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
       <pubDate>Fri, 25 Sep 2020 10:17:18 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
+      <guid>https://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
       <description>&lt;p&gt;Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.
 Over the last few years, 
 &lt;a href=&#34;https://www.cs.washington.edu/people/faculty/lsz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luke Zettlemoyer&amp;rsquo;s Group&lt;/a&gt; has been exploring using question-answer pairs to represent this structure.
@@ -390,9 +390,9 @@ Maybe targeted re-annotation could be used to add them to PropBank (identifying 
     
     <item>
       <title>Practical Obstacles to Deploying Active Learning (Lowell, et al., EMNLP 2019)</title>
-      <link>http://www.jkk.name/post/2020-09-17_activelearningbrittle/</link>
+      <link>https://www.jkk.name/post/2020-09-17_activelearningbrittle/</link>
       <pubDate>Thu, 17 Sep 2020 15:08:35 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-17_activelearningbrittle/</guid>
+      <guid>https://www.jkk.name/post/2020-09-17_activelearningbrittle/</guid>
       <description>&lt;p&gt;Training models requires massive amounts of labeled data.
 We usually sample data iid from the target domain (e.g. newspapers), but it seems intuitive that this means we wast effort labeling samples that are obvious or easy and so not informative during training.
 Active Learning follows that intuition, labeling data incrementally, selecting the next example(s) to label based on what a model considers uncertain.
@@ -439,13 +439,13 @@ For large datasets, building models, or other tasks and domains the conclusions 
     
     <item>
       <title>ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</title>
-      <link>http://www.jkk.name/post/2020-09-07_chartdialogs/</link>
+      <link>https://www.jkk.name/post/2020-09-07_chartdialogs/</link>
       <pubDate>Mon, 07 Sep 2020 14:41:34 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
+      <guid>https://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
       <description>&lt;p&gt;Natural language interfaces to computer systems are an exciting area with new workshops (
 &lt;a href=&#34;https://www.aclweb.org/anthology/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
 &lt;a href=&#34;https://intex-sempar.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IntEx-SemPar&lt;/a&gt; at EMNLP), a range of datasets (including my own work on 
-&lt;a href=&#34;http://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
+&lt;a href=&#34;https://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
 Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code.
 This paper considers an interesting application: interaction with data visualisation tools.&lt;/p&gt;
 &lt;p&gt;Using the full flexibility of these tools is a tall order, so this work focuses on commands to modify style parameters of a figure.
@@ -484,9 +484,9 @@ Arbitrary code generation would be a fantastic extension, though creating the da
     
     <item>
       <title>Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</title>
-      <link>http://www.jkk.name/post/2020-09-03_checklist/</link>
+      <link>https://www.jkk.name/post/2020-09-03_checklist/</link>
       <pubDate>Thu, 03 Sep 2020 14:44:29 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-03_checklist/</guid>
+      <guid>https://www.jkk.name/post/2020-09-03_checklist/</guid>
       <description>&lt;p&gt;It is difficult to predict how well a model will work in the real world.
 Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to.
 This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories.
@@ -540,9 +540,9 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
     
     <item>
       <title>Paper Reading</title>
-      <link>http://www.jkk.name/post/paper-reading/</link>
+      <link>https://www.jkk.name/post/paper-reading/</link>
       <pubDate>Sun, 26 Jan 2020 16:09:06 -0500</pubDate>
-      <guid>http://www.jkk.name/post/paper-reading/</guid>
+      <guid>https://www.jkk.name/post/paper-reading/</guid>
       <description>&lt;p&gt;Keeping up with research is hard.
 I&amp;rsquo;ve previously made lists of papers I wanted to read, and then only gotten to a small fraction of them.
 Simply resolving to read more papers hasn&amp;rsquo;t worked for me.&lt;/p&gt;
@@ -612,9 +612,9 @@ with open(&#39;example.pdf&#39;, &#39;wb&#39;) as out:
     
     <item>
       <title>Approaching Conferences</title>
-      <link>http://www.jkk.name/post/2019-09-22_conferenceapproach/</link>
+      <link>https://www.jkk.name/post/2019-09-22_conferenceapproach/</link>
       <pubDate>Sun, 22 Sep 2019 10:49:35 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2019-09-22_conferenceapproach/</guid>
+      <guid>https://www.jkk.name/post/2019-09-22_conferenceapproach/</guid>
       <description>&lt;p&gt;Am I getting the most out of the time I put into conferences?
 This year NAACL and ACL ran mentoring programs to help newer members of the community and in the process of giving advice I started to question whether my own approach to conferences was effective.
 Most online advice is aimed at students attending for the first time.
@@ -743,9 +743,9 @@ For posterity, I&amp;rsquo;m summarising that and other comments I got here:&lt;
     
     <item>
       <title>No-Press Diplomacy: Modeling Multi-Agent Gameplay (Paquette et al., 2019)</title>
-      <link>http://www.jkk.name/post/2019-09-13_diplomacynopress/</link>
+      <link>https://www.jkk.name/post/2019-09-13_diplomacynopress/</link>
       <pubDate>Fri, 13 Sep 2019 13:00:23 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2019-09-13_diplomacynopress/</guid>
+      <guid>https://www.jkk.name/post/2019-09-13_diplomacynopress/</guid>
       <description>&lt;p&gt;Games have been a focus of AI research for decades, from Samuel&amp;rsquo;s checkers program in the 1950s, to Deep Blue playing Chess in the 1990s, and AlphaGo playing Go in the 2010s.
 All of those are two-player sequential games.
 In this paper (to appear at NeurIPS), we looked at Diplomacy, a seven player game with simultaneous turns.&lt;/p&gt;
@@ -784,9 +784,9 @@ However, I think a single bot playing against six skilled humans would almost de
     
     <item>
       <title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</title>
-      <link>http://www.jkk.name/post/2019-07-10_disentanglement/</link>
+      <link>https://www.jkk.name/post/2019-07-10_disentanglement/</link>
       <pubDate>Wed, 10 Jul 2019 11:19:06 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2019-07-10_disentanglement/</guid>
+      <guid>https://www.jkk.name/post/2019-07-10_disentanglement/</guid>
       <description>&lt;p&gt;This post is about my own paper to appear at ACL later this month.
 What is interesting about this paper will depend on your research interests, so that&amp;rsquo;s how I&amp;rsquo;ve broken down this blog post.&lt;/p&gt;
 &lt;p&gt;A few key points first:&lt;/p&gt;
@@ -806,7 +806,7 @@ In our case, the stream is a technical support channel for Ubuntu on Internet Re
 We annotated each message with which message(s) it was a response to.
 As far as we are aware, this is the first large-scale corpus with this kind of discourse structure in synchronous chat.
 Here is an example from the data, with annotations marked by edges and colours:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We don&amp;rsquo;t frame the paper as being about reply-structure though.
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
@@ -826,7 +826,7 @@ Many conversations are missing messages, and some have extra messages from other
 Unsurprisingly, our trained model does better, producing conversations that are a true prefix 81% of the time.
 We also noticed that their heuristic was incorrectly linking messages far apart in time.
 This is not tested by our evaluation set, so we constructed this figure, which shows the problem is quite common:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The purple results are based on the output of our model over the entire Ubuntu IRC logs.
 That output is the basis of 
 &lt;a href=&#34;https://github.com/dstc8-track2/NOESIS-II&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DSTC 8 Track 2&lt;/a&gt;.
@@ -869,9 +869,9 @@ Thank you!&lt;/p&gt;
     
     <item>
       <title>Crowdsourcing Services</title>
-      <link>http://www.jkk.name/post/crowdsourcing-services/</link>
+      <link>https://www.jkk.name/post/crowdsourcing-services/</link>
       <pubDate>Sun, 14 Apr 2019 10:49:35 -0400</pubDate>
-      <guid>http://www.jkk.name/post/crowdsourcing-services/</guid>
+      <guid>https://www.jkk.name/post/crowdsourcing-services/</guid>
       <description>&lt;p&gt;Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
 The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.
 Recently, 
@@ -922,7 +922,7 @@ Both are free, but have slightly different features:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;annotation-user-interfaces&#34;&gt;Annotation User Interfaces&lt;/h2&gt;
 &lt;p&gt;There are many annotation tools for NLP (e.g. my own, 
-&lt;a href=&#34;http://jkk.name/slate/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SLATE&lt;/a&gt;!), but these annotation tools are designed to integrate with providers above to collect annotations.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/slate/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SLATE&lt;/a&gt;!), but these annotation tools are designed to integrate with providers above to collect annotations.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;a href=&#34;https://prodi.gy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prodigy&lt;/a&gt;, span classification (e.g. NER), multiple choice questions (which can be used to do a wide range of tasks), and relations (see 
@@ -935,12 +935,12 @@ Both are free, but have slightly different features:&lt;/p&gt;
     
     <item>
       <title>PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-11-08_corefdata/</link>
+      <link>https://www.jkk.name/post/2018-11-08_corefdata/</link>
       <pubDate>Thu, 08 Nov 2018 11:29:32 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-11-08_corefdata/</guid>
+      <guid>https://www.jkk.name/post/2018-11-08_corefdata/</guid>
       <description>&lt;p&gt;The OntoNotes dataset, which is the focus of almost all coreference resolution research, had several compromises in its development (as is the case for any dataset).
 Some of these are discussed in my 
-&lt;a href=&#34;http://jkk.name/publication/conll11coreference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoNLL Shared Task submission paper&lt;/a&gt;, the biggest being the choice to not annotate mentions that are not coreferent.
+&lt;a href=&#34;https://www.jkk.name/publication/conll11coreference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoNLL Shared Task submission paper&lt;/a&gt;, the biggest being the choice to not annotate mentions that are not coreferent.
 This paper describes a new dataset that has a different set of compromises, specifically:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A broader definition of coreference (e.g. appositives are coreferent)&lt;/li&gt;
@@ -953,7 +953,7 @@ The source text is 2/3rds the RACE dataset (English reading comprehension exams 
 Measurements of annotator agreement suggest the annotations are not as consistent as OntoNotes, but still good enough to be a useful resource.
 I do disagree with one aspect of the paper&amp;rsquo;s analysis - the results show a substantial gain in performance when providing gold mentions, suggesting to me that it remains an important challenge in coreference resolution.
 I&amp;rsquo;m also curious whether my 
-&lt;a href=&#34;http://jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;http://aclweb.org/anthology/D18-1016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
@@ -975,9 +975,9 @@ I&amp;rsquo;m also curious whether my
     
     <item>
       <title>Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-09-04_featureengineering/</link>
+      <link>https://www.jkk.name/post/2018-09-04_featureengineering/</link>
       <pubDate>Tue, 04 Sep 2018 10:37:23 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2018-09-04_featureengineering/</guid>
+      <guid>https://www.jkk.name/post/2018-09-04_featureengineering/</guid>
       <description>&lt;p&gt;A common argument in favour of neural networks is that they do not require &amp;lsquo;feature engineering&amp;rsquo;, manually defining functions that produce useful representations of the input data (e.g. a function that checks if a word is in a list of cities and returns 1 or 0).
 This paper argues that there is in fact still value in such functions.&lt;/p&gt;
 &lt;p&gt;The task is named entity recognition and the model is a CRF with a bidirectional LSTM using character and word embeddings.
@@ -1009,12 +1009,12 @@ However, there are a few more values I would have liked to see:&lt;/p&gt;
     
     <item>
       <title>Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-06-12_parseradaptation/</link>
+      <link>https://www.jkk.name/post/2018-06-12_parseradaptation/</link>
       <pubDate>Tue, 12 Jun 2018 20:33:00 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2018-06-12_parseradaptation/</guid>
+      <guid>https://www.jkk.name/post/2018-06-12_parseradaptation/</guid>
       <description>&lt;p&gt;Virtually all systems trained using data have trouble when applied to datasets that differ even slightly - even switching from Wall Street Journal text to New York Times text can hurt parsing performance slightly.
 Extensive work has explored how to adapt to new domains (including 
-&lt;a href=&#34;http://jkk.name/publication/acl10adapt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;one of my own&lt;/a&gt;), but generally these approaches only made up a fraction of the gap in performance.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/publication/acl10adapt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;one of my own&lt;/a&gt;), but generally these approaches only made up a fraction of the gap in performance.&lt;/p&gt;
 &lt;p&gt;This paper shows two interesting new approaches to this issue:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Use 
@@ -1049,9 +1049,9 @@ This gives dramatic gains across multiple datasets.&lt;/p&gt;
     
     <item>
       <title>The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
+      <link>https://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
       <pubDate>Tue, 08 May 2018 09:00:31 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
+      <guid>https://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
       <description>&lt;p&gt;We know that training a neural network involves optimising over a non-convex space, but using standard evaluation methods we see that our models usually end up doing reasonably well.
 This paper asks an important question - are those metrics measuring generalisability effectively?
 In particular, if we sample our test set from a slightly different distribution of data, do models still work well?&lt;/p&gt;
@@ -1088,9 +1088,9 @@ If we restrict the test set to be novel queries (i.e. the model has to generalis
     
     <item>
       <title>An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-04-16_lm_analysis/</link>
+      <link>https://www.jkk.name/post/2018-04-16_lm_analysis/</link>
       <pubDate>Mon, 16 Apr 2018 20:55:22 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2018-04-16_lm_analysis/</guid>
+      <guid>https://www.jkk.name/post/2018-04-16_lm_analysis/</guid>
       <description>&lt;p&gt;Assigning a probability distribution over the next word or character in a sequence (language modeling) is a useful component of many systems, such as speech recognition and translation.
 Recently neural networks have come to dominate in performance, with a range of clever innovations in network structure.
 This paper is not about new models, but rather explores the current evaluation and how well carefully tuned baseline models can do.&lt;/p&gt;
@@ -1123,9 +1123,9 @@ This comes from analysis of a set of models trained with random variation in hyp
     
     <item>
       <title>Provenance for Natural Language Queries (Deutch et al., 2017)</title>
-      <link>http://www.jkk.name/post/2018-03-08_sql/</link>
+      <link>https://www.jkk.name/post/2018-03-08_sql/</link>
       <pubDate>Thu, 08 Mar 2018 20:11:48 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-03-08_sql/</guid>
+      <guid>https://www.jkk.name/post/2018-03-08_sql/</guid>
       <description>&lt;p&gt;Being able to query a database in natural language could help make data accessible to more people.
 Systems that do this have to solve two challenges: (1) understanding the query and (2) expressing the response in a way the user will understand.
 Recently there have been papers in the NLP community on the first challenge, but this paper comes from the DB community and considers the second.&lt;/p&gt;
@@ -1158,9 +1158,9 @@ Still, this work explores an interesting problem and it&amp;rsquo;s cool to see 
     
     <item>
       <title>Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</title>
-      <link>http://www.jkk.name/post/2018-03-05_curriculum/</link>
+      <link>https://www.jkk.name/post/2018-03-05_curriculum/</link>
       <pubDate>Mon, 05 Mar 2018 21:09:58 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-03-05_curriculum/</guid>
+      <guid>https://www.jkk.name/post/2018-03-05_curriculum/</guid>
       <description>&lt;p&gt;Usually when we learn, we have a curriculum designed to incrementally build understanding.
 It seems reasonable that the same idea could be useful for machine learning, and indeed there is a large body of work on the topic.
 This paper explores the specific question of whether a curriculum can help develop task-specific word vectors, and whether we can determine an effective curriculum automatically.&lt;/p&gt;
@@ -1193,9 +1193,9 @@ In my experience (and in our soon-to-appear NAACL paper) we find that variations
     
     <item>
       <title>Pushing the Limits of Paraphrastic Sentence Embeddings with Millions of Machine Translations (Wieting et al., 2017)</title>
-      <link>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</link>
+      <link>https://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</link>
       <pubDate>Wed, 31 Jan 2018 19:25:36 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</guid>
+      <guid>https://www.jkk.name/post/2018-01-31_sentencerepfromparaphrases/</guid>
       <description>&lt;p&gt;It would be convenient to have a way to represent sentences in a vector space, similar to the way vectors are frequently used to represent input words for a task.
 Quite a few sentence embeddings methods have been proposed, but none have really caught on.
 Building on prior work by the same authors, the approach here is to define a neural network that maps a sentence to a vector, then train it with a loss function that measures similarity between the vectors for paraphrases.&lt;/p&gt;
@@ -1226,9 +1226,9 @@ On the other hand, this can&amp;rsquo;t possibly capture the semantics of a sent
     
     <item>
       <title>Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-01-28_crowdassistant/</link>
+      <link>https://www.jkk.name/post/2018-01-28_crowdassistant/</link>
       <pubDate>Sun, 28 Jan 2018 16:01:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-01-28_crowdassistant/</guid>
+      <guid>https://www.jkk.name/post/2018-01-28_crowdassistant/</guid>
       <description>&lt;p&gt;There is a lot of interest in dialogue agents, but a lot of work sits at one of two extremes: either chit-chat agents that just chat, or task-oriented agents that aim to call a specific API for the user.
 This work is about trying to integrate a range of systems from both categories, to get something more general purpose as a result.&lt;/p&gt;
 &lt;p&gt;The core approach is a hybrid system that switches between different agents behind the scenes (an approach taken by a number of Alexa Prize teams).
@@ -1255,9 +1255,9 @@ However, rather than keeping it weekday-ly, I plan to do three times a week, at 
     
     <item>
       <title>A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings (Yang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</link>
+      <link>https://www.jkk.name/post/2017-12-12_multidomainwordvector/</link>
       <pubDate>Tue, 12 Dec 2017 20:25:40 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</guid>
+      <guid>https://www.jkk.name/post/2017-12-12_multidomainwordvector/</guid>
       <description>&lt;p&gt;To construct word vectors from multi-domain data, use a separate vector for each domain and add a loss term to encourage them to agree.
 Here the loss is an l2 norm, weighted by a factor that depends on the frequency of the words in the two domains.
 The factor is the harmonic mean of the normalised frequency in each domain (so the lower frequency dominates the factor, pulling it lower).
@@ -1282,9 +1282,9 @@ Across a range of tasks this consistently performs better than other approaches.
     
     <item>
       <title>The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
+      <link>https://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
       <pubDate>Tue, 12 Dec 2017 20:15:34 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</guid>
+      <guid>https://www.jkk.name/post/2017-12-12_wordvectorgeometry/</guid>
       <description>&lt;p&gt;It turns out that if the vectors learned by word2vec are projected into a plane they all point in the same direction.
 Also, the context vectors (which are part of the algorithm, but not retained afterwards) point the other way.
 When visualising with t-SNE this effect is not visible because of the way the space is warped to optimise the t-SNE objective.&lt;/p&gt;
@@ -1310,9 +1310,9 @@ However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloV
     
     <item>
       <title>Sequence Effects in Crowdsourced Annotations (Mathur et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-08_crowdbias/</link>
+      <link>https://www.jkk.name/post/2017-12-08_crowdbias/</link>
       <pubDate>Fri, 08 Dec 2017 19:49:09 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-08_crowdbias/</guid>
+      <guid>https://www.jkk.name/post/2017-12-08_crowdbias/</guid>
       <description>&lt;p&gt;Getting high quality annotations from crowdsourcing requires careful design.
 This paper looks at how one annotation a worker does can influence their next annotation, for example:&lt;/p&gt;
 &lt;ul&gt;
@@ -1344,9 +1344,9 @@ With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
     
     <item>
       <title>High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-07_rarewordvectors/</link>
+      <link>https://www.jkk.name/post/2017-12-07_rarewordvectors/</link>
       <pubDate>Thu, 07 Dec 2017 20:45:39 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-07_rarewordvectors/</guid>
+      <guid>https://www.jkk.name/post/2017-12-07_rarewordvectors/</guid>
       <description>&lt;p&gt;Word vectors are great for common words, but what about rare words?
 People can have a fairly good understanding of a word given only a few instances, but it&amp;rsquo;s fairly standard to turn all words with a frequency of less than 5 into UNK when learning word vectors.&lt;/p&gt;
 &lt;p&gt;One simple approach is to add up word vectors from the context of the rare word and use that as the representation.
@@ -1375,9 +1375,9 @@ Ultimately this is not a solution to this problem, but it&amp;rsquo;s an idea to
     
     <item>
       <title>Revisiting Selectional Preferences for Coreference Resolution (Heinzerling et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-06_coreferencearguments/</link>
+      <link>https://www.jkk.name/post/2017-12-06_coreferencearguments/</link>
       <pubDate>Wed, 06 Dec 2017 19:05:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-06_coreferencearguments/</guid>
+      <guid>https://www.jkk.name/post/2017-12-06_coreferencearguments/</guid>
       <description>&lt;p&gt;Selectional preferences in this context are about how some verbs are more likely to take certain types of arguments (e.g. people laugh, computers do not).
 Many papers have added features or structures to coreference systems aiming to get at this kind of information.
 This paper presents another way of doing it and experiments that probe how useful it is (punchline: not very).&lt;/p&gt;
@@ -1409,9 +1409,9 @@ If performance remains high, then this actually is an uninformative feature, but
     
     <item>
       <title>Neural Semantic Parsing over Multiple Knowledge-bases (Herzig et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-05_multidomainparsing/</link>
+      <link>https://www.jkk.name/post/2017-12-05_multidomainparsing/</link>
       <pubDate>Tue, 05 Dec 2017 19:28:33 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-05_multidomainparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-12-05_multidomainparsing/</guid>
       <description>&lt;p&gt;One reason learning for semantic parsing is difficult is that the datasets are generally small.
 Assuming some words behave similarly across domains, multi-domain parsing should improve performance by providing more data, which is essentially what this paper finds.
 They consider several configurations, all based on a sequence to sequence LSTM:&lt;/p&gt;
@@ -1445,9 +1445,9 @@ From the paper it sounds like very little hyperparameter tuning was tried, which
     
     <item>
       <title>A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-05_explainingpredictions/</link>
+      <link>https://www.jkk.name/post/2017-12-05_explainingpredictions/</link>
       <pubDate>Tue, 05 Dec 2017 15:40:45 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-05_explainingpredictions/</guid>
+      <guid>https://www.jkk.name/post/2017-12-05_explainingpredictions/</guid>
       <description>&lt;p&gt;Interpreting the behaviour of statistical models in NLP has been hard for a long time, but it has gotten even harder with nonlinear models.
 The simplest method so far in NLP has been to look at the attention distributions in sequence to sequence models, but that doesn&amp;rsquo;t provide everything we need and obviously only applies when the model has attention.
 For looking at the dynamics of the hidden state in an LSTM the Harvard NLP group built a cool 
@@ -1481,9 +1481,9 @@ Experiments show results that match with past observations and intuitions, which
     
     <item>
       <title>A Local Detection Approach for Named Entity Recognition and Mention Detection (Xu et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-01_nonsequencener/</link>
+      <link>https://www.jkk.name/post/2017-12-01_nonsequencener/</link>
       <pubDate>Fri, 01 Dec 2017 15:28:59 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-01_nonsequencener/</guid>
+      <guid>https://www.jkk.name/post/2017-12-01_nonsequencener/</guid>
       <description>&lt;p&gt;The classic NER system is a model that has a lot of curated features, like lists of people, and does inference by choosing the top scoring tag sequence for the whole sentence, using Viterbi decoding.
 The neural version swaps the curated features for word vectors, and viterbi inference for an LSTM (maybe with beam search).
 This paper makes the argument that in reality people are very good at identifying an entity in isolation, so why do global decoding for the best tag sequence?&lt;/p&gt;
@@ -1522,9 +1522,9 @@ There were a few things I found interesting in the results:&lt;/p&gt;
     
     <item>
       <title>Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme (Zheng et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-30_taggingrelations/</link>
+      <link>https://www.jkk.name/post/2017-11-30_taggingrelations/</link>
       <pubDate>Thu, 30 Nov 2017 20:01:41 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-30_taggingrelations/</guid>
+      <guid>https://www.jkk.name/post/2017-11-30_taggingrelations/</guid>
       <description>&lt;p&gt;This paper considers the task of identifying named entities in a sentence and the relations between them.
 The contribution is a way of formulating the task as tagging, so a bi-directional LSTM can be applied.&lt;/p&gt;
 &lt;p&gt;The tags are like in NER (Begin, Inside, End, Single, Outside), but rather than Person, Location, etc, they label each entity with the relation it is participating in, and whether it is in role one or two for the relation.
@@ -1559,9 +1559,9 @@ If interest in this data grows, going back and annotating more seems worthwhile.
     
     <item>
       <title>Abstractive Document Summarization with a Graph-Based Attentional Neural Model (Tan et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-29_abstractivesummarisation/</link>
+      <link>https://www.jkk.name/post/2017-11-29_abstractivesummarisation/</link>
       <pubDate>Wed, 29 Nov 2017 19:14:05 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-29_abstractivesummarisation/</guid>
+      <guid>https://www.jkk.name/post/2017-11-29_abstractivesummarisation/</guid>
       <description>&lt;p&gt;Most effective summarisation systems are extractive, selecting the most important sentences in a document and sticking them together.
 Clearly that is not how people write summaries, but creating abstractive summaries means generating fluent language.
 At the same time, most datasets are based on news text, where the first few sentences are a strong baseline summary (by design, as journalists need to assume that the reader could stop at any point).
@@ -1600,9 +1600,9 @@ I&amp;rsquo;m not sure the beam search scoring idea has applications beyond summ
     
     <item>
       <title>SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</link>
+      <link>https://www.jkk.name/post/2017-11-28_interpretableembeddings/</link>
       <pubDate>Tue, 28 Nov 2017 16:51:09 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</guid>
+      <guid>https://www.jkk.name/post/2017-11-28_interpretableembeddings/</guid>
       <description>&lt;p&gt;The first step in almost any neural network model for language is to look up a vector for each token in the input.
 These vectors express relations between the words, but it is difficult to know exactly what relations.
 This work proposes a way to modify a vector space of words to have more interpretable dimensions.&lt;/p&gt;
@@ -1639,9 +1639,9 @@ The general idea of a sparse auto-encoder also seems cool and may have other app
     
     <item>
       <title>Ordinal Common-sense Inference (Zhang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-27_commonsense/</link>
+      <link>https://www.jkk.name/post/2017-11-27_commonsense/</link>
       <pubDate>Mon, 27 Nov 2017 11:21:45 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-27_commonsense/</guid>
+      <guid>https://www.jkk.name/post/2017-11-27_commonsense/</guid>
       <description>&lt;p&gt;When people read a sentence they form an entire world around it, making inferences about unwritten properties based on their prior knowledge.
 If we want NLP systems to do the same, we need data to train and test this common sense aspect of language understanding.&lt;/p&gt;
 &lt;p&gt;This paper is about a new dataset of automatically generated sentence pairs with human ratings.
@@ -1679,9 +1679,9 @@ Interestingly, regression does quite a bit better than a set of one-vs-all SVMs 
     
     <item>
       <title>Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-22_errorrepairparsing/</link>
+      <link>https://www.jkk.name/post/2017-11-22_errorrepairparsing/</link>
       <pubDate>Wed, 22 Nov 2017 15:48:53 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-22_errorrepairparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-11-22_errorrepairparsing/</guid>
       <description>&lt;p&gt;This work presents a system that parses sentences and identifies grammatical errors simultaneously.
 It&amp;rsquo;s an intuitive combination - a syntactic model should assign higher probability to a parse for a fixed version of a sentence than the one with a mistake.&lt;/p&gt;
 &lt;p&gt;They build on an incremental &amp;lsquo;easy-first&amp;rsquo; dependency parsing approach.
@@ -1715,9 +1715,9 @@ It does perform better on ungrammatical text, though the data is generated using
     
     <item>
       <title>Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-21_multiinputattention/</link>
+      <link>https://www.jkk.name/post/2017-11-21_multiinputattention/</link>
       <pubDate>Tue, 21 Nov 2017 16:42:19 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-21_multiinputattention/</guid>
+      <guid>https://www.jkk.name/post/2017-11-21_multiinputattention/</guid>
       <description>&lt;p&gt;Attention, a weighted average over vectors with weights determined based on context (usually decoder state), has proven effective in many NLP tasks.
 There are several variants, and this paper adds new types that address the question of how to apply attention to different sources at the same time, such as text and an image.&lt;/p&gt;
 &lt;p&gt;They consider three general versions:&lt;/p&gt;
@@ -1754,11 +1754,11 @@ The trends are that hierarchical is best, the sentinel doesn&amp;rsquo;t help, a
     
     <item>
       <title>Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-20_mrsparser/</link>
+      <link>https://www.jkk.name/post/2017-11-20_mrsparser/</link>
       <pubDate>Mon, 20 Nov 2017 10:13:12 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-20_mrsparser/</guid>
+      <guid>https://www.jkk.name/post/2017-11-20_mrsparser/</guid>
       <description>&lt;p&gt;Like the 
-&lt;a href=&#34;http://www.jkk.name/post/2017-11-16_ucca/&#34;&gt;UCCA parser&lt;/a&gt;, this paper explores a transition-based neural model for semantic parsing, but for Minimal Recursion Semantics instead of Universal Conceptual Cognitive Annotation.
+&lt;a href=&#34;https://www.jkk.name/post/2017-11-16_ucca/&#34;&gt;UCCA parser&lt;/a&gt;, this paper explores a transition-based neural model for semantic parsing, but for Minimal Recursion Semantics instead of Universal Conceptual Cognitive Annotation.
 Comparing MRS and UCCA, every word gets a non-terminal symbol in MRS, plus additional non-terminals for phenomena like quantification, while UCCA only introduces them for special cases like linking to a coordination.
 Both have discontinuous graph structures, creating a challenge for most parsers.&lt;/p&gt;
 &lt;p&gt;The UCCA and MRS parsers extend the basic shift-reduce transitions in different ways.
@@ -1786,9 +1786,9 @@ However, the system can also be applied to AMR, and does fairly well, better tha
     
     <item>
       <title>A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
+      <link>https://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
       <pubDate>Fri, 17 Nov 2017 18:40:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</guid>
       <description>&lt;p&gt;Discourse parsing for Rhetorical Structure Theory is difficult partly because it involves a range of relation types at different scales (within and between sentences) and partly because there is relatively little annotated data available.
 To deal with the limited data, this paper breaks the task into two parts: (1) identify relations, (2) assign labels.
 Their system is state-of-the-art, and an ablation shows that the division of tasks helps performance.
@@ -1816,9 +1816,9 @@ This paper also continues the trend of transition-based inference applying effec
     
     <item>
       <title>A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-16_ucca/</link>
+      <link>https://www.jkk.name/post/2017-11-16_ucca/</link>
       <pubDate>Thu, 16 Nov 2017 17:24:59 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-16_ucca/</guid>
+      <guid>https://www.jkk.name/post/2017-11-16_ucca/</guid>
       <description>&lt;p&gt;Over the last few years interest has risen in parsing structures other than projective trees (including my dissertation!).
 There are now a range of different datasets with annotations for syntactic and/or semantic structure that include discontinuous constituents and graphs.
 This paper looks at UCCA, a proposed formalism that is somewhat similar to SRL, with non-terminals included to allow for easier handling of cases like coordination.&lt;/p&gt;
@@ -1851,9 +1851,9 @@ If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
     
     <item>
       <title>Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-15_entityvectors/</link>
+      <link>https://www.jkk.name/post/2017-11-15_entityvectors/</link>
       <pubDate>Wed, 15 Nov 2017 18:01:27 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-15_entityvectors/</guid>
+      <guid>https://www.jkk.name/post/2017-11-15_entityvectors/</guid>
       <description>&lt;p&gt;Since word2vec was released there have been a series of X2vec papers, though none have had the success of word vectors.
 In this case the idea is to represent entities and chunks of text (words, sentences, paragraphs).&lt;/p&gt;
 &lt;p&gt;Entities are represented with vectors.
@@ -1892,9 +1892,9 @@ That said, I feel like more ablation is needed to see what role each of these pi
     
     <item>
       <title>In-Order Transition-based Constituent Parsing (Liu et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-14_inorderparsing/</link>
+      <link>https://www.jkk.name/post/2017-11-14_inorderparsing/</link>
       <pubDate>Tue, 14 Nov 2017 14:10:39 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-14_inorderparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-11-14_inorderparsing/</guid>
       <description>&lt;p&gt;Shift-reduce constituency parsing incrementally builds the parse either bottom-up or top-down.
 The difference is whether a non-terminal is placed on the stack before or after the words that it spans.
 This corresponds to two forms of depth-first traversal of the tree: pre-order or post-order.&lt;/p&gt;
@@ -1923,9 +1923,9 @@ I wonder whether further gains could be realised with a label-sensitive ordering
     
     <item>
       <title>Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-13_languagegame/</link>
+      <link>https://www.jkk.name/post/2017-11-13_languagegame/</link>
       <pubDate>Mon, 13 Nov 2017 09:47:08 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-13_languagegame/</guid>
+      <guid>https://www.jkk.name/post/2017-11-13_languagegame/</guid>
       <description>&lt;p&gt;In reference games, two players communicate in a shared world with the goal of one learning what the other is referring to.
 Their small scale and clear success criteria make them a convenient testbed for dialogue agents, going back decades, with recent work focusing on neural approaches.
 This paper considers a simple game and constrains models in various ways to improve performance and see how their communication varies, a line of work also appearing in recent papers by Jacob Andreas (
@@ -1960,9 +1960,9 @@ Limiting even further, to 4 words for values and providing each turn in isolatio
     
     <item>
       <title>Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-10_kginlstm/</link>
+      <link>https://www.jkk.name/post/2017-11-10_kginlstm/</link>
       <pubDate>Fri, 10 Nov 2017 15:37:15 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-10_kginlstm/</guid>
+      <guid>https://www.jkk.name/post/2017-11-10_kginlstm/</guid>
       <description>&lt;p&gt;Structured information sources have been effectively used for entity detection and typing in linear models with the information encoded as binary features.
 This paper looks at how to integrate vector representations of structured information into an LSTM.
 The solution is an additional processing step during output generation, in which the vectors for relevant entities in the structured data are combined with the standard LSTM output (note, they do not affect the cell itself, so the information is not passed on through the recurrence).&lt;/p&gt;
@@ -1993,9 +1993,9 @@ The other key observations are that having a sequence level loss (using a CRF) h
     
     <item>
       <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-09_framesdataset/</link>
+      <link>https://www.jkk.name/post/2017-11-09_framesdataset/</link>
       <pubDate>Thu, 09 Nov 2017 19:47:08 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-09_framesdataset/</guid>
+      <guid>https://www.jkk.name/post/2017-11-09_framesdataset/</guid>
       <description>&lt;p&gt;Another paper about a dataset of dialogues, but this time with structure.
 Like the paper from yesterday, the aim is a dataset of task-oriented conversations, but with more complexity than prior work.
 The difference is that this work includes a structured representation of the state of the conversation: frames.&lt;/p&gt;
@@ -2028,9 +2028,9 @@ Evaluating on both could be a great way to show the flexibility of a dialogue sy
     
     <item>
       <title>Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-08_graphdialogue/</link>
+      <link>https://www.jkk.name/post/2017-11-08_graphdialogue/</link>
       <pubDate>Wed, 08 Nov 2017 18:46:04 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-08_graphdialogue/</guid>
+      <guid>https://www.jkk.name/post/2017-11-08_graphdialogue/</guid>
       <description>&lt;p&gt;Task-oriented dialogue systems are often focused on a very narrow task, to the point where the state can be described completely with a tuple (e.g. preferences for a restaurant).
 This paper sets up a more challenging task with more complex language use, while still having a specific goal and directly relevant structured information.
 They collected 11,000 dialogues, where two people have private lists of friends and are trying to identify which friend they have in common.
@@ -2078,9 +2078,9 @@ During generation, the LSTM uses attention over these vectors to inform the outp
     
     <item>
       <title>Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</link>
+      <link>https://www.jkk.name/post/2017-11-07_spineparsinglstm/</link>
       <pubDate>Tue, 07 Nov 2017 20:42:45 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</guid>
+      <guid>https://www.jkk.name/post/2017-11-07_spineparsinglstm/</guid>
       <description>&lt;p&gt;This paper brings together work on neural dependency parsing with the idea of non-terminal spines as a way to represent constituency structure.
 Within the transition parsing inference process they can naturally fit the generation of a new spines by gradually building up the spine, which makes for a very elegant inference process.&lt;/p&gt;
 &lt;p&gt;Surprisingly, it doesn&amp;rsquo;t seem to matter what head choices are used to generate the spines (they tried leftmost word, rightmost word, and two standard schemes).
@@ -2107,9 +2107,9 @@ Decisions about higher up in the spine are difficult to make when looking at a s
     
     <item>
       <title>Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</title>
-      <link>http://www.jkk.name/post/2017-11-06_literarycharacters/</link>
+      <link>https://www.jkk.name/post/2017-11-06_literarycharacters/</link>
       <pubDate>Mon, 06 Nov 2017 20:16:28 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-06_literarycharacters/</guid>
+      <guid>https://www.jkk.name/post/2017-11-06_literarycharacters/</guid>
       <description>&lt;p&gt;NLP tools seem like a natural fit for literary analysis, but the domain shift from news text is large enough to degrade performance to the point where tools are not useful.
 Here the specific question is how many characters are there in novels?
 NER + coreference would seem to be enough, but an off-the-shelf system fares poorly (and I doubt improvements in the last few years would change that story).&lt;/p&gt;
@@ -2144,9 +2144,9 @@ It would be interesting to modify a coreference resolution system to process the
     
     <item>
       <title>Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-03_discourserelations/</link>
+      <link>https://www.jkk.name/post/2017-11-03_discourserelations/</link>
       <pubDate>Fri, 03 Nov 2017 15:40:32 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-03_discourserelations/</guid>
+      <guid>https://www.jkk.name/post/2017-11-03_discourserelations/</guid>
       <description>&lt;p&gt;Automatically generating high quality meeting notes and summaries would be awesome, but involves solving many challenges.
 Here, they assume speech recognition is already done and we also know the structure over utterances indicating which previous utterance each is a response to.
 The task is to label each of those utterance-utterance pairs with a type (e.g. elaboration) and to select the key phrase of each utterance.&lt;/p&gt;
@@ -2175,9 +2175,9 @@ According to automatic metrics it is quite a bit better than running the summari
     
     <item>
       <title>Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-01_mixtureofexperts/</link>
+      <link>https://www.jkk.name/post/2017-11-01_mixtureofexperts/</link>
       <pubDate>Wed, 01 Nov 2017 21:57:27 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-01_mixtureofexperts/</guid>
+      <guid>https://www.jkk.name/post/2017-11-01_mixtureofexperts/</guid>
       <description>&lt;p&gt;Mixture of experts can be seen as an ensemble approach in which we assume that each of our models is effective under different circumstances and so we combine them by switching between which we use to make our decision.
 From this perspective the idea can be applied to any set of models, but here the idea is to train (1) the expert models, (2) our method of choosing between them, and (3) a set of common model components, all at the same time.&lt;/p&gt;
 &lt;p&gt;The particular set up here is that they modify a series of LSTM layers, adding a new layer in between each pair of LSTMs.
@@ -2207,9 +2207,9 @@ As a result, they can scale up to massive networks while still having reasonable
     
     <item>
       <title>Real-time Captioning by Groups of Non-experts (Lasecki et al., 2012)</title>
-      <link>http://www.jkk.name/post/2017-10-31_realtimecaptioning/</link>
+      <link>https://www.jkk.name/post/2017-10-31_realtimecaptioning/</link>
       <pubDate>Tue, 31 Oct 2017 13:23:13 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-31_realtimecaptioning/</guid>
+      <guid>https://www.jkk.name/post/2017-10-31_realtimecaptioning/</guid>
       <description>&lt;p&gt;For any given task, automatic systems are fast, while annotation is accurate.
 This work is about bridging that gap to provide a way for a team of annotators to produce real-time high quality labels.
 The specific application is speech transcription, in which automatic systems are not accurate, while average people are slow (experts can transcribe in real time, but are very expensive).&lt;/p&gt;
@@ -2254,9 +2254,9 @@ From the paper it&amp;rsquo;s tricky to see a final cost, but it is certainly fa
     
     <item>
       <title>Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-30_neuralsequence/</link>
+      <link>https://www.jkk.name/post/2017-10-30_neuralsequence/</link>
       <pubDate>Mon, 30 Oct 2017 13:28:30 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-30_neuralsequence/</guid>
+      <guid>https://www.jkk.name/post/2017-10-30_neuralsequence/</guid>
       <description>&lt;p&gt;Language is bursty, with rare words occurring in clumps, the simplest example being an unusual name that occurs a lot in one news article, but not in other articles.
 This paper is about how to modify a neural language model to take this into consideration, by adapting the model over time.&lt;/p&gt;
 &lt;p&gt;The main idea is to have one model of overall word usage (global) and a separate model that shifts over time to take into consideration the current text (local).
@@ -2286,9 +2286,9 @@ archivePrefix = &amp;quot;arXiv&amp;quot;,
     
     <item>
       <title>Searching for Activation Functions (Ramachandran et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-27_swishactivation/</link>
+      <link>https://www.jkk.name/post/2017-10-27_swishactivation/</link>
       <pubDate>Fri, 27 Oct 2017 11:22:45 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-27_swishactivation/</guid>
+      <guid>https://www.jkk.name/post/2017-10-27_swishactivation/</guid>
       <description>&lt;h2 id=&#34;update&#34;&gt;Update&lt;/h2&gt;
 &lt;p&gt;After prior work came to light that uses the same non-linearity, this paper was updated to focus more on the search process used to investigate the space.
 One new takeaway for me was how diverse the effective activation functions were (see figures in the new version of the paper).&lt;/p&gt;
@@ -2299,7 +2299,7 @@ This paper proposes a new non-linearity, $\text{swish}(x) = x \cdot \text{sigmoi
 &lt;p&gt;Interestingly, it was chosen by a combination of exhaustive search and search with reinforcement learning across a range of functions, evaluating on CIFAR-10 with a small model.
 ReLU variants were consistently second-best to swish variants, and generally the more complicated functions performed worse.
 They do mention two functions that performed well, but didn&amp;rsquo;t generalise: $\text{cos}(x) - x$ and $\text{max}(x, \text{tanh}(x))$, which look like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/activation-functions.png&#34; alt=&#34;Four activation functions&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/activation-functions.png&#34; alt=&#34;Four activation functions&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In a range of experiments in vision and machine translation swish does at least as well or slightly better than the alternatives.
 It also seems more robust to network depth and to work across different network structures.
 As for why it works so well, there are two main ideas: (1) it adds smoothness to the ReLU, (2) it has some sensitivity to negative inputs.
@@ -2325,9 +2325,9 @@ archivePrefix = &amp;quot;arXiv&amp;quot;,
     
     <item>
       <title>Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</link>
+      <link>https://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</link>
       <pubDate>Thu, 26 Oct 2017 20:47:12 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</guid>
+      <guid>https://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</guid>
       <description>&lt;p&gt;Word2Vec and other approaches provide a single vector representing a word&amp;rsquo;s meaning, giving words spatially defined relationships capturing relatedness.
 A natural extension is to consider regions in that space and allow some words to take up larger or smaller regions.
 Another natural idea is to allow a single word to have multiple representations, to capture the different senses.
@@ -2360,9 +2360,9 @@ The paper also doesn&amp;rsquo;t get into details about the learned space, for e
     
     <item>
       <title>Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</title>
-      <link>http://www.jkk.name/post/2017-10-25_shiftreducedp/</link>
+      <link>https://www.jkk.name/post/2017-10-25_shiftreducedp/</link>
       <pubDate>Wed, 25 Oct 2017 14:44:13 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-25_shiftreducedp/</guid>
+      <guid>https://www.jkk.name/post/2017-10-25_shiftreducedp/</guid>
       <description>&lt;p&gt;This paper is a follow-up to yesterday&amp;rsquo;s, where the approach is implemented and evaluated on English and Chinese, with very strong results.
 The novel contribution is the idea of introducing alternating steps in the dynamic program to do unary steps (not a novel idea in general, but novel in its application to the dynamic programming version of shift-reduce parsing).&lt;/p&gt;
 &lt;p&gt;What I found interesting here were the clear benefits of the dynamic program (DP) version.
@@ -2390,9 +2390,9 @@ On speed, there is the nice theoretical bound of $O(n)$ for this approach, but t
     
     <item>
       <title>Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</title>
-      <link>http://www.jkk.name/post/2017-10-24_dynamictransition/</link>
+      <link>https://www.jkk.name/post/2017-10-24_dynamictransition/</link>
       <pubDate>Tue, 24 Oct 2017 13:06:04 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-24_dynamictransition/</guid>
+      <guid>https://www.jkk.name/post/2017-10-24_dynamictransition/</guid>
       <description>&lt;p&gt;This paper from 2011 explores the relationship between transition based parsing and dynamic programming based parsing.
 They show how to convert common dependency parsing systems (Arc-Standard and Arc-Eager) into dynamic programs, and how doing the reverse on a dynamic program gives the Arc-Hybrid approach (which has since been used in many places, and is now joined by additional systems like Arc-Swift).&lt;/p&gt;
 &lt;p&gt;The benefit of this transformation is that we can find exact answers without massive beams.
@@ -2422,9 +2422,9 @@ The variation in available context for the different algorithms may force genera
     
     <item>
       <title>Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-23_alphagozero/</link>
+      <link>https://www.jkk.name/post/2017-10-23_alphagozero/</link>
       <pubDate>Mon, 23 Oct 2017 21:12:57 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-23_alphagozero/</guid>
+      <guid>https://www.jkk.name/post/2017-10-23_alphagozero/</guid>
       <description>&lt;p&gt;This paper is an extension of the original AlphaGo work on using reinforcement learning to build a Go-player.
 Interestingly, the changes have simplified the overall model, as well as enabling it to do even better than the previous model, but now without any supervised training.&lt;/p&gt;
 &lt;p&gt;One key change is that there is a single core neural network learning to represent the game state.
@@ -2455,15 +2455,15 @@ Interestingly, while the unsupervised model is worse at predicting what expert h
     
     <item>
       <title>Attention Is All You Need (Vaswani et al., ArXiv 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-20_onlyattention/</link>
+      <link>https://www.jkk.name/post/2017-10-20_onlyattention/</link>
       <pubDate>Fri, 20 Oct 2017 15:25:23 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-20_onlyattention/</guid>
+      <guid>https://www.jkk.name/post/2017-10-20_onlyattention/</guid>
       <description>&lt;p&gt;Recurrent neural networks like LSTMs and GRUs have limited scope for parallelisation because each step depends on the one before it.
 This architecture also means that many steps of computation separate two words that are far apart, making it difficult to capture long-distance relations.
 A range of approaches have been used to try to address these issues, such as convolutional structures and other forms of recurrence (e.g. QRNNs).
 The idea in this work is to use attention, applied multiple times, to get a network that is fast while still capturing positional information.&lt;/p&gt;
 &lt;p&gt;To explain the structure I put together the figure below, which captures the network structure with a few simplifications:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/google-attention.png&#34; alt=&#34;Google Attention Network&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/google-attention.png&#34; alt=&#34;Google Attention Network&#34;&gt;&lt;/p&gt;
 &lt;p&gt;There a few ideas being brought together here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Positional encoding&lt;/em&gt;, which is a vector of the same length as the word representation, but that depends only on the position in the input. Here they use $f(pos, dim) = sin(pos / 10000^{2 dim / d_w})$ for even dimensions and the cosine equivalent for odd dimensions (where $d_w$ is the number of dimensions.&lt;/li&gt;
@@ -2505,9 +2505,9 @@ they released.&lt;/p&gt;
     
     <item>
       <title>Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</title>
-      <link>http://www.jkk.name/post/2017-10-19_mace/</link>
+      <link>https://www.jkk.name/post/2017-10-19_mace/</link>
       <pubDate>Thu, 19 Oct 2017 17:08:50 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-19_mace/</guid>
+      <guid>https://www.jkk.name/post/2017-10-19_mace/</guid>
       <description>&lt;p&gt;The standard way to get high quality annotations is to get labels from multiple people and take a majority vote.
 Getting multiple annotations costs more, and the quality of annotators can vary considerably (with spamming at one extreme).
 One way to avoid the quality issue is to restrict who can do the task (must have done X previous tasks with an accept rate of Y), but that limits the pool of available workers.
@@ -2521,7 +2521,7 @@ Another approach is to try to estimate the quality of annotator work using a sta
 &lt;p&gt;$A$ is observed, but $T$ and $S$ are not, so they use expectation maximization to get both model parameters and variable values.
 To deal with nonconvexity they use 100 random restarts, deciding which is best based on how well the model describes the data.
 Note - this model (and the code) was the basis of the error detection paper I 
-&lt;a href=&#34;http://www.jkk.name/post/2017-10-13_errordetection/&#34;&gt;wrote about&lt;/a&gt; recently.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/post/2017-10-13_errordetection/&#34;&gt;wrote about&lt;/a&gt; recently.&lt;/p&gt;
 &lt;p&gt;For predicting annotator quality the model is consistently effective across three datasets, though the Beta and Dirichlet priors are key for one (where annotator agreement was high on average).
 For determining the correct answer it is slightly better than majority vote, though the gains are small.
 The real advantage comes in deciding whether to discard data, where the choice of what to discard can be guided by the estimate of quality (this is what the error detection paper was doing).
@@ -2552,14 +2552,14 @@ A range of synthetic experiments also show positive results, though their design
     
     <item>
       <title>Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-18_neuralamr/</link>
+      <link>https://www.jkk.name/post/2017-10-18_neuralamr/</link>
       <pubDate>Wed, 18 Oct 2017 21:31:05 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-18_neuralamr/</guid>
+      <guid>https://www.jkk.name/post/2017-10-18_neuralamr/</guid>
       <description>&lt;p&gt;This is another paper concerned with the challenge of sparsity in AMR parsing, specifically that there are an enormous number of output symbols in the parse trees and most are seen infrequently.
 The system they develop is based on the encoder-decoder with attention approach, which has previously done poorly for AMR, partially because of sparsity.&lt;/p&gt;
 &lt;p&gt;Their solution is to merge certain types of symbols into groups (dates, named entities, rare verbs, constants, etc) and have a standard way to map from the surface form to the output symbol.
 This is an alternative to the approach from the paper I 
-&lt;a href=&#34;http://www.jkk.name/post/2017-10-12_amralignment/&#34;&gt;wrote about&lt;/a&gt; last week.
+&lt;a href=&#34;https://www.jkk.name/post/2017-10-12_amralignment/&#34;&gt;wrote about&lt;/a&gt; last week.
 They also introduce a completely separate idea, which is a different way to take an AMR graph and turn it into a linear sequence.
 This change is necessary to make the output follow the form their model generates - a sequence (though there has been work on tree based LSTMs on the output side, so AMR could be directly generated, and I believe there has been some work on applying that to AMR).&lt;/p&gt;
 &lt;p&gt;Together these changes do substantially improve performance over previous encoder-decoder based work for AMR.
@@ -2586,9 +2586,9 @@ It may also be productive to combine these ideas with the graph abstraction idea
     
     <item>
       <title>Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-17_nedisambiguation/</link>
+      <link>https://www.jkk.name/post/2017-10-17_nedisambiguation/</link>
       <pubDate>Tue, 17 Oct 2017 20:33:58 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-17_nedisambiguation/</guid>
+      <guid>https://www.jkk.name/post/2017-10-17_nedisambiguation/</guid>
       <description>&lt;p&gt;Several NLP tasks aim to identify information regarding entities, such as when two sections of text are referring to the same thing, or which thing out of a large set (e.g. things in Wikipedia) a piece of text is about.
 This paper focuses on a subset of entity linking, trying to determine which entity out of a set of candidates is the correct one (in a way a kind of reranker for entity linking).&lt;/p&gt;
 &lt;p&gt;The task is based on a really cool dataset from Google+UMass, which collected text that was hyperlinked to wikipedia articles.
@@ -2624,9 +2624,9 @@ For future users of the wikilinks data there is also some nice analysis at the e
     
     <item>
       <title>A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-16_forumrnn/</link>
+      <link>https://www.jkk.name/post/2017-10-16_forumrnn/</link>
       <pubDate>Mon, 16 Oct 2017 20:55:07 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-16_forumrnn/</guid>
+      <guid>https://www.jkk.name/post/2017-10-16_forumrnn/</guid>
       <description>&lt;p&gt;Attention - a weighted average over a set of vectors representing context - has consistently produced positive results.
 Here we see an example of how it can be applied in the case of modeling a threaded discussion.&lt;/p&gt;
 &lt;p&gt;Attention is applied in two ways.
@@ -2662,9 +2662,9 @@ The paper mentions it is Zipfian, but surely it would be something double-sided 
     
     <item>
       <title>Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-13_errordetection/</link>
+      <link>https://www.jkk.name/post/2017-10-13_errordetection/</link>
       <pubDate>Fri, 13 Oct 2017 13:32:19 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-13_errordetection/</guid>
+      <guid>https://www.jkk.name/post/2017-10-13_errordetection/</guid>
       <description>&lt;p&gt;Active learning doesn&amp;rsquo;t seem to get much attention in NLP, probably because of fear that developing data based on the errors of one model will introduce a particular sampling bias.
 This paper is a nice example of a problem it can be applied to that doesn&amp;rsquo;t raise that issue: detecting all the errors in a system&amp;rsquo;s output.&lt;/p&gt;
 &lt;p&gt;The scenario is that you have a bunch of models for doing a task (e.g. POS tagging) and a new dataset with no labeled data, which you would like to label.
@@ -2713,9 +2713,9 @@ It also works well for NER, and consistently does better than the alternative th
     
     <item>
       <title>Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-12_amralignment/</link>
+      <link>https://www.jkk.name/post/2017-10-12_amralignment/</link>
       <pubDate>Thu, 12 Oct 2017 19:52:34 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-12_amralignment/</guid>
+      <guid>https://www.jkk.name/post/2017-10-12_amralignment/</guid>
       <description>&lt;p&gt;Abstract Meaning Representation (AMR) structures represent sentence meaning with labeled nodes (concepts) that are related to the words in the sentence, but not explicitly linked to them.
 This is a problem for most parsing algorithms, which need a way to efficiently decompose the structure in order to learn how to generate it.
 In dependency parsing there are no abstract nodes to generate, in constituency parsing there is a very small set of node types, and for CCG, TAG, etc the labels come from a constrained space.
@@ -2755,9 +2755,9 @@ With concept identification at 83 F there is still plenty of scope for improveme
     
     <item>
       <title>Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-11_multimt/</link>
+      <link>https://www.jkk.name/post/2017-10-11_multimt/</link>
       <pubDate>Wed, 11 Oct 2017 17:29:04 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-11_multimt/</guid>
+      <guid>https://www.jkk.name/post/2017-10-11_multimt/</guid>
       <description>&lt;p&gt;This paper is a detailed analysis of a surprisingly effective simple idea: train a machine translation system with sentence pairs from multiple languages, adjusting the input to have an extra token at the end that says what the target language is.
 To deal with class imbalance, data is oversampled to have all language pairs be equally represented (though even without that, it works fairly well).&lt;/p&gt;
 &lt;p&gt;The biggest advantage of this approach is that a single model can handle translation between many pairs, rather than needing $O(n^2)$ models for $n$ languages.
@@ -2798,9 +2798,9 @@ For the time being at least, going via a third language still seems necessary, a
     
     <item>
       <title>Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al., ACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-10_seqqa/</link>
+      <link>https://www.jkk.name/post/2017-10-10_seqqa/</link>
       <pubDate>Tue, 10 Oct 2017 13:43:36 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-10_seqqa/</guid>
+      <guid>https://www.jkk.name/post/2017-10-10_seqqa/</guid>
       <description>&lt;p&gt;Semantic parsing datasets generally consist of (question, answer) pairs, where each pair is completely independent of the rest (one exception is ATIS, which has multi-turn conversations, though most work doesn&amp;rsquo;t use them).
 In reality, we often ask a series of simple questions that together form a complex one, for example &amp;ldquo;What flights are available from Detroit to Sydney? And how much is the price if I don&amp;rsquo;t want to leave before 8am?&amp;rdquo;
 This work explores these kinds of sequential questions with a new dataset and algorithm.&lt;/p&gt;
@@ -2834,9 +2834,9 @@ That said, it seems difficult to generalise the model to handle more complicated
     
     <item>
       <title> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</title>
-      <link>http://www.jkk.name/post/2017-10-09_parsing-autoencoder/</link>
+      <link>https://www.jkk.name/post/2017-10-09_parsing-autoencoder/</link>
       <pubDate>Mon, 09 Oct 2017 14:31:24 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-09_parsing-autoencoder/</guid>
+      <guid>https://www.jkk.name/post/2017-10-09_parsing-autoencoder/</guid>
       <description>&lt;p&gt;Semantic parsing datasets are small because they are expensive to produce (logical forms don&amp;rsquo;t occur naturally and writing them down takes time).
 The idea here is to do semi-supervised learning by implementing both a parser and a generator, which are trained together as a form of autoencoder where the intermediate representation is natural language.&lt;/p&gt;
 &lt;p&gt;The architecture has four LSTMs:&lt;/p&gt;
@@ -2880,9 +2880,9 @@ How to tradeoff the different data scenarios seems like an interesting challenge
     
     <item>
       <title>Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-06-madlibs/</link>
+      <link>https://www.jkk.name/post/2017-10-06-madlibs/</link>
       <pubDate>Fri, 06 Oct 2017 13:31:43 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-06-madlibs/</guid>
+      <guid>https://www.jkk.name/post/2017-10-06-madlibs/</guid>
       <description>&lt;p&gt;Humor is an incredibly difficult problem, as this paper makes clear in its background section.
 Most work has considered very specific types of jokes (e.g. &amp;ldquo;that&amp;rsquo;s what she said&amp;rdquo;, or pairs of words that sound similar to form riddles).
 This work contributes (1) a new task, (2) an evaluation method, and (3) an example system.&lt;/p&gt;
@@ -2918,9 +2918,9 @@ Another interpretation is that the constraint gives them a smaller space to thin
     
     <item>
       <title>DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-05-deftnn/</link>
+      <link>https://www.jkk.name/post/2017-10-05-deftnn/</link>
       <pubDate>Thu, 05 Oct 2017 00:00:00 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-05-deftnn/</guid>
+      <guid>https://www.jkk.name/post/2017-10-05-deftnn/</guid>
       <description>&lt;p&gt;This paper proposes two techniques for speeding up neural network execution on GPUs:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Reduce computation when doing matrix-multiply by removing rows.&lt;/li&gt;
@@ -2957,9 +2957,9 @@ Many AI researchers have tried switching to 16 bit representations to save space
     
     <item>
       <title>Ordering Pizza for an Event with Vegetarians</title>
-      <link>http://www.jkk.name/post/pizza/</link>
+      <link>https://www.jkk.name/post/pizza/</link>
       <pubDate>Wed, 27 Sep 2017 00:00:00 -0500</pubDate>
-      <guid>http://www.jkk.name/post/pizza/</guid>
+      <guid>https://www.jkk.name/post/pizza/</guid>
       <description>&lt;h2 id=&#34;how-much-vegetarian-pizza-should-i-order&#34;&gt;How much vegetarian pizza should I order?&lt;/h2&gt;
 &lt;p&gt;This question frequently comes up in the world of free food at university events. In my experience (as someone who does not eat meat pizzas), often not enough is ordered. Let&amp;rsquo;s try to come up with a model to tell us how much to order. Set it up like this:&lt;/p&gt;
 &lt;ul&gt;

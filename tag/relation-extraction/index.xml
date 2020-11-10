@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>relation-extraction | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/relation-extraction/</link>
-      <atom:link href="http://www.jkk.name/tag/relation-extraction/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/relation-extraction/</link>
+      <atom:link href="https://www.jkk.name/tag/relation-extraction/index.xml" rel="self" type="application/rss+xml" />
     <description>relation-extraction</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 30 Nov 2017 20:01:41 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>relation-extraction</title>
-      <link>http://www.jkk.name/tag/relation-extraction/</link>
+      <link>https://www.jkk.name/tag/relation-extraction/</link>
     </image>
     
     <item>
       <title>Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme (Zheng et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-30_taggingrelations/</link>
+      <link>https://www.jkk.name/post/2017-11-30_taggingrelations/</link>
       <pubDate>Thu, 30 Nov 2017 20:01:41 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-30_taggingrelations/</guid>
+      <guid>https://www.jkk.name/post/2017-11-30_taggingrelations/</guid>
       <description>&lt;p&gt;This paper considers the task of identifying named entities in a sentence and the relations between them.
 The contribution is a way of formulating the task as tagging, so a bi-directional LSTM can be applied.&lt;/p&gt;
 &lt;p&gt;The tags are like in NER (Begin, Inside, End, Single, Outside), but rather than Person, Location, etc, they label each entity with the relation it is participating in, and whether it is in role one or two for the relation.

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>misc | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/misc/</link>
-      <atom:link href="http://www.jkk.name/tag/misc/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/misc/</link>
+      <atom:link href="https://www.jkk.name/tag/misc/index.xml" rel="self" type="application/rss+xml" />
     <description>misc</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 27 Sep 2017 00:00:00 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>misc</title>
-      <link>http://www.jkk.name/tag/misc/</link>
+      <link>https://www.jkk.name/tag/misc/</link>
     </image>
     
     <item>
       <title>Ordering Pizza for an Event with Vegetarians</title>
-      <link>http://www.jkk.name/post/pizza/</link>
+      <link>https://www.jkk.name/post/pizza/</link>
       <pubDate>Wed, 27 Sep 2017 00:00:00 -0500</pubDate>
-      <guid>http://www.jkk.name/post/pizza/</guid>
+      <guid>https://www.jkk.name/post/pizza/</guid>
       <description>&lt;h2 id=&#34;how-much-vegetarian-pizza-should-i-order&#34;&gt;How much vegetarian pizza should I order?&lt;/h2&gt;
 &lt;p&gt;This question frequently comes up in the world of free food at university events. In my experience (as someone who does not eat meat pizzas), often not enough is ordered. Let&amp;rsquo;s try to come up with a model to tell us how much to order. Set it up like this:&lt;/p&gt;
 &lt;ul&gt;
@@ -51,9 +51,9 @@ $N$ and $P$ are both positive numbers, so we can safely cancel the $N$s and divi
     
     <item>
       <title>Crowdsourced Paraphrases</title>
-      <link>http://www.jkk.name/data/paraphrasing-sample/</link>
+      <link>https://www.jkk.name/data/paraphrasing-sample/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/data/paraphrasing-sample/</guid>
+      <guid>https://www.jkk.name/data/paraphrasing-sample/</guid>
       <description></description>
     </item>
     

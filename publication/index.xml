@@ -2,397 +2,381 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Publications | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/publication/</link>
-      <atom:link href="http://www.jkk.name/publication/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/publication/</link>
+      <atom:link href="https://www.jkk.name/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
-      <link>http://www.jkk.name/publication/</link>
+      <link>https://www.jkk.name/publication/</link>
     </image>
     
     <item>
+      <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels</title>
+      <link>https://www.jkk.name/publication/emnlp-findings20srl/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp-findings20srl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Compositional Demographic Word Embeddings</title>
-      <link>http://www.jkk.name/publication/emnlp20demographics/</link>
-      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20demographics/</guid>
+      <link>https://www.jkk.name/publication/emnlp20demographics/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp20demographics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation</title>
-      <link>http://www.jkk.name/publication/emnlp20lm/</link>
-      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20lm/</guid>
+      <link>https://www.jkk.name/publication/emnlp20lm/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp20lm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness</title>
-      <link>http://www.jkk.name/publication/emnlp20taboo/</link>
-      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20taboo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels</title>
-      <link>http://www.jkk.name/publication/emnlp-findings20srl/</link>
-      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp-findings20srl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exploring the Value of Personalized Word Embeddings</title>
-      <link>http://www.jkk.name/publication/coling20personal/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/coling20personal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Inconsistencies in Crowdsourced Slot-Filling Annotations: A Typology and Identification Methods</title>
-      <link>http://www.jkk.name/publication/coling20svp/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/coling20svp/</guid>
+      <link>https://www.jkk.name/publication/emnlp20taboo/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp20taboo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Qualification Labour: A Fair Wage Isn&#39;t Enough if Workers Need to Do 5,000 Low Paid Tasks to Qualify for Your Task</title>
-      <link>http://www.jkk.name/publication/hcomp20fair/</link>
+      <link>https://www.jkk.name/publication/hcomp20fair/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/hcomp20fair/</guid>
+      <guid>https://www.jkk.name/publication/hcomp20fair/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Analyzing the Surprising Variability in Word Embedding Stability Across Languages</title>
-      <link>http://www.jkk.name/publication/arxiv20embeddings/</link>
+      <link>https://www.jkk.name/publication/arxiv20embeddings/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/arxiv20embeddings/</guid>
+      <guid>https://www.jkk.name/publication/arxiv20embeddings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Crowdsourced Detection of Emotionally Manipulative Language</title>
-      <link>http://www.jkk.name/publication/chi20anchor/</link>
+      <link>https://www.jkk.name/publication/chi20anchor/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/chi20anchor/</guid>
+      <guid>https://www.jkk.name/publication/chi20anchor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NOESIS II: Predicting Responses, Identifying Success, and Managing Complexity in Task-Oriented Dialogue</title>
-      <link>http://www.jkk.name/publication/ws-aaai-dstc20task2/</link>
+      <link>https://www.jkk.name/publication/ws-aaai-dstc20task2/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ws-aaai-dstc20task2/</guid>
+      <guid>https://www.jkk.name/publication/ws-aaai-dstc20task2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Overview of the seventh Dialog System Technology Challenge: DSTC7</title>
-      <link>http://www.jkk.name/publication/csl20dstc/</link>
+      <link>https://www.jkk.name/publication/csl20dstc/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/csl20dstc/</guid>
+      <guid>https://www.jkk.name/publication/csl20dstc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>No-Press Diplomacy: Modeling Multi-Agent Gameplay</title>
-      <link>http://www.jkk.name/publication/neurips19diplomacy/</link>
+      <link>https://www.jkk.name/publication/neurips19diplomacy/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/neurips19diplomacy/</guid>
+      <guid>https://www.jkk.name/publication/neurips19diplomacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Eighth Dialog System Technology Challenge</title>
-      <link>http://www.jkk.name/publication/ws-neurips-convai19dstc/</link>
+      <link>https://www.jkk.name/publication/ws-neurips-convai19dstc/</link>
       <pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ws-neurips-convai19dstc/</guid>
+      <guid>https://www.jkk.name/publication/ws-neurips-convai19dstc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An Evaluation for Intent Classification and Out-of-Scope Prediction</title>
-      <link>http://www.jkk.name/publication/emnlp19data/</link>
+      <link>https://www.jkk.name/publication/emnlp19data/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp19data/</guid>
+      <guid>https://www.jkk.name/publication/emnlp19data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Training Data Voids: Novel Attacks Against NLP Content Moderation</title>
-      <link>http://www.jkk.name/publication/ws-cscw19voids/</link>
+      <link>https://www.jkk.name/publication/ws-cscw19voids/</link>
       <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ws-cscw19voids/</guid>
+      <guid>https://www.jkk.name/publication/ws-cscw19voids/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DSTC7 Task 1: Noetic End-to-End Response Selection</title>
-      <link>http://www.jkk.name/publication/ws-acl-convai19dstc7/</link>
+      <link>https://www.jkk.name/publication/ws-acl-convai19dstc7/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ws-acl-convai19dstc7/</guid>
+      <guid>https://www.jkk.name/publication/ws-acl-convai19dstc7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Large-Scale Corpus for Conversation Disentanglement</title>
-      <link>http://www.jkk.name/publication/acl19disentangle/</link>
+      <link>https://www.jkk.name/publication/acl19disentangle/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl19disentangle/</guid>
+      <guid>https://www.jkk.name/publication/acl19disentangle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SLATE: A Super-Lightweight Annotation Tool for Experts</title>
-      <link>http://www.jkk.name/publication/acl19slate/</link>
+      <link>https://www.jkk.name/publication/acl19slate/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl19slate/</guid>
+      <guid>https://www.jkk.name/publication/acl19slate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Outlier Detection for Improved Data Quality and Diversity in Dialog Systems</title>
-      <link>http://www.jkk.name/publication/naacl19outliers/</link>
+      <link>https://www.jkk.name/publication/naacl19outliers/</link>
       <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/naacl19outliers/</guid>
+      <guid>https://www.jkk.name/publication/naacl19outliers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Look Who&#39;s Talking: Inferring Speaker Attributes from Personal Longitudinal Dialog</title>
-      <link>http://www.jkk.name/publication/cicling19personal/</link>
+      <link>https://www.jkk.name/publication/cicling19personal/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/cicling19personal/</guid>
+      <guid>https://www.jkk.name/publication/cicling19personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DSTC7 Task 1: Noetic End-to-End Response Selection</title>
-      <link>http://www.jkk.name/publication/ws-aaai-dstc19task1/</link>
+      <link>https://www.jkk.name/publication/ws-aaai-dstc19task1/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ws-aaai-dstc19task1/</guid>
+      <guid>https://www.jkk.name/publication/ws-aaai-dstc19task1/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning from Personal Longitudinal Dialog Data</title>
-      <link>http://www.jkk.name/publication/ieee19personal/</link>
+      <link>https://www.jkk.name/publication/ieee19personal/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ieee19personal/</guid>
+      <guid>https://www.jkk.name/publication/ieee19personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dialog System Technology Challenge 7</title>
-      <link>http://www.jkk.name/publication/ws-neurips-convai18dstc/</link>
+      <link>https://www.jkk.name/publication/ws-neurips-convai18dstc/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ws-neurips-convai18dstc/</guid>
+      <guid>https://www.jkk.name/publication/ws-neurips-convai18dstc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving Text-to-SQL Evaluation Methodology</title>
-      <link>http://www.jkk.name/publication/acl18sql/</link>
+      <link>https://www.jkk.name/publication/acl18sql/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl18sql/</guid>
+      <guid>https://www.jkk.name/publication/acl18sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Data Collection for a Production Dialogue System: A Startup Perspective</title>
-      <link>http://www.jkk.name/publication/naacl18data/</link>
+      <link>https://www.jkk.name/publication/naacl18data/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/naacl18data/</guid>
+      <guid>https://www.jkk.name/publication/naacl18data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Effective Crowdsourcing for a New Type of Summarization Task</title>
-      <link>http://www.jkk.name/publication/naacl18summary/</link>
+      <link>https://www.jkk.name/publication/naacl18summary/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/naacl18summary/</guid>
+      <guid>https://www.jkk.name/publication/naacl18summary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Factors Influencing the Surprising Instability of Word Embeddings</title>
-      <link>http://www.jkk.name/publication/naacl18embeddings/</link>
+      <link>https://www.jkk.name/publication/naacl18embeddings/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/naacl18embeddings/</guid>
+      <guid>https://www.jkk.name/publication/naacl18embeddings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>World Knowledge for Abstract Meaning Representation Parsing</title>
-      <link>http://www.jkk.name/publication/lrec18amr/</link>
+      <link>https://www.jkk.name/publication/lrec18amr/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/lrec18amr/</guid>
+      <guid>https://www.jkk.name/publication/lrec18amr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Identifying Products in Online Cybercrime Marketplaces: A Dataset for Fine-grained Domain Adaptation</title>
-      <link>http://www.jkk.name/publication/emnlp17forums/</link>
+      <link>https://www.jkk.name/publication/emnlp17forums/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp17forums/</guid>
+      <guid>https://www.jkk.name/publication/emnlp17forums/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection</title>
-      <link>http://www.jkk.name/publication/acl17paraphrase/</link>
+      <link>https://www.jkk.name/publication/acl17paraphrase/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl17paraphrase/</guid>
+      <guid>https://www.jkk.name/publication/acl17paraphrase/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools for Automated Analysis of Cybercriminal Markets</title>
-      <link>http://www.jkk.name/publication/www17forums/</link>
+      <link>https://www.jkk.name/publication/www17forums/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/www17forums/</guid>
+      <guid>https://www.jkk.name/publication/www17forums/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Parsing with Traces: An O($n^4$) Algorithm and a Structural Representation</title>
-      <link>http://www.jkk.name/publication/tacl17parsing/</link>
+      <link>https://www.jkk.name/publication/tacl17parsing/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/tacl17parsing/</guid>
+      <guid>https://www.jkk.name/publication/tacl17parsing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Algorithms for Identifying Syntactic Errors and Parsing with Graph Structured Output</title>
-      <link>http://www.jkk.name/publication/thesis16parsing/</link>
+      <link>https://www.jkk.name/publication/thesis16parsing/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/thesis16parsing/</guid>
+      <guid>https://www.jkk.name/publication/thesis16parsing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An Empirical Analysis of Optimization for Max-Margin NLP</title>
-      <link>http://www.jkk.name/publication/emnlp15learn/</link>
+      <link>https://www.jkk.name/publication/emnlp15learn/</link>
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp15learn/</guid>
+      <guid>https://www.jkk.name/publication/emnlp15learn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Error-Driven Analysis of Challenges in Coreference Resolution</title>
-      <link>http://www.jkk.name/publication/emnlp13analysis/</link>
+      <link>https://www.jkk.name/publication/emnlp13analysis/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp13analysis/</guid>
+      <guid>https://www.jkk.name/publication/emnlp13analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An Empirical Examination of Challenges in Chinese Parsing</title>
-      <link>http://www.jkk.name/publication/acl13analysis/</link>
+      <link>https://www.jkk.name/publication/acl13analysis/</link>
       <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl13analysis/</guid>
+      <guid>https://www.jkk.name/publication/acl13analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>High-velocity Clouds in the Galactic All Sky Survey. I. Catalog</title>
-      <link>http://www.jkk.name/publication/astro13clouds/</link>
+      <link>https://www.jkk.name/publication/astro13clouds/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/astro13clouds/</guid>
+      <guid>https://www.jkk.name/publication/astro13clouds/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Parser Showdown at the Wall Street Corral: An Empirical Investigation of Error Types in Parser Output</title>
-      <link>http://www.jkk.name/publication/emnlp12analysis/</link>
+      <link>https://www.jkk.name/publication/emnlp12analysis/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp12analysis/</guid>
+      <guid>https://www.jkk.name/publication/emnlp12analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Robust Conversion of CCG Derivations to Phrase Structure Trees</title>
-      <link>http://www.jkk.name/publication/acl12conversion/</link>
+      <link>https://www.jkk.name/publication/acl12conversion/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl12conversion/</guid>
+      <guid>https://www.jkk.name/publication/acl12conversion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mention Detection: Heuristics for the OntoNotes annotations</title>
-      <link>http://www.jkk.name/publication/conll11coreference/</link>
+      <link>https://www.jkk.name/publication/conll11coreference/</link>
       <pubDate>Wed, 01 Jun 2011 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/conll11coreference/</guid>
+      <guid>https://www.jkk.name/publication/conll11coreference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spatiotemporal Hierarchy of Relaxation Events, Dynamical Heterogeneities, and Structural Reorganization in a Supercooled Liquid</title>
-      <link>http://www.jkk.name/publication/prl10chemistry/</link>
+      <link>https://www.jkk.name/publication/prl10chemistry/</link>
       <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/prl10chemistry/</guid>
+      <guid>https://www.jkk.name/publication/prl10chemistry/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Morphological Analysis Can Improve a CCG Parser for English</title>
-      <link>http://www.jkk.name/publication/coling10morph/</link>
+      <link>https://www.jkk.name/publication/coling10morph/</link>
       <pubDate>Sun, 01 Aug 2010 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/coling10morph/</guid>
+      <guid>https://www.jkk.name/publication/coling10morph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Faster Parsing by Supertagger Adaptation</title>
-      <link>http://www.jkk.name/publication/acl10adapt/</link>
+      <link>https://www.jkk.name/publication/acl10adapt/</link>
       <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl10adapt/</guid>
+      <guid>https://www.jkk.name/publication/acl10adapt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Faster parsing and supertagging model estimation</title>
-      <link>http://www.jkk.name/publication/alta09tagging/</link>
+      <link>https://www.jkk.name/publication/alta09tagging/</link>
       <pubDate>Tue, 01 Dec 2009 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/alta09tagging/</guid>
+      <guid>https://www.jkk.name/publication/alta09tagging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adaptive Supertagging for Faster Parsing</title>
-      <link>http://www.jkk.name/publication/thesis09adapt/</link>
+      <link>https://www.jkk.name/publication/thesis09adapt/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/thesis09adapt/</guid>
+      <guid>https://www.jkk.name/publication/thesis09adapt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Large-Scale Syntactic Processing: Parsing the Web</title>
-      <link>http://www.jkk.name/publication/report09jhu/</link>
+      <link>https://www.jkk.name/publication/report09jhu/</link>
       <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/report09jhu/</guid>
+      <guid>https://www.jkk.name/publication/report09jhu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Classification of Verb Particle Constructions with the Google Web1T Corpus</title>
-      <link>http://www.jkk.name/publication/alta08vpc/</link>
+      <link>https://www.jkk.name/publication/alta08vpc/</link>
       <pubDate>Mon, 01 Dec 2008 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/alta08vpc/</guid>
+      <guid>https://www.jkk.name/publication/alta08vpc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The densest packing of AB binary hard-sphere homogeneous compounds across all size ratios</title>
-      <link>http://www.jkk.name/publication/chem08packing/</link>
+      <link>https://www.jkk.name/publication/chem08packing/</link>
       <pubDate>Fri, 01 Aug 2008 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/chem08packing/</guid>
+      <guid>https://www.jkk.name/publication/chem08packing/</guid>
       <description></description>
     </item>
     

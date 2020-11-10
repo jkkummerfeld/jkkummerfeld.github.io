@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>domain-adaptation | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/category/domain-adaptation/</link>
-      <atom:link href="http://www.jkk.name/category/domain-adaptation/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/category/domain-adaptation/</link>
+      <atom:link href="https://www.jkk.name/category/domain-adaptation/index.xml" rel="self" type="application/rss+xml" />
     <description>domain-adaptation</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 12 Jun 2018 20:33:00 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>domain-adaptation</title>
-      <link>http://www.jkk.name/category/domain-adaptation/</link>
+      <link>https://www.jkk.name/category/domain-adaptation/</link>
     </image>
     
     <item>
       <title>Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-06-12_parseradaptation/</link>
+      <link>https://www.jkk.name/post/2018-06-12_parseradaptation/</link>
       <pubDate>Tue, 12 Jun 2018 20:33:00 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2018-06-12_parseradaptation/</guid>
+      <guid>https://www.jkk.name/post/2018-06-12_parseradaptation/</guid>
       <description>&lt;p&gt;Virtually all systems trained using data have trouble when applied to datasets that differ even slightly - even switching from Wall Street Journal text to New York Times text can hurt parsing performance slightly.
 Extensive work has explored how to adapt to new domains (including 
-&lt;a href=&#34;http://jkk.name/publication/acl10adapt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;one of my own&lt;/a&gt;), but generally these approaches only made up a fraction of the gap in performance.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/publication/acl10adapt/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;one of my own&lt;/a&gt;), but generally these approaches only made up a fraction of the gap in performance.&lt;/p&gt;
 &lt;p&gt;This paper shows two interesting new approaches to this issue:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Use 

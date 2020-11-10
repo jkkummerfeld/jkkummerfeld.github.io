@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>discourse | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/discourse/</link>
-      <atom:link href="http://www.jkk.name/tag/discourse/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/discourse/</link>
+      <atom:link href="https://www.jkk.name/tag/discourse/index.xml" rel="self" type="application/rss+xml" />
     <description>discourse</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 02 Sep 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>discourse</title>
-      <link>http://www.jkk.name/tag/discourse/</link>
+      <link>https://www.jkk.name/tag/discourse/</link>
     </image>
     
     <item>
       <title>IRC Disentanglement</title>
-      <link>http://www.jkk.name/data/irc/</link>
+      <link>https://www.jkk.name/data/irc/</link>
       <pubDate>Mon, 02 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/data/irc/</guid>
+      <guid>https://www.jkk.name/data/irc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</title>
-      <link>http://www.jkk.name/post/2019-07-10_disentanglement/</link>
+      <link>https://www.jkk.name/post/2019-07-10_disentanglement/</link>
       <pubDate>Wed, 10 Jul 2019 11:19:06 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2019-07-10_disentanglement/</guid>
+      <guid>https://www.jkk.name/post/2019-07-10_disentanglement/</guid>
       <description>&lt;p&gt;This post is about my own paper to appear at ACL later this month.
 What is interesting about this paper will depend on your research interests, so that&amp;rsquo;s how I&amp;rsquo;ve broken down this blog post.&lt;/p&gt;
 &lt;p&gt;A few key points first:&lt;/p&gt;
@@ -44,7 +44,7 @@ In our case, the stream is a technical support channel for Ubuntu on Internet Re
 We annotated each message with which message(s) it was a response to.
 As far as we are aware, this is the first large-scale corpus with this kind of discourse structure in synchronous chat.
 Here is an example from the data, with annotations marked by edges and colours:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We don&amp;rsquo;t frame the paper as being about reply-structure though.
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
@@ -64,7 +64,7 @@ Many conversations are missing messages, and some have extra messages from other
 Unsurprisingly, our trained model does better, producing conversations that are a true prefix 81% of the time.
 We also noticed that their heuristic was incorrectly linking messages far apart in time.
 This is not tested by our evaluation set, so we constructed this figure, which shows the problem is quite common:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The purple results are based on the output of our model over the entire Ubuntu IRC logs.
 That output is the basis of 
 &lt;a href=&#34;https://github.com/dstc8-track2/NOESIS-II&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DSTC 8 Track 2&lt;/a&gt;.
@@ -107,9 +107,9 @@ Thank you!&lt;/p&gt;
     
     <item>
       <title>A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
+      <link>https://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
       <pubDate>Fri, 17 Nov 2017 18:40:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</guid>
       <description>&lt;p&gt;Discourse parsing for Rhetorical Structure Theory is difficult partly because it involves a range of relation types at different scales (within and between sentences) and partly because there is relatively little annotated data available.
 To deal with the limited data, this paper breaks the task into two parts: (1) identify relations, (2) assign labels.
 Their system is state-of-the-art, and an ablation shows that the division of tasks helps performance.

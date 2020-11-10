@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>neural-network | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/neural-network/</link>
-      <atom:link href="http://www.jkk.name/tag/neural-network/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/neural-network/</link>
+      <atom:link href="https://www.jkk.name/tag/neural-network/index.xml" rel="self" type="application/rss+xml" />
     <description>neural-network</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 08 May 2018 09:00:31 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>neural-network</title>
-      <link>http://www.jkk.name/tag/neural-network/</link>
+      <link>https://www.jkk.name/tag/neural-network/</link>
     </image>
     
     <item>
       <title>The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
+      <link>https://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
       <pubDate>Tue, 08 May 2018 09:00:31 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
+      <guid>https://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
       <description>&lt;p&gt;We know that training a neural network involves optimising over a non-convex space, but using standard evaluation methods we see that our models usually end up doing reasonably well.
 This paper asks an important question - are those metrics measuring generalisability effectively?
 In particular, if we sample our test set from a slightly different distribution of data, do models still work well?&lt;/p&gt;
@@ -53,9 +53,9 @@ If we restrict the test set to be novel queries (i.e. the model has to generalis
     
     <item>
       <title>Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-21_multiinputattention/</link>
+      <link>https://www.jkk.name/post/2017-11-21_multiinputattention/</link>
       <pubDate>Tue, 21 Nov 2017 16:42:19 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-21_multiinputattention/</guid>
+      <guid>https://www.jkk.name/post/2017-11-21_multiinputattention/</guid>
       <description>&lt;p&gt;Attention, a weighted average over vectors with weights determined based on context (usually decoder state), has proven effective in many NLP tasks.
 There are several variants, and this paper adds new types that address the question of how to apply attention to different sources at the same time, such as text and an image.&lt;/p&gt;
 &lt;p&gt;They consider three general versions:&lt;/p&gt;
@@ -92,9 +92,9 @@ The trends are that hierarchical is best, the sentinel doesn&amp;rsquo;t help, a
     
     <item>
       <title>Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer (Shazeer et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-01_mixtureofexperts/</link>
+      <link>https://www.jkk.name/post/2017-11-01_mixtureofexperts/</link>
       <pubDate>Wed, 01 Nov 2017 21:57:27 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-01_mixtureofexperts/</guid>
+      <guid>https://www.jkk.name/post/2017-11-01_mixtureofexperts/</guid>
       <description>&lt;p&gt;Mixture of experts can be seen as an ensemble approach in which we assume that each of our models is effective under different circumstances and so we combine them by switching between which we use to make our decision.
 From this perspective the idea can be applied to any set of models, but here the idea is to train (1) the expert models, (2) our method of choosing between them, and (3) a set of common model components, all at the same time.&lt;/p&gt;
 &lt;p&gt;The particular set up here is that they modify a series of LSTM layers, adding a new layer in between each pair of LSTMs.
@@ -124,9 +124,9 @@ As a result, they can scale up to massive networks while still having reasonable
     
     <item>
       <title>Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-30_neuralsequence/</link>
+      <link>https://www.jkk.name/post/2017-10-30_neuralsequence/</link>
       <pubDate>Mon, 30 Oct 2017 13:28:30 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-30_neuralsequence/</guid>
+      <guid>https://www.jkk.name/post/2017-10-30_neuralsequence/</guid>
       <description>&lt;p&gt;Language is bursty, with rare words occurring in clumps, the simplest example being an unusual name that occurs a lot in one news article, but not in other articles.
 This paper is about how to modify a neural language model to take this into consideration, by adapting the model over time.&lt;/p&gt;
 &lt;p&gt;The main idea is to have one model of overall word usage (global) and a separate model that shifts over time to take into consideration the current text (local).
@@ -156,9 +156,9 @@ archivePrefix = &amp;quot;arXiv&amp;quot;,
     
     <item>
       <title>Searching for Activation Functions (Ramachandran et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-27_swishactivation/</link>
+      <link>https://www.jkk.name/post/2017-10-27_swishactivation/</link>
       <pubDate>Fri, 27 Oct 2017 11:22:45 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-27_swishactivation/</guid>
+      <guid>https://www.jkk.name/post/2017-10-27_swishactivation/</guid>
       <description>&lt;h2 id=&#34;update&#34;&gt;Update&lt;/h2&gt;
 &lt;p&gt;After prior work came to light that uses the same non-linearity, this paper was updated to focus more on the search process used to investigate the space.
 One new takeaway for me was how diverse the effective activation functions were (see figures in the new version of the paper).&lt;/p&gt;
@@ -169,7 +169,7 @@ This paper proposes a new non-linearity, $\text{swish}(x) = x \cdot \text{sigmoi
 &lt;p&gt;Interestingly, it was chosen by a combination of exhaustive search and search with reinforcement learning across a range of functions, evaluating on CIFAR-10 with a small model.
 ReLU variants were consistently second-best to swish variants, and generally the more complicated functions performed worse.
 They do mention two functions that performed well, but didn&amp;rsquo;t generalise: $\text{cos}(x) - x$ and $\text{max}(x, \text{tanh}(x))$, which look like this:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/activation-functions.png&#34; alt=&#34;Four activation functions&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/activation-functions.png&#34; alt=&#34;Four activation functions&#34;&gt;&lt;/p&gt;
 &lt;p&gt;In a range of experiments in vision and machine translation swish does at least as well or slightly better than the alternatives.
 It also seems more robust to network depth and to work across different network structures.
 As for why it works so well, there are two main ideas: (1) it adds smoothness to the ReLU, (2) it has some sensitivity to negative inputs.
@@ -195,15 +195,15 @@ archivePrefix = &amp;quot;arXiv&amp;quot;,
     
     <item>
       <title>Attention Is All You Need (Vaswani et al., ArXiv 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-20_onlyattention/</link>
+      <link>https://www.jkk.name/post/2017-10-20_onlyattention/</link>
       <pubDate>Fri, 20 Oct 2017 15:25:23 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-20_onlyattention/</guid>
+      <guid>https://www.jkk.name/post/2017-10-20_onlyattention/</guid>
       <description>&lt;p&gt;Recurrent neural networks like LSTMs and GRUs have limited scope for parallelisation because each step depends on the one before it.
 This architecture also means that many steps of computation separate two words that are far apart, making it difficult to capture long-distance relations.
 A range of approaches have been used to try to address these issues, such as convolutional structures and other forms of recurrence (e.g. QRNNs).
 The idea in this work is to use attention, applied multiple times, to get a network that is fast while still capturing positional information.&lt;/p&gt;
 &lt;p&gt;To explain the structure I put together the figure below, which captures the network structure with a few simplifications:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/google-attention.png&#34; alt=&#34;Google Attention Network&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/google-attention.png&#34; alt=&#34;Google Attention Network&#34;&gt;&lt;/p&gt;
 &lt;p&gt;There a few ideas being brought together here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Positional encoding&lt;/em&gt;, which is a vector of the same length as the word representation, but that depends only on the position in the input. Here they use $f(pos, dim) = sin(pos / 10000^{2 dim / d_w})$ for even dimensions and the cosine equivalent for odd dimensions (where $d_w$ is the number of dimensions.&lt;/li&gt;
@@ -245,9 +245,9 @@ they released.&lt;/p&gt;
     
     <item>
       <title>DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-05-deftnn/</link>
+      <link>https://www.jkk.name/post/2017-10-05-deftnn/</link>
       <pubDate>Thu, 05 Oct 2017 00:00:00 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-05-deftnn/</guid>
+      <guid>https://www.jkk.name/post/2017-10-05-deftnn/</guid>
       <description>&lt;p&gt;This paper proposes two techniques for speeding up neural network execution on GPUs:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Reduce computation when doing matrix-multiply by removing rows.&lt;/li&gt;

@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Youxuan Jiang | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/author/youxuan-jiang/</link>
-      <atom:link href="http://www.jkk.name/author/youxuan-jiang/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/author/youxuan-jiang/</link>
+      <atom:link href="https://www.jkk.name/author/youxuan-jiang/index.xml" rel="self" type="application/rss+xml" />
     <description>Youxuan Jiang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Youxuan Jiang</title>
-      <link>http://www.jkk.name/author/youxuan-jiang/</link>
+      <link>https://www.jkk.name/author/youxuan-jiang/</link>
     </image>
     
     <item>
       <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels</title>
-      <link>http://www.jkk.name/publication/emnlp-findings20srl/</link>
-      <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp-findings20srl/</guid>
+      <link>https://www.jkk.name/publication/emnlp-findings20srl/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp-findings20srl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Effective Crowdsourcing for a New Type of Summarization Task</title>
-      <link>http://www.jkk.name/publication/naacl18summary/</link>
+      <link>https://www.jkk.name/publication/naacl18summary/</link>
       <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/naacl18summary/</guid>
+      <guid>https://www.jkk.name/publication/naacl18summary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Understanding Task Design Trade-offs in Crowdsourced Paraphrase Collection</title>
-      <link>http://www.jkk.name/publication/acl17paraphrase/</link>
+      <link>https://www.jkk.name/publication/acl17paraphrase/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/acl17paraphrase/</guid>
+      <guid>https://www.jkk.name/publication/acl17paraphrase/</guid>
       <description></description>
     </item>
     

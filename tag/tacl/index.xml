@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tacl | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/tacl/</link>
-      <atom:link href="http://www.jkk.name/tag/tacl/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/tacl/</link>
+      <atom:link href="https://www.jkk.name/tag/tacl/index.xml" rel="self" type="application/rss+xml" />
     <description>tacl</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 27 Nov 2017 11:21:45 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>tacl</title>
-      <link>http://www.jkk.name/tag/tacl/</link>
+      <link>https://www.jkk.name/tag/tacl/</link>
     </image>
     
     <item>
       <title>Ordinal Common-sense Inference (Zhang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-27_commonsense/</link>
+      <link>https://www.jkk.name/post/2017-11-27_commonsense/</link>
       <pubDate>Mon, 27 Nov 2017 11:21:45 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-27_commonsense/</guid>
+      <guid>https://www.jkk.name/post/2017-11-27_commonsense/</guid>
       <description>&lt;p&gt;When people read a sentence they form an entire world around it, making inferences about unwritten properties based on their prior knowledge.
 If we want NLP systems to do the same, we need data to train and test this common sense aspect of language understanding.&lt;/p&gt;
 &lt;p&gt;This paper is about a new dataset of automatically generated sentence pairs with human ratings.
@@ -54,9 +54,9 @@ Interestingly, regression does quite a bit better than a set of one-vs-all SVMs 
     
     <item>
       <title>Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-15_entityvectors/</link>
+      <link>https://www.jkk.name/post/2017-11-15_entityvectors/</link>
       <pubDate>Wed, 15 Nov 2017 18:01:27 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-15_entityvectors/</guid>
+      <guid>https://www.jkk.name/post/2017-11-15_entityvectors/</guid>
       <description>&lt;p&gt;Since word2vec was released there have been a series of X2vec papers, though none have had the success of word vectors.
 In this case the idea is to represent entities and chunks of text (words, sentences, paragraphs).&lt;/p&gt;
 &lt;p&gt;Entities are represented with vectors.
@@ -95,9 +95,9 @@ That said, I feel like more ablation is needed to see what role each of these pi
     
     <item>
       <title>In-Order Transition-based Constituent Parsing (Liu et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-14_inorderparsing/</link>
+      <link>https://www.jkk.name/post/2017-11-14_inorderparsing/</link>
       <pubDate>Tue, 14 Nov 2017 14:10:39 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-14_inorderparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-11-14_inorderparsing/</guid>
       <description>&lt;p&gt;Shift-reduce constituency parsing incrementally builds the parse either bottom-up or top-down.
 The difference is whether a non-terminal is placed on the stack before or after the words that it spans.
 This corresponds to two forms of depth-first traversal of the tree: pre-order or post-order.&lt;/p&gt;
@@ -126,9 +126,9 @@ I wonder whether further gains could be realised with a label-sensitive ordering
     
     <item>
       <title>Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-11_multimt/</link>
+      <link>https://www.jkk.name/post/2017-10-11_multimt/</link>
       <pubDate>Wed, 11 Oct 2017 17:29:04 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-11_multimt/</guid>
+      <guid>https://www.jkk.name/post/2017-10-11_multimt/</guid>
       <description>&lt;p&gt;This paper is a detailed analysis of a surprisingly effective simple idea: train a machine translation system with sentence pairs from multiple languages, adjusting the input to have an extra token at the end that says what the target language is.
 To deal with class imbalance, data is oversampled to have all language pairs be equally represented (though even without that, it works fairly well).&lt;/p&gt;
 &lt;p&gt;The biggest advantage of this approach is that a single model can handle translation between many pairs, rather than needing $O(n^2)$ models for $n$ languages.

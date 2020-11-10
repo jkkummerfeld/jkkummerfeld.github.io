@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>eacl | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/eacl/</link>
-      <atom:link href="http://www.jkk.name/tag/eacl/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/eacl/</link>
+      <atom:link href="https://www.jkk.name/tag/eacl/index.xml" rel="self" type="application/rss+xml" />
     <description>eacl</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 18 Oct 2017 21:31:05 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>eacl</title>
-      <link>http://www.jkk.name/tag/eacl/</link>
+      <link>https://www.jkk.name/tag/eacl/</link>
     </image>
     
     <item>
       <title>Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-18_neuralamr/</link>
+      <link>https://www.jkk.name/post/2017-10-18_neuralamr/</link>
       <pubDate>Wed, 18 Oct 2017 21:31:05 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-18_neuralamr/</guid>
+      <guid>https://www.jkk.name/post/2017-10-18_neuralamr/</guid>
       <description>&lt;p&gt;This is another paper concerned with the challenge of sparsity in AMR parsing, specifically that there are an enormous number of output symbols in the parse trees and most are seen infrequently.
 The system they develop is based on the encoder-decoder with attention approach, which has previously done poorly for AMR, partially because of sparsity.&lt;/p&gt;
 &lt;p&gt;Their solution is to merge certain types of symbols into groups (dates, named entities, rare verbs, constants, etc) and have a standard way to map from the surface form to the output symbol.
 This is an alternative to the approach from the paper I 
-&lt;a href=&#34;http://www.jkk.name/post/2017-10-12_amralignment/&#34;&gt;wrote about&lt;/a&gt; last week.
+&lt;a href=&#34;https://www.jkk.name/post/2017-10-12_amralignment/&#34;&gt;wrote about&lt;/a&gt; last week.
 They also introduce a completely separate idea, which is a different way to take an AMR graph and turn it into a linear sequence.
 This change is necessary to make the output follow the form their model generates - a sequence (though there has been work on tree based LSTMs on the output side, so AMR could be directly generated, and I believe there has been some work on applying that to AMR).&lt;/p&gt;
 &lt;p&gt;Together these changes do substantially improve performance over previous encoder-decoder based work for AMR.

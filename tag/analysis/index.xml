@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>analysis | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/analysis/</link>
-      <atom:link href="http://www.jkk.name/tag/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/analysis/</link>
+      <atom:link href="https://www.jkk.name/tag/analysis/index.xml" rel="self" type="application/rss+xml" />
     <description>analysis</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 03 Sep 2020 14:44:29 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>analysis</title>
-      <link>http://www.jkk.name/tag/analysis/</link>
+      <link>https://www.jkk.name/tag/analysis/</link>
     </image>
     
     <item>
       <title>Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</title>
-      <link>http://www.jkk.name/post/2020-09-03_checklist/</link>
+      <link>https://www.jkk.name/post/2020-09-03_checklist/</link>
       <pubDate>Thu, 03 Sep 2020 14:44:29 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-03_checklist/</guid>
+      <guid>https://www.jkk.name/post/2020-09-03_checklist/</guid>
       <description>&lt;p&gt;It is difficult to predict how well a model will work in the real world.
 Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to.
 This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories.
@@ -70,9 +70,9 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
     
     <item>
       <title>The Fine Line between Linguistic Generalization and Failure in Seq2Seq-Attention Models (Weber et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
+      <link>https://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</link>
       <pubDate>Tue, 08 May 2018 09:00:31 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
+      <guid>https://www.jkk.name/post/2018-05-08_seq2seqsensitivity/</guid>
       <description>&lt;p&gt;We know that training a neural network involves optimising over a non-convex space, but using standard evaluation methods we see that our models usually end up doing reasonably well.
 This paper asks an important question - are those metrics measuring generalisability effectively?
 In particular, if we sample our test set from a slightly different distribution of data, do models still work well?&lt;/p&gt;
@@ -109,9 +109,9 @@ If we restrict the test set to be novel queries (i.e. the model has to generalis
     
     <item>
       <title>A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-05_explainingpredictions/</link>
+      <link>https://www.jkk.name/post/2017-12-05_explainingpredictions/</link>
       <pubDate>Tue, 05 Dec 2017 15:40:45 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-05_explainingpredictions/</guid>
+      <guid>https://www.jkk.name/post/2017-12-05_explainingpredictions/</guid>
       <description>&lt;p&gt;Interpreting the behaviour of statistical models in NLP has been hard for a long time, but it has gotten even harder with nonlinear models.
 The simplest method so far in NLP has been to look at the attention distributions in sequence to sequence models, but that doesn&amp;rsquo;t provide everything we need and obviously only applies when the model has attention.
 For looking at the dynamics of the hidden state in an LSTM the Harvard NLP group built a cool 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>word-vectors | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/word-vectors/</link>
-      <atom:link href="http://www.jkk.name/tag/word-vectors/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/word-vectors/</link>
+      <atom:link href="https://www.jkk.name/tag/word-vectors/index.xml" rel="self" type="application/rss+xml" />
     <description>word-vectors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 05 Mar 2018 21:09:58 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>word-vectors</title>
-      <link>http://www.jkk.name/tag/word-vectors/</link>
+      <link>https://www.jkk.name/tag/word-vectors/</link>
     </image>
     
     <item>
       <title>Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</title>
-      <link>http://www.jkk.name/post/2018-03-05_curriculum/</link>
+      <link>https://www.jkk.name/post/2018-03-05_curriculum/</link>
       <pubDate>Mon, 05 Mar 2018 21:09:58 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-03-05_curriculum/</guid>
+      <guid>https://www.jkk.name/post/2018-03-05_curriculum/</guid>
       <description>&lt;p&gt;Usually when we learn, we have a curriculum designed to incrementally build understanding.
 It seems reasonable that the same idea could be useful for machine learning, and indeed there is a large body of work on the topic.
 This paper explores the specific question of whether a curriculum can help develop task-specific word vectors, and whether we can determine an effective curriculum automatically.&lt;/p&gt;
@@ -49,9 +49,9 @@ In my experience (and in our soon-to-appear NAACL paper) we find that variations
     
     <item>
       <title>A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings (Yang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</link>
+      <link>https://www.jkk.name/post/2017-12-12_multidomainwordvector/</link>
       <pubDate>Tue, 12 Dec 2017 20:25:40 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-12_multidomainwordvector/</guid>
+      <guid>https://www.jkk.name/post/2017-12-12_multidomainwordvector/</guid>
       <description>&lt;p&gt;To construct word vectors from multi-domain data, use a separate vector for each domain and add a loss term to encourage them to agree.
 Here the loss is an l2 norm, weighted by a factor that depends on the frequency of the words in the two domains.
 The factor is the harmonic mean of the normalised frequency in each domain (so the lower frequency dominates the factor, pulling it lower).
@@ -76,9 +76,9 @@ Across a range of tasks this consistently performs better than other approaches.
     
     <item>
       <title>The strange geometry of skip-gram with negative sampling (Mimno et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
+      <link>https://www.jkk.name/post/2017-12-12_wordvectorgeometry/</link>
       <pubDate>Tue, 12 Dec 2017 20:15:34 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-12_wordvectorgeometry/</guid>
+      <guid>https://www.jkk.name/post/2017-12-12_wordvectorgeometry/</guid>
       <description>&lt;p&gt;It turns out that if the vectors learned by word2vec are projected into a plane they all point in the same direction.
 Also, the context vectors (which are part of the algorithm, but not retained afterwards) point the other way.
 When visualising with t-SNE this effect is not visible because of the way the space is warped to optimise the t-SNE objective.&lt;/p&gt;
@@ -104,9 +104,9 @@ However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloV
     
     <item>
       <title>SPINE: SParse Interpretable Neural Embeddings (Subramanian et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</link>
+      <link>https://www.jkk.name/post/2017-11-28_interpretableembeddings/</link>
       <pubDate>Tue, 28 Nov 2017 16:51:09 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-28_interpretableembeddings/</guid>
+      <guid>https://www.jkk.name/post/2017-11-28_interpretableembeddings/</guid>
       <description>&lt;p&gt;The first step in almost any neural network model for language is to look up a vector for each token in the input.
 These vectors express relations between the words, but it is difficult to know exactly what relations.
 This work proposes a way to modify a vector space of words to have more interpretable dimensions.&lt;/p&gt;
@@ -143,9 +143,9 @@ The general idea of a sparse auto-encoder also seems cool and may have other app
     
     <item>
       <title>Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-15_entityvectors/</link>
+      <link>https://www.jkk.name/post/2017-11-15_entityvectors/</link>
       <pubDate>Wed, 15 Nov 2017 18:01:27 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-15_entityvectors/</guid>
+      <guid>https://www.jkk.name/post/2017-11-15_entityvectors/</guid>
       <description>&lt;p&gt;Since word2vec was released there have been a series of X2vec papers, though none have had the success of word vectors.
 In this case the idea is to represent entities and chunks of text (words, sentences, paragraphs).&lt;/p&gt;
 &lt;p&gt;Entities are represented with vectors.
@@ -184,9 +184,9 @@ That said, I feel like more ablation is needed to see what role each of these pi
     
     <item>
       <title>Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</link>
+      <link>https://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</link>
       <pubDate>Thu, 26 Oct 2017 20:47:12 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</guid>
+      <guid>https://www.jkk.name/post/2017-10-26_multimodalwordembeddings/</guid>
       <description>&lt;p&gt;Word2Vec and other approaches provide a single vector representing a word&amp;rsquo;s meaning, giving words spatially defined relationships capturing relatedness.
 A natural extension is to consider regions in that space and allow some words to take up larger or smaller regions.
 Another natural idea is to allow a single word to have multiple representations, to capture the different senses.
@@ -219,9 +219,9 @@ The paper also doesn&amp;rsquo;t get into details about the learned space, for e
     
     <item>
       <title>A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-16_forumrnn/</link>
+      <link>https://www.jkk.name/post/2017-10-16_forumrnn/</link>
       <pubDate>Mon, 16 Oct 2017 20:55:07 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-16_forumrnn/</guid>
+      <guid>https://www.jkk.name/post/2017-10-16_forumrnn/</guid>
       <description>&lt;p&gt;Attention - a weighted average over a set of vectors representing context - has consistently produced positive results.
 Here we see an example of how it can be applied in the case of modeling a threaded discussion.&lt;/p&gt;
 &lt;p&gt;Attention is applied in two ways.

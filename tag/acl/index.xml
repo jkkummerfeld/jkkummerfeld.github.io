@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>acl | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/acl/</link>
-      <atom:link href="http://www.jkk.name/tag/acl/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/acl/</link>
+      <atom:link href="https://www.jkk.name/tag/acl/index.xml" rel="self" type="application/rss+xml" />
     <description>acl</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 10 Jul 2019 11:19:06 -0400</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>acl</title>
-      <link>http://www.jkk.name/tag/acl/</link>
+      <link>https://www.jkk.name/tag/acl/</link>
     </image>
     
     <item>
       <title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</title>
-      <link>http://www.jkk.name/post/2019-07-10_disentanglement/</link>
+      <link>https://www.jkk.name/post/2019-07-10_disentanglement/</link>
       <pubDate>Wed, 10 Jul 2019 11:19:06 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2019-07-10_disentanglement/</guid>
+      <guid>https://www.jkk.name/post/2019-07-10_disentanglement/</guid>
       <description>&lt;p&gt;This post is about my own paper to appear at ACL later this month.
 What is interesting about this paper will depend on your research interests, so that&amp;rsquo;s how I&amp;rsquo;ve broken down this blog post.&lt;/p&gt;
 &lt;p&gt;A few key points first:&lt;/p&gt;
@@ -36,7 +36,7 @@ In our case, the stream is a technical support channel for Ubuntu on Internet Re
 We annotated each message with which message(s) it was a response to.
 As far as we are aware, this is the first large-scale corpus with this kind of discourse structure in synchronous chat.
 Here is an example from the data, with annotations marked by edges and colours:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We don&amp;rsquo;t frame the paper as being about reply-structure though.
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
@@ -56,7 +56,7 @@ Many conversations are missing messages, and some have extra messages from other
 Unsurprisingly, our trained model does better, producing conversations that are a true prefix 81% of the time.
 We also noticed that their heuristic was incorrectly linking messages far apart in time.
 This is not tested by our evaluation set, so we constructed this figure, which shows the problem is quite common:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The purple results are based on the output of our model over the entire Ubuntu IRC logs.
 That output is the basis of 
 &lt;a href=&#34;https://github.com/dstc8-track2/NOESIS-II&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DSTC 8 Track 2&lt;/a&gt;.
@@ -99,9 +99,9 @@ Thank you!&lt;/p&gt;
     
     <item>
       <title>Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</title>
-      <link>http://www.jkk.name/post/2018-03-05_curriculum/</link>
+      <link>https://www.jkk.name/post/2018-03-05_curriculum/</link>
       <pubDate>Mon, 05 Mar 2018 21:09:58 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-03-05_curriculum/</guid>
+      <guid>https://www.jkk.name/post/2018-03-05_curriculum/</guid>
       <description>&lt;p&gt;Usually when we learn, we have a curriculum designed to incrementally build understanding.
 It seems reasonable that the same idea could be useful for machine learning, and indeed there is a large body of work on the topic.
 This paper explores the specific question of whether a curriculum can help develop task-specific word vectors, and whether we can determine an effective curriculum automatically.&lt;/p&gt;
@@ -134,9 +134,9 @@ In my experience (and in our soon-to-appear NAACL paper) we find that variations
     
     <item>
       <title>Neural Semantic Parsing over Multiple Knowledge-bases (Herzig et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-05_multidomainparsing/</link>
+      <link>https://www.jkk.name/post/2017-12-05_multidomainparsing/</link>
       <pubDate>Tue, 05 Dec 2017 19:28:33 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-05_multidomainparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-12-05_multidomainparsing/</guid>
       <description>&lt;p&gt;One reason learning for semantic parsing is difficult is that the datasets are generally small.
 Assuming some words behave similarly across domains, multi-domain parsing should improve performance by providing more data, which is essentially what this paper finds.
 They consider several configurations, all based on a sequence to sequence LSTM:&lt;/p&gt;
@@ -170,9 +170,9 @@ From the paper it sounds like very little hyperparameter tuning was tried, which
     
     <item>
       <title>A Local Detection Approach for Named Entity Recognition and Mention Detection (Xu et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-12-01_nonsequencener/</link>
+      <link>https://www.jkk.name/post/2017-12-01_nonsequencener/</link>
       <pubDate>Fri, 01 Dec 2017 15:28:59 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-12-01_nonsequencener/</guid>
+      <guid>https://www.jkk.name/post/2017-12-01_nonsequencener/</guid>
       <description>&lt;p&gt;The classic NER system is a model that has a lot of curated features, like lists of people, and does inference by choosing the top scoring tag sequence for the whole sentence, using Viterbi decoding.
 The neural version swaps the curated features for word vectors, and viterbi inference for an LSTM (maybe with beam search).
 This paper makes the argument that in reality people are very good at identifying an entity in isolation, so why do global decoding for the best tag sequence?&lt;/p&gt;
@@ -211,9 +211,9 @@ There were a few things I found interesting in the results:&lt;/p&gt;
     
     <item>
       <title>Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme (Zheng et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-30_taggingrelations/</link>
+      <link>https://www.jkk.name/post/2017-11-30_taggingrelations/</link>
       <pubDate>Thu, 30 Nov 2017 20:01:41 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-30_taggingrelations/</guid>
+      <guid>https://www.jkk.name/post/2017-11-30_taggingrelations/</guid>
       <description>&lt;p&gt;This paper considers the task of identifying named entities in a sentence and the relations between them.
 The contribution is a way of formulating the task as tagging, so a bi-directional LSTM can be applied.&lt;/p&gt;
 &lt;p&gt;The tags are like in NER (Begin, Inside, End, Single, Outside), but rather than Person, Location, etc, they label each entity with the relation it is participating in, and whether it is in role one or two for the relation.
@@ -248,9 +248,9 @@ If interest in this data grows, going back and annotating more seems worthwhile.
     
     <item>
       <title>Abstractive Document Summarization with a Graph-Based Attentional Neural Model (Tan et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-29_abstractivesummarisation/</link>
+      <link>https://www.jkk.name/post/2017-11-29_abstractivesummarisation/</link>
       <pubDate>Wed, 29 Nov 2017 19:14:05 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-29_abstractivesummarisation/</guid>
+      <guid>https://www.jkk.name/post/2017-11-29_abstractivesummarisation/</guid>
       <description>&lt;p&gt;Most effective summarisation systems are extractive, selecting the most important sentences in a document and sticking them together.
 Clearly that is not how people write summaries, but creating abstractive summaries means generating fluent language.
 At the same time, most datasets are based on news text, where the first few sentences are a strong baseline summary (by design, as journalists need to assume that the reader could stop at any point).
@@ -289,9 +289,9 @@ I&amp;rsquo;m not sure the beam search scoring idea has applications beyond summ
     
     <item>
       <title>Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-22_errorrepairparsing/</link>
+      <link>https://www.jkk.name/post/2017-11-22_errorrepairparsing/</link>
       <pubDate>Wed, 22 Nov 2017 15:48:53 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-22_errorrepairparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-11-22_errorrepairparsing/</guid>
       <description>&lt;p&gt;This work presents a system that parses sentences and identifies grammatical errors simultaneously.
 It&amp;rsquo;s an intuitive combination - a syntactic model should assign higher probability to a parse for a fixed version of a sentence than the one with a mistake.&lt;/p&gt;
 &lt;p&gt;They build on an incremental &amp;lsquo;easy-first&amp;rsquo; dependency parsing approach.
@@ -325,9 +325,9 @@ It does perform better on ungrammatical text, though the data is generated using
     
     <item>
       <title>Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-21_multiinputattention/</link>
+      <link>https://www.jkk.name/post/2017-11-21_multiinputattention/</link>
       <pubDate>Tue, 21 Nov 2017 16:42:19 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-21_multiinputattention/</guid>
+      <guid>https://www.jkk.name/post/2017-11-21_multiinputattention/</guid>
       <description>&lt;p&gt;Attention, a weighted average over vectors with weights determined based on context (usually decoder state), has proven effective in many NLP tasks.
 There are several variants, and this paper adds new types that address the question of how to apply attention to different sources at the same time, such as text and an image.&lt;/p&gt;
 &lt;p&gt;They consider three general versions:&lt;/p&gt;
@@ -364,11 +364,11 @@ The trends are that hierarchical is best, the sentinel doesn&amp;rsquo;t help, a
     
     <item>
       <title>Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-20_mrsparser/</link>
+      <link>https://www.jkk.name/post/2017-11-20_mrsparser/</link>
       <pubDate>Mon, 20 Nov 2017 10:13:12 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-20_mrsparser/</guid>
+      <guid>https://www.jkk.name/post/2017-11-20_mrsparser/</guid>
       <description>&lt;p&gt;Like the 
-&lt;a href=&#34;http://www.jkk.name/post/2017-11-16_ucca/&#34;&gt;UCCA parser&lt;/a&gt;, this paper explores a transition-based neural model for semantic parsing, but for Minimal Recursion Semantics instead of Universal Conceptual Cognitive Annotation.
+&lt;a href=&#34;https://www.jkk.name/post/2017-11-16_ucca/&#34;&gt;UCCA parser&lt;/a&gt;, this paper explores a transition-based neural model for semantic parsing, but for Minimal Recursion Semantics instead of Universal Conceptual Cognitive Annotation.
 Comparing MRS and UCCA, every word gets a non-terminal symbol in MRS, plus additional non-terminals for phenomena like quantification, while UCCA only introduces them for special cases like linking to a coordination.
 Both have discontinuous graph structures, creating a challenge for most parsers.&lt;/p&gt;
 &lt;p&gt;The UCCA and MRS parsers extend the basic shift-reduce transitions in different ways.
@@ -396,9 +396,9 @@ However, the system can also be applied to AMR, and does fairly well, better tha
     
     <item>
       <title>A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
+      <link>https://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</link>
       <pubDate>Fri, 17 Nov 2017 18:40:20 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-11-17_twostagediscourseparsing/</guid>
       <description>&lt;p&gt;Discourse parsing for Rhetorical Structure Theory is difficult partly because it involves a range of relation types at different scales (within and between sentences) and partly because there is relatively little annotated data available.
 To deal with the limited data, this paper breaks the task into two parts: (1) identify relations, (2) assign labels.
 Their system is state-of-the-art, and an ablation shows that the division of tasks helps performance.
@@ -426,9 +426,9 @@ This paper also continues the trend of transition-based inference applying effec
     
     <item>
       <title>A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-16_ucca/</link>
+      <link>https://www.jkk.name/post/2017-11-16_ucca/</link>
       <pubDate>Thu, 16 Nov 2017 17:24:59 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-16_ucca/</guid>
+      <guid>https://www.jkk.name/post/2017-11-16_ucca/</guid>
       <description>&lt;p&gt;Over the last few years interest has risen in parsing structures other than projective trees (including my dissertation!).
 There are now a range of different datasets with annotations for syntactic and/or semantic structure that include discontinuous constituents and graphs.
 This paper looks at UCCA, a proposed formalism that is somewhat similar to SRL, with non-terminals included to allow for easier handling of cases like coordination.&lt;/p&gt;
@@ -461,9 +461,9 @@ If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
     
     <item>
       <title>Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-10_kginlstm/</link>
+      <link>https://www.jkk.name/post/2017-11-10_kginlstm/</link>
       <pubDate>Fri, 10 Nov 2017 15:37:15 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-10_kginlstm/</guid>
+      <guid>https://www.jkk.name/post/2017-11-10_kginlstm/</guid>
       <description>&lt;p&gt;Structured information sources have been effectively used for entity detection and typing in linear models with the information encoded as binary features.
 This paper looks at how to integrate vector representations of structured information into an LSTM.
 The solution is an additional processing step during output generation, in which the vectors for relevant entities in the structured data are combined with the standard LSTM output (note, they do not affect the cell itself, so the information is not passed on through the recurrence).&lt;/p&gt;
@@ -494,9 +494,9 @@ The other key observations are that having a sequence level loss (using a CRF) h
     
     <item>
       <title>Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-08_graphdialogue/</link>
+      <link>https://www.jkk.name/post/2017-11-08_graphdialogue/</link>
       <pubDate>Wed, 08 Nov 2017 18:46:04 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-08_graphdialogue/</guid>
+      <guid>https://www.jkk.name/post/2017-11-08_graphdialogue/</guid>
       <description>&lt;p&gt;Task-oriented dialogue systems are often focused on a very narrow task, to the point where the state can be described completely with a tuple (e.g. preferences for a restaurant).
 This paper sets up a more challenging task with more complex language use, while still having a specific goal and directly relevant structured information.
 They collected 11,000 dialogues, where two people have private lists of friends and are trying to identify which friend they have in common.
@@ -544,9 +544,9 @@ During generation, the LSTM uses attention over these vectors to inform the outp
     
     <item>
       <title>Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-03_discourserelations/</link>
+      <link>https://www.jkk.name/post/2017-11-03_discourserelations/</link>
       <pubDate>Fri, 03 Nov 2017 15:40:32 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-03_discourserelations/</guid>
+      <guid>https://www.jkk.name/post/2017-11-03_discourserelations/</guid>
       <description>&lt;p&gt;Automatically generating high quality meeting notes and summaries would be awesome, but involves solving many challenges.
 Here, they assume speech recognition is already done and we also know the structure over utterances indicating which previous utterance each is a response to.
 The task is to label each of those utterance-utterance pairs with a type (e.g. elaboration) and to select the key phrase of each utterance.&lt;/p&gt;
@@ -575,9 +575,9 @@ According to automatic metrics it is quite a bit better than running the summari
     
     <item>
       <title>Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-13_errordetection/</link>
+      <link>https://www.jkk.name/post/2017-10-13_errordetection/</link>
       <pubDate>Fri, 13 Oct 2017 13:32:19 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-13_errordetection/</guid>
+      <guid>https://www.jkk.name/post/2017-10-13_errordetection/</guid>
       <description>&lt;p&gt;Active learning doesn&amp;rsquo;t seem to get much attention in NLP, probably because of fear that developing data based on the errors of one model will introduce a particular sampling bias.
 This paper is a nice example of a problem it can be applied to that doesn&amp;rsquo;t raise that issue: detecting all the errors in a system&amp;rsquo;s output.&lt;/p&gt;
 &lt;p&gt;The scenario is that you have a bunch of models for doing a task (e.g. POS tagging) and a new dataset with no labeled data, which you would like to label.
@@ -626,9 +626,9 @@ It also works well for NER, and consistently does better than the alternative th
     
     <item>
       <title>Search-based Neural Structured Learning for Sequential Question Answering (Iyyer et al., ACL 2017)</title>
-      <link>http://www.jkk.name/post/2017-10-10_seqqa/</link>
+      <link>https://www.jkk.name/post/2017-10-10_seqqa/</link>
       <pubDate>Tue, 10 Oct 2017 13:43:36 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-10_seqqa/</guid>
+      <guid>https://www.jkk.name/post/2017-10-10_seqqa/</guid>
       <description>&lt;p&gt;Semantic parsing datasets generally consist of (question, answer) pairs, where each pair is completely independent of the rest (one exception is ATIS, which has multi-turn conversations, though most work doesn&amp;rsquo;t use them).
 In reality, we often ask a series of simple questions that together form a complex one, for example &amp;ldquo;What flights are available from Detroit to Sydney? And how much is the price if I don&amp;rsquo;t want to leave before 8am?&amp;rdquo;
 This work explores these kinds of sequential questions with a new dataset and algorithm.&lt;/p&gt;

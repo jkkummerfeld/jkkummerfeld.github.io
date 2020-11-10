@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>vldb | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/vldb/</link>
-      <atom:link href="http://www.jkk.name/tag/vldb/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/vldb/</link>
+      <atom:link href="https://www.jkk.name/tag/vldb/index.xml" rel="self" type="application/rss+xml" />
     <description>vldb</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 08 Mar 2018 20:11:48 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>vldb</title>
-      <link>http://www.jkk.name/tag/vldb/</link>
+      <link>https://www.jkk.name/tag/vldb/</link>
     </image>
     
     <item>
       <title>Provenance for Natural Language Queries (Deutch et al., 2017)</title>
-      <link>http://www.jkk.name/post/2018-03-08_sql/</link>
+      <link>https://www.jkk.name/post/2018-03-08_sql/</link>
       <pubDate>Thu, 08 Mar 2018 20:11:48 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-03-08_sql/</guid>
+      <guid>https://www.jkk.name/post/2018-03-08_sql/</guid>
       <description>&lt;p&gt;Being able to query a database in natural language could help make data accessible to more people.
 Systems that do this have to solve two challenges: (1) understanding the query and (2) expressing the response in a way the user will understand.
 Recently there have been papers in the NLP community on the first challenge, but this paper comes from the DB community and considers the second.&lt;/p&gt;

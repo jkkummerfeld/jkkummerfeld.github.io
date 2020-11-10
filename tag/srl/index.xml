@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>srl | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/srl/</link>
-      <atom:link href="http://www.jkk.name/tag/srl/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/srl/</link>
+      <atom:link href="https://www.jkk.name/tag/srl/index.xml" rel="self" type="application/rss+xml" />
     <description>srl</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 04 Oct 2020 15:10:12 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>srl</title>
-      <link>http://www.jkk.name/tag/srl/</link>
+      <link>https://www.jkk.name/tag/srl/</link>
     </image>
     
     <item>
       <title>A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels (Jiang, et al., Findings of EMNLP 2020)</title>
-      <link>http://www.jkk.name/post/2020-10-04_crowdsrl/</link>
+      <link>https://www.jkk.name/post/2020-10-04_crowdsrl/</link>
       <pubDate>Sun, 04 Oct 2020 15:10:12 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
+      <guid>https://www.jkk.name/post/2020-10-04_crowdsrl/</guid>
       <description>&lt;p&gt;My 
-&lt;a href=&#34;http://jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
+&lt;a href=&#34;https://www.jkk.name/post/2020-09-25_crowdqasrl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous post&lt;/a&gt; discussed work on crowdsourcing QA-SRL, a way of capturing semantic roles in text by asking workers to answer questions.
 This post covers a paper I contributed to that also considers crowdsourcing SRL, but collects the more traditional form of annotation used in resources like Propbank.&lt;/p&gt;
 &lt;p&gt;The core new idea is a filtering process in which workers identify &lt;em&gt;incorrect&lt;/em&gt; answers for a task.
 This is the first step of a three stage process:&lt;/p&gt;
@@ -42,7 +42,7 @@ First, bringing in methods of worker training in order to improve their accuracy
 Second, combining with ideas from other work, such as having a model deciding whether examples are easy or hard and changing how they are processed accordingly, or using QA-SRL annotation to inform the process.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/pub/emnlp-findings20srl.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://twitter.com/jkkummerfeld/status/1314632048070594560&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;My Tweet&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{emnlp-findings20srl,
@@ -53,7 +53,7 @@ Second, combining with ideas from other work, such as having a model deciding wh
   month     = {November},
   year      = {2020},
   location  = {Online},
-  url       = {http://www.jkk.name/pub/emnlp-findings20srl.pdf},
+  url       = {https://www.jkk.name/pub/emnlp-findings20srl.pdf},
   abstract  = {Resources for Semantic Role Labeling (SRL) are typically annotated by experts at great expense. Prior attempts to develop crowdsourcing methods have either had low accuracy or required substantial expert annotation. We propose a new multi-stage crowd workflow that substantially reduces expert involvement without sacrificing accuracy. In particular, we introduce a unique filter stage based on the key observation that crowd workers are able to almost perfectly filter out incorrect options for labels. Our three-stage workflow produces annotations with 95\% accuracy for predicate labels and 93\% for argument labels, which is comparable to expert agreement. Compared to prior work on crowdsourcing for SRL, we decrease expert effort by 4x, from 56\% to 14\% of cases. Our approach enables more scalable annotation of SRL, and could enable annotation of NLP tasks that have previously been considered too complex to effectively crowdsource.},
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -62,9 +62,9 @@ Second, combining with ideas from other work, such as having a model deciding wh
     
     <item>
       <title>Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</title>
-      <link>http://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
+      <link>https://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
       <pubDate>Fri, 25 Sep 2020 10:17:18 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
+      <guid>https://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
       <description>&lt;p&gt;Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.
 Over the last few years, 
 &lt;a href=&#34;https://www.cs.washington.edu/people/faculty/lsz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luke Zettlemoyer&amp;rsquo;s Group&lt;/a&gt; has been exploring using question-answer pairs to represent this structure.

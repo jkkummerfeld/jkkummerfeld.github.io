@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>syntax | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/syntax/</link>
-      <atom:link href="http://www.jkk.name/tag/syntax/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/syntax/</link>
+      <atom:link href="https://www.jkk.name/tag/syntax/index.xml" rel="self" type="application/rss+xml" />
     <description>syntax</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 16 Nov 2017 17:24:59 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>syntax</title>
-      <link>http://www.jkk.name/tag/syntax/</link>
+      <link>https://www.jkk.name/tag/syntax/</link>
     </image>
     
     <item>
       <title>A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-16_ucca/</link>
+      <link>https://www.jkk.name/post/2017-11-16_ucca/</link>
       <pubDate>Thu, 16 Nov 2017 17:24:59 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-16_ucca/</guid>
+      <guid>https://www.jkk.name/post/2017-11-16_ucca/</guid>
       <description>&lt;p&gt;Over the last few years interest has risen in parsing structures other than projective trees (including my dissertation!).
 There are now a range of different datasets with annotations for syntactic and/or semantic structure that include discontinuous constituents and graphs.
 This paper looks at UCCA, a proposed formalism that is somewhat similar to SRL, with non-terminals included to allow for easier handling of cases like coordination.&lt;/p&gt;
@@ -49,9 +49,9 @@ If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
     
     <item>
       <title>In-Order Transition-based Constituent Parsing (Liu et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-14_inorderparsing/</link>
+      <link>https://www.jkk.name/post/2017-11-14_inorderparsing/</link>
       <pubDate>Tue, 14 Nov 2017 14:10:39 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-14_inorderparsing/</guid>
+      <guid>https://www.jkk.name/post/2017-11-14_inorderparsing/</guid>
       <description>&lt;p&gt;Shift-reduce constituency parsing incrementally builds the parse either bottom-up or top-down.
 The difference is whether a non-terminal is placed on the stack before or after the words that it spans.
 This corresponds to two forms of depth-first traversal of the tree: pre-order or post-order.&lt;/p&gt;
@@ -80,9 +80,9 @@ I wonder whether further gains could be realised with a label-sensitive ordering
     
     <item>
       <title>Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</link>
+      <link>https://www.jkk.name/post/2017-11-07_spineparsinglstm/</link>
       <pubDate>Tue, 07 Nov 2017 20:42:45 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-07_spineparsinglstm/</guid>
+      <guid>https://www.jkk.name/post/2017-11-07_spineparsinglstm/</guid>
       <description>&lt;p&gt;This paper brings together work on neural dependency parsing with the idea of non-terminal spines as a way to represent constituency structure.
 Within the transition parsing inference process they can naturally fit the generation of a new spines by gradually building up the spine, which makes for a very elegant inference process.&lt;/p&gt;
 &lt;p&gt;Surprisingly, it doesn&amp;rsquo;t seem to matter what head choices are used to generate the spines (they tried leftmost word, rightmost word, and two standard schemes).
@@ -109,9 +109,9 @@ Decisions about higher up in the spine are difficult to make when looking at a s
     
     <item>
       <title>Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice (Mi and Huang, 2015)</title>
-      <link>http://www.jkk.name/post/2017-10-25_shiftreducedp/</link>
+      <link>https://www.jkk.name/post/2017-10-25_shiftreducedp/</link>
       <pubDate>Wed, 25 Oct 2017 14:44:13 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-25_shiftreducedp/</guid>
+      <guid>https://www.jkk.name/post/2017-10-25_shiftreducedp/</guid>
       <description>&lt;p&gt;This paper is a follow-up to yesterday&amp;rsquo;s, where the approach is implemented and evaluated on English and Chinese, with very strong results.
 The novel contribution is the idea of introducing alternating steps in the dynamic program to do unary steps (not a novel idea in general, but novel in its application to the dynamic programming version of shift-reduce parsing).&lt;/p&gt;
 &lt;p&gt;What I found interesting here were the clear benefits of the dynamic program (DP) version.
@@ -139,9 +139,9 @@ On speed, there is the nice theoretical bound of $O(n)$ for this approach, but t
     
     <item>
       <title>Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</title>
-      <link>http://www.jkk.name/post/2017-10-24_dynamictransition/</link>
+      <link>https://www.jkk.name/post/2017-10-24_dynamictransition/</link>
       <pubDate>Tue, 24 Oct 2017 13:06:04 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2017-10-24_dynamictransition/</guid>
+      <guid>https://www.jkk.name/post/2017-10-24_dynamictransition/</guid>
       <description>&lt;p&gt;This paper from 2011 explores the relationship between transition based parsing and dynamic programming based parsing.
 They show how to convert common dependency parsing systems (Arc-Standard and Arc-Eager) into dynamic programs, and how doing the reverse on a dynamic program gives the Arc-Hybrid approach (which has since been used in many places, and is now joined by additional systems like Arc-Swift).&lt;/p&gt;
 &lt;p&gt;The benefit of this transformation is that we can find exact answers without massive beams.
@@ -171,41 +171,41 @@ The variation in available context for the different algorithms may force genera
     
     <item>
       <title>One-Endpoint Crossing Graph Parser</title>
-      <link>http://www.jkk.name/software/1ec-parsing/</link>
+      <link>https://www.jkk.name/software/1ec-parsing/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/software/1ec-parsing/</guid>
+      <guid>https://www.jkk.name/software/1ec-parsing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spine and Arc version of the Penn Treebank</title>
-      <link>http://www.jkk.name/data/shp-ptb/</link>
+      <link>https://www.jkk.name/data/shp-ptb/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/data/shp-ptb/</guid>
+      <guid>https://www.jkk.name/data/shp-ptb/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CCG to PST</title>
-      <link>http://www.jkk.name/software/ccg2pst/</link>
+      <link>https://www.jkk.name/software/ccg2pst/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/software/ccg2pst/</guid>
+      <guid>https://www.jkk.name/software/ccg2pst/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Parse Error Analysis</title>
-      <link>http://www.jkk.name/software/parsing-analysis/</link>
+      <link>https://www.jkk.name/software/parsing-analysis/</link>
       <pubDate>Sun, 01 Jul 2012 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/software/parsing-analysis/</guid>
+      <guid>https://www.jkk.name/software/parsing-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adaptive CCG Supertagging Model</title>
-      <link>http://www.jkk.name/data/ccg-model/</link>
+      <link>https://www.jkk.name/data/ccg-model/</link>
       <pubDate>Thu, 01 Jul 2010 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/data/ccg-model/</guid>
+      <guid>https://www.jkk.name/data/ccg-model/</guid>
       <description></description>
     </item>
     

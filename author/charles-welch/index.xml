@@ -2,61 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Charles Welch | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/author/charles-welch/</link>
-      <atom:link href="http://www.jkk.name/author/charles-welch/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/author/charles-welch/</link>
+      <atom:link href="https://www.jkk.name/author/charles-welch/index.xml" rel="self" type="application/rss+xml" />
     <description>Charles Welch</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 01 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Charles Welch</title>
-      <link>http://www.jkk.name/author/charles-welch/</link>
+      <link>https://www.jkk.name/author/charles-welch/</link>
     </image>
     
     <item>
       <title>Compositional Demographic Word Embeddings</title>
-      <link>http://www.jkk.name/publication/emnlp20demographics/</link>
-      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20demographics/</guid>
+      <link>https://www.jkk.name/publication/emnlp20demographics/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp20demographics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation</title>
-      <link>http://www.jkk.name/publication/emnlp20lm/</link>
-      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/emnlp20lm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exploring the Value of Personalized Word Embeddings</title>
-      <link>http://www.jkk.name/publication/coling20personal/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/coling20personal/</guid>
+      <link>https://www.jkk.name/publication/emnlp20lm/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp20lm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Look Who&#39;s Talking: Inferring Speaker Attributes from Personal Longitudinal Dialog</title>
-      <link>http://www.jkk.name/publication/cicling19personal/</link>
+      <link>https://www.jkk.name/publication/cicling19personal/</link>
       <pubDate>Mon, 01 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/cicling19personal/</guid>
+      <guid>https://www.jkk.name/publication/cicling19personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning from Personal Longitudinal Dialog Data</title>
-      <link>http://www.jkk.name/publication/ieee19personal/</link>
+      <link>https://www.jkk.name/publication/ieee19personal/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/ieee19personal/</guid>
+      <guid>https://www.jkk.name/publication/ieee19personal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>World Knowledge for Abstract Meaning Representation Parsing</title>
-      <link>http://www.jkk.name/publication/lrec18amr/</link>
+      <link>https://www.jkk.name/publication/lrec18amr/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
-      <guid>http://www.jkk.name/publication/lrec18amr/</guid>
+      <guid>https://www.jkk.name/publication/lrec18amr/</guid>
       <description></description>
     </item>
     

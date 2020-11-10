@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>data | Jonathan K. Kummerfeld</title>
-    <link>http://www.jkk.name/tag/data/</link>
-      <atom:link href="http://www.jkk.name/tag/data/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://www.jkk.name/tag/data/</link>
+      <atom:link href="https://www.jkk.name/tag/data/index.xml" rel="self" type="application/rss+xml" />
     <description>data</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 25 Sep 2020 10:17:18 -0500</lastBuildDate>
     <image>
-      <url>http://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
+      <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>data</title>
-      <link>http://www.jkk.name/tag/data/</link>
+      <link>https://www.jkk.name/tag/data/</link>
     </image>
     
     <item>
       <title>Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</title>
-      <link>http://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
+      <link>https://www.jkk.name/post/2020-09-25_crowdqasrl/</link>
       <pubDate>Fri, 25 Sep 2020 10:17:18 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
+      <guid>https://www.jkk.name/post/2020-09-25_crowdqasrl/</guid>
       <description>&lt;p&gt;Semantic Role Labeling captures the content of a sentence by labeling the word sense of the verbs and identifying their arguments.
 Over the last few years, 
 &lt;a href=&#34;https://www.cs.washington.edu/people/faculty/lsz/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Luke Zettlemoyer&amp;rsquo;s Group&lt;/a&gt; has been exploring using question-answer pairs to represent this structure.
@@ -81,13 +81,13 @@ Maybe targeted re-annotation could be used to add them to PropBank (identifying 
     
     <item>
       <title>ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</title>
-      <link>http://www.jkk.name/post/2020-09-07_chartdialogs/</link>
+      <link>https://www.jkk.name/post/2020-09-07_chartdialogs/</link>
       <pubDate>Mon, 07 Sep 2020 14:41:34 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
+      <guid>https://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
       <description>&lt;p&gt;Natural language interfaces to computer systems are an exciting area with new workshops (
 &lt;a href=&#34;https://www.aclweb.org/anthology/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
 &lt;a href=&#34;https://intex-sempar.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IntEx-SemPar&lt;/a&gt; at EMNLP), a range of datasets (including my own work on 
-&lt;a href=&#34;http://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
+&lt;a href=&#34;https://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
 Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code.
 This paper considers an interesting application: interaction with data visualisation tools.&lt;/p&gt;
 &lt;p&gt;Using the full flexibility of these tools is a tall order, so this work focuses on commands to modify style parameters of a figure.
@@ -126,9 +126,9 @@ Arbitrary code generation would be a fantastic extension, though creating the da
     
     <item>
       <title>Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</title>
-      <link>http://www.jkk.name/post/2020-09-03_checklist/</link>
+      <link>https://www.jkk.name/post/2020-09-03_checklist/</link>
       <pubDate>Thu, 03 Sep 2020 14:44:29 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2020-09-03_checklist/</guid>
+      <guid>https://www.jkk.name/post/2020-09-03_checklist/</guid>
       <description>&lt;p&gt;It is difficult to predict how well a model will work in the real world.
 Carefully curated test sets provide some signal, but only if they are large, representative, and have not been overfit to.
 This paper builds on two ideas for this problem: constructing challenge datasets and breaking performance down into subcategories.
@@ -182,9 +182,9 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
     
     <item>
       <title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</title>
-      <link>http://www.jkk.name/post/2019-07-10_disentanglement/</link>
+      <link>https://www.jkk.name/post/2019-07-10_disentanglement/</link>
       <pubDate>Wed, 10 Jul 2019 11:19:06 -0400</pubDate>
-      <guid>http://www.jkk.name/post/2019-07-10_disentanglement/</guid>
+      <guid>https://www.jkk.name/post/2019-07-10_disentanglement/</guid>
       <description>&lt;p&gt;This post is about my own paper to appear at ACL later this month.
 What is interesting about this paper will depend on your research interests, so that&amp;rsquo;s how I&amp;rsquo;ve broken down this blog post.&lt;/p&gt;
 &lt;p&gt;A few key points first:&lt;/p&gt;
@@ -204,7 +204,7 @@ In our case, the stream is a technical support channel for Ubuntu on Internet Re
 We annotated each message with which message(s) it was a response to.
 As far as we are aware, this is the first large-scale corpus with this kind of discourse structure in synchronous chat.
 Here is an example from the data, with annotations marked by edges and colours:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-example.png&#34; alt=&#34;IRC Disentanglement Example&#34;&gt;&lt;/p&gt;
 &lt;p&gt;We don&amp;rsquo;t frame the paper as being about reply-structure though.
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
@@ -224,7 +224,7 @@ Many conversations are missing messages, and some have extra messages from other
 Unsurprisingly, our trained model does better, producing conversations that are a true prefix 81% of the time.
 We also noticed that their heuristic was incorrectly linking messages far apart in time.
 This is not tested by our evaluation set, so we constructed this figure, which shows the problem is quite common:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/irc-disentanglement-comparison.png&#34; alt=&#34;IRC Disentanglement Comparison&#34;&gt;&lt;/p&gt;
 &lt;p&gt;The purple results are based on the output of our model over the entire Ubuntu IRC logs.
 That output is the basis of 
 &lt;a href=&#34;https://github.com/dstc8-track2/NOESIS-II&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;DSTC 8 Track 2&lt;/a&gt;.
@@ -267,12 +267,12 @@ Thank you!&lt;/p&gt;
     
     <item>
       <title>PreCo: A Large-scale Dataset in Preschool Vocabulary for Coreference Resolution (Chen et al., 2018)</title>
-      <link>http://www.jkk.name/post/2018-11-08_corefdata/</link>
+      <link>https://www.jkk.name/post/2018-11-08_corefdata/</link>
       <pubDate>Thu, 08 Nov 2018 11:29:32 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2018-11-08_corefdata/</guid>
+      <guid>https://www.jkk.name/post/2018-11-08_corefdata/</guid>
       <description>&lt;p&gt;The OntoNotes dataset, which is the focus of almost all coreference resolution research, had several compromises in its development (as is the case for any dataset).
 Some of these are discussed in my 
-&lt;a href=&#34;http://jkk.name/publication/conll11coreference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoNLL Shared Task submission paper&lt;/a&gt;, the biggest being the choice to not annotate mentions that are not coreferent.
+&lt;a href=&#34;https://www.jkk.name/publication/conll11coreference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CoNLL Shared Task submission paper&lt;/a&gt;, the biggest being the choice to not annotate mentions that are not coreferent.
 This paper describes a new dataset that has a different set of compromises, specifically:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A broader definition of coreference (e.g. appositives are coreferent)&lt;/li&gt;
@@ -285,7 +285,7 @@ The source text is 2/3rds the RACE dataset (English reading comprehension exams 
 Measurements of annotator agreement suggest the annotations are not as consistent as OntoNotes, but still good enough to be a useful resource.
 I do disagree with one aspect of the paper&amp;rsquo;s analysis - the results show a substantial gain in performance when providing gold mentions, suggesting to me that it remains an important challenge in coreference resolution.
 I&amp;rsquo;m also curious whether my 
-&lt;a href=&#34;http://jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
+&lt;a href=&#34;https://www.jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;http://aclweb.org/anthology/D18-1016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
@@ -307,9 +307,9 @@ I&amp;rsquo;m also curious whether my
     
     <item>
       <title>Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</title>
-      <link>http://www.jkk.name/post/2017-11-09_framesdataset/</link>
+      <link>https://www.jkk.name/post/2017-11-09_framesdataset/</link>
       <pubDate>Thu, 09 Nov 2017 19:47:08 -0500</pubDate>
-      <guid>http://www.jkk.name/post/2017-11-09_framesdataset/</guid>
+      <guid>https://www.jkk.name/post/2017-11-09_framesdataset/</guid>
       <description>&lt;p&gt;Another paper about a dataset of dialogues, but this time with structure.
 Like the paper from yesterday, the aim is a dataset of task-oriented conversations, but with more complexity than prior work.
 The difference is that this work includes a structured representation of the state of the conversation: frames.&lt;/p&gt;
