@@ -718,22 +718,6 @@
 
 
 
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/pdf/2004.14876.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
-        data-filename="/publication/arxiv20embeddings/cite.bib">
-  Cite
-</button>
 
 
 
@@ -750,6 +734,10 @@
 
 
 
+<button type="button" class="btn btn-outline-primary my-1 mr-1 js-cite-modal"
+        data-filename="/publication/arxiv20embeddings/cite.bib">
+  Cite
+</button>
 
 
 
@@ -761,6 +749,20 @@
 
 
 
+
+
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="javascript:;" onClick="
+  if (document.getElementById('arxiv20embeddings-citations').style.display == 'block') {
+  document.getElementById('arxiv20embeddings-citations').style.display='none';
+  } else {
+  document.getElementById('arxiv20embeddings-citations').style.display='block';
+  }
+  ">
+  Citations (1)
+</a>
 
 
 <div id="arxiv20embeddings-abstract" style="display: none;margin-left:20px;" style="text-align:right;">
@@ -770,6 +772,14 @@
 </div>
 
 <div id="arxiv20embeddings-citations" style="display: none;margin-left:20px; font-size:smaller; " style="text-align:right;">
+  
+    <p>
+      
+        NEMO: Frequentist Inference Approach to Constrained Linguistic Typology Feature Prediction in SIGTYP 2020 Shared Task
+      
+      <br />
+      Alexander Gutkin, Richard Sproat, Workshop on Computational Research in Linguistic Typology, 2020
+    </p>
   
 </div>
 
