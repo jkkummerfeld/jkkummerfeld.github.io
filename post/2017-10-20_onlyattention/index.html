@@ -723,7 +723,7 @@ A range of approaches have been used to try to address these issues, such as con
 The idea in this work is to use attention, applied multiple times, to get a network that is fast while still capturing positional information.</p>
 <p>To explain the structure I put together the figure below, which captures the network structure with a few simplifications:</p>
 <p><img src="https://www.jkk.name/img/post/google-attention.png" alt="Google Attention Network"></p>
-<p>There a few ideas being brought together here:</p>
+<p>There are a few ideas being brought together here:</p>
 <ul>
 <li><em>Positional encoding</em>, which is a vector of the same length as the word representation, but that depends only on the position in the input. Here they use $f(pos, dim) = sin(pos / 10000^{2 dim / d_w})$ for even dimensions and the cosine equivalent for odd dimensions (where $d_w$ is the number of dimensions.</li>
 <li><em>Multi-head attention</em>, where rather than running attention once on the full vector, multiple linear transforms are applied to get smaller vectors.</li>
@@ -1285,7 +1285,7 @@ they released.</p>
   
 
   <p class="powered-by">
-    © 2020 Jonathan K. Kummerfeld
+    © 2021 Jonathan K. Kummerfeld
   </p>
 
   

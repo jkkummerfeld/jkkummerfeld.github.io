@@ -5,7 +5,7 @@
     <link>https://www.jkk.name/tag/neural-network/</link>
       <atom:link href="https://www.jkk.name/tag/neural-network/index.xml" rel="self" type="application/rss+xml" />
     <description>neural-network</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 08 May 2018 09:00:31 -0400</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 08 May 2018 09:00:31 -0400</lastBuildDate>
     <image>
       <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>neural-network</title>
@@ -204,7 +204,7 @@ A range of approaches have been used to try to address these issues, such as con
 The idea in this work is to use attention, applied multiple times, to get a network that is fast while still capturing positional information.&lt;/p&gt;
 &lt;p&gt;To explain the structure I put together the figure below, which captures the network structure with a few simplifications:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://www.jkk.name/img/post/google-attention.png&#34; alt=&#34;Google Attention Network&#34;&gt;&lt;/p&gt;
-&lt;p&gt;There a few ideas being brought together here:&lt;/p&gt;
+&lt;p&gt;There are a few ideas being brought together here:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;Positional encoding&lt;/em&gt;, which is a vector of the same length as the word representation, but that depends only on the position in the input. Here they use $f(pos, dim) = sin(pos / 10000^{2 dim / d_w})$ for even dimensions and the cosine equivalent for odd dimensions (where $d_w$ is the number of dimensions.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;Multi-head attention&lt;/em&gt;, where rather than running attention once on the full vector, multiple linear transforms are applied to get smaller vectors.&lt;/li&gt;

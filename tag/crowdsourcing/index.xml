@@ -5,7 +5,7 @@
     <link>https://www.jkk.name/tag/crowdsourcing/</link>
       <atom:link href="https://www.jkk.name/tag/crowdsourcing/index.xml" rel="self" type="application/rss+xml" />
     <description>crowdsourcing</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 12 Oct 2020 10:28:13 -0500</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Jonathan K. Kummerfeld</copyright><lastBuildDate>Mon, 12 Oct 2020 10:28:13 -0500</lastBuildDate>
     <image>
       <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>crowdsourcing</title>
@@ -220,7 +220,7 @@ Maybe targeted re-annotation could be used to add them to PropBank (identifying 
 The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.
 Recently, 
 &lt;a href=&#34;http://users.umiacs.umd.edu/~hal/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hal Daumé III&lt;/a&gt; mentioned on 
-&lt;a href=&#34;https://twitter.com/haldaume3/status/1113889907586535425&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt; that Figure Eight, a paid crowdsourcing service, had removed their free licenses for academics, and asked for alternatives.
+&lt;a href=&#34;https://twitter.com/haldaume3/status/1113889907586535425&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Twitter&lt;/a&gt; that Figure Eight, a paid crowdsourcing service, had removed their free licenses for academics, and asked for alternatives (Note, Figure Eight has since been acquired by Appen).
 A bunch of people had suggestions which I wanted to record for my own future reference, hence this blog post.&lt;/p&gt;
 &lt;p&gt;These fell into a few categories:&lt;/p&gt;
 &lt;ul&gt;
