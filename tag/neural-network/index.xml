@@ -74,7 +74,7 @@ The results show fairly clear trends, though the systems are not great compared 
 The trends are that hierarchical is best, the sentinel doesn&amp;rsquo;t help, and it is better to not share weights (though I wonder if that would be true when controlling for the total number of parameters).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-2031&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-2031&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{libovicky-helcl:2017:Short,
   author    = {Libovick\&#39;{y}, Jind\v{r}ich  and  Helcl, Jind\v{r}ich},
   title     = {Attention Strategies for Multi-Source Sequence-to-Sequence Learning},
@@ -84,7 +84,7 @@ The trends are that hierarchical is best, the sentinel doesn&amp;rsquo;t help, a
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {196--202},
-  url       = {http://aclweb.org/anthology/P17-2031}
+  url       = {https://aclanthology.org/P17-2031}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

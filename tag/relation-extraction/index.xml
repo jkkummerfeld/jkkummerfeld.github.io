@@ -27,13 +27,13 @@ The solution here is to link pairs that are closest together (unclear what they 
 That doesn&amp;rsquo;t handle overlapping relations, which the authors say is particularly common in the BioInfer data (I&amp;rsquo;m curious how much it is hurting here too).
 It&amp;rsquo;s unclear how this could be addressed without a radical redesign, since extending the tag scheme could lead to sparsity issues.&lt;/p&gt;
 &lt;p&gt;I was not familiar with this data, so I looked back to the original paper the annotated test data came from: 
-&lt;a href=&#34;http://www.aclweb.org/anthology/P11-1055&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoffman et al., (2011)&lt;/a&gt;.
+&lt;a href=&#34;https://aclanthology.org/P11-1055&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoffman et al., (2011)&lt;/a&gt;.
 There is no dev set, only a 395 sentence test set, so the standard practise is to use random 10% samples of the test data for development.
 Also, if I understand it correctly, the data was annotated by manually confirming the output of systems, which means it will have recall errors.
 If interest in this data grows, going back and annotating more seems worthwhile.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1113&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1113&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{zheng-EtAl:2017:Long,
   author    = {Zheng, Suncong  and  Wang, Feng  and  Bao, Hongyun  and  Hao, Yuexing  and  Zhou, Peng  and  Xu, Bo},
   title     = {Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme},
@@ -43,7 +43,7 @@ If interest in this data grows, going back and annotating more seems worthwhile.
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1227--1236},
-  url       = {http://aclweb.org/anthology/P17-1113}
+  url       = {https://aclanthology.org/P17-1113}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

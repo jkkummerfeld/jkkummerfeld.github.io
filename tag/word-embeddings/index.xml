@@ -204,7 +204,7 @@ That might partly reflect the tasks though - something downstream like POS taggi
 Ultimately this is not a solution to this problem, but it&amp;rsquo;s an idea to keep in mind.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1030&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1030&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{herbelot-baroni:2017:EMNLP2017,
   author    = {Herbelot, Aur\&#39;{e}lie  and  Baroni, Marco},
   title     = {High-risk learning: acquiring new word vectors from tiny data},
@@ -214,7 +214,7 @@ Ultimately this is not a solution to this problem, but it&amp;rsquo;s an idea to
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {304--309},
-  url       = {https://www.aclweb.org/anthology/D17-1030}
+  url       = {https://aclanthology.org/D17-1030}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

@@ -740,7 +740,7 @@ This is the process I&rsquo;ve worked out (in Chrome) to do this:</p>
 import sys
 papers = {}
 for line in sys.stdin:
-    if 'www.aclweb.org' in line:
+    if 'aclanthology.org' in line:
         content = line.strip()
         url = content.split()[1].split('&quot;')[1][:-1] + &quot;.pdf&quot;
         name = content.split(&quot; - ACL Anthology&quot;)[0].split(&quot;&gt;&quot;)[-1]
@@ -1091,7 +1091,7 @@ with open('example.pdf', 'wb') as out:
       
     
     <li>
-      <a href="//aclweb.org/anthology/people/j/jonathan-k-kummerfeld/" >
+      <a href="//aclanthology.org/anthology/people/j/jonathan-k-kummerfeld/" >
         <i class="icon icon-acl-logo"></i>
       </a>
     </li>

@@ -37,7 +37,7 @@ There were a few things I found interesting in the results:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1114&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1114&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{xu-jiang-watcharawittayakul:2017:Long,
   author    = {Xu, Mingbin  and  Jiang, Hui  and  Watcharawittayakul, Sedtawut},
   title     = {A Local Detection Approach for Named Entity Recognition and Mention Detection},
@@ -47,7 +47,7 @@ There were a few things I found interesting in the results:&lt;/p&gt;
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1237--1247},
-  url       = {http://aclweb.org/anthology/P17-1114}
+  url       = {https://aclanthology.org/P17-1114}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

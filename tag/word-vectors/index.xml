@@ -31,7 +31,7 @@ For most of this paper that&amp;rsquo;s a reasonable decision, as it allows a cl
 In my experience (and in our soon-to-appear NAACL paper) we find that variations in word vectors can disappear during training for a downstream task.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.aclweb.org/anthology/P16-1013&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P16-1013&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{tsvetkov-EtAl:2016:P16-1,
   author    = {Tsvetkov, Yulia  and  Faruqui, Manaal  and  Ling, Wang  and  MacWhinney, Brian  and  Dyer, Chris},
   title     = {Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning},
@@ -41,7 +41,7 @@ In my experience (and in our soon-to-appear NAACL paper) we find that variations
   address   = {Berlin, Germany},
   publisher = {Association for Computational Linguistics},
   pages     = {130--139},
-  url       = {http://www.aclweb.org/anthology/P16-1013}
+  url       = {https://aclanthology.org/P16-1013}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -58,7 +58,7 @@ The factor is the harmonic mean of the normalised frequency in each domain (so t
 Across a range of tasks this consistently performs better than other approaches.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{yang-lu-zheng:2017:EMNLP2017,
   author    = {Yang, Wei  and  Lu, Wei  and  Zheng, Vincent},
   title     = {A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings},
@@ -68,7 +68,7 @@ Across a range of tasks this consistently performs better than other approaches.
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2898--2904},
-  url       = {https://www.aclweb.org/anthology/D17-1312}
+  url       = {https://aclanthology.org/D17-1312}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -86,7 +86,7 @@ When visualising with t-SNE this effect is not visible because of the way the sp
 However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloVe does not have this property, and doesn&amp;rsquo;t seem to derive a great benefit from it.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1308&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1308&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mimno-thompson:2017:EMNLP2017,
   author    = {Mimno, David  and  Thompson, Laure},
   title     = {The strange geometry of skip-gram with negative sampling},
@@ -96,7 +96,7 @@ However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloV
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2873--2878},
-  url       = {https://www.aclweb.org/anthology/D17-1308}
+  url       = {https://aclanthology.org/D17-1308}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -201,7 +201,7 @@ There was one puzzling line about the model suffering larger variance problems, 
 The paper also doesn&amp;rsquo;t get into details about the learned space, for example, are the two senses often far apart or close together? (in the latter case it is learning a slightly non-linear spatial representation).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1151&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1151&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{athiwaratkun-wilson:2017:Long,
   author    = {Athiwaratkun, Ben  and  Wilson, Andrew},
   title     = {Multimodal Word Distributions},
@@ -211,7 +211,7 @@ The paper also doesn&amp;rsquo;t get into details about the learned space, for e
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1645--1656},
-  url       = {http://aclweb.org/anthology/P17-1151}
+  url       = {https://aclanthology.org/P17-1151}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -239,7 +239,7 @@ The paper mentions it is Zipfian, but surely it would be something double-sided 
 &lt;p&gt;Overall, this is further evidence of the versatility of the idea of attention!&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/D17-1242.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1242.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{cheng-fang-ostendorf:2017:EMNLP2017,
   author    = {Cheng, Hao  and  Fang, Hao  and  Ostendorf, Mari},
   title     = {A Factored Neural Network Model for Characterizing Online Discussions in Vector Space},
@@ -249,7 +249,7 @@ The paper mentions it is Zipfian, but surely it would be something double-sided 
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2286--2296},
-  url       = {https://www.aclweb.org/anthology/D17-1242}
+  url       = {https://aclanthology.org/D17-1242}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

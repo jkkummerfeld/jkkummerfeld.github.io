@@ -86,7 +86,7 @@ This is still an interesting result, but I&amp;rsquo;m left with a few questions
 For large datasets, building models, or other tasks and domains the conclusions are less clear, though it is certainly worth being aware of the risk that a dataset made with active learning may not be equally useful to all models.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D19-1003.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D19-1003.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Twitter discussion in 
 &lt;a href=&#34;https://twitter.com/zacharylipton/status/1019222882482905088&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2018&lt;/a&gt;) and 
 &lt;a href=&#34;https://twitter.com/zacharylipton/status/1165692913290043398?s=20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;2019&lt;/a&gt;.&lt;/p&gt;
@@ -100,7 +100,7 @@ For large datasets, building models, or other tasks and domains the conclusions 
     year = &amp;quot;2019&amp;quot;,
     address = &amp;quot;Hong Kong, China&amp;quot;,
     publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
-    url = &amp;quot;https://www.aclweb.org/anthology/D19-1003&amp;quot;,
+    url = &amp;quot;https://aclanthology.org/D19-1003&amp;quot;,
     doi = &amp;quot;10.18653/v1/D19-1003&amp;quot;,
     pages = &amp;quot;21--30&amp;quot;,
     abstract = &amp;quot;Active learning (AL) is a widely-used training strategy for maximizing predictive performance subject to a fixed annotation budget. In AL, one iteratively selects training examples for annotation, often those for which the current model is most uncertain (by some measure). The hope is that active sampling leads to better performance than would be achieved under independent and identically distributed (i.i.d.) random samples. While AL has shown promise in retrospective evaluations, these studies often ignore practical obstacles to its use. In this paper, we show that while AL may provide benefits when used with specific models and for particular domains, the benefits of current approaches do not generalize reliably across models and tasks. This is problematic because in practice, one does not have the opportunity to explore and compare alternative AL strategies. Moreover, AL couples the training dataset with the model used to guide its acquisition. We find that subsequently training a successor model with an actively-acquired dataset does not consistently outperform training on i.i.d. sampled data. Our findings raise the question of whether the downsides inherent to AL are worth the modest and inconsistent performance gains it tends to afford.&amp;quot;,
@@ -135,7 +135,7 @@ Fortunately, there is a simple solution - for each worker, give every annotator 
 With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1306&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1306&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mathur-baldwin-cohn:2017:EMNLP2017,
   author    = {Mathur, Nitika  and  Baldwin, Timothy  and  Cohn, Trevor},
   title     = {Sequence Effects in Crowdsourced Annotations},
@@ -145,7 +145,7 @@ With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2860--2865},
-  url       = {https://www.aclweb.org/anthology/D17-1306}
+  url       = {https://aclanthology.org/D17-1306}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -164,7 +164,7 @@ At the same time, we can&amp;rsquo;t just run the systems and use their output b
 We could run the systems and check their output, which could be faster than annotating directly, but would still take a long time.
 If we don&amp;rsquo;t mind having some errors, we can check just some output, but how do we decide what to check?&lt;/p&gt;
 &lt;p&gt;This paper applies the generative model from 
-&lt;a href=&#34;http://www.aclweb.org/anthology/N13-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MACE&lt;/a&gt; to build a generative model of system outputs.
+&lt;a href=&#34;https://aclanthology.org/N13-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MACE&lt;/a&gt; to build a generative model of system outputs.
 The model is:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;For each example, sample the true label with a uniform prior&lt;/li&gt;
@@ -186,7 +186,7 @@ It also works well for NER, and consistently does better than the alternative th
 &lt;a href=&#34;https://prodi.gy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prodigy&lt;/a&gt; and something that could be broadly useful.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/P/P17/P17-1107.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P/P17/P17-1107.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{rehbein-ruppenhofer:2017:Long,
   author    = {Rehbein, Ines  and  Ruppenhofer, Josef},
   title     = {Detecting annotation noise in automatically labelled data},
@@ -196,7 +196,7 @@ It also works well for NER, and consistently does better than the alternative th
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1160--1170},
-  url       = {http://aclweb.org/anthology/P17-1107}
+  url       = {https://aclanthology.org/P17-1107}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

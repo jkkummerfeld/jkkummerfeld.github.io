@@ -144,7 +144,7 @@ One thing I wish the paper had is more exploration of this result - what does it
 For the time being at least, going via a third language still seems necessary, and presumably the best language to use is whichever one the performance is highest on.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/Q/Q17/Q17-1024.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/Q/Q17/Q17-1024.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://arxiv.org/pdf/1611.04558.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ArXiv version&lt;/a&gt; which appears to be the same aside from one extra figure of the model architecture.&lt;/p&gt;
 &lt;p&gt;As an aside, it is interesting to see the timeline for this paper:&lt;/p&gt;

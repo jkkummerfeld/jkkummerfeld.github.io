@@ -29,7 +29,7 @@ This is even more impressive given how small ACE is (if I remember correctly).
 The other key observations are that having a sequence level loss (using a CRF) helps, and NELL and WordNet seem to be providing different types of information (as using both leads to further improvements).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{yang-mitchell:2017:Long,
   author    = {Yang, Bishan  and  Mitchell, Tom},
   title     = {Leveraging Knowledge Bases in LSTMs for Improving Machine Reading},
@@ -39,7 +39,7 @@ The other key observations are that having a sequence level loss (using a CRF) h
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1436--1446},
-  url       = {http://aclweb.org/anthology/P17-1132}
+  url       = {https://aclanthology.org/P17-1132}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

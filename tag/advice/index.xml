@@ -38,7 +38,7 @@ This is the process I&amp;rsquo;ve worked out (in Chrome) to do this:&lt;/p&gt;
 import sys
 papers = {}
 for line in sys.stdin:
-    if &#39;www.aclweb.org&#39; in line:
+    if &#39;aclanthology.org&#39; in line:
         content = line.strip()
         url = content.split()[1].split(&#39;&amp;quot;&#39;)[1][:-1] + &amp;quot;.pdf&amp;quot;
         name = content.split(&amp;quot; - ACL Anthology&amp;quot;)[0].split(&amp;quot;&amp;gt;&amp;quot;)[-1]

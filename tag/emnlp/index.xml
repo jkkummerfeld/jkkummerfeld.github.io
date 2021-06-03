@@ -23,7 +23,7 @@ The factor is the harmonic mean of the normalised frequency in each domain (so t
 Across a range of tasks this consistently performs better than other approaches.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1312&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{yang-lu-zheng:2017:EMNLP2017,
   author    = {Yang, Wei  and  Lu, Wei  and  Zheng, Vincent},
   title     = {A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings},
@@ -33,7 +33,7 @@ Across a range of tasks this consistently performs better than other approaches.
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2898--2904},
-  url       = {https://www.aclweb.org/anthology/D17-1312}
+  url       = {https://aclanthology.org/D17-1312}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -51,7 +51,7 @@ When visualising with t-SNE this effect is not visible because of the way the sp
 However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloVe does not have this property, and doesn&amp;rsquo;t seem to derive a great benefit from it.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1308&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1308&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mimno-thompson:2017:EMNLP2017,
   author    = {Mimno, David  and  Thompson, Laure},
   title     = {The strange geometry of skip-gram with negative sampling},
@@ -61,7 +61,7 @@ However, it doesn&amp;rsquo;t seem to impact downstream tasks, for example, GloV
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2873--2878},
-  url       = {https://www.aclweb.org/anthology/D17-1308}
+  url       = {https://aclanthology.org/D17-1308}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -85,7 +85,7 @@ Fortunately, there is a simple solution - for each worker, give every annotator 
 With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1306&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1306&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mathur-baldwin-cohn:2017:EMNLP2017,
   author    = {Mathur, Nitika  and  Baldwin, Timothy  and  Cohn, Trevor},
   title     = {Sequence Effects in Crowdsourced Annotations},
@@ -95,7 +95,7 @@ With that change, averaging over annotations should avoid this bias.&lt;/p&gt;
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2860--2865},
-  url       = {https://www.aclweb.org/anthology/D17-1306}
+  url       = {https://aclanthology.org/D17-1306}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -116,7 +116,7 @@ That might partly reflect the tasks though - something downstream like POS taggi
 Ultimately this is not a solution to this problem, but it&amp;rsquo;s an idea to keep in mind.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1030&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1030&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{herbelot-baroni:2017:EMNLP2017,
   author    = {Herbelot, Aur\&#39;{e}lie  and  Baroni, Marco},
   title     = {High-risk learning: acquiring new word vectors from tiny data},
@@ -126,7 +126,7 @@ Ultimately this is not a solution to this problem, but it&amp;rsquo;s an idea to
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {304--309},
-  url       = {https://www.aclweb.org/anthology/D17-1030}
+  url       = {https://aclanthology.org/D17-1030}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -150,7 +150,7 @@ Adding this to the Stanford coreference system they are able to get slight gains
 If performance remains high, then this actually is an uninformative feature, but if it drops that suggests the model is already learning it.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1138&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1138&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{heinzerling-moosavi-strube:2017:EMNLP2017,
   author    = {Heinzerling, Benjamin  and  Moosavi, Nafise Sadat  and  Strube, Michael},
   title     = {Revisiting Selectional Preferences for Coreference Resolution},
@@ -160,7 +160,7 @@ If performance remains high, then this actually is an uninformative feature, but
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {1332--1339},
-  url       = {https://www.aclweb.org/anthology/D17-1138}
+  url       = {https://aclanthology.org/D17-1138}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -186,7 +186,7 @@ The steps are:&lt;/p&gt;
 Experiments show results that match with past observations and intuitions, which is good for supporting the effectiveness of the method, but it&amp;rsquo;s a shame this didn&amp;rsquo;t uncover any exciting new patterns.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1042&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1042&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{alvarezmelis-jaakkola:2017:EMNLP2017,
   author    = {Alvarez-Melis, David  and  Jaakkola, Tommi},
   title     = {A causal framework for explaining the predictions of black-box sequence-to-sequence models},
@@ -196,7 +196,7 @@ Experiments show results that match with past observations and intuitions, which
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {412--421},
-  url       = {https://www.aclweb.org/anthology/D17-1042}
+  url       = {https://aclanthology.org/D17-1042}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -210,8 +210,8 @@ Experiments show results that match with past observations and intuitions, which
       <description>&lt;p&gt;In reference games, two players communicate in a shared world with the goal of one learning what the other is referring to.
 Their small scale and clear success criteria make them a convenient testbed for dialogue agents, going back decades, with recent work focusing on neural approaches.
 This paper considers a simple game and constrains models in various ways to improve performance and see how their communication varies, a line of work also appearing in recent papers by Jacob Andreas (
-&lt;a href=&#34;https://www.aclweb.org/anthology/P17-1022.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACL 2017&lt;/a&gt;, 
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1311.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EMNLP 2017&lt;/a&gt;).&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1022.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ACL 2017&lt;/a&gt;, 
+&lt;a href=&#34;https://aclanthology.org/D17-1311.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EMNLP 2017&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;The game in this case is to find out two properties of an object, where there are three possible properties, each with four possible values.
 Given enough flexibility, models will explicitly encode every possible structure of the world as a separate symbol, which does not generalise well.
 Limiting the vocabulary to one symbol per property and one per value helps, but in this particular game there are only 3 possible questions, and over two turns of dialogue the 12 value words are sufficient to encode the space.
@@ -223,7 +223,7 @@ Limiting even further, to 4 words for values and providing each turn in isolatio
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1320&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1320&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{kottur-EtAl:2017:EMNLP2017,
   author    = {Kottur, Satwik  and  Moura, Jos\&#39;{e}  and  Lee, Stefan  and  Batra, Dhruv},
   title     = {Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog},
@@ -233,7 +233,7 @@ Limiting even further, to 4 words for values and providing each turn in isolatio
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2952--2957},
-  url       = {https://www.aclweb.org/anthology/D17-1320}
+  url       = {https://aclanthology.org/D17-1320}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -254,11 +254,11 @@ With this tool in hand they analyse patterns of character use over time to test 
 CHARLES, their tool, is built on top of 
 &lt;a href=&#34;http://brat.nlplab.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;brat&lt;/a&gt;, adding features to help multiple annotators coordinate labels (specifically handling the case of new character identification, which modifies the set of linkable entities).&lt;/p&gt;
 &lt;p&gt;Finally, they released the character lists identified for the novels considered (
-&lt;a href=&#34;http://aclweb.org/anthology/attachments/D/D15/D15-1088.Attachment.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;).
+&lt;a href=&#34;https://aclanthology.org/attachments/D/D15/D15-1088.Attachment.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;).
 It would be interesting to modify a coreference resolution system to process these books, taking advantage of that information!&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/D15-1088&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D15-1088&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;http://www.lrec-conf.org/proceedings/lrec2016/pdf/1130_Paper.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Annotation Tool Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{vala-EtAl:2015:EMNLP,
@@ -270,7 +270,7 @@ It would be interesting to modify a coreference resolution system to process the
   address   = {Lisbon, Portugal},
   publisher = {Association for Computational Linguistics},
   pages     = {769--774},
-  url       = {http://aclweb.org/anthology/D15-1088}
+  url       = {https://aclanthology.org/D15-1088}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -298,7 +298,7 @@ The paper mentions it is Zipfian, but surely it would be something double-sided 
 &lt;p&gt;Overall, this is further evidence of the versatility of the idea of attention!&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/D17-1242.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1242.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{cheng-fang-ostendorf:2017:EMNLP2017,
   author    = {Cheng, Hao  and  Fang, Hao  and  Ostendorf, Mari},
   title     = {A Factored Neural Network Model for Characterizing Online Discussions in Vector Space},
@@ -308,7 +308,7 @@ The paper mentions it is Zipfian, but surely it would be something double-sided 
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {2286--2296},
-  url       = {https://www.aclweb.org/anthology/D17-1242}
+  url       = {https://aclanthology.org/D17-1242}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -340,7 +340,7 @@ It&amp;rsquo;s hard to tell whether this helps, since the evaluation doesn&amp;r
 With concept identification at 83 F there is still plenty of scope for improvement, though there is no analysis of which types of concepts remain the most problematic.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/D/D17/D17-1130.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D/D17/D17-1130.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{wang-xue:2017:EMNLP2017,
   author    = {Wang, Chuan  and  Xue, Nianwen},
   title     = {Getting the Most out of AMR Parsing},
@@ -350,7 +350,7 @@ With concept identification at 83 F there is still plenty of scope for improveme
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {1268--1279},
-  url       = {https://www.aclweb.org/anthology/D17-1130},
+  url       = {https://aclanthology.org/D17-1130},
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -386,7 +386,7 @@ One idea mentioned in the conclusion is to try reversing the setup (3-4-1-2) and
 How to tradeoff the different data scenarios seems like an interesting challenge!&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://aclweb.org/anthology/D16-1116&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D16-1116&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{kovcisky-EtAl:2016:EMNLP2016,
   author    = {Ko\v{c}isk\&#39;{y}, Tom\&#39;{a}\v{s}  and  Melis, G\&#39;{a}bor  and  Grefenstette, Edward  and  Dyer, Chris  and  Ling, Wang  and  Blunsom, Phil  and  Hermann, Karl Moritz},
   title     = {Semantic Parsing with Semi-Supervised Sequential Autoencoders},
@@ -396,7 +396,7 @@ How to tradeoff the different data scenarios seems like an interesting challenge
   address   = {Austin, Texas},
   publisher = {Association for Computational Linguistics},
   pages     = {1078--1087},
-  url       = {https://aclweb.org/anthology/D16-1116}
+  url       = {https://aclanthology.org/D16-1116}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -424,7 +424,7 @@ Another interpretation is that the constraint gives them a smaller space to thin
 &lt;p&gt;Finally, as a non-expert in this area, this paper had some nice discussion of the tradeoffs between different ways of generating humour (incongruous vs. coherent content strategies).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1068&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1068&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hossain-EtAl:2017:EMNLP2017,
   author    = {Hossain, Nabil  and  Krumm, John  and  Vanderwende, Lucy  and  Horvitz, Eric  and  Kautz, Henry},
   title     = {Filling the Blanks (hint: plural noun) for Mad Libs Humor},
@@ -434,7 +434,7 @@ Another interpretation is that the constraint gives them a smaller space to thin
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {649--658},
-  url       = {https://www.aclweb.org/anthology/D17-1068},
+  url       = {https://aclanthology.org/D17-1068},
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

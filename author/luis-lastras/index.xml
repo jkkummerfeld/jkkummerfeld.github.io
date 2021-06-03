@@ -5,12 +5,20 @@
     <link>https://www.jkk.name/author/luis-lastras/</link>
       <atom:link href="https://www.jkk.name/author/luis-lastras/index.xml" rel="self" type="application/rss+xml" />
     <description>Luis Lastras</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Jonathan K. Kummerfeld</copyright><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Jonathan K. Kummerfeld</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Luis Lastras</title>
       <link>https://www.jkk.name/author/luis-lastras/</link>
     </image>
+    
+    <item>
+      <title>Overview of the Eighth Dialog System Technology Challenge: DSTC8</title>
+      <link>https://www.jkk.name/publication/dstc8-ieee/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/dstc8-ieee/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>NOESIS II: Predicting Responses, Identifying Success, and Managing Complexity in Task-Oriented Dialogue</title>

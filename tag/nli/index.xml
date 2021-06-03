@@ -18,7 +18,7 @@
       <pubDate>Mon, 07 Sep 2020 14:41:34 -0500</pubDate>
       <guid>https://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
       <description>&lt;p&gt;Natural language interfaces to computer systems are an exciting area with new workshops (
-&lt;a href=&#34;https://www.aclweb.org/anthology/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
+&lt;a href=&#34;https://aclanthology.org/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
 &lt;a href=&#34;https://intex-sempar.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IntEx-SemPar&lt;/a&gt; at EMNLP), a range of datasets (including my own work on 
 &lt;a href=&#34;https://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
 Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code.
@@ -38,7 +38,7 @@ In particular, there was a decision here to limit generation to slot-values, whi
 Arbitrary code generation would be a fantastic extension, though creating the data would require some creativity as the approach used here wouldn&amp;rsquo;t directly work.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.328.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/2020.acl-main.328.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{shao-nakashole-2020-chartdialogs,
     title = &amp;quot;{C}hart{D}ialogs: {P}lotting from {N}atural {L}anguage {I}nstructions&amp;quot;,
     author = &amp;quot;Shao, Yutong  and
@@ -48,7 +48,7 @@ Arbitrary code generation would be a fantastic extension, though creating the da
     year = &amp;quot;2020&amp;quot;,
     address = &amp;quot;Online&amp;quot;,
     publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
-    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.328&amp;quot;,
+    url = &amp;quot;https://aclanthology.org/2020.acl-main.328&amp;quot;,
     doi = &amp;quot;10.18653/v1/2020.acl-main.328&amp;quot;,
     pages = &amp;quot;3559--3574&amp;quot;,
     abstract = &amp;quot;This paper presents the problem of conversational plotting agents that carry out plotting actions from natural language instructions. To facilitate the development of such agents, we introduce ChartDialogs, a new multi-turn dialog dataset, covering a popular plotting library, matplotlib. The dataset contains over 15,000 dialog turns from 3,200 dialogs covering the majority of matplotlib plot types. Extensive experiments show the best-performing method achieving 61{\%} plotting accuracy, demonstrating that the dataset presents a non-trivial challenge for future research on this task.&amp;quot;,

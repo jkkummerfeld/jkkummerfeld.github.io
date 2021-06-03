@@ -5,12 +5,20 @@
     <link>https://www.jkk.name/publication-type/1/</link>
       <atom:link href="https://www.jkk.name/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Jonathan K. Kummerfeld</copyright><lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>1</title>
       <link>https://www.jkk.name/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Chord Embeddings: Analyzing What They Capture and Their Role for Next Chord Prediction and Artist Attribute Prediction</title>
+      <link>https://www.jkk.name/publication/evomusart21/</link>
+      <pubDate>Thu, 01 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/evomusart21/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Exploring the Value of Personalized Word Embeddings</title>

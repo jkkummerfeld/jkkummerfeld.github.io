@@ -47,7 +47,7 @@ Another open question is how to apply these to problems with more structured out
 Some would easily apply, e.g. invariance tests, while others would be more difficult.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.442/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/2020.acl-main.442/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{ribeiro-etal-2020-beyond,
     title = &amp;quot;Beyond Accuracy: Behavioral Testing of {NLP} Models with {C}heck{L}ist&amp;quot;,
     author = &amp;quot;Ribeiro, Marco Tulio  and
@@ -59,7 +59,7 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
     year = &amp;quot;2020&amp;quot;,
     address = &amp;quot;Online&amp;quot;,
     publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
-    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.442&amp;quot;,
+    url = &amp;quot;https://aclanthology.org/2020.acl-main.442&amp;quot;,
     doi = &amp;quot;10.18653/v1/2020.acl-main.442&amp;quot;,
     pages = &amp;quot;4902--4912&amp;quot;,
     abstract = &amp;quot;Although measuring held-out accuracy has been the primary approach to evaluate generalization, it often overestimates the performance of NLP models, while alternative approaches for evaluating models either focus on individual tasks or on specific behaviors. Inspired by principles of behavioral testing in software engineering, we introduce CheckList, a task-agnostic methodology for testing NLP models. CheckList includes a matrix of general linguistic capabilities and test types that facilitate comprehensive test ideation, as well as a software tool to generate a large and diverse number of test cases quickly. We illustrate the utility of CheckList with tests for three tasks, identifying critical failures in both commercial and state-of-art models. In a user study, a team responsible for a commercial sentiment analysis model found new and actionable bugs in an extensively tested model. In another user study, NLP practitioners with CheckList created twice as many tests, and found almost three times as many bugs as users without it.&amp;quot;,
@@ -127,7 +127,7 @@ The steps are:&lt;/p&gt;
 Experiments show results that match with past observations and intuitions, which is good for supporting the effectiveness of the method, but it&amp;rsquo;s a shame this didn&amp;rsquo;t uncover any exciting new patterns.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1042&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1042&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{alvarezmelis-jaakkola:2017:EMNLP2017,
   author    = {Alvarez-Melis, David  and  Jaakkola, Tommi},
   title     = {A causal framework for explaining the predictions of black-box sequence-to-sequence models},
@@ -137,7 +137,7 @@ Experiments show results that match with past observations and intuitions, which
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {412--421},
-  url       = {https://www.aclweb.org/anthology/D17-1042}
+  url       = {https://aclanthology.org/D17-1042}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

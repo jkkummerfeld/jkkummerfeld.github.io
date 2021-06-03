@@ -50,7 +50,7 @@ I&amp;rsquo;m curious about what those implicit arguments are capturing.
 Maybe targeted re-annotation could be used to add them to PropBank (identifying relevant sentences by trace parsing).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.626/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/2020.acl-main.626/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://github.com/plroit/qasrl-gs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Code&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
@@ -70,7 +70,7 @@ Maybe targeted re-annotation could be used to add them to PropBank (identifying 
     year = &amp;quot;2020&amp;quot;,
     address = &amp;quot;Online&amp;quot;,
     publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
-    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.626&amp;quot;,
+    url = &amp;quot;https://aclanthology.org/2020.acl-main.626&amp;quot;,
     doi = &amp;quot;10.18653/v1/2020.acl-main.626&amp;quot;,
     pages = &amp;quot;7008--7013&amp;quot;,
     abstract = &amp;quot;Question-answer driven Semantic Role Labeling (QA-SRL) was proposed as an attractive open and natural flavour of SRL, potentially attainable from laymen. Recently, a large-scale crowdsourced QA-SRL corpus and a trained parser were released. Trying to replicate the QA-SRL annotation for new texts, we found that the resulting annotations were lacking in quality, particularly in coverage, making them insufficient for further research and evaluation. In this paper, we present an improved crowdsourcing protocol for complex semantic annotation, involving worker selection and training, and a data consolidation phase. Applying this protocol to QA-SRL yielded high-quality annotation with drastically higher coverage, producing a new gold evaluation dataset. We believe that our annotation protocol and gold standard will facilitate future replicable research of natural semantic annotations.&amp;quot;,
@@ -85,7 +85,7 @@ Maybe targeted re-annotation could be used to add them to PropBank (identifying 
       <pubDate>Mon, 07 Sep 2020 14:41:34 -0500</pubDate>
       <guid>https://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
       <description>&lt;p&gt;Natural language interfaces to computer systems are an exciting area with new workshops (
-&lt;a href=&#34;https://www.aclweb.org/anthology/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
+&lt;a href=&#34;https://aclanthology.org/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
 &lt;a href=&#34;https://intex-sempar.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IntEx-SemPar&lt;/a&gt; at EMNLP), a range of datasets (including my own work on 
 &lt;a href=&#34;https://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
 Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code.
@@ -105,7 +105,7 @@ In particular, there was a decision here to limit generation to slot-values, whi
 Arbitrary code generation would be a fantastic extension, though creating the data would require some creativity as the approach used here wouldn&amp;rsquo;t directly work.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.328.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/2020.acl-main.328.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{shao-nakashole-2020-chartdialogs,
     title = &amp;quot;{C}hart{D}ialogs: {P}lotting from {N}atural {L}anguage {I}nstructions&amp;quot;,
     author = &amp;quot;Shao, Yutong  and
@@ -115,7 +115,7 @@ Arbitrary code generation would be a fantastic extension, though creating the da
     year = &amp;quot;2020&amp;quot;,
     address = &amp;quot;Online&amp;quot;,
     publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
-    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.328&amp;quot;,
+    url = &amp;quot;https://aclanthology.org/2020.acl-main.328&amp;quot;,
     doi = &amp;quot;10.18653/v1/2020.acl-main.328&amp;quot;,
     pages = &amp;quot;3559--3574&amp;quot;,
     abstract = &amp;quot;This paper presents the problem of conversational plotting agents that carry out plotting actions from natural language instructions. To facilitate the development of such agents, we introduce ChartDialogs, a new multi-turn dialog dataset, covering a popular plotting library, matplotlib. The dataset contains over 15,000 dialog turns from 3,200 dialogs covering the majority of matplotlib plot types. Extensive experiments show the best-performing method achieving 61{\%} plotting accuracy, demonstrating that the dataset presents a non-trivial challenge for future research on this task.&amp;quot;,
@@ -159,7 +159,7 @@ Another open question is how to apply these to problems with more structured out
 Some would easily apply, e.g. invariance tests, while others would be more difficult.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.442/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/2020.acl-main.442/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{ribeiro-etal-2020-beyond,
     title = &amp;quot;Beyond Accuracy: Behavioral Testing of {NLP} Models with {C}heck{L}ist&amp;quot;,
     author = &amp;quot;Ribeiro, Marco Tulio  and
@@ -171,7 +171,7 @@ Some would easily apply, e.g. invariance tests, while others would be more diffi
     year = &amp;quot;2020&amp;quot;,
     address = &amp;quot;Online&amp;quot;,
     publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
-    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.442&amp;quot;,
+    url = &amp;quot;https://aclanthology.org/2020.acl-main.442&amp;quot;,
     doi = &amp;quot;10.18653/v1/2020.acl-main.442&amp;quot;,
     pages = &amp;quot;4902--4912&amp;quot;,
     abstract = &amp;quot;Although measuring held-out accuracy has been the primary approach to evaluate generalization, it often overestimates the performance of NLP models, while alternative approaches for evaluating models either focus on individual tasks or on specific behaviors. Inspired by principles of behavioral testing in software engineering, we introduce CheckList, a task-agnostic methodology for testing NLP models. CheckList includes a matrix of general linguistic capabilities and test types that facilitate comprehensive test ideation, as well as a software tool to generate a large and diverse number of test cases quickly. We illustrate the utility of CheckList with tests for three tasks, identifying critical failures in both commercial and state-of-art models. In a user study, a team responsible for a commercial sentiment analysis model found new and actionable bugs in an extensively tested model. In another user study, NLP practitioners with CheckList created twice as many tests, and found almost three times as many bugs as users without it.&amp;quot;,
@@ -209,7 +209,7 @@ Here is an example from the data, with annotations marked by edges and colours:&
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
 The key prior work on the disentanglement problem is 
-&lt;a href=&#34;https://www.aclweb.org/anthology/P08-1095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
+&lt;a href=&#34;https://aclanthology.org/P08-1095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
 We annotated their data with our annotation scheme and 75,000 additional messages.&lt;/p&gt;
 &lt;p&gt;We built a set of simple models for predicting reply-structure and did some analysis of assumptions about discourse from prior disentanglement work, but there is certainly more scope for study here.
 One direction would be to develop better models for this task.
@@ -288,7 +288,7 @@ I&amp;rsquo;m also curious whether my
 &lt;a href=&#34;https://www.jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/D18-1016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D18-1016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://preschool-lab.github.io/PreCo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Chen:EMNLP:2018,
@@ -299,7 +299,7 @@ I&amp;rsquo;m also curious whether my
   publisher = {Association for Computational Linguistics},
   pages     = {172--181},
   location  = {Brussels, Belgium},
-  url       = {http://aclweb.org/anthology/D18-1016},
+  url       = {https://aclanthology.org/D18-1016},
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -324,7 +324,7 @@ The tasks are completely different, but both come with small tables of informati
 Evaluating on both could be a great way to show the flexibility of a dialogue system, but the lack of frames for the Stanford data and the difficulty of running a human evaluation for this data limits the feasible types of multi-domain experiments.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/W17-5526&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/W17-5526&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{elasri-EtAl:2017:W17-55,
   author    = {El Asri, Layla  and  Schulz, Hannes  and  Sharma, Shikhar  and  Zumer, Jeremie  and  Harris, Justin  and  Fine, Emery  and  Mehrotra, Rahul  and  Suleman, Kaheer},
   title     = {Frames: a corpus for adding memory to goal-oriented dialogue systems},
@@ -334,7 +334,7 @@ Evaluating on both could be a great way to show the flexibility of a dialogue sy
   address   = {Saarbrucken, Germany},
   publisher = {Association for Computational Linguistics},
   pages     = {207--219},
-  url       = {http://aclweb.org/anthology/W17-5526}
+  url       = {https://aclanthology.org/W17-5526}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

@@ -43,7 +43,7 @@ A range of synthetic experiments also show positive results, though their design
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.aclweb.org/anthology/N13-1132.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/N13-1132.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hovy-EtAl:2013:NAACL-HLT,
   author    = {Hovy, Dirk  and  Berg-Kirkpatrick, Taylor  and  Vaswani, Ashish  and  Hovy, Eduard},
   title     = {Learning Whom to Trust with MACE},
@@ -53,7 +53,7 @@ A range of synthetic experiments also show positive results, though their design
   address   = {Atlanta, Georgia},
   publisher = {Association for Computational Linguistics},
   pages     = {1120--1130},
-  url       = {http://www.aclweb.org/anthology/N13-1132}
+  url       = {https://aclanthology.org/N13-1132}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

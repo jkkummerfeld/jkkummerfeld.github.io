@@ -37,7 +37,7 @@ That may reflect the nature of the metric, which is based on ngram overlap.&lt;/
 I&amp;rsquo;m not sure the beam search scoring idea has applications beyond summarisation, but thee modified attention might!&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{tan-wan-xiao:2017:Long,
   author    = {Tan, Jiwei  and  Wan, Xiaojun  and  Xiao, Jianguo},
   title     = {Abstractive Document Summarization with a Graph-Based Attentional Neural Model},
@@ -47,7 +47,7 @@ I&amp;rsquo;m not sure the beam search scoring idea has applications beyond summ
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1171--1181},
-  url       = {http://aclweb.org/anthology/P17-1108}
+  url       = {https://aclanthology.org/P17-1108}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

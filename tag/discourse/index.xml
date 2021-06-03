@@ -49,7 +49,7 @@ Here is an example from the data, with annotations marked by edges and colours:&
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
 The key prior work on the disentanglement problem is 
-&lt;a href=&#34;https://www.aclweb.org/anthology/P08-1095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
+&lt;a href=&#34;https://aclanthology.org/P08-1095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
 We annotated their data with our annotation scheme and 75,000 additional messages.&lt;/p&gt;
 &lt;p&gt;We built a set of simple models for predicting reply-structure and did some analysis of assumptions about discourse from prior disentanglement work, but there is certainly more scope for study here.
 One direction would be to develop better models for this task.
@@ -119,7 +119,7 @@ The first improvement is more intuitive (a denser space makes for an easier prob
 This paper also continues the trend of transition-based inference applying effectively to tasks, which makes sense if our models are getting good enough that search errors are not a major issue.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-2029&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-2029&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{wang-li-wang:2017:Short,
   author    = {Wang, Yizhong  and  Li, Sujian  and  Wang, Houfeng},
   title     = {A Two-Stage Parsing Method for Text-Level Discourse Analysis},
@@ -129,7 +129,7 @@ This paper also continues the trend of transition-based inference applying effec
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {184--188},
-  url       = {http://aclweb.org/anthology/P17-2029}
+  url       = {https://aclanthology.org/P17-2029}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

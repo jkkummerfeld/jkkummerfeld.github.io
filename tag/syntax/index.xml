@@ -31,7 +31,7 @@ Comparing to other standard parsers (retrained on this data), the ability to gen
 If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1104&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1104&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hershcovich-abend-rappoport:2017:Long,
   author    = {Hershcovich, Daniel  and  Abend, Omri  and  Rappoport, Ari},
   title     = {A Transition-Based Directed Acyclic Graph Parser for UCCA},
@@ -41,7 +41,7 @@ If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1127--1138},
-  url       = {http://aclweb.org/anthology/P17-1104}
+  url       = {https://aclanthology.org/P17-1104}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -91,7 +91,7 @@ I think the incrementally-built spines are the key difference.
 Decisions about higher up in the spine are difficult to make when looking at a single word, but with the incremental construction there is information about a larger context.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.aclweb.org/anthology/W17-6316&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/W17-6316&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{ballesteros-carreras:2017:IWPT,
   author    = {Ballesteros, Miguel  and  Carreras, Xavier},
   title     = {Arc-Standard Spinal Parsing with Stack-LSTMs},
@@ -101,7 +101,7 @@ Decisions about higher up in the spine are difficult to make when looking at a s
   address   = {Pisa, Italy},
   publisher = {Association for Computational Linguistics},
   pages     = {115--121},
-  url       = {http://www.aclweb.org/anthology/W17-6316}
+  url       = {https://aclanthology.org/W17-6316}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -121,7 +121,7 @@ I suspect in that situation, the gap would be smaller.
 On speed, there is the nice theoretical bound of $O(n)$ for this approach, but that obscures a grammar constant related to the item structure.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.aclweb.org/anthology/N15-1108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/N15-1108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{mi-huang:2015:NAACL-HLT,
   author    = {Mi, Haitao  and  Huang, Liang},
   title     = {Shift-Reduce Constituency Parsing with Dynamic Programming and POS Tag Lattice},
@@ -131,7 +131,7 @@ On speed, there is the nice theoretical bound of $O(n)$ for this approach, but t
   address   = {Denver, Colorado},
   publisher = {Association for Computational Linguistics},
   pages     = {1030--1035},
-  url       = {http://www.aclweb.org/anthology/N15-1108}
+  url       = {https://aclanthology.org/N15-1108}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -147,13 +147,13 @@ They show how to convert common dependency parsing systems (Arc-Standard and Arc
 &lt;p&gt;The benefit of this transformation is that we can find exact answers without massive beams.
 The drawback is that the feature set is restricted.
 This paper is theoretical, so it doesn&amp;rsquo;t give a direct measure of this tradeoff, though 
-&lt;a href=&#34;http://www.anthology.aclweb.org/D/D13/D13-1071.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;follow up work&lt;/a&gt; shows that avoiding search errors is indeed beneficial.&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D/D13/D13-1071.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;follow up work&lt;/a&gt; shows that avoiding search errors is indeed beneficial.&lt;/p&gt;
 &lt;p&gt;With all of the positive results using neural networks for multi-task learning, one thought this work leads to is whether we could treat different inference methods as different tasks.
 In other words, have a single model encoding the input, then have multiple inference algorithms with different extensions of that model, all trained simultaneously.
 The variation in available context for the different algorithms may force generality in the core representation shared across them.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P/P11/P11-1068.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P/P11/P11-1068.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{kuhlmann-gomezrodriguez-satta:2011:ACL-HLT2011,
   author    = {Kuhlmann, Marco  and  G\&#39;{o}mez-Rodr\&#39;{i}guez, Carlos  and  Satta, Giorgio},
   title     = {Dynamic Programming Algorithms for Transition-Based Dependency Parsers},
@@ -163,7 +163,7 @@ The variation in available context for the different algorithms may force genera
   address   = {Portland, Oregon, USA},
   publisher = {Association for Computational Linguistics},
   pages     = {673--682},
-  url       = {http://www.aclweb.org/anthology/P11-1068}
+  url       = {https://aclanthology.org/P11-1068}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

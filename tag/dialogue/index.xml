@@ -102,7 +102,7 @@ I&amp;rsquo;m hopeful that our more general version will be useful in a range of
       <pubDate>Mon, 07 Sep 2020 14:41:34 -0500</pubDate>
       <guid>https://www.jkk.name/post/2020-09-07_chartdialogs/</guid>
       <description>&lt;p&gt;Natural language interfaces to computer systems are an exciting area with new workshops (
-&lt;a href=&#34;https://www.aclweb.org/anthology/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
+&lt;a href=&#34;https://aclanthology.org/volumes/2020.nli-1/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WNLI&lt;/a&gt; at ACL and 
 &lt;a href=&#34;https://intex-sempar.github.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IntEx-SemPar&lt;/a&gt; at EMNLP), a range of datasets (including my own work on 
 &lt;a href=&#34;https://www.jkk.name/publication/acl18sql/&#34;&gt;text-to-SQL&lt;/a&gt;), and many papers.
 Most work focuses on either (1) commands for simple APIs, (2) generating a database query, or (3) generating general purpose code.
@@ -122,7 +122,7 @@ In particular, there was a decision here to limit generation to slot-values, whi
 Arbitrary code generation would be a fantastic extension, though creating the data would require some creativity as the approach used here wouldn&amp;rsquo;t directly work.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/2020.acl-main.328.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/2020.acl-main.328.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@inproceedings{shao-nakashole-2020-chartdialogs,
     title = &amp;quot;{C}hart{D}ialogs: {P}lotting from {N}atural {L}anguage {I}nstructions&amp;quot;,
     author = &amp;quot;Shao, Yutong  and
@@ -132,7 +132,7 @@ Arbitrary code generation would be a fantastic extension, though creating the da
     year = &amp;quot;2020&amp;quot;,
     address = &amp;quot;Online&amp;quot;,
     publisher = &amp;quot;Association for Computational Linguistics&amp;quot;,
-    url = &amp;quot;https://www.aclweb.org/anthology/2020.acl-main.328&amp;quot;,
+    url = &amp;quot;https://aclanthology.org/2020.acl-main.328&amp;quot;,
     doi = &amp;quot;10.18653/v1/2020.acl-main.328&amp;quot;,
     pages = &amp;quot;3559--3574&amp;quot;,
     abstract = &amp;quot;This paper presents the problem of conversational plotting agents that carry out plotting actions from natural language instructions. To facilitate the development of such agents, we introduce ChartDialogs, a new multi-turn dialog dataset, covering a popular plotting library, matplotlib. The dataset contains over 15,000 dialog turns from 3,200 dialogs covering the majority of matplotlib plot types. Extensive experiments show the best-performing method achieving 61{\%} plotting accuracy, demonstrating that the dataset presents a non-trivial challenge for future research on this task.&amp;quot;,
@@ -186,7 +186,7 @@ Here is an example from the data, with annotations marked by edges and colours:&
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
 The key prior work on the disentanglement problem is 
-&lt;a href=&#34;https://www.aclweb.org/anthology/P08-1095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
+&lt;a href=&#34;https://aclanthology.org/P08-1095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
 We annotated their data with our annotation scheme and 75,000 additional messages.&lt;/p&gt;
 &lt;p&gt;We built a set of simple models for predicting reply-structure and did some analysis of assumptions about discourse from prior disentanglement work, but there is certainly more scope for study here.
 One direction would be to develop better models for this task.
@@ -290,7 +290,7 @@ The tasks are completely different, but both come with small tables of informati
 Evaluating on both could be a great way to show the flexibility of a dialogue system, but the lack of frames for the Stanford data and the difficulty of running a human evaluation for this data limits the feasible types of multi-domain experiments.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/W17-5526&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/W17-5526&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{elasri-EtAl:2017:W17-55,
   author    = {El Asri, Layla  and  Schulz, Hannes  and  Sharma, Shikhar  and  Zumer, Jeremie  and  Harris, Justin  and  Fine, Emery  and  Mehrotra, Rahul  and  Suleman, Kaheer},
   title     = {Frames: a corpus for adding memory to goal-oriented dialogue systems},
@@ -300,7 +300,7 @@ Evaluating on both could be a great way to show the flexibility of a dialogue sy
   address   = {Saarbrucken, Germany},
   publisher = {Association for Computational Linguistics},
   pages     = {207--219},
-  url       = {http://aclweb.org/anthology/W17-5526}
+  url       = {https://aclanthology.org/W17-5526}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -326,7 +326,7 @@ During generation, the LSTM uses attention over these vectors to inform the outp
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{he-EtAl:2017:Long4,
   author    = {He, He  and  Balakrishnan, Anusha  and  Eric, Mihail  and  Liang, Percy},
   title     = {Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings},
@@ -350,7 +350,7 @@ During generation, the LSTM uses attention over these vectors to inform the outp
 	Automatic and human evaluations show that our model is both more effective
 	at achieving the goal and more human-like than baseline neural and rule-based
 	models.},
-  url       = {http://aclweb.org/anthology/P17-1162}
+  url       = {https://aclanthology.org/P17-1162}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -371,7 +371,7 @@ To show the value of joint modeling they run a version of the system with the sa
 According to automatic metrics it is quite a bit better than running the summarisation system they compare to, though it&amp;rsquo;s still a long way from a human summary.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1090&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1090&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{qin-wang-kim:2017:Long,
   author    = {Qin, Kechen  and  Wang, Lu  and  Kim, Joseph},
   title     = {Joint Modeling of Content and Discourse Relations in Dialogues},
@@ -381,7 +381,7 @@ According to automatic metrics it is quite a bit better than running the summari
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {974--984},
-  url       = {http://aclweb.org/anthology/P17-1090}
+  url       = {https://aclanthology.org/P17-1090}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

@@ -34,7 +34,7 @@ Another interpretation is that the constraint gives them a smaller space to thin
 &lt;p&gt;Finally, as a non-expert in this area, this paper had some nice discussion of the tradeoffs between different ways of generating humour (incongruous vs. coherent content strategies).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1068&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1068&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hossain-EtAl:2017:EMNLP2017,
   author    = {Hossain, Nabil  and  Krumm, John  and  Vanderwende, Lucy  and  Horvitz, Eric  and  Kautz, Henry},
   title     = {Filling the Blanks (hint: plural noun) for Mad Libs Humor},
@@ -44,7 +44,7 @@ Another interpretation is that the constraint gives them a smaller space to thin
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {649--658},
-  url       = {https://www.aclweb.org/anthology/D17-1068},
+  url       = {https://aclanthology.org/D17-1068},
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

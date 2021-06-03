@@ -25,7 +25,7 @@ I think the incrementally-built spines are the key difference.
 Decisions about higher up in the spine are difficult to make when looking at a single word, but with the incremental construction there is information about a larger context.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.aclweb.org/anthology/W17-6316&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/W17-6316&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{ballesteros-carreras:2017:IWPT,
   author    = {Ballesteros, Miguel  and  Carreras, Xavier},
   title     = {Arc-Standard Spinal Parsing with Stack-LSTMs},
@@ -35,7 +35,7 @@ Decisions about higher up in the spine are difficult to make when looking at a s
   address   = {Pisa, Italy},
   publisher = {Association for Computational Linguistics},
   pages     = {115--121},
-  url       = {http://www.aclweb.org/anthology/W17-6316}
+  url       = {https://aclanthology.org/W17-6316}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

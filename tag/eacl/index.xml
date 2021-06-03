@@ -30,7 +30,7 @@ Given the recent success of multi-task learning with neural nets, it would be in
 It may also be productive to combine these ideas with the graph abstraction ideas from AMR alignment paper.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/E/E17/E17-1035.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/E/E17/E17-1035.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{peng-EtAl:2017:EACLlong1,
   author    = {Peng, Xiaochang  and  Wang, Chuan  and  Gildea, Daniel  and  Xue, Nianwen},
   title     = {Addressing the Data Sparsity Issue in Neural AMR Parsing},
@@ -40,7 +40,7 @@ It may also be productive to combine these ideas with the graph abstraction idea
   address   = {Valencia, Spain},
   publisher = {Association for Computational Linguistics},
   pages     = {366--375},
-  url       = {http://www.aclweb.org/anthology/E17-1035}
+  url       = {https://aclanthology.org/E17-1035}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

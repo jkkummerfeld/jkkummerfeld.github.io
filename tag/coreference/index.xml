@@ -35,7 +35,7 @@ I&amp;rsquo;m also curious whether my
 &lt;a href=&#34;https://www.jkk.name/publication/emnlp13analysis/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;coreference analysis tool&lt;/a&gt; would find different patterns in errors on this dataset compared to OntoNotes.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/D18-1016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D18-1016&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://preschool-lab.github.io/PreCo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Data&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{Chen:EMNLP:2018,
@@ -46,7 +46,7 @@ I&amp;rsquo;m also curious whether my
   publisher = {Association for Computational Linguistics},
   pages     = {172--181},
   location  = {Brussels, Belgium},
-  url       = {http://aclweb.org/anthology/D18-1016},
+  url       = {https://aclanthology.org/D18-1016},
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -70,7 +70,7 @@ Adding this to the Stanford coreference system they are able to get slight gains
 If performance remains high, then this actually is an uninformative feature, but if it drops that suggests the model is already learning it.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/D17-1138&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/D17-1138&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{heinzerling-moosavi-strube:2017:EMNLP2017,
   author    = {Heinzerling, Benjamin  and  Moosavi, Nafise Sadat  and  Strube, Michael},
   title     = {Revisiting Selectional Preferences for Coreference Resolution},
@@ -80,7 +80,7 @@ If performance remains high, then this actually is an uninformative feature, but
   address   = {Copenhagen, Denmark},
   publisher = {Association for Computational Linguistics},
   pages     = {1332--1339},
-  url       = {https://www.aclweb.org/anthology/D17-1138}
+  url       = {https://aclanthology.org/D17-1138}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>

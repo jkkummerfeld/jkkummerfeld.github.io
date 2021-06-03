@@ -41,7 +41,7 @@ Here is an example from the data, with annotations marked by edges and colours:&
 Instead, we focus on a byproduct of these annotations - conversation disentanglement.
 Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
 The key prior work on the disentanglement problem is 
-&lt;a href=&#34;https://www.aclweb.org/anthology/P08-1095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
+&lt;a href=&#34;https://aclanthology.org/P08-1095&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elsner and Charniak (2008)&lt;/a&gt;, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
 We annotated their data with our annotation scheme and 75,000 additional messages.&lt;/p&gt;
 &lt;p&gt;We built a set of simple models for predicting reply-structure and did some analysis of assumptions about discourse from prior disentanglement work, but there is certainly more scope for study here.
 One direction would be to develop better models for this task.
@@ -116,7 +116,7 @@ For most of this paper that&amp;rsquo;s a reasonable decision, as it allows a cl
 In my experience (and in our soon-to-appear NAACL paper) we find that variations in word vectors can disappear during training for a downstream task.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://www.aclweb.org/anthology/P16-1013&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P16-1013&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{tsvetkov-EtAl:2016:P16-1,
   author    = {Tsvetkov, Yulia  and  Faruqui, Manaal  and  Ling, Wang  and  MacWhinney, Brian  and  Dyer, Chris},
   title     = {Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning},
@@ -126,7 +126,7 @@ In my experience (and in our soon-to-appear NAACL paper) we find that variations
   address   = {Berlin, Germany},
   publisher = {Association for Computational Linguistics},
   pages     = {130--139},
-  url       = {http://www.aclweb.org/anthology/P16-1013}
+  url       = {https://aclanthology.org/P16-1013}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -152,7 +152,7 @@ A natural thing to try would be a version of (4) with a single decoder, in which
 From the paper it sounds like very little hyperparameter tuning was tried, which is a shame because it makes it less clear how definitive the results are.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-2098&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-2098&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{herzig-berant:2017:Short,
   author    = {Herzig, Jonathan  and  Berant, Jonathan},
   title     = {Neural Semantic Parsing over Multiple Knowledge-bases},
@@ -162,7 +162,7 @@ From the paper it sounds like very little hyperparameter tuning was tried, which
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {623--628},
-  url       = {http://aclweb.org/anthology/P17-2098}
+  url       = {https://aclanthology.org/P17-2098}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -193,7 +193,7 @@ There were a few things I found interesting in the results:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1114&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1114&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{xu-jiang-watcharawittayakul:2017:Long,
   author    = {Xu, Mingbin  and  Jiang, Hui  and  Watcharawittayakul, Sedtawut},
   title     = {A Local Detection Approach for Named Entity Recognition and Mention Detection},
@@ -203,7 +203,7 @@ There were a few things I found interesting in the results:&lt;/p&gt;
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1237--1247},
-  url       = {http://aclweb.org/anthology/P17-1114}
+  url       = {https://aclanthology.org/P17-1114}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -224,13 +224,13 @@ The solution here is to link pairs that are closest together (unclear what they 
 That doesn&amp;rsquo;t handle overlapping relations, which the authors say is particularly common in the BioInfer data (I&amp;rsquo;m curious how much it is hurting here too).
 It&amp;rsquo;s unclear how this could be addressed without a radical redesign, since extending the tag scheme could lead to sparsity issues.&lt;/p&gt;
 &lt;p&gt;I was not familiar with this data, so I looked back to the original paper the annotated test data came from: 
-&lt;a href=&#34;http://www.aclweb.org/anthology/P11-1055&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoffman et al., (2011)&lt;/a&gt;.
+&lt;a href=&#34;https://aclanthology.org/P11-1055&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hoffman et al., (2011)&lt;/a&gt;.
 There is no dev set, only a 395 sentence test set, so the standard practise is to use random 10% samples of the test data for development.
 Also, if I understand it correctly, the data was annotated by manually confirming the output of systems, which means it will have recall errors.
 If interest in this data grows, going back and annotating more seems worthwhile.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1113&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1113&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{zheng-EtAl:2017:Long,
   author    = {Zheng, Suncong  and  Wang, Feng  and  Bao, Hongyun  and  Hao, Yuexing  and  Zhou, Peng  and  Xu, Bo},
   title     = {Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme},
@@ -240,7 +240,7 @@ If interest in this data grows, going back and annotating more seems worthwhile.
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1227--1236},
-  url       = {http://aclweb.org/anthology/P17-1113}
+  url       = {https://aclanthology.org/P17-1113}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -271,7 +271,7 @@ That may reflect the nature of the metric, which is based on ngram overlap.&lt;/
 I&amp;rsquo;m not sure the beam search scoring idea has applications beyond summarisation, but thee modified attention might!&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1108&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{tan-wan-xiao:2017:Long,
   author    = {Tan, Jiwei  and  Wan, Xiaojun  and  Xiao, Jianguo},
   title     = {Abstractive Document Summarization with a Graph-Based Attentional Neural Model},
@@ -281,7 +281,7 @@ I&amp;rsquo;m not sure the beam search scoring idea has applications beyond summ
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1171--1181},
-  url       = {http://aclweb.org/anthology/P17-1108}
+  url       = {https://aclanthology.org/P17-1108}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -307,7 +307,7 @@ On dependency parsing it is (unsurprisingly) worse than a baseline system on gra
 It does perform better on ungrammatical text, though the data is generated using the same process as the training data, creating a bias in the system&amp;rsquo;s favour.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-2030&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-2030&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{sakaguchi-post-vandurme:2017:Short,
   author    = {Sakaguchi, Keisuke  and  Post, Matt  and  Van Durme, Benjamin},
   title     = {Error-repair Dependency Parsing for Ungrammatical Texts},
@@ -317,7 +317,7 @@ It does perform better on ungrammatical text, though the data is generated using
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {189--195},
-  url       = {http://aclweb.org/anthology/P17-2030}
+  url       = {https://aclanthology.org/P17-2030}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -346,7 +346,7 @@ The results show fairly clear trends, though the systems are not great compared 
 The trends are that hierarchical is best, the sentinel doesn&amp;rsquo;t help, and it is better to not share weights (though I wonder if that would be true when controlling for the total number of parameters).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-2031&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-2031&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{libovicky-helcl:2017:Short,
   author    = {Libovick\&#39;{y}, Jind\v{r}ich  and  Helcl, Jind\v{r}ich},
   title     = {Attention Strategies for Multi-Source Sequence-to-Sequence Learning},
@@ -356,7 +356,7 @@ The trends are that hierarchical is best, the sentinel doesn&amp;rsquo;t help, a
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {196--202},
-  url       = {http://aclweb.org/anthology/P17-2031}
+  url       = {https://aclanthology.org/P17-2031}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -378,7 +378,7 @@ The results in this case are not state-of-the-art, though this task has received
 However, the system can also be applied to AMR, and does fairly well, better than other neural AMR parsers at the time (and more recent ideas for improvements are large orthogonal).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{buys-blunsom:2017:Long,
   author    = {Buys, Jan  and  Blunsom, Phil},
   title     = {Robust Incremental Neural Semantic Graph Parsing},
@@ -388,7 +388,7 @@ However, the system can also be applied to AMR, and does fairly well, better tha
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1215--1226},
-  url       = {http://aclweb.org/anthology/P17-1112}
+  url       = {https://aclanthology.org/P17-1112}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -408,7 +408,7 @@ The first improvement is more intuitive (a denser space makes for an easier prob
 This paper also continues the trend of transition-based inference applying effectively to tasks, which makes sense if our models are getting good enough that search errors are not a major issue.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-2029&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-2029&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{wang-li-wang:2017:Short,
   author    = {Wang, Yizhong  and  Li, Sujian  and  Wang, Houfeng},
   title     = {A Two-Stage Parsing Method for Text-Level Discourse Analysis},
@@ -418,7 +418,7 @@ This paper also continues the trend of transition-based inference applying effec
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {184--188},
-  url       = {http://aclweb.org/anthology/P17-2029}
+  url       = {https://aclanthology.org/P17-2029}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -443,7 +443,7 @@ Comparing to other standard parsers (retrained on this data), the ability to gen
 If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1104&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1104&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{hershcovich-abend-rappoport:2017:Long,
   author    = {Hershcovich, Daniel  and  Abend, Omri  and  Rappoport, Ari},
   title     = {A Transition-Based Directed Acyclic Graph Parser for UCCA},
@@ -453,7 +453,7 @@ If it is high, then my own parser could be applied fairly directly!&lt;/p&gt;
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1127--1138},
-  url       = {http://aclweb.org/anthology/P17-1104}
+  url       = {https://aclanthology.org/P17-1104}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -476,7 +476,7 @@ This is even more impressive given how small ACE is (if I remember correctly).
 The other key observations are that having a sequence level loss (using a CRF) helps, and NELL and WordNet seem to be providing different types of information (as using both leads to further improvements).&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{yang-mitchell:2017:Long,
   author    = {Yang, Bishan  and  Mitchell, Tom},
   title     = {Leveraging Knowledge Bases in LSTMs for Improving Machine Reading},
@@ -486,7 +486,7 @@ The other key observations are that having a sequence level loss (using a CRF) h
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1436--1446},
-  url       = {http://aclweb.org/anthology/P17-1132}
+  url       = {https://aclanthology.org/P17-1132}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -512,7 +512,7 @@ During generation, the LSTM uses attention over these vectors to inform the outp
 &lt;/ul&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{he-EtAl:2017:Long4,
   author    = {He, He  and  Balakrishnan, Anusha  and  Eric, Mihail  and  Liang, Percy},
   title     = {Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings},
@@ -536,7 +536,7 @@ During generation, the LSTM uses attention over these vectors to inform the outp
 	Automatic and human evaluations show that our model is both more effective
 	at achieving the goal and more human-like than baseline neural and rule-based
 	models.},
-  url       = {http://aclweb.org/anthology/P17-1162}
+  url       = {https://aclanthology.org/P17-1162}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -557,7 +557,7 @@ To show the value of joint modeling they run a version of the system with the sa
 According to automatic metrics it is quite a bit better than running the summarisation system they compare to, though it&amp;rsquo;s still a long way from a human summary.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;http://aclweb.org/anthology/P17-1090&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P17-1090&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{qin-wang-kim:2017:Long,
   author    = {Qin, Kechen  and  Wang, Lu  and  Kim, Joseph},
   title     = {Joint Modeling of Content and Discourse Relations in Dialogues},
@@ -567,7 +567,7 @@ According to automatic metrics it is quite a bit better than running the summari
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {974--984},
-  url       = {http://aclweb.org/anthology/P17-1090}
+  url       = {https://aclanthology.org/P17-1090}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -586,7 +586,7 @@ At the same time, we can&amp;rsquo;t just run the systems and use their output b
 We could run the systems and check their output, which could be faster than annotating directly, but would still take a long time.
 If we don&amp;rsquo;t mind having some errors, we can check just some output, but how do we decide what to check?&lt;/p&gt;
 &lt;p&gt;This paper applies the generative model from 
-&lt;a href=&#34;http://www.aclweb.org/anthology/N13-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MACE&lt;/a&gt; to build a generative model of system outputs.
+&lt;a href=&#34;https://aclanthology.org/N13-1132&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MACE&lt;/a&gt; to build a generative model of system outputs.
 The model is:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;For each example, sample the true label with a uniform prior&lt;/li&gt;
@@ -608,7 +608,7 @@ It also works well for NER, and consistently does better than the alternative th
 &lt;a href=&#34;https://prodi.gy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;prodigy&lt;/a&gt; and something that could be broadly useful.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://www.aclweb.org/anthology/P/P17/P17-1107.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P/P17/P17-1107.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{rehbein-ruppenhofer:2017:Long,
   author    = {Rehbein, Ines  and  Ruppenhofer, Josef},
   title     = {Detecting annotation noise in automatically labelled data},
@@ -618,7 +618,7 @@ It also works well for NER, and consistently does better than the alternative th
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1160--1170},
-  url       = {http://aclweb.org/anthology/P17-1107}
+  url       = {https://aclanthology.org/P17-1107}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
@@ -644,7 +644,7 @@ Based on the description of the operators there are definitely additional abilit
 That said, it seems difficult to generalise the model to handle more complicated databases with multiple interconnected tables.&lt;/p&gt;
 &lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://aclweb.org/anthology/P/P17/P17-1167.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://aclanthology.org/P/P17/P17-1167.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Paper&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bibtex&#34;&gt;@InProceedings{iyyer-yih-chang:2017:Long,
   author    = {Iyyer, Mohit  and  Yih, Wen-tau  and  Chang, Ming-Wei},
   title     = {Search-based Neural Structured Learning for Sequential Question Answering},
@@ -654,7 +654,7 @@ That said, it seems difficult to generalise the model to handle more complicated
   address   = {Vancouver, Canada},
   publisher = {Association for Computational Linguistics},
   pages     = {1821--1831},
-  url       = {http://aclweb.org/anthology/P17-1167}
+  url       = {https://aclanthology.org/P17-1167}
 }
 &lt;/code&gt;&lt;/pre&gt;
 </description>
