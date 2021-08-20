@@ -246,7 +246,7 @@ they released.&lt;/p&gt;
     <item>
       <title>DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</title>
       <link>https://www.jkk.name/post/2017-10-05-deftnn/</link>
-      <pubDate>Thu, 05 Oct 2017 00:00:00 -0500</pubDate>
+      <pubDate>Thu, 05 Oct 2017 00:00:00 -0400</pubDate>
       <guid>https://www.jkk.name/post/2017-10-05-deftnn/</guid>
       <description>&lt;p&gt;This paper proposes two techniques for speeding up neural network execution on GPUs:&lt;/p&gt;
 &lt;ol&gt;
