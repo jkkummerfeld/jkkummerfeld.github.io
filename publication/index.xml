@@ -5,7 +5,7 @@
     <link>https://www.jkk.name/publication/</link>
       <atom:link href="https://www.jkk.name/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Jonathan K. Kummerfeld</copyright><lastBuildDate>Tue, 01 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Jonathan K. Kummerfeld</copyright><lastBuildDate>Sun, 01 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.jkk.name/images/icon_hua0d6326cebee282657b97e45398e76a5_17367_512x512_fill_lanczos_center_2.png</url>
       <title>Publications</title>
@@ -13,17 +13,41 @@
     </image>
     
     <item>
+      <title>Analyzing the Surprising Variability in Word Embedding Stability Across Languages</title>
+      <link>https://www.jkk.name/publication/emnlp21stability/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp21stability/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Exploring Self-Identified Counseling Expertise in Online Support Forums</title>
       <link>https://www.jkk.name/publication/acl21counseling/</link>
-      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://www.jkk.name/publication/acl21counseling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning to Learn End-to-End Goal-Oriented Dialog From Related Dialog Tasks</title>
+      <link>https://www.jkk.name/publication/ws-emnlp-convai21learn/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/ws-emnlp-convai21learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Micromodels for Efficient, Explainable, and Reusable Systems:A Case Study on Mental Health</title>
+      <link>https://www.jkk.name/publication/emnlp-findings21micromodels/</link>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/emnlp-findings21micromodels/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantifying and Avoiding Unfair Qualification Labour in Crowdsourcing</title>
       <link>https://www.jkk.name/publication/acl21fair-work/</link>
-      <pubDate>Tue, 01 Jun 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Aug 2021 00:00:00 +0000</pubDate>
       <guid>https://www.jkk.name/publication/acl21fair-work/</guid>
       <description></description>
     </item>
@@ -41,6 +65,14 @@
       <link>https://www.jkk.name/publication/dstc8-ieee/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://www.jkk.name/publication/dstc8-ieee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>To Batch or Not to Batch? Comparing Batching and Curriculum Learning Strategies across Tasks and Datasets</title>
+      <link>https://www.jkk.name/publication/math21batch/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/publication/math21batch/</guid>
       <description></description>
     </item>
     

@@ -4,77 +4,112 @@
   
   <url>
     <loc>https://www.jkk.name/publication-type/1/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/author/allison-lahnala/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jkk.name/publication/emnlp21stability/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jkk.name/author/andrew-lee/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/authors/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/author/charles-welch/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/publication/acl21counseling/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jkk.name/author/janarthanan-rajendran/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/author/jonathan-k.-kummerfeld/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/author/kenneth-resnicow/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.jkk.name/author/lawrence-c-an/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <loc>https://www.jkk.name/author/laura-burdick/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jkk.name/author/lawrence-c.-an/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jkk.name/publication/ws-emnlp-convai21learn/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jkk.name/publication/emnlp-findings21micromodels/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/publication_types/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/publication/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/publication/acl21fair-work/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/author/rada-mihalcea/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jkk.name/author/satinder-singh/</loc>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/author/veronica-perez-rosas/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.jkk.name/author/yuntian-zhao/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
+    <lastmod>2021-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -209,6 +244,11 @@
   
   <url>
     <loc>https://www.jkk.name/author/tim-marks/</loc>
+    <lastmod>2021-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.jkk.name/publication/math21batch/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -478,11 +518,6 @@
   </url>
   
   <url>
-    <loc>https://www.jkk.name/author/laura-burdick/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.jkk.name/author/lazaros-polymenakos/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -548,11 +583,6 @@
   </url>
   
   <url>
-    <loc>https://www.jkk.name/author/satinder-singh/</loc>
-    <lastmod>2019-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.jkk.name/author/satya-ortiz-gagne/</loc>
     <lastmod>2019-12-01T00:00:00+00:00</lastmod>
   </url>
@@ -574,11 +604,6 @@
   
   <url>
     <loc>https://www.jkk.name/publication/emnlp19data/</loc>
-    <lastmod>2019-11-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.jkk.name/author/andrew-lee/</loc>
     <lastmod>2019-11-01T00:00:00+00:00</lastmod>
   </url>
   
