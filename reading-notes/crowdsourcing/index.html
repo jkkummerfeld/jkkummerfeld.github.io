@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.74.3" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Crowdsourcing | Jonathan K. Kummerfeld</title>
+
+
+  <meta name="description" content="Work related to using non-experts to do tasks in NLP.
+">
+<meta property="og:title" content="Crowdsourcing" />
+<meta property="og:description" content="Work related to using non-experts to do tasks in NLP.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/crowdsourcing/" />
+<meta property="article:modified_time" content="2021-11-17T11:00:20-05:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta itemprop="name" content="Crowdsourcing">
+<meta itemprop="description" content="Work related to using non-experts to do tasks in NLP.
+">
+<meta itemprop="dateModified" content="2021-11-17T11:00:20-05:00" />
+<meta itemprop="wordCount" content="747">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Crowdsourcing"/>
+<meta name="twitter:description" content="Work related to using non-experts to do tasks in NLP.
+"/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" as="style">
+<link href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19179423-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Jonathan K. Kummerfeld</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.53b961db71346f3689872ba8323c57f2.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        
+
+<p>Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research.
+The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.</p>
+<h2 id="methods">Methods</h2>
+<p>Incentives:</p>
+<ul>
+<li>Bonus for sticking with a task (e.g. $10 if you participate every week, or complete X of our HITs)</li>
+</ul>
+<h2 id="examples-in-nlp">Examples in NLP</h2>
+<h3 id="games-with-a-purpose">Games with a Purpose</h3>
+<ul>
+<li><a href="https://finditout.vercel.app/">FindItOut</a></li>
+</ul>
+<h2 id="services">Services</h2>
+<p>Companies fall into a few categories:</p>
+<ul>
+<li>Crowd providers, which directly connect with workers.</li>
+<li>Crowd enhancers, which provide a layer on top of the providers that adds features (e.g. active learning, nice templates, sophisticated workflows).</li>
+<li>Annotation tools, which are designed to integrate with crowd providers (or your own internal workers).</li>
+<li>Interfaces, which make it easier to use one of the crowd providers.</li>
+</ul>
+<p>I decided not to break the first two categories apart because it was sometimes unclear whether a service was using their own crowd or providing a layer over another, but I have roughly sorted them.
+Where possible I have included pricing, though some services did not make it easy to find, and of course it is likely to change over time.
+Take note of the description in each case because the data collected varies substantially.
+Also note that many tasks can be structured as a classification task (e.g. &ldquo;Is this coreference link correct?&quot;), making many of these services more flexible than the &lsquo;text classification&rsquo; label below may seem (though structuring your task so costs don&rsquo;t explode may require some thought).</p>
+<ul>
+<li><a href="https://www.mturk.com/">Mechanical Turk</a>, a small set of templates and the option to define a web UI that does whatever you want. Cost is a 20% fee on top of whatever you choose to pay workers (though note it jumps to 40% if you have more than 10 assignments for a HIT!).</li>
+<li><a href="http://www.gethybrid.io/">Hybrid</a>, seems to be any task you can define in text (including with links?). 40% fee, though there is a <a href="http://www.gethybrid.io/faq">discount</a> of some type for academic and non-profit institutions.</li>
+<li><a href="https://prolific.ac/">Prolific</a>, seems to be that you just provide a link to a site for annotations (originally intended for survey research). 30% fee. Last year they had a <a href="https://blog.prolific.ac/announcing-2018-junior-grant-winners/">research grant</a> program.</li>
+<li><a href="https://gorilla.sc/">Gorilla</a>, designed for social science research, but could be used for any classification or free text task. Costs $1.19 / response, though note that you construct a questionnaire with a series of questions. There are also <a href="https://gorilla.sc/support/reference/subscription-FAQ#subscription-types">discounts</a> available when collecting thousands of responses.</li>
+<li><a href="https://scale.ai/">Scale</a>, classification tasks for 8c / annotation. There is an academic program, but details are not available online (mentioned <a href="https://twitter.com/umbrant/status/1114312024970764290">here</a>).</li>
+<li><a href="https://aws.amazon.com/sagemaker/groundtruth/">Amazon SageMaker Ground Truth</a>, text classification for 8c / label, decreasing after 50,000 annotations + a workflow fee of 1.2c / label.</li>
+<li><a href="https://imerit.net/">iMerit</a>, NER, classification, and sentiment tasks. When used on the Amazon Marketplace they are 5 dollars / hour (India based workers) or 25 (US based workers).</li>
+<li><a href="http://appen.com/">Appen</a></li>
+<li><a href="https://thehive.ai/hive-data">Hive</a></li>
+<li><a href="https://www.sama.com/">Samasource</a></li>
+<li><a href="https://labelbox.com/">Labelbox</a></li>
+<li><a href="https://www.cloudfactory.com/">Cloudfactory</a></li>
+<li><a href="https://dataloop.ai/">DataLoop</a></li>
+<li><a href="https://www.superannotate.com/">SuperAnnotate</a></li>
+<li><a href="https://datasaur.ai/">Datasaur</a></li>
+<li><a href="https://www.alegion.com/">Allegion</a></li>
+<li><a href="https://www.tasq.ai/">Tasq</a></li>
+<li><a href="https://superbai-new.webflow.io/">Superb AI</a></li>
+<li><a href="https://www.quansight.com/">Quansight</a></li>
+<li><a href="https://www.humanfirst.ai/">HumanFirst</a></li>
+<li><a href="https://www.1715labs.com/">1715Labs</a></li>
+<li><a href="https://www.xtract.io/lp/data-labeling-and-annotation">Xtract.io</a></li>
+<li><a href="https://www.lxt.ai/">LXT</a></li>
+</ul>
+<h3 id="mechanical-turk-integration-interfaces">Mechanical Turk Integration Interfaces</h3>
+<p>These are interfaces for Mechanical Turk that provide an easier way to set up HITs without having to mess with Amazon&rsquo;s APIs yourself.
+Both are free, but have slightly different features:</p>
+<ul>
+<li><a href="https://github.com/webis-de/mturk-manager">MTurk Manager</a>, self-hosted, includes features for custom views of responses from workers.</li>
+<li><a href="https://github.com/facebookresearch/Mephisto">Mephisto</a></li>
+<li><a href="https://github.com/cromaLab/LegionTools">LegionTools</a>, self-hosted or not, includes key features for real-time systems. No longer maintained.</li>
+<li><a href="https://github.com/Toloka/crowd-kit">Crowd-Kit</a></li>
+</ul>
+<h3 id="annotation-user-interfaces">Annotation User Interfaces</h3>
+<p>There are many annotation tools for NLP (e.g. my own, <a href="https://www.jkk.name/slate/">SLATE</a>!). These annotation tools are designed to integrate with providers above to collect annotations:</p>
+<ul>
+<li><a href="https://prodi.gy/">Prodigy</a>, span classification (e.g. NER), multiple choice questions (which can be used to do a wide range of tasks), and relations (see <a href="https://prodi.gy/features/">examples</a>). Cost is whatever you pay a crowd provider + $390 for a lifetime license, or $490 for a company. One distinctive property is that you download and run it yourself, providing complete control over your data.</li>
+<li><a href="https://www.lighttag.io/">LightTAG</a>, span classification and links. Cost is 1c / annotation + the cost from a crowd provider, but there is an academic license that makes it free.</li>
+</ul>
+<h3 id="misc-notes">Misc Notes</h3>
+<p>In 2019, <a href="http://users.umiacs.umd.edu/~hal/">Hal Daumé III</a> mentioned on <a href="https://twitter.com/haldaume3/status/1113889907586535425">Twitter</a> that Figure Eight, a paid crowdsourcing service, had removed their free licenses for academics, and asked for alternatives (Note, Figure Eight has since been acquired by Appen).
+A bunch of people had suggestions which I wanted to record for my own future reference.
+I wrote a blog post on my old site, the content of which is now here.</p>
+
+
+
+      </main>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Email" aria-label="Email">
+    <a class="text-white" target="_blank" rel="noopener" href="mailto:jkummerf@umich.edu" aria-label="Email">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/jkkummerfeld" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
+    <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/jkkummerfeld" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ACL Anthology" aria-label="ACL Anthology">
+    <a class="text-white" target="_blank" rel="noopener" href="https://aclanthology.org/anthology/people/j/jonathan-k-kummerfeld/" aria-label="ACL Anthology">
+      <i class="icon icon-acl-logo"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Semantic Scholar" aria-label="Semantic Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://semanticscholar.org/author/Jonathan-K.-Kummerfeld/1727211" aria-label="Semantic Scholar">
+      <i class="ai ai-semantic-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Google Scholar" aria-label="Google Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=OsoNG9AAAAAJ" aria-label="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="DBLP" aria-label="DBLP">
+    <a class="text-white" target="_blank" rel="noopener" href="https://dblp.uni-trier.de/pers/hd/k/Kummerfeld:Jonathan_K=" aria-label="DBLP">
+      <i class="ai ai-dblp"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ArXiv" aria-label="ArXiv">
+    <a class="text-white" target="_blank" rel="noopener" href="https://arxiv.org/a/kummerfeld_j_1" aria-label="ArXiv">
+      <i class="ai ai-arxiv"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="OrcID" aria-label="OrcID">
+    <a class="text-white" target="_blank" rel="noopener" href="https://orcid.org/0000-0001-5030-3016" aria-label="OrcID">
+      <i class="ai ai-orcid"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 Jonathan K. Kummerfeld All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css" integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.js" integrity="sha384-1Or6BdeNQb0ezrmtGeqQHFpppNd7a/gw29xeiSikBbsb44xu3uAo8c7FwbF5jhbd" crossorigin="anonymous"></script>
+ 
+
+
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/auto-render.min.js' integrity='sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl' crossorigin='anonymous' onload='renderMathInElement(document.body, null);'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.da35b82a1ff45cca90044ed24861e456ad09e5523c8cfcdd66939e705b594419.js" integrity="sha256-2jW4Kh/0XMqQBE7SSGHkVq0J5VI8jPzdZpOecFtZRBk=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.74.3" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020) | Jonathan K. Kummerfeld</title>
+
+
+  <meta name="description" content="This paper explores two questions. First, what is the impact of a few key design decisions for word embeddings in language models? Second, based on the first answer, how can we improve results in the situation where we have 50 million&#43; words of text, but only 1 GPU for training?">
+<meta property="og:title" content="Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)" />
+<meta property="og:description" content="This paper explores two questions. First, what is the impact of a few key design decisions for word embeddings in language models? Second, based on the first answer, how can we improve results in the situation where we have 50 million&#43; words of text, but only 1 GPU for training?" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/old-blog/2020-09-29_pretraininglm/" />
+<meta property="article:modified_time" content="2021-11-03T17:10:03-04:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta itemprop="name" content="Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)">
+<meta itemprop="description" content="This paper explores two questions. First, what is the impact of a few key design decisions for word embeddings in language models? Second, based on the first answer, how can we improve results in the situation where we have 50 million&#43; words of text, but only 1 GPU for training?">
+<meta itemprop="dateModified" content="2021-11-03T17:10:03-04:00" />
+<meta itemprop="wordCount" content="1199">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)"/>
+<meta name="twitter:description" content="This paper explores two questions. First, what is the impact of a few key design decisions for word embeddings in language models? Second, based on the first answer, how can we improve results in the situation where we have 50 million&#43; words of text, but only 1 GPU for training?"/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" as="style">
+<link href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19179423-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Jonathan K. Kummerfeld</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.53b961db71346f3689872ba8323c57f2.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        
+
+<p>This paper explores two questions.
+First, what is the impact of a few key design decisions for word embeddings in language models?
+Second, based on the first answer, how can we improve results in the situation where we have 10 million+ words of text, but only 1 GPU for training?</p>
+<h2 id="the-impact-of-tying-freezing-and-pretraining">The impact of tying, freezing, and pretraining</h2>
+<p>It is standard practise to tie the input and output embeddings of language models (i.e., use the same weights in both places), training them together and initialising them randomly.
+Several papers have shown that this improves results by providing more frequent updates to the input embeddings.
+But if you have data available for pretraining it is less clear that this is the right approach.
+To explore this I&rsquo;m going to use a few symbols:</p>
+<p><img src="/img/post/pretraining-lm-vary-key.jpg" alt="Key for Variations on LM table"></p>
+<p>Here are the results of training an <a href="https://github.com/salesforce/awd-lstm-lm">AWD-LSTM</a> with all variations of these parameters, evaluated on the standard LM development set of the PTB (Std) and a variation that has actual words instead of unk (Rare):</p>
+<p><img src="/img/post/pretraining-lm-vary.jpg" alt="Variations on LM (for written form of table see bottom of page)"></p>
+<p>Light blue shows the standard configuration and light red shows our proposal.
+The table is ranked by performance on Std and has four clear sections:</p>
+<p>(a) Frozen random output embeddings.</p>
+<p>(b) Frozen pretrained output embeddings.</p>
+<p>(c) Frozen random input embeddings.</p>
+<p>(d) Various configurations.</p>
+<p>I was surprised by the dramatic difference between input and output embeddings here.
+Freezing the output embeddings, even with a good embedding space, leads to terrible performance.
+In contrast, freezing input embeddings is fine if they are pretrained, and has a far smaller impact when they are random.</p>
+<p>Evaluating with rare words, the big picture is mostly the same, but pretraining has a bigger impact.
+One interesting difference is that the top five models all use pretrained input embeddings, with a large gap from there to the next results.
+At the same time, pretraining the output embeddings seems to have only a small impact (when holding all other variables fixed).
+Finally, the best results freeze the input embeddings.
+Our explanation is that embeddings become inconsistent when they aren&rsquo;t frozen.
+The vectors for words in the training set are moved but the ones seen only in pretraining stay where they are, leading to an inconsistent embedding space.</p>
+<p>The paper then goes through a series of experiments to explore this, varying data domain, similarity of pretraining data, and more.
+Here I&rsquo;m going to jump straight to the final results.
+The table below considers a dataset with 43 million in-domain tokens for pretraining and 7 million for LM training.
+The other models are the standard AWD-LSTM, an n-gram language model, and two version of GPT-2 (without finetuning):</p>
+<p><img src="/img/post/pretraining-final.jpg" alt="Final results (for written form of table see bottom of page)"></p>
+<p>For word level prediction perplexity is reduced by 4.
+However, if we train and test with BPE there is no improvement (see the <a href="https://arxiv.org/abs/1911.11423">SHA-RNN paper</a> for some issues with comparing BPE and word evaluation).
+So if your application works with BPE this finding isn&rsquo;t useful, but for word-level modeling it probably is.</p>
+<p>A few notes about this work:</p>
+<ul>
+<li>A natural next step would be to explore ways to train the language model with more data.
+Modifying the AWD-LSTM code to support training sets larger than GPU memory could render pretraining unnecessary (though at the cost of much longer training).
+In some experiments (not in the paper), we found that when the pretraining set and training set were the same, pretraining didn&rsquo;t improve performance, but it did speed up training.</li>
+<li>Properties of evaluation datasets have shaped the direction of work on language modeling.
+It&rsquo;s important to think beyond the hyperparameters that are easy to vary (e.g., hidden vector dimensions) when adapting a model for a new scenario.</li>
+<li>Writing robust research code is hard.
+We tried getting several other models to run with our variations, but going beyond reproducing results to actually modifying code proved hard.
+Even for the AWD-LSTM, we failed to reproduce results except when we went back to one of the earliest releases.</li>
+<li>This paper was saved by author response.
+The initial reviews were 3.5, 2.5, 3.5 and based on the response and reviewer discussion the 2.5 went to a 4.
+The response contained answers to reviewer questions, including a bunch of statistics about the data that are now in the final paper.
+I have always been a fan of author response.
+It can lead to more informed acceptance decisions and more useful feedback to authors.
+To achieve that, both authors and reviewers need to engage with it though.
+In particular, reviewers need to give something of substance to be responded to and they need to carefully read and consider the response.</li>
+</ul>
+<h2 id="citation">Citation</h2>
+<p><a href="https://www.jkk.name/pub/emnlp20lm.pdf">Paper</a></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bibtex" data-lang="bibtex"><span style="color:#000">@InProceedings</span><span style="color:#000;font-weight:bold">{</span><span style="color:#f57900">emnlp20lm</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">title</span>     <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Improving Low Compute Language Modeling with In-Domain Embedding Initialisation}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">title:</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Improving Low Compute Language Modeling with In-Domain Embedding Initialisation}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">author</span>    <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Welch, Charles and Mihalcea, Rada and Kummerfeld, Jonathan K.}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">booktitle</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">month</span>     <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{November}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">year</span>      <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{2020}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">url</span>       <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{https://www.jkk.name/pub/emnlp20lm.pdf}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">abstract</span>  <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Many NLP applications, such as biomedical data and technical support, have 10-100 million tokens of in-domain data and limited computational resources for learning from it. How should we train a language model in this scenario? Most language modeling research considers either a small dataset with a closed vocabulary (like the standard 1 million token Penn Treebank), or the whole web with byte-pair encoding. We show that for our target setting in English, initialising and freezing input embeddings using in-domain data can improve language model performance by providing a useful representation of rare words, and this pattern holds across several different domains. In the process, we show that the standard convention of tying input and output embeddings does not improve perplexity when initializing with embeddings trained on in-domain data.}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div><h2 id="tables-in-written-form">Tables in written form</h2>
+<h3 id="table-with-training-variations">Table with training variations</h3>
+<p>Each section is presented separately below, with the model described using five words followed by the result on the standard data and the result on the data with rare words.</p>
+<p>First section:</p>
+<ul>
+<li>tied   frozen   dice  frozen   dice, 680, 1120</li>
+<li>untied frozen   dice  frozen   dice, 680, 1120</li>
+<li>untied unfrozen dice  frozen   dice, 680, 431</li>
+<li>untied unfrozen train frozen   dice, 220, 372</li>
+<li>untied frozen   train frozen   dice, 218, 360</li>
+</ul>
+<p>Second section:</p>
+<ul>
+<li>untied frozen   dice  frozen   train, 121, 202</li>
+<li>untied unfrozen dice  frozen   train, 95.0, 170</li>
+<li>untied unfrozen train frozen   train, 91.3, 147</li>
+<li>tied   frozen   train frozen   train, 90.7, 136</li>
+<li>untied frozen   train frozen   train, 90.7, 136</li>
+</ul>
+<p>Third section:</p>
+<ul>
+<li>untied frozen   dice  unfrozen dice, 82.2, 143</li>
+<li>untied frozen   dice  unfrozen train, 81.4, 142</li>
+</ul>
+<p>Fourth section:</p>
+<ul>
+<li>untied unfrozen dice  unfrozen dice, 65.3, 120</li>
+<li>untied unfrozen dice  unfrozen train, 64.1, 113</li>
+<li>untied unfrozen train unfrozen dice, 62.5, 105</li>
+<li>untied unfrozen train unfrozen train, 61.7, 98.5</li>
+<li>untied frozen   train unfrozen train, 61.6, 97.1</li>
+<li>tied   unfrozen dice  unfrozen dice, 61.3, 112</li>
+<li>untied frozen   train unfrozen dice, 61.1, 98.1</li>
+<li>tied   unfrozen train unfrozen train, 59.8, 98.7</li>
+</ul>
+<h3 id="final-results-table">Final results table</h3>
+<p>Models with word level evaluation, giving development results then test results:</p>
+<ul>
+<li>N-Gram, 92.3, 95.0</li>
+<li>Baseline AWD-LSTM, 52.8, 53.5</li>
+<li>Our approach, 49.0, 49.4</li>
+</ul>
+<p>Models with BPE evaluation:</p>
+<ul>
+<li>N-Gram, 56.7, 55.3</li>
+<li>GPT-2 (112m), 46.4, 43.8</li>
+<li>Baseline AWD-LSTM, 37.8, 36.7</li>
+<li>Our approach, 38.3, 37.2</li>
+<li>GPT-2 (774m), 32.5, 33.7</li>
+</ul>
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>Dice Icon by Andrew Doane from the Noun Project.
+Fire and Snowflake Icons by Freepik from <a href="http://www.flaticon.com">www.flaticon.com</a>.</p>
+
+
+
+      </main>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Email" aria-label="Email">
+    <a class="text-white" target="_blank" rel="noopener" href="mailto:jkummerf@umich.edu" aria-label="Email">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/jkkummerfeld" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
+    <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/jkkummerfeld" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ACL Anthology" aria-label="ACL Anthology">
+    <a class="text-white" target="_blank" rel="noopener" href="https://aclanthology.org/anthology/people/j/jonathan-k-kummerfeld/" aria-label="ACL Anthology">
+      <i class="icon icon-acl-logo"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Semantic Scholar" aria-label="Semantic Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://semanticscholar.org/author/Jonathan-K.-Kummerfeld/1727211" aria-label="Semantic Scholar">
+      <i class="ai ai-semantic-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Google Scholar" aria-label="Google Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=OsoNG9AAAAAJ" aria-label="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="DBLP" aria-label="DBLP">
+    <a class="text-white" target="_blank" rel="noopener" href="https://dblp.uni-trier.de/pers/hd/k/Kummerfeld:Jonathan_K=" aria-label="DBLP">
+      <i class="ai ai-dblp"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ArXiv" aria-label="ArXiv">
+    <a class="text-white" target="_blank" rel="noopener" href="https://arxiv.org/a/kummerfeld_j_1" aria-label="ArXiv">
+      <i class="ai ai-arxiv"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="OrcID" aria-label="OrcID">
+    <a class="text-white" target="_blank" rel="noopener" href="https://orcid.org/0000-0001-5030-3016" aria-label="OrcID">
+      <i class="ai ai-orcid"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 Jonathan K. Kummerfeld All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css" integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.js" integrity="sha384-1Or6BdeNQb0ezrmtGeqQHFpppNd7a/gw29xeiSikBbsb44xu3uAo8c7FwbF5jhbd" crossorigin="anonymous"></script>
+ 
+
+
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/auto-render.min.js' integrity='sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl' crossorigin='anonymous' onload='renderMathInElement(document.body, null);'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.da35b82a1ff45cca90044ed24861e456ad09e5523c8cfcdd66939e705b594419.js" integrity="sha256-2jW4Kh/0XMqQBE7SSGHkVq0J5VI8jPzdZpOecFtZRBk=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

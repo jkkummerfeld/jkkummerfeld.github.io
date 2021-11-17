@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.74.3" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017) | Jonathan K. Kummerfeld</title>
+
+
+  <meta name="description" content="GPU processing can be sped up ~2x by removing low impact rows from weight matrices, and switching to a specialised floating point representation.">
+<meta property="og:title" content="DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)" />
+<meta property="og:description" content="GPU processing can be sped up ~2x by removing low impact rows from weight matrices, and switching to a specialised floating point representation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/old-blog/2017-10-05-deftnn/" />
+<meta property="article:modified_time" content="2021-11-03T17:10:03-04:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta itemprop="name" content="DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)">
+<meta itemprop="description" content="GPU processing can be sped up ~2x by removing low impact rows from weight matrices, and switching to a specialised floating point representation.">
+<meta itemprop="dateModified" content="2021-11-03T17:10:03-04:00" />
+<meta itemprop="wordCount" content="475">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)"/>
+<meta name="twitter:description" content="GPU processing can be sped up ~2x by removing low impact rows from weight matrices, and switching to a specialised floating point representation."/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" as="style">
+<link href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19179423-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Jonathan K. Kummerfeld</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.53b961db71346f3689872ba8323c57f2.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        
+
+<p>This paper proposes two techniques for speeding up neural network execution on GPUs:</p>
+<ol>
+<li>Reduce computation when doing matrix-multiply by removing rows.</li>
+<li>Reduce communication on the GPU by halving the number of bits used to represent numbers.</li>
+</ol>
+<p>Either of these gives a speed up of ~1.5x and together they give ~2x, across a range of different computer vision tasks+models.</p>
+<h2 id="core-ideas-in-detail">Core ideas in detail</h2>
+<p>The first idea, reducing work by eliminating parts of the computation, has been considered before.
+In the past, however, the focus was on saving memory in models, and so the most common strategy was to move to a sparse matrix where weights close to zero are dropped.
+Here the focus is on speed and they show that while the sparse approach saves memory it can end up being slower because of hardware behaviour.
+Instead, they eliminate entire rows of the matrix, which means there is less computation, but it remains dense (and therefore fast).
+Rows are identified by measuring correlation between outputs and greedily eliminating rows that correlate highly with the rest of the output.</p>
+<p>The natural question to ask is whether this hurts performance.
+First, they do two things to avoid problems, (1) a scale factor is used to make sure the outputs are of the same range that they would have been with the full matrix, and (2) they restart training to fine-tune the network once pruning is set up.
+With high enough pruning accuracy does fall, but speed ups can be gained before that is a problem (the exact point depends on the task).</p>
+<p>The second idea relates to numerical representation, and is motivated by measurements of where the bottlenecks are in communication.
+Many AI researchers have tried switching to 16 bit representations to save space and time, but here they develop a different floating point encoding that gives more bits to the exponent, and fewer to the mantissa.</p>
+<h2 id="thoughts">Thoughts</h2>
+<ul>
+<li>It would be interesting to see the interaction of this work with the investigation of networks without non-linear functions that can still learn non-linear behaviour because of numerical approximations.</li>
+<li>In the context of language, the weight reduction approach would be interesting to analyse. Specifically, what do we lose in our word vectors depending on the task?</li>
+<li>I&rsquo;ve always had some interest in making things faster. It would be interesting to know where the remaining bottlenecks are (after applying these changes).</li>
+</ul>
+<h2 id="citation">Citation</h2>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bibtex" data-lang="bibtex"><span style="color:#000">@InProceedings</span><span style="color:#000;font-weight:bold">{</span><span style="color:#f57900">Hill:MICRO:2017</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">author</span>    <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Hill, Parker and Jain, Animesh and Hill1, Mason and Zamirai, Babak and Hsu, Chang-Hong and Laurenzano, Michael A. and Mahlke, Scott and Tang, Lingjia and Mars, Jason}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">title</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">title:</span> <span style="color:#a40000">{DeftNN:</span> <span style="color:#a40000">Addressing</span> <span style="color:#a40000">Bottlenecks</span> <span style="color:#a40000">for</span> <span style="color:#a40000">DNN</span> <span style="color:#a40000">Execution</span> <span style="color:#a40000">on</span> <span style="color:#a40000">GPUs</span> <span style="color:#a40000">via</span> <span style="color:#a40000">Synapse</span> <span style="color:#a40000">Vector</span> <span style="color:#a40000">Elimination</span> <span style="color:#a40000">and</span> <span style="color:#a40000">Near-compute</span> <span style="color:#a40000">Data</span> <span style="color:#a40000">Fission},</span>
+<span style="color:#a40000">booktitle</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{The 50th Annual IEEE/ACM International Symposium on Microarchitecture}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">year</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{2017}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div>
+
+
+      </main>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Email" aria-label="Email">
+    <a class="text-white" target="_blank" rel="noopener" href="mailto:jkummerf@umich.edu" aria-label="Email">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/jkkummerfeld" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
+    <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/jkkummerfeld" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ACL Anthology" aria-label="ACL Anthology">
+    <a class="text-white" target="_blank" rel="noopener" href="https://aclanthology.org/anthology/people/j/jonathan-k-kummerfeld/" aria-label="ACL Anthology">
+      <i class="icon icon-acl-logo"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Semantic Scholar" aria-label="Semantic Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://semanticscholar.org/author/Jonathan-K.-Kummerfeld/1727211" aria-label="Semantic Scholar">
+      <i class="ai ai-semantic-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Google Scholar" aria-label="Google Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=OsoNG9AAAAAJ" aria-label="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="DBLP" aria-label="DBLP">
+    <a class="text-white" target="_blank" rel="noopener" href="https://dblp.uni-trier.de/pers/hd/k/Kummerfeld:Jonathan_K=" aria-label="DBLP">
+      <i class="ai ai-dblp"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ArXiv" aria-label="ArXiv">
+    <a class="text-white" target="_blank" rel="noopener" href="https://arxiv.org/a/kummerfeld_j_1" aria-label="ArXiv">
+      <i class="ai ai-arxiv"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="OrcID" aria-label="OrcID">
+    <a class="text-white" target="_blank" rel="noopener" href="https://orcid.org/0000-0001-5030-3016" aria-label="OrcID">
+      <i class="ai ai-orcid"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 Jonathan K. Kummerfeld All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css" integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.js" integrity="sha384-1Or6BdeNQb0ezrmtGeqQHFpppNd7a/gw29xeiSikBbsb44xu3uAo8c7FwbF5jhbd" crossorigin="anonymous"></script>
+ 
+
+
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/auto-render.min.js' integrity='sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl' crossorigin='anonymous' onload='renderMathInElement(document.body, null);'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.da35b82a1ff45cca90044ed24861e456ad09e5523c8cfcdd66939e705b594419.js" integrity="sha256-2jW4Kh/0XMqQBE7SSGHkVq0J5VI8jPzdZpOecFtZRBk=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.74.3" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Searching for Activation Functions (Ramachandran et al., 2017) | Jonathan K. Kummerfeld</title>
+
+
+  <meta name="description" content="Switching from the ReLU non-linearity, $\text{max}(0, x)$, to Swish, $x \cdot \text{sigmoid}(x)$, consistently improves performance in neural networks across both vision and machine translation tasks.">
+<meta property="og:title" content="Searching for Activation Functions (Ramachandran et al., 2017)" />
+<meta property="og:description" content="Switching from the ReLU non-linearity, $\text{max}(0, x)$, to Swish, $x \cdot \text{sigmoid}(x)$, consistently improves performance in neural networks across both vision and machine translation tasks." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/old-blog/2017-10-27_swishactivation/" />
+<meta property="article:modified_time" content="2021-11-17T11:00:20-05:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta itemprop="name" content="Searching for Activation Functions (Ramachandran et al., 2017)">
+<meta itemprop="description" content="Switching from the ReLU non-linearity, $\text{max}(0, x)$, to Swish, $x \cdot \text{sigmoid}(x)$, consistently improves performance in neural networks across both vision and machine translation tasks.">
+<meta itemprop="dateModified" content="2021-11-17T11:00:20-05:00" />
+<meta itemprop="wordCount" content="319">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Searching for Activation Functions (Ramachandran et al., 2017)"/>
+<meta name="twitter:description" content="Switching from the ReLU non-linearity, $\text{max}(0, x)$, to Swish, $x \cdot \text{sigmoid}(x)$, consistently improves performance in neural networks across both vision and machine translation tasks."/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" as="style">
+<link href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19179423-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Jonathan K. Kummerfeld</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.53b961db71346f3689872ba8323c57f2.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        
+
+<h2 id="update">Update</h2>
+<p>After prior work came to light that uses the same non-linearity, this paper was updated to focus more on the search process used to investigate the space.
+One new takeaway for me was how diverse the effective activation functions were (see figures in the new version of the paper).</p>
+<h2 id="original-post">Original Post</h2>
+<p>Non-linear functions are the key to the representation power of neural networks.
+Many different ones have been proposed, though it is difficult to make theoretical claims of their properties and so the choice of which to use is generally empirical.
+This paper proposes a new non-linearity, $\text{swish}(x) = x \cdot \text{sigmoid}(x)$.</p>
+<p>Interestingly, it was chosen by a combination of exhaustive search and search with reinforcement learning across a range of functions, evaluating on CIFAR-10 with a small model.
+ReLU variants were consistently second-best to swish variants, and generally the more complicated functions performed worse.
+They do mention two functions that performed well, but didn&rsquo;t generalise: $\text{cos}(x) - x$ and $\text{max}(x, \text{tanh}(x))$, which look like this:</p>
+<p><img src="/img/post/activation-functions.png" alt="Four activation functions"></p>
+<p>In a range of experiments in vision and machine translation swish does at least as well or slightly better than the alternatives.
+It also seems more robust to network depth and to work across different network structures.
+As for why it works so well, there are two main ideas: (1) it adds smoothness to the ReLU, (2) it has some sensitivity to negative inputs.
+Both of these seem particularly important at the start of training.</p>
+<h2 id="citation">Citation</h2>
+<p><a href="https://arxiv.org/pdf/1710.05941.pdf">ArXiv Paper</a></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bibtex" data-lang="bibtex"><span style="color:#000">@ARTICLE</span><span style="color:#000;font-weight:bold">{</span><span style="color:#f57900">2017arXiv171005941R</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">author</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Ramachandran, P. and {Zoph}, B. and {Le}, Q.~V.}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">title</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;{Swish: a Self-Gated Activation Function}&#34;</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">title:</span> <span style="color:#a40000">&#34;{Swish:</span> <span style="color:#a40000">a</span> <span style="color:#a40000">Self-Gated</span> <span style="color:#a40000">Activation</span> <span style="color:#a40000">Function}&#34;,</span>
+<span style="color:#a40000">journal</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{ArXiv e-prints}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">archivePrefix</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">&#34;arXiv&#34;</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">eprint</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{1710.05941}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">keywords</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Computer Science - Neural and Evolutionary Computing, Computer Science - Computer Vision and Pattern Recognition, Computer Science - Learning}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">year</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0000cf;font-weight:bold">2017</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">month</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000">oct</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">adsurl</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{http://adsabs.harvard.edu/abs/2017arXiv171005941R}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">adsnote</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Provided by the SAO/NASA Astrophysics Data System}</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div>
+
+
+      </main>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Email" aria-label="Email">
+    <a class="text-white" target="_blank" rel="noopener" href="mailto:jkummerf@umich.edu" aria-label="Email">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/jkkummerfeld" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
+    <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/jkkummerfeld" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ACL Anthology" aria-label="ACL Anthology">
+    <a class="text-white" target="_blank" rel="noopener" href="https://aclanthology.org/anthology/people/j/jonathan-k-kummerfeld/" aria-label="ACL Anthology">
+      <i class="icon icon-acl-logo"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Semantic Scholar" aria-label="Semantic Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://semanticscholar.org/author/Jonathan-K.-Kummerfeld/1727211" aria-label="Semantic Scholar">
+      <i class="ai ai-semantic-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Google Scholar" aria-label="Google Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=OsoNG9AAAAAJ" aria-label="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="DBLP" aria-label="DBLP">
+    <a class="text-white" target="_blank" rel="noopener" href="https://dblp.uni-trier.de/pers/hd/k/Kummerfeld:Jonathan_K=" aria-label="DBLP">
+      <i class="ai ai-dblp"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ArXiv" aria-label="ArXiv">
+    <a class="text-white" target="_blank" rel="noopener" href="https://arxiv.org/a/kummerfeld_j_1" aria-label="ArXiv">
+      <i class="ai ai-arxiv"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="OrcID" aria-label="OrcID">
+    <a class="text-white" target="_blank" rel="noopener" href="https://orcid.org/0000-0001-5030-3016" aria-label="OrcID">
+      <i class="ai ai-orcid"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 Jonathan K. Kummerfeld All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css" integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.js" integrity="sha384-1Or6BdeNQb0ezrmtGeqQHFpppNd7a/gw29xeiSikBbsb44xu3uAo8c7FwbF5jhbd" crossorigin="anonymous"></script>
+ 
+
+
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/auto-render.min.js' integrity='sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl' crossorigin='anonymous' onload='renderMathInElement(document.body, null);'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.da35b82a1ff45cca90044ed24861e456ad09e5523c8cfcdd66939e705b594419.js" integrity="sha256-2jW4Kh/0XMqQBE7SSGHkVq0J5VI8jPzdZpOecFtZRBk=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>

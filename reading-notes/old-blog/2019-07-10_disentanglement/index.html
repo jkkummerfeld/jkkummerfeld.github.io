@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.74.3" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019) | Jonathan K. Kummerfeld</title>
+
+
+  
+  <meta name="description" content="This post is about my own paper to appear at ACL later this month.
+What is interesting about this paper will depend on your research interests, so …">
+<meta property="og:title" content="A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)" />
+<meta property="og:description" content="This post is about my own paper to appear at ACL later this month. What is interesting about this paper will depend on your research interests, so that&rsquo;s how I&rsquo;ve broken down this blog post.
+A few key points first:
+ Data and code are available on Github. The paper is also available. The general-purpose span labeling and linking annotation tool we used is also appearing at ACL. Check out DSTC 8 Track 2, which is based on this work." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/old-blog/2019-07-10_disentanglement/" />
+<meta property="article:modified_time" content="2021-11-03T17:10:03-04:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta itemprop="name" content="A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)">
+<meta itemprop="description" content="This post is about my own paper to appear at ACL later this month. What is interesting about this paper will depend on your research interests, so that&rsquo;s how I&rsquo;ve broken down this blog post.
+A few key points first:
+ Data and code are available on Github. The paper is also available. The general-purpose span labeling and linking annotation tool we used is also appearing at ACL. Check out DSTC 8 Track 2, which is based on this work.">
+<meta itemprop="dateModified" content="2021-11-03T17:10:03-04:00" />
+<meta itemprop="wordCount" content="877">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)"/>
+<meta name="twitter:description" content="This post is about my own paper to appear at ACL later this month. What is interesting about this paper will depend on your research interests, so that&rsquo;s how I&rsquo;ve broken down this blog post.
+A few key points first:
+ Data and code are available on Github. The paper is also available. The general-purpose span labeling and linking annotation tool we used is also appearing at ACL. Check out DSTC 8 Track 2, which is based on this work."/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" as="style">
+<link href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19179423-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/">
+		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Jonathan K. Kummerfeld</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.53b961db71346f3689872ba8323c57f2.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-default td-outer">
+      <main role="main" class="td-main">
+        
+
+<p>This post is about my own paper to appear at ACL later this month.
+What is interesting about this paper will depend on your research interests, so that&rsquo;s how I&rsquo;ve broken down this blog post.</p>
+<p>A few key points first:</p>
+<ul>
+<li><a href="https://jkk.name/irc-disentanglement/">Data and code</a> are available on Github.</li>
+<li>The <a href="https://github.com/jkkummerfeld/irc-disentanglement/raw/master/acl19irc.pdf">paper</a> is also available.</li>
+<li>The general-purpose span labeling and linking <a href="https://jkk.name/slate/">annotation tool</a> we used is also appearing at ACL.</li>
+<li>Check out <a href="https://github.com/dstc8-track2/NOESIS-II">DSTC 8 Track 2</a>, which is based on this work.</li>
+</ul>
+<h3 id="you-study-discourse">You study discourse</h3>
+<p>We investigated discourse structure when multiple conversations are occurring in the same stream of communication.
+In our case, the stream is a technical support channel for Ubuntu on Internet Relay Chat (IRC).
+We annotated each message with which message(s) it was a response to.
+As far as we are aware, this is the first large-scale corpus with this kind of discourse structure in synchronous chat.
+Here is an example from the data, with annotations marked by edges and colours:</p>
+<p><img src="/img/post/irc-disentanglement-example.png" alt="IRC Disentanglement Example"></p>
+<p>We don&rsquo;t frame the paper as being about reply-structure though.
+Instead, we focus on a byproduct of these annotations - conversation disentanglement.
+Given our graph of reply-structure, each connected component is a single conversation (as shown by each colour in the example).
+The key prior work on the disentanglement problem is <a href="https://aclanthology.org/P08-1095">Elsner and Charniak (2008)</a>, who released the largest annotated resource for the task, with 2,500 messages manually separated into conversations.
+We annotated their data with our annotation scheme and 75,000 additional messages.</p>
+<p>We built a set of simple models for predicting reply-structure and did some analysis of assumptions about discourse from prior disentanglement work, but there is certainly more scope for study here.
+One direction would be to develop better models for this task.
+Another would be to study patterns in the data to understand how people are able to follow the conversation.</p>
+<h3 id="you-work-on-dialogue">You work on dialogue</h3>
+<p>There has been a lot of work recently using the Ubuntu dataset from <a href="https://github.com/rkadlec/ubuntu-ranking-dataset-creator">Lowe et al., (2015)</a>, which was produced by heuristically disentangling conversations from the same IRC channel we use.
+Their work opened up a fantastic research opportunity by providing 930,000 conversations for training and evaluating dialogue systems.
+However, they were unable to evaluate the quality of their conversations because they had no annotated data.</p>
+<p>Using our data, we found that only 20% of their conversations are a true prefix of a conversation (since their next utterance classification task cuts the conversation off part-way, being a true prefix is all that matters).
+Many conversations are missing messages, and some have extra messages from other conversations.
+Unsurprisingly, our trained model does better, producing conversations that are a true prefix 81% of the time.
+We also noticed that their heuristic was incorrectly linking messages far apart in time.
+This is not tested by our evaluation set, so we constructed this figure, which shows the problem is quite common:</p>
+<p><img src="/img/post/irc-disentanglement-comparison.png" alt="IRC Disentanglement Comparison"></p>
+<p>The purple results are based on the output of our model over the entire Ubuntu IRC logs.
+That output is the basis of <a href="https://github.com/dstc8-track2/NOESIS-II">DSTC 8 Track 2</a>.
+Once the competition finishes (October 20th, 2019) we will release all of the conversations.</p>
+<h3 id="you-am-interested-in-studying-online-communities">You am interested in studying online communities</h3>
+<p>This is not my area of expertise, but our data and models could enable the exploration of interesting questions.
+For example:</p>
+<ul>
+<li>What is the structure of the community? By looking at who asks for help and who responds we could see patterns of behaviour.</li>
+<li>How does a community evolve over time? This data spans 15 years, during which there were many Ubuntu releases, Stackoverflow was created, other Ubuntu forums were created, etc. It seems likely that those events and more would be reflected in the data.</li>
+</ul>
+<p>It would be interesting to apply the model to other communities, but that would require additional in-domain data to get good results.
+We have no plans to collect additional data at this stage, and for other channels there are copyright questions that might be difficult to resolve (the Ubuntu channels have an open access license).</p>
+<h3 id="you-mainly-care-about-neural-network-architectures">You mainly care about neural network architectures</h3>
+<p>We experimented with a bunch of ideas that didn&rsquo;t improve performance, so our final model is very simple (a feedforward network with features representing the logs and sentences represented by averaging and max-pooling GloVe embeddings).
+Maybe that means there is an opportunity for you to improve on our results with a fancy model?
+One of our motivations for making such a large new resource was to make it possible to train sophisticated models.</p>
+<h3 id="acknowledgments">Acknowledgments</h3>
+<p>This project has been going since I started at Michigan as a postdoc funded by a grant from IBM.
+The final paper is the result of collaboration with a large group of people from Michigan and IBM.
+Thank you!</p>
+<h2 id="citation">Citation</h2>
+<p><a href="https://github.com/jkkummerfeld/irc-disentanglement/raw/master/acl19irc.pdf">Paper</a></p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bibtex" data-lang="bibtex"><span style="color:#000">@InProceedings</span><span style="color:#000;font-weight:bold">{</span><span style="color:#f57900">acl19disentangle</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">author</span>    <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Kummerfeld, Jonathan K. and Gouravajhala, Sai R. and Peper, Joseph and Athreya, Vignesh and Gunasekara, Chulaka and Ganhotra, Jatin and Patel, Siva Sankalp and Polymenakos, Lazaros and Lasecki, Walter S.}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">title</span>     <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{A Large-Scale Corpus for Conversation Disentanglement}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">title:</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{A Large-Scale Corpus for Conversation Disentanglement}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">booktitle</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">location</span>  <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Florence, Italy}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">month</span>     <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{July}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">year</span>      <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{2019}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">url</span>       <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{https://github.com/jkkummerfeld/irc-disentanglement/raw/master/acl19irc.pdf}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">arxiv</span>     <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{https://arxiv.org/abs/1810.11118}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">software</span>  <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{https://jkk.name/irc-disentanglement}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#c4a000">data</span>      <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{https://jkk.name/irc-disentanglement}</span><span style="color:#000;font-weight:bold">,</span>
+<span style="color:#000;font-weight:bold">}</span>
+</code></pre></div>
+
+
+      </main>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Email" aria-label="Email">
+    <a class="text-white" target="_blank" rel="noopener" href="mailto:jkummerf@umich.edu" aria-label="Email">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/jkkummerfeld" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
+    <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/jkkummerfeld" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ACL Anthology" aria-label="ACL Anthology">
+    <a class="text-white" target="_blank" rel="noopener" href="https://aclanthology.org/anthology/people/j/jonathan-k-kummerfeld/" aria-label="ACL Anthology">
+      <i class="icon icon-acl-logo"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Semantic Scholar" aria-label="Semantic Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://semanticscholar.org/author/Jonathan-K.-Kummerfeld/1727211" aria-label="Semantic Scholar">
+      <i class="ai ai-semantic-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Google Scholar" aria-label="Google Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=OsoNG9AAAAAJ" aria-label="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="DBLP" aria-label="DBLP">
+    <a class="text-white" target="_blank" rel="noopener" href="https://dblp.uni-trier.de/pers/hd/k/Kummerfeld:Jonathan_K=" aria-label="DBLP">
+      <i class="ai ai-dblp"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ArXiv" aria-label="ArXiv">
+    <a class="text-white" target="_blank" rel="noopener" href="https://arxiv.org/a/kummerfeld_j_1" aria-label="ArXiv">
+      <i class="ai ai-arxiv"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="OrcID" aria-label="OrcID">
+    <a class="text-white" target="_blank" rel="noopener" href="https://orcid.org/0000-0001-5030-3016" aria-label="OrcID">
+      <i class="ai ai-orcid"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2021 Jonathan K. Kummerfeld All Rights Reserved</small>
+        
+	
+		<p class="mt-2"><a href="/about/">About</a></p>
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css" integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.js" integrity="sha384-1Or6BdeNQb0ezrmtGeqQHFpppNd7a/gw29xeiSikBbsb44xu3uAo8c7FwbF5jhbd" crossorigin="anonymous"></script>
+ 
+
+
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/auto-render.min.js' integrity='sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl' crossorigin='anonymous' onload='renderMathInElement(document.body, null);'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.da35b82a1ff45cca90044ed24861e456ad09e5523c8cfcdd66939e705b594419.js" integrity="sha256-2jW4Kh/0XMqQBE7SSGHkVq0J5VI8jPzdZpOecFtZRBk=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
