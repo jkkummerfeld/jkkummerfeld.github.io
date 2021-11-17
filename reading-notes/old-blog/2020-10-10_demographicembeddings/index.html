@@ -1,9 +1,10 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+    <link rel="stylesheet" href="https://www.jkk.name/plugins/my-custom/css/mycustom.css"><link rel="stylesheet" href="https://www.jkk.name/plugins/academic-icons/css/academicons.css">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.74.3" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta name="generator" content="Hugo 0.89.3" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -24,25 +25,23 @@
 <meta property="og:title" content="Compositional Demographic Word Embeddings (Welch et al., EMNLP 2020)" />
 <meta property="og:description" content="Most work in NLP uses datasets with a diverse set of speakers. In practise, everyone speaks / writes slightly differently and our models would be better if they accounted for that. This has been the motivation for a line of work by [Charlie Welch](http://cfwelch.com/) that I&#39;ve been a collaborator on (in [CICLing 2019](https://www.jkk.name/publication/cicling19personal), [IEEE Intelligent Systems 2019](https://www.jkk.name/publication/ieee19personal/), [CoLing 2020](https://www.jkk.name/publication/coling20personal/), and this paper)." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jkk.name/reading-notes/old-blog/2020-10-10_demographicembeddings/" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/old-blog/2020-10-10_demographicembeddings/" /><meta property="article:section" content="reading-notes" />
+
 <meta property="article:modified_time" content="2021-11-03T17:10:03-04:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+
 <meta itemprop="name" content="Compositional Demographic Word Embeddings (Welch et al., EMNLP 2020)">
 <meta itemprop="description" content="Most work in NLP uses datasets with a diverse set of speakers. In practise, everyone speaks / writes slightly differently and our models would be better if they accounted for that. This has been the motivation for a line of work by [Charlie Welch](http://cfwelch.com/) that I&#39;ve been a collaborator on (in [CICLing 2019](https://www.jkk.name/publication/cicling19personal), [IEEE Intelligent Systems 2019](https://www.jkk.name/publication/ieee19personal/), [CoLing 2020](https://www.jkk.name/publication/coling20personal/), and this paper).">
 <meta itemprop="dateModified" content="2021-11-03T17:10:03-04:00" />
 <meta itemprop="wordCount" content="578">
-
-
-
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Compositional Demographic Word Embeddings (Welch et al., EMNLP 2020)"/>
 <meta name="twitter:description" content="Most work in NLP uses datasets with a diverse set of speakers. In practise, everyone speaks / writes slightly differently and our models would be better if they accounted for that. This has been the motivation for a line of work by [Charlie Welch](http://cfwelch.com/) that I&#39;ve been a collaborator on (in [CICLing 2019](https://www.jkk.name/publication/cicling19personal), [IEEE Intelligent Systems 2019](https://www.jkk.name/publication/ieee19personal/), [CoLing 2020](https://www.jkk.name/publication/coling20personal/), and this paper)."/>
 
 
 
 
-<link rel="preload" href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" as="style">
-<link href="/scss/main.min.4d6a07626240bcddb820f906b204b0f3398627bb3ab14557de00450e4a44c7b9.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.098e976d5113d2dd5db369ca3e1b98f01c9e6e4acb8102f6b9902a4826c64e81.css" as="style">
+<link href="/scss/main.min.098e976d5113d2dd5db369ca3e1b98f01c9e6e4acb8102f6b9902a4826c64e81.css" rel="stylesheet" integrity="">
 
 
 <script
@@ -77,21 +76,165 @@ if (!doNotTrack) {
 
   </head>
   <body class="td-page">
-    <header>
-      
-<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
-        <a class="navbar-brand" href="/">
-		<span class="navbar-logo"></span><span class="text-uppercase font-weight-bold">Jonathan K. Kummerfeld</span>
-	</a>
-	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
-		<ul class="navbar-nav mt-2 mt-lg-0">
-			
-			
-			
-			
-		</ul>
-	</div>
-	<div class="navbar-nav d-none d-lg-block">
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m--li">
+  <a href="/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-"><span class="">Jonathan K. Kummerfeld&#39;s Homepage</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-about-li">
+  <a href="/about/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-about"><i class="fas fa-male"></i><span class="">About</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-students-li">
+  <a href="/students/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-students"><i class="fas fa-users"></i><span class="">Students</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-pubs-li">
+  <a href="/pubs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-pubs"><i class="fas fa-file-alt"></i><span class="">Publications</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-teaching-li">
+  <a href="/teaching/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-teaching"><i class="fas fa-graduation-cap"></i><span class="">Teaching</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-software-li">
+  <a href="/software/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-software"><i class="fas fa-code"></i><span class="">Software</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-data-li">
+  <a href="/data/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-data"><i class="fas fa-database"></i><span class="">Datasets</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-reading-notes-li">
+  <a href="/reading-notes/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-reading-notes"><i class="fas fa-book-reader"></i><span class="">Reading Notes</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notescoreference-li">
+  <a href="/reading-notes/coreference/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notescoreference"><span class="">Coreference Resolution</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notescrowdsourcing-li">
+  <a href="/reading-notes/crowdsourcing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notescrowdsourcing"><span class="">Crowdsourcing</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesdiplomacy-li">
+  <a href="/reading-notes/diplomacy/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesdiplomacy"><span class="">Diplomacy</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesexsempar-li">
+  <a href="/reading-notes/exsempar/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesexsempar"><span class="">Executable Semantic Parsing</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-reading-notesold-blog-li">
+  <a href="/reading-notes/old-blog/" title="Old Blog Posts" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-reading-notesold-blog"><span class="">Olg Blog Posts</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-09_parsing-autoencoder-li">
+  <a href="/reading-notes/old-blog/2017-10-09_parsing-autoencoder/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-09_parsing-autoencoder"><span class=""> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-12-05_explainingpredictions-li">
+  <a href="/reading-notes/old-blog/2017-12-05_explainingpredictions/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-05_explainingpredictions"><span class="">A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-16_forumrnn-li">
+  <a href="/reading-notes/old-blog/2017-10-16_forumrnn/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-16_forumrnn"><span class="">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2019-07-10_disentanglement-li">
+  <a href="/reading-notes/old-blog/2019-07-10_disentanglement/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2019-07-10_disentanglement"><span class="">A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-12-01_nonsequencener-li">
+  <a href="/reading-notes/old-blog/2017-12-01_nonsequencener/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-01_nonsequencener"><span class="">A Local Detection Approach for Named Entity Recognition and Mention Detection (Xu et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2020-10-04_crowdsrl-li">
+  <a href="/reading-notes/old-blog/2020-10-04_crowdsrl/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-10-04_crowdsrl"><span class="">A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels (Jiang, et al., Findings of EMNLP 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-12-12_multidomainwordvector-li">
+  <a href="/reading-notes/old-blog/2017-12-12_multidomainwordvector/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-12_multidomainwordvector"><span class="">A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings (Yang et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-16_ucca-li">
+  <a href="/reading-notes/old-blog/2017-11-16_ucca/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-16_ucca"><span class="">A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-17_twostagediscourseparsing-li">
+  <a href="/reading-notes/old-blog/2017-11-17_twostagediscourseparsing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-17_twostagediscourseparsing"><span class="">A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-29_abstractivesummarisation-li">
+  <a href="/reading-notes/old-blog/2017-11-29_abstractivesummarisation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-29_abstractivesummarisation"><span class="">Abstractive Document Summarization with a Graph-Based Attentional Neural Model (Tan et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-18_neuralamr-li">
+  <a href="/reading-notes/old-blog/2017-10-18_neuralamr/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-18_neuralamr"><span class="">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2018-04-16_lm_analysis-li">
+  <a href="/reading-notes/old-blog/2018-04-16_lm_analysis/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-04-16_lm_analysis"><span class="">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2019-09-22_conferenceapproach-li">
+  <a href="/reading-notes/old-blog/2019-09-22_conferenceapproach/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2019-09-22_conferenceapproach"><span class="">Approaching Conferences</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-07_spineparsinglstm-li">
+  <a href="/reading-notes/old-blog/2017-11-07_spineparsinglstm/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-07_spineparsinglstm"><span class="">Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-20_onlyattention-li">
+  <a href="/reading-notes/old-blog/2017-10-20_onlyattention/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-20_onlyattention"><span class="">Attention Is All You Need (Vaswani et al., ArXiv 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-21_multiinputattention-li">
+  <a href="/reading-notes/old-blog/2017-11-21_multiinputattention/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-21_multiinputattention"><span class="">Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2020-09-03_checklist-li">
+  <a href="/reading-notes/old-blog/2020-09-03_checklist/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-09-03_checklist"><span class="">Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2020-09-07_chartdialogs-li">
+  <a href="/reading-notes/old-blog/2020-09-07_chartdialogs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-09-07_chartdialogs"><span class="">ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-reading-notesold-blog2020-10-10_demographicembeddings-li">
+  <a href="/reading-notes/old-blog/2020-10-10_demographicembeddings/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-10-10_demographicembeddings"><span class="td-sidebar-nav-active-item">Compositional Demographic Word Embeddings (Welch et al., EMNLP 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2020-09-25_crowdqasrl-li">
+  <a href="/reading-notes/old-blog/2020-09-25_crowdqasrl/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-09-25_crowdqasrl"><span class="">Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-05-deftnn-li">
+  <a href="/reading-notes/old-blog/2017-10-05-deftnn/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-05-deftnn"><span class="">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-13_errordetection-li">
+  <a href="/reading-notes/old-blog/2017-10-13_errordetection/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-13_errordetection"><span class="">Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-30_neuralsequence-li">
+  <a href="/reading-notes/old-blog/2017-10-30_neuralsequence/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-30_neuralsequence"><span class="">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-24_dynamictransition-li">
+  <a href="/reading-notes/old-blog/2017-10-24_dynamictransition/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-24_dynamictransition"><span class="">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-22_errorrepairparsing-li">
+  <a href="/reading-notes/old-blog/2017-11-22_errorrepairparsing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-22_errorrepairparsing"><span class="">Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2018-09-04_featureengineering-li">
+  <a href="/reading-notes/old-blog/2018-09-04_featureengineering/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-09-04_featureengineering"><span class="">Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2018-01-28_crowdassistant-li">
+  <a href="/reading-notes/old-blog/2018-01-28_crowdassistant/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-01-28_crowdassistant"><span class="">Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2018-06-12_parseradaptation-li">
+  <a href="/reading-notes/old-blog/2018-06-12_parseradaptation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-06-12_parseradaptation"><span class="">Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-06-madlibs-li">
+  <a href="/reading-notes/old-blog/2017-10-06-madlibs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-06-madlibs"><span class="">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-09_framesdataset-li">
+  <a href="/reading-notes/old-blog/2017-11-09_framesdataset/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-09_framesdataset"><span class="">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-12_amralignment-li">
+  <a href="/reading-notes/old-blog/2017-10-12_amralignment/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-12_amralignment"><span class="">Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-11_multimt-li">
+  <a href="/reading-notes/old-blog/2017-10-11_multimt/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-11_multimt"><span class="">Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-12-07_rarewordvectors-li">
+  <a href="/reading-notes/old-blog/2017-12-07_rarewordvectors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-07_rarewordvectors"><span class="">High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2020-12-10_dynamicannoallocation-li">
+  <a href="/reading-notes/old-blog/2020-12-10_dynamicannoallocation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-12-10_dynamicannoallocation"><span class="">Improving Human-Labeled Data through Dynamic Automatic Conflict Resolution (Sun, et al., CoLing 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2020-09-29_pretraininglm-li">
+  <a href="/reading-notes/old-blog/2020-09-29_pretraininglm/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-09-29_pretraininglm"><span class="">Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-14_inorderparsing-li">
+  <a href="/reading-notes/old-blog/2017-11-14_inorderparsing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-14_inorderparsing"><span class="">In-Order Transition-based Constituent Parsing (Liu et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2020-10-12_taboo-li">
+  <a href="/reading-notes/old-blog/2020-10-12_taboo/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-10-12_taboo"><span class="">Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-30_taggingrelations-li">
+  <a href="/reading-notes/old-blog/2017-11-30_taggingrelations/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-30_taggingrelations"><span class="">Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme (Zheng et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-03_discourserelations-li">
+  <a href="/reading-notes/old-blog/2017-11-03_discourserelations/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-03_discourserelations"><span class="">Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-15_entityvectors-li">
+  <a href="/reading-notes/old-blog/2017-11-15_entityvectors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-15_entityvectors"><span class="">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-08_graphdialogue-li">
+  <a href="/reading-notes/old-blog/2017-11-08_graphdialogue/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-08_graphdialogue"><span class="">Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2018-03-05_curriculum-li">
+  <a href="/reading-notes/old-blog/2018-03-05_curriculum/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-03-05_curriculum"><span class="">Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-19_mace-li">
+  <a href="/reading-notes/old-blog/2017-10-19_mace/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-19_mace"><span class="">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-10_kginlstm-li">
+  <a href="/reading-notes/old-blog/2017-11-10_kginlstm/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-10_kginlstm"><span class="">Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-23_alphagozero-li">
+  <a href="/reading-notes/old-blog/2017-10-23_alphagozero/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-23_alphagozero"><span class="">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-06_literarycharacters-li">
+  <a href="/reading-notes/old-blog/2017-11-06_literarycharacters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-06_literarycharacters"><span class="">Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-26_multimodalwordembeddings-li">
+  <a href="/reading-notes/old-blog/2017-10-26_multimodalwordembeddings/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-26_multimodalwordembeddings"><span class="">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-10-17_nedisambiguation-li">
+  <a href="/reading-notes/old-blog/2017-10-17_nedisambiguation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-17_nedisambiguation"><span class="">Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-11-13_languagegame-li">
+  <a href="/reading-notes/old-blog/2017-11-13_languagegame/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-13_languagegame"><span class="">Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesold-blog2017-12-05_multidomainparsing-li">
+  <a href="/reading-notes/old-blog/2017-12-05_multidomainparsing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-05_multidomainparsing"><span class="">Neural Semantic Parsing over Multiple Knowledge-bases (Herzig et al., 2017)</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-advice-li">
+  <a href="/advice/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-advice"><i class="fas fa-comment"></i><span class="">Advice</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-adviceposters-li">
+  <a href="/advice/posters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-adviceposters"><span class="">Academic Posters</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-sponsor-li">
+  <a href="/sponsor/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-sponsor"><i class="fas fa-dollar-sign"></i><span class="">Sponsor</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-contact-li">
+  <a href="/contact/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-contact"><i class="fas fa-phone"></i><span class="">Contact</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+  <form class="td-sidebar__search d-flex align-items-center">
+    
 
 
 
@@ -107,15 +250,86 @@ if (!doNotTrack) {
   data-offline-search-max-results="10"
 >
 
-</div>
-</nav>
 
-    </header>
-    <div class="container-fluid td-default td-outer">
-      <main role="main" class="td-main">
-        
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
 
-<p>Most work in NLP uses datasets with a diverse set of speakers.
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+  
+  
+  
+  
+  
+  
+  <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+  
+  
+  </div>
+
+
+            
+
+
+
+
+            
+
+	
+		
+			
+		
+		
+
+
+
+  
+  
+
+	
+		
+			
+		
+		
+
+
+
+  
+  
+
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            
+
+            
+<div class="td-content">
+	<h1>Compositional Demographic Word Embeddings (Welch et al., EMNLP 2020)</h1>
+	<div class="lead">Most work in NLP uses datasets with a diverse set of speakers. In practise, everyone speaks / writes slightly differently and our models would be better if they accounted for that. This has been the motivation for a line of work by <a href="http://cfwelch.com/">Charlie Welch</a> that I&rsquo;ve been a collaborator on (in <a href="https://www.jkk.name/publication/cicling19personal">CICLing 2019</a>, <a href="https://www.jkk.name/publication/ieee19personal/">IEEE Intelligent Systems 2019</a>, <a href="https://www.jkk.name/publication/coling20personal/">CoLing 2020</a>, and this paper).</div>
+	<header class="article-meta">
+		
+		
+			
+				
+
+
+			
+				
+
+
+			
+		
+		
+	</header>    
+	<p>Most work in NLP uses datasets with a diverse set of speakers.
 In practise, everyone speaks / writes slightly differently and our models would be better if they accounted for that.
 This has been the motivation for a line of work by <a href="http://cfwelch.com/">Charlie Welch</a> that I&rsquo;ve been a collaborator on (in
 <a href="https://www.jkk.name/publication/cicling19personal">CICLing 2019</a>,
@@ -140,7 +354,7 @@ Third, there is the risk that our work is interpreted as implying that how someo
 For more detailed discussion of these and other issues see the &ldquo;Limitations and Ethical Considerations&rdquo; section of the paper.</p>
 <h2 id="citation">Citation</h2>
 <p><a href="https://arxiv.org/pdf/2010.02986.pdf">Paper</a></p>
-<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bibtex" data-lang="bibtex"><span style="color:#000">@InProceedings</span><span style="color:#000;font-weight:bold">{</span><span style="color:#f57900">emnlp20demographics</span><span style="color:#000;font-weight:bold">,</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bibtex" data-lang="bibtex"><span style="color:#000">@InProceedings</span><span style="color:#000;font-weight:bold">{</span><span style="color:#f57900">emnlp20demographics</span><span style="color:#000;font-weight:bold">,</span>
 <span style="color:#c4a000">title</span>     <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Compositional Demographic Word Embeddings}</span><span style="color:#000;font-weight:bold">,</span>
 <span style="color:#c4a000">title:</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Compositional Demographic Word Embeddings}</span><span style="color:#000;font-weight:bold">,</span>
 <span style="color:#c4a000">author</span>    <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Welch, Charles and Kummerfeld, Jonathan K. and P{\&#39;e}rez-Rosas, Ver{\&#39;o}nica and Mihalcea, Rada}</span><span style="color:#000;font-weight:bold">,</span>
@@ -152,9 +366,15 @@ For more detailed discussion of these and other issues see the &ldquo;Limitation
 <span style="color:#c4a000">abstract</span>  <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Word embeddings are usually derived from corpora containing text from many individuals, thus leading to general purpose representations rather than individually personalized representations. While personalized embeddings can be useful to improve language model performance and other language processing tasks, they can only be computed for people with a large amount of longitudinal data, which is not the case for new users. We propose a new form of personalized word embeddings that use demographic-specific word representations derived compositionally from full or partial demographic information for a user (i.e., gender, age, location, religion). We show that the resulting demographic-aware word representations outperform generic word representations on two tasks for English: language modeling and word associations. We further explore the trade-off between the number of available attributes and their relative effectiveness and discuss the ethical implications of using them.}</span><span style="color:#000;font-weight:bold">,</span>
 <span style="color:#000;font-weight:bold">}</span>
 </code></pre></div>
+	
+	
+	
+</div>
 
 
-      </main>
+          </main>
+        </div>
+      </div>
       
 <footer class="bg-dark py-5 row d-print-none">
   <div class="container-fluid mx-sm-5">
@@ -289,7 +509,7 @@ For more detailed discussion of these and other issues see the &ldquo;Limitation
 
 
 
-<script src="/js/main.min.da35b82a1ff45cca90044ed24861e456ad09e5523c8cfcdd66939e705b594419.js" integrity="sha256-2jW4Kh/0XMqQBE7SSGHkVq0J5VI8jPzdZpOecFtZRBk=" crossorigin="anonymous"></script>
+<script src="/js/main.min.3b172c13b62c2bea8b1c9d2599cddc8cf89718a92d792c680871c81ba43d8c85.js" integrity="sha256-OxcsE7YsK&#43;qLHJ0lmc3cjPiXGKkteSxoCHHIG6Q9jIU=" crossorigin="anonymous"></script>
 
 
 
