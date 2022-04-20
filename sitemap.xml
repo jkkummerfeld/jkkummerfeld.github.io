@@ -9,7 +9,7 @@
     <lastmod>2022-03-16T15:12:07-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/bio_and_cv/</loc>
-    <lastmod>2022-03-11T09:30:16-05:00</lastmod>
+    <lastmod>2022-04-20T12:43:28-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/students/</loc>
     <lastmod>2021-12-06T10:20:14-05:00</lastmod>
@@ -27,7 +27,7 @@
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/</loc>
-    <lastmod>2021-12-06T10:20:14-05:00</lastmod>
+    <lastmod>2022-04-20T12:43:28-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/advice/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
@@ -104,11 +104,20 @@
     <loc>https://www.jkk.name/reading-notes/old-blog/2020-09-25_crowdqasrl/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
   </url><url>
+    <loc>https://www.jkk.name/reading-notes/coreference/</loc>
+    <lastmod>2022-04-20T12:43:28-04:00</lastmod>
+  </url><url>
+    <loc>https://www.jkk.name/reading-notes/crowdsourcing/</loc>
+    <lastmod>2022-04-20T12:43:28-04:00</lastmod>
+  </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-10-05-deftnn/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-10-13_errordetection/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
+  </url><url>
+    <loc>https://www.jkk.name/reading-notes/diplomacy/</loc>
+    <lastmod>2022-04-20T12:43:28-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-10-30_neuralsequence/</loc>
     <lastmod>2021-11-17T11:00:20-05:00</lastmod>
@@ -117,7 +126,7 @@
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/advice/email/</loc>
-    <lastmod>2022-04-13T08:37:54-04:00</lastmod>
+    <lastmod>2022-04-13T08:42:08-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-11-22_errorrepairparsing/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
@@ -127,6 +136,9 @@
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2018-01-28_crowdassistant/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
+  </url><url>
+    <loc>https://www.jkk.name/reading-notes/exsempar/</loc>
+    <lastmod>2022-04-20T12:43:28-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2018-06-12_parseradaptation/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
@@ -166,6 +178,9 @@
   </url><url>
     <loc>https://www.jkk.name/</loc>
     <lastmod>2022-03-16T15:12:07-04:00</lastmod>
+  </url><url>
+    <loc>https://www.jkk.name/reading-notes/language-models/</loc>
+    <lastmod>2022-04-20T12:43:28-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-11-15_entityvectors/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
@@ -208,6 +223,9 @@
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-11-27_commonsense/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
+  </url><url>
+    <loc>https://www.jkk.name/reading-notes/misc/</loc>
+    <lastmod>2022-04-20T12:43:28-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-11-01_mixtureofexperts/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>

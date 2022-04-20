@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <link rel="stylesheet" href="https://www.jkk.name/plugins/my-custom/css/mycustom.css"><link rel="stylesheet" href="https://www.jkk.name/plugins/academic-icons/css/academicons.css">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.89.3" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Executable Semantic Parsing | Jonathan K. Kummerfeld</title>
+
+
+  <meta name="description" content="Generating code that represents the meaning of text">
+<meta property="og:title" content="Executable Semantic Parsing" />
+<meta property="og:description" content="Generating code that represents the meaning of text" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/exsempar/" /><meta property="article:section" content="reading-notes" />
+
+<meta property="article:modified_time" content="2022-04-20T12:43:28-04:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+
+<meta itemprop="name" content="Executable Semantic Parsing">
+<meta itemprop="description" content="Generating code that represents the meaning of text">
+<meta itemprop="dateModified" content="2022-04-20T12:43:28-04:00" />
+<meta itemprop="wordCount" content="1653">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Executable Semantic Parsing"/>
+<meta name="twitter:description" content="Generating code that represents the meaning of text"/>
+
+
+
+
+<link rel="preload" href="/scss/main.min.098e976d5113d2dd5db369ca3e1b98f01c9e6e4acb8102f6b9902a4826c64e81.css" as="style">
+<link href="/scss/main.min.098e976d5113d2dd5db369ca3e1b98f01c9e6e4acb8102f6b9902a4826c64e81.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+<script
+  src="https://unpkg.com/lunr@2.3.8/lunr.min.js"
+  integrity="sha384-vRQ9bDyE0Wnu+lMfm57BlYLO0/XauFuKpVsZPs7KEDwYKktWi5+Kz3MP8++DFlRY"
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19179423-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+  </head>
+  <body class="td-page">
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m--li">
+  <a href="/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-"><span class="">Jonathan K. Kummerfeld&#39;s Homepage</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-home-li">
+  <a href="/home/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-home"><i class="fas fa-home"></i><span class="">Home</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-bio_and_cv-li">
+  <a href="/bio_and_cv/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-bio_and_cv"><i class="fas fa-male"></i><span class="">Bio &amp; CV</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-students-li">
+  <a href="/students/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-students"><i class="fas fa-users"></i><span class="">Students</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-studentsrecruiting-phd-li">
+  <a href="/students/recruiting-phd/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-studentsrecruiting-phd"><span class="">Recruiting: PhD</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-pubs-li">
+  <a href="/pubs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-pubs"><i class="fas fa-file-alt"></i><span class="">Publications</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-teaching-li">
+  <a href="/teaching/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-teaching"><i class="fas fa-graduation-cap"></i><span class="">Teaching</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-software-li">
+  <a href="/software/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-software"><i class="fas fa-code"></i><span class="">Software</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-data-li">
+  <a href="/data/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-data"><i class="fas fa-database"></i><span class="">Datasets</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-reading-notes-li">
+  <a href="/reading-notes/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-reading-notes"><i class="fas fa-book-reader"></i><span class="">Reading Notes</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notescoreference-li">
+  <a href="/reading-notes/coreference/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notescoreference"><span class="">Coreference Resolution</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notescrowdsourcing-li">
+  <a href="/reading-notes/crowdsourcing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notescrowdsourcing"><span class="">Crowdsourcing and Data Annotation</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesdiplomacy-li">
+  <a href="/reading-notes/diplomacy/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesdiplomacy"><span class="">Diplomacy</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-reading-notesexsempar-li">
+  <a href="/reading-notes/exsempar/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-reading-notesexsempar"><span class="td-sidebar-nav-active-item">Executable Semantic Parsing</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-noteslanguage-models-li">
+  <a href="/reading-notes/language-models/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-noteslanguage-models"><span class="">Language Models</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-reading-notesold-blog-li">
+  <a href="/reading-notes/old-blog/" title="Old Blog Posts" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-reading-notesold-blog"><span class="">Olg Blog Posts</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-09_parsing-autoencoder-li">
+  <a href="/reading-notes/old-blog/2017-10-09_parsing-autoencoder/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-09_parsing-autoencoder"><span class=""> Semantic Parsing with Semi-Supervised Sequential Autoencoders (Kocisky et al., EMNLP 2016)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-12-05_explainingpredictions-li">
+  <a href="/reading-notes/old-blog/2017-12-05_explainingpredictions/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-05_explainingpredictions"><span class="">A causal framework for explaining the predictions of black-box sequence-to-sequence models (Alvarez-Melis et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-16_forumrnn-li">
+  <a href="/reading-notes/old-blog/2017-10-16_forumrnn/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-16_forumrnn"><span class="">A Factored Neural Network Model for Characterizing Online Discussions in Vector Space (Cheng et al., EMNLP 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2019-07-10_disentanglement-li">
+  <a href="/reading-notes/old-blog/2019-07-10_disentanglement/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2019-07-10_disentanglement"><span class="">A Large-Scale Corpus for Conversation Disentanglement (Kummerfeld et al., 2019)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-12-01_nonsequencener-li">
+  <a href="/reading-notes/old-blog/2017-12-01_nonsequencener/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-01_nonsequencener"><span class="">A Local Detection Approach for Named Entity Recognition and Mention Detection (Xu et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2020-10-04_crowdsrl-li">
+  <a href="/reading-notes/old-blog/2020-10-04_crowdsrl/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-10-04_crowdsrl"><span class="">A Novel Workflow for Accurately and Efficiently Crowdsourcing Predicate Senses and Argument Labels (Jiang, et al., Findings of EMNLP 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-12-12_multidomainwordvector-li">
+  <a href="/reading-notes/old-blog/2017-12-12_multidomainwordvector/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-12_multidomainwordvector"><span class="">A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings (Yang et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-16_ucca-li">
+  <a href="/reading-notes/old-blog/2017-11-16_ucca/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-16_ucca"><span class="">A Transition-Based Directed Acyclic Graph Parser for UCCA (Hershcovich et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-17_twostagediscourseparsing-li">
+  <a href="/reading-notes/old-blog/2017-11-17_twostagediscourseparsing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-17_twostagediscourseparsing"><span class="">A Two-Stage Parsing Method for Text-Level Discourse Analysis (Wang et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-29_abstractivesummarisation-li">
+  <a href="/reading-notes/old-blog/2017-11-29_abstractivesummarisation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-29_abstractivesummarisation"><span class="">Abstractive Document Summarization with a Graph-Based Attentional Neural Model (Tan et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-18_neuralamr-li">
+  <a href="/reading-notes/old-blog/2017-10-18_neuralamr/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-18_neuralamr"><span class="">Addressing the Data Sparsity Issue in Neural AMR Parsing (Peng et al., EACL 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2018-04-16_lm_analysis-li">
+  <a href="/reading-notes/old-blog/2018-04-16_lm_analysis/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-04-16_lm_analysis"><span class="">An Analysis of Neural Language Modeling at Multiple Scales (Merity et al., 2018)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2019-09-22_conferenceapproach-li">
+  <a href="/reading-notes/old-blog/2019-09-22_conferenceapproach/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2019-09-22_conferenceapproach"><span class="">Approaching Conferences</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-07_spineparsinglstm-li">
+  <a href="/reading-notes/old-blog/2017-11-07_spineparsinglstm/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-07_spineparsinglstm"><span class="">Arc-Standard Spinal Parsing with Stack-LSTMs (Ballesteros et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-20_onlyattention-li">
+  <a href="/reading-notes/old-blog/2017-10-20_onlyattention/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-20_onlyattention"><span class="">Attention Is All You Need (Vaswani et al., ArXiv 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-21_multiinputattention-li">
+  <a href="/reading-notes/old-blog/2017-11-21_multiinputattention/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-21_multiinputattention"><span class="">Attention Strategies for Multi-Source Sequence-to-Sequence Learning (Libovicky et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2020-09-03_checklist-li">
+  <a href="/reading-notes/old-blog/2020-09-03_checklist/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-09-03_checklist"><span class="">Beyond Accuracy: Behavioral Testing of NLP Models with CheckList (Ribeiro, et al., ACL 2020 Best Paper)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2020-09-07_chartdialogs-li">
+  <a href="/reading-notes/old-blog/2020-09-07_chartdialogs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-09-07_chartdialogs"><span class="">ChartDialogs: Plotting from Natural Language Instructions (Shao and Nakashole, ACL 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2020-10-10_demographicembeddings-li">
+  <a href="/reading-notes/old-blog/2020-10-10_demographicembeddings/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-10-10_demographicembeddings"><span class="">Compositional Demographic Word Embeddings (Welch et al., EMNLP 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2020-09-25_crowdqasrl-li">
+  <a href="/reading-notes/old-blog/2020-09-25_crowdqasrl/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-09-25_crowdqasrl"><span class="">Controlled Crowdsourcing for High-Quality QA-SRL Annotation (Roit, et al., ACL 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-05-deftnn-li">
+  <a href="/reading-notes/old-blog/2017-10-05-deftnn/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-05-deftnn"><span class="">DeftNN: Addressing Bottlenecks for DNN Execution on GPUs via Synapse Vector Elimination and Near-compute Data Fission (Hill et al., MICRO 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-13_errordetection-li">
+  <a href="/reading-notes/old-blog/2017-10-13_errordetection/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-13_errordetection"><span class="">Detecting annotation noise in automatically labelled data (Rehbein and Ruppenhofer, ACL 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-30_neuralsequence-li">
+  <a href="/reading-notes/old-blog/2017-10-30_neuralsequence/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-30_neuralsequence"><span class="">Dynamic Evaluation of Neural Sequence Models (Krause et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-24_dynamictransition-li">
+  <a href="/reading-notes/old-blog/2017-10-24_dynamictransition/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-24_dynamictransition"><span class="">Dynamic Programming Algorithms for Transition-Based Dependency Parsers (Kuhlmann et al., ACL 2011)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-22_errorrepairparsing-li">
+  <a href="/reading-notes/old-blog/2017-11-22_errorrepairparsing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-22_errorrepairparsing"><span class="">Error-repair Dependency Parsing for Ungrammatical Texts (Sakaguchi et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2018-09-04_featureengineering-li">
+  <a href="/reading-notes/old-blog/2018-09-04_featureengineering/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-09-04_featureengineering"><span class="">Evaluating the Utility of Hand-crafted Features in Sequence Labelling (Minghao Wu et al., 2018)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2018-01-28_crowdassistant-li">
+  <a href="/reading-notes/old-blog/2018-01-28_crowdassistant/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-01-28_crowdassistant"><span class="">Evorus: A Crowd-powered Conversational Assistant Built to Automate Itself Over Time (Huang et al., 2018)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2018-06-12_parseradaptation-li">
+  <a href="/reading-notes/old-blog/2018-06-12_parseradaptation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-06-12_parseradaptation"><span class="">Extending a Parser to Distant Domains Using a Few Dozen Partially Annotated Examples (Vidur Joshi et al., 2018)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-06-madlibs-li">
+  <a href="/reading-notes/old-blog/2017-10-06-madlibs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-06-madlibs"><span class="">Filling the Blanks (hint: plural noun) for Mad Libs Humor (Hossain et al., EMNLP 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-09_framesdataset-li">
+  <a href="/reading-notes/old-blog/2017-11-09_framesdataset/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-09_framesdataset"><span class="">Frames: a corpus for adding memory to goal-oriented dialogue systems (El Asri et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-12_amralignment-li">
+  <a href="/reading-notes/old-blog/2017-10-12_amralignment/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-12_amralignment"><span class="">Getting the Most out of AMR Parsing (Wang and Xue, EMNLP 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-11_multimt-li">
+  <a href="/reading-notes/old-blog/2017-10-11_multimt/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-11_multimt"><span class="">Google&#39;s Multilingual Neural Machine Translation System: Enabling Zero-Shot Translation (Johnson et al., TACL 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-12-07_rarewordvectors-li">
+  <a href="/reading-notes/old-blog/2017-12-07_rarewordvectors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-07_rarewordvectors"><span class="">High-risk learning: acquiring new word vectors from tiny data (Herbelot et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2020-12-10_dynamicannoallocation-li">
+  <a href="/reading-notes/old-blog/2020-12-10_dynamicannoallocation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-12-10_dynamicannoallocation"><span class="">Improving Human-Labeled Data through Dynamic Automatic Conflict Resolution (Sun, et al., CoLing 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2020-09-29_pretraininglm-li">
+  <a href="/reading-notes/old-blog/2020-09-29_pretraininglm/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-09-29_pretraininglm"><span class="">Improving Low Compute Language Modeling with In-Domain Embedding Initialisation (Welch, Mihalcea, and Kummerfeld, EMNLP 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-14_inorderparsing-li">
+  <a href="/reading-notes/old-blog/2017-11-14_inorderparsing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-14_inorderparsing"><span class="">In-Order Transition-based Constituent Parsing (Liu et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2020-10-12_taboo-li">
+  <a href="/reading-notes/old-blog/2020-10-12_taboo/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2020-10-12_taboo"><span class="">Iterative Feature Mining for Constraint-Based Data Collection to Increase Data Diversity and Model Robustness (Larson, et al., EMNLP 2020)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-30_taggingrelations-li">
+  <a href="/reading-notes/old-blog/2017-11-30_taggingrelations/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-30_taggingrelations"><span class="">Joint Extraction of Entities and Relations Based on a Novel Tagging Scheme (Zheng et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-03_discourserelations-li">
+  <a href="/reading-notes/old-blog/2017-11-03_discourserelations/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-03_discourserelations"><span class="">Joint Modeling of Content and Discourse Relations in Dialogues (Qin et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-15_entityvectors-li">
+  <a href="/reading-notes/old-blog/2017-11-15_entityvectors/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-15_entityvectors"><span class="">Learning Distributed Representations of Texts and Entities from Knowledge Base (Yamada et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-08_graphdialogue-li">
+  <a href="/reading-notes/old-blog/2017-11-08_graphdialogue/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-08_graphdialogue"><span class="">Learning Symmetric Collaborative Dialogue Agents with Dynamic Knowledge Graph Embeddings (He et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2018-03-05_curriculum-li">
+  <a href="/reading-notes/old-blog/2018-03-05_curriculum/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2018-03-05_curriculum"><span class="">Learning the Curriculum with Bayesian Optimization for Task-Specific Word Representation Learning (Tsvetkov et al., 2016)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-19_mace-li">
+  <a href="/reading-notes/old-blog/2017-10-19_mace/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-19_mace"><span class="">Learning Whom to Trust with MACE (Hovy et al., NAACL 2013)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-10_kginlstm-li">
+  <a href="/reading-notes/old-blog/2017-11-10_kginlstm/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-10_kginlstm"><span class="">Leveraging Knowledge Bases in LSTMs for Improving Machine Reading (Yang et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-23_alphagozero-li">
+  <a href="/reading-notes/old-blog/2017-10-23_alphagozero/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-23_alphagozero"><span class="">Mastering the game of Go without human knowledge (Silver et al., Nature 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-06_literarycharacters-li">
+  <a href="/reading-notes/old-blog/2017-11-06_literarycharacters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-06_literarycharacters"><span class="">Mr. Bennet, his coachman, and the Archbishop walk into a bar but only one of them gets recognized: On The Difficulty of Detecting Characters in Literary Texts (Vala et al., 2015)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-26_multimodalwordembeddings-li">
+  <a href="/reading-notes/old-blog/2017-10-26_multimodalwordembeddings/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-26_multimodalwordembeddings"><span class="">Multimodal Word Distributions (Athiwaratkun and Wilson, 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-10-17_nedisambiguation-li">
+  <a href="/reading-notes/old-blog/2017-10-17_nedisambiguation/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-10-17_nedisambiguation"><span class="">Named Entity Disambiguation for Noisy Text (Eshel et al., CoNLL 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-11-13_languagegame-li">
+  <a href="/reading-notes/old-blog/2017-11-13_languagegame/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-11-13_languagegame"><span class="">Natural Language Does Not Emerge &#39;Naturally&#39; in Multi-Agent Dialog (Kottur et al., 2017)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-reading-notesold-blog2017-12-05_multidomainparsing-li">
+  <a href="/reading-notes/old-blog/2017-12-05_multidomainparsing/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesold-blog2017-12-05_multidomainparsing"><span class="">Neural Semantic Parsing over Multiple Knowledge-bases (Herzig et al., 2017)</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-reading-notesmisc-li">
+  <a href="/reading-notes/misc/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-reading-notesmisc"><span class="">Other</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-advice-li">
+  <a href="/advice/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-advice"><i class="fas fa-comment"></i><span class="">Advice</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-adviceposters-li">
+  <a href="/advice/posters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-adviceposters"><span class="">Academic Posters</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-adviceemail-li">
+  <a href="/advice/email/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-adviceemail"><span class="">Email Clients</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-group-management-li">
+  <a href="/group-management/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-group-management"><i class="fas fa-book"></i><span class="">Group Policies</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-sponsor-li">
+  <a href="/sponsor/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-sponsor"><i class="fas fa-dollar-sign"></i><span class="">Sponsors</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-contact-li">
+  <a href="/contact/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-contact"><i class="fas fa-phone"></i><span class="">Contact</span></a>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+
+
+
+<input
+  type="search"
+  class="form-control td-search-input"
+  placeholder="&#xf002; Search this site…"
+  aria-label="Search this site…"
+  autocomplete="off"
+  
+  data-offline-search-index-json-src="/offline-search-index.874112a2244c1c880ae1c183a52f5ab4.json"
+  data-offline-search-base-href="/"
+  data-offline-search-max-results="10"
+>
+
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  </div>
+
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            
+  
+  
+  
+  
+  
+  
+  <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+  
+  
+  </div>
+
+
+            
+
+
+<div class="td-toc"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#models">Models</a>
+      <ul>
+        <li><a href="#general-code">General Code</a></li>
+        <li><a href="#sql">SQL</a></li>
+        <li><a href="#visualisation">Visualisation</a></li>
+        <li><a href="#regular-expressions">Regular Expressions</a></li>
+      </ul>
+    </li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#human-in-the-loop">Human-in-the-Loop</a>
+      <ul>
+        <li><a href="#sql-1">SQL</a></li>
+        <li><a href="#other">Other</a></li>
+        <li><a href="#without-language">Without Language</a></li>
+      </ul>
+    </li>
+    <li><a href="#evaluation">Evaluation</a></li>
+    <li><a href="#data">Data</a>
+      <ul>
+        <li><a href="#text-to-sql">Text to SQL</a></li>
+        <li><a href="#regular-expressions-1">Regular Expressions</a></li>
+        <li><a href="#general-purpose-languages">General Purpose Languages</a></li>
+        <li><a href="#visulisation">Visulisation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+
+
+
+            
+
+	
+		
+			
+		
+		
+
+
+
+  
+  
+
+	
+		
+			
+		
+		
+
+
+
+  
+  
+
+	
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            
+  
+
+            
+
+            
+<div class="td-content">
+	<h1>Executable Semantic Parsing</h1>
+	<div class="lead">Generating code that represents the meaning of text</div>
+	<header class="article-meta">
+		
+		
+			
+				
+
+
+			
+				
+
+
+			
+		
+		
+	</header>    
+	<h2 id="models">Models</h2>
+<h3 id="general-code">General Code</h3>
+<p>Large language models have been applied to code generation, using the prompt basead approach (e.g., <a href="https://arxiv.org/pdf/2107.03374.pdf">Codex</a> and <a href="https://arxiv.org/pdf/2108.07732.pdf">Austin et al. (arXiv 2021)</a>).
+Fine-tuning improves performance, even with a tiny number of samples, and sampling many outputs then filtering is critical to success (keeping outputs that behave correctly on sample input-output pairs).
+<a href="https://storage.googleapis.com/deepmind-media/AlphaCode/competition_level_code_generation_with_alphacode.pdf">AlphaCode</a> introduced a refinement to this inference process, training a separate model to generate sample inputs and then clustering generated programs based on how they behave with the generated inputs.
+Solutions are sampled from across these clusters, ensuring diversity in behaviour.
+For web code (HTML, CSS, Javascript), <a href="https://dl.acm.org/doi/10.1145/3474349.3480209">Jiang et al. (UIST 2021)</a> used prompt based methods to generate small snippets of code.</p>
+<h3 id="sql">SQL</h3>
+<h3 id="visualisation">Visualisation</h3>
+<p>For the constrained domain of plot generation, <a href="https://aclanthology.org/2021.acl-long.169">Chen et al. (ACL 2021)</a>, proposed a model that combines LSTM encoding and attention to predict a single plot command and the relevant arguments.
+Their focus was on choosing the parts of a dataframe to plot and the type of plot.
+Interestingly, BERT did not help, probably because the language in their setting was different - the text associated with code notebooks.
+Complete program accuracy is around 56%, though another ~7% of cases are semantically correct, and another ~28% are difficult to answer due to missing content in the language or code context (based on manual analysis, no human results are given for the task).</p>
+<p>For the style of plots, <a href="https://aclanthology.org/2020.acl-main.328">Shao and Nakashole (ACL 2020)</a>, showed that the generation problem can be formulated as slot-extraction based task-oriented dialogue.
+Each slot corresponds to a property of the figure.
+They also released a demonstration that includes some personalisation by remembering previous slot values and continuous learning by asking users which of a k-best set of options is right <a href="https://aclanthology.org/2021.naacl-demos.11">(Wang et al., NAACL 2021)</a>.</p>
+<h3 id="regular-expressions">Regular Expressions</h3>
+<p>Most work in NLP treats this task like translation, mapping a string to another string, sometimes with grammatical constraints.
+<a href="https://aclanthology.org/2020.tacl-1.44">Xi et al. (TACL 2020)</a> draw on the program synthesis literatures to consider how examples can inform the generation process.
+They have a NLP-style model (either grammar based or neural), but rather than generating code directly, it generates a sketch of the code.
+That sketch then constrains a search in the space of programs for one that satisfies the sketch and a set of example input-output pairs (in their case, regex).
+To train without annotations of sketches, they search for the best sketch that agrees with the target program.
+This almost solves KB13 and Turk (96.3% and 98.9% accuracy) when given 20 examples (10 positive, 10 negative), but the Stackoverflow data remains challenging.</p>
+<h2 id="training">Training</h2>
+<p><a href="https://aclanthology.org/2021.emnlp-main.466.pdf">Gupta et al. (EMNLP 2021)</a> proposed a new learning objective to encourage consistency in program outputs (in their case for neural module networks).
+The idea is to improve performance by encouraging semantically similar spans of text to be converted into the same code.
+We can identify suitable pairs in several ways, with the best being either templates to augment training data or identifying semantically similar spans in existing questions.</p>
+<h2 id="human-in-the-loop">Human-in-the-Loop</h2>
+<h3 id="sql-1">SQL</h3>
+<p>One approach for incorporating human effort is to show the user the generated program or a description of it and ask for feedback. If the feedback is in natural language, we then need a model to interpret it and make a suitable update to the query.
+<a href="https://aclanthology.org/2020.acl-main.187.pdf">Elgohary et al. (ACL 2020)</a> developed a dataset based on Spider for text-to-SQL experiments with this kind of updating.
+Using existing models, the accuracy of queries produced is higher than without feedback, but far below human accuracy.
+Their follow up paper <a href="https://aclanthology.org/2021.naacl-main.444.pdf">Elgohary et al. (NAACL 2021)</a>, improved results by modeling edits as a series of smaller transofmrations, and also using synthetic data at the start of training.
+The value of interaction is smaller for better text-to-SQL systems (both relative and absolute), though still significant (e.g. improving RAT-SQL by 4.3 points).
+<a href="https://keisuke-sakaguchi.github.io/assets/pdf/2022_imlw_interscript.pdf">Tandon et al. (Workshop at AAAI, 2022)</a> constructed a dataset for script learning (a series of natural langauge steps to achieve a goal) with corrections described by people and the script before and after correction.</p>
+<p>Another approach is to dsign UI components that allow users to identify and correct aspects of the model&rsquo;s interpretation.
+<a href="https://dl.acm.org/doi/pdf/10.1145/3397481.3450667">Narechania et al. (IUI 2021)</a> built a system in which the user is shown the mapping from words in their query to table names and actions, with menus of alternatives that they can select.
+To aid the process, the UI also shows users a small sample of the dataset, selected to illustrate the impact of components of the query (e.g., either case for a WHERE condition), with a breakdown of the impacts of each step of the query.
+A user study showed positive opinions, but they did not measure how frequently it solves model outputs (as Elgohary&rsquo;s work above does).</p>
+<h3 id="other">Other</h3>
+<p>For prompt-based models, <a href="https://arxiv.org/pdf/2108.07732.pdf">Austin et al. (arXiv 2021)</a> showed that interaction can work, with clear short clarifications from users leading the model to make suitable updates.</p>
+<h3 id="without-language">Without Language</h3>
+<p>Program synthesis is a closely related field with a long history.
+The key difference between that work and the work in NLP is that the input is not in natural language.
+So far, most work in NLP has not connected to that literature, but there is great scope for using it in systems and data collection.</p>
+<p>In programming by example (PBE), the desired program is expressed by providing examples of what the user wants.
+Systems generate programs that satisfy the examples, rank them by some criteria, and interact with users to work out the correct one.
+<a href="https://web.eecs.umich.edu/~xwangsd/pubs/uist20.pdf">Zhang et al. (UIST 2020)</a> proposed a few ways to help this refinement process:
+(1) allow users to label parts of their examples (e.g. for RegEx generation, say a character is part of a class of possibilities like digits),
+(2) generate new examples that are close to the provided ones, but capture important variations that can distinguish between potential programs.
+For (2), they also use clustering to group the generated examples for rapid reading.
+However, those ideas still leave the actual synthesis process as a black box.
+Their next paper, <a href="https://web.eecs.umich.edu/~xwangsd/pubs/chi21.pdf">Zhang et al. (CHI 2021)</a>, visualises the synthesis process in three ways.
+Most interestingly, they present the search tree over regular expressions and allow users to mark particular paths to be avoided or tried first.
+This format compactly captures the search, providing a picture of what the system is doing and a natural way to influence it.</p>
+<p>For visualisations, <a href="https://arxiv.org/pdf/2102.01024.pdf">Wang et al. (CHI 2021)</a> built a system where users specify examples of how data should be used to make points in a plot and then synthesis methods infer the general transformation needed.</p>
+<p>For spreadsheets, <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/popl11-synthesis.pdf">FlashFill</a> is the classic example, generating string manipulation code in Excel based on a single user example.
+<a href="http://proceedings.mlr.press/v139/chen21m/chen21m.pdf">Chen et al. (ICML 2021)</a> developed a neural approach (transformer encoder, LSTM decoder) for generation that considers more context and generates formulas in Google Sheets that cover operations beyond string manipulation.</p>
+<h2 id="evaluation">Evaluation</h2>
+<p>For program generation, splitting the data into train and test sets can be tricky depending on what we are aiming to measure.
+A random split of the set of (utterance, program) examples could lead to a situation where the same programs appear in the train and test sets, just with different variables <a href="https://aclanthology.org/P18-1033.pdf">(Finegan-Dollak et al., ACL 2018)</a>.
+Splitting radnomly based on programs could create the situation where some symbols are not seen in training.
+<a href="https://arxiv.org/pdf/2201.05899.pdf">Bogin et al. (arXiv 2022)</a> showed that models have most difficulty with unseen structures.
+If a structure has been seen, just with a different symbol, then models can learn the substitution.
+Their measurement of program similarity correlates with system performance across a range of models (and does so better than their prior work on Partial COmponent Match <a href="https://aclanthology.org/2021.nlp4prog-1.9.pdf">(Hazoom et al. NLP4Prog 2021)</a>.</p>
+<p>Most work in NLP focuses on accuracy of models for these tasks.
+Once those models are integrated into user interfaces, we also need to evaluate the overall effectiveness of the system.</p>
+<h2 id="data">Data</h2>
+<h3 id="text-to-sql">Text to SQL</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Task</th>
+<th>Source</th>
+<th>Train / Dev / Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/jkkummerfeld/text2sql-data/">Academic, Advising, ATIS, Geography, Restaurants, Scholar, Spider (train), IMDB, Yelp, WikiSQL</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://yale-lily.github.io/spider">Spider</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ygan/Spider-DK">Spider-DK</a></td>
+<td>SQL for query</td>
+<td>Spider with queries selected or modified to require domain knowledge</td>
+<td>- / 535 / -</td>
+</tr>
+<tr>
+<td><a href="https://github.com/MSR-LIT/Splash">Splash</a></td>
+<td>Fix SQL given a query and a request</td>
+<td>Spider with queries generated from a model and correction requests written by people</td>
+<td>7,481 / 871 / 962</td>
+</tr>
+<tr>
+<td><a href="https://yale-lily.github.io/cosql">CoSQL</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://yale-lily.github.io/sparc">SParC</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/salesforce/WikiSQL">WikiSQL</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset">StaQC</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/hirupert/sede">SEDE</a></td>
+<td>SQL for query</td>
+<td>Stack Exchange Data Explorer user questions and T-SQL queries</td>
+<td>10,309 / 1,714</td>
+</tr>
+<tr>
+<td><a href="https://github.com/wangpinggl/TREQS">MIMICSQL</a></td>
+<td>SQL for query</td>
+<td>Questions are auto-generated, filtered, and rephrased</td>
+<td>8,000 / 1,000 / 1,000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="regular-expressions-1">Regular Expressions</h3>
+<p><a href="https://github.com/xiye17/SketchRegex/tree/master/DeepSketch/datasets">https://github.com/xiye17/SketchRegex/tree/master/DeepSketch/datasets</a> contains:</p>
+<ul>
+<li>Stackoverflow, collect from posts, including example inputs, from <a href="https://aclanthology.org/2020.tacl-1.44">Xi et al. (TACL 2020)</a></li>
+<li>Turk, auto-generate with a synchronous grammar, then paraphrase, from <a href="https://aclanthology.org/D16-1197/">Locascio et al. (EMNLP 2016)</a></li>
+<li>KB13, crowd workers write descriptions of a set of lines, others write regex for the descriptions, from <a href="https://aclanthology.org/N13-1103/">Kushman and Barzilay, (NAACL 2013)</a></li>
+</ul>
+<h3 id="general-purpose-languages">General Purpose Languages</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Task</th>
+<th>Source</th>
+<th>Train / Dev / Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://conala-corpus.github.io/">CoNaLa</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://ahcweb01.naist.jp/pseudogen/">Pseudogen</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/LittleYUYU/StackOverflow-Question-Code-Dataset">StaQC</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/EdinburghNLP/code-docstring-corpus">code-docstring-corpus</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sriniiyer/codenn">CodeNN</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/xing-hu/EMSE-DeepCom">EMSE-DeepCom</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://leclair.tech/data/funcom/">FunCom</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sriniiyer/concode">CONCODE</a></td>
+<td>Generate a Java class method given a description of the method and the rest of the class definition</td>
+<td>Github repositories</td>
+<td>100,000 / 2,000 / 2,000</td>
+</tr>
+<tr>
+<td><a href="https://github.com/rajasagashe/juice">JuICe</a></td>
+<td>Given the text above a cell and earlier context, predict the contents of the cell</td>
+<td>Python notebooks</td>
+<td>1,518,049 / 1,744 / 1,981</td>
+</tr>
+<tr>
+<td><a href="https://github.com/microsoft/Okapi">Okapi</a></td>
+<td>Generate an API call based on a request. Benchmarks focus on handling longer or unseen structures.</td>
+<td>Auto-generated APIs, people wrote sentences for them, people paraphrased</td>
+<td>22,628</td>
+</tr>
+<tr>
+<td><a href="https://github.com/deepmind/code_contests">CodeContests</a></td>
+<td>Solve programming competition problems</td>
+<td>Various</td>
+<td>13,328 / 117 / 165</td>
+</tr>
+<tr>
+<td><a href="https://github.com/openai/human-eval">HumanEval</a></td>
+<td>Generate Python code given a function name, arguments, and docstring</td>
+<td>GitHub</td>
+<td>164</td>
+</tr>
+<tr>
+<td><a href="https://github.com/google-research/google-research/tree/master/mbpp">MBPP</a></td>
+<td>Generate Python code given a task description and three test cases</td>
+<td>Crowdsourced</td>
+<td>974</td>
+</tr>
+<tr>
+<td><a href="https://github.com/google/trax/blob/master/trax/examples/MathQA_Python_generation_notebook.ipynb">MathQA-Python</a></td>
+<td>Generate Python code to solve a maths problem phrased as a paragraph</td>
+<td>19,209 / 2,822 / 1,883</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="visulisation">Visulisation</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Task</th>
+<th>Source</th>
+<th>Train / Dev / Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/jungyhuk/plotcoder">PlotCoder</a></td>
+<td></td>
+<td>Derived from <a href="https://github.com/rajasagashe/juice">JuICe</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://github.com/sythello/ChartDialog">ChartDialog</a></td>
+<td></td>
+<td>One worker describes a target plot and another sets parameters to achieve it</td>
+<td>3,200</td>
+</tr>
+</tbody>
+</table>
+
+	
+	
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-6 col-sm-4 text-xs-center order-sm-2">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Email" aria-label="Email">
+    <a class="text-white" target="_blank" rel="noopener" href="mailto:jonathan.kummerfeld@sydney.edu.au" aria-label="Email">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/jkkummerfeld" aria-label="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
+    <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-6 col-sm-4 text-right text-xs-center order-sm-3">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" rel="noopener" href="https://github.com/jkkummerfeld" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ACL Anthology" aria-label="ACL Anthology">
+    <a class="text-white" target="_blank" rel="noopener" href="https://aclanthology.org/anthology/people/j/jonathan-k-kummerfeld/" aria-label="ACL Anthology">
+      <i class="icon icon-acl-logo"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Semantic Scholar" aria-label="Semantic Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://semanticscholar.org/author/Jonathan-K.-Kummerfeld/1727211" aria-label="Semantic Scholar">
+      <i class="ai ai-semantic-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Google Scholar" aria-label="Google Scholar">
+    <a class="text-white" target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=OsoNG9AAAAAJ" aria-label="Google Scholar">
+      <i class="ai ai-google-scholar"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="DBLP" aria-label="DBLP">
+    <a class="text-white" target="_blank" rel="noopener" href="https://dblp.uni-trier.de/pers/hd/k/Kummerfeld:Jonathan_K=" aria-label="DBLP">
+      <i class="ai ai-dblp"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="ArXiv" aria-label="ArXiv">
+    <a class="text-white" target="_blank" rel="noopener" href="https://arxiv.org/a/kummerfeld_j_1" aria-label="ArXiv">
+      <i class="ai ai-arxiv"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="OrcID" aria-label="OrcID">
+    <a class="text-white" target="_blank" rel="noopener" href="https://orcid.org/0000-0001-5030-3016" aria-label="OrcID">
+      <i class="ai ai-orcid"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+      </div>
+      <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
+        <small class="text-white">&copy; 2022 Jonathan K. Kummerfeld All Rights Reserved</small>
+        
+	
+		
+	
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
+
+
+
+<script src='/js/tabpane-persist.js'></script>
+
+
+
+
+ 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.css" integrity="sha384-Cqd8ihRLum0CCg8rz0hYKPoLZ3uw+gES2rXQXycqnL5pgVQIflxAUDS7ZSjITLb5" crossorigin="anonymous">
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/katex.min.js" integrity="sha384-1Or6BdeNQb0ezrmtGeqQHFpppNd7a/gw29xeiSikBbsb44xu3uAo8c7FwbF5jhbd" crossorigin="anonymous"></script>
+ 
+
+
+<script defer src='https://cdn.jsdelivr.net/npm/katex@0.13.2/dist/contrib/auto-render.min.js' integrity='sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl' crossorigin='anonymous' onload='renderMathInElement(document.body, null);'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.min.3b172c13b62c2bea8b1c9d2599cddc8cf89718a92d792c680871c81ba43d8c85.js" integrity="sha256-OxcsE7YsK&#43;qLHJ0lmc3cjPiXGKkteSxoCHHIG6Q9jIU=" crossorigin="anonymous"></script>
+
+
+
+
+  </body>
+</html>
