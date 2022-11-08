@@ -26,12 +26,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.jkk.name/advice/email/" /><meta property="article:section" content="advice" />
 
-<meta property="article:modified_time" content="2022-09-17T11:03:50+10:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta property="article:modified_time" content="2022-10-17T16:42:38+11:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
 
 <meta itemprop="name" content="Email Clients">
 <meta itemprop="description" content="Notes on my search for an email client">
-<meta itemprop="dateModified" content="2022-09-17T11:03:50+10:00" />
-<meta itemprop="wordCount" content="1004">
+<meta itemprop="dateModified" content="2022-10-17T16:42:38+11:00" />
+<meta itemprop="wordCount" content="1485">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Email Clients"/>
 <meta name="twitter:description" content="Notes on my search for an email client"/>
@@ -244,7 +244,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.3cf46e68b3484cb4f424b59e286e44d2.json"
+  data-offline-search-index-json-src="/offline-search-index.a2dbdf8063dd716a0937ed3e63ef5518.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -269,7 +269,13 @@ if (!doNotTrack) {
   <ul>
     <li><a href="#iphone-apps">iPhone Apps</a></li>
     <li><a href="#desktop-app">Desktop App</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#conclusion">Conclusion</a>
+      <ul>
+        <li><a href="#original-april-2022">Original (April 2022):</a></li>
+        <li><a href="#update-september-2022">Update (September 2022):</a></li>
+        <li><a href="#update-november-2022">Update (November 2022):</a></li>
+      </ul>
+    </li>
     <li><a href="#bonus-calendar-apps">Bonus: Calendar Apps</a></li>
   </ul>
 </nav></div>
@@ -430,16 +436,19 @@ The screenshots show how each app displays a new conversation with three unread 
 <div style="float: left">TypeApp <br /><img src="typeapp-list.PNG" alt="typeapp Message List" style="padding:5px" width="200px" />  </div>
 </div>
 <h2 id="desktop-app">Desktop App</h2>
-<p>Immediate disqualifying factors:</p>
+<p>Common issues:</p>
 <ul>
-<li>Did not support an Office365 account with Oauth2: Boxy, Geary, Gmail, Hey, Kiwi, MailPlane, Mailtab, Mailspring, Mimestream, Postbox, Superhuman</li>
-<li>I had issues connecting to Office365: Zoho</li>
-<li>Don&rsquo;t like the approach: Mail Pilot, MailMate, Shift, Spike, Unibox</li>
-<li>Does not support any / enough gmail shortcuts: Apple Mail, Bluemail, Hiri, MailTrim, Outlook (desktop app), Thunderbird, TwoBird, TypeApp, eM Client</li>
-<li>Too expensive: InTheLoop, Missive, PolyMail</li>
+<li>Did not support an Office365 account with Oauth2: Airmail (got it to work in April, but not in September), Boxy, Geary, Gmail, Hey, Kiwi, MailPlane, Mailtab, Mimestream, Postbox, Superhuman</li>
+<li>I had issues connecting to Office365: Zoho, Loop</li>
+<li>Don&rsquo;t like the approach / more for team email management: Mail Pilot, MailMate, Shift, Spike, Unibox, Front, Helpwise</li>
+<li>Too expensive: Loop, Mailspring, Missive, PolyMail</li>
+<li>Does not support any / enough gmail shortcuts: Apple Mail, Bluemail, Hiri, MailTrim, Outlook (desktop app), Thunderbird, TwoBird, TypeApp</li>
 <li>Doesn&rsquo;t have a way to show the message list with one line per message: Spark, Canary Mail, Airmail (only has it as a legacy theme with font that is too small for me)</li>
 </ul>
-<p>Only three remain:</p>
+<p>Originally, the list above immediately disqualified those options.
+However, after 5 months of use, I have discovered a feature that is so critical I will give up other requirements: reminding me if a message has not received a reply.
+There is an extension for Outlook that provides this, but it costs $15 / month (Boomerang).</p>
+<p>My notes on the remaining apps are below, with three groups: (1) top contenders, (2) have some sort of irritating property, (3) have a problem that immediately rules them out for me.</p>
 <table>
 <thead>
 <tr>
@@ -450,27 +459,70 @@ The screenshots show how each app displays a new conversation with three unread 
 </thead>
 <tbody>
 <tr>
-<td>Edison Mail</td>
-<td>- Templates messages with to-be-filled slots.<br /> - Has an option for larger text.<br /> - Clean UI.</td>
-<td>- <strong>No snooze.</strong><br /> - Reads email to inform trading (opt-out exists, but its unclear how it interacts with the privacy policy).</td>
+<td>Mailspring</td>
+<td>- <strong>Remind if no response.</strong> <br />- Can show messages as a list with one line per message.  <br /> - Gmail shortcuts.  <br /> - Entire interface scales nicely to have bigger text.  <br /> - Clean UI.  <br />- Template messages with to-be-filled slots.  <br /> - Swipe actions.</td>
+<td>-<strong>Syncing issues</strong><br />- Expensive ($96 / year).</td>
 </tr>
 <tr>
 <td>Newton</td>
-<td>- Templates.<br /> - Entire interface scales nicely to have bigger text.<br /> - Clean UI.<br /> - Remind if no response.</td>
+<td>- <strong>Remind if no response.</strong><br /> - Can show messages as a list with one line per message.  <br /> - Gmail shortcuts.  <br /> - Entire interface scales nicely to have bigger text.  <br /> - Clean UI.  <br /> - Templates.</td>
 <td>- When moving up/down in the message list, if you go off the screen it doesn&rsquo;t scroll.</td>
 </tr>
 <tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Missive</td>
+<td>- <strong>Remind if no response.</strong><br /> - Gmail shortcuts.<br /> - Swipe actions.<br /> - Has an option for larger text.</td>
+<td>- Expensive.<br />- Doesn’t have a way to show the message list with one line per message.</td>
+</tr>
+<tr>
+<td>Polymail</td>
+<td>- <strong>Remind if no response.</strong><br /> - Gmail shortcuts.<br /> - Swipe actions.<br /> - Template messages with to-be-filled slots.<br /> - Entire interface scales nicely to have bigger text.</td>
+<td>- Expensive.<br /> - Doesn’t have a way to show the message list with one line per message.</td>
+</tr>
+<tr>
 <td>Outlook (web)</td>
-<td>- Templates.<br />- Create a quick poll, including one for meeting scheduling.<br /> - Entire interface scales nicely to have bigger text.</td>
+<td>- Can show messages as a list with one line per message.<br /> - Gmail shortcuts.<br /> - Templates.<br />- Create a quick poll, including one for meeting scheduling.<br /> - Entire interface scales nicely to have bigger text.</td>
 <td>- Does not support &lsquo;x&rsquo; to select messages in the inbox.<br />- Can only snooze messages in the inbox.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>eM Client</td>
+<td>- <strong>Remind if no response.</strong><br />- Can show messages as a list with one line per message.<br /> - Can customise shortcuts to match gmail.<br />- Nice control of font sizes.<br /> - Clean UI.</td>
+<td>- <strong>Repeats content in conversations rather than cutting off each message.</strong></td>
+</tr>
+<tr>
+<td>Spark</td>
+<td>- <strong>Remind if no response.</strong><br /> - Gmail shortcuts.<br />- Template messages with pre-filled or to-be-filled slots.<br />- Swipe actions.</td>
+<td>- <strong>Cannot increase the font size of the app (help pages simply tells you to rescale your entire desktop).</strong><br /> - Doesn&rsquo;t have a way to show the message list with one line per message.</td>
+</tr>
+<tr>
+<td>Edison Mail</td>
+<td>- Can show messages as a list with one line per message.<br /> - Gmail shortcuts.<br /> - Template messages with to-be-filled slots.<br /> - Has an option for larger text.<br /> - Clean UI.</td>
+<td>- <strong>No snooze on desktop.</strong><br /> - Reads email to inform trading (opt-out exists, but its unclear how it interacts with the privacy policy).</td>
 </tr>
 </tbody>
 </table>
 <h2 id="conclusion">Conclusion</h2>
+<h3 id="original-april-2022">Original (April 2022):</h3>
 <p>After all this exploration, I plan to use the Outlook phone app and Outlook web app - not the outcome I expected!
 I still find the Outlook web app frustrating at times (e.g., if you create a folder it cannot be made a favourite without reloading the page), but by carefully going through the settings I was able to resolve many of the things that originally frustrated me.</p>
 <p>It&rsquo;s slightly disappointing as the other apps did have many neat features that I can see myself using.
 At some point I&rsquo;ll revisit Airmail, Canary Mail, Edison Mail, Newton, Spark, and TwoBird.</p>
+<h3 id="update-september-2022">Update (September 2022):</h3>
+<p>As noted above, the ability to remind me if a message does not receive a response is an extremely valuable feature that Outlook does not have.
+This has led me to re-evaluate my options.
+I am now trying Mailspring.</p>
+<h3 id="update-november-2022">Update (November 2022):</h3>
+<p>After a few experiences of syncing issues with Mailspring, I am back to the Outlook web app.
+The specific issues were: (1) sending email and finding hours later that it hadn&rsquo;t sent, (2) having new email not show up, and (3) moving email to a different folder and not having the change sync back to Outlook.</p>
 <h2 id="bonus-calendar-apps">Bonus: Calendar Apps</h2>
 <p>I initially used Google Calendar and was able to add Outlook to it, but I found that syncing was very slow.</p>
 <p>This time I did a more limited search for alternatives, looking at advice online and tried out Fantastical, Any.do, and Calendars.
