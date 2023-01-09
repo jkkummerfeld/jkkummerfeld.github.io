@@ -31,7 +31,7 @@
 <meta itemprop="name" content="Language Models">
 <meta itemprop="description" content="Work on making and using vector representations of text">
 <meta itemprop="dateModified" content="2022-09-17T11:03:50+10:00" />
-<meta itemprop="wordCount" content="1358">
+<meta itemprop="wordCount" content="1396">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Language Models"/>
 <meta name="twitter:description" content="Work on making and using vector representations of text"/>
@@ -244,7 +244,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.dd6f2c289e21d2a7d61d7d6e71f70de7.json"
+  data-offline-search-index-json-src="/offline-search-index.d1612719a6dc50a7406518c9960f86ec.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -276,6 +276,7 @@ if (!doNotTrack) {
       </ul>
     </li>
     <li><a href="#prompt-tuning">Prompt Tuning</a></li>
+    <li><a href="#speeding-up">Speeding up</a></li>
     <li><a href="#training-objective">Training objective</a></li>
     <li><a href="#guiding-inference">Guiding Inference</a></li>
     <li><a href="#tokenisation">Tokenisation</a></li>
@@ -402,6 +403,9 @@ They showed that prior success was mainly due to biases in the evaluation data, 
 https://arxiv.org/pdf/2208.05577.pdf
 
 -->
+<h2 id="speeding-up">Speeding up</h2>
+<p>One way to save computation is to only run some of the layers in a stack.
+<a href="https://arxiv.org/abs/2207.07061">CALM</a> predicts when early stopping is possible without changing the output, leading to similar results in about half the time.</p>
 <h2 id="training-objective">Training objective</h2>
 <ul>
 <li>GOLD, <a href="https://openreview.net/pdf?id=RovX-uQ1Hua">https://openreview.net/pdf?id=RovX-uQ1Hua</a></li>
@@ -536,7 +540,7 @@ In their model, leaderboards accept both new models and new metrics, updating th
         
       </div>
       <div class="col-12 col-sm-4 text-center py-2 order-sm-2">
-        <small class="text-white">&copy; 2022 Jonathan K. Kummerfeld All Rights Reserved</small>
+        <small class="text-white">&copy; 2023 Jonathan K. Kummerfeld All Rights Reserved</small>
         
 	
 		
