@@ -31,7 +31,7 @@
 <meta itemprop="name" content="Diplomacy">
 <meta itemprop="description" content="Playing the board game Diplomacy">
 <meta itemprop="dateModified" content="2022-10-17T16:42:38+11:00" />
-<meta itemprop="wordCount" content="185">
+<meta itemprop="wordCount" content="482">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Diplomacy"/>
 <meta name="twitter:description" content="Playing the board game Diplomacy"/>
@@ -244,7 +244,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.d1612719a6dc50a7406518c9960f86ec.json"
+  data-offline-search-index-json-src="/offline-search-index.0cc346c75a9d1b91122e5de79b7ebd2c.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -268,7 +268,11 @@ if (!doNotTrack) {
 <div class="td-toc"><nav id="TableOfContents">
   <ul>
     <li><a href="#no-press--no-communication">No-Press / No communication</a></li>
-    <li><a href="#structured-communication">Structured Communication</a></li>
+    <li><a href="#press--with-communication">Press / With communication</a>
+      <ul>
+        <li><a href="#structured-communication">Structured Communication</a></li>
+      </ul>
+    </li>
     <li><a href="#language">Language</a></li>
   </ul>
 </nav></div>
@@ -332,18 +336,31 @@ if (!doNotTrack) {
 		
 	</header>    
 	<h2 id="no-press--no-communication">No-Press / No communication</h2>
-<p><a href="https://u.cs.biu.ac.il/~krauss/data/articles/diplomacy.pdf">Kraus and Lehman (1995</a></p>
+<p><a href="https://u.cs.biu.ac.il/~krauss/data/articles/diplomacy.pdf">Kraus and Lehman (1995)</a></p>
 <p><a href="https://www.sciencedirect.com/science/article/abs/pii/S0952197611001059">Fabregues and Sierra (2011)</a></p>
 <p><a href="https://link.springer.com/chapter/10.1007/978-3-030-17294-7_8">Jonge et al. (2018)</a></p>
-<p><a href="https://proceedings.neurips.cc/paper/2019/file/84b20b1f5a0d103f5710bb67a043cd78-Paper.pdf">Paquette et al. (2019)</a></p>
-<p><a href="https://proceedings.neurips.cc/paper/2020/file/d1419302db9c022ab1d48681b13d5f8b-Paper.pdf">Anthony et al. (2020)</a></p>
-<p><a href="https://openreview.net/forum?id=0-uUGPbIjD">Gray et al. (2021)</a></p>
-<p><a href="https://arxiv.org/abs/2110.02924">Bakhtin et al. (2021</a></p>
+<p>The first neural model was DipNet <a href="https://proceedings.neurips.cc/paper/2019/file/84b20b1f5a0d103f5710bb67a043cd78-Paper.pdf">(Paquette et al. 2019)</a>, a project I contributed to.
+We used supervised learning based on online games, using an encoder-decoder network.
+The system plays as well as strong human player and was integrated into <a href="https://webdiplomacy.net/">WebDiplomacy</a>.
+We tried applying reinforcement learning, without success.</p>
+<p>Immediate follow-up work refined the architecture, filtered the training data, and found ways to make RL effective.
+Specifically, <a href="https://arxiv.org/abs/2006.04635">Anthony et al. (2020)</a> changed the encoder and decoder, and used policy iteration in which a set of actions are sampled and the best option is used to approximate the best response action.
+<a href="https://openreview.net/forum?id=0-uUGPbIjD">Gray et al. (2021)</a> improved the model further, and proposed another training approach.
+They sample a set of possible orders for all players, then treat that as the space of moves, estimate regret by treating the space of moves as a game to be optimized, with rollouts of 2-3 turns and reward based on the base model&rsquo;s value network.
+The final system plays based on the final regret matching iteration&rsquo;s policy, doing better than prior work.</p>
+<p>Building off the RL ideas in the work above, <a href="https://openreview.net/forum?id=Pq7wIzt3OUE">Bakhtin et al. (2021</a> explored training without using any supervised learning from human games.
+To get it to work, they further modified the architecture, and applied an AlphaZero style training approach.
+Interestingly, the models produced in this way win in a 6v1 setting (6 self-trained vs 1 prior model) but do worse than expected in a 1v6 setting, suggesting that it has converged to a different strategy, and the same is observed for multiple training runs with different seeds (ie, it converges to different strategies).
+The paper does not provide detailed analysis of the actual games, but one possibility is that the agents are converging to a very coordinated strategy (e.g. Russia and Turkey working together).</p>
 <p><a href="https://arxiv.org/pdf/2112.07544.pdf">Jacob et al. (2021)</a></p>
-<p><a href="https://arxiv.org/pdf/2210.05492.pdf">Bakhtin∗ et al. (2022)</a></p>
-<h2 id="structured-communication">Structured Communication</h2>
+<h2 id="press--with-communication">Press / With communication</h2>
+<p>Cicero
+<a href="https://arxiv.org/pdf/2210.05492.pdf">Bakhtin et al. (2022)</a>
+<a href="https://www.science.org/doi/10.1126/science.ade9097">Bakhtin et al. (2022)</a></p>
+<h3 id="structured-communication">Structured Communication</h3>
 <p>DARPA recently announced the <a href="https://sam.gov/opp/298ecfd9a9454245a5aca37fb7d970e1/view#general">SHADE Program</a>, which will explore bots that can communicate, though with a constrained communication language, rather than full natural language.</p>
 <h2 id="language">Language</h2>
+<p><a href="https://www.nature.com/articles/s41467-022-34473-5">Kramár et al. (2022)</a></p>
 <p>Two studies have looked at the language used in human games, to see if there are markers of deception. <a href="https://aclanthology.org/2020.acl-main.353/">Peskov et al. (2020</a> introduced a dataset where players indicated whether they were lying while playing the game and recipients indicated whether they thought they were being lied to. This is nice because it is more reliable than post-hoc analysis. Humans and machines are not that great at detecting lies (Lie F1 of at most 27), though the errors are quite different and overall performance is fairly similar. However, they only use a single feature of the game state, and only train on the 9 labeled games (rather than pre-training or similar on other resources).</p>
 <p><a href="https://aclanthology.org/P15-1159/">Niculae et al. (2015)</a></p>
 
