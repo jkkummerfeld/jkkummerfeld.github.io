@@ -3,22 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.jkk.name/home/</loc>
-    <lastmod>2022-07-29T12:24:40+10:00</lastmod>
+    <lastmod>2023-03-23T16:20:38+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/students/recruiting-phd/</loc>
-    <lastmod>2022-11-09T09:43:23+11:00</lastmod>
+    <lastmod>2023-03-23T16:20:38+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/bio_and_cv/</loc>
     <lastmod>2023-03-16T12:04:29+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/students/</loc>
-    <lastmod>2023-03-16T12:04:29+11:00</lastmod>
+    <lastmod>2023-03-23T16:20:38+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/pubs/</loc>
     <lastmod>2023-01-09T12:15:22+11:00</lastmod>
   </url><url>
-    <loc>https://www.jkk.name/students/recruiting-honours/</loc>
-    <lastmod>2022-06-13T10:03:44-04:00</lastmod>
+    <loc>https://www.jkk.name/students/recruiting-ms/</loc>
+  </url><url>
+    <loc>https://www.jkk.name/students/recruiting-ug/</loc>
   </url><url>
     <loc>https://www.jkk.name/teaching/</loc>
     <lastmod>2023-03-16T12:04:29+11:00</lastmod>
@@ -180,10 +181,10 @@
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/</loc>
-    <lastmod>2022-07-29T12:24:40+10:00</lastmod>
+    <lastmod>2023-03-23T16:20:38+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/language-models/</loc>
-    <lastmod>2023-03-16T12:04:29+11:00</lastmod>
+    <lastmod>2023-03-23T16:20:38+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-11-15_entityvectors/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
