@@ -30,7 +30,7 @@
 <meta itemprop="name" content="Language Models">
 <meta itemprop="description" content="Work on making and using vector representations of text">
 <meta itemprop="dateModified" content="2023-03-23T16:20:38+11:00" />
-<meta itemprop="wordCount" content="1396">
+<meta itemprop="wordCount" content="1425">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Language Models"/>
 <meta name="twitter:description" content="Work on making and using vector representations of text"/>
@@ -247,7 +247,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.1172cf45e7a53422727f69ceaf06664c.json"
+  data-offline-search-index-json-src="/offline-search-index.aeb99e72b07603a59c5620acdf467c00.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -420,7 +420,7 @@ https://arxiv.org/pdf/2208.05577.pdf
 <p>Most LMs today use a word-piece tokenisation, where rare or unseen words are broken into pieces.
 For constructing these vocabularies, there are several approaches:</p>
 <ul>
-<li>BPE <a href="https://aclanthology.org/P16-1162.pdf">https://aclanthology.org/P16-1162.pdf</a></li>
+<li>BPE <a href="https://aclanthology.org/P16-1162.pdf">https://aclanthology.org/P16-1162.pdf</a>, which can be implemented more efficiently, in O(N log M) time where N is the sequence length and M is the number of merges <a href="https://aclanthology.org/2023.findings-acl.38.pdf">(Zouhar, et al. (ACL 2023)</a></li>
 <li>Unigram tokenizer</li>
 <li>WordPiece <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/37842.pdf">https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/37842.pdf</a></li>
 <li>Unigram LM <a href="https://aclanthology.org/P18-1007/">https://aclanthology.org/P18-1007/</a></li>
