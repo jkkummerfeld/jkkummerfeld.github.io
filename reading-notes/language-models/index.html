@@ -26,11 +26,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.jkk.name/reading-notes/language-models/" /><meta property="article:section" content="reading-notes" />
 
-<meta property="article:modified_time" content="2023-03-23T16:20:38+11:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta property="article:modified_time" content="2023-08-09T16:49:37+10:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
 <meta itemprop="name" content="Language Models">
 <meta itemprop="description" content="Work on making and using vector representations of text">
-<meta itemprop="dateModified" content="2023-03-23T16:20:38+11:00" />
-<meta itemprop="wordCount" content="1425">
+<meta itemprop="dateModified" content="2023-08-09T16:49:37+10:00" />
+<meta itemprop="wordCount" content="1555">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Language Models"/>
 <meta name="twitter:description" content="Work on making and using vector representations of text"/>
@@ -247,7 +247,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.aeb99e72b07603a59c5620acdf467c00.json"
+  data-offline-search-index-json-src="/offline-search-index.ea17389f4d14fda637e3fa430c5f47e3.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -280,6 +280,7 @@ if (!doNotTrack) {
     </li>
     <li><a href="#prompt-tuning">Prompt Tuning</a></li>
     <li><a href="#speeding-up">Speeding up</a></li>
+    <li><a href="#training-data">Training data</a></li>
     <li><a href="#training-objective">Training objective</a></li>
     <li><a href="#guiding-inference">Guiding Inference</a></li>
     <li><a href="#tokenisation">Tokenisation</a></li>
@@ -409,6 +410,9 @@ https://arxiv.org/pdf/2208.05577.pdf
 <h2 id="speeding-up">Speeding up</h2>
 <p>One way to save computation is to only run some of the layers in a stack.
 <a href="https://arxiv.org/abs/2207.07061">CALM</a> predicts when early stopping is possible without changing the output, leading to similar results in about half the time.</p>
+<h2 id="training-data">Training data</h2>
+<p>Training models on higher quality data can produce strong results even when there is relatively little data.
+This has been shown for code <a href="https://arxiv.org/pdf/2306.11644.pdf">(Gunasekar et al., arXiv 2023)</a> and stories <a href="https://arxiv.org/pdf/2305.07759.pdf">(Eldan and Li, arXiv 2023)</a>, where in both cases a large model is used to either generate data or filter existing data to create a small high-qiality dataset for training a small model.</p>
 <h2 id="training-objective">Training objective</h2>
 <ul>
 <li>GOLD, <a href="https://openreview.net/pdf?id=RovX-uQ1Hua">https://openreview.net/pdf?id=RovX-uQ1Hua</a></li>
@@ -433,6 +437,9 @@ For constructing these vocabularies, there are several approaches:</p>
 <p>Syntactic constraints are one way to probe these models, e.g., do they correctly model number agreement for noun-verb pairs?
 <a href="https://aclanthology.org/2021.emnlp-main.72.pdf">Wei et al. (EMNLP 2021)</a> showed the answer to that question is yes, though they have difficulty with rarer words (interestingly, a frequency of ~100 seems to be a convergence point, similar to the point at which static word embeddings are stable in <a href="https://aclanthology.org/N18-1190.pdf">my work with Laura Burdick</a>).
 BERT also has trouble when one form is far more common than another.</p>
+<p>For models made available only via APIs, one challenge is that newer versions may not behave the same as older ones.
+<a href="https://arxiv.org/pdf/2307.09009.pdf">Chen et al. (arXiv 2023)</a> show this for GPT 3.5 and GPT 4, with a range of changes in just three months.
+Some changes are consistent (e.g., decrease in verbosity for GPT 4), but most vary across tasks, including both higher and lower scores.</p>
 <h2 id="use-in-evaluation">Use in Evaluation</h2>
 <p>For text generation tasks, evaluation is difficult.
 <a href="https://arxiv.org/pdf/1904.09675.pdf">Zhang et al. (ICLR 2020)</a> proposed BERTscore, which uses BERT to calculate similarity between tokens in output and a reference, followed by greedy matching and averaging to get an overall score.
@@ -475,6 +482,12 @@ In their model, leaderboards accept both new models and new metrics, updating th
   <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
     <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
       <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Mastodon" aria-label="Mastodon">
+    <a class="text-white" target="_blank" rel="noopener" href="https://mastodon.social/@jkkummerfeld" aria-label="Mastodon">
+      <i class="fa-brands fa-mastodon"></i>
     </a>
   </li>
   

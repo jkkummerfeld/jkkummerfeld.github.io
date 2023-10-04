@@ -26,11 +26,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.jkk.name/reading-notes/coreference/" /><meta property="article:section" content="reading-notes" />
 
-<meta property="article:modified_time" content="2023-07-27T10:47:20+10:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta property="article:modified_time" content="2023-08-09T16:49:37+10:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
 <meta itemprop="name" content="Coreference Resolution">
 <meta itemprop="description" content="Identifying references to the same thing">
-<meta itemprop="dateModified" content="2023-07-27T10:47:20+10:00" />
-<meta itemprop="wordCount" content="811">
+<meta itemprop="dateModified" content="2023-08-09T16:49:37+10:00" />
+<meta itemprop="wordCount" content="882">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Coreference Resolution"/>
 <meta name="twitter:description" content="Identifying references to the same thing"/>
@@ -247,7 +247,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.aeb99e72b07603a59c5620acdf467c00.json"
+  data-offline-search-index-json-src="/offline-search-index.ea17389f4d14fda637e3fa430c5f47e3.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -282,6 +282,7 @@ if (!doNotTrack) {
         <li><a href="#datasets-1">Datasets</a></li>
       </ul>
     </li>
+    <li><a href="#streaming-coreference">Streaming Coreference</a></li>
     <li><a href="#related-tasks">Related Tasks</a></li>
   </ul>
 </nav></div>
@@ -345,7 +346,7 @@ if (!doNotTrack) {
 		
 	</header>    
 	<h2 id="datasets">Datasets</h2>
-<p><a href="https://docs.google.com/spreadsheets/d/1DTuzCAOcqEzKqQNFcLVAx0KQb1DTUYVQbZV55LONXHI/edit?usp=sharing">My list of Coreference Datasets</a></p>
+<p><a href="https://docs.google.com/spreadsheets/d/1DTuzCAOcqEzKqQNFcLVAx0KQb1DTUYVQbZV55LONXHI/">My list of Coreference Datasets</a></p>
 <p>There is a new effort to create a set of consistent datasets across multiple domains and languages: <a href="https://github.com/UniversalAnaphora/UniversalAnaphora">Universal Anaphora</a>.</p>
 <h2 id="annotation">Annotation</h2>
 <p>General approaches to annotation:</p>
@@ -403,6 +404,11 @@ It also considers quasi-identity based on time, location, and participants.</p>
 <li><a href="https://scico.apps.allenai.org/">SciCo</a>, Concepts in scientific papers</li>
 <li><a href="https://github.com/ravenscroftj/cdcrtool">CD2CR</a>, Entities in scientific papers and newspaper articles</li>
 </ul>
+<h2 id="streaming-coreference">Streaming Coreference</h2>
+<p>All the other work discussed here assumes we have a fixed document collection.
+The streaming setting explores when documents must be processed one at a time and we have a limited capacity for storing information about the documents seen so far.
+<a href="https://aclanthology.org/2021.acl-long.364.pdf">Logan IV et al. (ACL 2021)</a> introduce <a href="https://github.com/rloganiv/streaming-cdc">new datasets</a> for this.
+They also show that fairly simple schemes for managing memory (remove the oldest mention first) are effective.</p>
 <h2 id="related-tasks">Related Tasks</h2>
 <p><a href="https://arxiv.org/abs/2109.12085">Text-based NP Enrichment (Elazar et al., 2021)</a> includes coreference as a subtask, but then involves defining relationships between noun phrases using preprositions (not between entities because in some cases a relation is valid for some NPs in the entity, but not others).</p>
 <p><a href="http://www.aaai.org/ocs/index.php/KR/KR12/paper/download/4492/4924">The Winograd Schema Challenge</a> aims to probe commonsense knowledge by testing a model&rsquo;s ability to correctly resolve within-sentence coreference examples.
@@ -444,6 +450,12 @@ Also, in a zero-shot setting, where models need to predict the verb (rather than
   <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
     <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
       <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Mastodon" aria-label="Mastodon">
+    <a class="text-white" target="_blank" rel="noopener" href="https://mastodon.social/@jkkummerfeld" aria-label="Mastodon">
+      <i class="fa-brands fa-mastodon"></i>
     </a>
   </li>
   

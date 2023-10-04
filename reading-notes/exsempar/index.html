@@ -26,11 +26,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.jkk.name/reading-notes/exsempar/" /><meta property="article:section" content="reading-notes" />
 
-<meta property="article:modified_time" content="2023-07-27T10:47:20+10:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
+<meta property="article:modified_time" content="2023-08-09T16:49:37+10:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
 <meta itemprop="name" content="Executable Semantic Parsing">
 <meta itemprop="description" content="Generating code that represents the meaning of text">
-<meta itemprop="dateModified" content="2023-07-27T10:47:20+10:00" />
-<meta itemprop="wordCount" content="1655">
+<meta itemprop="dateModified" content="2023-08-09T16:49:37+10:00" />
+<meta itemprop="wordCount" content="1781">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Executable Semantic Parsing"/>
 <meta name="twitter:description" content="Generating code that represents the meaning of text"/>
@@ -247,7 +247,7 @@ if (!doNotTrack) {
   aria-label="Search this site…"
   autocomplete="off"
   
-  data-offline-search-index-json-src="/offline-search-index.aeb99e72b07603a59c5620acdf467c00.json"
+  data-offline-search-index-json-src="/offline-search-index.ea17389f4d14fda637e3fa430c5f47e3.json"
   data-offline-search-base-href="/"
   data-offline-search-max-results="10"
 >
@@ -364,7 +364,12 @@ Fine-tuning improves performance, even with a tiny number of samples, and sampli
 <a href="https://storage.googleapis.com/deepmind-media/AlphaCode/competition_level_code_generation_with_alphacode.pdf">AlphaCode</a> introduced a refinement to this inference process, training a separate model to generate sample inputs and then clustering generated programs based on how they behave with the generated inputs.
 Solutions are sampled from across these clusters, ensuring diversity in behaviour.
 For web code (HTML, CSS, Javascript), <a href="https://dl.acm.org/doi/10.1145/3474349.3480209">Jiang et al. (UIST 2021)</a> used prompt based methods to generate small snippets of code.</p>
+<p>It is possible to train strong small models if the data is high quality.
+For example, <a href="https://arxiv.org/pdf/2306.11644.pdf">(Gunasekar et al., arXiv 2023)</a> used (a) data filtered by a model trained on 100,000 GPT-4 judgements, and (b) generated data with GPT-3.5.
+That led to performance comparable to GPT-4 but with a much smaller model.</p>
 <h3 id="sql">SQL</h3>
+<p>Sequence-to-sequence models for SQL generation were either specialised to a single database (e.g., <a href="https://aclanthology.org/P18-1033.pdf">our work</a>), or take the schema as an input (e.g., WikiSQL&rsquo;s <a href="https://arxiv.org/abs/1709.00103">Seq2SQL model</a>).
+The latter approach worked in simple domains, like the single tables of WikiSQL, but when the database is complex, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26535/26307">Li et al. (AAAI 2023)</a> showed that it helps to filter the fields for relevance to the query and organise the tables to have the most relevant appear first.</p>
 <h3 id="visualisation">Visualisation</h3>
 <p>For the constrained domain of plot generation, <a href="https://aclanthology.org/2021.acl-long.169">Chen et al. (ACL 2021)</a>, proposed a model that combines LSTM encoding and attention to predict a single plot command and the relevant arguments.
 Their focus was on choosing the parts of a dataframe to plot and the type of plot.
@@ -664,6 +669,12 @@ Once those models are integrated into user interfaces, we also need to evaluate 
   <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="LinkedIn" aria-label="LinkedIn">
     <a class="text-white" target="_blank" rel="noopener" href="https://linkedin.com/in/jkkummerfeld/" aria-label="LinkedIn">
       <i class="fab fa-linkedin"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Mastodon" aria-label="Mastodon">
+    <a class="text-white" target="_blank" rel="noopener" href="https://mastodon.social/@jkkummerfeld" aria-label="Mastodon">
+      <i class="fa-brands fa-mastodon"></i>
     </a>
   </li>
   
