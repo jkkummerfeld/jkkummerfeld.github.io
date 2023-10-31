@@ -925,9 +925,9 @@ Arbitrary code generation would be a fantastic extension, though creating the da
         &lt;p&gt;Most work in NLP uses datasets with a diverse set of speakers.
 In practise, everyone speaks / writes slightly differently and our models would be better if they accounted for that.
 This has been the motivation for a line of work by &lt;a href=&#34;http://cfwelch.com/&#34;&gt;Charlie Welch&lt;/a&gt; that I&amp;rsquo;ve been a collaborator on (in
-&lt;a href=&#34;https://www.jkk.name/publication/cicling19personal&#34;&gt;CICLing 2019&lt;/a&gt;,
-&lt;a href=&#34;https://www.jkk.name/publication/ieee19personal/&#34;&gt;IEEE Intelligent Systems 2019&lt;/a&gt;,
-&lt;a href=&#34;https://www.jkk.name/publication/coling20personal/&#34;&gt;CoLing 2020&lt;/a&gt;,
+&lt;a href=&#34;https://jkk.name/pub/cicling19personal.pdf&#34;&gt;CICLing 2019&lt;/a&gt;,
+&lt;a href=&#34;https://jkk.name/pub/ieee19personal.pdf&#34;&gt;IEEE Intelligent Systems 2019&lt;/a&gt;,
+&lt;a href=&#34;https://aclanthology.org/2020.coling-main.604/&#34;&gt;CoLing 2020&lt;/a&gt;,
 and this paper).&lt;/p&gt;
 &lt;p&gt;Here, the question is how to improve language modeling for a new user of a service who voluntarily provided some demographic information, but you have no other data for.
 Our solution is a language model that (1) has a separate word embedding space for each individual demographic value, and (2) forms a word embedding for a given user by composing the embeddings for their demographics.
