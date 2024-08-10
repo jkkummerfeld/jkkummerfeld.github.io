@@ -4,9 +4,6 @@
     <link rel="stylesheet" href="https://www.jkk.name/plugins/my-custom/css/mycustom.css"><link rel="stylesheet" href="https://www.jkk.name/plugins/academic-icons/css/academicons.css">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.111.3">
-<link rel="me" href="https://mastodon.social/@jkkummerfeld">Mastodon</link>
-
 <meta name="robots" content="index, follow">
 
 
@@ -23,46 +20,42 @@
 
 <title>Executable Semantic Parsing | Jonathan K. Kummerfeld</title>
 <meta name="description" content="Generating code that represents the meaning of text">
-<meta property="og:title" content="Executable Semantic Parsing" />
-<meta property="og:description" content="Generating code that represents the meaning of text" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jkk.name/reading-notes/exsempar/" /><meta property="article:section" content="reading-notes" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/exsempar/">
+  <meta property="og:site_name" content="Jonathan K. Kummerfeld">
+  <meta property="og:title" content="Executable Semantic Parsing">
+  <meta property="og:description" content="Generating code that represents the meaning of text">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="reading-notes">
+    <meta property="article:modified_time" content="2024-02-06T11:08:42+11:00">
 
-<meta property="article:modified_time" content="2024-02-06T11:08:42+11:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
-<meta itemprop="name" content="Executable Semantic Parsing">
-<meta itemprop="description" content="Generating code that represents the meaning of text">
-<meta itemprop="dateModified" content="2024-02-06T11:08:42+11:00" />
-<meta itemprop="wordCount" content="1781">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Executable Semantic Parsing"/>
-<meta name="twitter:description" content="Generating code that represents the meaning of text"/>
-
-
-
-
-<link rel="preload" href="/scss/main.min.0dfa6f2329873fc2190908b72854dd7514cdcd182b431bcdb412facf973beffe.css" as="style">
-<link href="/scss/main.min.0dfa6f2329873fc2190908b72854dd7514cdcd182b431bcdb412facf973beffe.css" rel="stylesheet" integrity="">
-
+  <meta itemprop="name" content="Executable Semantic Parsing">
+  <meta itemprop="description" content="Generating code that represents the meaning of text">
+  <meta itemprop="dateModified" content="2024-02-06T11:08:42+11:00">
+  <meta itemprop="wordCount" content="1781">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Executable Semantic Parsing">
+  <meta name="twitter:description" content="Generating code that represents the meaning of text">
+<link rel="preload" href="/scss/main.min.36c26dd096c1e1ed9bacccf245efc8dda3f3b10a63b70a3701a019b3df691b9a.css" as="style"><link href="/scss/main.min.36c26dd096c1e1ed9bacccf245efc8dda3f3b10a63b70a3701a019b3df691b9a.css" rel="stylesheet">
 <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
-  crossorigin="anonymous"></script>
-<script
-  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
-  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVV2VPL5CX"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-JVV2VPL5CX', { 'anonymize_ip': false });
-}
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVV2VPL5CX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JVV2VPL5CX');
+        }
+      </script>
   </head>
   <body class="td-page">
     <div class="container-fluid td-outer">
@@ -72,7 +65,9 @@ if (!doNotTrack) {
             
 <div id="td-sidebar-menu" class="td-sidebar__inner">
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m--li">
   <a href="/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-"><span class="">Jonathan K. Kummerfeld&#39;s Homepage</span></a>
   <ul class="ul-1">
@@ -242,18 +237,7 @@ if (!doNotTrack) {
     </ul>
   </nav>
   <form class="td-sidebar__search d-flex align-items-center">
-    <input
-  type="search"
-  class="form-control td-search-input"
-  placeholder="&#xf002; Search this site…"
-  aria-label="Search this site…"
-  autocomplete="off"
-  
-  data-offline-search-index-json-src="/offline-search-index.a0c46c2b8d93f072fb4e50e73fba33c5.json"
-  data-offline-search-base-href="/"
-  data-offline-search-max-results="10"
->
-
+    
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
@@ -262,15 +246,12 @@ if (!doNotTrack) {
 
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
-            
-<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
 
 </div>
 
-            
-
-
-<div class="td-toc"><nav id="TableOfContents">
+            <div class="td-toc">
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#models">Models</a>
       <ul>
@@ -299,38 +280,11 @@ if (!doNotTrack) {
       </ul>
     </li>
   </ul>
-</nav></div>
-
-
-
+</nav>
+      </div>
+    
             
-
 	
-		
-			
-				
-			
-			
-
-
-
-  
-  
-
-		
-			
-				
-			
-			
-
-
-
-  
-  
-
-		
-	
-
           </aside>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             
@@ -344,23 +298,9 @@ if (!doNotTrack) {
 	<div class="lead">Generating code that represents the meaning of text</div>
 	<header class="article-meta">
 		
-
-  
-    
-      
-
-
-    
-      
-
-
-    
-  
-
-		
-	</header>    
-	<h2 id="models">Models</h2>
-<h3 id="general-code">General Code</h3>
+  </header>
+	<h2 id="models">Models<a class="td-heading-self-link" href="#models" aria-label="Heading self-link"></a></h2>
+<h3 id="general-code">General Code<a class="td-heading-self-link" href="#general-code" aria-label="Heading self-link"></a></h3>
 <p>Large language models have been applied to code generation, using the prompt basead approach (e.g., <a href="https://arxiv.org/pdf/2107.03374.pdf">Codex</a> and <a href="https://arxiv.org/pdf/2108.07732.pdf">Austin et al. (arXiv 2021)</a>).
 Fine-tuning improves performance, even with a tiny number of samples, and sampling many outputs then filtering is critical to success (keeping outputs that behave correctly on sample input-output pairs).
 <a href="https://storage.googleapis.com/deepmind-media/AlphaCode/competition_level_code_generation_with_alphacode.pdf">AlphaCode</a> introduced a refinement to this inference process, training a separate model to generate sample inputs and then clustering generated programs based on how they behave with the generated inputs.
@@ -369,10 +309,10 @@ For web code (HTML, CSS, Javascript), <a href="https://dl.acm.org/doi/10.1145/34
 <p>It is possible to train strong small models if the data is high quality.
 For example, <a href="https://arxiv.org/pdf/2306.11644.pdf">(Gunasekar et al., arXiv 2023)</a> used (a) data filtered by a model trained on 100,000 GPT-4 judgements, and (b) generated data with GPT-3.5.
 That led to performance comparable to GPT-4 but with a much smaller model.</p>
-<h3 id="sql">SQL</h3>
+<h3 id="sql">SQL<a class="td-heading-self-link" href="#sql" aria-label="Heading self-link"></a></h3>
 <p>Sequence-to-sequence models for SQL generation were either specialised to a single database (e.g., <a href="https://aclanthology.org/P18-1033.pdf">our work</a>), or take the schema as an input (e.g., WikiSQL&rsquo;s <a href="https://arxiv.org/abs/1709.00103">Seq2SQL model</a>).
 The latter approach worked in simple domains, like the single tables of WikiSQL, but when the database is complex, <a href="https://ojs.aaai.org/index.php/AAAI/article/view/26535/26307">Li et al. (AAAI 2023)</a> showed that it helps to filter the fields for relevance to the query and organise the tables to have the most relevant appear first.</p>
-<h3 id="visualisation">Visualisation</h3>
+<h3 id="visualisation">Visualisation<a class="td-heading-self-link" href="#visualisation" aria-label="Heading self-link"></a></h3>
 <p>For the constrained domain of plot generation, <a href="https://aclanthology.org/2021.acl-long.169">Chen et al. (ACL 2021)</a>, proposed a model that combines LSTM encoding and attention to predict a single plot command and the relevant arguments.
 Their focus was on choosing the parts of a dataframe to plot and the type of plot.
 Interestingly, BERT did not help, probably because the language in their setting was different - the text associated with code notebooks.
@@ -380,21 +320,21 @@ Complete program accuracy is around 56%, though another ~7% of cases are semanti
 <p>For the style of plots, <a href="https://aclanthology.org/2020.acl-main.328">Shao and Nakashole (ACL 2020)</a>, showed that the generation problem can be formulated as slot-extraction based task-oriented dialogue.
 Each slot corresponds to a property of the figure.
 They also released a demonstration that includes some personalisation by remembering previous slot values and continuous learning by asking users which of a k-best set of options is right <a href="https://aclanthology.org/2021.naacl-demos.11">(Wang et al., NAACL 2021)</a>.</p>
-<h3 id="regular-expressions">Regular Expressions</h3>
+<h3 id="regular-expressions">Regular Expressions<a class="td-heading-self-link" href="#regular-expressions" aria-label="Heading self-link"></a></h3>
 <p>Most work in NLP treats this task like translation, mapping a string to another string, sometimes with grammatical constraints.
 <a href="https://aclanthology.org/2020.tacl-1.44">Xi et al. (TACL 2020)</a> draw on the program synthesis literatures to consider how examples can inform the generation process.
 They have a NLP-style model (either grammar based or neural), but rather than generating code directly, it generates a sketch of the code.
 That sketch then constrains a search in the space of programs for one that satisfies the sketch and a set of example input-output pairs (in their case, regex).
 To train without annotations of sketches, they search for the best sketch that agrees with the target program.
 This almost solves KB13 and Turk (96.3% and 98.9% accuracy) when given 20 examples (10 positive, 10 negative), but the Stackoverflow data remains challenging.</p>
-<h2 id="training">Training</h2>
+<h2 id="training">Training<a class="td-heading-self-link" href="#training" aria-label="Heading self-link"></a></h2>
 <p><a href="https://aclanthology.org/2021.emnlp-main.466.pdf">Gupta et al. (EMNLP 2021)</a> proposed a new learning objective to encourage consistency in program outputs (in their case for neural module networks).
 The idea is to improve performance by encouraging semantically similar spans of text to be converted into the same code.
 We can identify suitable pairs in several ways, with the best being either templates to augment training data or identifying semantically similar spans in existing questions.</p>
-<h2 id="improving-speed">Improving speed</h2>
+<h2 id="improving-speed">Improving speed<a class="td-heading-self-link" href="#improving-speed" aria-label="Heading self-link"></a></h2>
 <!-- [Zhou et al. (ACL 2022)](https://aclanthology.org/2022.acl-long.110/)  -->
-<h2 id="human-in-the-loop">Human-in-the-Loop</h2>
-<h3 id="sql-1">SQL</h3>
+<h2 id="human-in-the-loop">Human-in-the-Loop<a class="td-heading-self-link" href="#human-in-the-loop" aria-label="Heading self-link"></a></h2>
+<h3 id="sql-1">SQL<a class="td-heading-self-link" href="#sql-1" aria-label="Heading self-link"></a></h3>
 <p>One approach for incorporating human effort is to show the user the generated program or a description of it and ask for feedback. If the feedback is in natural language, we then need a model to interpret it and make a suitable update to the query.
 <a href="https://aclanthology.org/2020.acl-main.187.pdf">Elgohary et al. (ACL 2020)</a> developed a dataset based on Spider for text-to-SQL experiments with this kind of updating.
 Using existing models, the accuracy of queries produced is higher than without feedback, but far below human accuracy.
@@ -405,9 +345,9 @@ The value of interaction is smaller for better text-to-SQL systems (both relativ
 <a href="https://dl.acm.org/doi/pdf/10.1145/3397481.3450667">Narechania et al. (IUI 2021)</a> built a system in which the user is shown the mapping from words in their query to table names and actions, with menus of alternatives that they can select.
 To aid the process, the UI also shows users a small sample of the dataset, selected to illustrate the impact of components of the query (e.g., either case for a WHERE condition), with a breakdown of the impacts of each step of the query.
 A user study showed positive opinions, but they did not measure how frequently it solves model outputs (as Elgohary&rsquo;s work above does).</p>
-<h3 id="other">Other</h3>
+<h3 id="other">Other<a class="td-heading-self-link" href="#other" aria-label="Heading self-link"></a></h3>
 <p>For prompt-based models, <a href="https://arxiv.org/pdf/2108.07732.pdf">Austin et al. (arXiv 2021)</a> showed that interaction can work, with clear short clarifications from users leading the model to make suitable updates.</p>
-<h3 id="without-language">Without Language</h3>
+<h3 id="without-language">Without Language<a class="td-heading-self-link" href="#without-language" aria-label="Heading self-link"></a></h3>
 <p>Program synthesis is a closely related field with a long history.
 The key difference between that work and the work in NLP is that the input is not in natural language.
 So far, most work in NLP has not connected to that literature, but there is great scope for using it in systems and data collection.</p>
@@ -424,7 +364,7 @@ This format compactly captures the search, providing a picture of what the syste
 <p>For visualisations, <a href="https://arxiv.org/pdf/2102.01024.pdf">Wang et al. (CHI 2021)</a> built a system where users specify examples of how data should be used to make points in a plot and then synthesis methods infer the general transformation needed.</p>
 <p>For spreadsheets, <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/popl11-synthesis.pdf">FlashFill</a> is the classic example, generating string manipulation code in Excel based on a single user example.
 <a href="http://proceedings.mlr.press/v139/chen21m/chen21m.pdf">Chen et al. (ICML 2021)</a> developed a neural approach (transformer encoder, LSTM decoder) for generation that considers more context and generates formulas in Google Sheets that cover operations beyond string manipulation.</p>
-<h2 id="evaluation">Evaluation</h2>
+<h2 id="evaluation">Evaluation<a class="td-heading-self-link" href="#evaluation" aria-label="Heading self-link"></a></h2>
 <p>For program generation, splitting the data into train and test sets can be tricky depending on what we are aiming to measure.
 A random split of the set of (utterance, program) examples could lead to a situation where the same programs appear in the train and test sets, just with different variables <a href="https://aclanthology.org/P18-1033.pdf">(Finegan-Dollak et al., ACL 2018)</a>.
 Splitting radnomly based on programs could create the situation where some symbols are not seen in training.
@@ -433,8 +373,8 @@ If a structure has been seen, just with a different symbol, then models can lear
 Their measurement of program similarity correlates with system performance across a range of models (and does so better than their prior work on Partial COmponent Match <a href="https://aclanthology.org/2021.nlp4prog-1.9.pdf">(Hazoom et al. NLP4Prog 2021)</a>.</p>
 <p>Most work in NLP focuses on accuracy of models for these tasks.
 Once those models are integrated into user interfaces, we also need to evaluate the overall effectiveness of the system.</p>
-<h2 id="data">Data</h2>
-<h3 id="text-to-sql">Text to SQL</h3>
+<h2 id="data">Data<a class="td-heading-self-link" href="#data" aria-label="Heading self-link"></a></h2>
+<h3 id="text-to-sql">Text to SQL<a class="td-heading-self-link" href="#text-to-sql" aria-label="Heading self-link"></a></h3>
 <table>
 <thead>
 <tr>
@@ -507,14 +447,14 @@ Once those models are integrated into user interfaces, we also need to evaluate 
 </tr>
 </tbody>
 </table>
-<h3 id="regular-expressions-1">Regular Expressions</h3>
+<h3 id="regular-expressions-1">Regular Expressions<a class="td-heading-self-link" href="#regular-expressions-1" aria-label="Heading self-link"></a></h3>
 <p><a href="https://github.com/xiye17/SketchRegex/tree/master/DeepSketch/datasets">https://github.com/xiye17/SketchRegex/tree/master/DeepSketch/datasets</a> contains:</p>
 <ul>
 <li>Stackoverflow, collect from posts, including example inputs, from <a href="https://aclanthology.org/2020.tacl-1.44">Xi et al. (TACL 2020)</a></li>
 <li>Turk, auto-generate with a synchronous grammar, then paraphrase, from <a href="https://aclanthology.org/D16-1197/">Locascio et al. (EMNLP 2016)</a></li>
 <li>KB13, crowd workers write descriptions of a set of lines, others write regex for the descriptions, from <a href="https://aclanthology.org/N13-1103/">Kushman and Barzilay, (NAACL 2013)</a></li>
 </ul>
-<h3 id="general-purpose-languages">General Purpose Languages</h3>
+<h3 id="general-purpose-languages">General Purpose Languages<a class="td-heading-self-link" href="#general-purpose-languages" aria-label="Heading self-link"></a></h3>
 <table>
 <thead>
 <tr>
@@ -611,7 +551,7 @@ Once those models are integrated into user interfaces, we also need to evaluate 
 </tr>
 </tbody>
 </table>
-<h3 id="visulisation">Visulisation</h3>
+<h3 id="visulisation">Visulisation<a class="td-heading-self-link" href="#visulisation" aria-label="Heading self-link"></a></h3>
 <table>
 <thead>
 <tr>
@@ -637,8 +577,6 @@ Once those models are integrated into user interfaces, we also need to evaluate 
 </tbody>
 </table>
 
-	
-	
 	
 </div>
 
@@ -757,55 +695,19 @@ Once those models are integrated into user interfaces, we also need to evaluate 
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
-    crossorigin="anonymous"></script>
-
-
-
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+      integrity="sha512-r2+FkHzf1u0+SQbZOoIz2RxWOIWfdEzRuYybGjzKq18jG9zaSfEy9s3+jMqG/zPtRor/q4qaUCYQpmSjTw8M+g==" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+        integrity="sha512-INps9zQ2GUEMCQD7xiZQbGUVnqnzEvlynVy6eqcTcHN4+aQiLo9/uaQqckDpdJ8Zm3M0QBs+Pktg4pz0kEklUg=="
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+       integrity="sha512-YJVxTjqttjsU3cSvaTRqsSl0wbRgZUNF+NGGCgto/MUbIvaLdXQzGTCQu4CvyJZbZctgflVB0PXw9LLmTWm5/w==" crossorigin="anonymous"
+       onload='renderMathInElement(document.body, null);'>
+</script>
+<script src="/js/main.min.d4f01890352ec227bd6fafbde86e81fb252198076cabc96767a61d749b84753e.js" integrity="sha256-1PAYkDUuwie9b6&#43;96G6B&#43;yUhmAdsq8lnZ6YddJuEdT4=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
-
-
-
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
-    integrity="sha512-vJqxkZ+Sugf/6WRlpcxN01qVfX/29hF6qc33eHF1va3NgoV+U+wCi+uTAsQ10sDoGyBxHLdaHvGwDlV3yVYboA==" crossorigin="anonymous">
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
-    integrity="sha512-5ufNcHqOYgilGEHPfuRIQ5B/vDS1M8+UC+DESZ5CwVgGTg+b2Ol/15rYL/GiCWJ/Sx8oVo0FPFok1dPk8U9INQ=="
-    crossorigin="anonymous"></script>
-
-
-
-<script defer src='https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js'
-    integrity='sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==' crossorigin='anonymous' 
-    onload='renderMathInElement(document.body, null);'></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="/js/main.min.91798a335c881f1b6b805085ba4aa22d1dbd2b0b18d105d05189fa104ddae350.js" integrity="sha256-kXmKM1yIHxtrgFCFukqiLR29KwsY0QXQUYn6EE3a41A=" crossorigin="anonymous"></script>
-
-
-
 
   </body>
 </html>

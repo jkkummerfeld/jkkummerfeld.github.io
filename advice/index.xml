@@ -1,17 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jonathan K. Kummerfeld – Advice</title>
+    <title>Advice on Jonathan K. Kummerfeld</title>
     <link>https://www.jkk.name/advice/</link>
     <description>Recent content in Advice on Jonathan K. Kummerfeld</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://www.jkk.name/advice/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://www.jkk.name/advice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Academic Posters</title>
+      <link>https://www.jkk.name/advice/posters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/advice/posters/</guid>
+      <description>Your poster should be optimised for the following conference experience:&#xA;A person walks past your poster and sees enough from a distance to get the key idea. The person decides to either (a) keep walking, or (b) learn more. If they choose (b), there are figures on the poster you can use to explain your work. Optimising for this has a few implications:&#xA;Have a short (5-20 word) explanation in a large font that communicates the key idea.</description>
+    </item>
+    <item>
+      <title>Email Clients</title>
+      <link>https://www.jkk.name/advice/email/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/advice/email/</guid>
+      <description>I&amp;rsquo;m a happy Gmail user, but my university email address cannot be accessed from Gmail (I cannot create an application specific password and Gmail does not support OAuth2). I found the browser UI for Outlook frustrating, so I went in search of another email client.&#xA;I looked at and tried a wide range of clients. Below are my notes about what I liked / did not like about each one. Of course, these reflect my preferences.</description>
+    </item>
   </channel>
 </rss>

@@ -1,17 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jonathan K. Kummerfeld – Reading Notes</title>
+    <title>Reading Notes on Jonathan K. Kummerfeld</title>
     <link>https://www.jkk.name/reading-notes/</link>
     <description>Recent content in Reading Notes on Jonathan K. Kummerfeld</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://www.jkk.name/reading-notes/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://www.jkk.name/reading-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coreference Resolution</title>
+      <link>https://www.jkk.name/reading-notes/coreference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/reading-notes/coreference/</guid>
+      <description>Datasets My list of Coreference Datasets&#xA;There is a new effort to create a set of consistent datasets across multiple domains and languages: Universal Anaphora.&#xA;Annotation General approaches to annotation:&#xA;Mentions are provided, annotators go through one by one. They can link to either earlier spans or to an entity in a list. Aralikatte and Søgaard, (LREC 2020) showed that these two are the same speed, though linking to a list may be more accurate (they provided minimal annotation guidelines, which may mean the flexibility of the first method led to more variation).</description>
+    </item>
+    <item>
+      <title>Crowdsourcing and Data Annotation</title>
+      <link>https://www.jkk.name/reading-notes/crowdsourcing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/reading-notes/crowdsourcing/</guid>
+      <description>Crowdsourcing, collecting annotations of data from a distributed group of people online, is a major source of data for AI research. The original idea involved people doing it as volunteers (e.g. Folding@home) or as a byproduct of some other goal (e.g. reCAPTCHA), but most of the data collected in AI today is from paid workers.&#xA;Methods Combining human and AI effort:&#xA;If some errors are acceptable then you can train a model and have it take over once accuracy is high enough (using data annotated so far to train and evaluate).</description>
+    </item>
+    <item>
+      <title>Diplomacy</title>
+      <link>https://www.jkk.name/reading-notes/diplomacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/reading-notes/diplomacy/</guid>
+      <description>No-Press / No communication Kraus and Lehman (1995)&#xA;Fabregues and Sierra (2011)&#xA;Jonge et al. (2018)&#xA;The first neural model was DipNet (Paquette et al. 2019), a project I contributed to. We used supervised learning based on online games, using an encoder-decoder network. The system plays as well as strong human player and was integrated into WebDiplomacy. We tried applying reinforcement learning, without success.&#xA;Immediate follow-up work refined the architecture, filtered the training data, and found ways to make RL effective.</description>
+    </item>
+    <item>
+      <title>Executable Semantic Parsing</title>
+      <link>https://www.jkk.name/reading-notes/exsempar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/reading-notes/exsempar/</guid>
+      <description>Models General Code Large language models have been applied to code generation, using the prompt basead approach (e.g., Codex and Austin et al. (arXiv 2021)). Fine-tuning improves performance, even with a tiny number of samples, and sampling many outputs then filtering is critical to success (keeping outputs that behave correctly on sample input-output pairs). AlphaCode introduced a refinement to this inference process, training a separate model to generate sample inputs and then clustering generated programs based on how they behave with the generated inputs.</description>
+    </item>
+    <item>
+      <title>Language Models</title>
+      <link>https://www.jkk.name/reading-notes/language-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/reading-notes/language-models/</guid>
+      <description>Model Types Transformers The Transformer is the core of the most successful language models. I wrote a blog post about the original paper, including this figure, which captures the network structure with a few simplifications:&#xA;There are a few ideas being brought together here:&#xA;Positional encoding, which is a vector of the same length as the word representation, but that depends only on the position in the input. The original paper used \(f(pos, dim) = sin(pos / 10000^{2 dim / d_w})\) for even dimensions and the cosine equivalent for odd dimensions (where \(d_w\) is the number of dimensions).</description>
+    </item>
+    <item>
+      <title>Other</title>
+      <link>https://www.jkk.name/reading-notes/misc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/reading-notes/misc/</guid>
+      <description>This pages covers topics that don&amp;rsquo;t fit into one of my larger pages. If a section gets large enough I&amp;rsquo;ll eventually move it out to its own page.&#xA;ML Ensembles, making a prediction using a set of models, are consistently more accurate. Cascades (Viola and Jones, CVPR 2001), can reduce the cost incurred from running multiple models by running them in sequence and stopping early if confidence is high enough.</description>
+    </item>
   </channel>
 </rss>

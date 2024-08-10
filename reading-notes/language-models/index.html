@@ -4,9 +4,6 @@
     <link rel="stylesheet" href="https://www.jkk.name/plugins/my-custom/css/mycustom.css"><link rel="stylesheet" href="https://www.jkk.name/plugins/academic-icons/css/academicons.css">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.111.3">
-<link rel="me" href="https://mastodon.social/@jkkummerfeld">Mastodon</link>
-
 <meta name="robots" content="index, follow">
 
 
@@ -23,46 +20,42 @@
 
 <title>Language Models | Jonathan K. Kummerfeld</title>
 <meta name="description" content="Work on making and using vector representations of text">
-<meta property="og:title" content="Language Models" />
-<meta property="og:description" content="Work on making and using vector representations of text" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jkk.name/reading-notes/language-models/" /><meta property="article:section" content="reading-notes" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/language-models/">
+  <meta property="og:site_name" content="Jonathan K. Kummerfeld">
+  <meta property="og:title" content="Language Models">
+  <meta property="og:description" content="Work on making and using vector representations of text">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="reading-notes">
+    <meta property="article:modified_time" content="2024-03-19T13:26:59+11:00">
 
-<meta property="article:modified_time" content="2024-03-19T13:26:59+11:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
-<meta itemprop="name" content="Language Models">
-<meta itemprop="description" content="Work on making and using vector representations of text">
-<meta itemprop="dateModified" content="2024-03-19T13:26:59+11:00" />
-<meta itemprop="wordCount" content="1555">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Language Models"/>
-<meta name="twitter:description" content="Work on making and using vector representations of text"/>
-
-
-
-
-<link rel="preload" href="/scss/main.min.0dfa6f2329873fc2190908b72854dd7514cdcd182b431bcdb412facf973beffe.css" as="style">
-<link href="/scss/main.min.0dfa6f2329873fc2190908b72854dd7514cdcd182b431bcdb412facf973beffe.css" rel="stylesheet" integrity="">
-
+  <meta itemprop="name" content="Language Models">
+  <meta itemprop="description" content="Work on making and using vector representations of text">
+  <meta itemprop="dateModified" content="2024-03-19T13:26:59+11:00">
+  <meta itemprop="wordCount" content="1555">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Language Models">
+  <meta name="twitter:description" content="Work on making and using vector representations of text">
+<link rel="preload" href="/scss/main.min.36c26dd096c1e1ed9bacccf245efc8dda3f3b10a63b70a3701a019b3df691b9a.css" as="style"><link href="/scss/main.min.36c26dd096c1e1ed9bacccf245efc8dda3f3b10a63b70a3701a019b3df691b9a.css" rel="stylesheet">
 <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
-  crossorigin="anonymous"></script>
-<script
-  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
-  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVV2VPL5CX"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-JVV2VPL5CX', { 'anonymize_ip': false });
-}
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVV2VPL5CX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JVV2VPL5CX');
+        }
+      </script>
   </head>
   <body class="td-page">
     <div class="container-fluid td-outer">
@@ -72,7 +65,9 @@ if (!doNotTrack) {
             
 <div id="td-sidebar-menu" class="td-sidebar__inner">
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m--li">
   <a href="/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-"><span class="">Jonathan K. Kummerfeld&#39;s Homepage</span></a>
   <ul class="ul-1">
@@ -242,18 +237,7 @@ if (!doNotTrack) {
     </ul>
   </nav>
   <form class="td-sidebar__search d-flex align-items-center">
-    <input
-  type="search"
-  class="form-control td-search-input"
-  placeholder="&#xf002; Search this site…"
-  aria-label="Search this site…"
-  autocomplete="off"
-  
-  data-offline-search-index-json-src="/offline-search-index.a0c46c2b8d93f072fb4e50e73fba33c5.json"
-  data-offline-search-base-href="/"
-  data-offline-search-max-results="10"
->
-
+    
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
@@ -262,15 +246,12 @@ if (!doNotTrack) {
 
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
-            
-<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
 
 </div>
 
-            
-
-
-<div class="td-toc"><nav id="TableOfContents">
+            <div class="td-toc">
+        <nav id="TableOfContents">
   <ul>
     <li><a href="#model-types">Model Types</a>
       <ul>
@@ -289,38 +270,11 @@ if (!doNotTrack) {
     <li><a href="#analysis">Analysis</a></li>
     <li><a href="#use-in-evaluation">Use in Evaluation</a></li>
   </ul>
-</nav></div>
-
-
-
+</nav>
+      </div>
+    
             
-
 	
-		
-			
-				
-			
-			
-
-
-
-  
-  
-
-		
-			
-				
-			
-			
-
-
-
-  
-  
-
-		
-	
-
           </aside>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             
@@ -334,26 +288,12 @@ if (!doNotTrack) {
 	<div class="lead">Work on making and using vector representations of text</div>
 	<header class="article-meta">
 		
-
-  
-    
-      
-
-
-    
-      
-
-
-    
-  
-
-		
-	</header>    
-	<h2 id="model-types">Model Types</h2>
-<h3 id="transformers">Transformers</h3>
+  </header>
+	<h2 id="model-types">Model Types<a class="td-heading-self-link" href="#model-types" aria-label="Heading self-link"></a></h2>
+<h3 id="transformers">Transformers<a class="td-heading-self-link" href="#transformers" aria-label="Heading self-link"></a></h3>
 <p><a href="https://proceedings.neurips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf">The Transformer</a> is the core of the most successful language models.
 I wrote <a href="/reading-notes/old-blog/2017-10-20_onlyattention/">a blog post</a> about the original paper, including this figure, which captures the network structure with a few simplifications:</p>
-<p><img src="/img/post/google-attention.png" alt="Google Attention Network"></p>
+<p><img alt="Google Attention Network" src="/img/post/google-attention.png"></p>
 <p>There are a few ideas being brought together here:</p>
 <ul>
 <li><em>Positional encoding</em>, which is a vector of the same length as the word representation, but that depends only on the position in the input. The original paper used \(f(pos, dim) = sin(pos / 10000^{2 dim / d_w})\) for even dimensions and the cosine equivalent for odd dimensions (where \(d_w\) is the number of dimensions).</li>
@@ -370,24 +310,24 @@ I wrote <a href="/reading-notes/old-blog/2017-10-20_onlyattention/">a blog post<
 </ul>
 <p>Since the original model, a range of variations have been explored.
 The <a href="https://arxiv.org/pdf/2204.02311.pdf">PaLM paper (ArXiv, 2022)</a> provides a nice breakdown of variations that enabled training a massive model (Section 2).</p>
-<h3 id="recurrent-models">Recurrent models</h3>
+<h3 id="recurrent-models">Recurrent models<a class="td-heading-self-link" href="#recurrent-models" aria-label="Heading self-link"></a></h3>
 <p>Recurrent models continue to show strong performance on benchmarks like enwiki-8:</p>
 <ul>
 <li><a href="https://aclanthology.org/2021.emnlp-main.602/">SRU++</a>, 1.02 bpc.</li>
 <li><a href="https://arxiv.org/pdf/1911.11423.pdf">SHA-RNN</a>, 1.07 bpc.</li>
 </ul>
-<h3 id="mixture-of-experts">Mixture of Experts</h3>
+<h3 id="mixture-of-experts">Mixture of Experts<a class="td-heading-self-link" href="#mixture-of-experts" aria-label="Heading self-link"></a></h3>
 <p>Not it&rsquo;s own type, but really a variation on other types: have a mechanism for only using part of the weights in the model at inference, depending on the content of the input.
 For example, <a href="https://arxiv.org/abs/2112.06905">GLaM</a> uses a transformer with a set of matrices for feedforward layers, of which two are chosen for each token of input.
 The key advantage of this is that it can increase the number of model parameters (and so hopefully take advantage of more data) without increasing the cost of inference.</p>
-<h3 id="learning-at-evaluation-time">Learning at Evaluation Time</h3>
+<h3 id="learning-at-evaluation-time">Learning at Evaluation Time<a class="td-heading-self-link" href="#learning-at-evaluation-time" aria-label="Heading self-link"></a></h3>
 <p>Dynamic Evaluation <a href="http://proceedings.mlr.press/v80/krause18a/krause18a.pdf">Krause et al. (ICML 2018)</a> update language model parameters during inference.
 When a new word in the sequence is seen, the model is updated.
 This boosts performance, probably because it makes related words more likely.
 <a href="https://aclanthology.org/2021.findings-emnlp.346.pdf">Yoshida and Gimpel (EMNLP Findings, 2021)</a> introduced a variant, HSO, which updates the hidden states rather than the model parameters.
 This idea is particularly helpful with huge LMs.
 Again, there is an improvement in performance (small for in-domain language modelling, larger out of domain, and small for downstream tasks).</p>
-<h2 id="prompt-tuning">Prompt Tuning</h2>
+<h2 id="prompt-tuning">Prompt Tuning<a class="td-heading-self-link" href="#prompt-tuning" aria-label="Heading self-link"></a></h2>
 <p>Clear introduction and extensive literature review by <a href="https://arxiv.org/pdf/2107.13586.pdf">Liu et al. (arXiv 2021)</a>, with updates at <a href="http://pretrain.nlpedia.ai/">http://pretrain.nlpedia.ai/</a>.
 The general idea is to build a system for a task by running the data through a language model with some pre-processing and post-processing.
 For example, for predicting movie review scores, take some text and add &ldquo;This is [blank]&rdquo;, then see what the model predicts for the blank word.
@@ -409,20 +349,20 @@ They showed that prior success was mainly due to biases in the evaluation data, 
 https://arxiv.org/pdf/2208.05577.pdf
 
 -->
-<h2 id="speeding-up">Speeding up</h2>
+<h2 id="speeding-up">Speeding up<a class="td-heading-self-link" href="#speeding-up" aria-label="Heading self-link"></a></h2>
 <p>One way to save computation is to only run some of the layers in a stack.
 <a href="https://arxiv.org/abs/2207.07061">CALM</a> predicts when early stopping is possible without changing the output, leading to similar results in about half the time.</p>
-<h2 id="training-data">Training data</h2>
+<h2 id="training-data">Training data<a class="td-heading-self-link" href="#training-data" aria-label="Heading self-link"></a></h2>
 <p>Training models on higher quality data can produce strong results even when there is relatively little data.
 This has been shown for code <a href="https://arxiv.org/pdf/2306.11644.pdf">(Gunasekar et al., arXiv 2023)</a> and stories <a href="https://arxiv.org/pdf/2305.07759.pdf">(Eldan and Li, arXiv 2023)</a>, where in both cases a large model is used to either generate data or filter existing data to create a small high-qiality dataset for training a small model.</p>
-<h2 id="training-objective">Training objective</h2>
+<h2 id="training-objective">Training objective<a class="td-heading-self-link" href="#training-objective" aria-label="Heading self-link"></a></h2>
 <ul>
 <li>GOLD, <a href="https://openreview.net/pdf?id=RovX-uQ1Hua">https://openreview.net/pdf?id=RovX-uQ1Hua</a></li>
 <li>Tempering, <a href="https://aclanthology.org/2021.mtsummit-research.10/">https://aclanthology.org/2021.mtsummit-research.10/</a>, Note that AlphaCode experiments found a lower temperature was best</li>
 </ul>
-<h2 id="guiding-inference">Guiding Inference</h2>
+<h2 id="guiding-inference">Guiding Inference<a class="td-heading-self-link" href="#guiding-inference" aria-label="Heading self-link"></a></h2>
 <p><a href="http://www.cond.org/talebrush.pdf">Chung et al. (CHI 2022)</a> built a system in which users can specify how the fortune of a protagonist in a generated story should vary over the story (like Kurt Vonnegut&rsquo;s famous drawings).</p>
-<h2 id="tokenisation">Tokenisation</h2>
+<h2 id="tokenisation">Tokenisation<a class="td-heading-self-link" href="#tokenisation" aria-label="Heading self-link"></a></h2>
 <p>Most LMs today use a word-piece tokenisation, where rare or unseen words are broken into pieces.
 For constructing these vocabularies, there are several approaches:</p>
 <ul>
@@ -434,7 +374,7 @@ For constructing these vocabularies, there are several approaches:</p>
 <p>Compared in <a href="https://aclanthology.org/2020.findings-emnlp.414.pdf">https://aclanthology.org/2020.findings-emnlp.414.pdf</a></p>
 <p>Library: SentencePiece <a href="https://github.com/google/sentencepiece">https://github.com/google/sentencepiece</a>, <a href="https://aclanthology.org/D18-2012/">https://aclanthology.org/D18-2012/</a></p>
 <p>For inference, <a href="https://aclanthology.org/2021.emnlp-main.160.pdf">Song et al. (EMNLP 2021)</a> improved efficiency by forming a special trie that encodes all the known words and pieces, with extra edges that show what to produce when a match fails.</p>
-<h2 id="analysis">Analysis</h2>
+<h2 id="analysis">Analysis<a class="td-heading-self-link" href="#analysis" aria-label="Heading self-link"></a></h2>
 <p>What are these LMs [not] learning?</p>
 <p>Syntactic constraints are one way to probe these models, e.g., do they correctly model number agreement for noun-verb pairs?
 <a href="https://aclanthology.org/2021.emnlp-main.72.pdf">Wei et al. (EMNLP 2021)</a> showed the answer to that question is yes, though they have difficulty with rarer words (interestingly, a frequency of ~100 seems to be a convergence point, similar to the point at which static word embeddings are stable in <a href="https://aclanthology.org/N18-1190.pdf">my work with Laura Burdick</a>).
@@ -442,7 +382,7 @@ BERT also has trouble when one form is far more common than another.</p>
 <p>For models made available only via APIs, one challenge is that newer versions may not behave the same as older ones.
 <a href="https://arxiv.org/pdf/2307.09009.pdf">Chen et al. (arXiv 2023)</a> show this for GPT 3.5 and GPT 4, with a range of changes in just three months.
 Some changes are consistent (e.g., decrease in verbosity for GPT 4), but most vary across tasks, including both higher and lower scores.</p>
-<h2 id="use-in-evaluation">Use in Evaluation</h2>
+<h2 id="use-in-evaluation">Use in Evaluation<a class="td-heading-self-link" href="#use-in-evaluation" aria-label="Heading self-link"></a></h2>
 <p>For text generation tasks, evaluation is difficult.
 <a href="https://arxiv.org/pdf/1904.09675.pdf">Zhang et al. (ICLR 2020)</a> proposed BERTscore, which uses BERT to calculate similarity between tokens in output and a reference, followed by greedy matching and averaging to get an overall score.
 <a href="https://papers.nips.cc/paper/2021/file/e4d2b6e6fdeca3e60e0f1a62fee3d9dd-Paper.pdf">Yuan et al. (NeurIPS 2021)</a> switch to BART and note that for an application like machine translation you can also make a comparison with the source text, and the comparison can be done in one direction or another between reference and generated text.
@@ -450,8 +390,6 @@ It is similar in performance to BERTscore, but they also explore finetuning and 
 <a href="https://arxiv.org/abs/2112.04139">Kasai et al. (arXiv 2021)</a> propose forming an ensemble of metrics, learning a combined metric that correlates best with buman evaluations.
 In their model, leaderboards accept both new models and new metrics, updating the results in the process.</p>
 
-	
-	
 	
 </div>
 
@@ -570,55 +508,19 @@ In their model, leaderboards accept both new models and new metrics, updating th
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
-    crossorigin="anonymous"></script>
-
-
-
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+      integrity="sha512-r2+FkHzf1u0+SQbZOoIz2RxWOIWfdEzRuYybGjzKq18jG9zaSfEy9s3+jMqG/zPtRor/q4qaUCYQpmSjTw8M+g==" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+        integrity="sha512-INps9zQ2GUEMCQD7xiZQbGUVnqnzEvlynVy6eqcTcHN4+aQiLo9/uaQqckDpdJ8Zm3M0QBs+Pktg4pz0kEklUg=="
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+       integrity="sha512-YJVxTjqttjsU3cSvaTRqsSl0wbRgZUNF+NGGCgto/MUbIvaLdXQzGTCQu4CvyJZbZctgflVB0PXw9LLmTWm5/w==" crossorigin="anonymous"
+       onload='renderMathInElement(document.body, null);'>
+</script>
+<script src="/js/main.min.d4f01890352ec227bd6fafbde86e81fb252198076cabc96767a61d749b84753e.js" integrity="sha256-1PAYkDUuwie9b6&#43;96G6B&#43;yUhmAdsq8lnZ6YddJuEdT4=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
-
-
-
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
-    integrity="sha512-vJqxkZ+Sugf/6WRlpcxN01qVfX/29hF6qc33eHF1va3NgoV+U+wCi+uTAsQ10sDoGyBxHLdaHvGwDlV3yVYboA==" crossorigin="anonymous">
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
-    integrity="sha512-5ufNcHqOYgilGEHPfuRIQ5B/vDS1M8+UC+DESZ5CwVgGTg+b2Ol/15rYL/GiCWJ/Sx8oVo0FPFok1dPk8U9INQ=="
-    crossorigin="anonymous"></script>
-
-
-
-<script defer src='https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js'
-    integrity='sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==' crossorigin='anonymous' 
-    onload='renderMathInElement(document.body, null);'></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="/js/main.min.91798a335c881f1b6b805085ba4aa22d1dbd2b0b18d105d05189fa104ddae350.js" integrity="sha256-kXmKM1yIHxtrgFCFukqiLR29KwsY0QXQUYn6EE3a41A=" crossorigin="anonymous"></script>
-
-
-
 
   </body>
 </html>

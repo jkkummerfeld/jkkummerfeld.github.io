@@ -1,17 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jonathan K. Kummerfeld – Students</title>
+    <title>Students on Jonathan K. Kummerfeld</title>
     <link>https://www.jkk.name/students/</link>
     <description>Recent content in Students on Jonathan K. Kummerfeld</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://www.jkk.name/students/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://www.jkk.name/students/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recruiting: PhD</title>
+      <link>https://www.jkk.name/students/recruiting-phd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/students/recruiting-phd/</guid>
+      <description>Work with me on NLP at the University of Sydney!&#xA;My primary recruiting timeline is:&#xA;Read applications in late October Interview and make offers in November I am open to applications from outstanding students at any time, but my expectations are higher outside the normal timeline. Complete the process below and I will respond when I can (sometimes that can be quite a while due to other demands on my time, but I do respond to everyone who completes the web form).</description>
+    </item>
+    <item>
+      <title>Recruiting: Masters</title>
+      <link>https://www.jkk.name/students/recruiting-ms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/students/recruiting-ms/</guid>
+      <description>Learn about NLP and research in my lab!&#xA;Master of Philosophy I typically do not recruit students for the MPhil program. Instead, I recruit students directly into the PhD program. See my PhD recruitment page for details.&#xA;Capstone Projects Apply by emailing jonathan.kummerfeld@sydney.edu.au at least 2 weeks before semester begins with:&#xA;Subject line &amp;ldquo;Masters capstone application: [your name]&amp;rdquo; Transcript(s) (PDF or images) CV / Resume (PDF) A brief description of your interests Typically, I only consider students who have taken my NLP unit and done very well (e.</description>
+    </item>
+    <item>
+      <title>Recruiting: Undergraduates</title>
+      <link>https://www.jkk.name/students/recruiting-ug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/students/recruiting-ug/</guid>
+      <description>Learn about NLP and research in my lab!&#xA;Honours / Senior Theses Apply by emailing jonathan.kummerfeld@sydney.edu.au with:&#xA;Subject line &amp;ldquo;Honours application: [your name]&amp;rdquo; Transcript(s) (PDF or images) CV / Resume (PDF) A brief description of your interests I will consider your application and if I think you would be a good fit, I will suggest we meet for a brief interview. Based on that, I will then make an offer to join my group.</description>
+    </item>
   </channel>
 </rss>

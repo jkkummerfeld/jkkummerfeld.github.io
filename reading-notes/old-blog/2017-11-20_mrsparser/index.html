@@ -4,9 +4,6 @@
     <link rel="stylesheet" href="https://www.jkk.name/plugins/my-custom/css/mycustom.css"><link rel="stylesheet" href="https://www.jkk.name/plugins/academic-icons/css/academicons.css">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.111.3">
-<link rel="me" href="https://mastodon.social/@jkkummerfeld">Mastodon</link>
-
 <meta name="robots" content="index, follow">
 
 
@@ -23,46 +20,42 @@
 
 <title>Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017) | Jonathan K. Kummerfeld</title>
 <meta name="description" content="A neural transition based parser with actions to create non-local links can perform well on Minimal Recursion Semantics parsing.">
-<meta property="og:title" content="Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)" />
-<meta property="og:description" content="A neural transition based parser with actions to create non-local links can perform well on Minimal Recursion Semantics parsing." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.jkk.name/reading-notes/old-blog/2017-11-20_mrsparser/" /><meta property="article:section" content="reading-notes" />
+<meta property="og:url" content="https://www.jkk.name/reading-notes/old-blog/2017-11-20_mrsparser/">
+  <meta property="og:site_name" content="Jonathan K. Kummerfeld">
+  <meta property="og:title" content="Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)">
+  <meta property="og:description" content="A neural transition based parser with actions to create non-local links can perform well on Minimal Recursion Semantics parsing.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="reading-notes">
+    <meta property="article:modified_time" content="2021-11-17T11:00:20-05:00">
 
-<meta property="article:modified_time" content="2021-11-17T11:00:20-05:00" /><meta property="og:site_name" content="Jonathan K. Kummerfeld" />
-<meta itemprop="name" content="Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)">
-<meta itemprop="description" content="A neural transition based parser with actions to create non-local links can perform well on Minimal Recursion Semantics parsing.">
-<meta itemprop="dateModified" content="2021-11-17T11:00:20-05:00" />
-<meta itemprop="wordCount" content="282">
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)"/>
-<meta name="twitter:description" content="A neural transition based parser with actions to create non-local links can perform well on Minimal Recursion Semantics parsing."/>
-
-
-
-
-<link rel="preload" href="/scss/main.min.0dfa6f2329873fc2190908b72854dd7514cdcd182b431bcdb412facf973beffe.css" as="style">
-<link href="/scss/main.min.0dfa6f2329873fc2190908b72854dd7514cdcd182b431bcdb412facf973beffe.css" rel="stylesheet" integrity="">
-
+  <meta itemprop="name" content="Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)">
+  <meta itemprop="description" content="A neural transition based parser with actions to create non-local links can perform well on Minimal Recursion Semantics parsing.">
+  <meta itemprop="dateModified" content="2021-11-17T11:00:20-05:00">
+  <meta itemprop="wordCount" content="282">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Robust Incremental Neural Semantic Graph Parsing (Buys et al., 2017)">
+  <meta name="twitter:description" content="A neural transition based parser with actions to create non-local links can perform well on Minimal Recursion Semantics parsing.">
+<link rel="preload" href="/scss/main.min.36c26dd096c1e1ed9bacccf245efc8dda3f3b10a63b70a3701a019b3df691b9a.css" as="style"><link href="/scss/main.min.36c26dd096c1e1ed9bacccf245efc8dda3f3b10a63b70a3701a019b3df691b9a.css" rel="stylesheet">
 <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
-  crossorigin="anonymous"></script>
-<script
-  src="https://unpkg.com/lunr@2.3.9/lunr.min.js"
-  integrity="sha384-203J0SNzyqHby3iU6hzvzltrWi/M41wOP5Gu+BiJMz5nwKykbkUx8Kp7iti0Lpli"
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JVV2VPL5CX"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-JVV2VPL5CX', { 'anonymize_ip': false });
-}
-</script>
-
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVV2VPL5CX"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-JVV2VPL5CX');
+        }
+      </script>
   </head>
   <body class="td-page">
     <div class="container-fluid td-outer">
@@ -72,7 +65,9 @@ if (!doNotTrack) {
             
 <div id="td-sidebar-menu" class="td-sidebar__inner">
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
+    
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
+
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m--li">
   <a href="/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-"><span class="">Jonathan K. Kummerfeld&#39;s Homepage</span></a>
   <ul class="ul-1">
@@ -242,18 +237,7 @@ if (!doNotTrack) {
     </ul>
   </nav>
   <form class="td-sidebar__search d-flex align-items-center">
-    <input
-  type="search"
-  class="form-control td-search-input"
-  placeholder="&#xf002; Search this site…"
-  aria-label="Search this site…"
-  autocomplete="off"
-  
-  data-offline-search-index-json-src="/offline-search-index.a0c46c2b8d93f072fb4e50e73fba33c5.json"
-  data-offline-search-base-href="/"
-  data-offline-search-max-results="10"
->
-
+    
     <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     </button>
   </form>
@@ -262,44 +246,20 @@ if (!doNotTrack) {
 
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
-            
-<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
 
 </div>
 
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#citation">Citation</a></li>
+  </ul>
+</nav>
+      </div>
+    
             
-
-
-
-
-            
-
 	
-		
-			
-				
-			
-			
-
-
-
-  
-  
-
-		
-			
-				
-			
-			
-
-
-
-  
-  
-
-		
-	
-
           </aside>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             
@@ -313,21 +273,7 @@ if (!doNotTrack) {
 	<div class="lead">A neural transition based parser with actions to create non-local links can perform well on Minimal Recursion Semantics parsing.</div>
 	<header class="article-meta">
 		
-
-  
-    
-      
-
-
-    
-      
-
-
-    
-  
-
-		
-	</header>    
+  </header>
 	<p>Like the UCCA parser, this paper explores a transition-based neural model for semantic parsing, but for Minimal Recursion Semantics instead of Universal Conceptual Cognitive Annotation.
 Comparing MRS and UCCA, every word gets a non-terminal symbol in MRS, plus additional non-terminals for phenomena like quantification, while UCCA only introduces them for special cases like linking to a coordination.
 Both have discontinuous graph structures, creating a challenge for most parsers.</p>
@@ -336,7 +282,7 @@ Here, crossing edges can be added with a transition that forms edges between the
 The models are similar, both using a form of stack-RNN, but with different structures (partly as a result of the different transition schemes).
 The results in this case are not state-of-the-art, though this task has received more attention, and the data is slightly biased (the parser that does better, ACE, is based on the grammar that was used to determine which sentences to include).
 However, the system can also be applied to AMR, and does fairly well, better than other neural AMR parsers at the time (and more recent ideas for improvements are large orthogonal).</p>
-<h2 id="citation">Citation</h2>
+<h2 id="citation">Citation<a class="td-heading-self-link" href="#citation" aria-label="Heading self-link"></a></h2>
 <p><a href="https://aclanthology.org/P17-1112">Paper</a></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bibtex" data-lang="bibtex"><span style="display:flex;"><span><span style="color:#000">@InProceedings</span><span style="color:#000;font-weight:bold">{</span><span style="color:#f57900">buys-blunsom:2017:Long</span><span style="color:#000;font-weight:bold">,</span>
 </span></span><span style="display:flex;"><span><span style="color:#c4a000">author</span>    <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{Buys, Jan  and  Blunsom, Phil}</span><span style="color:#000;font-weight:bold">,</span>
@@ -351,8 +297,6 @@ However, the system can also be applied to AMR, and does fairly well, better tha
 </span></span><span style="display:flex;"><span><span style="color:#c4a000">url</span>       <span style="color:#000;font-weight:bold">=</span> <span style="color:#4e9a06">{https://aclanthology.org/P17-1112}</span>
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div>
-	
-	
 	
 </div>
 
@@ -471,55 +415,19 @@ However, the system can also be applied to AMR, and does fairly well, better tha
 
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
-    crossorigin="anonymous"></script>
-
-
-
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"
+      integrity="sha512-r2+FkHzf1u0+SQbZOoIz2RxWOIWfdEzRuYybGjzKq18jG9zaSfEy9s3+jMqG/zPtRor/q4qaUCYQpmSjTw8M+g==" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"
+        integrity="sha512-INps9zQ2GUEMCQD7xiZQbGUVnqnzEvlynVy6eqcTcHN4+aQiLo9/uaQqckDpdJ8Zm3M0QBs+Pktg4pz0kEklUg=="
+        crossorigin="anonymous">
+</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/contrib/auto-render.min.js"
+       integrity="sha512-YJVxTjqttjsU3cSvaTRqsSl0wbRgZUNF+NGGCgto/MUbIvaLdXQzGTCQu4CvyJZbZctgflVB0PXw9LLmTWm5/w==" crossorigin="anonymous"
+       onload='renderMathInElement(document.body, null);'>
+</script>
+<script src="/js/main.min.d4f01890352ec227bd6fafbde86e81fb252198076cabc96767a61d749b84753e.js" integrity="sha256-1PAYkDUuwie9b6&#43;96G6B&#43;yUhmAdsq8lnZ6YddJuEdT4=" crossorigin="anonymous"></script>
+<script defer src="/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/js/tabpane-persist.js'></script>
-
-
-
-
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
-    integrity="sha512-vJqxkZ+Sugf/6WRlpcxN01qVfX/29hF6qc33eHF1va3NgoV+U+wCi+uTAsQ10sDoGyBxHLdaHvGwDlV3yVYboA==" crossorigin="anonymous">
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
-    integrity="sha512-5ufNcHqOYgilGEHPfuRIQ5B/vDS1M8+UC+DESZ5CwVgGTg+b2Ol/15rYL/GiCWJ/Sx8oVo0FPFok1dPk8U9INQ=="
-    crossorigin="anonymous"></script>
-
-
-
-<script defer src='https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js'
-    integrity='sha512-ZA/RPrAo88DlwRnnoNVqKINnQNcWERzRK03PDaA4GIJiVZvGFIWQbdWCsUebMZfkWohnfngsDjXzU6PokO4jGw==' crossorigin='anonymous' 
-    onload='renderMathInElement(document.body, null);'></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="/js/main.min.91798a335c881f1b6b805085ba4aa22d1dbd2b0b18d105d05189fa104ddae350.js" integrity="sha256-kXmKM1yIHxtrgFCFukqiLR29KwsY0QXQUYn6EE3a41A=" crossorigin="anonymous"></script>
-
-
-
 
   </body>
 </html>

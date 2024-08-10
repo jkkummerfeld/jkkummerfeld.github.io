@@ -1,17 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jonathan K. Kummerfeld – Home</title>
+    <title>Home on Jonathan K. Kummerfeld</title>
     <link>https://www.jkk.name/home/</link>
     <description>Recent content in Home on Jonathan K. Kummerfeld</description>
-    <generator>Hugo -- gohugo.io</generator>
-    
-	  <atom:link href="https://www.jkk.name/home/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://www.jkk.name/home/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
