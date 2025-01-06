@@ -3,16 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.jkk.name/home/</loc>
-    <lastmod>2024-08-10T20:08:13+10:00</lastmod>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/students/recruiting-phd/</loc>
-    <lastmod>2024-08-10T20:08:13+10:00</lastmod>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/bio_and_cv/</loc>
-    <lastmod>2024-08-12T07:45:23+07:00</lastmod>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/students/</loc>
-    <lastmod>2024-08-10T20:08:13+10:00</lastmod>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/pubs/</loc>
     <lastmod>2024-08-12T07:45:23+07:00</lastmod>
@@ -45,7 +45,7 @@
     <lastmod>2024-08-12T07:45:23+07:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/contact/</loc>
-    <lastmod>2022-11-25T11:12:30+11:00</lastmod>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-10-09_parsing-autoencoder/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
@@ -144,7 +144,7 @@
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/exsempar/</loc>
-    <lastmod>2024-02-06T11:08:42+11:00</lastmod>
+    <lastmod>2024-10-09T09:26:41+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2018-06-12_parseradaptation/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
@@ -183,7 +183,7 @@
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/</loc>
-    <lastmod>2024-08-10T20:08:13+10:00</lastmod>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/language-models/</loc>
     <lastmod>2024-03-19T13:26:59+11:00</lastmod>
@@ -205,6 +205,9 @@
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-10-23_alphagozero/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
+  </url><url>
+    <loc>https://www.jkk.name/group-management/meetings-and-notes/</loc>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
   </url><url>
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-11-06_literarycharacters/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
@@ -278,6 +281,10 @@
     <loc>https://www.jkk.name/reading-notes/old-blog/2017-12-12_wordvectorgeometry/</loc>
     <lastmod>2021-11-03T17:10:03-04:00</lastmod>
   </url><url>
+    <loc>https://www.jkk.name/group-management/undergraduate-research/</loc>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
+  </url><url>
     <loc>https://www.jkk.name/advice/usyd-people/</loc>
+    <lastmod>2025-01-06T15:17:34+11:00</lastmod>
   </url>
 </urlset>

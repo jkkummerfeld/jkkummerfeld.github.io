@@ -7,5 +7,19 @@
     <generator>Hugo</generator>
     <language>en</language>
     <atom:link href="https://www.jkk.name/group-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meetings and Notes</title>
+      <link>https://www.jkk.name/group-management/meetings-and-notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/group-management/meetings-and-notes/</guid>
+      <description>Notes We use Dropbox Paper to manage project notes, with one document per project. The structure is:&#xA;Title, this will be &amp;ldquo;Student - Topic&amp;rdquo;. Abstract, this is intended to be what you would write if you were to write up the project as a paper now. It should have 1-2 sentences each for: (a) motivation, (b) idea, (c) results. The results will have placeholders, e.g. you could write &amp;ldquo;We found that that approach scored X on dataset Y, outperforming prior work on the task.</description>
+    </item>
+    <item>
+      <title>Undergraduate Research</title>
+      <link>https://www.jkk.name/group-management/undergraduate-research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.jkk.name/group-management/undergraduate-research/</guid>
+      <description>Research is unlike any other activity you do as an undergraduate. For many students, it is the first experience of a white-collar style work environment. Below are suggestions for how to be an effective mentee in my lab based on my observations of students.&#xA;Be responsive:&#xA;Read your email at least once each weekday. Either (a) send a complete response within two working days or (b) send an email acknowledging the message and giving an estimate of when you will respond.</description>
+    </item>
   </channel>
 </rss>

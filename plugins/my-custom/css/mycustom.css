@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?oraay5');
-  src:  url('../fonts/icomoon.eot?oraay5#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?oraay5') format('truetype'),
-    url('../fonts/icomoon.woff?oraay5') format('woff'),
-    url('../fonts/icomoon.svg?oraay5#icomoon') format('svg');
+  font-family: 'extra-icons-jkk';
+  src:  url('../fonts/extra-icons-jkk.eot?f29at4');
+  src:  url('../fonts/extra-icons-jkk.eot?f29at4#iefix') format('embedded-opentype'),
+    url('../fonts/extra-icons-jkk.ttf?f29at4') format('truetype'),
+    url('../fonts/extra-icons-jkk.woff?f29at4') format('woff'),
+    url('../fonts/extra-icons-jkk.svg?f29at4#extra-icons-jkk') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'extra-icons-jkk' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-acl-logo:before {
+.icon-acl:before {
+  content: "\e901";
+}
+.icon-usyd:before {
   content: "\e900";
 }
